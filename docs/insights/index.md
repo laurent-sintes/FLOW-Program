@@ -29,6 +29,10 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
 
+## Données, cohérence et observabilité
+
+- [Cohérence des données : fraîcheur, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+
 ## Insights structurants à retenir
 
 1. FLOW n'est probablement pas un OMS.
@@ -42,4 +46,6 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 9. Le tenant est une notion de gouvernance.
 10. UR prouve que le modèle 100% ségrégé par marque ne suffit pas.
 11. La décision constitue une responsabilité architecturale à part entière.
-12. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
+12. La cohérence des données prime sur la seule fraîcheur.
+13. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
+14. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
