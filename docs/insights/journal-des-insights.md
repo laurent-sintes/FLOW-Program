@@ -29,3 +29,12 @@ La confiance dépend de la capacité à expliquer les données et les décisions
 
 ## Insight 010 — FLOW est devenu un programme d'entreprise
 FLOW dépasse désormais le simple cadre d'un projet SI.
+
+## Insight 011 — FLOW n'est pas une plateforme d'engagement
+Les métiers souhaitent conserver Salesforce, SFCC, Elastic et les autres outils de relation client. FLOW doit exposer des APIs, des décisions et des capacités réutilisables plutôt que remplacer les canaux d'engagement.
+
+## Insight 012 — FLOW est une plateforme d'orchestration des demandes
+La plateforme reçoit des demandes provenant des domaines d'engagement puis coordonne la décision et l'exécution. FLOW se positionne davantage comme une Demand Orchestration Platform que comme une Customer Engagement Platform.
+
+## Insight 013 — Le périmètre de FLOW ne peut pas être défini par le remplacement d'applications
+L'objectif initial de remplacement de Storeland, SoCloz, SAP ou NewStore s'est révélé insuffisant. Le véritable périmètre est défini par les responsabilités métier que la plateforme doit porter et mutualiser.
