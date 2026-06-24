@@ -4,6 +4,8 @@ repo_url: https://github.com/laurent-sintes/FLOW-Program
 nav:
   - Accueil: index.md
   - Insights: insights/index.md
+  - Vision: architecture-entreprise/vision/index.md
+  - Méthode: methode/index.md
   - Architecture d'Entreprise: architecture-entreprise/index.md
 theme:
   name: material
