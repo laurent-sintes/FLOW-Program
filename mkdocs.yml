@@ -1,12 +1,16 @@
 site_name: FLOW Program
 site_description: Référentiel Architecture d'Entreprise Beaumanoir
 repo_url: https://github.com/laurent-sintes/FLOW-Program
+
 nav:
   - Accueil: index.md
+  - FLOW Foundations: flow-foundations.md
   - Insights: insights/index.md
   - Vision: architecture-entreprise/vision/index.md
   - Méthode: methode/index.md
+  - Transformation: transformation/index.md
   - Architecture d'Entreprise: architecture-entreprise/index.md
+
 theme:
   name: material
   language: fr
