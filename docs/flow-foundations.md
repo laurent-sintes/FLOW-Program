@@ -62,6 +62,24 @@ FLOW agit comme une plateforme d'orchestration des demandes et des ressources de
 - Inventory Visibility est une capacité d'entreprise.
 - La décision est dispersée.
 - La cohérence des données est plus importante que la seule fraîcheur.
+- La convergence Finance autour de SAP constitue une adhérence forte pour FLOW.
+- Toutes les capacités de convergence ne convergent pas dans FLOW.
+
+## Adhérences structurantes
+
+### SAP Finance / S/4HANA
+
+La convergence Finance est portée par le programme SAP Finance / migration S/4HANA, hors périmètre FLOW.
+
+Cette trajectoire conserve SAP SD/FI/CO comme socle de facturation B2B, de comptabilité et de contrôle de gestion.
+
+En B2C, les factures peuvent être produites par les systèmes d'engagement client ou de vente, puis intégrées dans SAP.
+
+En B2B, SAP SD demeure le support principal de production de facture et d'intégration native avec FI/CO.
+
+FLOW doit donc s'intégrer avec cette trajectoire plutôt que la remplacer.
+
+La question structurante devient : quels événements opérationnels et économiques FLOW doit-il transmettre au domaine Finance ?
 
 ## Vision
 
