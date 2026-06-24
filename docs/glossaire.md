@@ -88,8 +88,6 @@ Principe selon lequel FLOW expose des capacités réutilisables sans imposer les
 
 Comportement concret offert par un produit ou une solution. Une fonctionnalité contribue à une capacité, sans définir à elle seule la responsabilité métier.
 
-## F
-
 ### Fait
 
 Réalité métier observée à un instant donné, utilisée pour instruire une décision ou comprendre l’état d’un Case : stock disponible, contrat actif, capacité restante, document reçu ou statut d’une demande.
@@ -116,7 +114,7 @@ Règle durable qui oriente les choix de conception et permet d’évaluer leur c
 
 ### Produit
 
-Moyen cohérent d’exposer et d’opérer une ou plusieurs capacités pour des consommateurs identifiés.
+Périmètre de gouvernance autonome par lequel une ou plusieurs capacités sont exposées, opérées et font l’objet d’une évolution continue au contact de leurs consommateurs, clients ou utilisateurs.
 
 ### Projection de données
 
@@ -127,8 +125,6 @@ Vue de données construite pour un usage ou une décision donnée, sans prétend
 ### Responsabilité
 
 Mission durable que l’entreprise doit assumer. Une responsabilité constitue l’ancrage entre un domaine et les capacités nécessaires pour l’exercer.
-
-## R
 
 ### Règle
 
