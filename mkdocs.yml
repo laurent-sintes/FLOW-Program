@@ -1,6 +1,6 @@
-site_name: FLOW Program
+site_name: Programme FLOW
 site_description: Référentiel documentaire du programme FLOW
-repo_name: laurent-sintes/FLOW-Program
+repo_name: Programme FLOW
 repo_url: https://github.com/laurent-sintes/FLOW-Program
 
 theme:
@@ -8,6 +8,7 @@ theme:
   language: fr
   features:
     - navigation.sections
+    - navigation.indexes
     - navigation.path
     - navigation.footer
     - navigation.top
