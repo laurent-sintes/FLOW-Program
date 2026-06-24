@@ -51,6 +51,7 @@ nav:
       - Les domaines avant les structures: architecture-entreprise/principes-directeurs/3-domaines-avant-les-structures.md
       - Séparer Demand et Supply: architecture-entreprise/principes-directeurs/4-separer-demand-et-supply.md
       - Le processus émerge des décisions: architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
+      - La demande comme objet métier central d’orchestration: architecture-entreprise/principes-directeurs/6-demande-objet-metier-central-orchestration.md
   - Méthode FLOW:
       - Vue d’ensemble: methode/index.md
       - De l’insight à la solution: methode/conception-flow.md
