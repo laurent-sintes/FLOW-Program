@@ -26,7 +26,7 @@ nav:
       - Positionnement de FLOW:
           - De l’OMS au Demand Management: insights/oms-vers-demand-management.md
           - FLOW n’est pas une plateforme d’engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
-          - ERP + OMS : séparation utile ou dette architecturale ?: insights/erp-oms-separation-ou-plateforme-integree.md
+          - "ERP + OMS : séparation utile ou dette architecturale ?": insights/erp-oms-separation-ou-plateforme-integree.md
           - Convergence, fédération et uniformisation: insights/convergence-federation-uniformisation.md
       - Modèle conceptuel:
           - Agreement comme pivot: insights/agreement-comme-pivot.md
