@@ -8,6 +8,7 @@ theme:
   language: fr
   features:
     - navigation.sections
+    - navigation.path
     - navigation.footer
     - navigation.top
     - toc.follow
