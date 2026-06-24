@@ -1,4 +1,4 @@
-# Principe 3 — Responsabilités avant organisations
+# Principe 3 — Les domaines avant les organisations
 
 ## Introduction
 
@@ -17,60 +17,144 @@ Cette organisation est légitime.
 
 Cependant, elle ne constitue pas nécessairement le meilleur découpage pour construire une plateforme d'entreprise durable.
 
-FLOW considère que les responsabilités métier sont plus stables que les organisations, les applications ou les produits.
+FLOW considère que les domaines métier sont plus stables que les organisations, les applications ou les produits.
 
 ---
 
 ## Principe
 
-> Les responsabilités sont plus durables que les organisations.
+> Les domaines sont plus durables que les organisations.
 >
-> FLOW s'organise autour des responsabilités métier avant de s'organiser autour des structures existantes.
+> FLOW s'organise autour des domaines métier avant de s'organiser autour des structures existantes.
 
 ---
 
-## Qu'est-ce qu'une responsabilité ?
+## Qu'est-ce qu'un domaine ?
 
-Une responsabilité est une mission durable que l'entreprise doit assumer indépendamment :
+Dans FLOW, un domaine ne représente pas une organisation.
 
-- de son organisation ;
-- de ses applications ;
-- de ses partenaires ;
-- de ses processus.
+Un domaine représente un espace problématique cohérent au sens du Domain-Driven Design.
 
-Exemples :
-
-- gérer des engagements ;
-- maintenir une vision cohérente des ressources ;
-- prendre des décisions ;
-- exécuter des opérations.
-
-Ces responsabilités survivront aux réorganisations, aux acquisitions et aux changements de solutions.
+Un domaine regroupe des problèmes qui doivent être compris et résolus ensemble.
 
 ---
 
-## Ce qu'une responsabilité n'est pas
+## Ce qu'un domaine n'est pas
 
-Une responsabilité n'est pas :
+Un domaine n'est pas :
 
-- une application ;
-- un produit ;
-- un module ERP ;
+- une direction ;
 - une équipe ;
-- une direction.
-
-Par exemple :
-
-- utiliser SAP n'est pas une responsabilité ;
-- gérer le module SD n'est pas une responsabilité ;
-- gérer les engagements commerciaux est une responsabilité.
+- une marque ;
+- une application ;
+- un ERP ;
+- un OMS ;
+- un produit du marché.
 
 ---
 
-## Responsabilité, capacité et fonctionnalité
+## Ce qu'un domaine est
+
+Un domaine est :
+
+- un espace problématique cohérent ;
+- un cadre de compréhension ;
+- un outil d'urbanisme ;
+- un moyen de délimiter les responsabilités.
+
+---
+
+## Pourquoi les domaines sont-ils importants ?
+
+Les organisations évoluent constamment.
+
+On observe régulièrement :
+
+- des réorganisations ;
+- des acquisitions ;
+- des changements de périmètre ;
+- des créations ou suppressions de marques ;
+- des changements de partenaires.
+
+Les domaines évoluent beaucoup plus lentement.
+
+Ils représentent les grandes missions permanentes que l'entreprise doit assumer.
+
+---
+
+## Ce que nous avons observé
+
+### GBM
+
+Les ateliers sont souvent structurés autour :
+
+- des marques ;
+- des enseignes ;
+- des applications historiques.
+
+Pourtant, l'apparition de UR montre que certaines problématiques dépassent naturellement ces frontières.
+
+### BRD
+
+Les responsabilités liées :
+
+- aux engagements ;
+- aux décisions ;
+- aux ressources ;
+- à l'exécution ;
+
+traversent SAP, NewStore, Maersk et les partenaires logistiques.
+
+Aucune application ne porte naturellement ces problématiques dans leur intégralité.
+
+---
+
+## Les domaines doivent être découverts
+
+Les métiers décrivent naturellement leurs besoins à travers leur organisation.
+
+Un responsable logistique parlera :
+
+- de transport ;
+- d'entrepôt ;
+- de picking ;
+- de packing.
+
+Un responsable retail parlera :
+
+- de magasin ;
+- de stock magasin ;
+- de Ship From Store.
+
+Un responsable wholesale parlera :
+
+- de précommandes ;
+- d'allocations ;
+- de clients B2B.
+
+Pourtant, derrière ces discours, on retrouve souvent les mêmes problématiques fondamentales :
+
+- visibilité des ressources ;
+- engagement ;
+- décision ;
+- exécution.
+
+Les domaines ne sont pas directement observables.
+
+Ils doivent être découverts.
+
+Les interviews produisent des symptômes.
+
+Les insights permettent de faire émerger les domaines.
+
+---
+
+## Domaines, responsabilités, capacités et fonctionnalités
 
 FLOW distingue plusieurs niveaux de conception.
 
+Domaine
+↓
 Responsabilité
 ↓
 Capacité
@@ -78,6 +162,8 @@ Capacité
 Fonctionnalité
 
 ### Exemple
+
+Domaine : Supply
 
 Responsabilité : maintenir une vision cohérente des ressources.
 
@@ -93,36 +179,20 @@ Les fonctionnalités évoluent rapidement.
 
 Les capacités évoluent plus lentement.
 
-Les responsabilités sont les plus stables.
+Les responsabilités sont plus stables.
+
+Les domaines sont les éléments les plus durables.
 
 ---
 
-## Domaines et responsabilités
+## Première hypothèse de travail
 
-Les responsabilités sont regroupées dans des domaines plus larges.
-
-Première hypothèse de travail :
+FLOW identifie aujourd'hui une première structuration de domaines :
 
 - Demand ;
 - Supply.
 
-Les domaines structurent l'urbanisme.
-
-Les responsabilités structurent les capacités.
-
----
-
-## Ce que nous avons observé
-
-### GBM
-
-L'apparition de UR montre que certaines responsabilités dépassent naturellement les frontières des marques et des applications historiques.
-
-### BRD
-
-Les responsabilités liées à la décision, à la promesse ou à la visibilité des ressources traversent SAP, NewStore et les systèmes logistiques.
-
-Aucune application ne porte naturellement ces responsabilités dans leur intégralité.
+Ces domaines seront détaillés dans les principes suivants.
 
 ---
 
@@ -134,7 +204,7 @@ FLOW ne cherche pas à reproduire :
 - les applications historiques ;
 - les catégories de progiciels du marché.
 
-FLOW cherche à identifier les responsabilités durables que l'entreprise devra continuer à porter quelle que soit son organisation future.
+FLOW cherche à identifier les espaces problématiques durables que l'entreprise devra continuer à maîtriser quelle que soit son organisation future.
 
 ---
 
@@ -146,6 +216,6 @@ Les applications changent.
 
 Les partenaires changent.
 
-Les responsabilités demeurent.
+Les domaines demeurent.
 
-FLOW urbanise la plateforme autour des responsabilités métier afin de construire un modèle plus stable, plus cohérent et plus durable.
+FLOW urbanise la plateforme autour des domaines métier afin de construire un modèle plus stable, plus cohérent et plus durable.
