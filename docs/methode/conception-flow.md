@@ -1,14 +1,14 @@
-# Méthode FLOW — De l'insight à la solution
+# Méthodologie Projet — De l’insight à la solution
 
 ## Introduction
 
-FLOW ne part pas des produits du marché.
+Le programme FLOW ne part pas des produits du marché.
 
-FLOW ne part pas non plus des fonctionnalités.
+Il ne part pas non plus des fonctionnalités.
 
 La conception commence par la compréhension de l'entreprise, de ses contraintes et de ses modèles opérationnels.
 
-La méthode FLOW vise à faire émerger progressivement les capacités à mutualiser à partir des réalités observées sur le terrain.
+La méthodologie projet fait émerger progressivement les capacités à mutualiser à partir des réalités observées sur le terrain.
 
 ---
 
@@ -158,6 +158,6 @@ Solutions
 
 ## À retenir
 
-FLOW ne cherche pas à partir des applications pour comprendre l'entreprise.
+Le programme FLOW ne cherche pas à partir des applications pour comprendre l'entreprise.
 
-FLOW cherche à comprendre l'entreprise pour faire émerger les capacités qu'il convient de mutualiser.
+Il cherche à comprendre l'entreprise pour faire émerger les capacités qu'il convient de mutualiser.
