@@ -1,9 +1,9 @@
-# Méthode FLOW
+# Méthodologie Projet
 
-La méthode FLOW décrit la manière de passer des observations terrain aux choix d'urbanisme, de plateforme et de solution.
+La méthodologie projet décrit la manière dont le programme FLOW passe des observations terrain aux choix d’urbanisme, de plateforme et de solution.
 
-Elle complète la vision et les principes directeurs.
+Elle structure la progression du travail, en cohérence avec la vision et les principes directeurs.
 
 ## Articles
 
-- [Méthode FLOW — De l'insight à la solution](conception-flow.md)
+- [De l’insight à la solution](conception-flow.md)
