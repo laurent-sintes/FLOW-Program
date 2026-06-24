@@ -26,9 +26,13 @@ Principe selon lequel les capacités sont conçues pour être consommées au tra
 
 Ce que l’entreprise doit durablement être capable de faire pour assumer une responsabilité. Une capacité peut être mise en œuvre par plusieurs produits, équipes ou solutions.
 
+### Case
+
+Objet métier central qui représente une demande dans la durée. Il conserve son intention, son contexte, ses engagements, les décisions qui le font progresser, les événements, les actions, les ressources et les documents associés.
+
 ### Case Management
 
-Modèle d’orchestration adapté aux demandes qui traversent plusieurs domaines, décisions et étapes d’exécution, sans imposer un déroulé unique à l’avance.
+Approche d’orchestration adaptée aux demandes qui traversent plusieurs domaines, décisions et étapes d’exécution, sans imposer un déroulé unique à l’avance. Le Case en constitue l’unité de pilotage.
 
 ### CEP — Complex Event Processing
 
@@ -44,13 +48,21 @@ Propriété selon laquelle les acteurs disposent d’informations suffisamment a
 
 Dispositif de partage et de mise à disposition de données ou de projections, au service de la cohérence opérationnelle entre domaines.
 
+### Donnée de référence / donnée partagée
+
+Donnée nécessaire à plusieurs décisions ou domaines, dont la responsabilité est attribuée, la qualité gouvernée, la définition vérifiée et la disponibilité assurée. Elle ne suppose pas une base de données unique ni une catégorie héritée d’un ERP.
+
 ### Décision
 
-Choix métier explicite et traçable qui détermine, par exemple, une allocation, une priorité, une éligibilité ou une action d’exécution.
+Choix explicite qui fait progresser le traitement d’un Case. Une décision s’appuie sur des faits, des données et des règles de comportement ; elle produit un résultat traçable, susceptible de créer un engagement, de mobiliser une ressource ou de déclencher une action.
 
 ### Demande / Demand
 
-Expression d’un besoin ou d’une intention à traiter. La demande constitue un objet de pilotage plus stable qu’un processus ou qu’une application.
+Expression d’un besoin ou d’une intention à traiter. La demande constitue un objet de pilotage plus stable qu’un processus ou qu’une application et peut être représentée par un Case.
+
+### Document
+
+Pièce opérationnelle ou financière associée à un Case, telle qu’une facture, un bon de livraison, un bon de retour, un avoir, un contrat ou une preuve de remise. Un document peut être généré, reçu, validé ou référencé au cours du traitement.
 
 ### Domaine
 
@@ -64,7 +76,7 @@ Promesse ou obligation envers une partie prenante, qui peut porter sur une dispo
 
 ### Événement
 
-Fait métier significatif publié pour informer d’autres domaines ou consommateurs, par exemple la création d’une demande, une décision d’allocation ou un changement de disponibilité.
+Signal publié lorsqu’un fait ou un état métier a changé, afin d’informer d’autres domaines ou consommateurs. Un événement ne décrit pas toute la réalité métier : il annonce qu’une évolution significative s’est produite.
 
 ### Experience Agnostic
 
@@ -75,6 +87,12 @@ Principe selon lequel FLOW expose des capacités réutilisables sans imposer les
 ### Fonctionnalité
 
 Comportement concret offert par un produit ou une solution. Une fonctionnalité contribue à une capacité, sans définir à elle seule la responsabilité métier.
+
+## F
+
+### Fait
+
+Réalité métier observée à un instant donné, utilisée pour instruire une décision ou comprendre l’état d’un Case : stock disponible, contrat actif, capacité restante, document reçu ou statut d’une demande.
 
 ## I
 
@@ -109,6 +127,12 @@ Vue de données construite pour un usage ou une décision donnée, sans prétend
 ### Responsabilité
 
 Mission durable que l’entreprise doit assumer. Une responsabilité constitue l’ancrage entre un domaine et les capacités nécessaires pour l’exercer.
+
+## R
+
+### Règle
+
+Expression d’un comportement métier attendu : la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Une règle peut rendre une décision automatiquement, encadrer une décision humaine, déclencher une action, calculer une priorité ou interdire une action.
 
 ## S
 
