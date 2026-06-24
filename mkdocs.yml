@@ -36,13 +36,13 @@ nav:
           - GBM, Storeland, UR et fédération: insights/gbm-storeland-ur-federation.md
           - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
       - Opérations, décision et données:
-          - Gouvernance logistique : BRD vs GBM: insights/gouvernance-logistique-brd-vs-gbm.md
+          - "Gouvernance logistique : BRD vs GBM": insights/gouvernance-logistique-brd-vs-gbm.md
           - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
           - Cohérence des données, DataHub et CEP: insights/coherence-donnees-fraicheur-datahub-cep.md
           - Inventory Visibility: insights/inventory-visibility-capacite-d-entreprise.md
       - Finance:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
-          - Facturation : un assemblage de responsabilités: insights/facturation-capacite-documentaire-transverse.md
+          - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision: architecture-entreprise/vision/index.md
   - Principes directeurs:
       - Vue d’ensemble: architecture-entreprise/principes-directeurs/index.md
