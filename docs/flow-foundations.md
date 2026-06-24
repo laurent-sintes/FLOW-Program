@@ -96,6 +96,7 @@ Les premiers principes documentés sont :
 3. Les domaines avant les structures.
 4. Séparer Demand et Supply.
 5. Le processus émerge des décisions.
+6. La demande comme objet métier central d’orchestration.
 
 ## Taxonomie FLOW
 
@@ -105,9 +106,13 @@ Responsabilité
 ↓
 Capacité
 ↓
+Produit
+↓
 Fonctionnalité
 
-## Méthode FLOW
+Le produit constitue le périmètre de gouvernance et d'évolution par lequel une ou plusieurs capacités sont rendues consommables et évoluent au contact de leurs clients ou utilisateurs.
+
+## Méthodologie Projet
 
 Insights
 ↓
