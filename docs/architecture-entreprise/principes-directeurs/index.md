@@ -6,7 +6,7 @@ Ils servent à orienter les choix d'urbanisme, d'architecture et d'organisation 
 
 ## Les 9 principes directeurs
 
-### 1. Gouvernance fédérée
+### 1. [Converger, c'est fédérer](1-converger-c-est-federer.md)
 
 ### 2. FLOW comme plateforme d'entreprise
 
