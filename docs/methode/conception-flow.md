@@ -108,29 +108,38 @@ Exemples :
 
 Question :
 
-> Comment exposer ces capacités ?
+> Quel périmètre de gouvernance permet de rendre ces capacités consommables et de les faire évoluer au contact de leurs clients ou utilisateurs ?
 
 Livrables :
 
 - produits ;
-- services ;
-- composants de plateforme.
+- owners ;
+- périmètres de gouvernance ;
+- consommateurs cibles ;
+- backlog ;
+- trajectoire d'évolution.
+
+Un produit FLOW n'est pas seulement un composant technique ou une application.
+
+C'est le périmètre autonome par lequel une ou plusieurs capacités sont exposées, opérées, arbitrées et améliorées au fil des usages.
 
 ---
 
-## Étape 6 — Concevoir les solutions
+## Étape 6 — Concevoir les fonctionnalités et solutions
 
 Question :
 
-> Comment les consommateurs utilisent-ils ces capacités ?
+> Comment les consommateurs utilisent-ils concrètement ces capacités ?
 
 Livrables :
 
+- fonctionnalités ;
 - APIs ;
 - événements ;
 - interfaces ;
 - batchs ;
-- projections.
+- projections ;
+- solutions consommatrices.
 
 ---
 
@@ -161,3 +170,5 @@ Solutions
 Le programme FLOW ne cherche pas à partir des applications pour comprendre l'entreprise.
 
 Il cherche à comprendre l'entreprise pour faire émerger les capacités qu'il convient de mutualiser.
+
+Les produits ne sont pas le point de départ de la réflexion. Ils deviennent le périmètre de gouvernance et d'évolution naturelle des capacités au contact de leurs consommateurs.
