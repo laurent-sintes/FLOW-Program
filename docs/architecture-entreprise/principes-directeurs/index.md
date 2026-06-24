@@ -10,7 +10,7 @@ Ils servent à orienter les choix d'urbanisme, d'architecture et d'organisation 
 
 ### 2. [FLOW comme plateforme d'entreprise](2-flow-comme-plateforme-d-entreprise.md)
 
-### 3. [Responsabilités avant organisations](3-responsabilites-avant-organisations.md)
+### 3. [Les domaines avant les organisations](3-domaines-avant-les-organisations.md)
 
 ### 4. Séparation Demand / Supply
 
