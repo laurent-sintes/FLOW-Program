@@ -33,6 +33,7 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 ## Données, cohérence et observabilité
 
 - [Cohérence des données : fraîcheur, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+- [Inventory Visibility est une capacité d'entreprise](inventory-visibility-capacite-d-entreprise.md)
 
 ## Insights structurants à retenir
 
@@ -50,4 +51,5 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 12. La décision constitue une responsabilité architecturale à part entière.
 13. La cohérence des données prime sur la seule fraîcheur.
 14. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
-15. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
+15. Le stock unifié doit devenir un référentiel d'entreprise, pas une capacité portée par un OMS omnicanal.
+16. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
