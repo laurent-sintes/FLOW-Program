@@ -21,6 +21,10 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 - [Agreement comme pivot](agreement-comme-pivot.md)
 - [Modèle conceptuel FLOW](modele-conceptuel-flow.md)
 
+## Modélisation, demandes et décisions
+
+- [La demande comme point d’entrée de la modélisation FLOW](demande-point-entree-modelisation.md)
+
 ## Gouvernance et fédération
 
 - [Plateforme fédérale et multi-tenant](plateforme-federale-multitenant.md)
@@ -59,3 +63,4 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 16. La convergence Finance autour de SAP constitue une adhérence forte pour FLOW.
 17. Toutes les capacités de convergence ne convergent pas dans FLOW.
 18. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
+19. La demande peut constituer le point d’entrée de la modélisation, avant les données de référence et les processus.
