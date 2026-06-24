@@ -8,9 +8,9 @@ Ils servent à orienter les choix d'urbanisme, d'architecture et d'organisation 
 
 ### 1. [Converger, c'est fédérer](1-converger-c-est-federer.md)
 
-### 2. FLOW comme plateforme d'entreprise
+### 2. [FLOW comme plateforme d'entreprise](2-flow-comme-plateforme-d-entreprise.md)
 
-### 3. Responsabilités avant organisations
+### 3. [Responsabilités avant organisations](3-responsabilites-avant-organisations.md)
 
 ### 4. Séparation Demand / Supply
 
