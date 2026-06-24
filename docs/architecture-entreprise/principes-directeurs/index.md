@@ -11,10 +11,10 @@ Ils ne prescrivent pas une solution technique. Ils donnent un cadre pour décide
 3. [Les domaines avant les structures](3-domaines-avant-les-structures.md)
 4. [Séparer Demand et Supply](4-separer-demand-et-supply.md)
 5. [Le processus émerge des décisions](5-le-processus-emerge-des-decisions.md)
+6. [La demande comme objet métier central d’orchestration](6-demande-objet-metier-central-orchestration.md)
 
 ## Principes à consolider
 
-6. Case Management comme modèle d’orchestration cross-domain  
 7. Décisions gouvernées et explicables  
 8. Cohérence opérationnelle dans un monde distribué  
 9. API First / Experience Agnostic  
