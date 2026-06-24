@@ -59,14 +59,20 @@ Responsabilité
 Capacité
 ↓
 Produit
+↓
+Fonctionnalité
 
 La question devient :
 
-> Quelle capacité d'entreprise doit porter cette responsabilité ?
+> Quelle capacité d'entreprise doit permettre d'assumer cette responsabilité ?
 
 Cette évolution peut sembler subtile.
 
 Elle modifie pourtant profondément la manière de raisonner.
+
+Le produit n'est plus le point de départ de la réflexion.
+
+Il devient le périmètre de gouvernance et d'évolution par lequel une ou plusieurs capacités sont rendues consommables et progressent au contact de leurs clients ou utilisateurs.
 
 ---
 
@@ -151,6 +157,8 @@ Responsabilités
 Capacités
 ↓
 Produits
+↓
+Fonctionnalités
 
 Cette évolution touche autant les métiers que l'IT.
 
@@ -170,6 +178,35 @@ Il consiste également à :
 
 ---
 
+## Pourquoi deux Change Managers ?
+
+La présence de deux Change Managers répond à la nature particulière de FLOW.
+
+Le programme a besoin à la fois d'une compréhension fine de l'entreprise et d'un recul suffisant pour challenger ses évidences.
+
+### Change Manager interne
+
+Le Change Manager interne apporte la connaissance de la culture d'entreprise.
+
+Il connaît les acteurs, les implicites, les sensibilités politiques, les habitudes de décision et les codes terrain.
+
+Il aide FLOW à rester intelligible, acceptable et actionnable dans le contexte réel du groupe.
+
+### Change Manager externe
+
+Le Change Manager externe apporte un regard extérieur.
+
+Il aide à challenger les évidences, à détecter les biais organisationnels, à mettre des mots sur les modèles mentaux hérités et à éviter que FLOW ne reconstruise l'existant sous une forme plus moderne.
+
+### Complémentarité
+
+La complémentarité interne / externe permet de tenir ensemble deux exigences :
+
+- comprendre l'entreprise de l'intérieur ;
+- la challenger avec suffisamment de distance pour faire émerger de nouveaux modèles de pensée.
+
+---
+
 ## À retenir
 
 La présence de deux Change Managers dans la Core Team FLOW n'est pas un détail organisationnel.
@@ -178,6 +215,6 @@ Elle reflète la nature même du programme.
 
 FLOW ne transforme pas seulement le système d'information.
 
-FLOW transforme également la manière dont l'entreprise pense ses domaines, ses responsabilités, ses capacités et sa gouvernance.
+FLOW transforme également la manière dont l'entreprise pense ses domaines, ses responsabilités, ses capacités, ses produits et sa gouvernance.
 
 En ce sens, FLOW est autant une transformation de la pensée qu'une transformation du SI.
