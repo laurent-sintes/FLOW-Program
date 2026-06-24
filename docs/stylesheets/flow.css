@@ -31,6 +31,26 @@
   font-weight: 650;
 }
 
+/* Les rubriques principales doivent se distinguer clairement des pages. */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+  background: #eaf4f2;
+  border-left: 0.25rem solid #236159;
+  border-radius: 0 0.18rem 0.18rem 0;
+  color: #0b3954;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1.25;
+  margin: 1.15rem 0 0.45rem;
+  padding: 0.58rem 0.65rem;
+  text-transform: uppercase;
+}
+
+.md-sidebar--primary .md-nav__item--section > .md-nav__link:hover {
+  background: #d9f2ea;
+  color: #236159;
+}
+
 .md-typeset a {
   color: #236159;
 }
