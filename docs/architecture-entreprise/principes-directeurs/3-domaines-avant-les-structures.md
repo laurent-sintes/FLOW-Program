@@ -120,7 +120,7 @@ Ils représentent les grandes missions permanentes que l'entreprise doit assumer
 
 ## Les domaines avant les applications
 
-Une erreur fréquente consiste à confondre une responsabilité avec le produit qui l'implémente.
+Une erreur fréquente consiste à confondre une responsabilité avec le produit ou l'application qui l'implémente.
 
 Par exemple :
 
@@ -286,27 +286,41 @@ Les insights permettent de faire émerger les domaines.
 
 ---
 
-## Domaines, produits, capacités et fonctionnalités
+## Domaines, responsabilités, capacités, produits et fonctionnalités
 
 FLOW distingue plusieurs niveaux de conception.
 
 ```text
 Domaine
     ↓
-Produit
+Responsabilité
     ↓
 Capacité
     ↓
+Produit
+    ↓
 Fonctionnalité
 ```
+
+Le domaine définit l'espace problématique.
+
+La responsabilité exprime la mission durable que l'entreprise doit assumer.
+
+La capacité décrit ce que l'entreprise doit savoir faire pour assumer cette responsabilité.
+
+Le produit constitue le périmètre de gouvernance autonome par lequel une ou plusieurs capacités sont exposées, opérées et font l'objet d'une évolution continue au contact de leurs consommateurs, clients ou utilisateurs.
+
+La fonctionnalité correspond au comportement concret rendu disponible par un produit.
 
 ### Exemple
 
 Domaine : Supply
 
-Produit : Inventory Visibility
+Responsabilité : rendre les ressources disponibles et mobilisables.
 
 Capacité : maintenir une vision cohérente des ressources.
+
+Produit : Inventory Visibility, comme périmètre de gouvernance et d'évolution de cette capacité.
 
 Fonctionnalités :
 
@@ -316,11 +330,11 @@ Fonctionnalités :
 
 Les fonctionnalités évoluent rapidement.
 
+Les produits évoluent au contact de leurs consommateurs.
+
 Les capacités évoluent plus lentement.
 
-Les produits évoluent au rythme des besoins de l'entreprise.
-
-Les domaines sont les éléments les plus durables.
+Les responsabilités et les domaines constituent les éléments les plus durables.
 
 ---
 
@@ -333,7 +347,7 @@ FLOW identifie aujourd'hui une première structuration de domaines :
 
 Ces domaines seront détaillés dans les principes suivants.
 
-Les produits qui les composent restent à découvrir et à préciser.
+Les responsabilités, capacités et produits qui les composent restent à découvrir et à préciser.
 
 ---
 
