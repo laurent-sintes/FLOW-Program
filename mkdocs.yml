@@ -1,16 +1,60 @@
 site_name: FLOW Program
-site_description: Référentiel Architecture d'Entreprise Beaumanoir
+site_description: Référentiel documentaire du programme FLOW
+repo_name: laurent-sintes/FLOW-Program
 repo_url: https://github.com/laurent-sintes/FLOW-Program
-
-nav:
-  - Accueil: index.md
-  - FLOW Foundations: flow-foundations.md
-  - Insights: insights/index.md
-  - Vision: architecture-entreprise/vision/index.md
-  - Méthode: methode/index.md
-  - Transformation: transformation/index.md
-  - Architecture d'Entreprise: architecture-entreprise/index.md
 
 theme:
   name: material
   language: fr
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+nav:
+  - Accueil: index.md
+  - FLOW Foundations: flow-foundations.md
+  - Insights:
+      - Vue d’ensemble: insights/index.md
+      - Histoire de FLOW: insights/histoire-de-flow.md
+      - Journal des insights: insights/journal-des-insights.md
+      - Positionnement de FLOW:
+          - De l’OMS au Demand Management: insights/oms-vers-demand-management.md
+          - FLOW n’est pas une plateforme d’engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
+          - ERP + OMS : séparation utile ou dette architecturale ?: insights/erp-oms-separation-ou-plateforme-integree.md
+          - Convergence, fédération et uniformisation: insights/convergence-federation-uniformisation.md
+      - Modèle conceptuel:
+          - Agreement comme pivot: insights/agreement-comme-pivot.md
+          - Modèle conceptuel FLOW: insights/modele-conceptuel-flow.md
+      - Gouvernance et fédération:
+          - Plateforme fédérale et multi-tenant: insights/plateforme-federale-multitenant.md
+          - GBM, Storeland, UR et fédération: insights/gbm-storeland-ur-federation.md
+          - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
+      - Opérations, décision et données:
+          - Gouvernance logistique : BRD vs GBM: insights/gouvernance-logistique-brd-vs-gbm.md
+          - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
+          - Cohérence des données, DataHub et CEP: insights/coherence-donnees-fraicheur-datahub-cep.md
+          - Inventory Visibility: insights/inventory-visibility-capacite-d-entreprise.md
+      - Finance:
+          - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
+          - Facturation : un assemblage de responsabilités: insights/facturation-capacite-documentaire-transverse.md
+  - Vision: architecture-entreprise/vision/index.md
+  - Principes directeurs:
+      - Vue d’ensemble: architecture-entreprise/principes-directeurs/index.md
+      - Converger, c’est fédérer: architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
+      - FLOW comme plateforme d’entreprise: architecture-entreprise/principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
+      - Les domaines avant les structures: architecture-entreprise/principes-directeurs/3-domaines-avant-les-structures.md
+      - Séparer Demand et Supply: architecture-entreprise/principes-directeurs/4-separer-demand-et-supply.md
+      - Le processus émerge des décisions: architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
+  - Méthode FLOW:
+      - Vue d’ensemble: methode/index.md
+      - De l’insight à la solution: methode/conception-flow.md
+  - Transformation:
+      - Vue d’ensemble: transformation/index.md
+      - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
+  - Glossaire: glossaire.md
