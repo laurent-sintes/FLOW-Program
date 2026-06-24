@@ -35,6 +35,10 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 - [Cohérence des données : fraîcheur, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
 - [Inventory Visibility est une capacité d'entreprise](inventory-visibility-capacite-d-entreprise.md)
 
+## Finance et adhérences externes
+
+- [La convergence Finance constitue une adhérence forte pour FLOW](convergence-finance-adherence-flow.md)
+
 ## Insights structurants à retenir
 
 1. FLOW n'est probablement pas un OMS.
@@ -52,4 +56,6 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 13. La cohérence des données prime sur la seule fraîcheur.
 14. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
 15. Le stock unifié doit devenir un référentiel d'entreprise, pas une capacité portée par un OMS omnicanal.
-16. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
+16. La convergence Finance autour de SAP constitue une adhérence forte pour FLOW.
+17. Toutes les capacités de convergence ne convergent pas dans FLOW.
+18. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
