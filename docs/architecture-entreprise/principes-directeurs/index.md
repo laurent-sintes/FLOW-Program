@@ -15,8 +15,7 @@ Ils ne prescrivent pas une solution technique. Ils donnent un cadre pour décide
 
 ## Principes à consolider
 
-7. Décisions gouvernées et explicables  
-8. Cohérence opérationnelle dans un monde distribué  
-9. API First / Experience Agnostic  
+7. Cohérence opérationnelle dans un monde distribué  
+8. API First / Experience Agnostic  
 
 Chaque principe a vocation à expliciter son intention, les insights qui le fondent, ses conséquences et les décisions qu’il guide.
