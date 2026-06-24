@@ -1,109 +1,193 @@
 # Vision FLOW
 
-## Vision
+## Ambition
 
-Faire émerger une plateforme d'entreprise capable de mutualiser les capacités métier essentielles du groupe tout en préservant la diversité des marques, des canaux et des business models.
+FLOW permet au groupe de traiter de façon cohérente les demandes qui traversent ses marques, canaux, partenaires et business models.
 
-FLOW fournit les capacités partagées permettant de gérer les demandes, les décisions, les ressources opérationnelles et l'exécution de manière cohérente à l'échelle du groupe.
+Le programme met à disposition des capacités communes, gouvernées et réutilisables, tout en laissant aux marques, enseignes et domaines consommateurs la maîtrise de leurs expériences, parcours et spécificités.
 
----
+FLOW ne cherche donc pas à uniformiser l'entreprise.
 
-# Point de vue Direction
+FLOW cherche à fédérer ce qui doit être partagé afin de préserver ce qui différencie réellement.
 
-## Pourquoi FLOW ?
+## Vision synthétique
 
-Construire une plateforme d'entreprise capable de soutenir durablement la croissance, la diversification et la transformation du groupe en mutualisant les capacités métier essentielles tout en préservant l'agilité des marques et des business models.
+> FLOW est une plateforme d'entreprise fédérée qui orchestre les demandes, les décisions, les ressources et les engagements à l'échelle du groupe, sans remplacer l'ensemble des systèmes ni imposer une expérience unique aux métiers.
 
----
+Cette vision repose sur trois convictions :
 
-# Point de vue Métier
+- les responsabilités durables de l'entreprise sont plus stables que ses applications, organisations et processus ;
+- certaines capacités doivent être mutualisées pour éviter les décisions contradictoires, les duplications et les silos ;
+- les marques, canaux et business models doivent conserver leur autonomie sur ce qui crée leur différenciation.
 
-## Pourquoi FLOW ?
+## Promesse pour le groupe
 
-Permettre à chaque marque, enseigne et canal de se concentrer sur son développement commercial et son expérience client en s'appuyant sur des capacités partagées.
+FLOW doit soutenir durablement la croissance, la diversification et la transformation du groupe.
+
+Il doit permettre :
+
+- d'intégrer plus facilement de nouveaux canaux, marques, partenaires ou acquisitions ;
+- de clarifier les responsabilités entre domaines ;
+- de mutualiser les capacités réellement communes ;
+- de réduire la dépendance aux applications historiques ;
+- de mieux gouverner les décisions, règles, engagements et ressources transverses.
+
+## Promesse pour les métiers
+
+Pour les métiers, FLOW doit permettre à chaque marque, enseigne et canal de se concentrer sur son développement commercial et son expérience client.
+
+Les domaines consommateurs restent autonomes dans la construction de leurs parcours, interfaces, traitements et usages.
+
+FLOW leur fournit des capacités partagées sur lesquelles ils peuvent s'appuyer lorsqu'une responsabilité dépasse le périmètre d'un seul canal, d'une seule marque ou d'une seule application.
 
 ### Aujourd'hui
 
-B2C → son OMS
-B2B → son OMS
-Wholesale → son OMS
-Logistique → son OMS
-Achat → son système
+```text
+B2C        → son OMS
+B2B        → son OMS
+Wholesale  → son OMS
+Logistique → son OMS ou ses outils spécialisés
+Achat      → son système
+```
 
-Chaque domaine reconstruit ses règles, ses décisions, sa visibilité stock et ses mécanismes d'allocation.
+Chaque périmètre reconstruit souvent ses règles, ses décisions, sa visibilité stock, ses engagements et ses mécanismes d'allocation.
 
 ### Demain avec FLOW
 
+```text
 Demand
 Decision
 Inventory Visibility
 Supply
 Execution
+```
 
 Les capacités communes sont mutualisées.
 
 Les business models conservent leurs spécificités.
 
----
+## Promesse pour l'IT
 
-# Point de vue IT
-
-## Pourquoi FLOW ?
-
-Transformer un système historiquement organisé autour des catégories de solutions du marché en une plateforme organisée autour des responsabilités métier et des capacités partagées.
+Pour l'IT, FLOW transforme un système historiquement organisé autour des catégories de solutions du marché en une plateforme organisée autour des responsabilités métier et des capacités partagées.
 
 ### Aujourd'hui
 
+```text
 ERP
 OMS
 WMS
 TMS
 CRM
 eCommerce
+```
 
 Les discussions portent principalement sur les produits, les remplacements d'applications et leurs intégrations.
 
 ### Demain avec FLOW
 
-Agreement
-Demand
-Decision
-Inventory Visibility
-Supply
-Execution
+```text
+Domaine
+    ↓
+Responsabilité
+    ↓
+Capacité
+    ↓
+Produit
+    ↓
+Fonctionnalité
+```
 
-Les discussions portent principalement sur les responsabilités, les capacités, les fonctions et les produits qui les implémentent.
+Les discussions portent d'abord sur les responsabilités à assumer, les capacités nécessaires et les produits qui permettent de les gouverner et de les faire évoluer.
 
-FLOW fournit des capacités réutilisables.
+FLOW expose ses capacités au travers d'API unitaires, d'API de masse, d'événements, de projections de données et de services réutilisables.
 
 Les consommateurs construisent les expériences.
 
-Les domaines consommateurs restent autonomes dans la construction de leurs applications, interfaces, parcours et traitements de masse.
+La plateforme fournit les capacités.
 
-Les capacités FLOW sont exposées au travers d'API unitaires, API de masse, événements et projections de données.
+## Modèle fédéré
 
----
+FLOW repose sur un modèle fédéré.
 
-# Ce qui différencie FLOW
+Ce qui doit être commun est mutualisé, gouverné et rendu consommable.
+
+Ce qui différencie les marques, canaux, pays ou business models reste autonome.
+
+```text
+Capacités communes
+        ↓
+Produits FLOW gouvernés
+        ↓
+Consommateurs autonomes
+        ↓
+Expériences différenciées
+```
+
+Cette logique évite deux écueils :
+
+- la prolifération de silos qui reconstruisent les mêmes responsabilités ;
+- l'uniformisation excessive qui détruit les spécificités utiles.
+
+## Frontières de FLOW
+
+FLOW ne possède pas toute l'entreprise.
+
+FLOW n'a pas vocation à remplacer tous les systèmes d'exécution, tous les outils métier ou tous les produits existants.
+
+FLOW orchestre, gouverne et expose des capacités transverses lorsque la responsabilité dépasse naturellement le périmètre d'une application ou d'une organisation.
+
+Les systèmes d'exécution conservent leurs responsabilités opérationnelles.
+
+Finance conserve ses responsabilités comptables, fiscales et de contrôle.
+
+Les domaines consommateurs conservent leurs expériences, leurs interfaces et leurs usages spécifiques.
+
+## Ce qui différencie FLOW
 
 Les systèmes actuels sont principalement organisés autour des applications, des organisations, des processus et des flux.
 
-FLOW propose une lecture organisée autour des responsabilités métier, des capacités partagées, des demandes, des décisions et des ressources opérationnelles.
+FLOW propose une lecture organisée autour des domaines, responsabilités, capacités, demandes, décisions et ressources opérationnelles.
 
-### Aujourd'hui
+### Lecture classique
 
+```text
 Organisation
-→ Application
-→ Processus
-→ Intégration
+    ↓
+Application
+    ↓
+Processus
+    ↓
+Intégration
+```
 
-### Demain avec FLOW
+### Lecture FLOW
 
+```text
+Domaine
+    ↓
 Responsabilité
-→ Capacité
-→ Décision
-→ Exécution
+    ↓
+Capacité
+    ↓
+Produit
+    ↓
+Fonctionnalité
+```
 
-FLOW ne cherche pas à uniformiser les métiers.
+## Signes de réussite
 
-FLOW cherche à mutualiser ce qui est commun afin de laisser davantage de liberté sur ce qui différencie réellement les marques, les canaux et les business models.
+FLOW réussira si le groupe constate progressivement :
+
+- moins de décisions contradictoires entre applications ;
+- une meilleure cohérence des engagements pris envers les clients, magasins, partenaires ou fournisseurs ;
+- une vision plus fiable des ressources disponibles ;
+- une intégration plus rapide de nouveaux canaux, marques ou business models ;
+- des règles communes gouvernées lorsqu'elles doivent être communes ;
+- des spécificités métier préservées lorsqu'elles créent de la valeur ;
+- une réduction de la dépendance aux catégories de progiciels du marché pour penser l'entreprise.
+
+## À retenir
+
+FLOW ne cherche pas à imposer un modèle unique.
+
+FLOW cherche à construire une plateforme fédérée : commune là où l'entreprise doit converger, autonome là où elle doit se différencier.
