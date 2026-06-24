@@ -10,11 +10,11 @@ Ils servent à orienter les choix d'urbanisme, d'architecture et d'organisation 
 
 ### 2. [FLOW comme plateforme d'entreprise](2-flow-comme-plateforme-d-entreprise.md)
 
-### 3. [Les domaines avant les organisations](3-domaines-avant-les-organisations.md)
+### 3. [Les domaines avant les structures](3-domaines-avant-les-structures.md)
 
-### 4. Séparation Demand / Supply(4-separer-demand-et-supply.md)
+### 4. [Séparation Demand / Supply](4-separer-demand-et-supply.md)
 
-### 5. le-processus-emerge-des-decisions(5-le-processus-emerge-des-decisions.md)
+### 5. [le-processus-emerge-des-decisions](5-le-processus-emerge-des-decisions.md)
 
 ### 6. Case Management comme modèle d'orchestration cross-domain
 
