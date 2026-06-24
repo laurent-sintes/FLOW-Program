@@ -49,7 +49,8 @@ nav:
       - Finance:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
-  - Vision: architecture-entreprise/vision/index.md
+  - Vision:
+      - La vision: architecture-entreprise/vision/index.md
   - Principes directeurs:
       - Les principes: architecture-entreprise/principes-directeurs/index.md
       - "01 — Converger, c’est fédérer": architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
@@ -58,10 +59,10 @@ nav:
       - "04 — Séparer Demand et Supply": architecture-entreprise/principes-directeurs/4-separer-demand-et-supply.md
       - "05 — Le processus émerge des décisions": architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
       - "06 — La demande comme objet métier central d’orchestration": architecture-entreprise/principes-directeurs/6-demande-objet-metier-central-orchestration.md
-  - Méthode FLOW:
-      - La méthode: methode/index.md
+  - Méthodologie Projet:
+      - La méthodologie: methode/index.md
       - De l’insight à la solution: methode/conception-flow.md
   - Transformation:
-      - La transformation: transformation/index.md
+      - Conduire la transformation: transformation/index.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
   - Glossaire: glossaire.md
