@@ -1,5 +1,5 @@
 <div class="flow-hero">
-  <h1>FLOW Program</h1>
+  <h1>Programme FLOW</h1>
   <p>Référentiel documentaire et mémoire vivante du programme FLOW.</p>
   <p>FLOW est un programme de convergence : il vise à identifier, mutualiser et gouverner des capacités d’entreprise transverses, sans uniformiser ce qui différencie les marques, les canaux et les business models.</p>
 </div>
