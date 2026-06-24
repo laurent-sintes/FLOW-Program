@@ -8,19 +8,23 @@ theme:
   language: fr
   features:
     - navigation.sections
-    - navigation.expand
     - navigation.footer
+    - navigation.top
+    - toc.follow
     - search.suggest
     - search.highlight
 
 plugins:
   - search
 
+extra_css:
+  - stylesheets/flow.css
+
 nav:
   - Accueil: index.md
   - FLOW Foundations: flow-foundations.md
   - Insights:
-      - Vue d’ensemble: insights/index.md
+      - Repères: insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
       - Journal des insights: insights/journal-des-insights.md
       - Positionnement de FLOW:
@@ -45,7 +49,7 @@ nav:
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision: architecture-entreprise/vision/index.md
   - Principes directeurs:
-      - Vue d’ensemble: architecture-entreprise/principes-directeurs/index.md
+      - Les principes: architecture-entreprise/principes-directeurs/index.md
       - Converger, c’est fédérer: architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
       - FLOW comme plateforme d’entreprise: architecture-entreprise/principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
       - Les domaines avant les structures: architecture-entreprise/principes-directeurs/3-domaines-avant-les-structures.md
@@ -53,9 +57,9 @@ nav:
       - Le processus émerge des décisions: architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
       - La demande comme objet métier central d’orchestration: architecture-entreprise/principes-directeurs/6-demande-objet-metier-central-orchestration.md
   - Méthode FLOW:
-      - Vue d’ensemble: methode/index.md
+      - La méthode: methode/index.md
       - De l’insight à la solution: methode/conception-flow.md
   - Transformation:
-      - Vue d’ensemble: transformation/index.md
+      - La transformation: transformation/index.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
   - Glossaire: glossaire.md
