@@ -1,10 +1,10 @@
-# Transformation
+# Conduire la transformation
 
 FLOW n'est pas uniquement un programme de transformation du système d'information.
 
 FLOW transforme également la manière dont l'entreprise pense ses responsabilités, ses domaines, ses capacités et sa gouvernance.
 
-Cette section documente les changements organisationnels, culturels et méthodologiques induits par le programme.
+Cette section documente les changements organisationnels, culturels et méthodologiques à conduire avec le programme.
 
 ## Articles
 
