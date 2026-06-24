@@ -87,10 +87,15 @@ FLOW vise à construire une plateforme permettant de mutualiser les capacités c
 
 ## Principes directeurs
 
-1. Converger, c'est fédérer.
-2. FLOW comme plateforme d'entreprise.
-3. Les domaines avant les organisations.
+Les principes directeurs constituent le cadre de décision durable de FLOW. Ils sont détaillés dans la section [Principes directeurs](architecture-entreprise/principes-directeurs/index.md).
+
+Les premiers principes documentés sont :
+
+1. Converger, c’est fédérer.
+2. FLOW comme plateforme d’entreprise.
+3. Les domaines avant les structures.
 4. Séparer Demand et Supply.
+5. Le processus émerge des décisions.
 
 ## Taxonomie FLOW
 
