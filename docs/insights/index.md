@@ -14,6 +14,7 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 - [FLOW n'est probablement pas un OMS : de l'OMS au Demand Management](oms-vers-demand-management.md)
 - [FLOW n'est pas une plateforme d'engagement](flow-n-est-pas-une-plateforme-d-engagement.md)
 - [ERP + OMS : séparation utile ou dette architecturale ?](erp-oms-separation-ou-plateforme-integree.md)
+- [Convergence, fédération et uniformisation](convergence-federation-uniformisation.md)
 
 ## Modèle conceptuel
 
@@ -42,10 +43,11 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 5. Agreement est le pivot qui explique les différences entre Achat, B2B et B2C.
 6. Inventory Visibility est une Shared Business Capability.
 7. Decision Services est une Shared Business Capability.
-8. Une plateforme doit fédérer autant qu'elle mutualise.
-9. Le tenant est une notion de gouvernance.
-10. UR prouve que le modèle 100% ségrégé par marque ne suffit pas.
-11. La décision constitue une responsabilité architecturale à part entière.
-12. La cohérence des données prime sur la seule fraîcheur.
-13. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
-14. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
+8. Converger ne signifie pas uniformiser : converger, c'est fédérer.
+9. Une plateforme doit fédérer autant qu'elle mutualise.
+10. Le tenant est une notion de gouvernance.
+11. UR prouve que le modèle 100% ségrégé par marque ne suffit pas.
+12. La décision constitue une responsabilité architecturale à part entière.
+13. La cohérence des données prime sur la seule fraîcheur.
+14. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
+15. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
