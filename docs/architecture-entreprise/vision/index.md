@@ -2,28 +2,148 @@
 
 ## Ambition
 
-FLOW permet au groupe de traiter de façon cohérente les demandes qui traversent ses marques, canaux, partenaires et business models.
+FLOW permet au groupe de traiter de façon cohérente les demandes qui traversent ses marques, canaux, partenaires, fournisseurs et business models.
 
-Le programme met à disposition des capacités communes, gouvernées et réutilisables, tout en laissant aux marques, enseignes et domaines consommateurs la maîtrise de leurs expériences, parcours et spécificités.
+Le programme ne cherche pas à uniformiser l'entreprise.
 
-FLOW ne cherche donc pas à uniformiser l'entreprise.
+Il cherche à fédérer ce qui doit être commun pour préserver ce qui doit rester différenciant.
 
-FLOW cherche à fédérer ce qui doit être partagé afin de préserver ce qui différencie réellement.
+FLOW met à disposition une plateforme Demand commune, capable d'instruire, décider, promettre et orchestrer des demandes transverses, tout en laissant aux marques, canaux et domaines consommateurs la maîtrise de leurs expériences et de leurs spécificités.
 
 ## Vision synthétique
 
-> FLOW est une plateforme d'entreprise fédérée qui orchestre les demandes, les décisions, les ressources et les engagements à l'échelle du groupe, sans remplacer l'ensemble des systèmes ni imposer une expérience unique aux métiers.
+> FLOW est une plateforme Demand fédérée qui fait du Case l’unité métier centrale d’orchestration, afin de réconcilier les responsabilités de demande, décision, stock, promesse, exécution et exception aujourd’hui dispersées entre plusieurs systèmes.
 
-Cette vision repose sur trois convictions :
+Cette vision repose sur quatre convictions :
 
-- les responsabilités durables de l'entreprise sont plus stables que ses applications, organisations et processus ;
-- certaines capacités doivent être mutualisées pour éviter les décisions contradictoires, les duplications et les silos ;
-- les marques, canaux et business models doivent conserver leur autonomie sur ce qui crée leur différenciation.
+- les responsabilités métier durables sont plus stables que les applications, les organisations et les processus ;
+- la demande doit devenir le point d'entrée de la modélisation et de l'orchestration ;
+- les décisions, promesses, allocations et exceptions doivent être explicites, traçables et gouvernées ;
+- les marques, canaux et business models doivent rester autonomes lorsque cette autonomie crée de la valeur.
 
-## Pages associées
+## Le problème à résoudre
 
-- [Architecture cible — Overview de la plateforme FLOW](../../architecture-cible/overview-plateforme-flow.md)
-- [Architecture cible — FLOW dans l’écosystème GBM](../../architecture-cible/flow-dans-ecosysteme-gbm.md)
+Le point de départ opérationnel du programme est concret : FLOW est envisagé comme le remplacement de socles applicatifs différents selon les groupes.
+
+```text
+GBM : remplacer StoreLand / Socloz
+BRD : remplacer SAP / NewStore
+```
+
+Mais cette formulation ne suffit pas.
+
+Elle décrit des applications à remplacer, pas les responsabilités à reprendre.
+
+Les travaux de contexte montrent que les deux groupes partent de trajectoires SI différentes :
+
+```text
+GBM
+Retail d'abord
+    ↓
+E-commerce ajouté
+    ↓
+B2B intégré plus difficilement
+
+BRD
+B2B / wholesale d'abord
+    ↓
+Retail ajouté
+    ↓
+Omnicanal à recomposer
+```
+
+FLOW doit donc résoudre une double convergence :
+
+- convergence entre BRD et GBM ;
+- convergence interne, notamment au sein de GBM entre marques, niveaux de maturité et processus encore dispersés.
+
+Le programme ne peut pas se limiter à choisir un nouvel ERP, un nouvel OMS ou un nouvel outil d'intégration.
+
+Il doit clarifier les responsabilités communes que l'entreprise veut gouverner durablement.
+
+## La rupture proposée par FLOW
+
+Dans une approche classique, on part souvent des applications et de leurs catégories de marché.
+
+```text
+ERP
+OMS
+WMS
+TMS
+CRM
+PIM
+PLM
+```
+
+Cette lecture est utile pour acheter, intégrer ou remplacer des solutions.
+
+Elle est insuffisante pour penser FLOW.
+
+FLOW part d'une autre question :
+
+> Quelle demande doit être instruite, décidée, promise et exécutée ?
+
+Cette inversion change le modèle.
+
+```text
+Demande / Case
+        ↓
+Décisions
+        ↓
+Facts, policies, stock, agreements, réseau d'exécution
+        ↓
+Promesse, allocation, action, exception
+```
+
+Le Case devient l'objet métier actif.
+
+Il porte dans la durée :
+
+- le contexte ;
+- les décisions ;
+- les promesses ;
+- les documents ;
+- les événements ;
+- les exceptions ;
+- les interactions avec les capacités FLOW et les systèmes d'exécution.
+
+## Ce que FLOW apporte
+
+FLOW apporte un point de cohérence transverse lorsque les responsabilités sont aujourd'hui dispersées entre plusieurs systèmes.
+
+Il doit permettre de :
+
+- traiter des demandes longues, transverses et multi-domaines ;
+- rendre explicites les décisions qui font progresser une demande ;
+- disposer d'une vision fiable et exploitable du stock disponible ;
+- réserver, allouer ou tagger une ressource pour une finalité précise ;
+- mobiliser un réseau d'exécution composé de lieux, partenaires, capacités et contraintes ;
+- consommer des projections produit, agreement, client, fournisseur ou service sans devenir propriétaire de tous les référentiels sources ;
+- enrichir des Vues 360 avec les événements, décisions, statuts et documents issus des Cases ;
+- réduire les transferts fragiles entre ERP, OMS et systèmes périphériques lorsque ces transferts reconstruisent artificiellement une cohérence métier.
+
+## Ce que FLOW n'est pas
+
+FLOW n'est pas un ERP bis.
+
+FLOW n'est pas seulement un OMS.
+
+FLOW n'est pas un PIM, un CRM, un WMS, un TMS ou un outil Finance.
+
+FLOW n'a pas vocation à absorber tout le SI.
+
+Les expériences client, les outils métier spécialisés, les systèmes d'exécution physique, la finance, la conception produit ou les systèmes partenaires peuvent rester autonomes.
+
+FLOW doit cependant clarifier leur rôle :
+
+```text
+consommateur
+contributeur
+source
+projection
+système d'exécution
+domaine spécialisé
+```
 
 ## Promesse pour le groupe
 
@@ -32,10 +152,11 @@ FLOW doit soutenir durablement la croissance, la diversification et la transform
 Il doit permettre :
 
 - d'intégrer plus facilement de nouveaux canaux, marques, partenaires ou acquisitions ;
-- de clarifier les responsabilités entre domaines ;
-- de mutualiser les capacités réellement communes ;
-- de réduire la dépendance aux applications historiques ;
-- de mieux gouverner les décisions, règles, engagements et ressources transverses.
+- de rendre comparables les positionnements applicatifs BRD et GBM ;
+- de traiter la convergence inter-groupes et intra-groupes ;
+- de réduire les décisions contradictoires entre applications ;
+- de mieux gouverner les engagements pris envers les clients, magasins, partenaires ou fournisseurs ;
+- de limiter la dépendance aux catégories de progiciels du marché pour penser l'entreprise.
 
 ## Promesse pour les métiers
 
@@ -43,52 +164,26 @@ Pour les métiers, FLOW doit permettre à chaque marque, enseigne et canal de se
 
 Les domaines consommateurs restent autonomes dans la construction de leurs parcours, interfaces, traitements et usages.
 
-FLOW leur fournit des capacités partagées sur lesquelles ils peuvent s'appuyer lorsqu'une responsabilité dépasse le périmètre d'un seul canal, d'une seule marque ou d'une seule application.
-
-### Aujourd'hui
+FLOW leur fournit des capacités partagées lorsque la responsabilité dépasse le périmètre d'une marque, d'un canal, d'un pays ou d'une application.
 
 ```text
-B2C        → son OMS
-B2B        → son OMS
-Wholesale  → son OMS
-Logistique → son OMS ou ses outils spécialisés
-Achat      → son système
+Les consommateurs construisent les expériences.
+FLOW fournit les capacités transverses.
 ```
-
-Chaque périmètre reconstruit souvent ses règles, ses décisions, sa visibilité stock, ses engagements et ses mécanismes d'allocation.
-
-### Demain avec FLOW
-
-```text
-Demand
-Decision
-Inventory Visibility
-Supply
-Execution
-```
-
-Les capacités communes sont mutualisées.
-
-Les business models conservent leurs spécificités.
 
 ## Promesse pour l'IT
 
-Pour l'IT, FLOW transforme un système historiquement organisé autour des catégories de solutions du marché en une plateforme organisée autour des responsabilités métier et des capacités partagées.
+Pour l'IT, FLOW déplace la discussion.
 
-### Aujourd'hui
+La question n'est plus seulement :
 
-```text
-ERP
-OMS
-WMS
-TMS
-CRM
-eCommerce
-```
+> Quel outil remplace quel outil ?
 
-Les discussions portent principalement sur les produits, les remplacements d'applications et leurs intégrations.
+La question devient :
 
-### Demain avec FLOW
+> Quelle responsabilité doit être gouvernée durablement, par quel produit, et avec quelles informations source ou projetées ?
+
+FLOW s'inscrit dans une logique :
 
 ```text
 Domaine
@@ -102,97 +197,53 @@ Produit
 Fonctionnalité
 ```
 
-Les discussions portent d'abord sur les responsabilités à assumer, les capacités nécessaires et les produits qui permettent de les gouverner et de les faire évoluer.
+Cette lecture permet d'éviter deux dérives :
 
-FLOW expose ses capacités au travers d'API unitaires, d'API de masse, d'événements, de projections de données et de services réutilisables.
+- remplacer des applications sans clarifier les responsabilités ;
+- élargir indéfiniment FLOW au motif que tout est connecté.
 
-Les consommateurs construisent les expériences.
+## Mise en architecture cible
 
-La plateforme fournit les capacités.
+La vision se traduit progressivement dans une architecture cible.
 
-## Modèle fédéré
+Les premiers produits candidats sont :
 
-FLOW repose sur un modèle fédéré.
+- Plateforme de Case Management ;
+- Stock Unifié ;
+- Réseau d'Exécution ;
+- Supply Service Registry ;
+- Product Agreement Catalog ;
+- Vues 360.
 
-Ce qui doit être commun est mutualisé, gouverné et rendu consommable.
+Ces produits ne sont pas encore une architecture détaillée.
 
-Ce qui différencie les marques, canaux, pays ou business models reste autonome.
+Ils donnent une première cartographie de ce que FLOW doit rendre gouvernable, consommable et évolutif.
 
-```text
-Capacités communes
-        ↓
-Produits FLOW gouvernés
-        ↓
-Consommateurs autonomes
-        ↓
-Expériences différenciées
-```
+## Pages associées
 
-Cette logique évite deux écueils :
-
-- la prolifération de silos qui reconstruisent les mêmes responsabilités ;
-- l'uniformisation excessive qui détruit les spécificités utiles.
-
-## Frontières de FLOW
-
-FLOW ne possède pas toute l'entreprise.
-
-FLOW n'a pas vocation à remplacer tous les systèmes d'exécution, tous les outils métier ou tous les produits existants.
-
-FLOW orchestre, gouverne et expose des capacités transverses lorsque la responsabilité dépasse naturellement le périmètre d'une application ou d'une organisation.
-
-Les systèmes d'exécution conservent leurs responsabilités opérationnelles.
-
-Finance conserve ses responsabilités comptables, fiscales et de contrôle.
-
-Les domaines consommateurs conservent leurs expériences, leurs interfaces et leurs usages spécifiques.
-
-## Ce qui différencie FLOW
-
-Les systèmes actuels sont principalement organisés autour des applications, des organisations, des processus et des flux.
-
-FLOW propose une lecture organisée autour des domaines, responsabilités, capacités, demandes, décisions et ressources opérationnelles.
-
-### Lecture classique
-
-```text
-Organisation
-    ↓
-Application
-    ↓
-Processus
-    ↓
-Intégration
-```
-
-### Lecture FLOW
-
-```text
-Domaine
-    ↓
-Responsabilité
-    ↓
-Capacité
-    ↓
-Produit
-    ↓
-Fonctionnalité
-```
+- [Architecture cible — Overview de la plateforme FLOW](../../architecture-cible/overview-plateforme-flow.md)
+- [Architecture cible — FLOW dans l’écosystème GBM](../../architecture-cible/flow-dans-ecosysteme-gbm.md)
+- [Principe 6 — La demande comme objet métier central d’orchestration](../principes-directeurs/6-demande-objet-metier-central-orchestration.md)
+- [Principe 7 — Qualifier les informations plutôt que parler de Master Data](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md)
 
 ## Signes de réussite
 
 FLOW réussira si le groupe constate progressivement :
 
 - moins de décisions contradictoires entre applications ;
-- une meilleure cohérence des engagements pris envers les clients, magasins, partenaires ou fournisseurs ;
+- une meilleure cohérence des promesses et engagements ;
 - une vision plus fiable des ressources disponibles ;
+- une meilleure capacité à traiter les exceptions ;
 - une intégration plus rapide de nouveaux canaux, marques ou business models ;
-- des règles communes gouvernées lorsqu'elles doivent être communes ;
-- des spécificités métier préservées lorsqu'elles créent de la valeur ;
-- une réduction de la dépendance aux catégories de progiciels du marché pour penser l'entreprise.
+- une distinction plus claire entre ce qui est source et ce qui est projection ;
+- des expériences métier différenciées, mais appuyées sur des capacités communes.
 
 ## À retenir
 
 FLOW ne cherche pas à imposer un modèle unique.
 
 FLOW cherche à construire une plateforme fédérée : commune là où l'entreprise doit converger, autonome là où elle doit se différencier.
+
+Sa valeur n'est pas de remplacer toutes les applications.
+
+Sa valeur est de rendre cohérentes les demandes, décisions, ressources, promesses, événements et exceptions qui traversent l'entreprise.
