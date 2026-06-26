@@ -1,4 +1,4 @@
-# Vision
+# Qu’est-ce qu’une vision ?
 
 ## À quoi sert une vision ?
 
