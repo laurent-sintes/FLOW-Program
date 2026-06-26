@@ -20,6 +20,10 @@ Cette vision repose sur trois convictions :
 - certaines capacités doivent être mutualisées pour éviter les décisions contradictoires, les duplications et les silos ;
 - les marques, canaux et business models doivent conserver leur autonomie sur ce qui crée leur différenciation.
 
+## Pages associées
+
+- [Ébauche de la plateforme FLOW](ebauche-plateforme-flow.md)
+
 ## Promesse pour le groupe
 
 FLOW doit soutenir durablement la croissance, la diversification et la transformation du groupe.
