@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Synthèse de l'écosystème applicatif BRD</title>
+  <desc id="desc">Schéma synthétique des blocs applicatifs BRD : sourcing, planning, SAP, e-commerce, retail, NewStore, logistique, douanes et sustainability.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b3954" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6b7280"/>
+    </marker>
+    <style>
+      .bg { fill: #f7fbfa; }
+      .title { font: 700 32px Aptos, Calibri, Segoe UI, sans-serif; fill: #0b3954; }
+      .subtitle { font: 400 16px Aptos, Calibri, Segoe UI, sans-serif; fill: #5b6b78; }
+      .zone { fill: #ffffff; stroke: #d7e4e2; stroke-width: 1.5; rx: 18; filter: url(#shadow); }
+      .zone-source { stroke: #81a59f; }
+      .zone-core { stroke: #236159; stroke-width: 2.5; }
+      .zone-channel { stroke: #e09238; }
+      .zone-exec { stroke: #44546a; }
+      .zone-note { fill: #fff7ed; stroke: #e09238; }
+      .label { font: 700 18px Aptos, Calibri, Segoe UI, sans-serif; fill: #1e293b; }
+      .small { font: 400 14px Aptos, Calibri, Segoe UI, sans-serif; fill: #5b6b78; }
+      .app { font: 600 14px Aptos, Calibri, Segoe UI, sans-serif; fill: #236159; }
+      .pill { fill: #eaf4f2; stroke: #bdd9d4; rx: 12; }
+      .pill-orange { fill: #fff3e0; stroke: #f2c284; rx: 12; }
+      .pill-grey { fill: #eef2f7; stroke: #cbd5e1; rx: 12; }
+      .arrow { fill: none; stroke: #6b7280; stroke-width: 2.2; marker-end: url(#arrow); }
+      .arrow-soft { fill: none; stroke: #9aa6b2; stroke-width: 1.8; stroke-dasharray: 6 6; marker-end: url(#arrow); }
+      .caption { font: 600 13px Aptos, Calibri, Segoe UI, sans-serif; fill: #0b3954; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="760"/>
+
+  <text class="title" x="64" y="58">Écosystème applicatif BRD — lecture synthétique</text>
+  <text class="subtitle" x="64" y="84">FLOW remplace SAP et NewStore : la question est de clarifier quelles responsabilités restent, sortent ou deviennent des capacités FLOW.</text>
+
+  <!-- Upstream -->
+  <rect class="zone zone-source" x="64" y="128" width="245" height="150" rx="18"/>
+  <text class="label" x="88" y="164">Sourcing</text>
+  <text class="small" x="88" y="190">Collaboration fournisseur</text>
+  <rect class="pill" x="88" y="212" width="76" height="32" rx="12"/>
+  <text class="app" x="111" y="233">SNC</text>
+  <rect class="pill" x="174" y="212" width="78" height="32" rx="12"/>
+  <text class="app" x="197" y="233">Fast</text>
+
+  <rect class="zone zone-source" x="64" y="314" width="245" height="176" rx="18"/>
+  <text class="label" x="88" y="350">PLM / Planning</text>
+  <text class="small" x="88" y="376">Produit, planification, prévisions</text>
+  <rect class="pill" x="88" y="400" width="70" height="32" rx="12"/>
+  <text class="app" x="110" y="421">PLM</text>
+  <rect class="pill" x="168" y="400" width="70" height="32" rx="12"/>
+  <text class="app" x="189" y="421">BPC</text>
+  <rect class="pill" x="88" y="442" width="112" height="32" rx="12"/>
+  <text class="app" x="109" y="463">Optimate</text>
+
+  <!-- Core -->
+  <rect class="zone zone-core" x="392" y="214" width="255" height="214" rx="18"/>
+  <text class="label" x="424" y="252">Achat / Stock</text>
+  <text class="small" x="424" y="278">Cœur transactionnel</text>
+  <rect class="pill" x="424" y="306" width="100" height="38" rx="12"/>
+  <text class="app" x="455" y="330">SAP</text>
+  <text class="small" x="424" y="372">Achats, commandes, finance, billing</text>
+  <text class="caption" x="424" y="398">Stock entrepôt</text>
+
+  <!-- Channels -->
+  <rect class="zone zone-channel" x="735" y="126" width="250" height="170" rx="18"/>
+  <text class="label" x="760" y="162">E-commerce &amp; B2B</text>
+  <text class="small" x="760" y="188">Canaux et exposition digitale</text>
+  <rect class="pill-orange" x="760" y="214" width="110" height="32" rx="12"/>
+  <text class="app" x="782" y="235">Salesforce</text>
+  <rect class="pill-orange" x="880" y="214" width="78" height="32" rx="12"/>
+  <text class="app" x="897" y="235">Elastic</text>
+  <rect class="pill-orange" x="760" y="254" width="160" height="32" rx="12"/>
+  <text class="app" x="784" y="275">CMS / Web platform</text>
+
+  <rect class="zone zone-channel" x="735" y="336" width="250" height="150" rx="18"/>
+  <text class="label" x="760" y="372">Retail / Stores</text>
+  <text class="small" x="760" y="398">Back-office centralisé stores</text>
+  <rect class="pill-orange" x="760" y="424" width="104" height="34" rx="12"/>
+  <text class="app" x="780" y="446">Cegid Y2</text>
+  <text class="caption" x="875" y="446">Stock magasin</text>
+
+  <!-- OMS -->
+  <rect class="zone zone-core" x="484" y="520" width="328" height="150" rx="18"/>
+  <text class="label" x="514" y="556">NewStore / OMS</text>
+  <text class="small" x="514" y="582">Commandes, promesse, allocation / réservation</text>
+  <text class="caption" x="514" y="612">Intègre stock entrepôt + stock magasin</text>
+  <text class="small" x="514" y="640">Point clé si NewStore disparaît du paysage cible</text>
+
+  <!-- Execution -->
+  <rect class="zone zone-exec" x="1052" y="210" width="170" height="210" rx="18"/>
+  <text class="label" x="1076" y="246">WMS</text>
+  <text class="small" x="1076" y="274">Exécution logistique</text>
+  <text class="app" x="1076" y="312">KTN BE</text>
+  <text class="app" x="1076" y="336">C-Logistics</text>
+  <text class="app" x="1076" y="360">Bleckmann UK</text>
+  <text class="app" x="1076" y="384">FMS FR</text>
+
+  <rect class="zone zone-exec" x="1052" y="460" width="170" height="112" rx="18"/>
+  <text class="label" x="1076" y="496">Douanes</text>
+  <rect class="pill-grey" x="1076" y="520" width="94" height="32" rx="12"/>
+  <text class="app" x="1098" y="541">Connex</text>
+
+  <!-- Sustainability -->
+  <rect class="zone zone-note" x="64" y="544" width="245" height="92" rx="18"/>
+  <text class="label" x="88" y="580">Sustainability</text>
+  <rect class="pill-orange" x="88" y="602" width="70" height="30" rx="12"/>
+  <text class="app" x="112" y="622">DTT</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M309 203 C345 203, 356 254, 392 286"/>
+  <path class="arrow" d="M309 396 C350 386, 357 358, 392 342"/>
+  <path class="arrow" d="M647 320 C684 274, 699 230, 735 210"/>
+  <path class="arrow" d="M647 350 C684 386, 700 408, 735 418"/>
+  <path class="arrow" d="M524 428 C535 470, 562 492, 596 520"/>
+  <path class="arrow" d="M812 460 C780 500, 748 515, 708 520"/>
+  <path class="arrow" d="M812 560 C902 526, 978 408, 1052 330"/>
+  <path class="arrow" d="M812 604 C912 598, 981 546, 1052 520"/>
+  <path class="arrow-soft" d="M1137 420 C1040 486, 936 530, 812 585"/>
+  <path class="arrow-soft" d="M309 590 C378 606, 430 612, 484 610"/>
+
+  <!-- Footnote -->
+  <rect x="64" y="694" width="1158" height="38" rx="12" fill="#eaf4f2" stroke="#bdd9d4"/>
+  <text class="small" x="84" y="718">Lecture FLOW : SAP et NewStore sont dans le périmètre de remplacement initial, mais l'écosystème montre des responsabilités distribuées à qualifier avant de décider ce qui entre réellement dans FLOW.</text>
+</svg>
