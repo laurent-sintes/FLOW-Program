@@ -79,7 +79,11 @@ Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêm
 
 Cette grille commune est nécessaire pour éviter que chaque groupe décrive son SI avec ses propres catégories, ce qui rendrait les comparaisons fragiles.
 
-La capture de la slide 14 doit être conservée comme source officielle client dès qu'elle est disponible sous forme image. Le schéma ci-dessous est une synthèse FLOW produite à partir de cette lecture ; il ne remplace pas la source officielle.
+La capture ci-dessous est conservée comme source officielle client. Elle correspond à l'image embarquée dans la slide 14 du support `Urbanisme-ERP-0.1-draft.pptx`.
+
+![Source officielle client — slide 14 BRD](../assets/images/slide14-brd-source-officielle.svg)
+
+Le schéma suivant est une synthèse FLOW produite à partir de cette lecture ; il ne remplace pas la source officielle.
 
 ## Synthèse visuelle de l'écosystème BRD
 
