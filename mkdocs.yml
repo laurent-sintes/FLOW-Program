@@ -58,7 +58,8 @@ nav:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision:
-      - La vision: architecture-entreprise/vision/index.md
+      - Repères: architecture-entreprise/vision/index.md
+      - Vision du programme FLOW: architecture-entreprise/vision/vision-programme-flow.md
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
