@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">FLOW dans l'écosystème BRD</title>
+  <desc id="desc">Schéma de positionnement cible de FLOW dans l'écosystème applicatif BRD.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f4ef; }
+      .panel { fill: #ffffff; stroke: #d7cfc3; stroke-width: 1.5; rx: 22; }
+      .flow { fill: #17324d; stroke: #0f2438; stroke-width: 2; rx: 28; }
+      .flow-title { fill: #ffffff; font: 700 34px Arial, sans-serif; }
+      .flow-sub { fill: #d8e6f2; font: 400 17px Arial, sans-serif; }
+      .chip { fill: #244967; stroke: #6ea6c8; stroke-width: 1; rx: 14; }
+      .chip-text { fill: #ffffff; font: 600 15px Arial, sans-serif; }
+      .zone-title { fill: #17324d; font: 700 22px Arial, sans-serif; }
+      .zone-sub { fill: #6c5f53; font: 400 14px Arial, sans-serif; }
+      .box { fill: #fffaf2; stroke: #d9b46d; stroke-width: 1.5; rx: 16; }
+      .box-blue { fill: #edf6fb; stroke: #7bb4d5; }
+      .box-green { fill: #eff7ef; stroke: #8fbd8f; }
+      .box-purple { fill: #f4f0fb; stroke: #a98bd3; }
+      .box-red { fill: #fff0ef; stroke: #d98b7d; }
+      .box-grey { fill: #f4f3f1; stroke: #bcb5ad; }
+      .box-title { fill: #263238; font: 700 17px Arial, sans-serif; }
+      .box-text { fill: #4e443b; font: 400 14px Arial, sans-serif; }
+      .note { fill: #6c5f53; font: 400 14px Arial, sans-serif; }
+      .legend { fill: #17324d; font: 700 16px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1500" height="900"/>
+  <rect class="panel" x="42" y="40" width="1416" height="820"/>
+
+  <text x="750" y="88" text-anchor="middle" class="zone-title">FLOW dans l’écosystème BRD</text>
+  <text x="750" y="114" text-anchor="middle" class="zone-sub">Positionnement cible : FLOW porte Demand ; les domaines spécialisés restent autour</text>
+
+  <rect class="flow" x="515" y="250" width="470" height="360"/>
+  <text x="750" y="304" text-anchor="middle" class="flow-title">Plateforme FLOW</text>
+  <text x="750" y="334" text-anchor="middle" class="flow-sub">Demand • Case Management • cohérence transverse</text>
+
+  <rect class="chip" x="560" y="368" width="170" height="42"/>
+  <text x="645" y="394" text-anchor="middle" class="chip-text">Case Management</text>
+  <rect class="chip" x="770" y="368" width="170" height="42"/>
+  <text x="855" y="394" text-anchor="middle" class="chip-text">Stock unifié</text>
+
+  <rect class="chip" x="560" y="430" width="170" height="42"/>
+  <text x="645" y="456" text-anchor="middle" class="chip-text">Réseau d’exécution</text>
+  <rect class="chip" x="770" y="430" width="170" height="42"/>
+  <text x="855" y="456" text-anchor="middle" class="chip-text">Supply Services</text>
+
+  <rect class="chip" x="560" y="492" width="170" height="42"/>
+  <text x="645" y="518" text-anchor="middle" class="chip-text">Product Agreement</text>
+  <rect class="chip" x="770" y="492" width="170" height="42"/>
+  <text x="855" y="518" text-anchor="middle" class="chip-text">Vues 360</text>
+
+  <text x="750" y="574" text-anchor="middle" class="flow-sub">Instruction • promesse • allocation • orchestration • événements</text>
+
+  <text x="206" y="178" text-anchor="middle" class="zone-title">Engagement / canaux</text>
+  <text x="206" y="204" text-anchor="middle" class="zone-sub">intention, commerce, retail, publication</text>
+  <rect class="box box-blue" x="78" y="230" width="256" height="96"/>
+  <text x="206" y="262" text-anchor="middle" class="box-title">Canaux digitaux</text>
+  <text x="206" y="288" text-anchor="middle" class="box-text">Salesforce Commerce Cloud</text>
+  <text x="206" y="310" text-anchor="middle" class="box-text">Elastic • CMS / Web Platform</text>
+  <rect class="box box-blue" x="78" y="348" width="256" height="96"/>
+  <text x="206" y="380" text-anchor="middle" class="box-title">Retail / Stores</text>
+  <text x="206" y="406" text-anchor="middle" class="box-text">Cegid Y2</text>
+  <text x="206" y="428" text-anchor="middle" class="box-text">back-office store • stock magasin</text>
+
+  <text x="206" y="532" text-anchor="middle" class="zone-title">Produit / offre / planning</text>
+  <text x="206" y="558" text-anchor="middle" class="zone-sub">design de l’offre, enrichissement, prévision</text>
+  <rect class="box box-purple" x="78" y="584" width="256" height="116"/>
+  <text x="206" y="618" text-anchor="middle" class="box-title">Design produit &amp; offre</text>
+  <text x="206" y="646" text-anchor="middle" class="box-text">PLM Centric • PIM • DAM</text>
+  <text x="206" y="668" text-anchor="middle" class="box-text">assortiments • contenus • prix</text>
+  <rect class="box box-purple" x="78" y="722" width="256" height="82"/>
+  <text x="206" y="754" text-anchor="middle" class="box-title">Planning</text>
+  <text x="206" y="780" text-anchor="middle" class="box-text">BPC / EPM • Optimate / APS</text>
+
+  <text x="1294" y="178" text-anchor="middle" class="zone-title">Supply</text>
+  <text x="1294" y="204" text-anchor="middle" class="zone-sub">exécution physique, transport, douane</text>
+  <rect class="box box-green" x="1166" y="230" width="256" height="122"/>
+  <text x="1294" y="264" text-anchor="middle" class="box-title">Logistique &amp; entrepôts</text>
+  <text x="1294" y="292" text-anchor="middle" class="box-text">Maersk 4PL • C-Logistics</text>
+  <text x="1294" y="314" text-anchor="middle" class="box-text">Bleckmann UK • WMS</text>
+  <text x="1294" y="336" text-anchor="middle" class="box-text">KTN BE • FMS FR</text>
+  <rect class="box box-green" x="1166" y="374" width="256" height="96"/>
+  <text x="1294" y="406" text-anchor="middle" class="box-title">Transport / douanes</text>
+  <text x="1294" y="432" text-anchor="middle" class="box-text">TMS Connex</text>
+  <text x="1294" y="454" text-anchor="middle" class="box-text">douanes • statuts • événements</text>
+
+  <text x="1294" y="560" text-anchor="middle" class="zone-title">Finance</text>
+  <text x="1294" y="586" text-anchor="middle" class="zone-sub">domaine séparé de Demand et Supply</text>
+  <rect class="box box-red" x="1166" y="612" width="256" height="112"/>
+  <text x="1294" y="646" text-anchor="middle" class="box-title">SAP FI/CO</text>
+  <text x="1294" y="674" text-anchor="middle" class="box-text">comptabilité • contrôle</text>
+  <text x="1294" y="696" text-anchor="middle" class="box-text">fiscalité • écritures financières</text>
+
+  <text x="750" y="702" text-anchor="middle" class="zone-title">Sourcing / fournisseurs</text>
+  <text x="750" y="728" text-anchor="middle" class="zone-sub">collaboration amont, qualité fournisseur, signaux et demandes planifiées</text>
+  <rect class="box box-grey" x="500" y="752" width="500" height="70"/>
+  <text x="750" y="782" text-anchor="middle" class="box-title">SNC • Fast • Vendor • Purchase Request • Planned Request</text>
+  <text x="750" y="806" text-anchor="middle" class="box-text">contributeurs du contexte amont, sans être nécessairement absorbés par FLOW</text>
+
+  <text x="750" y="850" text-anchor="middle" class="note">SAP et NewStore ne sont pas représentés comme satellites : ils sont dans la trajectoire de retrait / remplacement, avec découpage par responsabilité.</text>
+</svg>
