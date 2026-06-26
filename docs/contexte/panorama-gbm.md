@@ -110,6 +110,12 @@ GBM
     → solutions spécialisées autour des canaux, du stock, de la logistique et du B2B
 ```
 
+Le schéma suivant propose une synthèse FLOW du paysage GBM. Il ne représente pas une cible applicative validée : il sert à rendre visibles les zones, les composants pivots et les responsabilités transverses candidates à FLOW.
+
+## Synthèse visuelle de l'écosystème GBM
+
+![Synthèse de l'écosystème applicatif GBM](../assets/images/panorama-gbm-ecosystem.svg)
+
 ## Canaux et flux observés
 
 Le panorama GBM est structuré par canaux de vente.
