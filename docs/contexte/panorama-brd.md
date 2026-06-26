@@ -79,11 +79,13 @@ SAP porte notamment :
 
 - les achats ;
 - les commandes ;
-- une partie de la gestion stock ;
+- le stock entrepôt ;
 - la distribution ;
 - la facturation ;
 - la finance ;
 - une partie des règles et traitements liés à l'allocation.
+
+SAP ne porte donc pas, à lui seul, toute la réalité du stock BRD. Dans le panorama actuel, SAP contient le stock entrepôt, tandis que le stock magasin est porté par Cegid.
 
 Dans le point de départ du projet, SAP est explicitement dans le périmètre de remplacement envisagé par FLOW.
 
@@ -100,11 +102,17 @@ Il intervient notamment sur :
 - retours ;
 - transferts ;
 - promesse ;
-- allocation / réservation selon les flux.
+- allocation / réservation selon les flux ;
+- intégration du stock entrepôt et du stock magasin.
+
+NewStore agrège donc deux réalités de stock qui ne sont pas portées par la même source :
+
+- SAP pour le stock entrepôt ;
+- Cegid pour le stock magasin.
 
 Dans le point de départ du projet, NewStore est également dans le périmètre de remplacement envisagé par FLOW.
 
-La présence de NewStore aux côtés de SAP rend immédiatement visible une difficulté : le cycle de vie de la demande, la promesse, l'allocation et l'exécution ne sont pas naturellement contenus dans un seul système.
+La présence de NewStore aux côtés de SAP rend immédiatement visible une difficulté : le cycle de vie de la demande, la promesse, l'allocation, la vision de disponibilité et l'exécution ne sont pas naturellement contenus dans un seul système.
 
 ## Planification, produit et données
 
@@ -153,6 +161,8 @@ Le panorama BRD mentionne plusieurs systèmes et canaux :
 
 Ces éléments montrent que BRD opère plusieurs canaux et parcours de vente.
 
+Cegid Y2 porte notamment le stock magasin. Cette responsabilité est importante, car elle signifie que la vision de disponibilité utilisée par l'omnicanal ne peut pas être obtenue uniquement à partir de SAP.
+
 FLOW ne doit pas être pensé comme une plateforme d'expérience qui remplacerait tous les points de contact.
 
 Les expériences et canaux peuvent rester consommateurs de capacités FLOW.
@@ -173,12 +183,24 @@ Ce point est central.
 
 Le stock disponible apparaît à plusieurs endroits du paysage, ce qui confirme qu'il ne s'agit pas d'une simple donnée locale.
 
+Le stock BRD n'a pas une source unique :
+
+- SAP contient le stock entrepôt ;
+- Cegid contient le stock magasin ;
+- NewStore intègre les deux pour construire une vision exploitable par les parcours omnicanaux, la promesse et certaines décisions d'allocation ou de réservation.
+
+Cette précision est structurante pour FLOW.
+
+Inventory Visibility ne doit donc pas être compris comme une simple extraction du stock SAP. La capacité doit qualifier l'origine du stock, sa fraîcheur, son niveau de disponibilité, son statut de réservation ou d'allocation, et son usage possible dans une décision de promesse.
+
 La disponibilité est une capacité distribuée, alimentée par plusieurs systèmes et mobilisée par plusieurs décisions.
 
 Pour FLOW, cela prépare deux capacités majeures :
 
 - Inventory Visibility ;
 - Allocation & Promise.
+
+Si FLOW remplace NewStore, il faudra décider si FLOW reprend directement ce rôle d'intégration du stock entrepôt et du stock magasin, ou si cette responsabilité doit être portée par une capacité dédiée d'Inventory Visibility consommée par FLOW.
 
 ## Logistique et exécution
 
@@ -214,13 +236,13 @@ Ils peuvent consommer les faits, événements et historiques produits par FLOW, 
 
 | Zone | Applications / composants BRD | Lecture FLOW |
 | --- | --- | --- |
-| Transactionnel | SAP MM, SD, FI/CO, AFS, Inventory, Billing | Périmètre de remplacement initial ; responsabilités à clarifier |
-| OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande et promesse à analyser |
+| Transactionnel | SAP MM, SD, FI/CO, AFS, Inventory, Billing | Périmètre de remplacement initial ; SAP porte notamment le stock entrepôt |
+| OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande, promesse, allocation et intégration des stocks entrepôt / magasin à analyser |
 | Planification | SAP BPC, Optimate / APS | Sources ou contributeurs de demandes planifiées |
 | Produit / contenu | PLM Centric, PIM, DAM, Elastic | Sources de données produit, attributs et contenus |
 | Fournisseurs | SNC, Fast, Vendor | Collaboration et qualité fournisseur ; contribution au contexte amont |
-| Commerce | Salesforce Commerce Cloud, Cegid Y2, B2C, B2B, retail | Expériences ou systèmes consommateurs |
-| Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités candidates FLOW : Inventory Visibility, Allocation & Promise |
+| Commerce | Salesforce Commerce Cloud, Cegid Y2, B2C, B2B, retail | Expériences ou systèmes consommateurs ; Cegid porte le stock magasin |
+| Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités candidates FLOW : Inventory Visibility, Allocation & Promise ; la source du stock doit être explicitement qualifiée |
 | Logistique | Maersk 4PL, C-Log, Bleckmann, WMS, TMS Connex, KTN | Systèmes d'exécution et sources d'événements |
 | Pilotage | BI Tableau / OPM | Observation, reporting, performance |
 
@@ -232,6 +254,7 @@ Le panorama BRD conduit à plusieurs questions :
 - Quelles responsabilités doivent rester dans Finance, notamment FI/CO ?
 - FLOW doit-il porter les décisions d'allocation, ou seulement les orchestrer ?
 - Inventory Visibility doit-elle consolider les stocks magasin, entrepôt, réservés et futurs ?
+- Si NewStore disparaît, quel composant reprend l'intégration entre stock entrepôt SAP et stock magasin Cegid ?
 - Les outils de planification comme Optimate ou BPC alimentent-ils FLOW en demandes, prévisions ou faits ?
 - Les systèmes logistiques restent-ils seulement exécutants ou deviennent-ils aussi contributeurs d'événements métier ?
 - Quels composants doivent être remplacés, conservés, encapsulés ou simplement connectés ?
@@ -245,3 +268,5 @@ BRD est un écosystème articulé autour de SAP et NewStore, avec de nombreuses 
 Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cette décision ouvre immédiatement une question plus large :
 
 > Quelles capacités transverses faut-il reprendre dans FLOW, et quels systèmes doivent rester contributeurs, consommateurs ou exécutants ?
+
+Le cas du stock l'illustre bien : SAP porte le stock entrepôt, Cegid porte le stock magasin, et NewStore intègre aujourd'hui les deux. Remplacer SAP et NewStore ne suffit donc pas à répondre mécaniquement à la question de la visibilité de stock ; il faut décider où sera portée demain la capacité d'Inventory Visibility.
