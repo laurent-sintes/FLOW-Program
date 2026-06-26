@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Synthèse de l'écosystème applicatif GBM</title>
+  <desc id="desc">Vue synthétique des canaux, systèmes transverses, socles StoreLand, B2B et exécution logistique du paysage GBM, avec mise en évidence des responsabilités candidates FLOW.</desc>
+  <defs>
+    <style>
+      .bg { fill:#f7f8fb; }
+      .title { font:700 34px Arial, sans-serif; fill:#172033; }
+      .subtitle { font:400 17px Arial, sans-serif; fill:#596579; }
+      .zone-title { font:700 18px Arial, sans-serif; fill:#172033; }
+      .label { font:700 16px Arial, sans-serif; fill:#1d2738; }
+      .small { font:400 13px Arial, sans-serif; fill:#4a5568; }
+      .tiny { font:400 12px Arial, sans-serif; fill:#596579; }
+      .zone { fill:#ffffff; stroke:#d8dee9; stroke-width:1.5; rx:22; }
+      .engagement { fill:#ecf6ff; stroke:#8ec5ff; }
+      .transverse { fill:#fff7e6; stroke:#f2c46d; }
+      .core { fill:#f1f8f2; stroke:#94c99c; }
+      .b2b { fill:#f5efff; stroke:#b69af5; }
+      .execution { fill:#f2f4f7; stroke:#c8d0dc; }
+      .flow { fill:#111827; stroke:#111827; }
+      .flow-text { font:700 16px Arial, sans-serif; fill:#ffffff; }
+      .chip { fill:#ffffff; stroke:#c8d0dc; stroke-width:1.3; rx:12; }
+      .chip-strong { fill:#ffffff; stroke:#7ca6d8; stroke-width:1.8; rx:12; }
+      .chip-flow { fill:#eef2ff; stroke:#7c8cf8; stroke-width:1.8; rx:12; }
+      .arrow { stroke:#68758a; stroke-width:2.2; fill:none; marker-end:url(#arrow); }
+      .arrow-soft { stroke:#a1aaba; stroke-width:1.8; fill:none; marker-end:url(#arrow-soft); stroke-dasharray:7 6; }
+      .arrow-green { stroke:#2fad6b; stroke-width:2.3; fill:none; marker-end:url(#arrow-green); }
+      .arrow-orange { stroke:#e18d22; stroke-width:2.3; fill:none; marker-end:url(#arrow-orange); }
+      .note { fill:#ffffff; stroke:#d8dee9; stroke-width:1.2; rx:14; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#68758a"/></marker>
+    <marker id="arrow-soft" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#a1aaba"/></marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2fad6b"/></marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e18d22"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1400" height="900"/>
+  <text class="title" x="52" y="58">Panorama applicatif GBM — synthèse FLOW</text>
+  <text class="subtitle" x="52" y="86">Un SI historiquement retail, ouvert au e-commerce puis au B2B, avec des responsabilités transverses candidates à FLOW.</text>
+
+  <rect class="zone engagement" x="50" y="125" width="1300" height="145" rx="22"/>
+  <text class="zone-title" x="75" y="158">Expériences, canaux et engagement client</text>
+  <rect class="chip" x="78" y="185" width="145" height="52" rx="12"/><text class="label" x="111" y="217">SFCC</text>
+  <rect class="chip" x="245" y="185" width="145" height="52" rx="12"/><text class="label" x="286" y="217">Mirakl</text>
+  <rect class="chip" x="412" y="185" width="165" height="52" rx="12"/><text class="label" x="442" y="217">Outils magasins</text>
+  <rect class="chip" x="599" y="185" width="170" height="52" rx="12"/><text class="label" x="626" y="217">Marketplace</text><text class="tiny" x="638" y="235">ex. Tradebyte</text>
+  <rect class="chip" x="791" y="185" width="135" height="52" rx="12"/><text class="label" x="832" y="217">Elastic</text>
+  <rect class="chip" x="948" y="185" width="135" height="52" rx="12"/><text class="label" x="992" y="217">Zoho</text>
+  <rect class="chip" x="1105" y="185" width="200" height="52" rx="12"/><text class="label" x="1132" y="210">Import / saisie</text><text class="tiny" x="1146" y="230">commandes B2B</text>
+
+  <rect class="zone transverse" x="50" y="305" width="825" height="230" rx="22"/>
+  <text class="zone-title" x="75" y="338">Orchestration transverse et cycle de vie</text>
+  <rect class="chip-flow" x="80" y="366" width="230" height="82" rx="12"/><text class="label" x="160" y="397">UR</text><text class="small" x="106" y="420">United Retail</text><text class="tiny" x="105" y="439">cycle de vie B2C, retours, litiges</text>
+  <rect class="chip-flow" x="335" y="366" width="230" height="82" rx="12"/><text class="label" x="420" y="397">Socloz</text><text class="tiny" x="372" y="420">omnicanal, stock, promesse</text><text class="tiny" x="391" y="439">rôle cible à clarifier</text>
+  <rect class="chip-strong" x="590" y="366" width="240" height="82" rx="12"/><text class="label" x="668" y="397">C-LOG / EAI</text><text class="tiny" x="629" y="420">pivot intégration / exécution</text><text class="tiny" x="646" y="439">événements et statuts</text>
+  <rect class="chip" x="205" y="472" width="195" height="40" rx="12"/><text class="small" x="239" y="497">OMS C-LOG</text>
+  <rect class="chip" x="430" y="472" width="195" height="40" rx="12"/><text class="small" x="489" y="497">Transport</text>
+
+  <rect class="zone core" x="50" y="570" width="825" height="245" rx="22"/>
+  <text class="zone-title" x="75" y="603">Socle retail historique et stock</text>
+  <rect class="chip-strong" x="80" y="630" width="245" height="74" rx="12"/><text class="label" x="154" y="661">StoreLand</text><text class="tiny" x="128" y="684">une instance par marque</text>
+  <rect class="chip" x="350" y="630" width="210" height="74" rx="12"/><text class="label" x="393" y="660">StoreLand</text><text class="tiny" x="392" y="684">Fournitures mutualisé</text>
+  <rect class="chip" x="585" y="630" width="245" height="74" rx="12"/><text class="label" x="640" y="660">Stocks magasins</text><text class="tiny" x="637" y="684">dépôts B2C, dépôts canal</text>
+  <rect class="chip-flow" x="80" y="727" width="245" height="58" rx="12"/><text class="label" x="138" y="757">Module Négoce</text><text class="tiny" x="116" y="777">premium aujourd'hui, cible à généraliser</text>
+  <rect class="chip" x="350" y="727" width="210" height="58" rx="12"/><text class="label" x="397" y="757">Moteur réassort</text><text class="tiny" x="404" y="777">décision à gouverner</text>
+  <rect class="chip" x="585" y="727" width="245" height="58" rx="12"/><text class="label" x="663" y="757">Stock virtuel</text><text class="tiny" x="653" y="777">notamment usages B2B</text>
+
+  <rect class="zone b2b" x="910" y="305" width="440" height="230" rx="22"/>
+  <text class="zone-title" x="935" y="338">B2B / wholesale et engagement commercial</text>
+  <rect class="chip" x="940" y="366" width="175" height="58" rx="12"/><text class="label" x="979" y="397">Zoho CRM</text><text class="tiny" x="971" y="416">relation et pilotage B2B</text>
+  <rect class="chip" x="1145" y="366" width="175" height="58" rx="12"/><text class="label" x="1190" y="397">Elastic</text><text class="tiny" x="1178" y="416">exposition / recherche</text>
+  <rect class="chip-flow" x="940" y="450" width="175" height="58" rx="12"/><text class="label" x="987" y="481">Négoce</text><text class="tiny" x="969" y="500">assortiment + achats</text>
+  <rect class="chip" x="1145" y="450" width="175" height="58" rx="12"/><text class="label" x="1180" y="481">Product Live</text><text class="tiny" x="1174" y="500">catalogue / produit</text>
+
+  <rect class="zone execution" x="910" y="570" width="440" height="245" rx="22"/>
+  <text class="zone-title" x="935" y="603">Exécution, fournisseurs et systèmes spécialisés</text>
+  <rect class="chip-strong" x="940" y="630" width="175" height="64" rx="12"/><text class="label" x="1000" y="661">CBS</text><text class="tiny" x="967" y="682">achats fournisseur, packing list</text>
+  <rect class="chip" x="1145" y="630" width="175" height="64" rx="12"/><text class="label" x="1197" y="661">Dépôts</text><text class="tiny" x="1180" y="682">réassort, B2C, canaux</text>
+  <rect class="chip" x="940" y="720" width="175" height="64" rx="12"/><text class="label" x="989" y="751">Transport</text><text class="tiny" x="978" y="772">suivi expéditions</text>
+  <rect class="chip" x="1145" y="720" width="175" height="64" rx="12"/><text class="label" x="1200" y="751">Finance</text><text class="tiny" x="1187" y="772">documents et écritures</text>
+
+  <rect class="flow" x="420" y="835" width="560" height="48" rx="18"/>
+  <text class="flow-text" x="472" y="865">Responsabilités candidates FLOW : Demand, Order Lifecycle, Inventory Visibility, Promise, Allocation, Exceptions</text>
+
+  <path class="arrow-green" d="M 150 238 C 150 292 165 322 195 366"/>
+  <path class="arrow-green" d="M 495 238 C 490 292 478 322 455 366"/>
+  <path class="arrow-orange" d="M 860 238 C 910 286 985 310 1025 366"/>
+  <path class="arrow" d="M 195 448 C 195 520 195 565 202 630"/>
+  <path class="arrow" d="M 450 448 C 450 520 405 565 325 630"/>
+  <path class="arrow" d="M 710 448 C 760 515 828 566 940 650"/>
+  <path class="arrow-soft" d="M 1028 508 C 1005 585 936 655 830 742"/>
+  <path class="arrow-soft" d="M 707 785 C 715 815 720 825 730 835"/>
+  <path class="arrow-soft" d="M 202 785 C 292 820 350 832 420 850"/>
+  <path class="arrow-soft" d="M 1028 694 C 1010 755 984 805 930 835"/>
+
+  <rect class="note" x="988" y="835" width="362" height="48" rx="14"/>
+  <text class="tiny" x="1012" y="856">Lecture : les expériences restent autonomes, mais les responsabilités</text>
+  <text class="tiny" x="1012" y="874">transverses doivent être réconciliées plutôt que dispersées.</text>
+</svg>
