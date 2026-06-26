@@ -77,10 +77,10 @@ nav:
       - "07 — Qualifier les informations plutôt que parler de Master Data": architecture-entreprise/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
-      - Processus de cadrage: methode/conception-flow.md
+      - Processus de cadrage: methode/processus-de-cadrage.md
   - Transformation:
       - Repères: transformation/index.md
-      - Les changements à conduire: transformation/sujets-de-changement.md
+      - Les changements à conduire: transformation/changements-a-conduire.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
   - Référentiel:
       - Glossaire: glossaire.md
