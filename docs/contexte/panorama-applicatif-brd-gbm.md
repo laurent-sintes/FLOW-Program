@@ -133,6 +133,41 @@ Sans cette grille commune, chaque groupe risque de décrire son SI avec ses prop
 | Risque | Confondre remplacement applicatif et clarification des responsabilités | Préserver l'autonomie mais reproduire les silos et les fragments d'instances |
 | Enjeu d'urbanisme | Traduire une lecture déjà structurée du SI BRD dans une grille commune | Recomposer une lecture commune à partir d'un historique retail fédéral et multi-marques |
 
+## Comparaison par responsabilités
+
+La comparaison BRD / GBM est suffisamment mûre pour être faite par responsabilités.
+
+Elle ne doit pas encore être lue comme un mapping définitif application à application. Les applications citées sont des points d'observation, pas une cible validée.
+
+| Responsabilité | Lecture BRD | Lecture GBM | Implication FLOW |
+| --- | --- | --- | --- |
+| Cycle de vie commande | NewStore porte une partie du cycle de vie commande et de l'OMS ; SAP reste structurant sur le transactionnel | StoreLand porte des commandes par marque ; Socloz et UR reconstituent des visions transverses, notamment B2C | FLOW doit clarifier s'il porte un cycle de vie commande transverse ou s'il orchestre plusieurs cycles locaux |
+| Vision stock | SAP porte le stock entrepôt ; Cegid porte le stock magasin ; NewStore agrège les deux | StoreLand, Socloz, Zoho, C-LOG / EAI et les stocks magasins contribuent à la visibilité | Inventory Visibility est une capacité transverse critique, pas une simple extraction d'un système |
+| Promesse / allocation | NewStore, SAP et les règles d'allocation / ATP sont à clarifier | Socloz, StoreLand, stock virtuel, réassort et canaux contribuent à la décision | FLOW doit distinguer disponibilité, réservation, allocation, promesse et réassort |
+| Retours / litiges / exceptions | NewStore et les systèmes d'exécution participent au cycle retour ; la responsabilité exacte reste à clarifier | UR porte explicitement retours, remboursements, litiges et réintégration stock | Les exceptions sont candidates à une capacité Case / Order Lifecycle transverse |
+| Achat fournisseur | SAP et les outils amont contribuent aux achats et commandes fournisseur | StoreLand Négoce, CBS et processus manuels contribuent aux achats fournisseur | La commande d'achat peut être candidate FLOW, mais les processus spécialisés restent à séparer |
+| Engagement commercial / catalogue | PIM / PLM / pricing / canaux contribuent à l'offre et aux contenus | Module Négoce, Zoho, Elastic, Product Live et processus manuels contribuent à l'assortiment et au catalogue | FLOW ne doit pas absorber le design de l'engagement ; il doit consommer les agreements utiles à l'exécution |
+| B2B / Wholesale | Centre de gravité historique plus naturel côté BRD | Canal ajouté plus difficilement dans un SI historiquement retail | FLOW doit modéliser les responsabilités, pas plaquer une étiquette canal unique |
+| Retail / magasins | Adaptation autour de Cegid, stock magasin et NewStore | Centre de gravité historique, mais fragmenté par marques et instances | FLOW doit unifier sans effacer l'autonomie utile des marques et magasins |
+| Logistique / exécution | WMS, transport, douanes, partenaires et systèmes d'exécution à connecter | C-LOG / EAI, OMS C-LOG, Transport, CBS et suivi expéditions à connecter | FLOW doit exposer et consommer des événements, sans devenir tous les systèmes d'exécution |
+| Finance / documents | SAP FI/CO et les documents financiers restent structurants | Finance, documents B2B, factures et pièces opérationnelles à raccorder selon les flux | FLOW doit porter le suivi documentaire nécessaire au Case sans absorber toute la comptabilité |
+
+## Zones d'incertitude à assumer
+
+La comparaison actuelle est utile, mais elle reste une première lecture.
+
+Plusieurs points ne sont pas encore assez stabilisés pour trancher :
+
+- le mapping précis entre les responsabilités Socloz, NewStore, UR et StoreLand ;
+- le rôle exact de FLOW dans la commande d'achat ;
+- la frontière cible entre FLOW, ERP, SI B2B et domaine engagement ;
+- la granularité de la vision stock attendue par canal, dépôt, marque, pays ou client ;
+- les règles d'allocation, de promesse, de réassort et de priorisation ;
+- le rôle futur de CBS comme domaine consommateur ou comme source de responsabilités candidates FLOW ;
+- le traitement des stocks confiés, parfois lus comme B2B côté BRD et retail côté GBM.
+
+Ces incertitudes ne bloquent pas la comparaison. Elles doivent être affichées comme des hypothèses à instruire.
+
 ## Responsabilités communes observées
 
 Malgré des architectures différentes, les mêmes responsabilités apparaissent régulièrement :
@@ -171,6 +206,8 @@ La comparaison doit se faire à partir d'une grille d'urbanisme commune, faute d
 Le cas d'UR côté GBM illustre ce point : UR entre dans le champ d'étude non parce qu'il figurait dans le périmètre applicatif initial, mais parce qu'il porte une responsabilité transverse qui ressemble fortement à une capacité cible FLOW.
 
 Le cas du module Négoce StoreLand ajoute un autre enseignement : certaines responsabilités actuellement regroupées dans une application devront probablement être séparées dans la cible entre engagement commercial et exécution / achat.
+
+Le cas de CBS ajoute une nuance supplémentaire : certains systèmes sont surtout des domaines consommateurs de FLOW, mais manipulent des objets ou événements qui peuvent relever d'une responsabilité transverse FLOW.
 
 ## À retenir
 
