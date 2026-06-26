@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">FLOW dans l'écosystème GBM</title>
+  <desc id="desc">Diagramme de positionnement de FLOW dans l'écosystème applicatif GBM, avec les applications satellites et les socles historiques de transformation.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f8fb}.title{font:700 34px Arial,sans-serif;fill:#172033}.subtitle{font:400 17px Arial,sans-serif;fill:#596579}.zone{fill:#fff;stroke:#d8dee9;stroke-width:1.6;rx:24}.zone-title{font:700 18px Arial,sans-serif;fill:#172033}.chip{fill:#fff;stroke:#c8d0dc;stroke-width:1.4;rx:13}.chip-legacy{fill:#fff7e6;stroke:#f2c46d;stroke-width:1.7;rx:13}.chip-flow{fill:#111827;stroke:#111827;rx:18}.chip-text{font:700 14px Arial,sans-serif;fill:#253044}.chip-small{font:400 12px Arial,sans-serif;fill:#596579}.flow-title{font:700 24px Arial,sans-serif;fill:#fff}.flow-sub{font:400 13px Arial,sans-serif;fill:#dbe3f0}.caption{font:400 14px Arial,sans-serif;fill:#596579}.arrow{stroke:#8a94a6;stroke-width:2;fill:none;marker-end:url(#arrow);stroke-dasharray:7 6}.arrow-strong{stroke:#4f66e8;stroke-width:2.5;fill:none;marker-end:url(#arrow-strong)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a94a6"/></marker>
+    <marker id="arrow-strong" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4f66e8"/></marker>
+  </defs>
+  <rect class="bg" width="1500" height="900"/>
+  <text class="title" x="60" y="58">FLOW dans l’écosystème GBM</text>
+  <text class="subtitle" x="60" y="88">Positionnement cible : FLOW reprend les responsabilités transverses sans remplacer tous les systèmes satellites.</text>
+
+  <rect class="zone" x="60" y="125" width="420" height="205" rx="24"/>
+  <text class="zone-title" x="88" y="160">Engagement / Expériences</text>
+  <rect class="chip" x="90" y="190" width="105" height="42" rx="13"/><text class="chip-text" x="125" y="216">SFCC</text>
+  <rect class="chip" x="215" y="190" width="105" height="42" rx="13"/><text class="chip-text" x="247" y="216">Mirakl</text>
+  <rect class="chip" x="340" y="190" width="105" height="42" rx="13"/><text class="chip-text" x="374" y="216">Zoho</text>
+  <rect class="chip" x="90" y="250" width="105" height="42" rx="13"/><text class="chip-text" x="123" y="276">Elastic</text>
+  <rect class="chip" x="215" y="250" width="230" height="42" rx="13"/><text class="chip-text" x="275" y="276">Outils magasins</text>
+
+  <rect class="zone" x="60" y="370" width="420" height="205" rx="24"/>
+  <text class="zone-title" x="88" y="405">Produit / Offre / Agreements</text>
+  <rect class="chip" x="90" y="435" width="130" height="42" rx="13"/><text class="chip-text" x="124" y="461">PLM</text>
+  <rect class="chip" x="240" y="435" width="205" height="42" rx="13"/><text class="chip-text" x="286" y="461">Product Live</text>
+  <rect class="chip" x="90" y="495" width="160" height="42" rx="13"/><text class="chip-text" x="127" y="521">PIM / Catalogue</text>
+  <rect class="chip-legacy" x="270" y="495" width="175" height="42" rx="13"/><text class="chip-text" x="309" y="521">Négoce STLD</text>
+
+  <rect class="zone" x="1020" y="125" width="420" height="205" rx="24"/>
+  <text class="zone-title" x="1048" y="160">Supply / Exécution</text>
+  <rect class="chip" x="1050" y="190" width="135" height="42" rx="13"/><text class="chip-text" x="1082" y="216">C-LOG / EAI</text>
+  <rect class="chip" x="1205" y="190" width="105" height="42" rx="13"/><text class="chip-text" x="1236" y="216">CBS</text>
+  <rect class="chip" x="1330" y="190" width="85" height="42" rx="13"/><text class="chip-text" x="1350" y="216">WMS</text>
+  <rect class="chip" x="1050" y="250" width="130" height="42" rx="13"/><text class="chip-text" x="1085" y="276">Transport</text>
+  <rect class="chip" x="1200" y="250" width="120" height="42" rx="13"/><text class="chip-text" x="1233" y="276">Dépôts</text>
+  <rect class="chip" x="1340" y="250" width="75" height="42" rx="13"/><text class="chip-text" x="1354" y="276">Finance</text>
+
+  <rect class="zone" x="1020" y="370" width="420" height="205" rx="24"/>
+  <text class="zone-title" x="1048" y="405">Socles GBM dans la trajectoire</text>
+  <rect class="chip-legacy" x="1050" y="438" width="145" height="54" rx="13"/><text class="chip-text" x="1085" y="466">StoreLand</text><text class="chip-small" x="1074" y="483">instances marques</text>
+  <rect class="chip-legacy" x="1215" y="438" width="145" height="54" rx="13"/><text class="chip-text" x="1261" y="466">Socloz</text><text class="chip-small" x="1242" y="483">omnicanal</text>
+  <rect class="chip-legacy" x="1133" y="510" width="145" height="42" rx="13"/><text class="chip-text" x="1168" y="536">UR / United Retail</text>
+
+  <rect class="chip-flow" x="535" y="235" width="430" height="360" rx="24"/>
+  <text class="flow-title" x="585" y="280">Plateforme FLOW</text>
+  <text class="flow-sub" x="585" y="307">Demand transverse — responsabilités à réunifier</text>
+  <rect class="chip" x="585" y="335" width="330" height="42" rx="13"/><text class="chip-text" x="639" y="361">Plateforme de Case Management</text>
+  <rect class="chip" x="585" y="390" width="150" height="42" rx="13"/><text class="chip-text" x="617" y="416">Stock Unifié</text>
+  <rect class="chip" x="765" y="390" width="150" height="42" rx="13"/><text class="chip-text" x="784" y="416">Réseau d’Exécution</text>
+  <rect class="chip" x="585" y="445" width="330" height="42" rx="13"/><text class="chip-text" x="645" y="471">Supply Service Registry</text>
+  <rect class="chip" x="585" y="500" width="160" height="42" rx="13"/><text class="chip-text" x="607" y="526">Product Agreement</text>
+  <rect class="chip" x="765" y="500" width="150" height="42" rx="13"/><text class="chip-text" x="813" y="526">Vues 360</text>
+  <text class="flow-sub" x="585" y="570">Case, stock, réseau, projections et contexte transverse</text>
+
+  <path class="arrow-strong" d="M480 230 C515 235 515 270 535 300"/>
+  <path class="arrow-strong" d="M480 475 C520 470 520 455 535 445"/>
+  <path class="arrow-strong" d="M965 310 C995 300 998 270 1020 245"/>
+  <path class="arrow" d="M965 480 C995 485 998 488 1020 490"/>
+
+  <text class="caption" x="60" y="650">Lecture : les applications satellites restent autour de FLOW. Les socles StoreLand, Socloz et UR sont dans la trajectoire de transformation, car ils portent aujourd’hui des responsabilités transverses candidates FLOW.</text>
+  <text class="caption" x="60" y="676">Ce schéma est un positionnement, pas une cartographie de flux. Les interactions détaillées seront décrites dans l’architecture fonctionnelle cible.</text>
+</svg>
