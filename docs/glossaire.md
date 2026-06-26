@@ -152,6 +152,12 @@ Source reconnue comme faisant autorité pour un usage, un consommateur, une déc
 
 Dimension utile pour la conception d’interface, décrivant l’échelle d’un échange d’information. FLOW distinguera notamment les échanges unitaires, ciblés sur un objet ou une action, et les échanges de masse, portant sur un ensemble d’informations.
 
+## H
+
+### Hotspot
+
+Sujet de tension métier ou architecture qui concentre des enjeux de convergence, de décision ou d’arbitrage. Un hotspot n’est pas nécessairement une capacité cible : c’est un point saillant à instruire.
+
 ## I
 
 ### Information
@@ -184,6 +190,10 @@ Dimension utile pour la conception d’interface, décrivant comment une informa
 
 Module StoreLand activé pour certaines marques premium. Il permet notamment de construire un assortiment, préparer un commercial agreement et passer des commandes d’achat. Son analyse conduit à découpler le design commercial, plutôt dans le domaine engagement, de la commande d’achat et de l’exécution, potentiellement candidates FLOW.
 
+### Moteur de règles
+
+Composant qui exécute des règles ou policies pour produire une décision, qualifier un traitement, appliquer une priorité ou adapter un comportement selon le contexte d’un Case.
+
 ## N
 
 ### Nature d’information
@@ -204,6 +214,10 @@ Nature d’information représentant un objet portant une identité, un cycle de
 
 Système ou ensemble de responsabilités permettant de gérer le cycle de vie des commandes, leur orchestration, leurs statuts et parfois la promesse, la réservation ou l’exécution. Dans FLOW, il faut distinguer le rôle OMS d’un système existant et les responsabilités cibles de Demand / Order Lifecycle Orchestration.
 
+### Orchestration
+
+Coordination de plusieurs décisions, actions, événements, documents et systèmes autour d’une demande. Dans FLOW, l’orchestration est portée par les Cases et par les capacités qu’ils mobilisent.
+
 ## P
 
 ### Packing list
@@ -213,6 +227,10 @@ Document ou jeu d’informations publié par un fournisseur fabricant pour décr
 ### PIM — Product Information Management
 
 Système de gestion et d’enrichissement des informations produit. Dans FLOW, le PIM est plutôt positionné dans le design de l’offre et de l’engagement ; FLOW peut consommer une projection produit d’exécution sans devenir un PIM.
+
+### Plateforme Demand
+
+Plateforme centrée sur la demande : elle instruit, décide, promet, orchestre, suit et explique des Cases transverses, en mobilisant les capacités partagées nécessaires au fulfillment.
 
 ### Plateforme d’entreprise
 
@@ -229,6 +247,10 @@ Nature d’information représentant une règle, politique, paramètre ou contra
 ### Principe directeur
 
 Règle durable qui oriente les choix de conception et permet d’évaluer leur cohérence avec l’ambition de FLOW.
+
+### Product Agreement Catalog
+
+Projection d’exécution qui met à disposition les produits, assortiments, conditions commerciales et agreements nécessaires au traitement d’une demande. Il ne remplace pas nécessairement le PIM, le PLM ou les outils de design commercial.
 
 ### Produit
 
@@ -252,6 +274,10 @@ Engagement pris envers un client, un canal ou une partie prenante sur la capacit
 
 Décision ou processus visant à réalimenter un magasin, dépôt, canal ou périmètre en stock. Le réassort doit être distingué de la visibilité de stock, de l’allocation, de la réservation et de la promesse.
 
+### Réseau d’exécution
+
+Ensemble des lieux, partenaires, services, capacités, contraintes et ressources mobilisables pour satisfaire une demande. Il couvre notamment les entrepôts, magasins, transporteurs, prestataires et capacités Supply.
+
 ### Responsabilité
 
 Mission durable que l’entreprise doit assumer. Une responsabilité constitue l’ancrage entre un domaine et les capacités nécessaires pour l’exercer.
@@ -261,6 +287,10 @@ Mission durable que l’entreprise doit assumer. Une responsabilité constitue l
 Expression d’un comportement métier attendu : la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Dans la nomenclature d’information FLOW, une règle est généralement traitée comme une `Policy`.
 
 ## S
+
+### SAV — Service après-vente
+
+Ensemble des demandes de service, réclamations, litiges, retours, échanges ou remboursements liés à un client ou utilisateur. Dans FLOW, le SAV peut être lu comme une famille de demandes à instruire, suivre, décider, résoudre et expliquer.
 
 ### Socloz
 
@@ -286,6 +316,10 @@ Socle historique majeur du SI GBM, décliné en instances par marque. StoreLand 
 
 Domaine qui porte les responsabilités relatives à la disponibilité, à la mobilisation, à l’allocation et à l’exécution des ressources.
 
+### Supply Service Registry
+
+Référentiel des services Supply consommables par FLOW : capacités disponibles, API, SLA, contraintes, périmètres, conditions d’appel et informations nécessaires pour mobiliser le réseau d’exécution.
+
 ## T
 
 ### Tenant
@@ -297,6 +331,12 @@ Notion de gouvernance qui représente une unité à laquelle s’appliquent des 
 ### UR — United Retail
 
 Composant sur mesure .NET / C# du paysage GBM, qui consolide les commandes B2C et leur cycle de vie dans un contexte StoreLand multi-instances. UR porte notamment des responsabilités de statuts, retours, remboursements, litiges, points fidélité et réintégration stock.
+
+## V
+
+### Vues 360
+
+Projections agrégées autour d’un objet ou d’un acteur, par exemple client, fournisseur, commande ou Case. Elles donnent une lecture transverse en consultation, nourrie par des événements, faits, documents, statuts et décisions issus de plusieurs domaines.
 
 ## W
 
