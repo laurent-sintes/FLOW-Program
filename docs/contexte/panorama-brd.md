@@ -32,6 +32,28 @@ Comprendre BRD consiste donc à identifier :
 - ce qui pourrait être repris par FLOW ;
 - ce qui doit rester hors FLOW.
 
+## Une lecture déjà urbanisée du SI BRD
+
+La slide 14, rédigée par le responsable SI BRD, ne présente pas seulement des applications isolées.
+
+Les applications y sont placées dans des blocs qui s'apparentent à une lecture d'urbanisme : le SI est représenté selon des zones, des responsabilités ou des ensembles cohérents.
+
+Cette observation est importante pour FLOW.
+
+Elle montre que BRD dispose déjà d'une manière de structurer et de raconter son système d'information. Cette manière de voir peut être très utile, mais elle ne doit pas être confondue avec une grille commune à tout le programme.
+
+FLOW devra redéfinir un urbanisme unifié, capable de rendre comparables les positionnements applicatifs BRD et GBM.
+
+Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêmes critères pour les deux groupes :
+
+- dans quel domaine se situe une application ?
+- quelle responsabilité porte-t-elle réellement ?
+- quelle capacité métier sert-elle ?
+- est-elle remplacée, conservée, connectée, encapsulée ou laissée hors périmètre ?
+- quelle différence existe entre son positionnement actuel et son positionnement cible ?
+
+Cette grille commune est nécessaire pour éviter que chaque groupe décrive son SI avec ses propres catégories, ce qui rendrait les comparaisons fragiles.
+
 ## Lecture globale
 
 Le panorama BRD peut être lu selon un enchaînement de grandes responsabilités :
@@ -258,12 +280,15 @@ Le panorama BRD conduit à plusieurs questions :
 - Les outils de planification comme Optimate ou BPC alimentent-ils FLOW en demandes, prévisions ou faits ?
 - Les systèmes logistiques restent-ils seulement exécutants ou deviennent-ils aussi contributeurs d'événements métier ?
 - Quels composants doivent être remplacés, conservés, encapsulés ou simplement connectés ?
+- Quelle grille d'urbanisme commune permettra de comparer le positionnement des applications BRD et GBM ?
 
 ## À retenir
 
 BRD n'est pas seulement un paysage SAP.
 
 BRD est un écosystème articulé autour de SAP et NewStore, avec de nombreuses solutions spécialisées.
+
+La slide 14 montre aussi que BRD possède déjà une manière de représenter son SI par blocs. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
 
 Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cette décision ouvre immédiatement une question plus large :
 
