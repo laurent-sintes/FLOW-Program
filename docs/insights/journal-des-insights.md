@@ -41,3 +41,42 @@ L'objectif initial de remplacement de Storeland, SoCloz, SAP ou NewStore s'est r
 
 ## Insight 014 — Agreement évite de multiplier les variantes de commandes
 Agreement apporte les règles et conditions de traitement applicables à une commande. Une commande peut rester plus générique si son contexte, l'Agreement et un référentiel de règles pilotent dynamiquement les variations de traitement. FLOW doit donc éviter de décliner une même commande en dizaines de variantes de processus lorsque les différences peuvent être gouvernées par des règles explicites.
+
+## Insight 015 — La convergence est IT et business model
+Le point de départ n'est pas seulement une convergence de systèmes. FLOW doit aussi traiter les différences de business models, de pratiques business, de modes d'engagement, d'achat, de vente et d'exploitation des marques.
+
+## Insight 016 — BRD et GBM ont des centres de gravité inverses
+GBM est historiquement un SI retail ouvert ensuite au e-commerce puis au B2B. BRD est plutôt issu d'un socle B2B / wholesale ensuite adapté au retail. FLOW doit créer une couche commune au-dessus de ces héritages différents.
+
+## Insight 017 — La convergence est aussi intra-GBM
+La convergence ne concerne pas seulement BRD et GBM. Elle concerne aussi les marques GBM entre elles, notamment lorsque certaines disposent de processus outillés et d'autres de pratiques plus manuelles ou dispersées.
+
+## Insight 018 — Les organisations consomment la plateforme, elles ne la structurent pas
+B2B, B2C, retail, wholesale ou achat sont des organisations, canaux ou contextes de consommation. Ils doivent consommer FLOW, tandis que la plateforme doit être urbanisée selon des responsabilités plus durables.
+
+## Insight 019 — Demand / Supply remplace les oppositions achat / vente
+La conception ne doit pas partir de “j'achète” ou “je vends”, ni de B2C ou B2B. Elle doit distinguer la demande à instruire, décider et promettre, du réseau d'exécution à mobiliser.
+
+## Insight 020 — FLOW réconcilie ERP et OMS dans une plateforme Demand
+La séparation ERP / OMS crée des transferts, doublons et zones grises de responsabilité. FLOW cherche à reconstruire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration.
+
+## Insight 021 — Le fulfillment précède les documents
+Une conception orientée ERP part souvent de la commande, de la facture, du bon de livraison ou des écritures. FLOW doit partir de la demande à satisfaire, puis intégrer les documents et la finance au bon moment.
+
+## Insight 022 — La finance doit rester un domaine séparé
+FLOW peut produire ou consommer des faits, documents, événements économiques et références nécessaires à la comptabilité. Mais FLOW ne remplace pas la comptabilité, la fiscalité ou le contrôle de gestion.
+
+## Insight 023 — Le PIM n'est pas naturellement dans FLOW
+Si le PIM soutient le design de l'offre, les assortiments, les commercial agreements, les prix ou les contenus d'engagement client, il doit rester hors FLOW. FLOW a besoin d'une projection produit d'exécution, pas d'un PIM bis.
+
+## Insight 024 — Les données doivent être qualifiées plutôt que rangées dans “Master Data”
+FLOW doit distinguer les natures d'information — Command, Event, Fact, Policy, Objet Métier, Document, Nomenclature — et leur statut — Source ou Projection. La notion de Master Data est trop large pour guider l'architecture.
+
+## Insight 025 — CBS est un domaine spécialisé contributeur et consommateur de FLOW
+CBS porte des processus fournisseurs spécialisés : packing list, conformité documentaire, livraison amont, collaboration fournisseur. Certaines responsabilités qu'il manipule — commande, cycle de vie, statuts, événements, vision 360 — peuvent toutefois relever de FLOW.
+
+## Insight 026 — C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI
+C-LOG ne doit pas être réduit à une brique d'intégration. Il peut porter ou agréger des responsabilités logistiques, entrepôt, transport, stock et événements d'exécution.
+
+## Insight 027 — FLOW devient le moteur de la convergence
+La plateforme FLOW, et le programme qui la gouverne, deviennent le moteur de la convergence : pratiques business, responsabilités métier, capacités partagées, règles de décision, données opérationnelles, trajectoires applicatives et autonomie locale.
