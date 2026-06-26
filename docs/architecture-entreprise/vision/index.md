@@ -22,7 +22,8 @@ Cette vision repose sur trois convictions :
 
 ## Pages associées
 
-- [Ébauche de la plateforme FLOW](ebauche-plateforme-flow.md)
+- [Architecture cible — Overview de la plateforme FLOW](../../architecture-cible/overview-plateforme-flow.md)
+- [Architecture cible — FLOW dans l’écosystème GBM](../../architecture-cible/flow-dans-ecosysteme-gbm.md)
 
 ## Promesse pour le groupe
 
