@@ -4,7 +4,7 @@
 
 Cette page documente le SI CBS, qui n'apparaît pas dans la cartographie applicative GBM visible mais qui porte des responsabilités importantes autour des commandes d'achat fournisseur, du support achat et de la livraison amont.
 
-CBS est important pour FLOW car il se situe à la frontière entre :
+CBS est important pour FLOW car il met en évidence des responsabilités à articuler avec la plateforme :
 
 - les commandes d'achat fournisseur ;
 - les processus de collaboration fournisseur ;
@@ -51,7 +51,7 @@ Ce type de fonctionnalité montre que CBS porte des processus spécialisés de c
 
 ## Lecture d'architecture
 
-CBS doit être considéré, en première lecture, comme un domaine consommateur de FLOW.
+CBS doit être considéré, en première lecture, comme un domaine consommateur et contributeur de FLOW.
 
 Il porte des processus spécialisés autour de :
 
@@ -66,6 +66,8 @@ Il porte des processus spécialisés autour de :
 Ces processus ne doivent pas être absorbés par FLOW par défaut.
 
 En revanche, CBS porte ou manipule certaines responsabilités plus génériques qui peuvent être candidates à FLOW.
+
+Il ne s'agit donc pas de poser une frontière étanche entre CBS et FLOW, mais de distinguer les responsabilités spécialisées des responsabilités transverses.
 
 ## Responsabilités candidates FLOW
 
@@ -85,15 +87,15 @@ La question n'est donc pas de décider que CBS entre ou sort entièrement de FLO
 La question est de séparer les responsabilités :
 
 ```text
-CBS — domaine consommateur
+CBS — domaine spécialisé
     → processus fournisseur spécialisés
     → packing list
     → conformité transport / douane / taxes
     → documentation légale
     → collaboration fournisseur
 
-FLOW — responsabilités candidates
-    → commande d'achat
+FLOW — responsabilités transverses candidates
+    → commande d'achat si elle porte un engagement d'approvisionnement
     → cycle de vie
     → statuts / événements
     → vision 360
@@ -102,27 +104,28 @@ FLOW — responsabilités candidates
 
 ## Recommandation d'architecture — CBS et FLOW
 
-CBS doit être considéré comme un domaine consommateur de FLOW.
+CBS doit être considéré comme un domaine consommateur et contributeur de FLOW.
 
 FLOW ne doit pas absorber par défaut les processus spécialisés de collaboration fournisseur, packing list, conformité transport ou documentation réglementaire.
 
 En revanche, les responsabilités génériques de commande, cycle de vie, statuts, événements et vision 360 doivent être évaluées comme candidates à FLOW.
 
-Cette recommandation permet de poser une frontière saine :
+Cette recommandation permet de poser une lecture saine par responsabilité :
 
 - CBS conserve les processus fournisseur spécialisés ;
 - FLOW peut devenir le socle transverse de visibilité, de cycle de vie et d'orchestration ;
 - CBS consomme les informations ou événements exposés par FLOW ;
-- FLOW peut consommer certains faits produits par CBS.
+- FLOW peut consommer certains faits produits par CBS ;
+- les responsabilités qui donnent de la cohérence au Demand & Fulfillment ne doivent pas être dispersées uniquement parce qu'elles sont aujourd'hui portées par un système spécialisé.
 
 ## Questions structurantes pour FLOW
 
 Le SI CBS conduit à plusieurs questions :
 
-- CBS doit-il rester un domaine spécialisé consommateur de FLOW ?
+- CBS doit-il rester un domaine spécialisé consommateur et contributeur de FLOW ?
 - Quelles responsabilités de CBS relèvent réellement de la collaboration fournisseur et de la conformité ?
 - Quelles responsabilités de CBS relèvent plutôt d'une capacité transverse FLOW ?
-- La commande d'achat fournisseur doit-elle être portée par FLOW, par l'ERP, ou par un domaine spécialisé ?
+- La commande d'achat fournisseur doit-elle être portée par FLOW lorsqu'elle représente un engagement d'approvisionnement ou une disponibilité future ?
 - Où doit vivre le cycle de vie transverse d'une commande d'achat ?
 - La vision 360 d'une commande fournisseur doit-elle être exposée par FLOW ?
 - Quels événements CBS doit-il publier à FLOW ?
@@ -135,8 +138,8 @@ CBS est un composant important du paysage GBM même s'il n'apparaît pas dans la
 
 Il porte des processus spécialisés autour de la commande d'achat fournisseur, de la collaboration fournisseur, de la livraison amont, de la packing list et de la conformité documentaire.
 
-CBS doit être lu comme un domaine consommateur de FLOW.
+CBS doit être lu comme un domaine consommateur et contributeur de FLOW.
 
 Mais certaines responsabilités qu'il porte ou manipule — commande, cycle de vie, statuts, événements, vision 360 — peuvent relever d'une capacité transverse FLOW.
 
-La bonne frontière n'est donc pas applicative. Elle doit être posée par responsabilité.
+La bonne lecture n'est donc pas applicative. Elle doit être posée par responsabilité, en distinguant ce qui relève d'un système spécialisé et ce qui doit être réconcilié dans FLOW.
