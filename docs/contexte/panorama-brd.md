@@ -181,6 +181,10 @@ Le paysage BRD mentionne plusieurs solutions autour de la planification, du prod
 - PIM & DAM — Product Information Management et Digital Asset Management ;
 - Elastic — exposition, recherche ou usages catalogue selon les contextes.
 
+À noter : BRD dispose déjà d'un PIM.
+
+Cette précision est importante pour le positionnement de FLOW. FLOW ne doit pas être conçu, par défaut, comme un nouveau référentiel produit ou comme un remplacement naturel du PIM. Le PIM doit plutôt être vu comme un système contributeur de données produit qualifiées, que FLOW peut consommer, relier à des demandes, enrichir par des faits opérationnels ou utiliser dans des décisions.
+
 Ces composants ne sont pas nécessairement à remplacer par FLOW.
 
 Ils constituent plutôt des systèmes contributeurs, sources ou consommateurs selon les capacités concernées.
@@ -296,7 +300,7 @@ Ils peuvent consommer les faits, événements et historiques produits par FLOW, 
 | Transactionnel | SAP MM, SD, FI/CO, AFS, Inventory, Billing | Périmètre de remplacement initial ; SAP porte notamment le stock entrepôt |
 | OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande, promesse, allocation et intégration des stocks entrepôt / magasin à analyser |
 | Planification | SAP BPC, Optimate / APS | Sources ou contributeurs de demandes planifiées |
-| Produit / contenu | PLM Centric, PIM, DAM, Elastic | Sources de données produit, attributs et contenus |
+| Produit / contenu | PLM Centric, PIM, DAM, Elastic | Systèmes contributeurs de données produit et contenus ; le PIM existe déjà et ne doit pas être remplacé par défaut par FLOW |
 | Fournisseurs | SNC, Fast, Vendor | Collaboration et qualité fournisseur ; contribution au contexte amont |
 | Commerce | Salesforce Commerce Cloud, Cegid Y2, B2C, B2B, retail | Expériences ou systèmes consommateurs ; Cegid porte le stock magasin |
 | Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités candidates FLOW : Inventory Visibility, Allocation & Promise ; la source du stock doit être explicitement qualifiée |
@@ -313,6 +317,7 @@ Le panorama BRD conduit à plusieurs questions :
 - Inventory Visibility doit-elle consolider les stocks magasin, entrepôt, réservés et futurs ?
 - Si NewStore disparaît, quel composant reprend l'intégration entre stock entrepôt SAP et stock magasin Cegid ?
 - Les outils de planification comme Optimate ou BPC alimentent-ils FLOW en demandes, prévisions ou faits ?
+- Le PIM existant reste-t-il le référentiel produit de référence, et quelles données produit FLOW doit-il consommer plutôt que posséder ?
 - Les systèmes logistiques restent-ils seulement exécutants ou deviennent-ils aussi contributeurs d'événements métier ?
 - Quels composants doivent être remplacés, conservés, encapsulés ou simplement connectés ?
 - Quelle grille d'urbanisme commune permettra de comparer le positionnement des applications BRD et GBM ?
@@ -333,3 +338,5 @@ Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'
 > Quelles capacités transverses faut-il reprendre dans FLOW, et quels systèmes doivent rester contributeurs, consommateurs ou exécutants ?
 
 Le cas du stock l'illustre bien : SAP porte le stock entrepôt, Cegid porte le stock magasin, et NewStore intègre aujourd'hui les deux. Remplacer SAP et NewStore ne suffit donc pas à répondre mécaniquement à la question de la visibilité de stock ; il faut décider où sera portée demain la capacité d'Inventory Visibility.
+
+Le cas du PIM va dans le même sens : BRD dispose déjà d'un référentiel produit. FLOW devra donc clarifier quelles données produit il consomme, qualifie ou relie à ses demandes, sans présumer qu'il doit posséder le référentiel produit lui-même.
