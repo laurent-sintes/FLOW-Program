@@ -2,11 +2,19 @@
 
 ## 1. Le point de départ n'est pas FLOW
 
-Le point de départ est un programme de convergence entre les SI de Boardriders et du Groupe Beaumanoir.
+Le point de départ est un programme de convergence entre Boardriders et le Groupe Beaumanoir.
 
-La question initiale est simple : comment rapprocher deux patrimoines SI ayant des histoires différentes ?
+Cette convergence n'est pas seulement IT.
+
+Elle concerne aussi les business models, les pratiques business, les modes d'engagement client, les pratiques d'achat, les modèles de vente, les organisations et les façons d'opérer les marques.
+
+Il est vrai que les discussions traitent beaucoup du SI, car les écarts applicatifs rendent les différences visibles.
+
+Mais le sujet de fond est plus large : comment rapprocher deux patrimoines IT et business ayant des histoires, des modèles opérationnels et des pratiques différentes ?
 
 À ce stade, les discussions portent essentiellement sur les ERP, les OMS, les intégrations, la logistique et le stock.
+
+Le risque initial est donc de réduire trop vite la convergence à une convergence applicative, alors que le programme doit aussi traiter la convergence des pratiques et des modèles métier.
 
 ## 2. Deux histoires SI très différentes
 
@@ -123,17 +131,40 @@ La demande devient l'objet principal.
 
 Ce qui différencie réellement les situations n'est pas la demande mais le cadre d'engagement.
 
-## 13. Apparition d'Agreement
+## 13. Agreement devient un concept central
 
-Les différences entre B2B, B2C ou Achat proviennent principalement :
+Les différences entre B2B, B2C, Achat, retail, wholesale ou marketplace ne doivent pas nécessairement conduire à décliner des dizaines de variantes de commandes ou de processus.
 
-- des règles ;
-- des prix ;
-- des allocations ;
-- des SLA ;
-- des engagements.
+Une commande peut rester plus générique si son contexte est interprété au regard d'un cadre d'engagement explicite.
 
-Agreement devient un concept central.
+Agreement devient central parce qu'il porte ou référence les règles et conditions de traitement applicables :
+
+- prix ;
+- assortiment ;
+- conditions commerciales ;
+- SLA ;
+- priorités ;
+- droits ;
+- contraintes ;
+- règles d'allocation ;
+- conditions de livraison ;
+- règles de retour ou de remboursement.
+
+Le contexte de la commande, appuyé par un référentiel de règles et un moteur de règles, peut alors piloter dynamiquement les variations de traitement.
+
+La variation n'est plus encodée dans une multiplication de processus spécialisés.
+
+Elle est portée par la combinaison :
+
+```text
+Commande générique
+    + contexte
+    + Agreement
+    + règles
+    = traitement adapté
+```
+
+Cet insight change profondément la conception : FLOW doit éviter de multiplier les objets et processus par canal lorsque les variations peuvent être gouvernées par Agreement et par des règles explicites.
 
 ## 14. Le modèle conceptuel FLOW
 
@@ -145,7 +176,21 @@ Ce modèle devient progressivement le socle conceptuel de FLOW.
 
 Le découpage Achat / Vente B2B / Vente B2C est remis en question.
 
-Ces domaines consommeront probablement la plateforme plutôt que de la structurer.
+Ces découpages correspondent davantage à des organisations, canaux, pratiques ou contextes de consommation qu'à la structure profonde de la plateforme.
+
+Les organisations comme B2B, B2C, retail, wholesale ou achat consommeront la plateforme.
+
+La plateforme, elle, doit être urbanisée selon un découpage plus durable :
+
+```text
+Demand
+    ↓
+Supply
+```
+
+Demand porte l'instruction, la décision, la promesse, l'allocation, le Case et les règles qui permettent de traiter la demande.
+
+Supply porte les ressources, lieux, partenaires, capacités et événements d'exécution.
 
 ## 16. Quatrième découverte
 
@@ -169,11 +214,26 @@ FLOW est progressivement pensé comme une plateforme capable d'intégrer naturel
 
 Les notions de fédération, de plateforme d'entreprise et de multi-tenant deviennent centrales.
 
-## 19. FLOW devient un programme d'entreprise
+## 19. FLOW devient le moteur de la convergence
 
 FLOW n'est plus seulement un projet de convergence SI.
 
-FLOW devient un programme d'entreprise visant à construire une plateforme fédérale conciliant :
+La plateforme FLOW, et le programme qui la gouverne, deviennent progressivement le moteur de la convergence.
+
+Cette convergence ne consiste pas seulement à rapprocher des applications.
+
+Elle consiste à organiser la manière dont le groupe fait converger :
+
+- ses pratiques business ;
+- ses business models ;
+- ses responsabilités métier ;
+- ses capacités partagées ;
+- ses règles de décision ;
+- ses données opérationnelles ;
+- ses trajectoires applicatives ;
+- ses niveaux d'autonomie locale.
+
+FLOW devient donc un programme d'entreprise visant à construire une plateforme fédérale conciliant :
 
 - autonomie locale ;
 - gouvernance globale ;
