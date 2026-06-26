@@ -1,28 +1,28 @@
-# Sujets de changement FLOW
+# Les changements à conduire avec FLOW
 
 ## Intention
 
-Cette page identifie les principaux sujets de changement à conduire avec le programme FLOW.
+Cette page identifie les grands changements de posture à conduire avec le programme FLOW.
 
 Elle ne cherche pas à lister tous les impacts possibles.
 
-Un programme de transformation qui pousse trop de sujets de changement en parallèle devient difficile à comprendre, à piloter et à faire adopter.
+Un programme de transformation qui pousse trop de sujets en parallèle devient difficile à comprendre, à piloter et à faire adopter.
 
-La recommandation est donc de regrouper les impacts autour de cinq grands sujets maximum.
+La recommandation est donc de regrouper les impacts autour de cinq grands déplacements maximum.
 
-Ces sujets doivent être formulés comme de vrais changements de posture : ce que les équipes doivent arrêter de faire, ce qu'elles doivent apprendre à faire autrement, et pourquoi cela compte pour FLOW.
+Ces changements doivent inspirer la transformation : ils disent ce que les équipes doivent apprendre à regarder autrement, ce qu'elles doivent arrêter de reproduire, et ce que FLOW rend possible.
 
-## Les cinq sujets de changement
+## Les cinq grands changements
 
-| Sujet | Ancien réflexe | Nouveau réflexe FLOW |
+| Changement | Ancien réflexe | Nouveau réflexe FLOW |
 | --- | --- | --- |
 | 1. Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise | Partir des marques, canaux, directions ou organisations existantes. | Partir des problèmes durables de l'entreprise, des domaines et des responsabilités à gouverner. |
-| 2. Passer de “j'achète / je vends” à Demand / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail ou wholesale. | Distinguer ce qui relève de la demande à instruire et ce qui relève de l'exécution à mobiliser. |
+| 2. Passer de “j'achète / je vends” à Demand / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître une demande à instruire et satisfaire, puis mobiliser le bon réseau d'exécution. |
 | 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts de données. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 4. Penser fulfillment et satisfaction client avant documents | Commencer par les documents à produire : facture, livraison, commande, écritures. | Commencer par la demande à satisfaire, puis intégrer les documents et la finance au bon moment. |
-| 5. Converger sans uniformiser | Chercher un modèle unique ou laisser chaque groupe garder son modèle. | Fédérer les capacités communes tout en préservant les différences utiles de BRD, GBM et des marques. |
+| 5. Piloter la convergence par niveaux | Choisir entre tout centraliser ou tout laisser spécifique. | Centraliser, unifier, standardiser ou différencier selon la responsabilité et l'exigence business. |
 
-## Sujet 1 — Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise
+## Changement 1 — Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise
 
 ### Changement attendu
 
@@ -51,13 +51,13 @@ Quel problème d'entreprise doit être résolu durablement ?
 - Les cartographies doivent montrer les domaines et responsabilités, pas seulement les équipes ou applications.
 - Les arbitrages doivent éviter de reproduire l'organisation existante dans la plateforme cible.
 
-### Message de change
+### Message de transformation
 
 FLOW ne sert pas l'organisation telle qu'elle est.
 
 FLOW aide l'entreprise à résoudre ses problèmes durables avec une structure plus lisible.
 
-## Sujet 2 — Passer de “j'achète / je vends” à Demand / Supply
+## Changement 2 — Passer de “j'achète / je vends” à Demand / Supply
 
 ### Changement attendu
 
@@ -67,6 +67,7 @@ Les discussions sont souvent structurées par des oppositions historiques :
 J'achète / je vends
 B2C / B2B
 Retail / wholesale
+Commande / retour / SAV
 BRD / GBM
 Marque A / marque B
 ```
@@ -85,20 +86,27 @@ Supply
     → les ressources, lieux, partenaires et capacités d'exécution à mobiliser
 ```
 
+Une demande reste une demande.
+
+Elle peut être une commande, un retour, une réclamation, un litige, une demande SAV, une demande d'échange, une demande de remboursement ou une demande de réintégration en stock.
+
+Le point commun est qu'elle touche à un engagement envers un client, un magasin, un partenaire, un fournisseur ou une organisation interne.
+
 ### Impacts principaux
 
-- Les équipes doivent apprendre à reconnaître une demande au-delà du canal ou du type de vente.
-- Les sujets B2C, B2B, retail ou wholesale doivent être comparés par responsabilité, pas isolés par vocabulaire historique.
-- Les achats et ventes peuvent partager des mécanismes communs : demande, engagement, promesse, allocation, exécution, exception.
+- Les équipes doivent apprendre à reconnaître une demande au-delà du canal, du type de vente ou du processus historique.
+- Les sujets B2C, B2B, retail, wholesale ou SAV doivent être comparés par responsabilité, pas isolés par vocabulaire historique.
+- Les achats, ventes, retours et demandes de service peuvent partager des mécanismes communs : demande, engagement, promesse, allocation, exécution, exception, résolution.
 - Les débats doivent moins opposer “achat” et “vente”, et davantage distinguer ce qui relève de Demand ou Supply.
+- Les services orientés client, comme certains services SAV Sarenza, peuvent s'intégrer à la plateforme dès lors qu'ils manipulent des demandes, statuts, événements, exceptions ou engagements clients.
 
-### Message de change
+### Message de transformation
 
 FLOW ne part pas de “j'achète” ou “je vends”.
 
 FLOW part d'une demande à satisfaire et d'un réseau d'exécution à mobiliser.
 
-## Sujet 3 — Réconcilier ERP et OMS dans une plateforme Demand
+## Changement 3 — Réconcilier ERP et OMS dans une plateforme Demand
 
 ### Changement attendu
 
@@ -119,13 +127,13 @@ FLOW cherche à dépasser cette séparation en construisant une plateforme Deman
 - Le remplacement de SAP, NewStore, StoreLand, Socloz ou UR doit être analysé par responsabilité, pas application par application.
 - Les transferts de données entre ERP et OMS ne doivent pas être reconduits automatiquement dans la cible.
 
-### Message de change
+### Message de transformation
 
 FLOW n'empile pas un nouvel OMS sur un nouvel ERP.
 
 FLOW cherche à réconcilier les responsabilités de demande dans une plateforme cohérente.
 
-## Sujet 4 — Penser fulfillment et satisfaction client avant documents
+## Changement 4 — Penser fulfillment et satisfaction client avant documents
 
 ### Changement attendu
 
@@ -157,58 +165,75 @@ La finance et les documents doivent ensuite être intégrés comme conséquences
 - La Finance doit être intégrée proprement, mais sans piloter seule la modélisation opérationnelle.
 - Les équipes doivent distinguer l'événement métier, le fait opérationnel, le document et l'écriture financière.
 
-### Message de change
+### Message de transformation
 
 On ne nie pas la facture.
 
 On la remet à sa place : elle documente et comptabilise une réalité opérationnelle que FLOW doit d'abord savoir instruire, promettre et exécuter.
 
-## Sujet 5 — Converger sans uniformiser
+## Changement 5 — Piloter la convergence par niveaux
 
 ### Changement attendu
 
-La convergence FLOW ne consiste pas à imposer un seul modèle opérationnel à BRD, GBM et aux marques.
+La convergence FLOW ne consiste pas à choisir entre deux extrêmes :
 
-Elle consiste à fédérer des capacités communes tout en respectant les différences utiles.
+```text
+tout centraliser
+ou
+tout laisser spécifique
+```
 
-La convergence se joue à plusieurs niveaux :
+Cette lecture est trop manichéenne.
 
-- entre BRD et GBM ;
-- entre les marques au sein de GBM ;
-- entre retail, e-commerce, B2B et wholesale ;
-- entre les systèmes historiques et la plateforme cible.
+La convergence doit être pilotée par niveaux.
+
+Selon la responsabilité, le contexte et l'exigence business, le programme peut décider de :
+
+- centraliser une capacité ;
+- unifier un modèle ;
+- standardiser une règle ou un processus ;
+- fédérer plusieurs pratiques ;
+- laisser une différenciation locale ;
+- préserver une singularité business lorsqu'elle crée de la valeur.
+
+FLOW n'est donc pas une boîte à outil unique dans laquelle tout doit entrer.
+
+FLOW est une plateforme qui aide à décider le bon niveau de commun et le bon niveau de différenciation.
 
 ### Impacts principaux
 
-- Les équipes doivent distinguer ce qui doit être commun de ce qui peut rester spécifique.
-- Les différences doivent être qualifiées : différenciantes, historiques, contraintes ou à résorber.
+- Les équipes doivent arrêter de traiter la convergence comme un choix binaire entre uniformisation et autonomie totale.
+- Les différences doivent être qualifiées : différenciantes, historiques, contraintes, transitoires ou à résorber.
+- Les responsabilités doivent être analysées une par une pour déterminer le bon niveau de convergence.
 - Les trajectoires de retrait ou remplacement applicatif doivent être expliquées par responsabilité.
-- Les populations impactées doivent comprendre ce qu'elles gagnent en commun, et ce qu'elles conservent en autonomie.
+- Les populations impactées doivent comprendre ce qui sera commun, ce qui sera standardisé, ce qui restera autonome et pourquoi.
 
-### Message de change
+### Message de transformation
 
-FLOW ne cherche pas l'uniformisation complète.
+FLOW ne cherche pas à tout uniformiser.
 
-FLOW cherche le bon niveau de fédération.
+FLOW organise une convergence à tiroirs : commune là où c'est nécessaire, différenciée là où le business l'exige.
 
 ## Sujets volontairement regroupés
 
-Certains sujets auraient pu être séparés, mais doivent être rattachés aux cinq thèmes ci-dessus pour éviter de diluer la conduite du changement.
+Certains sujets auraient pu être séparés, mais doivent être rattachés aux cinq changements ci-dessus pour éviter de diluer la conduite du changement.
 
 | Sujet détaillé | À rattacher à |
 | --- | --- |
 | Domain-Driven Design | Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise |
-| Urbanisme commun BRD / GBM | Ne plus servir l'organisation + converger sans uniformiser |
+| Urbanisme commun BRD / GBM | Ne plus servir l'organisation + piloter la convergence par niveaux |
 | B2C / B2B / retail / wholesale | Passer à Demand / Supply |
 | Achats / ventes | Passer à Demand / Supply |
+| SAV / litiges / retours / remboursements | Passer à Demand / Supply + fulfillment avant documents |
+| Services SAV Sarenza | Passer à Demand / Supply |
 | Case Management | Réconcilier ERP et OMS dans une plateforme Demand |
 | Stock unifié | Réconcilier ERP et OMS + fulfillment avant documents |
 | Allocation et promesse | Réconcilier ERP et OMS + Demand / Supply |
 | Facture, bon de livraison, avoir, écritures | Fulfillment et satisfaction client avant documents |
 | Finance | Fulfillment et satisfaction client avant documents |
-| Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + converger sans uniformiser |
-| Product ownership | Support de gouvernance pour tous les sujets, mais pas un sujet de change autonome au départ |
-| Nomenclature data | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet de change autonome au départ |
+| Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + piloter la convergence par niveaux |
+| Product ownership | Support de gouvernance pour tous les changements, mais pas un sujet autonome au départ |
+| Nomenclature data | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
 
 ## Points de vigilance
 
@@ -217,12 +242,13 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 - Ne pas commencer les ateliers par les documents si le sujet réel est la satisfaction de la demande.
 - Ne pas reconduire la séparation ERP / OMS uniquement parce qu'elle existe dans l'architecture actuelle.
 - Ne pas confondre convergence et uniformisation.
+- Ne pas confondre différenciation business et héritage applicatif subi.
 - Ne pas réduire le change au déploiement applicatif final.
 
 ## À retenir
 
-La conduite du changement FLOW doit être concrète.
+La conduite du changement FLOW doit être concrète et inspirante.
 
 Les impacts sont nombreux, mais ils doivent être racontés à travers cinq grands déplacements de posture.
 
-Le changement central est le suivant : FLOW demande de passer d'une lecture par organisation, canal, application ou document à une lecture par problème d'entreprise, demande, responsabilité, fulfillment et fédération.
+Le changement central est le suivant : FLOW demande de passer d'une lecture par organisation, canal, application ou document à une lecture par problème d'entreprise, demande, responsabilité, fulfillment et convergence par niveaux.
