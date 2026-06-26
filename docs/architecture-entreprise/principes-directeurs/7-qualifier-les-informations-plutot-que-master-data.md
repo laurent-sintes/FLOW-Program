@@ -12,15 +12,19 @@ Dans une démarche de Master Data Management, le même terme renvoie plutôt à 
 
 Dans FLOW, ces deux lectures ne suffisent pas.
 
-Le programme doit qualifier les informations selon plusieurs dimensions explicites, plutôt que les enfermer dans une catégorie unique appelée `Master Data`.
+Le programme doit qualifier les informations selon des dimensions explicites, simples et utilisables pour la cartographie fonctionnelle.
 
 ## Principe
 
 > FLOW ne classe pas les informations en `Master Data` par héritage ERP.
 >
-> FLOW qualifie chaque information selon sa nature, sa gouvernance au repos, son mode d'échange, sa granularité d'échange et sa source faisant foi pour un usage donné.
+> FLOW qualifie chaque information selon sa nature et son statut dans le domaine : source ou projection.
 
 Ce principe permet de concevoir la plateforme autour de la cohérence opérationnelle, et non autour d'une taxonomie héritée d'un progiciel.
+
+Les dimensions plus techniques — mode d'échange, granularité unitaire ou masse, protocole, synchronisation, API ou événement — seront utiles plus tard pour concevoir les interfaces.
+
+Elles ne doivent pas alourdir la première cartographie fonctionnelle.
 
 ## D'où vient la notion de Master Data ?
 
@@ -78,14 +82,13 @@ Mais pour FLOW, cette catégorie devient trop large.
 
 Elle mélange :
 
-- des entités métier ;
-- des lieux ;
-- des structures organisationnelles ;
-- des conditions commerciales ;
-- des objets de configuration ;
-- des référentiels ;
-- des informations utilisées pour décider ;
-- des éléments qui n'ont pas la même temporalité, la même gouvernance ni le même mode d'échange.
+- des objets métier ;
+- des nomenclatures ;
+- des documents ou références documentaires ;
+- des politiques, règles et paramètres ;
+- des faits utilisés pour décider ;
+- des informations sources et des projections ;
+- des éléments qui n'ont pas la même responsabilité dans l'architecture fonctionnelle.
 
 Le risque est alors de déplacer dans FLOW le fourre-tout ERP sans clarifier les responsabilités réelles.
 
@@ -109,7 +112,7 @@ Il traite notamment de :
 
 Cette discipline reste utile pour FLOW.
 
-Mais elle ne suffit pas à définir les types d'informations manipulées par la plateforme.
+Mais elle ne suffit pas à définir les natures d'information manipulées par la plateforme.
 
 FLOW doit donc distinguer :
 
@@ -121,7 +124,7 @@ Master Data Management
     → discipline de qualité, gouvernance et diffusion
 
 Qualification des informations FLOW
-    → modèle multi-dimensions pour concevoir la plateforme
+    → nomenclature simple pour cartographier la plateforme
 ```
 
 ## Définition de base : information
@@ -138,7 +141,7 @@ Produit demandé
 Décision d'allocation
 Événement de retard d'expédition
 Document de livraison
-Vue 360 d'un Case
+Nomenclature des statuts commande
 ```
 
 Une quantité seule, un code isolé ou un libellé peuvent être des attributs.
@@ -149,137 +152,65 @@ Ils ne constituent pas toujours une information métier complète.
 
 La nature d'information est une catégorie qui induit un comportement commun à toutes les informations associées.
 
-FLOW distingue au minimum les natures suivantes.
+Pour une première cartographie fonctionnelle, FLOW retient les natures suivantes.
 
 | Nature | Définition | Comportement attendu |
 | --- | --- | --- |
-| Objet métier / Aggregate Root | Entité métier portant une identité, un cycle de vie et des invariants | Gouverné, versionnable selon les cas, producteur d'événements |
-| Événement | Signal indiquant qu'un fait ou un état significatif a changé | Immuable, historisé, consommable par d'autres domaines |
-| Fait | Réalité métier observée ou calculée à un instant donné | Utilisé pour constater, décider ou expliquer |
-| Décision | Choix explicite pris à partir d'un contexte, de faits et de règles | Traçable, explicable, susceptible de créer un engagement ou une action |
-| Document | Pièce ou preuve métier, opérationnelle, financière ou réglementaire | Reçu, généré, attaché, validé, conservé ou transmis |
-| Vue | Agrégation de plusieurs informations accessible en lecture seule | Consultable, exposable, reconstruite ou dérivée selon les besoins |
-| Configuration | Paramètre ou structure qui influence le comportement du système | Gouvernée, contrôlée, versionnée ou auditée selon criticité |
+| Command | Intention adressée à un système ou domaine pour demander une action | Déclenche un traitement, peut être acceptée, refusée, mise en attente ou produire des événements |
+| Event | Signal indiquant qu'un changement significatif s'est produit | Immuable, historisé, consommable par d'autres domaines |
+| Fact | Réalité métier observée, reçue ou calculée à un instant donné | Utilisé pour constater, décider, promettre, allouer ou expliquer |
+| Policy | Règle, politique, paramètre ou contrainte qui influence une décision ou un comportement | Gouvernée, versionnée ou contrôlée selon criticité ; appliquée par des décisions ou traitements |
+| Objet métier | Objet portant une identité, un cycle de vie et la responsabilité de sa cohérence à chaque mise à jour | Gouverné par un domaine, protecteur de ses invariants, producteur d'événements |
+| Document | Pièce, preuve ou artefact métier reçu, généré, attaché ou transmis | Conservé, référencé, validé, partagé ou transmis selon les obligations métier |
+| Nomenclature | Ensemble contrôlé de valeurs, codes ou classifications partagés | Stabilise le vocabulaire, les statuts, les catégories ou les classifications utilisées par plusieurs domaines |
 
 Cette liste ne cherche pas à reproduire les catégories ERP.
 
-Elle cherche à identifier les comportements de conception : ce qui se modifie, ce qui se publie, ce qui se calcule, ce qui se décide, ce qui se prouve, ce qui se consulte et ce qui paramètre.
+Elle cherche à identifier ce que l'information fait dans la cartographie fonctionnelle : commander, signaler, constater, orienter, porter un cycle de vie, prouver ou classifier.
 
-## Dimension 2 — Gouvernance au repos
+## Dimension 2 — Statut dans le domaine : source ou projection
 
-La gouvernance au repos décrit comment une information est maîtrisée dans un domaine.
+La deuxième dimension décrit le statut de l'information dans un domaine donné.
 
-Elle ne décrit pas la nature de l'information.
+FLOW retient volontairement deux statuts simples.
 
-Une même nature peut être self managed, imported ou derived selon le domaine qui la manipule.
-
-| Gouvernance au repos | Définition |
+| Statut | Définition |
 | --- | --- |
-| Self Managed | L'information est gérée par le domaine qui en est responsable. Le domaine maîtrise son cycle de vie, sa qualité, ses règles de modification et son exposition. |
-| Imported | L'information est ingérée depuis une source externe. Le domaine consommateur peut la stocker, la contrôler ou la projeter, mais il n'en est pas le maître. |
-| Derived | L'information est produite à partir d'autres informations par calcul, règle, agrégation ou transformation. Le domaine est responsable de la méthode de dérivation. |
+| Source | Le domaine crée et maintient l'information comme référence pour son périmètre ou son usage. |
+| Projection | Le domaine consomme une représentation issue d'une ou plusieurs sources, adaptée à son usage. |
+
+Une information peut être source dans un domaine et projection dans un autre.
+
+C'est cette distinction qui remplace utilement la question trop vague :
+
+> Est-ce une master data ?
+
+La bonne question devient :
+
+> Dans ce domaine, cette information est-elle source ou projection ?
 
 Exemples :
 
-| Information | Nature | Gouvernance dans FLOW |
+| Information | Nature | Statut dans FLOW |
 | --- | --- | --- |
-| Case | Objet métier | Self Managed |
-| Product execution view | Vue | Imported |
-| Stock position source | Fait | Imported ou Self Managed selon la source |
-| Available stock | Fait | Derived |
-| Promise date | Décision ou fait dérivé selon le modèle | Derived puis éventuellement Self Managed |
-| Allocation decision | Décision | Self Managed |
-| ShipmentDelayed | Événement | Imported |
-| Case timeline | Vue | Derived |
-| Packing list | Document | Imported |
+| Case | Objet métier | Source |
+| Allocation command | Command | Source |
+| Allocation decided | Event | Source |
+| Allocation decision | Objet métier ou Fact selon le niveau de matérialisation | Source |
+| Available stock | Fact | Source si FLOW le calcule et l'expose ; projection s'il le consomme d'un autre domaine |
+| Product execution view | Objet métier représenté sous forme de projection | Projection |
+| Customer / Party view | Objet métier représenté sous forme de projection | Projection |
+| Commercial agreement view | Objet métier ou Policy selon l'usage | Projection |
+| Return policy | Policy | Source ou projection selon le domaine responsable |
+| Packing list | Document | Projection dans FLOW si produite par CBS ou un fournisseur |
+| Order status nomenclature | Nomenclature | Source ou projection selon le domaine qui la gouverne |
+| Shipment delayed | Event | Projection dans FLOW si produit par Transport |
 
 Cette distinction est essentielle.
 
-FLOW peut ne pas être maître du produit, du client ou du stock physique, tout en étant responsable de la disponibilité calculée, de la promesse, de l'allocation ou de l'explication de décision.
+FLOW peut ne pas être source du produit, du client ou d'un document fournisseur, tout en étant source du Case, de certaines décisions, de certains événements et de certaines informations calculées comme la disponibilité ou la promesse.
 
-## Dimension 3 — Mode d'échange
-
-Le mode d'échange décrit comment une information circule entre domaines ou systèmes.
-
-Il ne doit pas être confondu avec la gouvernance.
-
-| Mode d'échange | Définition |
-| --- | --- |
-| Event | Un domaine informe qu'un changement significatif s'est produit. |
-| Query | Un domaine interroge un autre domaine pour obtenir une information ou une vue. |
-| Command | Un domaine demande explicitement à un autre de réaliser une action. |
-| Synchronization | Un domaine maintient une projection alignée avec une source ou un ensemble de sources. |
-| Stream | Un domaine diffuse un flux continu d'observations, d'événements ou de mesures. |
-
-`Pub/Sub` est un mécanisme possible pour transporter des événements ou des flux.
-
-Ce n'est pas, en soi, une catégorie métier d'information.
-
-Exemples :
-
-```text
-ShipmentDelayed
-    → Nature : Événement
-    → Mode d'échange : Event
-
-Product execution view
-    → Nature : Vue
-    → Mode d'échange : Synchronization ou Query
-
-ReserveStock
-    → Mode d'échange : Command
-
-Stock movements
-    → Mode d'échange : Stream
-```
-
-## Dimension 4 — Granularité d'échange
-
-La granularité d'échange décrit la quantité ou l'échelle de l'information échangée.
-
-FLOW distingue au minimum :
-
-| Granularité | Définition |
-| --- | --- |
-| Unitaire | Échange ciblé autour d'un objet, d'une demande, d'une décision ou d'une action précise. |
-| Masse | Échange portant sur un ensemble d'informations, souvent pour synchroniser, charger, recalculer ou alimenter une projection. |
-
-Une même information peut circuler dans les deux granularités selon l'interface.
-
-Exemples :
-
-```text
-Product execution view
-    → Synchronization / Masse
-    → Query / Unitaire
-
-Stock position
-    → Event ou Stream / Unitaire
-    → Synchronization / Masse
-
-Allocation
-    → Command / Unitaire
-    → Command ou traitement de recalcul / Masse
-```
-
-Cette dimension prépare la conception future des interfaces.
-
-Elle évite de dire seulement :
-
-> Il faut une API stock.
-
-Elle oblige à préciser :
-
-```text
-Quelle information stock ?
-Quelle nature ?
-Quelle gouvernance au repos ?
-Quel mode d'échange ?
-Quelle granularité ?
-Pour quel usage ?
-```
-
-## Dimension 5 — Source faisant foi pour un usage donné
+## Source faisant foi pour un usage donné
 
 Dans un SI distribué, une information peut être accessible depuis plusieurs sources.
 
@@ -304,7 +235,7 @@ Exemple produit :
 | Conception produit | PLM |
 | Contenu enrichi client | PIM |
 | Recherche et navigation | Elastic ou plateforme commerce |
-| Fulfillment | Product execution view consommée par FLOW |
+| Fulfillment | Projection produit d'exécution consommée par FLOW |
 | Facturation ou comptabilité | ERP / Finance |
 
 Exemple stock :
@@ -313,7 +244,7 @@ Exemple stock :
 | --- | --- |
 | Stock physique entrepôt | WMS ou ERP selon le modèle |
 | Stock magasin | Système magasin ou back-office retail |
-| Stock disponible pour promesse | FLOW Inventory Visibility |
+| Stock disponible pour promesse | FLOW Inventory Visibility, si FLOW calcule et expose cette information |
 | Stock comptable | ERP / Finance |
 | Stock affiché au client | Projection commerce alimentée par FLOW ou une autre source autoritative |
 
@@ -321,19 +252,37 @@ Une information n'est donc pas maître de manière absolue.
 
 Elle fait autorité pour un usage, un consommateur, une décision ou un contexte donné.
 
+## Ce qui sera traité plus tard : interfaces et échanges
+
+Pour la cartographie fonctionnelle, les deux dimensions précédentes suffisent : nature et source / projection.
+
+Lorsqu'il faudra définir les interfaces, d'autres dimensions deviendront nécessaires :
+
+- mode d'échange : command, event, query, synchronization, stream ;
+- granularité : unitaire ou masse ;
+- fréquence ;
+- fraîcheur attendue ;
+- contrat d'interface ;
+- mécanisme technique : API, event bus, fichier, flux, Pub/Sub ou autre.
+
+Ces dimensions ne doivent pas être confondues avec la nature de l'information.
+
+Par exemple, `Command` est une nature utile dans la cartographie fonctionnelle, mais `Command` peut aussi devenir un mode d'échange dans la conception d'interface.
+
+Le même mot peut donc être utilisé à deux niveaux différents, à condition d'expliciter le niveau d'analyse.
+
 ## Conséquences pour FLOW
 
 Ce principe conduit FLOW à :
 
 - abandonner la question générique `est-ce de la Master Data ?` ;
-- qualifier chaque information selon plusieurs dimensions indépendantes ;
-- distinguer la nature de l'information de sa gouvernance ;
-- distinguer la gouvernance au repos du mode d'échange ;
-- distinguer la source de création de la source faisant foi pour un usage ;
+- qualifier chaque information selon sa nature ;
+- qualifier chaque information comme source ou projection dans un domaine donné ;
 - éviter de transformer FLOW en méga-MDM ;
 - éviter d'importer dans FLOW le modèle SAP sans le challenger ;
-- concevoir les interfaces à partir des informations, de leurs usages et de leurs modes d'échange ;
-- permettre à FLOW de produire des informations derived comme la disponibilité, la promesse ou l'allocation sans devenir maître de toutes les sources.
+- distinguer ce que FLOW possède vraiment de ce qu'il consomme sous forme de projection ;
+- préparer la conception future des interfaces sans la mélanger avec la cartographie fonctionnelle ;
+- permettre à FLOW de produire des facts, events, commands ou objets métier sans devenir source de toutes les informations du SI.
 
 ## Matrice de qualification
 
@@ -342,10 +291,8 @@ Pour chaque information importante, FLOW devrait pouvoir renseigner une matrice 
 | Question | Exemple de réponse |
 | --- | --- |
 | Quelle information ? | Available stock |
-| Quelle nature ? | Fait |
-| Quelle gouvernance au repos dans FLOW ? | Derived |
-| Quel mode d'échange ? | Query, Event, Stream ou Synchronization selon le cas |
-| Quelle granularité ? | Unitaire ou masse |
+| Quelle nature ? | Fact |
+| Dans FLOW, est-ce une source ou une projection ? | Source si FLOW calcule et expose l'information |
 | Quelle source fait foi pour l'usage ? | FLOW Inventory Visibility pour la promesse |
 | Quel consommateur ? | Case Management, commerce, service client, reporting |
 | Quelle décision ou action sert-elle ? | Promettre, allouer, substituer, réorienter |
@@ -356,18 +303,11 @@ Cette matrice permet de passer d'un vocabulaire vague à une conception explicit
 
 FLOW ne remplace pas `Master Data` par une autre catégorie unique.
 
-FLOW qualifie les informations.
-
-La plateforme doit savoir dire :
+FLOW qualifie les informations avec deux questions simples pour la cartographie fonctionnelle :
 
 ```text
-Ce que l'information représente
-Comment elle se comporte
-Qui la gouverne au repos
-Comment elle circule
-À quelle granularité elle circule
-Quelle source fait foi pour quel usage
-Quelle décision ou action elle sert
+Quelle est la nature de cette information ?
+Dans ce domaine, est-elle source ou projection ?
 ```
 
 Ce principe complète le principe sur la demande comme objet métier central.
