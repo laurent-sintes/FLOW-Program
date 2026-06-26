@@ -4,7 +4,7 @@
 
 Les premières discussions autour de FLOW étaient largement structurées autour du remplacement d'applications existantes :
 
-- Storeland ;
+- StoreLand ;
 - Socloz ;
 - SAP ;
 - NewStore.
@@ -27,17 +27,21 @@ FLOW est un projet de plateforme d'entreprise.
 
 FLOW fournit des capacités mutualisées permettant à plusieurs marques, canaux, partenaires et business models de partager les mêmes ressources métier, techniques et de gouvernance.
 
+Cette plateforme ne doit pas être comprise comme une couche supplémentaire placée entre ERP et OMS.
+
+Elle vise au contraire à réconcilier dans un même socle les responsabilités de Demand & Fulfillment qui sont aujourd'hui dispersées entre plusieurs systèmes : demande, commande, stock, promesse, allocation, exécution, retour, exception, documents et événements.
+
 ---
 
 ## Ce que nous avons observé chez GBM
 
 Au fil du temps, le système d'information de GBM s'est enrichi de nombreuses solutions :
 
-- Storeland ;
+- StoreLand ;
 - UR ;
 - OMS C-LOG ;
 - Salesforce ;
-- SoCloz ;
+- Socloz ;
 - Elastic ;
 - Optimate ;
 - Talend.
@@ -88,7 +92,7 @@ FLOW poursuit un objectif différent.
 
 Les ERP recherchent souvent la convergence par la standardisation des processus.
 
-FLOW recherche la convergence par la mutualisation des capacités.
+FLOW recherche la convergence par la mutualisation des capacités et la réunification des responsabilités transverses.
 
 ### Vision ERP
 
@@ -111,6 +115,28 @@ Dans un ERP, l'organisation s'aligne souvent sur les modules du progiciel.
 Dans FLOW, les capacités s'organisent autour de responsabilités métier plus stables.
 
 Les business models, les organisations et les applications restent libres de consommer ces capacités selon leurs propres besoins.
+
+---
+
+## FLOW n'est pas une simple séparation ERP / OMS
+
+Dire que FLOW n'est ni un ERP ni un OMS ne signifie pas que FLOW doit ajouter une nouvelle frontière dans le SI.
+
+L'ambition est plus forte : réunifier les responsabilités qui rendent possible l'exécution d'une demande sans dépendre de transferts permanents entre un ERP, un OMS et plusieurs systèmes périphériques.
+
+```text
+Demande / Case
+        ↓
+Décisions
+        ↓
+Stock, promesse, allocation, exécution, exceptions
+        ↓
+Événements, documents, vision 360
+```
+
+Les systèmes spécialisés peuvent rester nécessaires : finance, WMS, transport, conformité, engagement client, catalogue riche, collaboration fournisseur ou applications partenaires.
+
+Mais FLOW doit devenir le lieu de cohérence des responsabilités transverses du Demand & Fulfillment lorsque leur dispersion crée de la dette opérationnelle ou architecturale.
 
 ---
 
@@ -199,6 +225,8 @@ FLOW n'est ni un ERP, ni un OMS, ni une plateforme d'intégration.
 
 FLOW est une plateforme d'entreprise composée de capacités métier, techniques et de gouvernance partagées au service des marques, des canaux, des partenaires et des business models du groupe.
 
+FLOW ne juxtapose pas ERP et OMS : il cherche à réconcilier les responsabilités de Demand & Fulfillment dans un socle cohérent.
+
 FLOW n'est pas une recherche du progiciel idéal.
 
-FLOW est une recherche du bon niveau de mutualisation des capacités.
+FLOW est une recherche du bon niveau de mutualisation des capacités et du bon lieu de vérité pour les responsabilités transverses.
