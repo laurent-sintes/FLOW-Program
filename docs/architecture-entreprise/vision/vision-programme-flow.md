@@ -2,24 +2,30 @@
 
 ## Ambition
 
-FLOW permet au groupe de traiter de façon cohérente les demandes qui traversent ses marques, canaux, partenaires, fournisseurs et business models.
+Gérer des commandes ne suffit plus.
 
-Le programme ne cherche pas à uniformiser l'entreprise.
+Le groupe doit être capable de traiter toutes les demandes qui traversent ses marques, canaux, partenaires, fournisseurs et business models : commandes, retours, litiges, SAV, approvisionnements, exceptions, promesses, allocations et engagements.
 
-Il cherche à fédérer ce qui doit être commun pour préserver ce qui doit rester différenciant.
+FLOW porte cette ambition.
+
+FLOW déplace le centre de gravité du système d'information : d'un SI organisé autour de l'ERP, des documents et de la comptabilité, vers une plateforme organisée autour de la demande, de la résolution de problème et de la satisfaction client / utilisateur.
+
+Le programme ne cherche pas à uniformiser l'entreprise par contrainte IT.
+
+Il cherche à construire une plateforme capable de fédérer ce qui doit être commun, tout en laissant vivre les différences lorsque le business l'exige.
 
 FLOW met à disposition une plateforme Demand commune, capable d'instruire, décider, promettre et orchestrer des demandes transverses, tout en laissant aux marques, canaux et domaines consommateurs la maîtrise de leurs expériences et de leurs spécificités.
 
 ## Vision synthétique
 
-> FLOW est une plateforme Demand fédérée qui fait du Case l’unité métier centrale d’orchestration, afin de réconcilier les responsabilités de demande, décision, stock, promesse, exécution et exception aujourd’hui dispersées entre plusieurs systèmes.
+> FLOW est la plateforme Demand du groupe : elle fait du Case l'unité métier centrale pour traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, absorber les variations de traitement et décloisonner les silos B2B, B2C, marques, canaux et groupes.
 
-Cette vision repose sur quatre convictions :
+Cette vision repose sur quatre convictions fortes :
 
-- les responsabilités métier durables sont plus stables que les applications, les organisations et les processus ;
-- la demande doit devenir le point d'entrée de la modélisation et de l'orchestration ;
-- les décisions, promesses, allocations et exceptions doivent être explicites, traçables et gouvernées ;
-- les marques, canaux et business models doivent rester autonomes lorsque cette autonomie crée de la valeur.
+- gérer des commandes n'est plus suffisant : il faut savoir gérer des demandes ;
+- le cœur du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client ;
+- les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la plateforme elle-même ;
+- la variation métier doit être pilotée par le contexte, les Agreements et les règles, sans faire exploser la complexité du SI.
 
 ## Le problème à résoudre
 
@@ -30,9 +36,9 @@ GBM : remplacer StoreLand / Socloz
 BRD : remplacer SAP / NewStore
 ```
 
-Mais cette formulation ne suffit pas.
+Mais cette formulation est trop faible.
 
-Elle décrit des applications à remplacer, pas les responsabilités à reprendre.
+Elle décrit des applications à remplacer, pas le changement de modèle à opérer.
 
 Les travaux de contexte montrent que les deux groupes partent de trajectoires SI différentes :
 
@@ -57,42 +63,51 @@ FLOW doit donc résoudre une double convergence :
 - convergence entre BRD et GBM ;
 - convergence interne, notamment au sein de GBM entre marques, niveaux de maturité et processus encore dispersés.
 
-Le programme ne peut pas se limiter à choisir un nouvel ERP, un nouvel OMS ou un nouvel outil d'intégration.
+Mais cette convergence ne peut pas être obtenue en ajoutant un nouvel outil dans le paysage.
 
-Il doit clarifier les responsabilités communes que l'entreprise veut gouverner durablement.
+Elle exige de clarifier ce que l'entreprise doit savoir faire durablement : traiter une demande, décider, promettre, réserver, allouer, exécuter, documenter, expliquer et résoudre les exceptions.
 
 ## La rupture proposée par FLOW
 
-Dans une approche classique, on part souvent des applications et de leurs catégories de marché.
+Dans une approche ERP classique, le système est souvent organisé autour des documents : commande, livraison, facture, avoir, écritures comptables.
+
+Dans une approche OMS classique, le système est souvent organisé autour de la commande, de la promesse, du sourcing ou de l'orchestration omnicanale.
+
+Ces approches ne suffisent plus.
+
+La question centrale n'est plus :
+
+> Comment gérer une commande ?
+
+La question devient :
+
+> Quelle demande faut-il comprendre, décider, promettre, satisfaire et expliquer ?
+
+Ce déplacement change tout.
 
 ```text
-ERP
-OMS
-WMS
-TMS
-CRM
-PIM
-PLM
+Ancien centre de gravité
+    ERP / documents / comptabilité
+    OMS / commande / canal
+
+Nouveau centre de gravité
+    Demande / Case / décision
+    Satisfaction client-utilisateur
+    Réseau d'exécution
 ```
 
-Cette lecture est utile pour acheter, intégrer ou remplacer des solutions.
-
-Elle est insuffisante pour penser FLOW.
-
-FLOW part d'une autre question :
-
-> Quelle demande doit être instruite, décidée, promise et exécutée ?
-
-Cette inversion change le modèle.
+FLOW part donc de la demande.
 
 ```text
 Demande / Case
         ↓
-Décisions
+Contexte et Agreement
         ↓
-Facts, policies, stock, agreements, réseau d'exécution
+Règles et décisions
         ↓
-Promesse, allocation, action, exception
+Stock, promesse, allocation, réseau d'exécution
+        ↓
+Action, document, événement, exception
 ```
 
 Le Case devient l'objet métier actif.
@@ -107,6 +122,63 @@ Il porte dans la durée :
 - les exceptions ;
 - les interactions avec les capacités FLOW et les systèmes d'exécution.
 
+## Décloisonner les silos sans nier les organisations
+
+FLOW doit opérer un décloisonnement fort.
+
+Les silos B2B, B2C, retail, wholesale, marques, groupes ou canaux peuvent rester pertinents dans l'organisation, dans les expériences, dans les offres, dans les équipes et dans les pratiques business.
+
+Ils ne doivent pas structurer le cœur de la plateforme.
+
+Dans FLOW, une demande reste une demande.
+
+Elle peut provenir d'un client B2C, d'un client B2B, d'un magasin, d'une marketplace, d'un service client, d'un fournisseur, d'une marque ou d'une entité du groupe.
+
+Ce qui change, c'est le contexte, l'Agreement, les règles, les droits, les engagements, les priorités et le réseau d'exécution mobilisable.
+
+```text
+Les consommateurs peuvent être différenciés.
+La plateforme doit être décloisonnée.
+```
+
+C'est un écart majeur avec une approche ERP classique, où les variations de canal, d'organisation ou de modèle business finissent souvent par produire des modules, processus ou flux spécialisés.
+
+FLOW doit éviter cette fragmentation.
+
+## Absorber la variation sans faire exploser la complexité
+
+Le groupe n'a pas besoin d'un modèle rigide qui impose l'uniformisation partout.
+
+Il n'a pas non plus besoin d'un SI où chaque variation métier crée un nouveau processus, un nouveau flux, un nouveau statut ou une nouvelle application.
+
+FLOW doit rendre possible une autre voie : un système adaptatif.
+
+La variation de traitement doit être pilotée par :
+
+- le contexte de la demande ;
+- l'Agreement applicable ;
+- les règles métier ;
+- les politiques de priorité ;
+- les contraintes de stock et d'exécution ;
+- les droits et engagements du client, partenaire, fournisseur ou canal.
+
+Cela suppose un référentiel de règles et un moteur de règles capables de piloter dynamiquement les variations.
+
+```text
+Commande ou demande générique
+    + contexte
+    + Agreement
+    + règles
+    + décisions
+    = traitement adapté
+```
+
+La variation métier ne doit plus mécaniquement augmenter la complexité du SI.
+
+L'uniformisation cesse alors d'être une contrainte IT.
+
+Elle devient un choix métier : on uniformise lorsque cela crée de la valeur, on différencie lorsque le business l'exige.
+
 ## Ce que FLOW apporte
 
 FLOW apporte un point de cohérence transverse lorsque les responsabilités sont aujourd'hui dispersées entre plusieurs systèmes.
@@ -114,7 +186,9 @@ FLOW apporte un point de cohérence transverse lorsque les responsabilités sont
 Il doit permettre de :
 
 - traiter des demandes longues, transverses et multi-domaines ;
+- décloisonner les silos B2B, B2C, marques, groupes et canaux au cœur de la plateforme ;
 - rendre explicites les décisions qui font progresser une demande ;
+- piloter les variations de traitement par règles plutôt que par multiplication de processus ;
 - disposer d'une vision fiable et exploitable du stock disponible ;
 - réserver, allouer ou tagger une ressource pour une finalité précise ;
 - mobiliser un réseau d'exécution composé de lieux, partenaires, capacités et contraintes ;
@@ -134,7 +208,9 @@ FLOW n'a pas vocation à absorber tout le SI.
 
 Les expériences client, les outils métier spécialisés, les systèmes d'exécution physique, la finance, la conception produit ou les systèmes partenaires peuvent rester autonomes.
 
-FLOW doit cependant clarifier leur rôle :
+Mais FLOW doit empêcher que ces autonomies redeviennent des silos au cœur du traitement de la demande.
+
+FLOW doit clarifier leur rôle :
 
 ```text
 consommateur
@@ -156,6 +232,7 @@ Il doit permettre :
 - de traiter la convergence inter-groupes et intra-groupes ;
 - de réduire les décisions contradictoires entre applications ;
 - de mieux gouverner les engagements pris envers les clients, magasins, partenaires ou fournisseurs ;
+- de piloter la convergence par niveaux : centraliser, unifier, standardiser, fédérer ou différencier selon l'exigence business ;
 - de limiter la dépendance aux catégories de progiciels du marché pour penser l'entreprise.
 
 ## Promesse pour les métiers
@@ -170,6 +247,10 @@ FLOW leur fournit des capacités partagées lorsque la responsabilité dépasse 
 Les consommateurs construisent les expériences.
 FLOW fournit les capacités transverses.
 ```
+
+Cette promesse vaut aussi pour les demandes de service, les retours, les litiges, le SAV ou les exceptions client.
+
+Une demande reste une demande dès lors qu'elle nécessite d'être comprise, suivie, arbitrée, résolue et expliquée.
 
 ## Transformation attendue
 
@@ -191,7 +272,7 @@ La question n'est plus seulement :
 
 La question devient :
 
-> Quelle responsabilité doit être gouvernée durablement, par quel produit, et avec quelles informations source ou projetées ?
+> Quelle responsabilité doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, et avec quelles règles de variation ?
 
 FLOW s'inscrit dans une logique :
 
@@ -207,10 +288,11 @@ Produit
 Fonctionnalité
 ```
 
-Cette lecture permet d'éviter deux dérives :
+Cette lecture permet d'éviter trois dérives :
 
 - remplacer des applications sans clarifier les responsabilités ;
-- élargir indéfiniment FLOW au motif que tout est connecté.
+- élargir indéfiniment FLOW au motif que tout est connecté ;
+- multiplier les variantes de processus au lieu d'externaliser les règles et conditions de traitement.
 
 ## Mise en architecture cible
 
@@ -248,14 +330,20 @@ FLOW réussira si le groupe constate progressivement :
 - une meilleure capacité à traiter les exceptions ;
 - une intégration plus rapide de nouveaux canaux, marques ou business models ;
 - une distinction plus claire entre ce qui est source et ce qui est projection ;
-- des expériences métier différenciées, mais appuyées sur des capacités communes.
+- des expériences métier différenciées, mais appuyées sur des capacités communes ;
+- des variations de traitement absorbées par les règles plutôt que par la prolifération de processus ;
+- une convergence vécue comme un choix métier, pas comme une contrainte IT.
 
 ## À retenir
 
+FLOW ne cherche pas à mieux gérer les commandes.
+
+FLOW cherche à mieux satisfaire les demandes.
+
 FLOW ne cherche pas à imposer un modèle unique.
 
-FLOW cherche à construire une plateforme fédérée : commune là où l'entreprise doit converger, autonome là où elle doit se différencier.
+FLOW cherche à construire une plateforme fédérée, décloisonnée et adaptative : commune là où l'entreprise doit converger, différenciée là où le business l'exige.
 
 Sa valeur n'est pas de remplacer toutes les applications.
 
-Sa valeur est de rendre cohérentes les demandes, décisions, ressources, promesses, événements et exceptions qui traversent l'entreprise.
+Sa valeur est de rendre cohérentes les demandes, décisions, ressources, promesses, événements, documents et exceptions qui traversent l'entreprise.
