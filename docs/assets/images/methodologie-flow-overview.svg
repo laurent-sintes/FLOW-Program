@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-labelledby="title desc">
+  <title id="title">Méthodologie Projet FLOW</title>
+  <desc id="desc">Vue d'ensemble des étapes de la méthodologie FLOW, de l'existant à la solution.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f4ef; }
+      .panel { fill: #ffffff; stroke: #d7cfc3; stroke-width: 1.5; rx: 22; }
+      .title { fill: #17324d; font: 700 32px Arial, sans-serif; }
+      .subtitle { fill: #6c5f53; font: 400 17px Arial, sans-serif; }
+      .card { fill: #fffaf2; stroke: #d9b46d; stroke-width: 1.5; rx: 18; }
+      .card-blue { fill: #edf6fb; stroke: #7bb4d5; }
+      .card-purple { fill: #f4f0fb; stroke: #a98bd3; }
+      .card-green { fill: #eff7ef; stroke: #8fbd8f; }
+      .card-dark { fill: #17324d; stroke: #0f2438; }
+      .num { fill: #17324d; font: 700 18px Arial, sans-serif; }
+      .name { fill: #263238; font: 700 18px Arial, sans-serif; }
+      .text { fill: #4e443b; font: 400 14px Arial, sans-serif; }
+      .white { fill: #ffffff; }
+      .white-soft { fill: #d8e6f2; }
+      .arrow { stroke: #b98a3a; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .band { fill: #17324d; opacity: 0.08; }
+      .label { fill: #17324d; font: 700 15px Arial, sans-serif; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#b98a3a"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1500" height="760"/>
+  <rect class="panel" x="42" y="38" width="1416" height="684"/>
+
+  <text x="750" y="86" text-anchor="middle" class="title">Méthodologie Projet FLOW</text>
+  <text x="750" y="116" text-anchor="middle" class="subtitle">Transformer les observations terrain en architecture cible, produits et solutions</text>
+
+  <rect class="band" x="92" y="152" width="1316" height="72" rx="18"/>
+  <text x="750" y="184" text-anchor="middle" class="label">Chaque étape produit un livrable qui devient l’entrée de l’étape suivante</text>
+  <text x="750" y="208" text-anchor="middle" class="subtitle">Existant → Vision → Principes → Urbanisme → Capacités → Produits → Fonctionnalités → Solutions</text>
+
+  <rect class="card card-blue" x="92" y="270" width="172" height="155"/>
+  <text x="178" y="300" text-anchor="middle" class="num">0</text>
+  <text x="178" y="328" text-anchor="middle" class="name">Comprendre</text>
+  <text x="178" y="354" text-anchor="middle" class="text">Panorama existant</text>
+  <text x="178" y="376" text-anchor="middle" class="text">irritants</text>
+  <text x="178" y="398" text-anchor="middle" class="text">tensions</text>
+
+  <path class="arrow" d="M268 348 L314 348"/>
+
+  <rect class="card card-purple" x="318" y="270" width="172" height="155"/>
+  <text x="404" y="300" text-anchor="middle" class="num">1</text>
+  <text x="404" y="328" text-anchor="middle" class="name">Vision</text>
+  <text x="404" y="354" text-anchor="middle" class="text">Ambition commune</text>
+  <text x="404" y="376" text-anchor="middle" class="text">problème à résoudre</text>
+  <text x="404" y="398" text-anchor="middle" class="text">cible narrative</text>
+
+  <path class="arrow" d="M494 348 L540 348"/>
+
+  <rect class="card card-purple" x="544" y="270" width="172" height="155"/>
+  <text x="630" y="300" text-anchor="middle" class="num">2</text>
+  <text x="630" y="328" text-anchor="middle" class="name">Principes</text>
+  <text x="630" y="354" text-anchor="middle" class="text">Règles de conception</text>
+  <text x="630" y="376" text-anchor="middle" class="text">arbitrages</text>
+  <text x="630" y="398" text-anchor="middle" class="text">garde-fous</text>
+
+  <path class="arrow" d="M720 348 L766 348"/>
+
+  <rect class="card card-green" x="770" y="270" width="172" height="155"/>
+  <text x="856" y="300" text-anchor="middle" class="num">3</text>
+  <text x="856" y="328" text-anchor="middle" class="name">Urbaniser</text>
+  <text x="856" y="354" text-anchor="middle" class="text">Domaines</text>
+  <text x="856" y="376" text-anchor="middle" class="text">responsabilités</text>
+  <text x="856" y="398" text-anchor="middle" class="text">frontières</text>
+
+  <path class="arrow" d="M946 348 L992 348"/>
+
+  <rect class="card card-green" x="996" y="270" width="172" height="155"/>
+  <text x="1082" y="300" text-anchor="middle" class="num">4</text>
+  <text x="1082" y="328" text-anchor="middle" class="name">Capacités</text>
+  <text x="1082" y="354" text-anchor="middle" class="text">Ce que l’entreprise</text>
+  <text x="1082" y="376" text-anchor="middle" class="text">doit savoir faire</text>
+  <text x="1082" y="398" text-anchor="middle" class="text">durablement</text>
+
+  <path class="arrow" d="M1172 348 L1218 348"/>
+
+  <rect class="card card-dark" x="1222" y="270" width="186" height="155"/>
+  <text x="1315" y="300" text-anchor="middle" class="num white-soft">5-6</text>
+  <text x="1315" y="328" text-anchor="middle" class="name white">Produits &amp;</text>
+  <text x="1315" y="352" text-anchor="middle" class="name white">solutions</text>
+  <text x="1315" y="380" text-anchor="middle" class="text white-soft">gouvernance</text>
+  <text x="1315" y="402" text-anchor="middle" class="text white-soft">fonctionnalités</text>
+
+  <text x="178" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="178" y="500" text-anchor="middle" class="text">Faits qualifiés</text>
+  <text x="178" y="522" text-anchor="middle" class="text">et insights</text>
+
+  <text x="404" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="404" y="500" text-anchor="middle" class="text">Intention cible</text>
+  <text x="404" y="522" text-anchor="middle" class="text">et promesse</text>
+
+  <text x="630" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="630" y="500" text-anchor="middle" class="text">Critères de décision</text>
+  <text x="630" y="522" text-anchor="middle" class="text">réutilisables</text>
+
+  <text x="856" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="856" y="500" text-anchor="middle" class="text">Carte des domaines</text>
+  <text x="856" y="522" text-anchor="middle" class="text">et responsabilités</text>
+
+  <text x="1082" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="1082" y="500" text-anchor="middle" class="text">Catalogue</text>
+  <text x="1082" y="522" text-anchor="middle" class="text">de capacités</text>
+
+  <text x="1315" y="475" text-anchor="middle" class="label">Sortie</text>
+  <text x="1315" y="500" text-anchor="middle" class="text">Produits, backlog</text>
+  <text x="1315" y="522" text-anchor="middle" class="text">et solutions</text>
+
+  <rect class="card" x="205" y="590" width="1090" height="76"/>
+  <text x="750" y="620" text-anchor="middle" class="label">Chaîne logique cible</text>
+  <text x="750" y="648" text-anchor="middle" class="text">Domaine → Responsabilité → Capacité → Produit → Fonctionnalités → Solutions</text>
+</svg>
