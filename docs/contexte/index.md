@@ -7,3 +7,5 @@ Elle ne décrit pas encore la cible. Elle documente le terrain de départ : les 
 ## Pages
 
 - [Panorama applicatif BRD et GBM](panorama-applicatif-brd-gbm.md)
+- [Panorama applicatif BRD](panorama-brd.md)
+- [Panorama applicatif GBM](panorama-gbm.md)
