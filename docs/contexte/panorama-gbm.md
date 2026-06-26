@@ -131,6 +131,7 @@ Les zones visibles sont notamment :
 | Orchestration / commandes | Socloz, UR, C-LOG / EAI, OMS C-LOG | Cycle de vie commande, intégration, orchestration et exécution |
 | StoreLand | instances StoreLand, stocks magasins, dépôts, commandes B2B, moteur réassort | Socle historique retail et stock, avec plusieurs périmètres d'instance |
 | Logistique | Transport, suivi expéditions, dépôts, moteur réassort | Exécution, suivi et décisions opérationnelles |
+| Collaboration fournisseur / achat amont | CBS | Commandes d'achat fournisseur, processus support achat, livraison amont et conformité documentaire |
 
 Les flux représentés distinguent plusieurs canaux :
 
@@ -306,6 +307,109 @@ Pour FLOW, la question est de distinguer :
 
 Cette distinction est importante pour éviter de remplacer un composant d'intégration par une plateforme métier, ou inversement de laisser dans un EAI des responsabilités de décision et d'orchestration qui devraient être explicites.
 
+## CBS — SI fournisseur et achat amont
+
+CBS n'a pas besoin d'une page autonome, mais il constitue un élément important du panorama GBM.
+
+Il n'apparaît pas nécessairement dans la cartographie applicative visible, alors qu'il porte des responsabilités significatives autour des commandes d'achat fournisseur, du support achat et de la livraison amont.
+
+CBS est composé de plusieurs modules développés sur mesure en .NET.
+
+Son objectif est de rendre visible l'ensemble des commandes d'achat fournisseur et d'implémenter les processus support à l'achat et à la livraison jusque dans l'entrepôt.
+
+CBS ne doit donc pas être lu comme un simple outil périphérique.
+
+Il porte une partie de la relation opérationnelle entre l'entreprise, ses fournisseurs fabricants, le transport et l'entrepôt.
+
+```text
+CBS
+    → modules .NET sur mesure
+    → visibilité commandes d'achat fournisseur
+    → processus support achat / livraison
+    → suivi jusqu'à l'entrepôt
+    → documents fournisseur
+    → conformité transport / taxes / identification objets
+```
+
+### Exemple : packing list fournisseur
+
+Un exemple significatif est le service qui permet au fournisseur fabricant de publier une packing list.
+
+Cette packing list est nécessaire à la transparence du transport.
+
+Elle permet notamment d'assurer :
+
+- l'identification des objets transportés ;
+- la bonne documentation des marchandises ;
+- la conformité avec la loi du pays de réception ;
+- les informations nécessaires aux taxes, contrôles ou obligations réglementaires ;
+- la continuité entre fournisseur, transport et entrepôt.
+
+Ce type de fonctionnalité montre que CBS porte des processus spécialisés de collaboration fournisseur et de conformité amont.
+
+### Lecture FLOW
+
+CBS doit être considéré, en première lecture, comme un domaine consommateur et contributeur de FLOW.
+
+Il porte des processus spécialisés autour de :
+
+- la collaboration fournisseur ;
+- le support achat ;
+- la livraison amont ;
+- la conformité documentaire ;
+- la transparence transport ;
+- l'identification des objets ;
+- la préparation de l'arrivée entrepôt.
+
+Ces processus ne doivent pas être absorbés par FLOW par défaut.
+
+En revanche, CBS porte ou manipule certaines responsabilités plus génériques qui peuvent être candidates à FLOW :
+
+- la commande d'achat ;
+- le cycle de vie de la commande ;
+- les statuts ;
+- les événements ;
+- les jalons d'avancement ;
+- la vision 360 d'une commande ou d'un engagement fournisseur ;
+- la disponibilité future ;
+- le rattachement à une demande, un engagement ou une promesse.
+
+La bonne question n'est donc pas de décider que CBS entre ou sort entièrement de FLOW.
+
+La bonne question est de séparer les responsabilités :
+
+```text
+CBS — domaine spécialisé
+    → processus fournisseur spécialisés
+    → packing list
+    → conformité transport / douane / taxes
+    → documentation légale
+    → collaboration fournisseur
+
+FLOW — responsabilités transverses candidates
+    → commande d'achat si elle porte un engagement d'approvisionnement
+    → cycle de vie
+    → statuts / événements
+    → vision 360
+    → orchestration transverse
+```
+
+### Recommandation d'architecture — CBS et FLOW
+
+CBS doit rester lu comme un domaine spécialisé consommateur et contributeur de FLOW.
+
+FLOW ne doit pas absorber par défaut les processus spécialisés de collaboration fournisseur, packing list, conformité transport ou documentation réglementaire.
+
+En revanche, les responsabilités génériques de commande, cycle de vie, statuts, événements et vision 360 doivent être évaluées comme candidates à FLOW.
+
+Cette recommandation permet de poser une lecture saine par responsabilité :
+
+- CBS conserve les processus fournisseur spécialisés ;
+- FLOW peut devenir le socle transverse de visibilité, de cycle de vie et d'orchestration ;
+- CBS consomme les informations ou événements exposés par FLOW ;
+- FLOW peut consommer certains faits produits par CBS ;
+- les responsabilités qui donnent de la cohérence au Demand & Fulfillment ne doivent pas être dispersées uniquement parce qu'elles sont aujourd'hui portées par un système spécialisé.
+
 ## B2B / wholesale : Elastic, Zoho et commandes B2B
 
 La zone B2B / wholesale fait apparaître notamment Elastic, Zoho et des mécanismes d'import ou de saisie de commandes B2B.
@@ -362,6 +466,7 @@ Les composants mentionnés dans le panorama GBM sont notamment :
 - C-LOG / EAI ;
 - OMS C-LOG ;
 - Transport ;
+- CBS ;
 - SFCC ;
 - Mirakl ;
 - intégrateur marketplace, par exemple Tradebyte ;
@@ -397,9 +502,11 @@ La comparaison doit se faire par responsabilités, et non seulement par applicat
 | Stock disponible | StoreLand, Socloz, Zoho, C-LOG / EAI | Construire une capacité d'Inventory Visibility fiable |
 | Retours / remboursements / litiges | UR, StoreLand, Service Client | Candidat Case / exception management |
 | Négoce / B2B | StoreLand Négoce, Zoho, Elastic, commandes manuelles | Découpler engagement commercial et commande d'achat |
+| Commandes d'achat fournisseur | CBS, StoreLand Négoce | Distinguer collaboration fournisseur spécialisée et responsabilités transverses FLOW |
+| Collaboration fournisseur / conformité | CBS | Domaine spécialisé contributeur et consommateur de FLOW |
 | Réassort | Moteur réassort, StoreLand, stocks magasins | Décision à expliciter et gouverner |
 | B2B / wholesale | Elastic, Zoho, commandes B2B | Canal à intégrer sans le plaquer sur le modèle retail |
-| Exécution logistique | C-LOG / EAI, OMS C-LOG, Transport, suivi expéditions | Exécution et événements à connecter à FLOW |
+| Exécution logistique | C-LOG / EAI, OMS C-LOG, Transport, suivi expéditions, CBS | Exécution, documents et événements à connecter à FLOW |
 
 ## Responsabilités à investiguer
 
@@ -411,6 +518,7 @@ Plusieurs responsabilités devront être clarifiées dans les prochains travaux 
 - rôle précis du module Négoce StoreLand ;
 - rôle précis de UR / United Retail ;
 - rôle précis de Socloz ;
+- rôle précis de CBS dans l'achat amont, la collaboration fournisseur et la livraison jusqu'à l'entrepôt ;
 - gestion des stocks et disponibilités ;
 - allocation et promesse ;
 - orchestration omnicanale ;
@@ -429,6 +537,10 @@ Le panorama GBM conduit à plusieurs questions :
 - Le module Négoce StoreLand doit-il être généralisé, remplacé, ou découpé en capacités cibles distinctes ?
 - La commande d'achat B2B / Négoce doit-elle être une capacité FLOW ?
 - La négociation, l'assortiment et le catalogue doivent-ils rester dans le domaine engagement ?
+- CBS doit-il rester un domaine spécialisé consommateur et contributeur de FLOW ?
+- Quelles responsabilités de CBS relèvent réellement de la collaboration fournisseur, de la packing list et de la conformité ?
+- Quelles responsabilités de CBS relèvent plutôt d'une capacité transverse FLOW : commande, cycle de vie, statuts, événements ou vision 360 ?
+- La commande d'achat fournisseur doit-elle être portée par FLOW lorsqu'elle représente un engagement d'approvisionnement ou une disponibilité future ?
 - UR doit-il être remplacé, absorbé progressivement par FLOW, ou conservé comme composant transitoire ?
 - Les responsabilités d'UR relèvent-elles d'une capacité cible de Case / Order Lifecycle Orchestration ?
 - Socloz porte-t-il une responsabilité d'OMS, de promesse, de réservation, d'orchestration omnicanale ou seulement d'intégration e-commerce ?
@@ -447,6 +559,8 @@ GBM montre pourquoi la fédération est nécessaire : certaines spécificités d
 L'insight central est que GBM est historiquement un SI retail, ouvert ensuite au e-commerce, puis plus difficilement au B2B. Cette trajectoire explique une partie des composants transverses apparus autour de StoreLand, notamment UR.
 
 UR signifie United Retail. Il est dans le scope de FLOW non par sa technologie, mais par sa responsabilité métier : il porte déjà une forme de cycle de vie transverse des commandes B2C, avec retours, remboursements, litiges et réintégration stock.
+
+CBS complète cette lecture par l'amont fournisseur : il porte des processus spécialisés autour de la commande d'achat fournisseur, de la collaboration fournisseur, de la livraison amont, de la packing list et de la conformité documentaire. Il doit rester lu comme un domaine spécialisé consommateur et contributeur de FLOW, tout en exposant certaines responsabilités transverses candidates FLOW comme la commande, le cycle de vie, les statuts, les événements et la vision 360.
 
 Le module Négoce montre que la convergence est aussi intra-GBM : les marques premium disposent d'un processus outillé, tandis que d'autres marques opèrent encore certains flux de manière plus manuelle ou dispersée.
 
