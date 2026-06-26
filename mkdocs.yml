@@ -25,6 +25,9 @@ extra_css:
 nav:
   - Accueil: index.md
   - FLOW Foundations: flow-foundations.md
+  - Contexte:
+      - Repères: contexte/index.md
+      - Panorama applicatif BRD et GBM: contexte/panorama-applicatif-brd-gbm.md
   - Insights:
       - Repères: insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
@@ -52,6 +55,7 @@ nav:
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision:
       - La vision: architecture-entreprise/vision/index.md
+      - Ébauche de la plateforme FLOW: architecture-entreprise/vision/ebauche-plateforme-flow.md
   - Principes directeurs:
       - Les principes: architecture-entreprise/principes-directeurs/index.md
       - "01 — Converger, c’est fédérer": architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
