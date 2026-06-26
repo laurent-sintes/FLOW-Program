@@ -171,6 +171,16 @@ Les consommateurs construisent les expériences.
 FLOW fournit les capacités transverses.
 ```
 
+## Transformation attendue
+
+La vision FLOW ne se limite pas à une cible applicative.
+
+Elle appelle des changements de posture dans la manière de concevoir, d'arbitrer et de conduire la convergence.
+
+Ces changements sont documentés dans la page [Les changements à conduire avec FLOW](../../../transformation/sujets-de-changement.md).
+
+Cette page doit servir de référence pour garder la transformation inspirante et concrète : ne plus servir l'organisation existante, raisonner Demand / Supply, réconcilier ERP et OMS, penser fulfillment avant documents, et piloter une convergence par niveaux.
+
 ## Promesse pour l'IT
 
 Pour l'IT, FLOW déplace la discussion.
@@ -224,6 +234,7 @@ Ils donnent une première cartographie de ce que FLOW doit rendre gouvernable, c
 - [Architecture cible — Overview de la plateforme FLOW](../../architecture-cible/overview-plateforme-flow.md)
 - [Architecture cible — FLOW dans l’écosystème GBM](../../architecture-cible/flow-dans-ecosysteme-gbm.md)
 - [Architecture cible — FLOW dans l’écosystème BRD](../../architecture-cible/flow-dans-ecosysteme-brd.md)
+- [Transformation — Les changements à conduire avec FLOW](../../../transformation/sujets-de-changement.md)
 - [Principe 6 — La demande comme objet métier central d’orchestration](../principes-directeurs/6-demande-objet-metier-central-orchestration.md)
 - [Principe 7 — Qualifier les informations plutôt que parler de Master Data](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md)
 
