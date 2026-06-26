@@ -19,7 +19,7 @@ La recommandation est donc de distinguer deux natures de contenus :
 
 ## Pages disponibles
 
-- [Les changements à conduire avec FLOW](sujets-de-changement.md)
+- [Les changements à conduire avec FLOW](changements-a-conduire.md)
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
 
 ## Position de travail
