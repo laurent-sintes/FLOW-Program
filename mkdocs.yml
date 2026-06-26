@@ -68,6 +68,7 @@ nav:
       - "04 — Séparer Demand et Supply": architecture-entreprise/principes-directeurs/4-separer-demand-et-supply.md
       - "05 — Le processus émerge des décisions": architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
       - "06 — La demande comme objet métier central d’orchestration": architecture-entreprise/principes-directeurs/6-demande-objet-metier-central-orchestration.md
+      - "07 — Qualifier les informations plutôt que parler de Master Data": architecture-entreprise/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
       - De l’insight à la solution: methode/conception-flow.md
