@@ -52,13 +52,31 @@ Lorsque l'on compare BRD et GBM, les outils diffèrent mais les problèmes sont 
 - omnicanalité ;
 - gouvernance.
 
-## 5. Le débat OMS
+## 5. Le rôle révélateur de l'allocation
+
+Dans les discussions issues de l'étude Synvance, l'allocation apparaît comme un sujet particulièrement saillant.
+
+Elle revient dans les besoins cibles, les comparaisons ERP, les règles de priorisation, les précommandes, les stocks futurs, les simulations et les scénarios d'exécution.
+
+Dans une lecture initiale, l'allocation est traitée comme une fonctionnalité à couvrir par un ERP ou un OMS.
+
+Mais elle révèle progressivement une question plus profonde :
+
+> Comment décider qu'une ressource doit être affectée à une demande, dans un cadre d'engagement donné, selon des règles explicites ?
+
+L'allocation devient ainsi l'un des premiers indices que la convergence ne peut pas être réduite au choix d'une solution.
+
+Elle met en tension la demande, le stock, les engagements, les règles, les priorités commerciales, les événements et l'exécution.
+
+Elle prépare donc le basculement d'une logique de core model ERP vers une logique de capacités transverses de décision et d'orchestration.
+
+## 6. Le débat OMS
 
 La réflexion tourne initialement autour de la recherche d'un OMS cible.
 
 Puis une gêne apparaît progressivement.
 
-## 6. Le constat
+## 7. Le constat
 
 Le terme OMS regroupe historiquement :
 
@@ -74,13 +92,13 @@ Le terme OMS regroupe historiquement :
 
 OMS devient progressivement un mot-valise.
 
-## 7. Le tournant
+## 8. Le tournant
 
 Une idée apparaît : nous ne cherchons peut-être pas un OMS.
 
 Nous cherchons peut-être à comprendre quelles responsabilités les OMS ont agrégées historiquement.
 
-## 8. Décomposition de l'OMS
+## 9. Décomposition de l'OMS
 
 Les responsabilités sont progressivement isolées :
 
@@ -89,23 +107,23 @@ Les responsabilités sont progressivement isolées :
 - Decision Services ;
 - Case Management.
 
-## 9. Deuxième découverte
+## 10. Deuxième découverte
 
 Les commandes ne sont peut-être pas le bon objet d'urbanisation.
 
 Les mêmes mécanismes apparaissent dans l'achat, le B2B, le B2C, les retours et les transferts.
 
-## 10. Passage à Demand
+## 11. Passage à Demand
 
 La réflexion évolue progressivement de l'Order Management vers le Demand Management.
 
 La demande devient l'objet principal.
 
-## 11. Troisième découverte
+## 12. Troisième découverte
 
 Ce qui différencie réellement les situations n'est pas la demande mais le cadre d'engagement.
 
-## 12. Apparition d'Agreement
+## 13. Apparition d'Agreement
 
 Les différences entre B2B, B2C ou Achat proviennent principalement :
 
@@ -117,19 +135,19 @@ Les différences entre B2B, B2C ou Achat proviennent principalement :
 
 Agreement devient un concept central.
 
-## 13. Le modèle conceptuel FLOW
+## 14. Le modèle conceptuel FLOW
 
 Party → Agreement → Demand → Decision → Execution
 
 Ce modèle devient progressivement le socle conceptuel de FLOW.
 
-## 14. La question de l'organisation
+## 15. La question de l'organisation
 
 Le découpage Achat / Vente B2B / Vente B2C est remis en question.
 
 Ces domaines consommeront probablement la plateforme plutôt que de la structurer.
 
-## 15. Quatrième découverte
+## 16. Quatrième découverte
 
 Ce qui semble réellement mutualisable est :
 
@@ -139,19 +157,19 @@ Ce qui semble réellement mutualisable est :
 - Fulfillment Network Configuration ;
 - Decision Services.
 
-## 16. FLOW devient une plateforme
+## 17. FLOW devient une plateforme
 
 Le projet cesse progressivement d'être un projet OMS ou ERP.
 
 Il devient une plateforme fédérale de capacités partagées.
 
-## 17. Le COPIL de juin
+## 18. Le COPIL de juin
 
 FLOW est progressivement pensé comme une plateforme capable d'intégrer naturellement les futures acquisitions du groupe.
 
 Les notions de fédération, de plateforme d'entreprise et de multi-tenant deviennent centrales.
 
-## 18. FLOW devient un programme d'entreprise
+## 19. FLOW devient un programme d'entreprise
 
 FLOW n'est plus seulement un projet de convergence SI.
 
