@@ -59,6 +59,24 @@ Décision
 
 Une règle exprime la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Elle peut rendre une décision automatiquement, encadrer une décision humaine, déclencher une action, calculer une priorité ou interdire une action.
 
+## L'allocation comme cas emblématique
+
+L'allocation illustre particulièrement ce principe.
+
+Allouer une ressource à une demande ne consiste pas seulement à réserver du stock. C'est une décision qui relie une intention, un cadre d'engagement, une ressource disponible ou future, des règles de priorité et des événements opérationnels.
+
+```text
+Demande
+        ↓
+Décision d'allocation
+        ↓
+Ressource affectée ou réservée
+        ↓
+Promesse ou exécution
+```
+
+Le Case doit donc pouvoir conserver les décisions d'allocation successives, les règles appliquées, les événements déclencheurs et les conséquences produites sur la promesse, la réservation ou l'exécution.
+
 ## Demand et Supply
 
 Demand porte l’intention, les engagements et le cycle de vie de la demande.
@@ -91,6 +109,7 @@ Ce principe conduit FLOW à :
 ## Insights associés
 
 - [La demande comme point d’entrée de la modélisation FLOW](../../insights/demande-point-entree-modelisation.md)
+- [L'allocation révèle la vraie nature de la convergence](../../insights/allocation-point-saillant-de-la-convergence.md)
 - [FLOW n’est probablement pas un OMS : de l’OMS au Demand Management](../../insights/oms-vers-demand-management.md)
 - [L’organisation masque parfois les domaines](../../insights/organisation-masque-domaines.md)
 - [Inventory Visibility est une capacité d’entreprise](../../insights/inventory-visibility-capacite-d-entreprise.md)
