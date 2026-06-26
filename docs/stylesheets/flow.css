@@ -152,6 +152,10 @@
   font-size: 0.86rem;
 }
 
+.flow-card--context {
+  border-top-color: #44546a;
+}
+
 .flow-card--insights {
   border-top-color: #588781;
 }
