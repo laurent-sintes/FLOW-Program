@@ -63,6 +63,7 @@ nav:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
       - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
+      - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:
       - Les principes: architecture-entreprise/principes-directeurs/index.md
       - "01 — Converger, c’est fédérer": architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
