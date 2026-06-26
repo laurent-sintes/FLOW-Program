@@ -77,7 +77,7 @@ nav:
       - "07 — Qualifier les informations plutôt que parler de Master Data": architecture-entreprise/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
-      - De l’insight à la solution: methode/conception-flow.md
+      - Processus de cadrage: methode/conception-flow.md
   - Transformation:
       - Repères: transformation/index.md
       - Les changements à conduire: transformation/sujets-de-changement.md
