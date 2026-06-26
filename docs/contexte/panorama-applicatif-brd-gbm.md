@@ -8,6 +8,7 @@ Les deux environnements doivent être documentés séparément, car ils raconten
 
 - [Panorama applicatif BRD](panorama-brd.md)
 - [Panorama applicatif GBM](panorama-gbm.md)
+- [Convergence B2B / Wholesale](convergence-b2b-wholesale.md)
 
 ## Point de départ du programme
 
@@ -80,6 +81,26 @@ GBM
     → B2B intégré plus difficilement dans un paysage d'abord retail
 ```
 
+## Une convergence aussi interne à GBM
+
+La convergence ne concerne pas seulement BRD et GBM.
+
+Elle concerne aussi les marques au sein de GBM.
+
+Le module Négoce de StoreLand rend cette convergence interne très visible : il est activé pour les marques premium, tandis que d'autres marques opèrent encore certains flux de manière plus manuelle ou dispersée.
+
+```text
+Convergence inter-groupes
+    GBM ↔ BRD
+
+Convergence intra-GBM
+    marques premium ↔ autres marques
+```
+
+Cette observation change la lecture du programme.
+
+FLOW ne doit pas seulement rapprocher deux groupes. Il doit aussi aider GBM à expliciter ce qui doit être mutualisé entre marques, ce qui doit rester différenciant et ce qui doit être porté par une capacité commune.
+
 ## Deux lectures d'urbanisme à rendre comparables
 
 Le panorama applicatif ne doit pas seulement enregistrer une liste d'applications.
@@ -108,7 +129,7 @@ Sans cette grille commune, chaque groupe risque de décrire son SI avec ses prop
 | Structure historique | Socle plus centralisé, fortement paramétré | Instances StoreLand par marque, plus StoreLand Fournitures mutualisé |
 | Force principale | Robustesse transactionnelle et structuration des flux | Préservation des spécificités métiers retail et marques |
 | Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles, instances et données |
-| Signal fort | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse |
+| Signal fort | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse ; Négoce révèle la convergence intra-GBM |
 | Risque | Confondre remplacement applicatif et clarification des responsabilités | Préserver l'autonomie mais reproduire les silos et les fragments d'instances |
 | Enjeu d'urbanisme | Traduire une lecture déjà structurée du SI BRD dans une grille commune | Recomposer une lecture commune à partir d'un historique retail fédéral et multi-marques |
 
@@ -149,6 +170,8 @@ La comparaison doit se faire à partir d'une grille d'urbanisme commune, faute d
 
 Le cas d'UR côté GBM illustre ce point : UR entre dans le champ d'étude non parce qu'il figurait dans le périmètre applicatif initial, mais parce qu'il porte une responsabilité transverse qui ressemble fortement à une capacité cible FLOW.
 
+Le cas du module Négoce StoreLand ajoute un autre enseignement : certaines responsabilités actuellement regroupées dans une application devront probablement être séparées dans la cible entre engagement commercial et exécution / achat.
+
 ## À retenir
 
 Le contexte applicatif BRD / GBM confirme l'intuition fondatrice de FLOW :
@@ -159,4 +182,6 @@ Il confirme aussi que le remplacement applicatif initial ne suffit pas à défin
 
 > Il faut identifier les responsabilités communes que l'entreprise doit gouverner durablement, puis décider quels systèmes FLOW remplace, connecte, orchestre ou laisse hors périmètre.
 
-Enfin, il confirme un enjeu de méthode : FLOW devra redéfinir un urbanisme unifié pour rendre comparables les positionnements applicatifs des deux groupes dans le SI.
+Enfin, il élargit la notion de convergence : FLOW devra traiter à la fois la convergence BRD / GBM et la convergence interne GBM entre marques, notamment sur le B2B, le Négoce, les commandes d'achat et les processus encore manuels.
+
+Il confirme un enjeu de méthode : FLOW devra redéfinir un urbanisme unifié pour rendre comparables les positionnements applicatifs des deux groupes dans le SI.
