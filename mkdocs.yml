@@ -43,6 +43,7 @@ nav:
           - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
       - Opérations, décision et données:
           - "Gouvernance logistique : BRD vs GBM": insights/gouvernance-logistique-brd-vs-gbm.md
+          - Allocation et convergence: insights/allocation-point-saillant-de-la-convergence.md
           - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
           - Cohérence des données, DataHub et CEP: insights/coherence-donnees-fraicheur-datahub-cep.md
           - Inventory Visibility: insights/inventory-visibility-capacite-d-entreprise.md
