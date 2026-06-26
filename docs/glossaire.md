@@ -64,6 +64,10 @@ Composant d’intégration et d’exécution logistique observé dans le paysage
 
 Propriété selon laquelle les acteurs disposent d’informations suffisamment alignées pour prendre et exécuter des décisions fiables. Elle ne suppose pas nécessairement un temps réel absolu.
 
+### Command
+
+Nature d’information représentant une intention adressée à un système ou domaine pour demander une action. Une command peut déclencher un traitement, être acceptée, refusée, mise en attente ou produire des événements.
+
 ### Commande d’achat
 
 Commande passée auprès d’un fournisseur ou fabricant. Dans FLOW, la question est de savoir si elle doit être portée par FLOW, par l’ERP ou par un domaine spécialisé, selon son rôle dans l’exécution, la disponibilité future et le cycle de vie transverse.
@@ -81,10 +85,6 @@ Dispositif de partage et de mise à disposition de données ou de projections, a
 ### Demand & Fulfillment
 
 Ensemble des responsabilités qui permettent de recevoir une demande, de l’instruire, de décider si et comment elle peut être servie, puis d’en piloter l’exécution. Dans FLOW, ce périmètre réunit notamment demande, commande, stock, promesse, allocation, événements, exceptions, documents et cycle de vie.
-
-### Derived
-
-Mode de gouvernance au repos dans lequel une information est produite à partir d’autres informations par calcul, règle, agrégation ou transformation. Le domaine est responsable de la méthode de dérivation, pas nécessairement de toutes les sources utilisées.
 
 ### Donnée de référence / donnée partagée
 
@@ -116,9 +116,9 @@ Promesse ou obligation envers une partie prenante, qui peut porter sur une dispo
 
 Socle applicatif de gestion transactionnelle, souvent utilisé pour les achats, ventes, stocks, finance ou référentiels. Dans FLOW, l’ERP doit être distingué des responsabilités d’orchestration transverse, de demande, de promesse et de cycle de vie, tout en restant articulé avec elles.
 
-### Événement
+### Event / Événement
 
-Signal publié lorsqu’un fait ou un état métier a changé, afin d’informer d’autres domaines ou consommateurs. Un événement ne décrit pas toute la réalité métier : il annonce qu’une évolution significative s’est produite.
+Nature d’information représentant un signal publié lorsqu’un fait ou un état métier significatif a changé. Un événement ne décrit pas toute la réalité métier : il annonce qu’une évolution significative s’est produite.
 
 ### Experience Agnostic
 
@@ -130,9 +130,9 @@ Principe selon lequel FLOW expose des capacités réutilisables sans imposer les
 
 Comportement concret offert par un produit ou une solution. Une fonctionnalité contribue à une capacité, sans définir à elle seule la responsabilité métier.
 
-### Fait
+### Fact / Fait
 
-Réalité métier observée à un instant donné, utilisée pour instruire une décision ou comprendre l’état d’un Case : stock disponible, contrat actif, capacité restante, document reçu ou statut d’une demande.
+Nature d’information représentant une réalité métier observée, reçue ou calculée à un instant donné. Un fact peut servir à constater, décider, promettre, allouer ou expliquer.
 
 ### Fulfillment
 
@@ -148,19 +148,11 @@ Périmètre des marques historiques du Groupe Beaumanoir dans le programme FLOW.
 
 Source reconnue comme faisant autorité pour un usage, un consommateur, une décision ou un contexte donné. Dans un SI distribué, une information peut être disponible dans plusieurs sources : la Golden Source n’est donc pas absolue, elle est contextualisée par l’usage.
 
-### Gouvernance au repos
-
-Dimension qui décrit comment une information est maîtrisée dans un domaine : self managed, imported ou derived. Elle ne doit pas être confondue avec la nature de l’information ni avec son mode d’échange.
-
 ### Granularité d’échange
 
-Dimension qui décrit l’échelle d’un échange d’information. FLOW distingue au minimum les échanges unitaires, ciblés sur un objet ou une action, et les échanges de masse, portant sur un ensemble d’informations.
+Dimension utile pour la conception d’interface, décrivant l’échelle d’un échange d’information. FLOW distinguera notamment les échanges unitaires, ciblés sur un objet ou une action, et les échanges de masse, portant sur un ensemble d’informations.
 
 ## I
-
-### Imported
-
-Mode de gouvernance au repos dans lequel une information est ingérée depuis une source externe. Le domaine consommateur peut la stocker, la contrôler ou la projeter, mais il n’en est pas le maître.
 
 ### Information
 
@@ -178,7 +170,7 @@ Capacité de rendre visibles les ressources de stock et leur contexte d’usage,
 
 ### Master Data
 
-Notion historique issue de la distinction entre master file et transaction file, puis popularisée par les ERP comme SAP pour désigner des objets stables contextualisant les transactions. Dans FLOW, cette notion est jugée trop large : les informations doivent être qualifiées selon plusieurs dimensions plutôt que rangées dans une catégorie unique.
+Notion historique issue de la distinction entre master file et transaction file, puis popularisée par les ERP comme SAP pour désigner des objets stables contextualisant les transactions. Dans FLOW, cette notion est jugée trop large : les informations doivent être qualifiées par nature et par statut source / projection plutôt que rangées dans une catégorie unique.
 
 ### Master Data Management
 
@@ -186,7 +178,7 @@ Discipline visant à mettre en qualité, gouverner, consolider, dédupliquer et 
 
 ### Mode d’échange
 
-Dimension qui décrit comment une information circule entre domaines ou systèmes : event, query, command, synchronization ou stream. Des mécanismes techniques comme Pub/Sub peuvent mettre en œuvre certains modes d’échange, mais ne constituent pas une nature d’information.
+Dimension utile pour la conception d’interface, décrivant comment une information circule entre domaines ou systèmes : event, query, command, synchronization ou stream. Elle ne doit pas être confondue avec la nature d’information utilisée en cartographie fonctionnelle.
 
 ### Module Négoce
 
@@ -196,9 +188,17 @@ Module StoreLand activé pour certaines marques premium. Il permet notamment de 
 
 ### Nature d’information
 
-Catégorie qui induit un comportement commun pour les informations associées. FLOW distingue notamment objet métier / aggregate root, événement, fait, décision, document, vue et configuration.
+Catégorie qui induit un comportement commun pour les informations associées. Pour la cartographie fonctionnelle FLOW, les natures retenues sont : command, event, fact, policy, objet métier, document et nomenclature.
+
+### Nomenclature
+
+Nature d’information représentant un ensemble contrôlé de valeurs, codes ou classifications partagés. Une nomenclature stabilise le vocabulaire, les statuts, les catégories ou les classifications utilisées par plusieurs domaines.
 
 ## O
+
+### Objet métier
+
+Nature d’information représentant un objet portant une identité, un cycle de vie et la responsabilité de sa cohérence à chaque mise à jour. Un objet métier protège ses invariants et peut produire des événements.
 
 ### OMS — Order Management System
 
@@ -222,6 +222,10 @@ Ensemble de capacités partagées, gouvernées et réutilisables, conçu pour se
 
 Système ou domaine portant la conception et le cycle de vie amont du produit. Il peut alimenter le PIM, le référentiel produit d’exécution ou d’autres systèmes contributeurs.
 
+### Policy
+
+Nature d’information représentant une règle, politique, paramètre ou contrainte qui influence une décision ou un comportement. Une policy peut encadrer une décision humaine, automatiser une décision, déclencher une action ou interdire un comportement.
+
 ### Principe directeur
 
 Règle durable qui oriente les choix de conception et permet d’évaluer leur cohérence avec l’ambition de FLOW.
@@ -234,9 +238,9 @@ Périmètre de gouvernance autonome par lequel une ou plusieurs capacités sont 
 
 Projection produit plus statique, gouvernée et limitée aux données nécessaires au fulfillment. Elle permet à FLOW de promettre, allouer, orchestrer et exécuter sans absorber la responsabilité de conception ou d’enrichissement de l’offre.
 
-### Projection de données
+### Projection
 
-Vue de données construite pour un usage ou une décision donnée, sans prétendre remplacer la responsabilité du domaine source.
+Statut d’une information dans un domaine lorsque ce domaine consomme une représentation issue d’une ou plusieurs sources, adaptée à son usage. Une vue, une copie, un cache, un index ou un snapshot sont des formes possibles de projection.
 
 ### Promesse
 
@@ -254,13 +258,9 @@ Mission durable que l’entreprise doit assumer. Une responsabilité constitue l
 
 ### Règle
 
-Expression d’un comportement métier attendu : la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Une règle peut rendre une décision automatiquement, encadrer une décision humaine, déclencher une action, calculer une priorité ou interdire une action.
+Expression d’un comportement métier attendu : la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Dans la nomenclature d’information FLOW, une règle est généralement traitée comme une `Policy`.
 
 ## S
-
-### Self Managed
-
-Mode de gouvernance au repos dans lequel l’information est gérée par le domaine qui en est responsable. Le domaine maîtrise son cycle de vie, sa qualité, ses règles de modification et son exposition.
 
 ### Socloz
 
@@ -269,6 +269,10 @@ Composant structurant du paysage GBM autour de l’e-commerce, de l’omnicanal,
 ### Solution
 
 Assemblage concret de produits, fonctionnalités, API, événements, interfaces et traitements destiné à répondre à un besoin dans un contexte donné.
+
+### Source
+
+Statut d’une information dans un domaine lorsque ce domaine crée et maintient l’information comme référence pour son périmètre ou son usage. Une information peut être source dans un domaine et projection dans un autre.
 
 ### Stock confié
 
