@@ -81,7 +81,6 @@ nav:
   - Transformation:
       - Repères: transformation/index.md
       - Sujets de changement FLOW: transformation/sujets-de-changement.md
-      - Gouvernance du changement:
-          - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
+      - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
   - Référentiel:
       - Glossaire: glossaire.md
