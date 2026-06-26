@@ -77,6 +77,9 @@ nav:
       - La méthodologie: methode/index.md
       - De l’insight à la solution: methode/conception-flow.md
   - Transformation:
-      - Conduire la transformation: transformation/index.md
-      - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
-  - Glossaire: glossaire.md
+      - Repères: transformation/index.md
+      - Sujets de changement FLOW: transformation/sujets-de-changement.md
+      - Gouvernance du changement:
+          - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
+  - Référentiel:
+      - Glossaire: glossaire.md
