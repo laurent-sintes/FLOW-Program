@@ -1,4 +1,4 @@
-# Méthodologie Projet — De l’insight à la solution
+# Processus de cadrage
 
 ## Introduction
 
