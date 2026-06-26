@@ -89,6 +89,18 @@ Le scénario réellement exécuté dépend du contexte opérationnel observé au
 
 ---
 
+### Étude Synvance
+
+L'étude Synvance a également mis en visibilité l'allocation comme un sujet particulièrement saillant.
+
+Dans les besoins cibles, l'allocation apparaît comme un ensemble de règles, de priorités, de simulations, de réservations, de stocks futurs, d'événements et de réallocations.
+
+Cela confirme que certaines problématiques ne peuvent pas être comprises uniquement comme des étapes de processus.
+
+Elles doivent être conçues comme des décisions successives prises à partir d'un contexte métier évolutif.
+
+---
+
 ## L'approche ERP
 
 Les ERP modélisent généralement un macro-processus.
@@ -231,6 +243,27 @@ Le processus qui en résulte change également.
 
 ---
 
+## L'allocation comme exemple
+
+L'allocation montre concrètement pourquoi le processus émerge des décisions.
+
+Une même demande peut être :
+
+* préallouée ;
+* allouée fermement ;
+* partiellement allouée ;
+* réallouée ;
+* désallouée ;
+* mise en attente ;
+* substituée ;
+* libérée pour exécution.
+
+Ces transitions ne suivent pas toujours un workflow unique.
+
+Elles résultent de décisions prises à partir de stocks, de priorités, d'engagements, de règles commerciales, de contraintes logistiques et d'événements opérationnels.
+
+---
+
 ## Conséquences architecturales
 
 Cette approche conduit naturellement à privilégier :
@@ -292,6 +325,11 @@ Mais ils ne constituent plus l'élément central de conception.
 Ils deviennent une vue de lecture du comportement du système.
 
 ---
+
+## Insights associés
+
+- [L'allocation révèle la vraie nature de la convergence](../../insights/allocation-point-saillant-de-la-convergence.md)
+- [La demande comme point d’entrée de la modélisation FLOW](../../insights/demande-point-entree-modelisation.md)
 
 ## À retenir
 
