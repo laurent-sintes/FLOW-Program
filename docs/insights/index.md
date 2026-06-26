@@ -33,6 +33,7 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 ## Logistique et décision
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
+- [L'allocation révèle la vraie nature de la convergence](allocation-point-saillant-de-la-convergence.md)
 
 ## Données, cohérence et observabilité
 
@@ -64,3 +65,4 @@ Elle sert de mémoire vivante du programme : chaque page capture un raisonnement
 17. Toutes les capacités de convergence ne convergent pas dans FLOW.
 18. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
 19. La demande peut constituer le point d’entrée de la modélisation, avant les données de référence et les processus.
+20. L'allocation révèle la vraie nature de la convergence : une décision transverse entre demande, engagement, ressource, règles et exécution.
