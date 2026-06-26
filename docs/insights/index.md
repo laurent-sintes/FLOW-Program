@@ -2,67 +2,84 @@
 
 Cette section conserve les découvertes, hypothèses, convictions et enseignements du programme FLOW.
 
-Elle sert de mémoire vivante du programme : chaque page capture un raisonnement, un constat ou une conviction avant sa transformation éventuelle en vision, principe directeur ou ADR.
+Elle sert de mémoire vivante du programme : chaque page capture un raisonnement, un constat ou une conviction avant sa transformation éventuelle en vision, principe directeur, standard d'architecture ou décision.
 
-## Fil rouge
+## Comment lire les insights
 
-- [Histoire de FLOW](histoire-de-flow.md)
-- [Journal des Insights](journal-des-insights.md)
+Les insights ne sont pas encore des décisions définitives.
+
+Ils constituent la matière première du programme : ils expliquent pourquoi certaines orientations émergent, quels problèmes elles cherchent à résoudre et quelles tensions elles révèlent.
+
+Pour une lecture rapide, commencer par :
+
+- [Histoire de FLOW](histoire-de-flow.md) — le récit d'évolution du programme ;
+- [Journal des insights](journal-des-insights.md) — la liste classée et chronologique des insights ;
+- [Vision du programme FLOW](../architecture-entreprise/vision/vision-programme-flow.md) — la consolidation actuelle des messages structurants.
 
 ## Positionnement de FLOW
 
-- [FLOW n'est probablement pas un OMS : de l'OMS au Demand Management](oms-vers-demand-management.md)
+Ces pages expliquent ce que FLOW est — et surtout ce qu'il n'est pas.
+
+- [De l'OMS au Demand Management](oms-vers-demand-management.md)
 - [FLOW n'est pas une plateforme d'engagement](flow-n-est-pas-une-plateforme-d-engagement.md)
 - [ERP + OMS : séparation utile ou dette architecturale ?](erp-oms-separation-ou-plateforme-integree.md)
 - [Convergence, fédération et uniformisation](convergence-federation-uniformisation.md)
 
 ## Modèle conceptuel
 
+Ces pages décrivent les concepts qui structurent FLOW : demande, Case, Agreement, décisions, responsabilités et données utiles à l'exécution.
+
 - [Agreement comme pivot](agreement-comme-pivot.md)
 - [Modèle conceptuel FLOW](modele-conceptuel-flow.md)
 
-## Modélisation, demandes et décisions
-
-- [La demande comme point d’entrée de la modélisation FLOW](demande-point-entree-modelisation.md)
-
 ## Gouvernance et fédération
 
-- [Plateforme fédérale et multi-tenant](plateforme-federale-multitenant.md)
-- [GBM : Storeland par marque, UR et besoin de fédération](gbm-storeland-ur-federation.md)
+Ces pages traitent du caractère fédéral de FLOW : multi-marques, multi-contextes, multi-consommateurs, sans créer un nouveau monolithe.
 
-## Logistique et décision
+- [Plateforme fédérale et multi-tenant](plateforme-federale-multitenant.md)
+- [GBM, StoreLand, UR et fédération](gbm-storeland-ur-federation.md)
+- [L'organisation masque parfois les domaines](organisation-masque-domaines.md)
+
+## Opérations, décision et données
+
+Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions et projections.
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
-- [L'allocation révèle la vraie nature de la convergence](allocation-point-saillant-de-la-convergence.md)
-
-## Données, cohérence et observabilité
-
-- [Cohérence des données : fraîcheur, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
-- [Inventory Visibility est une capacité d'entreprise](inventory-visibility-capacite-d-entreprise.md)
+- [Allocation et convergence](allocation-point-saillant-de-la-convergence.md)
+- [Engagements, soft allocation et priorisation](engagements-soft-allocation-et-priorisation-commerciale.md)
+- [Cohérence des données, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+- [Inventory Visibility](inventory-visibility-capacite-d-entreprise.md)
 
 ## Finance et adhérences externes
 
-- [La convergence Finance constitue une adhérence forte pour FLOW](convergence-finance-adherence-flow.md)
+Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spécialisés, sans chercher à tout absorber.
+
+- [Convergence Finance et adhérence FLOW](convergence-finance-adherence-flow.md)
+- [Facturation : un assemblage de responsabilités](facturation-capacite-documentaire-transverse.md)
 
 ## Insights structurants à retenir
 
-1. FLOW n'est probablement pas un OMS.
-2. FLOW n'est pas une plateforme d'engagement client.
-3. FLOW ressemble davantage à une plateforme d'orchestration des demandes.
-4. Les demandes sont plus stables que les processus.
-5. Agreement est le pivot qui explique les différences entre Achat, B2B et B2C.
-6. Inventory Visibility est une Shared Business Capability.
-7. Decision Services est une Shared Business Capability.
-8. Converger ne signifie pas uniformiser : converger, c'est fédérer.
-9. Une plateforme doit fédérer autant qu'elle mutualise.
-10. Le tenant est une notion de gouvernance.
-11. UR prouve que le modèle 100% ségrégé par marque ne suffit pas.
-12. La décision constitue une responsabilité architecturale à part entière.
-13. La cohérence des données prime sur la seule fraîcheur.
-14. DataHub et CEP sont des patterns clés pour maîtriser la cohérence opérationnelle.
-15. Le stock unifié doit devenir un référentiel d'entreprise, pas une capacité portée par un OMS omnicanal.
-16. La convergence Finance autour de SAP constitue une adhérence forte pour FLOW.
-17. Toutes les capacités de convergence ne convergent pas dans FLOW.
-18. FLOW est devenu un programme d'entreprise, pas seulement un projet SI.
-19. La demande peut constituer le point d’entrée de la modélisation, avant les données de référence et les processus.
-20. L'allocation révèle la vraie nature de la convergence : une décision transverse entre demande, engagement, ressource, règles et exécution.
+| Thème | Insight structurant |
+| --- | --- |
+| Positionnement | FLOW n'est pas seulement un OMS : il devient une plateforme Demand. |
+| Centre de gravité | Le cœur du SI se déplace de l'ERP-document vers la demande, le Case et la satisfaction client / utilisateur. |
+| Modèle conceptuel | La demande est plus stable que les processus, canaux ou organisations. |
+| Agreement | L'Agreement permet de piloter les variations de traitement sans multiplier les variantes de commande. |
+| Convergence | Converger ne signifie pas uniformiser : il faut piloter le bon niveau de commun et de différenciation. |
+| Organisation | Les organisations consomment la plateforme, elles ne doivent pas la structurer. |
+| Données | Les informations doivent être qualifiées par nature et par statut Source / Projection plutôt que rangées dans “Master Data”. |
+| Stock | Le stock unifié et l'Inventory Visibility sont des capacités d'entreprise. |
+| Décision | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |
+| Finance | FLOW doit produire les faits et documents utiles, sans devenir le domaine Finance. |
+
+## Travail restant
+
+Les insights sont maintenant suffisamment riches pour soutenir une version 0.
+
+Les prochains compléments devront probablement porter sur :
+
+- la cartographie détaillée des capacités FLOW ;
+- les frontières entre produits FLOW ;
+- les standards d'interface ;
+- la méthodologie de delivery ;
+- la gouvernance des règles, Agreements et projections.
