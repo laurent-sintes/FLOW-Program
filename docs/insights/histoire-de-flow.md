@@ -26,7 +26,21 @@ Chaque marque dispose historiquement de son propre Storeland et de ses spécific
 
 Pour coordonner l'ensemble est apparu UR, qui centralise certaines demandes et leur cycle de vie.
 
-## 3. Première découverte
+## 3. L'étude Synvance
+
+En 2025, une étude est commandée au cabinet de conseil Synvance.
+
+Son objectif est d'objectiver les disparités entre Boardriders et les marques historiques du Groupe Beaumanoir.
+
+L'étude doit permettre de constater les écarts entre les deux patrimoines SI, les modes de fonctionnement, les applications et les processus.
+
+Elle sert également à éclairer le type de solution dont le groupe a besoin pour accompagner la convergence.
+
+À ce stade, la question reste encore formulée de manière assez classique : quel type de solution cible permettrait de rapprocher BRD et GBM ?
+
+Cette étude constitue un jalon important : elle met en visibilité les différences à traiter et prépare le terrain des réflexions qui conduiront progressivement à FLOW.
+
+## 4. Première découverte
 
 Lorsque l'on compare BRD et GBM, les outils diffèrent mais les problèmes sont souvent identiques :
 
@@ -38,13 +52,13 @@ Lorsque l'on compare BRD et GBM, les outils diffèrent mais les problèmes sont 
 - omnicanalité ;
 - gouvernance.
 
-## 4. Le débat OMS
+## 5. Le débat OMS
 
 La réflexion tourne initialement autour de la recherche d'un OMS cible.
 
 Puis une gêne apparaît progressivement.
 
-## 5. Le constat
+## 6. Le constat
 
 Le terme OMS regroupe historiquement :
 
@@ -60,13 +74,13 @@ Le terme OMS regroupe historiquement :
 
 OMS devient progressivement un mot-valise.
 
-## 6. Le tournant
+## 7. Le tournant
 
 Une idée apparaît : nous ne cherchons peut-être pas un OMS.
 
 Nous cherchons peut-être à comprendre quelles responsabilités les OMS ont agrégées historiquement.
 
-## 7. Décomposition de l'OMS
+## 8. Décomposition de l'OMS
 
 Les responsabilités sont progressivement isolées :
 
@@ -75,23 +89,23 @@ Les responsabilités sont progressivement isolées :
 - Decision Services ;
 - Case Management.
 
-## 8. Deuxième découverte
+## 9. Deuxième découverte
 
 Les commandes ne sont peut-être pas le bon objet d'urbanisation.
 
 Les mêmes mécanismes apparaissent dans l'achat, le B2B, le B2C, les retours et les transferts.
 
-## 9. Passage à Demand
+## 10. Passage à Demand
 
 La réflexion évolue progressivement de l'Order Management vers le Demand Management.
 
 La demande devient l'objet principal.
 
-## 10. Troisième découverte
+## 11. Troisième découverte
 
 Ce qui différencie réellement les situations n'est pas la demande mais le cadre d'engagement.
 
-## 11. Apparition d'Agreement
+## 12. Apparition d'Agreement
 
 Les différences entre B2B, B2C ou Achat proviennent principalement :
 
@@ -103,19 +117,19 @@ Les différences entre B2B, B2C ou Achat proviennent principalement :
 
 Agreement devient un concept central.
 
-## 12. Le modèle conceptuel FLOW
+## 13. Le modèle conceptuel FLOW
 
 Party → Agreement → Demand → Decision → Execution
 
 Ce modèle devient progressivement le socle conceptuel de FLOW.
 
-## 13. La question de l'organisation
+## 14. La question de l'organisation
 
 Le découpage Achat / Vente B2B / Vente B2C est remis en question.
 
 Ces domaines consommeront probablement la plateforme plutôt que de la structurer.
 
-## 14. Quatrième découverte
+## 15. Quatrième découverte
 
 Ce qui semble réellement mutualisable est :
 
@@ -125,19 +139,19 @@ Ce qui semble réellement mutualisable est :
 - Fulfillment Network Configuration ;
 - Decision Services.
 
-## 15. FLOW devient une plateforme
+## 16. FLOW devient une plateforme
 
 Le projet cesse progressivement d'être un projet OMS ou ERP.
 
 Il devient une plateforme fédérale de capacités partagées.
 
-## 16. Le COPIL de juin
+## 17. Le COPIL de juin
 
 FLOW est progressivement pensé comme une plateforme capable d'intégrer naturellement les futures acquisitions du groupe.
 
 Les notions de fédération, de plateforme d'entreprise et de multi-tenant deviennent centrales.
 
-## 17. FLOW devient un programme d'entreprise
+## 18. FLOW devient un programme d'entreprise
 
 FLOW n'est plus seulement un projet de convergence SI.
 
