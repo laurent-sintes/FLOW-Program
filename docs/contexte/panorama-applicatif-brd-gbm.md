@@ -2,104 +2,57 @@
 
 ## Intention
 
-Ce panorama documente le contexte applicatif observé avant la formalisation de FLOW.
+Cette page sert d'orientation entre les panoramas applicatifs BRD et GBM.
 
-Il s'appuie sur le référentiel documentaire préexistant, notamment l'étude Synvance de 2025, les supports COPROJ / COPIL, les livrables d'existant et de besoins cibles, ainsi que les supports SI BRD et GBM.
+Les deux environnements doivent être documentés séparément, car ils racontent deux histoires SI différentes.
 
-L'objectif n'est pas de produire une cartographie exhaustive et définitive.
+- [Panorama applicatif BRD](panorama-brd.md)
+- [Panorama applicatif GBM](panorama-gbm.md)
 
-L'objectif est de conserver une lecture structurée du point de départ : deux patrimoines applicatifs différents, mais confrontés à des problèmes de convergence proches.
+## Point de départ du programme
 
-## Lecture générale
+Le point de départ opérationnel du programme est concret : FLOW est envisagé comme le remplacement de SAP et NewStore.
 
-Le contexte initial est celui d'une convergence entre deux histoires SI.
+Cette formulation est importante pour un entrant du projet.
 
-BRD présente une trajectoire plus centralisée autour de SAP et de solutions satellites spécialisées.
+Elle évite de présenter FLOW uniquement comme une réflexion théorique sur les capacités.
 
-GBM présente une trajectoire plus fédérale, historiquement structurée par marque, avec Storeland comme socle applicatif majeur et des solutions complémentaires pour répondre à des besoins transverses ou spécialisés.
+La question de départ peut être formulée ainsi :
+
+> FLOW doit remplacer SAP et NewStore. Doit-il remplacer autre chose également ?
+
+Cette question ouvre immédiatement une analyse d'urbanisme.
+
+SAP et NewStore ne sont pas isolés. Ils s'inscrivent dans un paysage d'applications, d'intégrations, de référentiels, de systèmes d'exécution, de flux logistiques, de données produit, de canaux et de solutions de pilotage.
+
+## Deux histoires SI différentes
+
+BRD et GBM ne partent pas du même point.
 
 ```text
 BRD
     → logique plus centralisée autour de SAP
-    → solutions satellites spécialisées
+    → NewStore comme OMS
+    → solutions spécialisées autour du cœur transactionnel
     → forte technicité des règles d'allocation et de stock
 
 GBM
-    → logique plus fédérale par marque
+    → logique historiquement fédérale par marque
     → Storeland comme socle historique
-    → UR et autres solutions pour coordonner certains besoins transverses
+    → UR comme signal d'un besoin transverse
+    → multiplication d'outils spécialisés et de frontières locales
 ```
-
-Le point important n'est pas seulement la différence d'outils.
-
-Le point important est que les deux patrimoines traitent souvent les mêmes responsabilités, mais selon des découpages, règles et niveaux de maturité différents.
-
-## Panorama BRD
-
-Le paysage BRD est principalement décrit comme un système organisé autour d'un cœur SAP.
-
-Autour de ce cœur gravitent plusieurs solutions spécialisées.
-
-### Applications et composants mentionnés
-
-- SAP : cœur ERP et support majeur des processus achats, ventes, finance, stocks et allocations.
-- NewStore : solution liée aux parcours retail / omnicanaux.
-- Salesforce : relation client et capacités d'engagement.
-- Elastic : usages de recherche, catalogue ou exposition selon les contextes documentés.
-- Optimate : planification, achats ou supply selon les périmètres étudiés.
-- PIM / PLM : gestion ou contribution aux données produits selon les flux.
-- WMS et partenaires logistiques : exécution opérationnelle et flux physiques.
-- Maersk et partenaires : contribution aux opérations logistiques.
-
-### Caractéristiques observées
-
-BRD dispose d'une logique plus intégrée autour de SAP.
-
-Cette centralisation donne de la robustesse, notamment sur certains flux structurants.
-
-Elle s'accompagne cependant d'une forte complexité de paramétrage, en particulier sur les allocations, les règles de stock, les horizons, les priorités, les commandes spéciales, les précommandes et les traitements batch.
-
-BRD illustre donc une situation où la mutualisation applicative existe déjà partiellement, mais où les responsabilités de décision restent difficiles à lire.
-
-## Panorama GBM
-
-Le paysage GBM historique est plus fédéral.
-
-Il s'est construit autour des marques, des enseignes et de leurs spécificités.
-
-### Applications et composants mentionnés
-
-- Storeland : socle historique majeur, notamment pour les marques historiques.
-- UR : application transverse apparue pour centraliser certaines demandes et leur cycle de vie.
-- Cegid Y2 : périmètre magasin / POS et back-office selon les contextes.
-- SoCloz : capacités omnicanales ou OMS selon les périmètres documentés.
-- OMS C-LOG : orchestration logistique ou omnicanale selon les flux.
-- Salesforce : relation client ou engagement selon les usages.
-- Elastic : recherche, exposition ou contribution catalogue selon les contextes.
-- Talend : intégration et échanges de données.
-- PLM / PIM : données produit, articles, catalogues, saisons et attributs.
-- MAP / BPC / CBS / SNC : outils ou composants spécialisés mentionnés dans les supports existants.
-- WMS : exécution logistique et opérations physiques.
-
-### Caractéristiques observées
-
-GBM présente une logique historiquement distribuée et différenciée par marque.
-
-Cette organisation préserve les spécificités métier, mais rend plus difficile la gouvernance transverse des demandes, ressources, règles et engagements.
-
-L'apparition de UR est un signal important : malgré une logique ségrégée par marque, certaines demandes nécessitent un pilotage commun ou transverse.
-
-GBM illustre donc une situation où l'autonomie locale est forte, mais où certains besoins dépassent naturellement les frontières applicatives et organisationnelles.
 
 ## Comparaison synthétique
 
 | Dimension | BRD | GBM |
 | --- | --- | --- |
-| Logique dominante | Centralisation autour de SAP | Fédération historique par marque |
-| Force principale | Robustesse d'un cœur commun | Préservation des spécificités métiers |
-| Limite principale | Complexité des règles, paramétrages et responsabilités dispersées | Multiplication des outils et difficulté de gouvernance transverse |
-| Signal fort | Allocation et stock très structurés mais complexes | UR révèle le besoin de fédération |
-| Risque | Mutualiser sans clarifier les responsabilités | Préserver l'autonomie mais reproduire les silos |
+| Logique dominante | Centralisation autour de SAP et NewStore | Fédération historique par marque |
+| Socle principal | SAP, NewStore | Storeland, puis solutions complémentaires |
+| Force principale | Robustesse transactionnelle et structuration des flux | Préservation des spécificités métiers |
+| Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles et données |
+| Signal fort | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse |
+| Risque | Confondre remplacement applicatif et clarification des responsabilités | Préserver l'autonomie mais reproduire les silos |
 
 ## Responsabilités communes observées
 
@@ -122,25 +75,17 @@ Elle prépare le passage d'une lecture applicative à une lecture par domaines, 
 
 ## Ce que ce panorama apprend à FLOW
 
-Le panorama applicatif montre que FLOW ne peut pas être pensé comme un simple remplacement d'application.
+Le panorama applicatif montre que FLOW ne peut pas être pensé comme un simple remplacement technique.
 
-BRD et GBM ne partent pas du même point.
-
-Ils n'ont pas les mêmes outils, pas les mêmes règles, pas la même maturité applicative, pas le même niveau de centralisation.
-
-Pourtant, ils doivent traiter des problématiques communes.
+Le remplacement de SAP et NewStore impose de clarifier les responsabilités : lesquelles sont reprises par FLOW, lesquelles restent dans Finance, lesquelles restent dans les systèmes d'exécution, lesquelles sont seulement connectées ou consommées ?
 
 FLOW doit donc éviter deux pièges :
 
-- imposer un modèle unique qui effacerait les spécificités utiles ;
-- reproduire les silos existants sous une forme modernisée.
+- remplacer des applications sans clarifier les responsabilités métier ;
+- élargir indéfiniment son périmètre au motif que tout est connecté.
 
 ## À retenir
 
 Le contexte applicatif BRD / GBM confirme l'intuition fondatrice de FLOW :
 
-> La convergence ne doit pas commencer par le choix d'une solution unique, mais par l'identification des responsabilités communes que l'entreprise doit gouverner durablement.
-
-Le panorama applicatif est donc un contexte, pas une cible.
-
-Il explique d'où vient FLOW, mais il ne doit pas enfermer FLOW dans les catégories applicatives héritées.
+> Le remplacement de SAP et NewStore ne suffit pas à définir FLOW. Il faut identifier les responsabilités communes que l'entreprise doit gouverner durablement, puis décider quels systèmes FLOW remplace, connecte, orchestre ou laisse hors périmètre.
