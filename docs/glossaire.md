@@ -82,6 +82,10 @@ Dispositif de partage et de mise à disposition de données ou de projections, a
 
 Ensemble des responsabilités qui permettent de recevoir une demande, de l’instruire, de décider si et comment elle peut être servie, puis d’en piloter l’exécution. Dans FLOW, ce périmètre réunit notamment demande, commande, stock, promesse, allocation, événements, exceptions, documents et cycle de vie.
 
+### Derived
+
+Mode de gouvernance au repos dans lequel une information est produite à partir d’autres informations par calcul, règle, agrégation ou transformation. Le domaine est responsable de la méthode de dérivation, pas nécessairement de toutes les sources utilisées.
+
 ### Donnée de référence / donnée partagée
 
 Donnée nécessaire à plusieurs décisions ou domaines, dont la responsabilité est attribuée, la qualité gouvernée, la définition vérifiée et la disponibilité assurée. Elle ne suppose pas une base de données unique ni une catégorie héritée d’un ERP.
@@ -140,7 +144,27 @@ Ensemble des responsabilités permettant d’exécuter une demande ou une comman
 
 Périmètre des marques historiques du Groupe Beaumanoir dans le programme FLOW. Son SI est lu comme historiquement retail, ouvert ensuite au e-commerce puis plus difficilement au B2B.
 
+### Golden Source / source faisant foi
+
+Source reconnue comme faisant autorité pour un usage, un consommateur, une décision ou un contexte donné. Dans un SI distribué, une information peut être disponible dans plusieurs sources : la Golden Source n’est donc pas absolue, elle est contextualisée par l’usage.
+
+### Gouvernance au repos
+
+Dimension qui décrit comment une information est maîtrisée dans un domaine : self managed, imported ou derived. Elle ne doit pas être confondue avec la nature de l’information ni avec son mode d’échange.
+
+### Granularité d’échange
+
+Dimension qui décrit l’échelle d’un échange d’information. FLOW distingue au minimum les échanges unitaires, ciblés sur un objet ou une action, et les échanges de masse, portant sur un ensemble d’informations.
+
 ## I
+
+### Imported
+
+Mode de gouvernance au repos dans lequel une information est ingérée depuis une source externe. Le domaine consommateur peut la stocker, la contrôler ou la projeter, mais il n’en est pas le maître.
+
+### Information
+
+Donnée structurée suffisamment complète pour porter un sens métier. Si on la découpe davantage, on perd le sens utile pour le métier, la décision ou le système.
 
 ### Insight
 
@@ -152,9 +176,27 @@ Capacité de rendre visibles les ressources de stock et leur contexte d’usage,
 
 ## M
 
+### Master Data
+
+Notion historique issue de la distinction entre master file et transaction file, puis popularisée par les ERP comme SAP pour désigner des objets stables contextualisant les transactions. Dans FLOW, cette notion est jugée trop large : les informations doivent être qualifiées selon plusieurs dimensions plutôt que rangées dans une catégorie unique.
+
+### Master Data Management
+
+Discipline visant à mettre en qualité, gouverner, consolider, dédupliquer et diffuser des informations partagées afin d’assurer cohérence, fiabilité et réutilisation. Le MDM ne doit pas être confondu avec la catégorie ERP `Master Data`.
+
+### Mode d’échange
+
+Dimension qui décrit comment une information circule entre domaines ou systèmes : event, query, command, synchronization ou stream. Des mécanismes techniques comme Pub/Sub peuvent mettre en œuvre certains modes d’échange, mais ne constituent pas une nature d’information.
+
 ### Module Négoce
 
 Module StoreLand activé pour certaines marques premium. Il permet notamment de construire un assortiment, préparer un commercial agreement et passer des commandes d’achat. Son analyse conduit à découpler le design commercial, plutôt dans le domaine engagement, de la commande d’achat et de l’exécution, potentiellement candidates FLOW.
+
+## N
+
+### Nature d’information
+
+Catégorie qui induit un comportement commun pour les informations associées. FLOW distingue notamment objet métier / aggregate root, événement, fait, décision, document, vue et configuration.
 
 ## O
 
@@ -215,6 +257,10 @@ Mission durable que l’entreprise doit assumer. Une responsabilité constitue l
 Expression d’un comportement métier attendu : la manière dont l’entreprise doit réagir, décider ou agir dans une situation donnée. Une règle peut rendre une décision automatiquement, encadrer une décision humaine, déclencher une action, calculer une priorité ou interdire une action.
 
 ## S
+
+### Self Managed
+
+Mode de gouvernance au repos dans lequel l’information est gérée par le domaine qui en est responsable. Le domaine maîtrise son cycle de vie, sa qualité, ses règles de modification et son exposition.
 
 ### Socloz
 
