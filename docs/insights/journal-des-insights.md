@@ -19,6 +19,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 013 | Le périmètre de FLOW ne se définit pas par les applications remplacées | Le vrai périmètre vient des responsabilités métier à porter et mutualiser. |
 | 020 | FLOW réconcilie ERP et OMS dans une plateforme Demand | FLOW reconstruit une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 027 | FLOW devient le moteur de la convergence | La plateforme et le programme FLOW organisent la convergence des pratiques, responsabilités, capacités, règles, données et trajectoires. |
+| 028 | Le centre de gravité du SI se déplace vers la demande | FLOW déplace le cœur du SI de l'ERP-document vers la demande, le Case, la décision et la satisfaction client / utilisateur. |
 
 ## Modèle conceptuel
 
@@ -29,6 +30,8 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 014 | Agreement évite de multiplier les variantes de commandes | Une commande peut rester générique si contexte, Agreement et règles pilotent dynamiquement les variations. |
 | 018 | Les organisations consomment la plateforme, elles ne la structurent pas | B2B, B2C, retail, wholesale ou achat sont des contextes de consommation, pas la structure profonde de FLOW. |
 | 019 | Demand / Supply remplace les oppositions achat / vente | La conception distingue la demande à instruire du réseau d'exécution à mobiliser. |
+| 029 | La variation métier doit être pilotée par règles | Les variations de traitement doivent venir du contexte, des Agreements et des policies, pas d'une prolifération de processus spécialisés. |
+| 030 | Le SAV est une demande comme les autres | Une demande de service, un litige, un retour ou un remboursement peut être traité comme un Case dès lors qu'il faut suivre, décider, résoudre et expliquer. |
 
 ## Convergence, fédération et gouvernance
 
@@ -91,3 +94,6 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 025 | Finance et adhérences externes | CBS est un domaine spécialisé contributeur et consommateur de FLOW |
 | 026 | Opérations, décision et données | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI |
 | 027 | Positionnement | FLOW devient le moteur de la convergence |
+| 028 | Positionnement | Le centre de gravité du SI se déplace vers la demande |
+| 029 | Modèle conceptuel | La variation métier doit être pilotée par règles |
+| 030 | Modèle conceptuel | Le SAV est une demande comme les autres |
