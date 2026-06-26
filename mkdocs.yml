@@ -59,7 +59,10 @@ nav:
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision:
       - La vision: architecture-entreprise/vision/index.md
-      - Ébauche de la plateforme FLOW: architecture-entreprise/vision/ebauche-plateforme-flow.md
+  - Architecture cible:
+      - Repères: architecture-cible/index.md
+      - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
+      - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
   - Principes directeurs:
       - Les principes: architecture-entreprise/principes-directeurs/index.md
       - "01 — Converger, c’est fédérer": architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
