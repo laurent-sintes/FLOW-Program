@@ -38,3 +38,6 @@ La plateforme reçoit des demandes provenant des domaines d'engagement puis coor
 
 ## Insight 013 — Le périmètre de FLOW ne peut pas être défini par le remplacement d'applications
 L'objectif initial de remplacement de Storeland, SoCloz, SAP ou NewStore s'est révélé insuffisant. Le véritable périmètre est défini par les responsabilités métier que la plateforme doit porter et mutualiser.
+
+## Insight 014 — Agreement évite de multiplier les variantes de commandes
+Agreement apporte les règles et conditions de traitement applicables à une commande. Une commande peut rester plus générique si son contexte, l'Agreement et un référentiel de règles pilotent dynamiquement les variations de traitement. FLOW doit donc éviter de décliner une même commande en dizaines de variantes de processus lorsque les différences peuvent être gouvernées par des règles explicites.
