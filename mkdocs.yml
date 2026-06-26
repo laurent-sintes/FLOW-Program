@@ -46,7 +46,7 @@ nav:
           - Modèle conceptuel FLOW: insights/modele-conceptuel-flow.md
       - Gouvernance et fédération:
           - Plateforme fédérale et multi-tenant: insights/plateforme-federale-multitenant.md
-          - GBM, Storeland, UR et fédération: insights/gbm-storeland-ur-federation.md
+          - GBM, StoreLand, UR et fédération: insights/gbm-storeland-ur-federation.md
           - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
       - Opérations, décision et données:
           - "Gouvernance logistique : BRD vs GBM": insights/gouvernance-logistique-brd-vs-gbm.md
