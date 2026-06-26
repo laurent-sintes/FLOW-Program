@@ -59,6 +59,14 @@ La lecture BRD mélange naturellement plusieurs types de blocs : des domaines m�
 
 Mais pour FLOW, cette lecture doit être traduite dans un urbanisme unifié.
 
+Un point attire particulièrement l'attention : Cegid Y2, qui porte le back-office centralisé des stores retail et le stock magasin, apparaît comme un élément isolé, sans être clairement rattaché à une case d'urbanisme comparable aux autres.
+
+C'est une anomalie de lecture intéressante.
+
+Cegid n'est pas un simple système périphérique : il porte une responsabilité structurante pour le retail, les magasins et la disponibilité de stock. Son positionnement devrait donc être explicité dans un bloc de type `Retail / Store Operations` ou `Store Back-office & Store Inventory`.
+
+Cette situation illustre bien la limite de la lecture actuelle : certains blocs sont des domaines, certains sont des systèmes, certains sont des partenaires ou des zones d'exécution. FLOW devra rendre ces positionnements comparables.
+
 FLOW devra redéfinir un urbanisme commun, capable de rendre comparables les positionnements applicatifs BRD et GBM.
 
 Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêmes critères pour les deux groupes :
@@ -70,6 +78,12 @@ Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêm
 - quelle différence existe entre son positionnement actuel et son positionnement cible ?
 
 Cette grille commune est nécessaire pour éviter que chaque groupe décrive son SI avec ses propres catégories, ce qui rendrait les comparaisons fragiles.
+
+La capture de la slide 14 doit être conservée comme source officielle client dès qu'elle est disponible sous forme image. Le schéma ci-dessous est une synthèse FLOW produite à partir de cette lecture ; il ne remplace pas la source officielle.
+
+## Synthèse visuelle de l'écosystème BRD
+
+![Synthèse de l'écosystème applicatif BRD](../assets/images/panorama-brd-ecosystem.svg)
 
 ## Lecture globale
 
@@ -298,6 +312,7 @@ Le panorama BRD conduit à plusieurs questions :
 - Les systèmes logistiques restent-ils seulement exécutants ou deviennent-ils aussi contributeurs d'événements métier ?
 - Quels composants doivent être remplacés, conservés, encapsulés ou simplement connectés ?
 - Quelle grille d'urbanisme commune permettra de comparer le positionnement des applications BRD et GBM ?
+- Dans quelle zone d'urbanisme cible faut-il positionner Cegid Y2 : Retail / Store Operations, Store Back-office, Inventory Visibility, ou combinaison de ces responsabilités ?
 
 ## À retenir
 
@@ -306,6 +321,8 @@ BRD n'est pas seulement un paysage SAP.
 BRD est un écosystème articulé autour de SAP et NewStore, avec de nombreuses solutions spécialisées.
 
 La slide 14 montre aussi que BRD possède déjà une manière de représenter son SI par blocs : Sourcing, PLM / Planning, Achat / Stock, E-commerce & B2B, Sustainability, WMS, Douanes et Cegid Y2. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
+
+Le positionnement de Cegid Y2 est particulièrement révélateur : il porte une responsabilité structurante pour les stores et le stock magasin, mais il n'est pas naturellement placé dans un bloc d'urbanisme homogène. C'est un signal concret du travail que FLOW doit mener : passer d'une lecture applicative historique à une lecture par responsabilités comparables.
 
 Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cette décision ouvre immédiatement une question plus large :
 
