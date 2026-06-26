@@ -27,7 +27,9 @@ nav:
   - FLOW Foundations: flow-foundations.md
   - Contexte:
       - Repères: contexte/index.md
-      - Panorama applicatif BRD et GBM: contexte/panorama-applicatif-brd-gbm.md
+      - Panorama BRD / GBM: contexte/panorama-applicatif-brd-gbm.md
+      - Panorama applicatif BRD: contexte/panorama-brd.md
+      - Panorama applicatif GBM: contexte/panorama-gbm.md
   - Insights:
       - Repères: insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
