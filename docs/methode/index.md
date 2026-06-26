@@ -18,5 +18,5 @@ La méthodologie de delivery sera écrite plus tard dans une page dédiée.
 
 ## Articles
 
-- [Processus de cadrage](conception-flow.md) — méthodologie de cadrage et de conception amont
+- [Processus de cadrage](processus-de-cadrage.md) — méthodologie de cadrage et de conception amont
 - Méthodologie de delivery — à rédiger
