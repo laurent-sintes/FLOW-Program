@@ -4,7 +4,7 @@
 
 Cette page documente les enseignements relatifs au B2B / Wholesale dans le programme FLOW.
 
-Le sujet est structurant car il se situe à la frontière entre plusieurs mondes :
+Le sujet est structurant car il traverse plusieurs mondes :
 
 - le front office B2B ;
 - le CRM et le portail client ;
@@ -14,13 +14,15 @@ Le sujet est structurant car il se situe à la frontière entre plusieurs mondes
 - le futur ERP ;
 - FLOW et ses responsabilités de demande, stock, promesse, allocation et exécution.
 
-L'objectif est de ne pas faire entrer mécaniquement tout le B2B dans FLOW, tout en identifiant les responsabilités B2B qui touchent directement au fulfillment.
+L'objectif n'est pas de faire entrer mécaniquement tout le B2B dans FLOW.
+
+L'objectif est d'identifier les responsabilités B2B qui doivent être réconciliées dans FLOW parce qu'elles touchent directement au Demand & Fulfillment, tout en laissant aux expériences et systèmes spécialisés leurs responsabilités propres.
 
 ## Point de départ
 
 Le B2B / Wholesale apparaît comme un domaine pouvant converger entre GBM et BRD sur une partie importante des briques middle office, front office et BI.
 
-La difficulté principale se situe moins dans les usages front / middle que dans les frontières avec :
+La difficulté principale se situe moins dans les usages front / middle que dans les responsabilités à articuler avec :
 
 - le back-office achat / vente ;
 - les ERP ;
@@ -29,16 +31,17 @@ La difficulté principale se situe moins dans les usages front / middle que dans
 - les prix ;
 - les stocks ;
 - les règles d'allocation et de promesse ;
-- les responsabilités qui pourraient être reprises par FLOW.
+- les responsabilités qui pourraient être reprises ou exposées par FLOW.
 
-Le sujet doit donc être traité comme un domaine adjacent à FLOW, et non comme un sous-ensemble automatique de FLOW.
+Le sujet doit donc être traité comme un domaine contributeur et consommateur de FLOW, et non comme un sous-ensemble automatique de FLOW.
 
 ```text
-Front B2B / CRM / portail / BI / support
-        ≠
-Back-office ERP / achat / vente / finance / logistique
-        ≠
-FLOW / orchestration / fulfillment / stock / promesse
+Expériences B2B / CRM / portail / BI / support
+        ↓ consomment ou produisent
+Responsabilités Demand & Fulfillment
+        ↓ à réconcilier dans FLOW si elles portent la cohérence métier
+ERP, finance, logistique, systèmes d'exécution, partenaires
+        ↓ systèmes spécialisés ou contributeurs selon les responsabilités
 ```
 
 ## GBM : un B2B greffé sur un SI historiquement retail
@@ -161,7 +164,7 @@ Engagement / Commercial Design
     → prix / conditions
 
 FLOW
-    → commande d'achat
+    → commande d'achat si elle participe au cycle de vie transverse
     → engagement d'approvisionnement
     → suivi d'exécution
     → événements
@@ -174,7 +177,7 @@ La commande d'achat peut entrer dans le champ FLOW si elle participe à l'exécu
 
 FLOW ne doit pas devenir l'outil de construction d'assortiment ou de commercial agreement.
 
-En revanche, FLOW peut avoir besoin de consommer le résultat de ces agreements et de piloter les commandes d'achat ou les événements associés.
+En revanche, FLOW peut avoir besoin de consommer le résultat de ces agreements et de porter ou exposer les commandes d'achat, engagements d'approvisionnement et événements associés lorsqu'ils contribuent à la cohérence du Demand & Fulfillment.
 
 ## Front B2B et domaine d'engagement
 
@@ -195,6 +198,10 @@ Elles relèvent plutôt du domaine de l'engagement :
 
 FLOW doit donc se concentrer sur les responsabilités transverses nécessaires à l'exécution d'une demande.
 
+Cela ne crée pas une frontière étanche entre engagement et FLOW.
+
+Cela crée une règle de lecture : les expériences B2B peuvent rester dans le domaine engagement, tandis que les responsabilités de demande, commande, stock, promesse, allocation, événements et exceptions doivent être évaluées comme candidates à FLOW.
+
 ## Stocks confiés : un révélateur de divergence BRD / GBM
 
 Le sujet des stocks confiés montre que les mêmes réalités opérationnelles peuvent être classées différemment selon les groupes.
@@ -209,12 +216,12 @@ Elle montre que le périmètre FLOW ne doit pas être défini uniquement par les
 
 Le sujet B2B / Wholesale conduit à plusieurs questions :
 
-- La commande d'achat B2B / Négoce doit-elle être une capacité FLOW ?
+- La commande d'achat B2B / Négoce doit-elle être une capacité FLOW lorsqu'elle participe au cycle de vie transverse d'une demande ou d'un engagement ?
 - La négociation, l'assortiment et le catalogue doivent-ils rester dans le domaine engagement ?
 - Quelles responsabilités du module Négoce doivent être généralisées à toutes les marques GBM ?
 - La convergence GBM doit-elle d'abord harmoniser les marques avant de converger avec BRD ?
 - Le B2B doit-il être traité comme un canal spécifique ou comme une variation d'un même objet demande / commande ?
-- Où se situe la frontière cible entre CRM B2B, portail client, ERP, FLOW et systèmes d'exécution ?
+- Quelles responsabilités doivent être réunifiées dans FLOW, et lesquelles doivent rester portées par CRM B2B, portail client, ERP, systèmes d'exécution ou systèmes spécialisés ?
 - Les stocks confiés doivent-ils être modélisés par canal, par responsabilité ou par type d'engagement ?
 - Quels demi-flux doivent être pérennes, et lesquels peuvent rester transitoires pendant la trajectoire ?
 
