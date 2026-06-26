@@ -2,11 +2,11 @@
 
 ## Intention
 
-Cette page documente l'environnement IT de Boardriders tel qu'il apparaît dans les supports d'urbanisme du projet, notamment les slides 14, 15 et 16 du document `Urbanisme-ERP-0.1-draft.pptx`.
+Cette page documente l'environnement IT de Boardriders tel qu'il apparaît dans les éléments de travail du projet et dans les échanges d'urbanisme.
 
-Ces slides ne décrivent que BRD.
+Les éléments analysés ici ne décrivent que BRD.
 
-Elles doivent donc être lues comme un panorama spécifique de l'existant BRD, et non comme une comparaison avec GBM.
+Ils doivent donc être lus comme un panorama spécifique de l'existant BRD, et non comme une comparaison avec GBM.
 
 ## Point de départ du projet
 
@@ -34,7 +34,7 @@ Comprendre BRD consiste donc à identifier :
 
 ## Une lecture déjà urbanisée du SI BRD
 
-La slide 14, rédigée par le responsable SI BRD, ne présente pas seulement des applications isolées.
+La vue d'urbanisme BRD analysée ne présente pas seulement des applications isolées.
 
 Les applications y sont placées dans des blocs qui s'apparentent à une lecture d'urbanisme : le SI est représenté selon des zones, des responsabilités ou des ensembles cohérents.
 
@@ -79,11 +79,7 @@ Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêm
 
 Cette grille commune est nécessaire pour éviter que chaque groupe décrive son SI avec ses propres catégories, ce qui rendrait les comparaisons fragiles.
 
-La capture ci-dessous est conservée comme source officielle client. Elle correspond à l'image embarquée dans la slide 14 du support `Urbanisme-ERP-0.1-draft.pptx`.
-
-![Source officielle client — slide 14 BRD](../assets/images/slide14-brd-source-officielle.svg)
-
-Le schéma suivant est une synthèse FLOW produite à partir de cette lecture ; il ne remplace pas la source officielle.
+Le schéma suivant est une synthèse FLOW produite à partir de cette lecture. Il vise à rendre le panorama plus lisible dans le site.
 
 ## Synthèse visuelle de l'écosystème BRD
 
@@ -107,7 +103,7 @@ DELIVER / RETURN
 BILLING
 ```
 
-La slide distingue aussi deux temporalités :
+La lecture distingue aussi deux temporalités :
 
 ```text
 Long term / Plan oriented
@@ -226,7 +222,7 @@ Ils alimentent les décisions relatives aux produits, saisons, prévisions, dema
 
 ## Collaboration fournisseur et sourcing
 
-La slide mentionne également :
+La vue BRD mentionne également :
 
 - SNC — Supply Network Collaboration ;
 - Fast — qualité fournisseur ;
@@ -263,7 +259,7 @@ Les expériences et canaux peuvent rester consommateurs de capacités FLOW.
 
 ## Stock, allocation et promesse
 
-La slide BRD mentionne plusieurs notions autour du stock :
+La vue BRD mentionne plusieurs notions autour du stock :
 
 - stock magasin ;
 - stock entrepôt ;
@@ -364,7 +360,7 @@ BRD n'est pas seulement un paysage SAP.
 
 BRD est un écosystème articulé autour de SAP et NewStore, avec de nombreuses solutions spécialisées.
 
-La slide 14 montre aussi que BRD possède déjà une manière de représenter son SI par blocs : Sourcing, PLM / Planning, Achat / Stock, E-commerce & B2B, Sustainability, WMS, Douanes et Cegid Y2. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
+La vue BRD montre aussi que BRD possède déjà une manière de représenter son SI par blocs : Sourcing, PLM / Planning, Achat / Stock, E-commerce & B2B, Sustainability, WMS, Douanes et Cegid Y2. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
 
 Le positionnement de Cegid Y2 est particulièrement révélateur : il porte une responsabilité structurante pour les stores et le stock magasin, mais il n'est pas naturellement placé dans un bloc d'urbanisme homogène. C'est un signal concret du travail que FLOW doit mener : passer d'une lecture applicative historique à une lecture par responsabilités comparables.
 
