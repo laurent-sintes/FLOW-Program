@@ -46,7 +46,7 @@ Approche d’orchestration adaptée aux demandes qui traversent plusieurs domain
 
 ### CBS
 
-SI composé de modules développés sur mesure en .NET, portant des processus support autour des commandes d’achat fournisseur, de la collaboration fournisseur, de la livraison amont, de la packing list et de la conformité documentaire. CBS est lu comme un domaine consommateur de FLOW, tout en manipulant certaines responsabilités candidates à FLOW comme la commande, le cycle de vie, les statuts et la vision 360.
+SI composé de modules développés sur mesure en .NET, portant des processus support autour des commandes d’achat fournisseur, de la collaboration fournisseur, de la livraison amont, de la packing list et de la conformité documentaire. CBS est lu comme un domaine consommateur et contributeur de FLOW, tout en manipulant certaines responsabilités candidates à FLOW comme la commande, le cycle de vie, les statuts et la vision 360.
 
 ### CEP — Complex Event Processing
 
@@ -78,6 +78,10 @@ Accord commercial qui définit des conditions, prix, assortiment ou engagements 
 
 Dispositif de partage et de mise à disposition de données ou de projections, au service de la cohérence opérationnelle entre domaines.
 
+### Demand & Fulfillment
+
+Ensemble des responsabilités qui permettent de recevoir une demande, de l’instruire, de décider si et comment elle peut être servie, puis d’en piloter l’exécution. Dans FLOW, ce périmètre réunit notamment demande, commande, stock, promesse, allocation, événements, exceptions, documents et cycle de vie.
+
 ### Donnée de référence / donnée partagée
 
 Donnée nécessaire à plusieurs décisions ou domaines, dont la responsabilité est attribuée, la qualité gouvernée, la définition vérifiée et la disponibilité assurée. Elle ne suppose pas une base de données unique ni une catégorie héritée d’un ERP.
@@ -106,7 +110,7 @@ Promesse ou obligation envers une partie prenante, qui peut porter sur une dispo
 
 ### ERP — Enterprise Resource Planning
 
-Socle applicatif de gestion transactionnelle, souvent utilisé pour les achats, ventes, stocks, finance ou référentiels. Dans FLOW, l’ERP doit être distingué des responsabilités d’orchestration transverse, de demande, de promesse et de cycle de vie.
+Socle applicatif de gestion transactionnelle, souvent utilisé pour les achats, ventes, stocks, finance ou référentiels. Dans FLOW, l’ERP doit être distingué des responsabilités d’orchestration transverse, de demande, de promesse et de cycle de vie, tout en restant articulé avec elles.
 
 ### Événement
 
