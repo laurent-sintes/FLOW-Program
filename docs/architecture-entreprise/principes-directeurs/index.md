@@ -12,10 +12,11 @@ Ils ne prescrivent pas une solution technique. Ils donnent un cadre pour décide
 4. [Séparer Demand et Supply](4-separer-demand-et-supply.md)
 5. [Le processus émerge des décisions](5-le-processus-emerge-des-decisions.md)
 6. [La demande comme objet métier central d’orchestration](6-demande-objet-metier-central-orchestration.md)
+7. [Qualifier les informations plutôt que parler de Master Data](7-qualifier-les-informations-plutot-que-master-data.md)
 
 ## Principes à consolider
 
-7. Cohérence opérationnelle dans un monde distribué  
-8. API First / Experience Agnostic  
+8. Cohérence opérationnelle dans un monde distribué  
+9. API First / Experience Agnostic  
 
 Chaque principe a vocation à expliciter son intention, les insights qui le fondent, ses conséquences et les décisions qu’il guide.
