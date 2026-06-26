@@ -4,6 +4,19 @@ La méthodologie projet décrit la manière dont le programme FLOW passe des obs
 
 Elle structure la progression du travail, en cohérence avec la vision et les principes directeurs.
 
+## Deux temps méthodologiques
+
+La méthodologie FLOW doit distinguer deux temps.
+
+Le premier temps est le cadrage : comprendre, formuler, urbaniser, identifier les capacités, concevoir les produits et les solutions candidates.
+
+Le second temps est le delivery : construire, tester, déployer, opérer et faire adopter les solutions.
+
+À ce stade, la section documente surtout le cadrage.
+
+La méthodologie de delivery sera écrite plus tard dans une page dédiée.
+
 ## Articles
 
-- [De l’insight à la solution](conception-flow.md)
+- [De l’insight à la solution](conception-flow.md) — méthodologie de cadrage et de conception amont
+- Méthodologie de delivery — à rédiger
