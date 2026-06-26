@@ -38,11 +38,28 @@ La slide 14, rédigée par le responsable SI BRD, ne présente pas seulement des
 
 Les applications y sont placées dans des blocs qui s'apparentent à une lecture d'urbanisme : le SI est représenté selon des zones, des responsabilités ou des ensembles cohérents.
 
+Les blocs visibles sont les suivants :
+
+| Bloc BRD | Applications / composants visibles |
+| --- | --- |
+| Sourcing | SNC, Fast |
+| PLM / Planning | PLM, BPC, Optimate |
+| Achat / Stock | SAP |
+| E-commerce & B2B | Salesforce, Elastic, CMS / Web platform |
+| Sustainability | DTT |
+| WMS | KTN BE, C-Logistics, Bleckmann UK, FMS FR |
+| Douanes | Connex |
+| Cegid Y2 | Cegid Y2 |
+
 Cette observation est importante pour FLOW.
 
 Elle montre que BRD dispose déjà d'une manière de structurer et de raconter son système d'information. Cette manière de voir peut être très utile, mais elle ne doit pas être confondue avec une grille commune à tout le programme.
 
-FLOW devra redéfinir un urbanisme unifié, capable de rendre comparables les positionnements applicatifs BRD et GBM.
+La lecture BRD mélange naturellement plusieurs types de blocs : des domaines métier, des zones fonctionnelles, des familles applicatives, des partenaires d'exécution et des progiciels structurants. Ce n'est pas un défaut ; c'est souvent ainsi qu'un SI réel est représenté par les équipes qui le pilotent.
+
+Mais pour FLOW, cette lecture doit être traduite dans un urbanisme unifié.
+
+FLOW devra redéfinir un urbanisme commun, capable de rendre comparables les positionnements applicatifs BRD et GBM.
 
 Autrement dit, il faudra pouvoir répondre aux questions suivantes avec les mêmes critères pour les deux groupes :
 
@@ -288,7 +305,7 @@ BRD n'est pas seulement un paysage SAP.
 
 BRD est un écosystème articulé autour de SAP et NewStore, avec de nombreuses solutions spécialisées.
 
-La slide 14 montre aussi que BRD possède déjà une manière de représenter son SI par blocs. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
+La slide 14 montre aussi que BRD possède déjà une manière de représenter son SI par blocs : Sourcing, PLM / Planning, Achat / Stock, E-commerce & B2B, Sustainability, WMS, Douanes et Cegid Y2. FLOW devra conserver cette richesse de lecture, tout en la traduisant dans une grille d'urbanisme commune avec GBM.
 
 Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cette décision ouvre immédiatement une question plus large :
 
