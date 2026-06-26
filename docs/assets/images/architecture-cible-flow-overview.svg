@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Overview de la plateforme FLOW</title>
+  <desc id="desc">Cartographie sans flèches des six produits candidats de la plateforme FLOW.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f8fb}.title{font:700 36px Arial,sans-serif;fill:#172033}.subtitle{font:400 18px Arial,sans-serif;fill:#596579}.panel{fill:#111827;rx:28}.panel-title{font:700 24px Arial,sans-serif;fill:#fff}.panel-sub{font:400 15px Arial,sans-serif;fill:#dbe3f0}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.6;rx:22}.card-core{stroke:#7c8cf8;stroke-width:2.5}.card-data{stroke:#8ec5ff;stroke-width:2.2}.card-supply{stroke:#94c99c;stroke-width:2.2}.card-title{font:700 21px Arial,sans-serif;fill:#172033}.card-text{font:400 15px Arial,sans-serif;fill:#4a5568}.tag{fill:#eef2ff;stroke:#c7d2fe;rx:12}.tag-text{font:700 12px Arial,sans-serif;fill:#3b46a1}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="70" y="62">Overview de la plateforme FLOW</text>
+  <text class="subtitle" x="70" y="94">Une plateforme Demand centrée sur les Cases, enrichie par des services partagés et des projections opérationnelles.</text>
+
+  <rect class="panel" x="70" y="125" width="1260" height="620" rx="28"/>
+  <text class="panel-title" x="110" y="170">Plateforme FLOW</text>
+  <text class="panel-sub" x="110" y="196">Cartographie produit — version de travail, orientée Comex / document programme</text>
+
+  <rect class="card card-core" x="110" y="235" width="370" height="190" rx="22"/>
+  <rect class="tag" x="135" y="260" width="118" height="28" rx="12"/><text class="tag-text" x="153" y="279">CŒUR FLOW</text>
+  <text class="card-title" x="135" y="320">Plateforme de Case Management</text>
+  <text class="card-text" x="135" y="352">Pilote les demandes dans la durée.</text>
+  <text class="card-text" x="135" y="377">Les Cases portent contexte, décisions,</text>
+  <text class="card-text" x="135" y="402">promesses, documents et événements.</text>
+
+  <rect class="card card-supply" x="515" y="235" width="370" height="190" rx="22"/>
+  <rect class="tag" x="540" y="260" width="148" height="28" rx="12"/><text class="tag-text" x="557" y="279">SERVICE PARTAGÉ</text>
+  <text class="card-title" x="540" y="320">Stock Unifié</text>
+  <text class="card-text" x="540" y="352">Rend la disponibilité fiable et exploitable.</text>
+  <text class="card-text" x="540" y="377">Porte réservations, allocation / tagging,</text>
+  <text class="card-text" x="540" y="402">facts et événements stock.</text>
+
+  <rect class="card card-supply" x="920" y="235" width="370" height="190" rx="22"/>
+  <rect class="tag" x="945" y="260" width="148" height="28" rx="12"/><text class="tag-text" x="962" y="279">SERVICE PARTAGÉ</text>
+  <text class="card-title" x="945" y="320">Réseau d’Exécution</text>
+  <text class="card-text" x="945" y="352">Décrit lieux, partenaires, capacités,</text>
+  <text class="card-text" x="945" y="377">contraintes et zones mobilisables</text>
+  <text class="card-text" x="945" y="402">pour servir une demande.</text>
+
+  <rect class="card card-data" x="110" y="465" width="370" height="190" rx="22"/>
+  <rect class="tag" x="135" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="153" y="509">PROJECTION</text>
+  <text class="card-title" x="135" y="550">Supply Service Registry</text>
+  <text class="card-text" x="135" y="582">Référence les services Supply exposés :</text>
+  <text class="card-text" x="135" y="607">API, SLA, conditions d’accès,</text>
+  <text class="card-text" x="135" y="632">éligibilités et contraintes.</text>
+
+  <rect class="card card-data" x="515" y="465" width="370" height="190" rx="22"/>
+  <rect class="tag" x="540" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="558" y="509">PROJECTION</text>
+  <text class="card-title" x="540" y="550">Product Agreement Catalog</text>
+  <text class="card-text" x="540" y="582">Expose produits, assortiments et agreements</text>
+  <text class="card-text" x="540" y="607">utiles à la vente, à l’achat</text>
+  <text class="card-text" x="540" y="632">et à l’exécution.</text>
+
+  <rect class="card card-data" x="920" y="465" width="370" height="190" rx="22"/>
+  <rect class="tag" x="945" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="963" y="509">PROJECTION</text>
+  <text class="card-title" x="945" y="550">Vues 360</text>
+  <text class="card-text" x="945" y="582">Agrègent le contexte transverse :</text>
+  <text class="card-text" x="945" y="607">Customer 360, Supplier 360, Case 360,</text>
+  <text class="card-text" x="945" y="632">historique et signaux utiles.</text>
+
+  <text class="panel-sub" x="110" y="705">Message clé : FLOW n’est pas un ERP bis ; c’est une plateforme Demand composée de produits fonctionnels gouvernés.</text>
+</svg>
