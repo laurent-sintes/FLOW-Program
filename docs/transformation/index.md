@@ -10,27 +10,27 @@ Cette section documente les changements organisationnels, culturels et méthodol
 
 La transformation FLOW doit être organisée avec sobriété.
 
-Les impacts sont nombreux, mais un programme qui pousse trop de sujets de changement en parallèle devient difficile à comprendre et à faire adopter.
+Les impacts sont nombreux, mais un programme qui pousse trop de changements en parallèle devient difficile à comprendre et à faire adopter.
 
 La recommandation est donc de distinguer deux natures de contenus :
 
-- les sujets de changement, regroupés en quelques déplacements de posture concrets ;
+- les changements à conduire, regroupés en quelques déplacements de posture concrets ;
 - la gouvernance du changement, qui explique comment l'équipe de change accompagne ces thèmes.
 
 ## Pages disponibles
 
-- [Sujets de changement FLOW](sujets-de-changement.md)
+- [Les changements à conduire avec FLOW](sujets-de-changement.md)
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
 
 ## Position de travail
 
-À ce stade, les sujets de changement doivent être regroupés en cinq thèmes maximum :
+À ce stade, les changements doivent être regroupés en cinq thèmes maximum :
 
 1. ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise ;
 2. passer de “j'achète / je vends” à Demand / Supply ;
 3. réconcilier ERP et OMS dans une plateforme Demand ;
 4. penser fulfillment et satisfaction client avant documents ;
-5. converger sans uniformiser.
+5. piloter la convergence par niveaux.
 
 Cette structuration permet de couvrir la profondeur de FLOW sans multiplier les campagnes de changement.
 
