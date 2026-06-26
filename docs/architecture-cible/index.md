@@ -17,6 +17,7 @@ L'architecture cible décrit progressivement :
 
 - [Overview de la plateforme FLOW](overview-plateforme-flow.md)
 - [FLOW dans l’écosystème GBM](flow-dans-ecosysteme-gbm.md)
+- [FLOW dans l’écosystème BRD](flow-dans-ecosysteme-brd.md)
 
 ## Lecture actuelle
 
