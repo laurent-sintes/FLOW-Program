@@ -1,5 +1,10 @@
 # Ambition : converger
 
+<div class="flow-conviction">
+  <p>FLOW ne choisit pas entre système centralisé et applications autarciques.</p>
+  <p>FLOW construit le socle commun qui apporte de la stabilité au SI et rend l'autonomie cohérente.</p>
+</div>
+
 Le Groupe Beaumanoir doit réussir une <span class="flow-keyword">convergence</span> complexe.
 
 Il doit créer du commun entre des marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.
@@ -7,11 +12,6 @@ Il doit créer du commun entre des marques, canaux, business models et héritage
 La réponse ne peut pas être une uniformisation brutale.
 
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
-
-<div class="flow-conviction">
-  <p>FLOW ne choisit pas entre système centralisé et applications autarciques.</p>
-  <p>FLOW construit le socle commun qui apporte de la stabilité au SI et rend l'autonomie cohérente.</p>
-</div>
 
 L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
