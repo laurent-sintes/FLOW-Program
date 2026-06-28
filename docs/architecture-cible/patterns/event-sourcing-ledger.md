@@ -6,6 +6,8 @@ Event Sourcing / Ledger consiste à conserver l'historique des événements ou m
 
 Au lieu de ne stocker que la situation courante, le système conserve la trace de ce qui a conduit à cette situation.
 
+![Pattern — Event Sourcing / Ledger](../../assets/images/pattern-event-sourcing-ledger.svg)
+
 <div class="flow-conviction">
   <p>Un état courant dit où l'on est.</p>
   <p>Un ledger explique comment on y est arrivé.</p>
