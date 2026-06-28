@@ -1,24 +1,15 @@
-# Valeur attendue : des bénéfices reliés aux problèmes observés
+# Valeur attendue : rendre la convergence opérable, gouvernable et mesurable
+
+## Idée clé
 
 La valeur de FLOW ne vient pas d'une promesse générique de modernisation.
 
 Elle vient du lien entre les problèmes observés et les capacités que la plateforme doit rendre possibles.
 
-| Problème observé | Ce que FLOW apporte | Valeur attendue |
-| --- | --- | --- |
-| Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | <span class="flow-keyword">Stock Unifié</span>, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
-| Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des <span class="flow-keyword">demandes</span>, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
-| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
-| Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
-| Variations métier portées par des processus ou applications spécifiques | <span class="flow-keyword">Agreements</span>, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
-| Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
-| Décisions difficiles à expliquer entre applications | Traçabilité des règles, décisions, événements et statuts du Case | Capacité à expliquer les arbitrages métier, diagnostiquer les écarts et renforcer la confiance opérationnelle |
-| Processus amont fournisseurs et achats difficiles à relier au fulfillment | Product Agreement Catalog, Cases achat, documents fournisseur, événements Supply | Meilleure continuité entre engagement fournisseur, achat, réception, disponibilité et exécution |
-| Documents financiers et opérationnels produits tardivement ou difficilement réconciliables | Cases, événements, faits économiques et documents associés | Meilleure intégration avec Finance, auditabilité renforcée et réduction des écarts de justification |
-| Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
-| Surstock et promesse client difficiles à équilibrer | Allocation, priorisation, stock disponible contextualisé, réseau d'exécution | Réduction du surstock sans dégrader la garantie de livraison |
-| Coûts applicatifs et licences difficiles à maîtriser | Rationalisation des responsabilités critiques, retrait progressif des socles remplacés, réintégration sélective des services utiles | Meilleure maîtrise du portefeuille applicatif et des coûts IT dans la durée |
-| Roadmaps projet dispersées et vision IT trop court terme | Découpage par responsabilités, capacités et produits, contrats de données gouvernés | Capacité à construire des roadmaps IT consolidées à 3/4 ans |
+<div class="flow-conviction">
+  <p>La valeur de FLOW n'est pas de moderniser le SI.</p>
+  <p>Elle est de rendre la convergence opérable, gouvernable et mesurable.</p>
+</div>
 
 La valeur attendue est donc triple :
 
@@ -26,38 +17,58 @@ La valeur attendue est donc triple :
 - Préserver la capacité des marques et canaux à se différencier lorsque cela crée de la valeur.
 - Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les données, les coûts et les trajectoires.
 
-## Promesse groupe : soutenir la croissance et la convergence
+## Vue synthétique des bénéfices
 
-FLOW doit soutenir durablement la croissance, la diversification et la transformation du groupe.
+| Famille de valeur | Problème traité | Valeur attendue |
+| --- | --- | --- |
+| Opérationnelle | Stock, demandes, fulfillment, exceptions et décisions dispersés entre applications | Mieux promettre, mieux arbitrer, mieux exécuter et mieux expliquer |
+| Métier | Singularités marques, canaux, B2B, B2C, retail, wholesale et SAV difficiles à faire coexister | Préserver les différences utiles sans multiplier les processus et applications |
+| IT | Flux projet, responsabilités floues, coûts applicatifs et roadmaps fragmentées | Gouverner les responsabilités, les contrats de données, le portefeuille et les trajectoires |
+| Finance / gouvernance | Documents, faits économiques et écarts difficiles à justifier | Améliorer l'auditabilité, la réconciliation et l'intégration avec Finance |
 
-Il doit permettre :
+Cette lecture évite de réduire FLOW à un bénéfice unique.
 
-- D'intégrer plus facilement de nouveaux canaux, marques, partenaires ou acquisitions.
-- De rendre comparables les positionnements applicatifs BRD et GBM.
-- De traiter la convergence inter-groupes et intra-groupes.
-- De réduire les décisions contradictoires entre applications.
-- De mieux gouverner les engagements pris envers les clients, magasins, partenaires ou fournisseurs.
-- De piloter la convergence par niveaux : centraliser, unifier, standardiser, fédérer ou différencier selon l'exigence business.
-- De limiter la dépendance aux catégories de progiciels du marché pour penser l'entreprise.
+FLOW doit créer de la valeur parce qu'il rend la convergence exécutable dans les opérations, acceptable pour les métiers, gouvernable pour l'IT et traçable pour la finance.
 
-## Promesse métiers : autonomes sur l'expérience, appuyés sur un commun
+## Valeur opérationnelle : fiabiliser les demandes, le stock et l'exécution
 
-Pour les métiers, FLOW doit permettre à chaque marque, enseigne et canal de se concentrer sur son développement commercial et son expérience client.
+FLOW doit d'abord améliorer la cohérence opérationnelle du groupe.
 
-Les domaines consommateurs restent autonomes dans la construction de leurs parcours, interfaces, traitements et usages.
+Aujourd'hui, les demandes, les stocks, les statuts, les décisions et les événements sont dispersés entre applications, canaux, marques et systèmes historiques.
 
-FLOW leur fournit des capacités partagées lorsque la responsabilité dépasse le périmètre d'une marque, d'un canal, d'un pays ou d'une application.
+Cette dispersion rend difficile la promesse client, l'allocation, la gestion des exceptions et l'optimisation du fulfillment.
+
+| Problème observé | Ce que FLOW apporte | Valeur attendue |
+| --- | --- | --- |
+| Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | <span class="flow-keyword">Stock Unifié</span>, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
+| Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des <span class="flow-keyword">demandes</span>, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
+| Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
+| Décisions difficiles à expliquer entre applications | Traçabilité des règles, décisions, événements et statuts du Case | Capacité à expliquer les arbitrages métier, diagnostiquer les écarts et renforcer la confiance opérationnelle |
+| Surstock et promesse client difficiles à équilibrer | Allocation, priorisation, stock disponible contextualisé, réseau d'exécution | Réduction du surstock sans dégrader la garantie de livraison |
+
+La valeur opérationnelle se mesure donc à la capacité du groupe à prendre de meilleures décisions, avec une meilleure visibilité, et à expliquer pourquoi ces décisions ont été prises.
+
+## Valeur métier : converger sans effacer les singularités utiles
+
+FLOW ne cherche pas à imposer un modèle unique à toutes les marques, tous les canaux et tous les business models.
+
+La valeur métier vient du fait que les expériences peuvent rester différenciées, tandis que les responsabilités critiques sont portées par une plateforme commune.
+
+| Problème observé | Ce que FLOW apporte | Valeur attendue |
+| --- | --- | --- |
+| Variations métier portées par des processus ou applications spécifiques | <span class="flow-keyword">Agreements</span>, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
+| Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
+| Demandes de service, retours, litiges et SAV traités comme des cas particuliers | Case Management et logique Demand élargie | Meilleure continuité client : une demande reste une demande, même lorsqu'elle n'est pas une commande |
+| Processus amont fournisseurs et achats difficiles à relier au fulfillment | Product Agreement Catalog, Cases achat, documents fournisseur, événements Supply | Meilleure continuité entre engagement fournisseur, achat, réception, disponibilité et exécution |
 
 <div class="flow-conviction">
   <p>Les consommateurs construisent les expériences.</p>
   <p>FLOW fournit les capacités transverses.</p>
 </div>
 
-Cette promesse vaut aussi pour les demandes de service, les retours, les litiges, le SAV ou les exceptions client.
+La convergence devient alors un choix métier piloté par niveaux : centraliser, unifier, standardiser, fédérer ou différencier selon la valeur recherchée.
 
-Une demande reste une demande dès lors qu'elle nécessite d'être comprise, suivie, arbitrée, résolue et expliquée.
-
-## Promesse IT : gouverner les responsabilités, les données et les trajectoires
+## Valeur IT : gouverner les responsabilités, les données et les trajectoires
 
 Pour l'IT, FLOW déplace la discussion.
 
@@ -79,6 +90,13 @@ Produit
 Fonctionnalité
 ```
 
+| Problème observé | Ce que FLOW apporte | Valeur attendue |
+| --- | --- | --- |
+| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
+| Coûts applicatifs et licences difficiles à maîtriser | Rationalisation des responsabilités critiques, retrait progressif des socles remplacés, réintégration sélective des services utiles | Meilleure maîtrise du portefeuille applicatif et des coûts IT dans la durée |
+| Roadmaps projet dispersées et vision IT trop court terme | Découpage par responsabilités, capacités et produits, contrats de données gouvernés | Capacité à construire des roadmaps IT consolidées à 3/4 ans |
+
 Cette lecture permet d'éviter quatre dérives :
 
 - Remplacer des applications sans clarifier les responsabilités.
@@ -96,6 +114,22 @@ Cette promesse soutient directement la construction de roadmaps IT consolidées 
   <p>Moins de flux opportunistes.</p>
   <p>Plus de capacités, de contrats et de trajectoires gouvernées.</p>
 </div>
+
+## Valeur finance et gouvernance : rendre les faits auditables
+
+FLOW ne remplace pas Finance.
+
+Mais FLOW doit produire, conserver ou transmettre les faits, événements, documents et statuts nécessaires à la comptabilité, au contrôle, à l'audit et à la justification des écarts.
+
+| Problème observé | Ce que FLOW apporte | Valeur attendue |
+| --- | --- | --- |
+| Documents financiers et opérationnels produits tardivement ou difficilement réconciliables | Cases, événements, faits économiques et documents associés | Meilleure intégration avec Finance, auditabilité renforcée et réduction des écarts de justification |
+| Données difficiles à justifier entre systèmes | Traçabilité des événements, décisions, documents et statuts | Capacité à reconstruire l'histoire d'une demande ou d'un engagement |
+| Responsabilités comptables et opérationnelles mélangées dans certains socles historiques | Séparation entre Demand, Supply et Finance, avec contrats d'échange explicites | Meilleure lisibilité des frontières et réduction des adhérences non maîtrisées |
+
+La valeur de FLOW n'est donc pas de devenir un outil financier.
+
+Elle est de rendre les opérations suffisamment explicables pour que Finance puisse s'appuyer sur des faits fiables, traçables et réconciliables.
 
 ## Signes de réussite : ce qui doit devenir observable
 
