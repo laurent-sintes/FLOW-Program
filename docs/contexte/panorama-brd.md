@@ -167,6 +167,50 @@ Dans le point de départ du projet, NewStore est également dans le périmètre 
 
 La présence de NewStore aux côtés de SAP rend immédiatement visible une difficulté : le cycle de vie de la demande, la promesse, l'allocation, la vision de disponibilité et l'exécution ne sont pas naturellement contenus dans un seul système.
 
+### Périmètre fonctionnel observé de NewStore
+
+Le périmètre fonctionnel de NewStore dépasse une simple vision OMS centrée sur la commande.
+
+Il couvre ou orchestre plusieurs responsabilités opérationnelles :
+
+| Responsabilité | Fonctionnalités observées |
+| --- | --- |
+| Stock omnicanal | Gestion du stock e-commerce, marketplace et extension de gamme. |
+| Annulation | Gestion des annulations en cas de rupture de stock et notification client. |
+| Préparation | Choix du mode de préparation, dont Ship From Store, et règles d'affectation. |
+| Ship From Store | Pick, pack, print label et gestion de l'extension de gamme. |
+| Mouvements de stock | Déclenchement du mouvement de stock après confirmation d'expédition. |
+| Suivi commande | Réception et transition du shipping, URL de tracking et suivi de statut. |
+| Notifications client | Notifications liées aux statuts de commande. |
+| Facturation | Déclenchement de la facturation via notification shipping vers SAP pour les SFS. |
+| Entités fiscales | Split des commandes en fonction des entités fiscales, notamment Napali / Emerald. |
+| Fidélité | Gestion de flux liés à Cegid et Salesforce. |
+| SAV / litiges | Gestion des litiges, traitements SAV et remboursements. |
+| Reporting IT | Notifications AWS Stream. |
+| Paiement | Traitement ou déclenchement de capture et d'autorisation de paiement. |
+
+Cette liste confirme que NewStore joue un rôle de colonne opérationnelle intermédiaire entre les canaux, le stock, l'exécution, le client, la finance et certains flux IT.
+
+Pour FLOW, cela signifie que remplacer NewStore ne consiste pas seulement à reprendre une fonctionnalité de suivi commande.
+
+Il faut arbitrer, responsabilité par responsabilité, ce qui relève demain :
+
+- du Case Management et du cycle de vie de la demande ;
+- du Stock Unifié ;
+- du Réseau d'Exécution ;
+- du Product Agreement Catalog ou des règles d'affectation ;
+- des systèmes d'engagement ;
+- des systèmes d'exécution logistique ;
+- de SAP FI/CO ou d'un système finance ;
+- d'un service de paiement ;
+- d'un service de fidélité ;
+- d'un module SAV.
+
+<div class="flow-conviction">
+  <p>NewStore ne matérialise pas seulement un OMS.</p>
+  <p>Il matérialise une zone de responsabilités que FLOW devra redistribuer proprement entre Demand, Stock, Réseau d'Exécution, Finance et systèmes conservés.</p>
+</div>
+
 ## Planification, produit et données
 
 Le paysage BRD mentionne plusieurs solutions autour de la planification, du produit et des données :
@@ -327,7 +371,7 @@ Ils peuvent consommer les faits, événements et historiques produits par FLOW, 
 | Zone | Applications / composants BRD | Lecture FLOW |
 | --- | --- | --- |
 | Transactionnel | SAP MM, SD, FI/CO, AFS, Inventory, Billing | Périmètre de remplacement initial ; SAP porte notamment le stock entrepôt |
-| OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande, promesse, allocation et intégration des stocks entrepôt / magasin à analyser |
+| OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande, annulation, préparation, SFS, promesse, allocation, intégration des stocks, notifications, SAV, paiement et déclenchement de facturation à analyser responsabilité par responsabilité |
 | Planification | SAP BPC, Optimate / APS | Sources ou contributeurs de demandes planifiées |
 | Produit / contenu | PLM Centric, PIM, DAM, Elastic | Systèmes contributeurs de données produit et contenus ; le PIM relève plutôt du design de l'offre / engagement et ne doit pas être remplacé par FLOW par défaut |
 | Fournisseurs | SNC, Fast, Vendor | Collaboration et qualité fournisseur ; contribution au contexte amont |
@@ -335,17 +379,20 @@ Ils peuvent consommer les faits, événements et historiques produits par FLOW, 
 | Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités candidates FLOW : Inventory Visibility, Allocation & Promise ; la source du stock doit être explicitement qualifiée |
 | Produit d'exécution | Référentiel produit d'exécution alimenté par PLM / PIM / Pricing selon arbitrage | Projection statique et gouvernée nécessaire à FLOW pour le fulfillment ; ne porte pas le processus de création ou d'enrichissement de l'offre |
 | Logistique | Maersk 4PL, C-Log, Bleckmann, WMS, TMS Connex, KTN | Systèmes d'exécution et sources d'événements |
-| Pilotage | BI Tableau / OPM | Observation, reporting, performance |
+| Pilotage | BI Tableau / OPM, AWS Stream | Observation, reporting, performance et notifications IT |
 
 ## Questions structurantes pour FLOW
 
 Le panorama BRD conduit à plusieurs questions :
 
 - Si FLOW remplace SAP et NewStore, quelles responsabilités de SAP sont réellement reprises par FLOW ?
+- Quelles responsabilités actuellement portées par NewStore doivent être reprises, redistribuées ou laissées à des systèmes spécialisés ?
 - Quelles responsabilités doivent rester dans Finance, notamment FI/CO ?
 - FLOW doit-il porter les décisions d'allocation, ou seulement les orchestrer ?
 - Inventory Visibility doit-elle consolider les stocks magasin, entrepôt, réservés et futurs ?
 - Si NewStore disparaît, quel composant reprend l'intégration entre stock entrepôt SAP et stock magasin Cegid ?
+- Les règles d'affectation du mode de préparation, notamment SFS, relèvent-elles du Case, du Stock Unifié, du Réseau d'Exécution ou d'un service de décision transverse ?
+- Les déclenchements de facturation, paiement, fidélité et remboursement doivent-ils être portés par FLOW, orchestrés par FLOW ou laissés à des services spécialisés ?
 - Les outils de planification comme Optimate ou BPC alimentent-ils FLOW en demandes, prévisions ou faits ?
 - Le PIM existant soutient-il principalement le design de l'offre, les assortiments, les commercial agreements, les prix et les canaux d'engagement client ?
 - Quelles données produit doivent être projetées dans un référentiel produit d'exécution consommable par FLOW ?
@@ -369,6 +416,8 @@ Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'
 > Quelles capacités transverses faut-il reprendre dans FLOW, et quels systèmes doivent rester contributeurs, consommateurs ou exécutants ?
 
 Le cas du stock l'illustre bien : SAP porte le stock entrepôt, Cegid porte le stock magasin, et NewStore intègre aujourd'hui les deux. Remplacer SAP et NewStore ne suffit donc pas à répondre mécaniquement à la question de la visibilité de stock ; il faut décider où sera portée demain la capacité d'Inventory Visibility.
+
+Le périmètre observé de NewStore renforce ce constat : NewStore porte aujourd'hui des responsabilités qui touchent à la commande, au stock, au Ship From Store, à l'annulation, au SAV, à la notification client, au paiement, à la fidélité, au déclenchement de facturation et aux entités fiscales. FLOW devra donc reprendre ce périmètre par capacités, et non par simple duplication applicative.
 
 Le cas du PIM va dans le même sens : BRD dispose déjà d'un système qui peut soutenir le design de l'offre, les assortiments, les commercial agreements, les prix et les contenus d'engagement client. La recommandation d'architecture est donc de ne pas intégrer le PIM dans FLOW par défaut.
 
