@@ -12,9 +12,11 @@ Cette section transforme progressivement le glossaire en point d'entrée vers le
 | Capacités d'intégration des systèmes réintégrés | [Concepts clés](vision/concepts-cles.md#capacites-dintegration-des-systemes-reintegres) · [Hotspot dédié](hotspots/capacites-integration-systemes-reintegres.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md#colonne-vertebrale-du-si) |
 | Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#la-demande-lunite-autonome-de-la-decision-et-de-lorchestration) |
 | Colonne vertébrale opérationnelle | [Concepts clés](vision/concepts-cles.md#colonne-vertebrale-operationnelle) · [Vision synthétique](vision/vision-programme-flow.md#ce-que-porte-la-plateforme) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#colonne-vertebrale-reintegrer-sans-tout-reecrire) |
+| Contrat de données | [Concepts clés](vision/concepts-cles.md#contrat-de-donnees) · [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) |
 | Convergence pilotée par niveaux | [Vision synthétique](vision/vision-programme-flow.md#ambition-converger-sans-uniformiser) · [Ambition](vision/vision-detaillee/1-ambition-et-contexte.md#opportunite-converger-sans-basculer-dans-un-modele-unique) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande--demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) |
 | Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand--supply-depasser-achat--vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Donnée en transit | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md#donnees-en-transit--des-flux-projet-aux-contrats-gouvernes) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Principe 02](principes-directeurs/2-flow-comme-plateforme-d-entreprise.md) |
 | Réseau d'exécution / Fulfillment Network | [Concepts clés](vision/concepts-cles.md#fulfillment-network--reseau-dexecution) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#fulfillment-network-decrire-ce-que-le-reseau-sait-faire) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
@@ -104,6 +106,10 @@ Commande passée auprès d’un fournisseur ou fabricant. Dans FLOW, la question
 
 Accord commercial qui définit des conditions, prix, assortiment ou engagements entre parties. Il relève plutôt du domaine de l’engagement commercial, même si FLOW peut devoir en consommer le résultat pour exécuter une demande.
 
+### Contrat de données
+
+Engagement durable décrivant la manière dont une information est publiée, consommée, supervisée et réconciliée entre domaines ou applications. Il précise notamment la source, les consommateurs, le mode d'échange, la granularité, la fraîcheur attendue, la qualité attendue et les mécanismes de reprise.
+
 ### Convergence pilotée par niveaux
 
 Approche selon laquelle la convergence ne signifie pas uniformiser partout. Selon la responsabilité concernée, FLOW peut centraliser, unifier, standardiser, fédérer ou différencier.
@@ -114,6 +120,10 @@ Approche selon laquelle la convergence ne signifie pas uniformiser partout. Selo
 
 Dispositif de partage et de mise à disposition de données ou de projections, au service de la cohérence opérationnelle entre domaines.
 
+### Demi-flux
+
+Intuition d'architecture qui sépare la publication d'une information de sa consommation. Le demi-flux permet de sortir d'une logique strictement point-à-point et prépare une gouvernance par contrats de données.
+
 ### Demand & Fulfillment
 
 Ensemble des responsabilités qui permettent de recevoir une demande, de l’instruire, de décider si et comment elle peut être servie, puis d’en piloter l’exécution. Dans FLOW, ce périmètre réunit notamment demande, commande, stock, promesse, allocation, événements, exceptions, documents et cycle de vie.
@@ -121,6 +131,10 @@ Ensemble des responsabilités qui permettent de recevoir une demande, de l’ins
 ### Donnée de référence / donnée partagée
 
 Donnée nécessaire à plusieurs décisions ou domaines, dont la responsabilité est attribuée, la qualité gouvernée, la définition vérifiée et la disponibilité assurée. Elle ne suppose pas une base de données unique ni une catégorie héritée d’un ERP.
+
+### Donnée en transit
+
+Information qui circule entre domaines, applications ou plateformes. Dans FLOW, elle doit être gouvernée par contrat de données plutôt que traitée comme un simple flux technique opportuniste.
 
 ### Décision
 
@@ -165,6 +179,10 @@ Comportement concret offert par un produit ou une solution. Une fonctionnalité 
 ### Fact / Fait
 
 Nature d’information représentant une réalité métier observée, reçue ou calculée à un instant donné. Un fact peut servir à constater, décider, promettre, allouer ou expliquer.
+
+### Flux projet
+
+Échange de données conçu pour répondre à un besoin local de projet, souvent entre une application source et une application cible. FLOW cherche à réduire cette logique lorsqu'elle produit de la tuyauterie opportuniste non gouvernée dans la durée.
 
 ### Fulfillment
 
