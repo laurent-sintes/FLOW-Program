@@ -61,6 +61,14 @@ nav:
   - Vision:
       - architecture-entreprise/vision/index.md
       - Vision du programme FLOW: architecture-entreprise/vision/vision-programme-flow.md
+      - Vision détaillée:
+          - Sommaire: architecture-entreprise/vision/vision-detaillee/index.md
+          - Ambition et contexte: architecture-entreprise/vision/vision-detaillee/1-ambition-et-contexte.md
+          - Convergence et modèle fédéré: architecture-entreprise/vision/vision-detaillee/2-convergence-et-modele-federe.md
+          - Ruptures structurantes: architecture-entreprise/vision/vision-detaillee/3-ruptures-structurantes.md
+          - Plateforme FLOW: architecture-entreprise/vision/vision-detaillee/4-plateforme-flow.md
+          - Hotspots: architecture-entreprise/vision/vision-detaillee/5-hotspots.md
+          - Valeur attendue: architecture-entreprise/vision/vision-detaillee/6-valeur-attendue.md
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
