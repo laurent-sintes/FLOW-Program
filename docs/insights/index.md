@@ -42,12 +42,13 @@ Ces pages traitent du caractère fédéral de FLOW : multi-marques, multi-contex
 
 ## Opérations, décision et données
 
-Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions et projections.
+Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions, projections et données en transit.
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
 - [Allocation et convergence](allocation-point-saillant-de-la-convergence.md)
 - [Engagements, soft allocation et priorisation](engagements-soft-allocation-et-priorisation-commerciale.md)
 - [Cohérence des données, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+- [Gouverner les données en transit](gouverner-donnees-en-transit.md)
 - [Inventory Visibility](inventory-visibility-capacite-d-entreprise.md)
 
 ## Finance et adhérences externes
@@ -68,6 +69,7 @@ Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spé
 | Convergence | Converger ne signifie pas uniformiser : il faut piloter le bon niveau de commun et de différenciation. |
 | Organisation | Les organisations consomment la plateforme, elles ne doivent pas la structurer. |
 | Données | Les informations doivent être qualifiées par nature et par statut Source / Projection plutôt que rangées dans “Master Data”. |
+| Données en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |
 | Stock | Le stock unifié et l'Inventory Visibility sont des capacités d'entreprise. |
 | Décision | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |
 | Finance | FLOW doit produire les faits et documents utiles, sans devenir le domaine Finance. |
