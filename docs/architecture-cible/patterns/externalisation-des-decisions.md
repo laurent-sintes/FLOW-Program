@@ -1,14 +1,14 @@
-# Pattern — Externalisation des décisions
+# Pattern — Externalisation des décisions métier
 
 ## Intention
 
-L'externalisation des décisions consiste à sortir les règles, policies, paramètres et contraintes métier des processus figés et du code applicatif dispersé.
+L'externalisation des décisions métier consiste à sortir les règles, policies, paramètres et contraintes métier des processus figés et du code applicatif dispersé.
 
-![Pattern — Externalisation des décisions](../../assets/images/pattern-externalisation-decisions.svg)
+![Pattern — Externalisation des décisions métier](../../assets/images/pattern-externalisation-decisions.svg)
 
 <div class="flow-conviction">
   <p>La variation métier ne doit pas faire exploser les processus.</p>
-  <p>Elle doit être gouvernée par des décisions explicites.</p>
+  <p>Elle doit être gouvernée par des décisions métier explicites.</p>
 </div>
 
 ## Problème adressé
