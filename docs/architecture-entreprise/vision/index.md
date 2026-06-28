@@ -17,7 +17,9 @@ Elle répond d'abord à quelques questions simples :
 
 Dans FLOW, la vision est particulièrement importante car le programme ne consiste pas seulement à remplacer des applications.
 
-Il s'agit de clarifier les responsabilités durables de l'entreprise et de construire une plateforme capable de fédérer des demandes, décisions, stocks, promesses, événements et exceptions aujourd'hui dispersés.
+Il s'agit de raconter une tension de convergence : créer du commun dans un groupe multimarques, multicanaux et multi-modèles, sans imposer une centralisation rigide qui détruirait les singularités utiles.
+
+La vision doit donc expliquer pourquoi FLOW existe avant de décrire ce que FLOW est.
 
 ## Ce qu'une vision n'est pas
 
@@ -41,6 +43,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 La vision FLOW doit permettre de :
 
 - raconter le problème à résoudre sans partir uniquement des applications existantes ;
+- expliquer pourquoi une centralisation ERP classique n'est pas une réponse suffisante ;
 - expliquer pourquoi FLOW est une plateforme Demand et pas seulement un ERP, un OMS ou un outil d'intégration ;
 - distinguer convergence et uniformisation ;
 - donner un sens commun aux travaux BRD, GBM et marques ;
