@@ -59,30 +59,30 @@ nav:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision:
-      - architecture-entreprise/vision/index.md
-      - Vision du programme FLOW: architecture-entreprise/vision/vision-programme-flow.md
+      - vision/index.md
+      - Vision du programme FLOW: vision/vision-programme-flow.md
       - Vision détaillée:
-          - Sommaire: architecture-entreprise/vision/vision-detaillee/index.md
-          - Ambition et contexte: architecture-entreprise/vision/vision-detaillee/1-ambition-et-contexte.md
-          - Convergence et modèle fédéré: architecture-entreprise/vision/vision-detaillee/2-convergence-et-modele-federe.md
-          - Ruptures structurantes: architecture-entreprise/vision/vision-detaillee/3-ruptures-structurantes.md
-          - Plateforme FLOW: architecture-entreprise/vision/vision-detaillee/4-plateforme-flow.md
-          - Hotspots: architecture-entreprise/vision/vision-detaillee/5-hotspots.md
-          - Valeur attendue: architecture-entreprise/vision/vision-detaillee/6-valeur-attendue.md
+          - Sommaire: vision/vision-detaillee/index.md
+          - Ambition et contexte: vision/vision-detaillee/1-ambition-et-contexte.md
+          - Convergence et modèle fédéré: vision/vision-detaillee/2-convergence-et-modele-federe.md
+          - Ruptures structurantes: vision/vision-detaillee/3-ruptures-structurantes.md
+          - Plateforme FLOW: vision/vision-detaillee/4-plateforme-flow.md
+          - Hotspots: vision/vision-detaillee/5-hotspots.md
+          - Valeur attendue: vision/vision-detaillee/6-valeur-attendue.md
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
       - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
       - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:
-      - Les principes: architecture-entreprise/principes-directeurs/index.md
-      - "01 — Converger, c’est fédérer": architecture-entreprise/principes-directeurs/1-converger-c-est-federer.md
-      - "02 — FLOW comme plateforme d’entreprise": architecture-entreprise/principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
-      - "03 — Les domaines avant les structures": architecture-entreprise/principes-directeurs/3-domaines-avant-les-structures.md
-      - "04 — Séparer Demand et Supply": architecture-entreprise/principes-directeurs/4-separer-demand-et-supply.md
-      - "05 — Le processus émerge des décisions": architecture-entreprise/principes-directeurs/5-le-processus-emerge-des-decisions.md
-      - "06 — La demande comme objet métier central d’orchestration": architecture-entreprise/principes-directeurs/6-demande-objet-metier-central-orchestration.md
-      - "07 — Qualifier les informations plutôt que parler de Master Data": architecture-entreprise/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
+      - Les principes: principes-directeurs/index.md
+      - "01 — Converger, c’est fédérer": principes-directeurs/1-converger-c-est-federer.md
+      - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
+      - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
+      - "04 — Séparer Demand et Supply": principes-directeurs/4-separer-demand-et-supply.md
+      - "05 — Le processus émerge des décisions": principes-directeurs/5-le-processus-emerge-des-decisions.md
+      - "06 — La demande comme objet métier central d’orchestration": principes-directeurs/6-demande-objet-metier-central-orchestration.md
+      - "07 — Qualifier les informations plutôt que parler de Master Data": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
