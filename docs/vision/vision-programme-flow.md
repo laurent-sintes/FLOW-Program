@@ -174,10 +174,10 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 La vision détaillée est découpée en chapitres pour faciliter la lecture :
 
 1. [Ambition](vision-detaillee/1-ambition-et-contexte.md).
-2. [Ruptures](vision-detaillee/3-ruptures-structurantes.md).
-3. [Solution](vision-detaillee/4-plateforme-flow.md).
-4. [Hotspots](vision-detaillee/5-hotspots.md).
-5. [Valeur attendue](vision-detaillee/6-valeur-attendue.md).
+2. [Ruptures](vision-detaillee/2-ruptures-structurantes.md).
+3. [Solution](vision-detaillee/3-plateforme-flow.md).
+4. [Hotspots](vision-detaillee/4-hotspots.md).
+5. [Valeur attendue](vision-detaillee/5-valeur-attendue.md).
 
 ## Pages associées
 
