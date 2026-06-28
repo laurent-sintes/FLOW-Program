@@ -37,7 +37,7 @@ Ils expliquent les choix réutilisables avant leur application dans les fiches p
 - [CQRS et projections](patterns/cqrs-et-projections.md)
 - [Operational DataHub](patterns/operational-datahub.md)
 - [Event Sourcing / Ledger](patterns/event-sourcing-ledger.md)
-- [Externalisation des décisions](patterns/externalisation-decisions.md)
+- [Externalisation des décisions](patterns/externalisation-des-decisions.md)
 - [Plateforme ouverte et gouvernée](patterns/plateforme-ouverte-gouvernee.md)
 
 ## Fiches produits initialisées
