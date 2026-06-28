@@ -32,6 +32,7 @@ Elle est centrée sur les Cases, enrichie par des services partagés et des proj
 | Supply Service Registry | Référencer les services Supply exposés : APIs, SLA, conditions d'accès, éligibilités et contraintes. |
 | Product Agreement Catalog | Exposer les produits, assortiments et agreements utiles à la vente, à l'achat et à l'exécution. |
 | Vues 360 | Agréger le contexte transverse autour du client, du fournisseur ou du Case. |
+| Diffusion et gouvernance opérationnelle des données | Gouverner les contrats de données, modes d'échange, consommateurs, fraîcheur, qualité, supervision et réconciliation des données en transit. |
 
 ## Lecture fonctionnelle
 
@@ -59,6 +60,9 @@ Product Agreement Catalog
 
 Vues 360
     → donnent du contexte transverse et sont enrichies par les événements des Cases
+
+Diffusion et gouvernance opérationnelle des données
+    → transforme les flux projet en contrats de données gouvernés
 ```
 
 ## Colonne vertébrale du SI
@@ -87,6 +91,34 @@ FLOW
 Ces services peuvent rester autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
 
 La règle d'urbanisme est donc : ne pas réécrire ce qui porte une valeur métier spécifique, mais ne pas laisser ces services recréer chacun leur propre colonne vertébrale.
+
+## Données en transit : des flux projet aux contrats gouvernés
+
+FLOW doit aussi traiter la manière dont les données circulent entre applications.
+
+Aujourd'hui, beaucoup d'échanges naissent comme des flux projet : une application cible exprime un besoin, une application source est analysée, puis une équipe flux développe un batch ou une intégration spécifique.
+
+Cette logique répond à des besoins concrets, mais elle produit un foisonnement de flux difficile à gouverner dans la durée.
+
+L'architecture cible doit donc distinguer la publication d'une information de sa consommation.
+
+L'idée de demi-flux déjà imaginée côté Beaumanoir constitue une première graine : elle sort du flux point-à-point et prépare une logique de publication / consommation découplées.
+
+FLOW doit prolonger cette intuition vers des contrats de données gouvernés.
+
+```text
+Flux point-à-point
+    ↓
+Demi-flux
+    ↓
+Publication / consommation découplées
+    ↓
+Contrats de données gouvernés
+```
+
+Un contrat de données doit préciser au minimum : source, consommateurs, mode d'échange, granularité, fraîcheur attendue, qualité attendue, supervision, reprise et réconciliation.
+
+Cette capacité est transverse : elle soutient le Case Management, les projections, les Vues 360, le Stock Unifié et la réintégration des services existants.
 
 ## Point important : les Cases sont les objets actifs
 
@@ -120,6 +152,7 @@ Le Case reste l'unité métier d'orchestration.
 | Supply Service Registry | éventuellement services normalisés FLOW | services, APIs, SLA exposés par Supply |
 | Product Agreement Catalog | rarement source au départ | product core, agreements vente / achat, assortiments, conditions |
 | Vues 360 | Case 360 probablement source ou dérivée FLOW | Customer 360, Supplier 360, historiques et signaux externes |
+| Diffusion et gouvernance opérationnelle des données | contrats de données, règles de publication, exigences de fraîcheur / qualité si gouvernés par FLOW | catalogues d'échanges existants, flux historiques, capacités d'intégration des domaines |
 
 ## Rupture de conception
 
@@ -153,3 +186,5 @@ La plateforme Demand concentre les responsabilités qui doivent devenir communes
 FLOW n'a pas vocation à réécrire tous les organes spécialisés du SI.
 
 Il doit reconstruire la colonne vertébrale commune qui permet à ces organes de fonctionner ensemble.
+
+Il doit aussi remplacer la logique de tuyauterie projet par une logique de contrats de données gouvernés.
