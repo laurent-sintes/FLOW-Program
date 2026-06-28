@@ -105,4 +105,4 @@ C'est dans ce contexte que le programme FLOW émerge : non comme la recherche d'
 
 ---
 
-← [Retour au sommaire](index.md) · → Page suivante : [Ruptures](3-ruptures-structurantes.md)
+← [Retour au sommaire](index.md) · → Page suivante : [Ruptures](2-ruptures-structurantes.md)
