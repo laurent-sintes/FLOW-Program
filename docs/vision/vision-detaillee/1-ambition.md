@@ -129,4 +129,4 @@ Le sujet est de rendre explicite ce qui doit devenir commun, ce qui peut rester 
 
 ---
 
-← [Retour au sommaire](index.md) · → Page suivante : [Ruptures](2-ruptures-centre-gravite-si.md)
+← [Retour au sommaire](index.md) · → Page suivante : [Ruptures](2-ruptures-structurantes.md)
