@@ -8,12 +8,12 @@ Elle porte le cœur commun qui permet de traiter les demandes, gouverner les dé
 
 <div class="flow-conviction">
   <p>FLOW ne déplace pas tout dans une nouvelle application centrale.</p>
-  <p>FLOW porte ce qui doit rester cohérent, et laisse autour ce qui doit rester spécialisé.</p>
+  <p>FLOW porte ce qui doit rester cohérent, et ne porte pas ce qui relève de domaines spécialisés.</p>
 </div>
 
-## Lecture synthétique : ce que FLOW porte, ce que FLOW laisse autour
+## Lecture synthétique : ce que FLOW porte, ce que FLOW ne porte pas
 
-| FLOW porte | FLOW ne porte pas seul |
+| FLOW porte | FLOW ne porte pas |
 | --- | --- |
 | Les demandes et leur cycle de vie | Les expériences client, interfaces et parcours d'engagement |
 | Les décisions, règles, policies et arbitrages liés à la demande | La totalité des règles locales ou métiers lorsqu'elles relèvent d'un domaine spécialisé |
