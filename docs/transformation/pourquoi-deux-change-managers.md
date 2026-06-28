@@ -16,7 +16,7 @@ Il transforme aussi les modèles de pensée utilisés pour comprendre l'entrepri
 
 Cette page ne décrit pas les sujets de changement eux-mêmes.
 
-Ces sujets sont documentés dans la page dédiée : [Sujets de changement FLOW](sujets-de-changement.md).
+Ces sujets sont documentés dans la page dédiée : [Les changements à conduire](changements-a-conduire.md).
 
 Cette page explique uniquement pourquoi la gouvernance du changement nécessite deux profils complémentaires.
 
