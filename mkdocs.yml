@@ -59,6 +59,7 @@ nav:
           - Allocation et convergence: insights/allocation-point-saillant-de-la-convergence.md
           - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
           - Cohérence des données, DataHub et CEP: insights/coherence-donnees-fraicheur-datahub-cep.md
+          - Gouverner les données en transit: insights/gouverner-donnees-en-transit.md
           - Inventory Visibility: insights/inventory-visibility-capacite-d-entreprise.md
       - Finance:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
@@ -88,6 +89,7 @@ nav:
       - "05 — Le processus émerge des décisions": principes-directeurs/5-le-processus-emerge-des-decisions.md
       - "06 — La demande comme objet métier central d’orchestration": principes-directeurs/6-demande-objet-metier-central-orchestration.md
       - "07 — Qualifier les informations plutôt que parler de Master Data": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
+      - "08 — Gouverner la donnée en transit": principes-directeurs/8-gouverner-la-donnee-en-transit.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
