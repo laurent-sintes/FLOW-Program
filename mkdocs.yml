@@ -24,12 +24,43 @@ extra_css:
 
 nav:
   - Accueil: index.md
-  - FLOW Foundations: flow-foundations.md
-  - Contexte:
-      - Repères: contexte/index.md
-      - Trajectoires SI et convergence: contexte/panorama-applicatif-brd-gbm.md
-      - Panorama applicatif BRD: contexte/panorama-brd.md
-      - Panorama applicatif GBM: contexte/panorama-gbm.md
+  - Vision:
+      - vision/index.md
+      - Abstract: vision/abstract.md
+      - Vision: vision/vision.md
+      - Vision détaillée:
+          - Sommaire: vision/vision-detaillee/index.md
+          - Ambition: vision/vision-detaillee/1-ambition.md
+          - Ruptures: vision/vision-detaillee/2-ruptures-structurantes.md
+          - Solution: vision/vision-detaillee/3-plateforme-flow.md
+          - Hotspots: vision/vision-detaillee/4-hotspots.md
+          - Valeur attendue: vision/vision-detaillee/5-valeur-attendue.md
+      - Concepts clés: vision/concepts-cles.md
+      - Note de choix stratégique: vision/note-choix-strategique.md
+  - Architecture cible:
+      - Repères: architecture-cible/index.md
+      - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
+      - Fiches produits FLOW:
+          - Repères: architecture-cible/produits/index.md
+          - Socle Case Management: architecture-cible/produits/socle-case-management.md
+          - Stock Unifié: architecture-cible/produits/stock-unifie.md
+          - Fulfillment Network Configuration: architecture-cible/produits/fulfillment-network-configuration.md
+          - Product Agreement Catalog: architecture-cible/produits/product-agreement-catalog.md
+          - Supply Service Registry: architecture-cible/produits/supply-service-registry.md
+          - Vues 360: architecture-cible/produits/vues-360.md
+          - Gouvernance des données en transit: architecture-cible/produits/gouvernance-donnees-transit.md
+      - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
+      - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
+  - Principes directeurs:
+      - Les principes: principes-directeurs/index.md
+      - "01 — Converger, c’est fédérer": principes-directeurs/1-converger-c-est-federer.md
+      - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
+      - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
+      - "04 — Séparer Demand et Supply": principes-directeurs/4-separer-demand-et-supply.md
+      - "05 — Le processus émerge des décisions": principes-directeurs/5-le-processus-emerge-des-decisions.md
+      - "06 — La demande comme objet métier central d’orchestration": principes-directeurs/6-demande-objet-metier-central-orchestration.md
+      - "07 — Qualifier les informations plutôt que parler de Master Data": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
+      - "08 — Gouverner la donnée en transit": principes-directeurs/8-gouverner-la-donnee-en-transit.md
   - Hotspots:
       - Repères: hotspots/index.md
       - SAP ECC Boardriders: hotspots/sap-ecc-boardriders.md
@@ -37,8 +68,13 @@ nav:
       - Stock temps réel: hotspots/stock-temps-reel.md
       - Capacités d'intégration des systèmes réintégrés: hotspots/capacites-integration-systemes-reintegres.md
       - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
-      - Promesse commerciale Wholesale: hotspots/convergence-b2b-wholesale.md
+      - Promesse commerciale Wholesale: hotspots/promesse-commerciale-wholesale.md
       - Module Négoce StoreLand: hotspots/module-negoce-storeland.md
+  - Contexte:
+      - Repères: contexte/index.md
+      - Trajectoires SI et convergence: contexte/trajectoires-si-convergence.md
+      - Panorama applicatif BRD: contexte/panorama-brd.md
+      - Panorama applicatif GBM: contexte/panorama-gbm.md
   - Insights:
       - Repères: insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
@@ -65,34 +101,6 @@ nav:
       - Finance:
           - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
-  - Vision:
-      - vision/index.md
-      - Abstract: vision/abstract.md
-      - Vision: vision/vision.md
-      - Vision détaillée:
-          - Sommaire: vision/vision-detaillee/index.md
-          - Ambition: vision/vision-detaillee/1-ambition-et-contexte.md
-          - Ruptures: vision/vision-detaillee/2-ruptures-structurantes.md
-          - Solution: vision/vision-detaillee/3-plateforme-flow.md
-          - Hotspots: vision/vision-detaillee/4-hotspots.md
-          - Valeur attendue: vision/vision-detaillee/5-valeur-attendue.md
-      - Concepts clés: vision/concepts-cles.md
-      - Note de choix stratégique: vision/abstract-comex.md
-  - Architecture cible:
-      - Repères: architecture-cible/index.md
-      - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
-      - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
-      - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
-  - Principes directeurs:
-      - Les principes: principes-directeurs/index.md
-      - "01 — Converger, c’est fédérer": principes-directeurs/1-converger-c-est-federer.md
-      - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
-      - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
-      - "04 — Séparer Demand et Supply": principes-directeurs/4-separer-demand-et-supply.md
-      - "05 — Le processus émerge des décisions": principes-directeurs/5-le-processus-emerge-des-decisions.md
-      - "06 — La demande comme objet métier central d’orchestration": principes-directeurs/6-demande-objet-metier-central-orchestration.md
-      - "07 — Qualifier les informations plutôt que parler de Master Data": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
-      - "08 — Gouverner la donnée en transit": principes-directeurs/8-gouverner-la-donnee-en-transit.md
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
