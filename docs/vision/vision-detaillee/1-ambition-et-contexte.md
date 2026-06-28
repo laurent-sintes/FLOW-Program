@@ -8,6 +8,11 @@ La réponse ne peut pas être une uniformisation brutale.
 
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
+<div class="flow-conviction">
+  <p>Le problème de FLOW n'est pas de choisir entre centralisation et autonomie.</p>
+  <p>Il est de construire le bon commun sans détruire les différences utiles.</p>
+</div>
+
 L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
 FLOW porte donc une ambition de convergence fédérée.
@@ -102,6 +107,10 @@ Différencier
 </div>
 
 C'est dans ce contexte que le programme FLOW émerge : non comme la recherche d'un socle unique, mais comme la recherche d'un modèle de convergence capable de créer de la cohérence sans effacer les singularités utiles.
+
+Le sujet n'est donc pas de centraliser par principe.
+
+Le sujet est de rendre explicite ce qui doit devenir commun, ce qui peut rester autonome, et ce qui doit être fédéré pour que le groupe fonctionne comme un ensemble cohérent.
 
 ---
 
