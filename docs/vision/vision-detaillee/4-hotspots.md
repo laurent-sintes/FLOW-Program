@@ -26,7 +26,8 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 | Décision distribuée | C-LOG, promesse Wholesale Boardriders | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
 | Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
 | Données produit et amont | PLM, catalogue, Article / EAN | Quel catalogue FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
-| Gouvernance métier | Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
+| Gouvernance métier | Promesse Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
+| Périmètre fonctionnel | Module Négoce StoreLand | Quelles responsabilités doivent être reprises dans FLOW, et lesquelles doivent rester dans un domaine consommateur ? |
 
 Cette lecture permet de ne pas voir les hotspots comme une simple liste de sujets.
 
@@ -202,6 +203,31 @@ Elle doit aussi pouvoir dire : ce stock peut-il être réservé à un client pri
 
 C'est typiquement le genre de variation métier que FLOW doit absorber sans multiplier les processus ou les applications spécifiques.
 
+## Module Négoce StoreLand : découper avant de reprendre
+
+<div class="flow-conviction">
+  <p>Le module Négoce n'est pas un bloc à reprendre tel quel.</p>
+  <p>C'est un révélateur de responsabilités mélangées entre engagement commercial et Demand & Fulfillment.</p>
+</div>
+
+Le module Négoce de StoreLand porte plusieurs responsabilités : client, assortiment, commercial agreement, catalogue, prix, conditions commerciales et commandes d'achat.
+
+Certaines relèvent plutôt du design commercial et du domaine d'Engagement.
+
+D'autres peuvent relever de FLOW si elles participent au cycle de vie transverse d'une demande, à l'approvisionnement, à la promesse, à l'allocation ou à l'exécution.
+
+Le hotspot n'est donc pas de savoir si FLOW doit reprendre “le module Négoce”.
+
+Il est de découper les responsabilités pour savoir ce qui doit être repris, réintégré, consommé ou laissé dans un domaine consommateur de la plateforme.
+
+Ce hotspot impose de clarifier :
+
+- Les responsabilités Négoce réellement candidates à FLOW.
+- La frontière entre commercial agreement, catalogue, commande d'achat et promesse.
+- Les capacités à généraliser pour toutes les marques GBM.
+- La manière de traiter la convergence intra-GBM entre marques premium outillées et marques opérées plus manuellement.
+- Le rôle du Product Agreement Catalog comme point d'interface potentiel entre Engagement et FLOW.
+
 ## Synthèse des hotspots
 
 <div class="flow-conviction">
@@ -217,6 +243,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
 | Promesse Wholesale Boardriders | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
+| Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 
 ## À retenir
 
