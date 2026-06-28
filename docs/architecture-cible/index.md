@@ -19,8 +19,23 @@ L'architecture cible décrit progressivement comment cette ambition peut se mat�
 ## Pages disponibles
 
 - [Overview de la plateforme FLOW](overview-plateforme-flow.md)
+- [Fiches produits FLOW](produits/index.md)
 - [FLOW dans l’écosystème GBM](flow-dans-ecosysteme-gbm.md)
 - [FLOW dans l’écosystème BRD](flow-dans-ecosysteme-brd.md)
+
+## Fiches produits initialisées
+
+Les fiches produits donnent une première matière concrète aux PO / PM pour démarrer une réflexion de backlog.
+
+Elles ne figent pas la solution, mais elles structurent les responsabilités, consommateurs, informations clés, interfaces et premiers epics.
+
+- [Socle Case Management](produits/socle-case-management.md)
+- [Stock Unifié](produits/stock-unifie.md)
+- [Fulfillment Network Configuration](produits/fulfillment-network-configuration.md)
+- [Product Agreement Catalog](produits/product-agreement-catalog.md)
+- [Supply Service Registry](produits/supply-service-registry.md)
+- [Vues 360](produits/vues-360.md)
+- [Gouvernance des données en transit](produits/gouvernance-donnees-transit.md)
 
 ## Lecture actuelle
 
