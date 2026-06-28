@@ -2,7 +2,7 @@
 
 FLOW n'est pas uniquement un programme de transformation du système d'information.
 
-FLOW transforme également la manière dont l'entreprise pense ses problèmes, ses demandes, ses responsabilités, ses documents, sa finance, ses systèmes et sa convergence.
+FLOW transforme la manière dont l'entreprise pense sa convergence : ce qui doit devenir commun, ce qui doit rester différencié, et la façon dont les marques, canaux, organisations et systèmes consomment une plateforme commune sans être uniformisés.
 
 Cette section documente les changements organisationnels, culturels et méthodologiques à conduire avec le programme.
 
@@ -35,3 +35,9 @@ La recommandation est donc de distinguer deux natures de contenus :
 Cette structuration permet de couvrir la profondeur de FLOW sans multiplier les campagnes de changement.
 
 Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception et d'arbitrage.
+
+## À retenir
+
+La transformation FLOW doit aider les équipes à comprendre que la convergence ne signifie pas la disparition des singularités.
+
+Elle signifie que les responsabilités critiques — demandes, décisions, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées.
