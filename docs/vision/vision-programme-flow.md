@@ -12,6 +12,10 @@ Elle ne peut pas non plus être une centralisation ERP classique qui chercherait
 
 L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — demandes, stock, promesses, décisions, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
+> La convergence n'est pas l'uniformisation.
+>
+> Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.
+
 ## Vision synthétique : FLOW comme moteur de convergence opérationnelle
 
 > FLOW est le moteur de convergence opérationnelle du groupe : une plateforme de fédération des demandes de l'entreprise, qui permet de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, tout en préservant les singularités business lorsque celles-ci créent de la valeur.
@@ -23,6 +27,18 @@ Cette vision repose sur cinq convictions fortes :
 - Gérer des commandes n'est plus suffisant : il faut savoir traiter des demandes.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la plateforme elle-même.
 - La variation métier doit être pilotée par le contexte, les Agreements et les règles, sans rendre le SI ingouvernable.
+
+## Concepts qui structurent FLOW
+
+| Concept | Message |
+| --- | --- |
+| Demande | Le point de départ n'est plus la commande, mais l'intention à instruire, décider, promettre, satisfaire et expliquer. |
+| Plateforme Demand | FLOW gouverne des ressources communes et ouvre des capacités contrôlées aux domaines consommateurs et contributeurs. |
+| Stock Unifié | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
+| Agreement | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
+| Source / Projection | Dans un SI distribué, une information fait autorité pour un usage donné ; elle n'est pas maître de manière absolue. |
+
+→ Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
 ## Pourquoi FLOW existe
 
@@ -67,6 +83,10 @@ Satisfaction client-utilisateur
 Stock et réseau d'exécution
 ```
 
+> FLOW ne cherche pas à mieux gérer les commandes.
+>
+> FLOW cherche à mieux satisfaire les demandes.
+
 FLOW introduit aussi une rupture sur la donnée.
 
 Dans un ERP, la master data décrit souvent l'entreprise telle qu'elle est.
@@ -77,7 +97,9 @@ FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
 
-FLOW devient une plateforme qui configure des capacités d'action, pas un grand miroir administratif de l'entreprise.
+> FLOW configure des capacités d'action.
+>
+> Il ne reconstruit pas un grand miroir administratif de l'entreprise.
 
 ## Ce que porte la plateforme
 
@@ -97,6 +119,10 @@ Les premiers produits candidats sont :
 FLOW n'a pas vocation à absorber tout le SI.
 
 Il doit empêcher que les autonomies locales redeviennent des silos au cœur du traitement de la demande.
+
+> Les consommateurs peuvent rester différenciés.
+>
+> La plateforme doit être décloisonnée.
 
 ## Points à arbitrer
 
@@ -148,6 +174,7 @@ La vision détaillée est découpée en chapitres pour faciliter la lecture :
 
 ## Pages associées
 
+- [Concepts clés du programme FLOW](concepts-cles.md).
 - [Principes directeurs](../principes-directeurs/index.md).
 - [Architecture cible](../architecture-cible/index.md).
 - [Transformation](../transformation/index.md).
