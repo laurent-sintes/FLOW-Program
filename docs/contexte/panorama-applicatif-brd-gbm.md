@@ -1,14 +1,17 @@
-# Panorama applicatif BRD et GBM
+# Trajectoires SI et contexte de convergence
 
 ## Intention
 
-Cette page sert d'orientation entre les panoramas applicatifs BRD et GBM.
+Cette page n'est pas un panorama applicatif détaillé.
 
-Les deux environnements doivent être documentés séparément, car ils racontent deux histoires SI différentes.
+Elle sert à comprendre l'histoire et les trajectoires SI qui expliquent pourquoi FLOW existe.
+
+Les panoramas applicatifs détaillés sont documentés séparément :
 
 - [Panorama applicatif BRD](panorama-brd.md)
 - [Panorama applicatif GBM](panorama-gbm.md)
-- [Convergence B2B / Wholesale](convergence-b2b-wholesale.md)
+
+Les points de tension à instruire sont documentés dans la section [Hotspots](../hotspots/index.md), notamment [Convergence B2B / Wholesale](../hotspots/convergence-b2b-wholesale.md).
 
 ## Point de départ du programme
 
@@ -35,15 +38,45 @@ Cette question ouvre immédiatement une analyse d'urbanisme.
 
 Les applications initialement visées ne sont pas isolées. Elles s'inscrivent dans un paysage d'applications, d'intégrations, de référentiels, de systèmes d'exécution, de flux logistiques, de données produit, de canaux et de solutions de pilotage.
 
-## Deux histoires SI différentes
+## Trois trajectoires à comprendre
 
-BRD et GBM ne partent pas du même point.
+La vision du programme mentionne BRD, GBM et Sarenza parce que ces trajectoires ne racontent pas la même histoire.
 
-Un insight client permet de résumer cette différence de manière très structurante.
+Elles produisent une richesse métier et IT, mais aussi une convergence difficile.
 
-GBM est historiquement plutôt un SI retail, ouvert progressivement au e-commerce, puis étendu plus difficilement au B2B.
+### GBM : un SI retail ouvert progressivement au digital et au B2B
+
+GBM est historiquement plutôt un SI retail.
+
+Le SI s'est structuré autour de StoreLand, avec une logique par marques et par instances.
+
+Il a ensuite été ouvert au e-commerce, notamment avec Socloz et des composants autour de l'omnicanal.
+
+Le B2B y a été intégré plus difficilement, avec des écarts de maturité entre marques.
+
+Le module Négoce de StoreLand illustre cette situation : il est activé pour certaines marques premium, tandis que d'autres marques opèrent encore certains flux de manière plus manuelle ou dispersée.
+
+### Sarenza : une trajectoire digitale et microservices
+
+Sarenza apporte une culture différente : plus digitale, plus orientée développement spécifique, APIs, microservices et autonomie produit.
+
+Cette trajectoire est importante pour FLOW parce qu'elle montre une autre manière de construire le SI : moins centrée sur un socle ERP ou retail historique, davantage sur des composants spécialisés et évolutifs.
+
+Elle renforce l'idée que FLOW ne peut pas être pensé comme une simple centralisation applicative.
+
+Le programme doit être capable d'intégrer des cultures IT différentes : progiciel, applications autonomes, systèmes par marque, composants digitaux et services spécialisés.
+
+### BRD : un SI B2B / wholesale adapté au retail et à l'omnicanal
 
 BRD semble plutôt issu d'un socle B2B / wholesale, ensuite adapté au retail et à l'omnicanal.
+
+SAP y joue un rôle structurant, avec NewStore comme composant omnicanal / OMS.
+
+Cette trajectoire donne un centre de gravité différent de GBM : plus centralisé, plus ERP, plus B2B / wholesale, puis adapté aux enjeux de retail, stock magasin, promesse et omnicanal.
+
+## Deux centres de gravité presque inverses
+
+Un insight client permet de résumer cette différence de manière très structurante.
 
 ```text
 GBM
@@ -59,27 +92,22 @@ B2B / wholesale d'abord
 Retail ajouté
     ↓
 Omnicanal à recomposer
+
+Sarenza
+Digital d'abord
+    ↓
+Composants spécifiques et microservices
+    ↓
+Culture produit / API / autonomie
 ```
 
-Cette différence ne relève pas seulement des applications. Elle décrit deux centres de gravité historiques presque inverses.
+Cette différence ne relève pas seulement des applications.
 
-FLOW ne doit donc pas chercher à aligner deux SI équivalents. Il doit créer une couche cible commune au-dessus de deux héritages différents.
+Elle décrit des centres de gravité historiques presque inverses.
 
-```text
-BRD
-    → logique plus centralisée autour de SAP
-    → NewStore comme OMS
-    → socle historiquement plus B2B / wholesale
-    → adaptation au retail, au stock magasin, à l'omnicanal et à la promesse
+FLOW ne doit donc pas chercher à aligner des SI équivalents.
 
-GBM
-    → logique historiquement fédérale par marque
-    → StoreLand comme socle retail historique
-    → une instance StoreLand par marque
-    → Socloz comme composant omnicanal / e-commerce
-    → UR comme signal d'un besoin transverse
-    → B2B intégré plus difficilement dans un paysage d'abord retail
-```
+Il doit créer une couche cible commune au-dessus d'héritages différents.
 
 ## Une convergence aussi interne à GBM
 
@@ -103,11 +131,11 @@ FLOW ne doit pas seulement rapprocher deux groupes. Il doit aussi aider GBM à e
 
 ## Deux lectures d'urbanisme à rendre comparables
 
-Le panorama applicatif ne doit pas seulement enregistrer une liste d'applications.
+Le contexte applicatif ne doit pas seulement enregistrer une liste d'applications.
 
-BRD et GBM ne diffèrent pas seulement par leurs applications. Ils diffèrent aussi par leur manière de représenter les responsabilités, les domaines, les flux et les frontières applicatives.
+BRD, GBM et Sarenza ne diffèrent pas seulement par leurs applications. Ils diffèrent aussi par leur manière de représenter les responsabilités, les domaines, les flux et les frontières applicatives.
 
-FLOW devra donc produire un urbanisme unifié permettant de positionner les applications BRD et GBM selon une grille comparable.
+FLOW devra donc produire un urbanisme unifié permettant de positionner les applications et composants selon une grille comparable.
 
 L'objectif n'est pas d'imposer immédiatement une cible unique, mais de rendre les points de vue comparables :
 
@@ -115,23 +143,20 @@ L'objectif n'est pas d'imposer immédiatement une cible unique, mais de rendre l
 - mêmes critères pour positionner une application ;
 - même distinction entre application, capacité, responsabilité et processus ;
 - même lecture des systèmes remplacés, conservés, connectés ou laissés hors périmètre ;
-- même capacité à identifier les écarts entre l'existant BRD, l'existant GBM et la cible FLOW.
+- même capacité à identifier les écarts entre l'existant BRD, l'existant GBM, les apports Sarenza et la cible FLOW.
 
-Sans cette grille commune, chaque groupe risque de décrire son SI avec ses propres repères, ce qui rendrait la convergence difficile à piloter.
+Sans cette grille commune, chaque périmètre risque de décrire son SI avec ses propres repères, ce qui rendrait la convergence difficile à piloter.
 
 ## Comparaison synthétique
 
-| Dimension | BRD | GBM |
-| --- | --- | --- |
-| Trajectoire historique | B2B / wholesale adapté au retail et à l'omnicanal | Retail ouvert au e-commerce puis au B2B |
-| Logique dominante | Centralisation autour de SAP et NewStore | Fédération historique par marque |
-| Socle principal | SAP, NewStore | StoreLand, Socloz, puis UR comme composant transverse |
-| Structure historique | Socle plus centralisé, fortement paramétré | Instances StoreLand par marque, plus StoreLand Fournitures mutualisé |
-| Force principale | Robustesse transactionnelle et structuration des flux | Préservation des spécificités métiers retail et marques |
-| Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles, instances et données |
-| Signal fort | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse ; Négoce révèle la convergence intra-GBM |
-| Risque | Confondre remplacement applicatif et clarification des responsabilités | Préserver l'autonomie mais reproduire les silos et les fragments d'instances |
-| Enjeu d'urbanisme | Traduire une lecture déjà structurée du SI BRD dans une grille commune | Recomposer une lecture commune à partir d'un historique retail fédéral et multi-marques |
+| Dimension | BRD | GBM | Sarenza |
+| --- | --- | --- | --- |
+| Trajectoire historique | B2B / wholesale adapté au retail et à l'omnicanal | Retail ouvert au e-commerce puis au B2B | Digital / e-commerce construit avec une culture de composants spécifiques |
+| Logique dominante | Centralisation autour de SAP et NewStore | Fédération historique par marque | Autonomie produit, APIs, microservices |
+| Socle principal | SAP, NewStore | StoreLand, Socloz, UR comme composant transverse | Composants digitaux et services spécialisés |
+| Force principale | Robustesse transactionnelle et structuration des flux | Préservation des spécificités métiers retail et marques | Capacité d'évolution, culture produit et intégration par services |
+| Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles, instances et données | Risque de spécialisation locale ou d'intégration spécifique |
+| Signal fort pour FLOW | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse ; Négoce révèle la convergence intra-GBM | FLOW doit rester ouvert aux architectures plus modulaires |
 
 ## Comparaison par responsabilités
 
@@ -148,7 +173,6 @@ Elle ne doit pas encore être lue comme un mapping définitif application à app
 | Achat fournisseur | SAP et les outils amont contribuent aux achats et commandes fournisseur | StoreLand Négoce, CBS et processus manuels contribuent aux achats fournisseur | La commande d'achat peut être candidate FLOW si elle participe au cycle de vie transverse, à la disponibilité future ou à un engagement d'approvisionnement |
 | Engagement commercial / catalogue | PIM / PLM / pricing / canaux contribuent à l'offre et aux contenus | Module Négoce, Zoho, Elastic, Product Live et processus manuels contribuent à l'assortiment et au catalogue | FLOW ne doit pas absorber le design de l'engagement ; il doit consommer les agreements utiles à l'exécution |
 | B2B / Wholesale | Centre de gravité historique plus naturel côté BRD | Canal ajouté plus difficilement dans un SI historiquement retail | FLOW doit modéliser les responsabilités, pas plaquer une étiquette canal unique |
-| Retail / magasins | Adaptation autour de Cegid, stock magasin et NewStore | Centre de gravité historique, mais fragmenté par marques et instances | FLOW doit unifier sans effacer l'autonomie utile des marques et magasins |
 | Logistique / exécution | WMS, transport, douanes, partenaires et systèmes d'exécution à connecter | C-LOG / EAI, OMS C-LOG, Transport, CBS et suivi expéditions à connecter | FLOW doit exposer et consommer des événements, sans devenir tous les systèmes d'exécution |
 | Finance / documents | SAP FI/CO et les documents financiers restent structurants | Finance, documents B2B, factures et pièces opérationnelles à raccorder selon les flux | FLOW doit porter le suivi documentaire nécessaire au Case sans absorber toute la comptabilité |
 
@@ -168,38 +192,17 @@ Plusieurs points ne sont pas encore assez stabilisés pour trancher :
 
 Ces incertitudes ne bloquent pas la comparaison. Elles doivent être affichées comme des hypothèses à instruire.
 
-## Responsabilités communes observées
+## Ce que ce contexte apprend à FLOW
 
-Malgré des architectures différentes, les mêmes responsabilités apparaissent régulièrement :
-
-- gérer les demandes ;
-- gérer les engagements ;
-- rendre les stocks et ressources visibles ;
-- décider des allocations ;
-- prioriser les demandes, clients, canaux ou marchés ;
-- traiter les commandes d'achat et de vente ;
-- suivre les jalons et retards ;
-- gérer les retours, litiges et exceptions ;
-- déclencher préparation, expédition, livraison ou retour ;
-- produire ou transmettre les documents nécessaires ;
-- alimenter Finance et les systèmes d'exécution.
-
-Cette convergence des responsabilités est plus importante que la diversité des applications.
-
-Elle prépare le passage d'une lecture applicative à une lecture par domaines, responsabilités et capacités.
-
-## Ce que ce panorama apprend à FLOW
-
-Le panorama applicatif montre que FLOW ne peut pas être pensé comme un simple remplacement technique.
+Le contexte SI montre que FLOW ne peut pas être pensé comme un simple remplacement technique.
 
 Le remplacement de StoreLand / Socloz côté GBM et de SAP / NewStore côté BRD impose de clarifier les responsabilités : lesquelles doivent être réunifiées dans FLOW, lesquelles restent dans Finance, lesquelles restent dans les systèmes d'exécution, lesquelles sont connectées, consommées ou contributrices ?
 
-FLOW doit donc éviter deux pièges :
+FLOW doit donc éviter trois pièges :
 
 - remplacer des applications sans clarifier les responsabilités métier ;
-- élargir indéfiniment son périmètre au motif que tout est connecté.
-
-FLOW doit aussi éviter un troisième piège : comparer BRD et GBM uniquement à partir des noms d'applications.
+- élargir indéfiniment son périmètre au motif que tout est connecté ;
+- comparer BRD, GBM et Sarenza uniquement à partir des noms d'applications.
 
 La comparaison doit se faire à partir d'une grille d'urbanisme commune, faute de quoi deux applications peuvent sembler équivalentes alors qu'elles ne portent pas les mêmes responsabilités, ou sembler différentes alors qu'elles participent à la même capacité métier.
 
@@ -211,14 +214,14 @@ Le cas de CBS ajoute une nuance supplémentaire : certains systèmes sont surtou
 
 ## À retenir
 
-Le contexte applicatif BRD / GBM confirme l'intuition fondatrice de FLOW :
+Le contexte BRD / GBM / Sarenza confirme l'intuition fondatrice de FLOW :
 
-> FLOW n'est pas seulement une convergence applicative. C'est une convergence de deux trajectoires SI opposées : un retail ouvert au digital et au B2B côté GBM, et un B2B adapté au retail côté BRD.
+> FLOW n'est pas seulement une convergence applicative. C'est une convergence de trajectoires SI différentes : un retail ouvert au digital et au B2B côté GBM, un B2B adapté au retail côté BRD, et une culture digitale plus modulaire côté Sarenza.
 
 Il confirme aussi que le remplacement applicatif initial ne suffit pas à définir FLOW.
 
 > Il faut identifier les responsabilités communes que l'entreprise doit gouverner durablement, puis décider lesquelles doivent être réunifiées dans FLOW, lesquelles restent dans des systèmes spécialisés, et lesquelles doivent seulement consommer ou produire des événements.
 
-Enfin, il élargit la notion de convergence : FLOW devra traiter à la fois la convergence BRD / GBM et la convergence interne GBM entre marques, notamment sur le B2B, le Négoce, les commandes d'achat et les processus encore manuels.
+Enfin, il élargit la notion de convergence : FLOW devra traiter à la fois la convergence BRD / GBM, la convergence interne GBM entre marques, et l'intégration des cultures IT issues de trajectoires différentes.
 
-Il confirme un enjeu de méthode : FLOW devra redéfinir un urbanisme unifié pour rendre comparables les positionnements applicatifs des deux groupes dans le SI.
+Il confirme un enjeu de méthode : FLOW devra redéfinir un urbanisme unifié pour rendre comparables les positionnements applicatifs des différents périmètres dans le SI.
