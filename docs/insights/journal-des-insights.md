@@ -12,16 +12,17 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 
 | Insight | Titre | Formulation courte |
 | --- | --- | --- |
-| 001 | FLOW n'est probablement pas un OMS | Le problème dépasse l'omnicanalité vente : FLOW doit traiter demandes, engagements, décisions et exécution. |
+| 001 | FLOW n'est probablement pas un OMS | Le problème dépasse l'omnicanalité vente : FLOW doit traiter demandes, engagements, décisions métier et exécution. |
 | 010 | FLOW est devenu un programme d'entreprise | FLOW dépasse le cadre d'un simple projet SI. |
-| 011 | FLOW n'est pas une plateforme d'engagement | FLOW expose des capacités, APIs et décisions réutilisables sans remplacer les canaux d'engagement. |
-| 012 | FLOW est une plateforme d'orchestration des demandes | FLOW reçoit les demandes des domaines d'engagement et coordonne décision et exécution. |
+| 011 | FLOW n'est pas une plateforme d'engagement | FLOW expose des capacités, APIs et décisions métier réutilisables sans remplacer les canaux d'engagement. |
+| 012 | FLOW est une plateforme d'orchestration des demandes | FLOW reçoit les demandes des domaines d'engagement et coordonne décision métier et exécution. |
 | 013 | Le périmètre de FLOW ne se définit pas par les applications remplacées | Le vrai périmètre vient des responsabilités métier à porter et mutualiser. |
 | 020 | FLOW réconcilie ERP et OMS dans une plateforme Demand | FLOW reconstruit une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 027 | FLOW devient le moteur de la convergence | La plateforme et le programme FLOW organisent la convergence des pratiques, responsabilités, capacités, règles, données et trajectoires. |
-| 028 | Le centre de gravité du SI se déplace vers la demande | FLOW déplace le cœur du SI de l'ERP-document vers la demande, le Case, la décision et la satisfaction client / utilisateur. |
+| 028 | Le centre de gravité du SI se déplace vers la demande | FLOW déplace le cœur du SI de l'ERP-document vers la demande, le Case, la décision métier et la satisfaction client / utilisateur. |
 | 032 | FLOW reconstruit la colonne vertébrale opérationnelle | FLOW ne remplace pas tout le SI ; il porte les responsabilités communes qui permettent aux systèmes spécialisés de fonctionner ensemble. |
 | 033 | Réintégrer ne signifie pas tout réécrire | Les services existants qui portent une valeur métier peuvent rester autour de FLOW s'ils exposent APIs, événements, statuts, documents et réconciliation. |
+| 037 | Les consommateurs de FLOW doivent rester autonomes | FLOW fournit des capacités réutilisables ; les domaines consommateurs gardent la responsabilité de leurs expériences et parcours. |
 
 ## Modèle conceptuel
 
@@ -35,6 +36,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 029 | La variation métier doit être pilotée par règles | Les variations de traitement doivent venir du contexte, des Agreements et des policies, pas d'une prolifération de processus spécialisés. |
 | 030 | Le SAV est une demande comme les autres | Une demande de service, un litige, un retour ou un remboursement peut être traité comme un Case dès lors qu'il faut suivre, décider, résoudre et expliquer. |
 | 034 | Une plateforme est fermée et ouverte à la fois | FLOW gouverne un cœur commun, mais expose des processus contrôlés pour configurer, étendre et développer des produits consommateurs. |
+| 038 | La demande est le point d'entrée de la modélisation | FLOW commence par la demande à instruire, puis identifie les décisions métier et les données nécessaires. |
 
 ## Convergence, fédération et gouvernance
 
@@ -46,14 +48,14 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 016 | BRD et GBM ont des centres de gravité inverses | GBM part du retail ; BRD part plutôt du B2B / wholesale. FLOW doit créer une couche commune au-dessus de ces héritages. |
 | 017 | La convergence est aussi intra-GBM | FLOW doit aussi traiter les écarts entre marques GBM, niveaux de maturité et pratiques outillées ou manuelles. |
 
-## Opérations, décision et données
+## Opérations, décision métier et données
 
 | Insight | Titre | Formulation courte |
 | --- | --- | --- |
 | 004 | Le stock est une vue avant d'être un système | Le besoin réel est une visibilité fiable, explicable et actionnable. |
 | 005 | Inventory Visibility est une Shared Business Capability | La visibilité stock doit être mutualisée au niveau plateforme. |
-| 006 | Decision Services est une Shared Business Capability | ATP, allocation, sourcing et promesse relèvent d'une même famille de décisions. |
-| 009 | L'observabilité est un sujet métier | La confiance dépend de la capacité à expliquer données, événements et décisions. |
+| 006 | Decision Services est une Shared Business Capability | ATP, allocation, sourcing et promesse relèvent d'une même famille de décisions métier. |
+| 009 | L'observabilité est un sujet métier | La confiance dépend de la capacité à expliquer données, événements et décisions métier. |
 | 023 | Le PIM n'est pas naturellement dans FLOW | FLOW a besoin d'une projection produit d'exécution, pas d'un PIM bis. |
 | 024 | Les données doivent être qualifiées plutôt que rangées dans “Master Data” | FLOW distingue les natures d'information et leur statut Source ou Projection. |
 | 026 | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI | C-LOG peut porter des responsabilités logistiques, entrepôt, transport, stock et événements d'exécution. |
@@ -76,12 +78,12 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 001 | Positionnement | FLOW n'est probablement pas un OMS |
 | 002 | Modèle conceptuel | Les demandes sont plus stables que les processus |
 | 003 | Modèle conceptuel | Agreement est le pivot métier |
-| 004 | Opérations, décision et données | Le stock est une vue avant d'être un système |
-| 005 | Opérations, décision et données | Inventory Visibility est une Shared Business Capability |
-| 006 | Opérations, décision et données | Decision Services est une Shared Business Capability |
+| 004 | Opérations, décision métier et données | Le stock est une vue avant d'être un système |
+| 005 | Opérations, décision métier et données | Inventory Visibility est une Shared Business Capability |
+| 006 | Opérations, décision métier et données | Decision Services est une Shared Business Capability |
 | 007 | Convergence, fédération et gouvernance | Une plateforme doit fédérer autant qu'elle mutualise |
 | 008 | Convergence, fédération et gouvernance | Le tenant est une notion de gouvernance |
-| 009 | Opérations, décision et données | L'observabilité est un sujet métier |
+| 009 | Opérations, décision métier et données | L'observabilité est un sujet métier |
 | 010 | Positionnement | FLOW est devenu un programme d'entreprise |
 | 011 | Positionnement | FLOW n'est pas une plateforme d'engagement |
 | 012 | Positionnement | FLOW est une plateforme d'orchestration des demandes |
@@ -95,17 +97,19 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 020 | Positionnement | FLOW réconcilie ERP et OMS dans une plateforme Demand |
 | 021 | Finance et adhérences externes | Le fulfillment précède les documents |
 | 022 | Finance et adhérences externes | La finance doit rester un domaine séparé |
-| 023 | Opérations, décision et données | Le PIM n'est pas naturellement dans FLOW |
-| 024 | Opérations, décision et données | Les données doivent être qualifiées plutôt que rangées dans “Master Data” |
+| 023 | Opérations, décision métier et données | Le PIM n'est pas naturellement dans FLOW |
+| 024 | Opérations, décision métier et données | Les données doivent être qualifiées plutôt que rangées dans “Master Data” |
 | 025 | Finance et adhérences externes | CBS est un domaine spécialisé contributeur et consommateur de FLOW |
-| 026 | Opérations, décision et données | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI |
+| 026 | Opérations, décision métier et données | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI |
 | 027 | Positionnement | FLOW devient le moteur de la convergence |
 | 028 | Positionnement | Le centre de gravité du SI se déplace vers la demande |
 | 029 | Modèle conceptuel | La variation métier doit être pilotée par règles |
 | 030 | Modèle conceptuel | Le SAV est une demande comme les autres |
-| 031 | Opérations, décision et données | Les données en transit doivent être gouvernées |
+| 031 | Opérations, décision métier et données | Les données en transit doivent être gouvernées |
 | 032 | Positionnement | FLOW reconstruit la colonne vertébrale opérationnelle |
 | 033 | Positionnement | Réintégrer ne signifie pas tout réécrire |
 | 034 | Modèle conceptuel | Une plateforme est fermée et ouverte à la fois |
-| 035 | Opérations, décision et données | Produits conçus et produits importés imposent un catalogue d'exécution |
-| 036 | Opérations, décision et données | Les fiches produits rendent l'architecture actionnable |
+| 035 | Opérations, décision métier et données | Produits conçus et produits importés imposent un catalogue d'exécution |
+| 036 | Opérations, décision métier et données | Les fiches produits rendent l'architecture actionnable |
+| 037 | Positionnement | Les consommateurs de FLOW doivent rester autonomes |
+| 038 | Modèle conceptuel | La demande est le point d'entrée de la modélisation |
