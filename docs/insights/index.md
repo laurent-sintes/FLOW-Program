@@ -2,11 +2,11 @@
 
 Cette section conserve les découvertes, hypothèses, convictions et enseignements du programme FLOW.
 
-Elle sert de mémoire vivante du programme : chaque page capture un raisonnement, un constat ou une conviction avant sa transformation éventuelle en vision, principe directeur, standard d'architecture ou décision.
+Elle sert de mémoire vivante du programme : chaque page capture un raisonnement, un constat ou une conviction avant sa transformation éventuelle en vision, principe directeur, standard d'architecture ou arbitrage.
 
 ## Comment lire les insights
 
-Les insights ne sont pas encore des décisions définitives.
+Les insights ne sont pas encore des arbitrages stabilisés.
 
 Ils constituent la matière première du programme : ils expliquent pourquoi certaines orientations émergent, quels problèmes elles cherchent à résoudre et quelles tensions elles révèlent.
 
@@ -14,7 +14,7 @@ Pour une lecture rapide, commencer par :
 
 - [Histoire de FLOW](histoire-de-flow.md) — le récit d'évolution du programme ;
 - [Journal des insights](journal-des-insights.md) — la liste classée et chronologique des insights ;
-- [Vision du programme FLOW](../vision/vision-programme-flow.md) — la consolidation actuelle des messages structurants.
+- [Vision](../vision/vision.md) — la consolidation actuelle des messages structurants.
 
 ## Positionnement de FLOW
 
@@ -22,6 +22,7 @@ Ces pages expliquent ce que FLOW est — et surtout ce qu'il n'est pas.
 
 - [De l'OMS au Demand Management](oms-vers-demand-management.md)
 - [FLOW n'est pas une plateforme d'engagement](flow-n-est-pas-une-plateforme-d-engagement.md)
+- [Autonomie des consommateurs de FLOW](autonomie-des-consommateurs-de-flow.md)
 - [ERP + OMS : séparation utile ou dette architecturale ?](erp-oms-separation-ou-plateforme-integree.md)
 - [Convergence, fédération et uniformisation](convergence-federation-uniformisation.md)
 
@@ -30,6 +31,7 @@ Ces pages expliquent ce que FLOW est — et surtout ce qu'il n'est pas.
 Ces pages décrivent les concepts qui structurent FLOW : demande, Case, Agreement, décisions, responsabilités et données utiles à l'exécution.
 
 - [Agreement comme pivot](agreement-comme-pivot.md)
+- [La demande comme point d’entrée de la modélisation FLOW](demande-point-entree-modelisation.md)
 - [Modèle conceptuel FLOW](modele-conceptuel-flow.md)
 
 ## Gouvernance et fédération
@@ -40,9 +42,9 @@ Ces pages traitent du caractère fédéral de FLOW : multi-marques, multi-contex
 - [GBM, StoreLand, UR et fédération](gbm-storeland-ur-federation.md)
 - [L'organisation masque parfois les domaines](organisation-masque-domaines.md)
 
-## Opérations, décision et données
+## Opérations, décision métier et données
 
-Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions, projections et données en transit.
+Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions métier, projections et données en transit.
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
 - [Allocation et convergence](allocation-point-saillant-de-la-convergence.md)
@@ -71,17 +73,5 @@ Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spé
 | Données | Les informations doivent être qualifiées par nature et par statut Source / Projection plutôt que rangées dans “Master Data”. |
 | Données en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |
 | Stock | Le stock unifié et l'Inventory Visibility sont des capacités d'entreprise. |
-| Décision | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |
+| Décision métier | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |
 | Finance | FLOW doit produire les faits et documents utiles, sans devenir le domaine Finance. |
-
-## Travail restant
-
-Les insights sont maintenant suffisamment riches pour soutenir une version 0.
-
-Les prochains compléments devront probablement porter sur :
-
-- la cartographie détaillée des capacités FLOW ;
-- les frontières entre produits FLOW ;
-- les standards d'interface ;
-- la méthodologie de delivery ;
-- la gouvernance des règles, Agreements et projections.
