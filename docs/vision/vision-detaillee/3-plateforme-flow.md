@@ -6,6 +6,28 @@ Elle n'a pas vocation à remplacer tout le SI.
 
 Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
 
+<div class="flow-conviction">
+  <p>FLOW ne déplace pas tout dans une nouvelle application centrale.</p>
+  <p>FLOW porte ce qui doit rester cohérent, et laisse autour ce qui doit rester spécialisé.</p>
+</div>
+
+## Lecture synthétique : ce que FLOW porte, ce que FLOW laisse autour
+
+| FLOW porte | FLOW ne porte pas seul |
+| --- | --- |
+| Les demandes et leur cycle de vie | Les expériences client, interfaces et parcours d'engagement |
+| Les décisions, règles, policies et arbitrages liés à la demande | La totalité des règles locales ou métiers lorsqu'elles relèvent d'un domaine spécialisé |
+| Le <span class="flow-keyword">Stock Unifié</span>, la promesse, la réservation et l'allocation | Les opérations physiques de magasin, entrepôt, transport ou douane |
+| Le <span class="flow-keyword">Fulfillment Network</span> et les capacités mobilisables | Les WMS, TMS, POS, outils fournisseurs ou systèmes d'exécution spécialisés |
+| Les événements, statuts, documents et faits nécessaires à la traçabilité du Case | La Finance, le PLM, le PIM complet, le CRM ou les outils de conception produit |
+| Les contrats de données et la gouvernance des échanges critiques | Les applications satellites lorsqu'elles portent une valeur métier spécifique |
+
+Cette lecture est essentielle.
+
+FLOW est central là où la cohérence est critique.
+
+FLOW reste ouvert là où les domaines doivent continuer à agir, configurer, contribuer ou exécuter.
+
 ## Plateforme : autonomie de gouvernance et ouverture contrôlée
 
 Une plateforme n'est pas seulement un assemblage de composants techniques.
