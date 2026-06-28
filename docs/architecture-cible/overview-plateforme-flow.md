@@ -26,7 +26,7 @@ Elle est centrée sur les Cases, enrichie par des services partagés et des proj
 
 | Produit | Rôle |
 | --- | --- |
-| Plateforme de Case Management | Piloter les demandes dans la durée. Les Cases portent le contexte, les décisions, les promesses, les documents et les événements. |
+| Plateforme de Case Management | Piloter les demandes dans la durée. Les Cases portent le contexte, les décisions métier, les promesses, les documents et les événements. |
 | Stock Unifié | Rendre la disponibilité fiable et exploitable. Porter les réservations, l'allocation / tagging, les facts et événements stock. |
 | Fulfillment Network / Réseau d'Exécution | Décrire les nœuds logistiques, partenaires, capacités, contraintes, services et conditions d'usage mobilisables pour servir une demande. |
 | Supply Service Registry | Référencer les services Supply exposés : APIs, SLA, conditions d'accès, éligibilités et contraintes. |
@@ -40,7 +40,7 @@ FLOW ne doit pas être lu comme un ERP, un OMS unique, un PIM, un CRM, un WMS ou
 
 FLOW doit être lu comme une plateforme de cohérence Demand.
 
-Sa responsabilité est de rendre possible l'instruction, la décision, la promesse et l'orchestration de demandes transverses.
+Sa responsabilité est de rendre possible l'instruction, la décision métier, la promesse et l'orchestration de demandes transverses.
 
 ```text
 Case
@@ -69,7 +69,7 @@ Diffusion et gouvernance opérationnelle des données
 
 FLOW réécrit la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI.
 
-Cela signifie qu'il porte les responsabilités qui doivent rester cohérentes à l'échelle du groupe : demandes, décisions, statuts, événements, stock, promesses, allocations, besoins d'exécution et vues transverses.
+Cela signifie qu'il porte les responsabilités qui doivent rester cohérentes à l'échelle du groupe : demandes, décisions métier, statuts, événements, stock, promesses, allocations, besoins d'exécution et vues transverses.
 
 Cela ne signifie pas que tous les services existants doivent être réécrits.
 
@@ -85,7 +85,7 @@ Services spécialisés existants
 
 FLOW
     → colonne vertébrale Demand
-    → cohérence des demandes, statuts, décisions, événements et projections
+    → cohérence des demandes, statuts, décisions métier, événements et projections
 ```
 
 Ces services peuvent rester autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
@@ -129,7 +129,7 @@ Mais l'objet actif n'est pas la plateforme elle-même.
 Ce sont les Cases qui portent :
 
 - le contexte ;
-- les décisions ;
+- les décisions métier ;
 - les promesses ;
 - les événements ;
 - les documents ;
@@ -146,7 +146,7 @@ Le Case reste l'unité métier d'orchestration.
 
 | Produit FLOW | Informations plutôt Source dans FLOW | Informations plutôt Projection dans FLOW |
 | --- | --- | --- |
-| Plateforme de Case Management | Case, décisions, événements FLOW, documents attachés | événements externes, documents externes, contexte projeté |
+| Plateforme de Case Management | Case, décisions métier, événements FLOW, documents attachés | événements externes, documents externes, contexte projeté |
 | Stock Unifié | stock disponible, réservations, allocations si calculées par FLOW | stock physique source, mouvements externes, statuts WMS / magasin |
 | Fulfillment Network / Réseau d'Exécution | réseau, capacités, contraintes et conditions d'usage si gouvernés par FLOW | capacités ou contraintes issues de systèmes Supply |
 | Supply Service Registry | éventuellement services normalisés FLOW | services, APIs, SLA exposés par Supply |
@@ -181,7 +181,7 @@ Ces éléments devront être traités dans des pages d'architecture fonctionnell
 
 FLOW est une réponse fédérée à un problème de convergence.
 
-La plateforme Demand concentre les responsabilités qui doivent devenir communes — Case, décision, stock, réseau d'exécution, projections — sans chercher à absorber tout le SI.
+La plateforme Demand concentre les responsabilités qui doivent devenir communes — Case, décision métier, stock, réseau d'exécution, projections — sans chercher à absorber tout le SI.
 
 FLOW n'a pas vocation à réécrire tous les organes spécialisés du SI.
 
