@@ -4,7 +4,7 @@ La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
 Elle doit aussi traiter explicitement les points durs du programme.
 
-Quatre hotspots apparaissent déjà comme structurants.
+Quatre <span class="flow-keyword">hotspots</span> apparaissent déjà comme structurants.
 
 ## Boardriders / SAP ECC : une migration difficile à phaser
 
@@ -41,7 +41,7 @@ Ce hotspot impose de définir précisément la frontière entre décision de dem
 
 ## Stock temps réel : obtenir les mouvements à la source
 
-Le Stock Unifié n'a de valeur opérationnelle que si les mouvements de stock remontent avec une fraîcheur suffisante.
+Le <span class="flow-keyword">Stock Unifié</span> n'a de valeur opérationnelle que si les mouvements de stock remontent avec une fraîcheur suffisante.
 
 Or cette fraîcheur ne dépend pas seulement de FLOW.
 
@@ -77,13 +77,9 @@ Il touche à la politique commerciale, aux engagements clients, à l'allocation,
 
 Ce hotspot montre pourquoi FLOW doit être capable de gérer des règles métier explicites.
 
-La plateforme ne doit pas seulement dire :
+La plateforme ne doit pas seulement dire : y a-t-il du stock ?
 
-> Y a-t-il du stock ?
-
-Elle doit aussi pouvoir dire :
-
-> Pour qui ce stock doit-il être priorisé, selon quel engagement, quelle règle commerciale et quel arbitrage ?
+Elle doit aussi pouvoir dire : pour qui ce stock doit-il être priorisé, selon quel engagement, quelle règle commerciale et quel arbitrage ?
 
 C'est typiquement le genre de variation métier que FLOW doit absorber sans multiplier les processus ou les applications spécifiques.
 
