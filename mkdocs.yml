@@ -63,10 +63,10 @@ nav:
       - Vision du programme FLOW: vision/vision-programme-flow.md
       - Vision détaillée:
           - Sommaire: vision/vision-detaillee/index.md
-          - Ambition et contexte: vision/vision-detaillee/1-ambition-et-contexte.md
+          - Ambition: vision/vision-detaillee/1-ambition-et-contexte.md
           - Convergence et modèle fédéré: vision/vision-detaillee/2-convergence-et-modele-federe.md
-          - Ruptures structurantes: vision/vision-detaillee/3-ruptures-structurantes.md
-          - Plateforme FLOW: vision/vision-detaillee/4-plateforme-flow.md
+          - Ruptures: vision/vision-detaillee/3-ruptures-structurantes.md
+          - Solution: vision/vision-detaillee/4-plateforme-flow.md
           - Hotspots: vision/vision-detaillee/5-hotspots.md
           - Valeur attendue: vision/vision-detaillee/6-valeur-attendue.md
   - Architecture cible:
