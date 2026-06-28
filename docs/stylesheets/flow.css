@@ -156,6 +156,73 @@
   color: #8a4f0f;
 }
 
+.flow-canvas {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin: 1.25rem 0 1.75rem;
+}
+
+.flow-canvas-card {
+  background: #ffffff;
+  border: 1px solid #d7e5e2;
+  border-radius: 0.45rem;
+  box-shadow: 0 0.12rem 0.45rem rgba(30, 41, 59, 0.08);
+  grid-column: span 4;
+  min-height: 9rem;
+  padding: 0.85rem 0.95rem;
+}
+
+.flow-canvas-card--wide {
+  grid-column: span 6;
+}
+
+.flow-canvas-card--full {
+  grid-column: 1 / -1;
+}
+
+.flow-canvas-card--accent {
+  background: #fff8f0;
+  border-color: rgba(224, 146, 56, 0.38);
+}
+
+.flow-canvas-card--dark {
+  background: #f3faf8;
+  border-color: #b7dad3;
+}
+
+.flow-canvas-card h2,
+.flow-canvas-card h3 {
+  border-bottom: 0;
+  color: #236159;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.flow-canvas-card p {
+  margin: 0.25rem 0 0.55rem;
+}
+
+.flow-canvas-card ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1rem;
+}
+
+.flow-canvas-card li {
+  margin-bottom: 0.22rem;
+}
+
+.flow-canvas-punchline {
+  color: #0b3954;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0 0 0.55rem !important;
+}
+
 .flow-home-grid {
   display: grid;
   gap: 0.9rem;
@@ -226,6 +293,11 @@
   .flow-hero {
     padding: 1.5rem;
   }
+
+  .flow-canvas-card,
+  .flow-canvas-card--wide {
+    grid-column: span 6;
+  }
 }
 
 @media screen and (max-width: 44.9844em) {
@@ -237,5 +309,11 @@
     margin-left: -0.4rem;
     margin-right: -0.4rem;
     padding: 1.35rem;
+  }
+
+  .flow-canvas-card,
+  .flow-canvas-card--wide,
+  .flow-canvas-card--full {
+    grid-column: 1 / -1;
   }
 }
