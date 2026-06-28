@@ -61,6 +61,33 @@ Vues 360
     → donnent du contexte transverse et sont enrichies par les événements des Cases
 ```
 
+## Colonne vertébrale du SI
+
+FLOW réécrit la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI.
+
+Cela signifie qu'il porte les responsabilités qui doivent rester cohérentes à l'échelle du groupe : demandes, décisions, statuts, événements, stock, promesses, allocations, besoins d'exécution et vues transverses.
+
+Cela ne signifie pas que tous les services existants doivent être réécrits.
+
+Une bonne cible FLOW doit permettre de réintégrer des applications ou services existants lorsque leur valeur métier justifie leur maintien.
+
+```text
+Services spécialisés existants
+    → CBS
+    → SAV Client Sarenza
+    → outils fournisseurs
+    → systèmes logistiques spécialisés
+    → domaines d'exécution ou de conformité
+
+FLOW
+    → colonne vertébrale Demand
+    → cohérence des demandes, statuts, décisions, événements et projections
+```
+
+Ces services peuvent rester autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
+
+La règle d'urbanisme est donc : ne pas réécrire ce qui porte une valeur métier spécifique, mais ne pas laisser ces services recréer chacun leur propre colonne vertébrale.
+
 ## Point important : les Cases sont les objets actifs
 
 La plateforme de Case Management fournit le runtime et les mécanismes nécessaires.
@@ -122,3 +149,7 @@ Ces éléments devront être traités dans des pages d'architecture fonctionnell
 FLOW est une réponse fédérée à un problème de convergence.
 
 La plateforme Demand concentre les responsabilités qui doivent devenir communes — Case, décision, stock, réseau d'exécution, projections — sans chercher à absorber tout le SI.
+
+FLOW n'a pas vocation à réécrire tous les organes spécialisés du SI.
+
+Il doit reconstruire la colonne vertébrale commune qui permet à ces organes de fonctionner ensemble.
