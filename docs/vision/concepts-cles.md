@@ -24,6 +24,11 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 </div>
 
 <div class="flow-conviction">
+  <p>FLOW ne remplace pas tous les organes du SI.</p>
+  <p>FLOW reconstruit la colonne vertébrale qui leur permet de fonctionner ensemble.</p>
+</div>
+
+<div class="flow-conviction">
   <p>FLOW configure des capacités d'action.</p>
   <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
 </div>
@@ -36,6 +41,8 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Demande / Demand</span> | Le point de départ n'est plus la commande ou le document, mais l'intention à comprendre, décider, promettre, satisfaire et expliquer. |
 | <span class="flow-keyword">Case</span> | Le Case porte une demande dans la durée : intention, contexte, décisions, événements, ressources, actions et documents. |
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW devient le lieu de cohérence des demandes, décisions, stock, promesses, événements et exceptions. |
+| <span class="flow-keyword">Colonne vertébrale opérationnelle</span> | FLOW porte les responsabilités qui doivent rester cohérentes — demandes, décisions, statuts, événements, stock, promesses et orchestration — sans réécrire tout le SI. |
+| <span class="flow-keyword">Capacités d'intégration</span> | Un service réintégré autour de FLOW doit pouvoir exposer des APIs, publier des événements, partager des statuts, corréler ses objets et participer à la réconciliation. |
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, pas une donnée locale extraite d'un système. |
 | <span class="flow-keyword">Fulfillment Network</span> / <span class="flow-keyword">Réseau d'exécution</span> | Le réseau d'exécution décrit les nœuds, services, capacités, contraintes et conditions d'usage mobilisables pour satisfaire une demande. |
 | <span class="flow-keyword">Agreement</span> | L'Agreement porte les conditions et règles de traitement qui permettent de gérer la variation sans multiplier les processus. |
@@ -112,6 +119,26 @@ Cela signifie qu'elle porte le cœur commun nécessaire pour traiter les demande
 Une plateforme n'est pas seulement une application centrale.
 
 Elle gouverne des ressources communes, tout en ouvrant des processus contrôlés permettant à d'autres domaines de configurer, développer, étendre ou consommer ses capacités.
+
+## Colonne vertébrale opérationnelle
+
+FLOW n'est pas tout le SI.
+
+Il est la <span class="flow-keyword">colonne vertébrale opérationnelle</span> qui porte les responsabilités qui doivent rester cohérentes à l'échelle du groupe : demandes, décisions, statuts, événements, stock, promesses, allocations et orchestration transverse.
+
+Les services spécialisés peuvent rester autonomes lorsqu'ils portent une valeur métier propre.
+
+Mais ils doivent se brancher sur cette colonne vertébrale commune plutôt que reconstruire chacun leur propre logique de demande, statut, stock ou décision.
+
+## Capacités d'intégration des systèmes réintégrés
+
+Réintégrer un service existant ne signifie pas seulement le conserver.
+
+Cela suppose qu'il puisse interagir proprement avec FLOW.
+
+Les <span class="flow-keyword">capacités d'intégration</span> minimales à étudier sont notamment : APIs contractuelles, événements métier, statuts, documents, identifiants de corrélation, supervision, reprise et réconciliation.
+
+Sans ces capacités, on ne réintègre pas vraiment l'outil : on conserve un silo.
 
 ## Stock Unifié
 
