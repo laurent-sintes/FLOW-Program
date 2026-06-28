@@ -2,7 +2,7 @@
 
 ## Intention
 
-Cette section rassemble les sujets qui ne sont ni de simples éléments de contexte, ni encore des décisions d'architecture stabilisées.
+Cette section rassemble les sujets qui ne sont ni de simples éléments de contexte, ni encore des arbitrages d'architecture stabilisés.
 
 Un hotspot est un point de tension du programme FLOW.
 
@@ -19,7 +19,7 @@ Un sujet mérite d'être rangé ici lorsqu'il :
 - met en tension l'existant et la cible ;
 - oblige à arbitrer entre Engagement, Demand, Supply, Finance ou systèmes spécialisés ;
 - expose une différence forte entre BRD, GBM ou les marques ;
-- nécessite une analyse avant d'être transformé en principe, décision ou architecture cible.
+- nécessite une analyse avant d'être transformé en principe, arbitrage ou architecture cible.
 
 ## Hotspots structurants
 
@@ -37,6 +37,6 @@ Un sujet mérite d'être rangé ici lorsqu'il :
 
 Les hotspots sont des zones de travail.
 
-Ils permettent de garder visibles les sujets sensibles sans les diluer dans le contexte général ni les présenter trop tôt comme des décisions stabilisées.
+Ils permettent de garder visibles les sujets sensibles sans les diluer dans le contexte général ni les présenter trop tôt comme des arbitrages stabilisés.
 
 La vision synthétique dit quels hotspots sont structurants ; cette section sert à les instruire plus en détail.
