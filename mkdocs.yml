@@ -64,6 +64,7 @@ nav:
   - Vision:
       - vision/index.md
       - Vision du programme FLOW: vision/vision-programme-flow.md
+      - Concepts clés: vision/concepts-cles.md
       - Vision détaillée:
           - Sommaire: vision/vision-detaillee/index.md
           - Ambition: vision/vision-detaillee/1-ambition-et-contexte.md
