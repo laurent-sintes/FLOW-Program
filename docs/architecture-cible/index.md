@@ -2,12 +2,15 @@
 
 Cette section décrit le positionnement cible de FLOW.
 
-Elle complète la Vision, sans s'y substituer.
+Elle ne part pas d'une solution à déployer.
 
-La Vision explique l'ambition du programme.
+Elle part d'une tension : le groupe doit créer du commun entre des patrimoines applicatifs, marques et business models différents, sans construire un nouveau monolithe qui rigidifierait l'entreprise.
 
-L'architecture cible décrit progressivement :
+La Vision explique cette ambition.
 
+L'architecture cible décrit progressivement comment cette ambition peut se matérialiser :
+
+- les responsabilités qui doivent devenir communes, gouvernées et transverses ;
 - les grands produits de la plateforme FLOW ;
 - le positionnement de FLOW dans les écosystèmes existants ;
 - l'urbanisme fonctionnel cible ;
@@ -23,8 +26,10 @@ L'architecture cible décrit progressivement :
 
 La cible n'est pas encore une architecture détaillée.
 
-Elle pose une première carte de travail : FLOW est une plateforme Demand, centrée sur les Cases, qui réunit des responsabilités aujourd'hui dispersées entre plusieurs systèmes.
+Elle pose une première carte de travail : FLOW est une réponse fédérée à la convergence, centrée sur Demand, les Cases, le stock unifié, le réseau d'exécution et les décisions qui relient la demande à l'exécution.
 
 FLOW ne remplace pas l'ensemble du SI.
 
 Il reprend les responsabilités transverses qui doivent être gouvernées durablement : demande, décision, stock disponible, réservations, réseau d'exécution, projections opérationnelles et contexte transverse.
+
+Le reste du SI peut conserver ses spécialisations, à condition que ces spécialisations ne recréent pas des silos au cœur de la demande.
