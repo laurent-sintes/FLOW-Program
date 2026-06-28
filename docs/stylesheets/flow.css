@@ -78,8 +78,8 @@
 }
 
 .md-typeset blockquote {
-  border-left-color: #e09238;
-  background: #fff3e0;
+  border-left-color: #588781;
+  background: #f6f8fb;
   border-radius: 0 0.25rem 0.25rem 0;
   color: #1e293b;
   padding: 0.65rem 1rem;
@@ -112,6 +112,42 @@
   color: #5b6b78;
   font-size: 1.02rem;
   margin-bottom: 1.25rem;
+}
+
+.flow-conviction {
+  border-bottom: 1px solid #d9e2e7;
+  border-top: 1px solid #d9e2e7;
+  color: #0b3954;
+  font-size: 1.12rem;
+  font-weight: 650;
+  line-height: 1.55;
+  margin: 1.8rem 0;
+  padding: 1.05rem 0.35rem;
+  text-align: center;
+}
+
+.flow-conviction p {
+  margin: 0.15rem 0;
+}
+
+.flow-keyword {
+  background: #eaf4f2;
+  border: 1px solid #c7e4de;
+  border-radius: 999px;
+  color: #0b3954;
+  display: inline-block;
+  font-size: 0.86em;
+  font-weight: 750;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  padding: 0.12rem 0.42rem;
+  white-space: nowrap;
+}
+
+.flow-keyword--accent {
+  background: rgba(224, 146, 56, 0.11);
+  border-color: rgba(224, 146, 56, 0.35);
+  color: #8a4f0f;
 }
 
 .flow-home-grid {
@@ -195,5 +231,10 @@
     margin-left: -0.4rem;
     margin-right: -0.4rem;
     padding: 1.35rem;
+  }
+
+  .flow-conviction {
+    font-size: 1rem;
+    text-align: left;
   }
 }
