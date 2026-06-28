@@ -6,6 +6,48 @@ Elle n'a pas vocation à remplacer tout le SI.
 
 Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
 
+## Plateforme : autonomie de gouvernance et ouverture contrôlée
+
+Une plateforme n'est pas seulement un assemblage de composants techniques.
+
+C'est une entité autonome qui gère et gouverne un ensemble de ressources centralisées.
+
+Dans FLOW, ces ressources sont notamment :
+
+- Les objets de demande et leur cycle de vie.
+- Les règles, décisions et politiques de traitement.
+- Le Stock Unifié.
+- Le Fulfillment Network.
+- Les capacités d'allocation, de réservation, de promesse et d'orchestration.
+- Les événements, faits, documents et vues nécessaires à la traçabilité.
+
+Mais une plateforme ne doit pas devenir un bloc fermé.
+
+Elle doit être ouverte par conception.
+
+Cette ouverture ne signifie pas que chacun modifie librement le cœur de la plateforme.
+
+Elle signifie que FLOW doit proposer des processus contrôlés permettant à des acteurs externes à la plateforme de contribuer à son fonctionnement.
+
+Par exemple :
+
+- Configurer des éléments du réseau d'exécution : nœuds, capacités, services, contraintes, SLA.
+- Développer de nouveaux types de Case ou de demandes métier.
+- Définir, versionner et tester des règles.
+- Construire des décisions métier contrôlées.
+- Publier ou consommer des événements selon des contrats explicites.
+- Exposer des extensions sans fragiliser le socle commun.
+
+```text
+Plateforme FLOW
+    ↓
+Gouverne des ressources centralisées
+    +
+Ouvre des processus contrôlés de configuration et d'extension
+```
+
+C'est ce double mouvement qui permet à FLOW d'être à la fois centralisée là où la cohérence est critique, et ouverte là où les domaines doivent conserver leur capacité d'action.
+
 ## Composants structurants
 
 Ses composants structurants sont :
