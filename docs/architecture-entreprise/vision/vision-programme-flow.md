@@ -2,31 +2,29 @@
 
 ## Ambition
 
-Gérer des commandes ne suffit plus.
+Le Groupe Beaumanoir doit réussir une convergence complexe.
 
-Le groupe doit être capable de traiter toutes les demandes qui traversent ses marques, canaux, partenaires, fournisseurs et business models : commandes, retours, litiges, SAV, approvisionnements, exceptions, promesses, allocations et engagements.
+Il doit créer du commun entre des marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.
 
-FLOW porte cette ambition.
+La réponse ne peut pas être une uniformisation brutale.
 
-FLOW déplace le centre de gravité du système d'information : d'un SI organisé autour de l'ERP, des documents et de la comptabilité, vers une plateforme organisée autour de la demande, de la décision, de la résolution de problème et de la satisfaction client / utilisateur.
+Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
-Le programme ne cherche pas à uniformiser l'entreprise par contrainte IT.
+L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — demandes, stock, promesses, décisions, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
-Il cherche à construire une plateforme capable de fédérer ce qui doit être commun, tout en laissant vivre les différences lorsque le business l'exige.
-
-FLOW met à disposition une plateforme Demand commune, capable d'instruire, décider, promettre et orchestrer des demandes transverses, tout en laissant aux marques, canaux et domaines consommateurs la maîtrise de leurs expériences et de leurs spécificités.
+FLOW porte donc une ambition de convergence fédérée.
 
 ## Vision synthétique
 
-> FLOW est la plateforme Demand du groupe : elle fait du Case l'unité métier centrale pour traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, absorber les variations de traitement et décloisonner les silos B2B, B2C, marques, canaux et groupes.
+> FLOW est le moteur de convergence opérationnelle du groupe : une plateforme Demand fédérée qui permet de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, tout en préservant les singularités business lorsque celles-ci créent de la valeur.
 
 Cette vision repose sur cinq convictions fortes :
 
-- gérer des commandes n'est plus suffisant : il faut savoir gérer des demandes ;
+- la convergence n'est pas l'uniformisation : elle doit être pilotée par niveaux ;
 - le centre de gravité du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client / utilisateur ;
+- gérer des commandes n'est plus suffisant : il faut savoir traiter des demandes ;
 - les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la plateforme elle-même ;
-- la variation métier doit être pilotée par le contexte, les Agreements et les règles, sans faire exploser la complexité du SI ;
-- la convergence n'est pas l'uniformisation : elle doit être pilotée par niveaux.
+- la variation métier doit être pilotée par le contexte, les Agreements et les règles, sans faire exploser la complexité du SI.
 
 ## Situation héritée : comment le groupe en est arrivé là
 
@@ -92,7 +90,7 @@ Le groupe doit donc trouver un modèle plus adapté à sa réalité : un modèle
 
 C'est dans ce contexte que le programme FLOW émerge.
 
-## L'analyse : centraliser sans rigidifier
+## Le choix de modèle : centraliser sans rigidifier
 
 Une forme de centralisation est nécessaire.
 
@@ -112,13 +110,30 @@ Elle doit être une fédération.
 
 FLOW propose de distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
 
-## La rupture proposée par FLOW
+```text
+Centraliser
+    lorsque la cohérence est critique
+
+Unifier
+    lorsque le modèle doit être partagé
+
+Standardiser
+    lorsque la variation n'apporte pas de valeur
+
+Fédérer
+    lorsque plusieurs modèles doivent coexister
+
+Différencier
+    lorsque le business l'exige
+```
+
+## La rupture : déplacer le centre de gravité du SI
 
 Dans une approche ERP classique, le système est souvent organisé autour des documents : commande, livraison, facture, avoir, écritures comptables.
 
 Dans une approche OMS classique, le système est souvent organisé autour de la commande, de la promesse, du sourcing ou de l'orchestration omnicanale.
 
-Ces approches ne suffisent plus.
+Ces approches ne suffisent plus à traiter la convergence du groupe.
 
 La question centrale n'est plus :
 
@@ -128,7 +143,7 @@ La question devient :
 
 > Quelle demande faut-il comprendre, décider, promettre, satisfaire et expliquer ?
 
-Ce déplacement change tout.
+FLOW déplace donc le centre de gravité du système d'information :
 
 ```text
 Ancien centre de gravité
@@ -141,31 +156,11 @@ Nouveau centre de gravité
     Réseau d'exécution
 ```
 
-FLOW part donc de la demande.
+Ce déplacement est majeur.
 
-```text
-Demande / Case
-        ↓
-Contexte et Agreement
-        ↓
-Règles et décisions
-        ↓
-Stock, promesse, allocation, réseau d'exécution
-        ↓
-Action, document, événement, exception
-```
+Il signifie que l'on ne part plus d'abord de la facture, de la commande ou du module applicatif.
 
-Le Case devient l'objet métier actif.
-
-Il porte dans la durée :
-
-- le contexte ;
-- les décisions ;
-- les promesses ;
-- les documents ;
-- les événements ;
-- les exceptions ;
-- les interactions avec les capacités FLOW et les systèmes d'exécution.
+On part de la demande à comprendre, promettre, exécuter et expliquer.
 
 ## Passer de “j'achète / je vends” à Demand / Supply
 
@@ -197,9 +192,43 @@ La demande devient le point de départ.
 
 Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions, mobiliser des ressources et garantir une exécution fiable.
 
-## FLOW comme plateforme Demand
+## Le Case comme unité métier d'orchestration
 
-FLOW est une plateforme Demand centralisée et transverse.
+FLOW part de la demande.
+
+Cette demande est portée dans la durée par un Case.
+
+```text
+Demande / Case
+        ↓
+Contexte et Agreement
+        ↓
+Règles et décisions
+        ↓
+Stock, promesse, allocation, réseau d'exécution
+        ↓
+Action, document, événement, exception
+```
+
+Le Case devient l'objet métier actif.
+
+Il porte dans la durée :
+
+- le contexte ;
+- les décisions ;
+- les promesses ;
+- les documents ;
+- les événements ;
+- les exceptions ;
+- les interactions avec les capacités FLOW et les systèmes d'exécution.
+
+Cette lecture permet de dépasser la logique “une application = un processus”.
+
+Le Case porte la continuité métier lorsque la demande traverse plusieurs domaines, applications, organisations ou partenaires.
+
+## FLOW comme plateforme Demand fédérée
+
+FLOW est une plateforme Demand fédérée.
 
 Elle n'a pas vocation à remplacer tout le SI.
 
@@ -210,7 +239,7 @@ Ses composants structurants sont :
 - une plateforme de Case Management pour modéliser et piloter les demandes dans la durée ;
 - un Stock Unifié exposé par API, capable de gérer disponibilité, réservation, allocation et calcul du stock disponible selon un contexte business ;
 - un référentiel Fulfillment Network, décrivant les nœuds logistiques, leurs capacités, leurs contraintes, leurs services et leurs conditions d'usage ;
-- un système de décision fondé sur des règles, contraintes et capacités d'optimisation pour absorber la diversité métier sans multiplier les processus ;
+- un système de décision fondé sur des règles, contraintes et capacités d'optimisation, potentiellement augmenté par l'IA là où cela crée de la valeur ;
 - un réseau d'exécution Supply connecté en continu à la demande ;
 - des Vues 360 pour rendre les activités, statuts, événements et exceptions plus lisibles ;
 - des intégrations avec les services existants, lorsque leur valeur métier justifie leur maintien.
@@ -330,6 +359,31 @@ C'est un écart majeur avec une approche ERP classique, où les variations de ca
 
 FLOW doit éviter cette fragmentation.
 
+## Ce que FLOW n'est pas
+
+FLOW n'est pas un ERP bis.
+
+FLOW n'est pas seulement un OMS.
+
+FLOW n'est pas un PIM, un CRM, un WMS, un TMS ou un outil Finance.
+
+FLOW n'a pas vocation à absorber tout le SI.
+
+Les expériences client, les outils métier spécialisés, les systèmes d'exécution physique, la finance, la conception produit ou les systèmes partenaires peuvent rester autonomes.
+
+Mais FLOW doit empêcher que ces autonomies redeviennent des silos au cœur du traitement de la demande.
+
+FLOW doit clarifier leur rôle :
+
+```text
+consommateur
+contributeur
+source
+projection
+système d'exécution
+domaine spécialisé
+```
+
 ## Les hotspots à traiter
 
 La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
@@ -405,23 +459,6 @@ Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
 FLOW est aussi un cadre de décision pour traiter les tensions réelles de convergence du groupe.
 
-## Ce que FLOW apporte
-
-FLOW apporte un point de cohérence transverse lorsque les responsabilités sont aujourd'hui dispersées entre plusieurs systèmes.
-
-Il doit permettre de :
-
-- traiter des demandes longues, transverses et multi-domaines ;
-- décloisonner les silos B2B, B2C, marques, groupes et canaux au cœur de la plateforme ;
-- rendre explicites les décisions qui font progresser une demande ;
-- piloter les variations de traitement par règles plutôt que par multiplication de processus ;
-- disposer d'une vision fiable et exploitable du stock disponible ;
-- réserver, allouer ou tagger une ressource pour une finalité précise ;
-- mobiliser un réseau d'exécution composé de lieux, partenaires, capacités et contraintes ;
-- consommer des projections produit, agreement, client, fournisseur ou service sans devenir propriétaire de tous les référentiels sources ;
-- enrichir des Vues 360 avec les événements, décisions, statuts et documents issus des Cases ;
-- réduire les transferts fragiles entre ERP, OMS et systèmes périphériques lorsque ces transferts reconstruisent artificiellement une cohérence métier.
-
 ## Valeur attendue
 
 FLOW doit permettre au groupe de franchir un palier de convergence opérationnelle.
@@ -438,31 +475,6 @@ Les bénéfices attendus sont :
 - développer de nouvelles capacités : extension de gamme, nouveaux modes de gestion du stock, meilleure promesse client ;
 - réduire le surstock sans dégrader la garantie de livraison ;
 - conserver les singularités de gestion lorsqu'elles sont justifiées par le business.
-
-## Ce que FLOW n'est pas
-
-FLOW n'est pas un ERP bis.
-
-FLOW n'est pas seulement un OMS.
-
-FLOW n'est pas un PIM, un CRM, un WMS, un TMS ou un outil Finance.
-
-FLOW n'a pas vocation à absorber tout le SI.
-
-Les expériences client, les outils métier spécialisés, les systèmes d'exécution physique, la finance, la conception produit ou les systèmes partenaires peuvent rester autonomes.
-
-Mais FLOW doit empêcher que ces autonomies redeviennent des silos au cœur du traitement de la demande.
-
-FLOW doit clarifier leur rôle :
-
-```text
-consommateur
-contributeur
-source
-projection
-système d'exécution
-domaine spécialisé
-```
 
 ## Promesse pour le groupe
 
@@ -495,16 +507,6 @@ Cette promesse vaut aussi pour les demandes de service, les retours, les litiges
 
 Une demande reste une demande dès lors qu'elle nécessite d'être comprise, suivie, arbitrée, résolue et expliquée.
 
-## Transformation attendue
-
-La vision FLOW ne se limite pas à une cible applicative.
-
-Elle appelle des changements de posture dans la manière de concevoir, d'arbitrer et de conduire la convergence.
-
-Ces changements sont documentés dans la page [Les changements à conduire avec FLOW](../../transformation/changements-a-conduire.md).
-
-Cette page doit servir de référence pour garder la transformation inspirante et concrète : ne plus servir l'organisation existante, raisonner Demand / Supply, réconcilier ERP et OMS, penser fulfillment avant documents, et piloter une convergence par niveaux.
-
 ## Promesse pour l'IT
 
 Pour l'IT, FLOW déplace la discussion.
@@ -536,6 +538,16 @@ Cette lecture permet d'éviter trois dérives :
 - remplacer des applications sans clarifier les responsabilités ;
 - élargir indéfiniment FLOW au motif que tout est connecté ;
 - multiplier les variantes de processus au lieu d'externaliser les règles et conditions de traitement.
+
+## Transformation attendue
+
+La vision FLOW ne se limite pas à une cible applicative.
+
+Elle appelle des changements de posture dans la manière de concevoir, d'arbitrer et de conduire la convergence.
+
+Ces changements sont documentés dans la page [Les changements à conduire avec FLOW](../../transformation/changements-a-conduire.md).
+
+Cette page doit servir de référence pour garder la transformation inspirante et concrète : ne plus servir l'organisation existante, raisonner Demand / Supply, réconcilier ERP et OMS, penser fulfillment avant documents, et piloter une convergence par niveaux.
 
 ## Mise en architecture cible
 
