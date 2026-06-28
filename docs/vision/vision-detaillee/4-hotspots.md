@@ -4,7 +4,7 @@ La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
 Elle doit aussi traiter explicitement les points durs du programme.
 
-Cinq <span class="flow-keyword">hotspots</span> apparaissent déjà comme structurants.
+Six <span class="flow-keyword">hotspots</span> apparaissent déjà comme structurants.
 
 ## Boardriders / SAP ECC : une migration difficile à phaser
 
@@ -65,6 +65,28 @@ Ce hotspot impose donc de clarifier :
 
 Sans cette capacité, FLOW pourra consolider une vision de stock, mais pas garantir une décision de promesse, d'allocation ou de fulfillment suffisamment fiable à l'échelle omnicanale.
 
+## Capacités d'intégration : brancher les systèmes réintégrés
+
+FLOW ne vise pas à réécrire tous les services existants.
+
+Il doit pouvoir réintégrer les outils qui portent une valeur métier spécifique, par exemple CBS, le SAV Client Sarenza, des outils fournisseurs ou des systèmes logistiques spécialisés.
+
+Mais cette réintégration suppose des capacités techniques minimales.
+
+Un service existant peut être métier-pertinent, mais difficile à conserver s'il ne sait pas exposer des APIs, publier des événements, partager ses statuts, corréler ses objets avec les Cases ou participer à la réconciliation.
+
+Ce hotspot impose de clarifier :
+
+- Les capacités API nécessaires.
+- Les événements métier attendus.
+- Les statuts et jalons à exposer.
+- Les identifiants de corrélation.
+- Les documents à produire, consommer ou référencer.
+- Les mécanismes de reprise, rejeu, supervision et réconciliation.
+- Les critères permettant de décider : conserver, encapsuler, faire évoluer, remplacer ou rapatrier certaines responsabilités dans FLOW.
+
+Le hotspot Stock temps réel est un cas critique de cette problématique, mais il ne doit pas porter tout le sujet.
+
 ## PLM, catalogue, Article / EAN : découpler conception et exécution
 
 Beaumanoir dispose d'un PLM structurant pour gérer les collections, les fiches produits, les grilles taille / couleur, les échanges avec les fournisseurs et les engagements industriels très tôt dans la saison.
@@ -115,6 +137,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | SAP ECC Boardriders | Migration difficile à phaser, adhérences fortes, risque de big bang | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
 | C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Stock temps réel | Stock unifié trop peu frais pour promettre, allouer ou optimiser de manière fiable | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
+| Capacités d'intégration des systèmes réintégrés | Services existants métier-pertinents mais incapables de se brancher proprement sur FLOW | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | PLM, catalogue, Article / EAN | Dépendance excessive de FLOW au modèle PLM historique, difficulté à gérer produits conçus et produits importés | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
 | Wholesale Boardriders | Priorisation commerciale incompatible avec une logique FIFO simple | Rules, policies, allocation, engagements, promesse client |
 
