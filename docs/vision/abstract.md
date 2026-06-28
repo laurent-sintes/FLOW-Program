@@ -2,7 +2,7 @@
 
 <div class="flow-conviction">
   <p><strong>FLOW est le choix d'un nouveau centre de gravité pour le SI.</strong></p>
-  <p>Le programme ne cherche pas à remplacer tout le système d'information. Il construit la colonne vertébrale commune qui permet de traiter les demandes, gouverner les décisions et rendre les ressources disponibles sans effacer les singularités utiles.</p>
+  <p>Le programme ne cherche pas à remplacer tout le système d'information. Il construit la colonne vertébrale commune qui permet de traiter les demandes, gouverner les décisions métier et rendre les ressources disponibles sans effacer les singularités utiles.</p>
 </div>
 
 ## Canvas FLOW
@@ -14,7 +14,7 @@
     <ul>
       <li>Le groupe s'est construit par acquisitions, marques, canaux et héritages IT.</li>
       <li>Les demandes sont dispersées entre B2C, B2B, retail, wholesale, SAV, retours et exceptions.</li>
-      <li>Le stock, les commandes et les décisions ne sont pas toujours lisibles dans une même vérité.</li>
+      <li>Le stock, les commandes et les décisions métier ne sont pas toujours lisibles dans une même vérité.</li>
       <li>Les flux de données naissent encore trop souvent projet par projet.</li>
     </ul>
   </section>
@@ -39,7 +39,7 @@
   <section class="flow-canvas-card flow-canvas-card--dark">
     <h2>Proposition</h2>
     <p class="flow-canvas-punchline">Une plateforme <span class="flow-keyword">Demand</span> commune, ouverte et gouvernée.</p>
-    <p>FLOW combine <span class="flow-keyword">Case Management</span>, <span class="flow-keyword">Stock Unifié</span>, <span class="flow-keyword">Réseau d'Exécution</span>, décisions, règles, événements, documents et vues 360.</p>
+    <p>FLOW combine <span class="flow-keyword">Case Management</span>, <span class="flow-keyword">Stock Unifié</span>, <span class="flow-keyword">Réseau d'Exécution</span>, décisions métier, règles, événements, documents et vues 360.</p>
   </section>
 
   <section class="flow-canvas-card flow-canvas-card--dark">
@@ -52,7 +52,7 @@
     <h2>Ce que FLOW porte</h2>
     <ul>
       <li><span class="flow-keyword">Demandes</span> et cycle de vie.</li>
-      <li><span class="flow-keyword">Décisions</span>, règles, policies et agreements.</li>
+      <li><span class="flow-keyword">Décisions métier</span>, règles, policies et agreements.</li>
       <li><span class="flow-keyword">Stock Unifié</span>, disponibilité, réservation et allocation.</li>
       <li><span class="flow-keyword">Réseau d'Exécution</span> et capacités logistiques.</li>
       <li>Événements, faits, documents, statuts et traçabilité.</li>
@@ -89,7 +89,7 @@
       <li>Promesse client plus fiable et mieux expliquée.</li>
       <li>Décloisonnement B2B / B2C / marques / canaux / systèmes.</li>
       <li>Stock et ressources plus lisibles, mobilisables et auditables.</li>
-      <li>Moins de décisions contradictoires entre applications.</li>
+      <li>Moins de décisions métier contradictoires entre applications.</li>
       <li>Moins de flux opportunistes, plus de contrats de données gouvernés.</li>
       <li>Meilleure intégration de nouvelles marques, offres ou business models.</li>
     </ul>
@@ -113,7 +113,7 @@
     <p class="flow-canvas-punchline">FLOW réussit si les tensions actuelles deviennent pilotables, mesurables ou disparaissent.</p>
     <ul>
       <li>Une vérité opérationnelle plus rapide à retrouver.</li>
-      <li>Des décisions traçables et explicables.</li>
+      <li>Des décisions métier traçables et explicables.</li>
       <li>Des flux remplacés progressivement par des contrats de données et des événements gouvernés.</li>
       <li>Des singularités métier conservées sans complexifier le cœur du SI.</li>
       <li>Une capacité accrue à absorber un nouveau canal, une marque, un partenaire ou un modèle commercial.</li>
@@ -125,7 +125,7 @@
 
 <div class="flow-conviction">
   <p><strong>FLOW n'est pas un nouvel ERP.</strong></p>
-  <p>C'est une plateforme de fédération des demandes : un commun gouverné, ouvert aux domaines, conçu pour rendre les décisions, les ressources et les engagements cohérents à l'échelle du groupe.</p>
+  <p>C'est une plateforme de fédération des demandes : un commun gouverné, ouvert aux domaines, conçu pour rendre les décisions métier, les ressources et les engagements cohérents à l'échelle du groupe.</p>
 </div>
 
 ---
