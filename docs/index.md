@@ -22,11 +22,11 @@
     <strong>Insights</strong>
     <span>Les observations, hypothèses et apprentissages qui nourrissent la réflexion.</span>
   </a>
-  <a class="flow-card flow-card--vision" href="architecture-entreprise/vision/">
+  <a class="flow-card flow-card--vision" href="vision/">
     <strong>Vision</strong>
     <span>La réponse cible : réussir la convergence sans monolithe, en déplaçant le centre de gravité du SI vers la demande.</span>
   </a>
-  <a class="flow-card flow-card--principles" href="architecture-entreprise/principes-directeurs/">
+  <a class="flow-card flow-card--principles" href="principes-directeurs/">
     <strong>Principes directeurs</strong>
     <span>Le cadre durable qui oriente les choix de conception et de gouvernance.</span>
   </a>
