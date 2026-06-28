@@ -6,10 +6,10 @@ Elle vient du lien entre les problèmes observés et les capacités que la plate
 
 | Problème observé | Ce que FLOW apporte | Valeur attendue |
 | --- | --- | --- |
-| Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | Stock Unifié, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
-| Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des demandes, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
-| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, Vues 360, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
-| Variations métier portées par des processus ou applications spécifiques | Agreements, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
+| Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | <span class="flow-keyword">Stock Unifié</span>, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
+| Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des <span class="flow-keyword">demandes</span>, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
+| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Variations métier portées par des processus ou applications spécifiques | <span class="flow-keyword">Agreements</span>, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
 | Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
 | Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
 | Surstock et promesse client difficiles à équilibrer | Allocation, priorisation, stock disponible contextualisé, réseau d'exécution | Réduction du surstock sans dégrader la garantie de livraison |
@@ -41,10 +41,10 @@ Les domaines consommateurs restent autonomes dans la construction de leurs parco
 
 FLOW leur fournit des capacités partagées lorsque la responsabilité dépasse le périmètre d'une marque, d'un canal, d'un pays ou d'une application.
 
-```text
-Les consommateurs construisent les expériences.
-FLOW fournit les capacités transverses.
-```
+<div class="flow-conviction">
+  <p>Les consommateurs construisent les expériences.</p>
+  <p>FLOW fournit les capacités transverses.</p>
+</div>
 
 Cette promesse vaut aussi pour les demandes de service, les retours, les litiges, le SAV ou les exceptions client.
 
@@ -54,13 +54,9 @@ Une demande reste une demande dès lors qu'elle nécessite d'être comprise, sui
 
 Pour l'IT, FLOW déplace la discussion.
 
-La question n'est plus seulement :
+La question n'est plus seulement : quel outil remplace quel outil ?
 
-> Quel outil remplace quel outil ?
-
-La question devient :
-
-> Quelle responsabilité doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, et avec quelles règles de variation ?
+La question devient : quelle <span class="flow-keyword">responsabilité</span> doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, et avec quelles règles de variation ?
 
 FLOW s'inscrit dans une logique :
 
