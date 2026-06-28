@@ -216,7 +216,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
-| Promesse Wholesale Boardriders | Gouvernance métier | Rules, policies, allocation, promesses déplaçables ou non, priorisation client |
+| Promesse Wholesale Boardriders | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 
 ## À retenir
 
@@ -229,9 +229,7 @@ Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
 FLOW est aussi un cadre de décision pour traiter les tensions réelles de convergence du groupe.
 
-La valeur de cette page n'est donc pas de lister les difficultés.
-
-Elle est de montrer les décisions à sécuriser pour que la plateforme puisse réellement tenir sa promesse.
+Ils obligent à rendre explicites les choix qui conditionnent la crédibilité de la plateforme : trajectoire, décision, intégration, données, promesse et gouvernance.
 
 ---
 
