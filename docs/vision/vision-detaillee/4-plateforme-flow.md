@@ -1,4 +1,4 @@
-# Plateforme FLOW : fédérer les demandes, opérations et décisions
+# Solution : une plateforme pour fédérer les demandes, opérations et décisions
 
 FLOW est une plateforme de fédération des demandes de l'entreprise.
 
@@ -111,4 +111,4 @@ Mais FLOW doit empêcher que ces autonomies redeviennent des silos au cœur du t
 
 ---
 
-← Page précédente : [Ruptures structurantes](3-ruptures-structurantes.md) · → Page suivante : [Hotspots](5-hotspots.md)
+← Page précédente : [Ruptures](3-ruptures-structurantes.md) · → Page suivante : [Hotspots](5-hotspots.md)
