@@ -59,7 +59,7 @@ Ces irritants ne sont pas seulement techniques.
 
 Ils limitent la capacité du groupe à promettre, arbitrer, prioriser, exécuter et expliquer ses engagements de manière cohérente.
 
-## Opportunité : réussir la convergence par un modèle fédéré
+## Opportunité : converger sans basculer dans un modèle unique
 
 L'opportunité du programme est claire : faire converger.
 
@@ -73,29 +73,13 @@ Une migration vers une solution ERP centralisée unique n'a pas été retenue co
 
 Les expériences de centralisation ERP dans des groupes multimarques et multi-enseignes sont souvent longues, complexes et risquées.
 
-Le groupe doit donc trouver un modèle plus adapté à sa réalité : un modèle capable de créer du commun, sans nier la diversité des marques, canaux, business models et cultures IT.
-
-C'est dans ce contexte que le programme FLOW émerge.
-
-## Modèle de convergence : centraliser sans rigidifier
-
-Une forme de centralisation est nécessaire.
+Pour autant, une forme de centralisation reste nécessaire.
 
 Le groupe a besoin de cohérence sur les demandes, le stock, les engagements, les décisions, les commandes, les événements et l'exécution.
 
-Mais l'autonomie des applications et des équipes apporte aussi de la valeur :
+La réponse ne peut donc être ni une mosaïque d'applications autonomes, ni un modèle unique qui rigidifierait tout le groupe.
 
-- Capacité à choisir build ou buy selon les contextes.
-- Moindre impact local.
-- Équipes plus autonomes.
-- Adaptation aux singularités des marques et enseignes.
-- Capacité à intégrer des solutions spécialisées.
-
-La réponse ne peut donc pas être une centralisation totale.
-
-Elle doit être une fédération.
-
-FLOW propose de distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
+FLOW propose une convergence pilotée par niveaux : distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
 
 ```text
 Centraliser
@@ -117,6 +101,8 @@ Différencier
 La convergence n'est donc pas l'uniformisation.
 
 La convergence consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.
+
+C'est dans ce contexte que le programme FLOW émerge : non comme la recherche d'un socle unique, mais comme la recherche d'un modèle de convergence capable de créer de la cohérence sans effacer les singularités utiles.
 
 ---
 
