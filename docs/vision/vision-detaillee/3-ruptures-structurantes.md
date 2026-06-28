@@ -1,10 +1,10 @@
-# Ruptures structurantes : changer le point de départ
+# Ruptures : déplacer le centre de gravité du SI
 
 FLOW ne propose pas seulement une nouvelle plateforme.
 
 Il propose plusieurs ruptures de raisonnement nécessaires pour traiter la convergence du groupe.
 
-## Centre de gravité : partir de la demande
+## La Demande : l'objet métier central
 
 Dans une approche ERP classique, le système est souvent organisé autour des documents : commande, livraison, facture, avoir, écritures comptables.
 
@@ -69,7 +69,7 @@ La demande devient le point de départ.
 
 Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions, mobiliser des ressources et garantir une exécution fiable.
 
-## Demande : unité métier d'orchestration
+## La Demande : l'unité autonome de la décision et de l'orchestration
 
 FLOW part de la demande.
 
@@ -95,7 +95,7 @@ Dans l'architecture cible, cette demande pourra être portée par des objets de 
 
 Mais au niveau de la vision, le concept central reste la demande : ce que l'entreprise doit comprendre, arbitrer, satisfaire et expliquer.
 
-## Donnée : configurer des capacités d'action
+## Configuration du système : paramétrer et implémenter des capacités d'action
 
 FLOW introduit aussi une rupture dans la manière de concevoir les données de configuration.
 
@@ -133,4 +133,4 @@ FLOW devient une plateforme qui configure des capacités d'action, pas un grand 
 
 ---
 
-← Page précédente : [Convergence et modèle fédéré](2-convergence-et-modele-federe.md) · → Page suivante : [Plateforme FLOW](4-plateforme-flow.md)
+← Page précédente : [Convergence et modèle fédéré](2-convergence-et-modele-federe.md) · → Page suivante : [Solution](4-plateforme-flow.md)
