@@ -13,6 +13,10 @@ Le produit doit permettre de construire des objets métier de type Case, capable
   <p>Le socle fournit le runtime, mais ce sont les Cases qui portent la logique métier.</p>
 </div>
 
+## Schéma produit
+
+![Schéma produit — Socle Case Management](../../assets/images/produit-socle-case-management.svg)
+
 ## Pourquoi un socle Case Management ?
 
 Le Case Management répond à une limite des modèles classiques d'orchestration.
