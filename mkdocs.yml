@@ -68,10 +68,10 @@ nav:
       - Vision détaillée:
           - Sommaire: vision/vision-detaillee/index.md
           - Ambition: vision/vision-detaillee/1-ambition-et-contexte.md
-          - Ruptures: vision/vision-detaillee/3-ruptures-structurantes.md
-          - Solution: vision/vision-detaillee/4-plateforme-flow.md
-          - Hotspots: vision/vision-detaillee/5-hotspots.md
-          - Valeur attendue: vision/vision-detaillee/6-valeur-attendue.md
+          - Ruptures: vision/vision-detaillee/2-ruptures-structurantes.md
+          - Solution: vision/vision-detaillee/3-plateforme-flow.md
+          - Hotspots: vision/vision-detaillee/4-hotspots.md
+          - Valeur attendue: vision/vision-detaillee/5-valeur-attendue.md
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
