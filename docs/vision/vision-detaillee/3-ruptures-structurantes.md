@@ -133,4 +133,4 @@ FLOW devient une plateforme qui configure des capacités d'action, pas un grand 
 
 ---
 
-← Page précédente : [Convergence et modèle fédéré](2-convergence-et-modele-federe.md) · → Page suivante : [Solution](4-plateforme-flow.md)
+← Page précédente : [Ambition](1-ambition-et-contexte.md) · → Page suivante : [Solution](4-plateforme-flow.md)
