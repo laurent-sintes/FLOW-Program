@@ -140,7 +140,7 @@ Elle doit traiter plusieurs points durs :
 - SAP ECC Boardriders : migration difficile à phaser du fait de la nature monolithique de la solution.
 - C-LOG : une partie de la décision de fulfillment est déjà distribuée côté exécution.
 - Stock temps réel : dépendance aux événements POS et logistiques pour garantir une fraîcheur suffisante.
-- PLM, catalogue, Article / EAN : capacité à gérer produits conçus et produits importés sans rendre FLOW dépendant du modèle PLM historique.
+- PLM, catalogue, Article / EAN : Article / EAN probablement suffisant pour la vente, mais peut-être insuffisant pour l'achat si les règles restent intégrées dans la fiche produit.
 - Wholesale Boardriders : priorisation commerciale des meilleurs clients, incompatible avec une logique simple de premier arrivé, premier servi.
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
