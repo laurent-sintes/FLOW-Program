@@ -2,6 +2,24 @@
 
 Ce glossaire établit le langage commun du programme. Les définitions sont volontairement orientées métier et architecture ; elles évolueront avec le référentiel.
 
+## Index des concepts structurants
+
+Cette section transforme progressivement le glossaire en point d'entrée vers les pages qui approfondissent les concepts clés. Elle reste volontairement limitée aux notions déjà stables dans le programme.
+
+| Concept | Pages de référence |
+| --- | --- |
+| Accord / Agreement | [Concepts clés](vision/concepts-cles.md#agreement) · [Agreement comme pivot](insights/agreement-comme-pivot.md) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#variation-metier-maitriser-sans-rigidifier) |
+| Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#la-demande-lunite-autonome-de-la-decision-et-de-lorchestration) |
+| Convergence pilotée par niveaux | [Vision synthétique](vision/vision-programme-flow.md#ambition-converger-sans-uniformiser) · [Ambition](vision/vision-detaillee/1-ambition-et-contexte.md#opportunite-converger-sans-basculer-dans-un-modele-unique) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
+| Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande--demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) |
+| Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand--supply-depasser-achat--vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
+| Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Principe 02](principes-directeurs/2-flow-comme-plateforme-d-entreprise.md) |
+| Réseau d'exécution / Fulfillment Network | [Concepts clés](vision/concepts-cles.md#fulfillment-network--reseau-dexecution) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#fulfillment-network-decrire-ce-que-le-reseau-sait-faire) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Source / Projection | [Concepts clés](vision/concepts-cles.md#source--projection) · [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
+| Stock Unifié | [Concepts clés](vision/concepts-cles.md#stock-unifie) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#composants-structurants) · [Inventory Visibility](insights/inventory-visibility-capacite-d-entreprise.md) |
+| Vues 360 | [Concepts clés](vision/concepts-cles.md#vues-360) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#composants-structurants) |
+
 ## A
 
 ### Accord / Agreement
@@ -76,6 +94,10 @@ Commande passée auprès d’un fournisseur ou fabricant. Dans FLOW, la question
 
 Accord commercial qui définit des conditions, prix, assortiment ou engagements entre parties. Il relève plutôt du domaine de l’engagement commercial, même si FLOW peut devoir en consommer le résultat pour exécuter une demande.
 
+### Convergence pilotée par niveaux
+
+Approche selon laquelle la convergence ne signifie pas uniformiser partout. Selon la responsabilité concernée, FLOW peut centraliser, unifier, standardiser, fédérer ou différencier.
+
 ## D
 
 ### DataHub
@@ -137,6 +159,10 @@ Nature d’information représentant une réalité métier observée, reçue ou 
 ### Fulfillment
 
 Ensemble des responsabilités permettant d’exécuter une demande ou une commande : disponibilité, promesse, allocation, préparation, livraison, retour, réintégration et suivi d’exécution.
+
+### Fulfillment Network
+
+Voir [Réseau d'exécution](#reseau-dexecution).
 
 ## G
 
@@ -307,6 +333,10 @@ Statut d’une information dans un domaine lorsque ce domaine crée et maintient
 ### Stock confié
 
 Stock détenu ou exploité dans un contexte où la propriété, la responsabilité commerciale ou la lecture métier peuvent varier selon les groupes. Les stocks confiés peuvent être lus comme B2B côté BRD et comme retail côté GBM, ce qui en fait un révélateur de divergence de modèle.
+
+### Stock Unifié
+
+Capacité d'entreprise qui consolide et expose une vision opérationnelle du stock afin de promettre, réserver, allouer et optimiser le fulfillment selon un contexte business.
 
 ### StoreLand / STLD
 
