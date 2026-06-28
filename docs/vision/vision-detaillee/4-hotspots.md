@@ -15,11 +15,16 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 
 ## Vue synthétique des familles de risques
 
+<div class="flow-conviction">
+  <p>Un hotspot n'est pas une difficulté à subir.</p>
+  <p>C'est une décision structurante à rendre explicite.</p>
+</div>
+
 | Famille de risque | Hotspots concernés | Question structurante |
 | --- | --- | --- |
 | Trajectoire de migration | SAP ECC Boardriders | Comment sortir d'un socle monolithique sans créer un big bang ? |
-| Décision distribuée | C-LOG, Wholesale Boardriders | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
-| Intégration et temps réel | Stock temps réel, systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
+| Décision distribuée | C-LOG, promesse Wholesale Boardriders | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
+| Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
 | Données produit et amont | PLM, catalogue, Article / EAN | Quel catalogue FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
 | Gouvernance métier | Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
 
@@ -28,6 +33,11 @@ Cette lecture permet de ne pas voir les hotspots comme une simple liste de sujet
 Elle montre les catégories de décisions à sécuriser pour rendre FLOW opérable.
 
 ## Risque de trajectoire : SAP ECC Boardriders
+
+<div class="flow-conviction">
+  <p>Le monolithe SAP ECC ne se découpe pas comme une application modulaire.</p>
+  <p>La trajectoire de sortie doit être pensée comme un sujet d'architecture, pas seulement comme un planning de migration.</p>
+</div>
 
 Boardriders s'appuie fortement sur SAP ECC.
 
@@ -43,6 +53,11 @@ Le risque est de devoir arbitrer entre :
 Ce hotspot impose de clarifier très tôt quelles responsabilités doivent sortir de SAP ECC, lesquelles doivent rester articulées avec SAP Finance, et dans quel ordre la migration peut réellement être sécurisée.
 
 ## Risque de décision distribuée : C-LOG et fulfillment
+
+<div class="flow-conviction">
+  <p>Distribuer l'exécution est normal.</p>
+  <p>Distribuer la décision sans gouvernance claire crée des promesses incompatibles.</p>
+</div>
 
 C-LOG ne doit pas être lu seulement comme un outil logistique ou un composant d'intégration.
 
@@ -61,6 +76,11 @@ Cela peut produire :
 Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, ainsi que le contrat d'échange entre FLOW et C-LOG.
 
 ## Risque d'intégration et de fraîcheur : stock temps réel
+
+<div class="flow-conviction">
+  <p>Un stock unifié n'est utile que si les mouvements remontent assez vite.</p>
+  <p>La promesse omnicanale dépend donc aussi des capacités événementielles du POS, des WMS et des partenaires logistiques.</p>
+</div>
 
 Le <span class="flow-keyword">Stock Unifié</span> n'a de valeur opérationnelle que si les mouvements de stock remontent avec une fraîcheur suffisante.
 
@@ -86,7 +106,12 @@ Ce hotspot impose donc de clarifier :
 
 Sans cette capacité, FLOW pourra consolider une vision de stock, mais pas garantir une décision de promesse, d'allocation ou de fulfillment suffisamment fiable à l'échelle omnicanale.
 
-## Risque d'intégration : brancher les systèmes réintégrés
+## Capacités technologiques : réintégrer les systèmes existants
+
+<div class="flow-conviction">
+  <p>Réintégrer un outil existant ne suffit pas : il doit savoir dialoguer avec la colonne vertébrale FLOW.</p>
+  <p>API, événements, statuts, documents et réconciliation deviennent des prérequis d'architecture.</p>
+</div>
 
 FLOW ne vise pas à réécrire tous les services existants.
 
@@ -108,7 +133,12 @@ Ce hotspot impose de clarifier :
 
 Le hotspot Stock temps réel est un cas critique de cette problématique, mais il ne doit pas porter tout le sujet.
 
-## Risque données produit et amont : PLM, catalogue, Article / EAN
+## Catalogue produit : FLOW ne peut pas dépendre d'un PLM unique
+
+<div class="flow-conviction">
+  <p>Le PLM est essentiel pour concevoir certains produits.</p>
+  <p>Il ne peut pas devenir le catalogue unique de tout le SI.</p>
+</div>
 
 Beaumanoir dispose d'un PLM structurant pour gérer les collections, les fiches produits, les grilles taille / couleur, les échanges avec les fournisseurs et les engagements industriels très tôt dans la saison.
 
@@ -133,36 +163,67 @@ Ce hotspot impose de clarifier :
 - La gouvernance des nomenclatures taille / couleur.
 - Le découplage entre processus de conception amont et capacités Demand / Fulfillment.
 
-## Risque de gouvernance métier : Wholesale Boardriders
+## Promesse commerciale : prioriser sans rompre les engagements
+
+<div class="flow-conviction">
+  <p>Prioriser un client ne consiste pas seulement à lui donner du stock.</p>
+  <p>Cela peut décaler les autres commandes et rompre des promesses déjà perçues comme acquises.</p>
+</div>
 
 La stratégie Wholesale de Boardriders repose sur une logique de priorisation des meilleurs clients.
 
-Cette logique n'est pas alignée avec une approche simple de type “premier arrivé, premier servi”.
+Cette logique est très différente d'une approche “premier arrivé, premier servi”.
 
-Le sujet dépasse donc la gestion de stock.
+Dans une logique de priorisation, une nouvelle commande d'un client prioritaire peut consommer un stock insuffisant et décaler dans le temps des commandes déjà enregistrées pour des clients moins prioritaires.
 
-Il touche à la politique commerciale, aux engagements clients, à l'allocation, à la promesse et à la gouvernance des règles.
+Le sujet n'est donc pas seulement : “qui a droit au stock ?”
+
+Le sujet est aussi : “quelle promesse a déjà été donnée, à qui, et peut-on la déplacer ?”
+
+Côté Beaumanoir, l'adage “premier arrivé, premier servi” porte une autre philosophie : lorsqu'une promesse est faite, elle doit être tenue.
+
+Ces deux modèles ne sont pas simplement deux règles de stock.
+
+Ils traduisent deux manières différentes de gouverner la relation commerciale, l'allocation, la priorité et la responsabilité de la promesse.
+
+FLOW doit donc clarifier explicitement :
+
+- Si une promesse peut être déplacée après avoir été donnée.
+- Qui a le droit de provoquer ce déplacement.
+- Quels clients, canaux ou agreements peuvent être prioritaires.
+- Comment les commandes décalées sont identifiées, expliquées et traitées.
+- Comment éviter qu'une optimisation commerciale locale dégrade la confiance globale dans la promesse.
 
 Ce hotspot montre pourquoi FLOW doit être capable de gérer des règles métier explicites.
 
 La plateforme ne doit pas seulement dire : y a-t-il du stock ?
 
-Elle doit aussi pouvoir dire : pour qui ce stock doit-il être priorisé, selon quel engagement, quelle règle commerciale et quel arbitrage ?
+Elle doit aussi pouvoir dire : ce stock peut-il être réservé à un client prioritaire, même si cela décale d'autres engagements ?
 
 C'est typiquement le genre de variation métier que FLOW doit absorber sans multiplier les processus ou les applications spécifiques.
 
 ## Synthèse des hotspots
+
+<div class="flow-conviction">
+  <p>La synthèse des hotspots n'est pas une liste de risques.</p>
+  <p>C'est la carte des décisions qui conditionnent la crédibilité de FLOW.</p>
+</div>
 
 | Hotspot | Famille de risque | Ce que FLOW doit clarifier |
 | --- | --- | --- |
 | SAP ECC Boardriders | Trajectoire de migration | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
 | C-LOG | Décision distribuée | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
-| Capacités d'intégration des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
-| PLM, catalogue, Article / EAN | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
-| Wholesale Boardriders | Gouvernance métier | Rules, policies, allocation, engagements, promesse client |
+| Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
+| Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
+| Promesse Wholesale Boardriders | Gouvernance métier | Rules, policies, allocation, promesses déplaçables ou non, priorisation client |
 
 ## À retenir
+
+<div class="flow-conviction">
+  <p>La valeur de cette page n'est pas de lister les difficultés.</p>
+  <p>Elle est de montrer les décisions à sécuriser pour que FLOW tienne réellement sa promesse.</p>
+</div>
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
