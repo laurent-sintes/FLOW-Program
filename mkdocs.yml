@@ -40,6 +40,16 @@ nav:
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
+      - Patterns d'architecture:
+          - Repères: architecture-cible/patterns/index.md
+          - Case-centric orchestration: architecture-cible/patterns/case-centric-orchestration.md
+          - Event-Driven Architecture: architecture-cible/patterns/event-driven-architecture.md
+          - API conversationnelle: architecture-cible/patterns/api-conversationnelle.md
+          - CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
+          - Operational DataHub: architecture-cible/patterns/operational-datahub.md
+          - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
+          - Externalisation des décisions: architecture-cible/patterns/externalisation-decisions.md
+          - Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
       - Fiches produits FLOW:
           - Repères: architecture-cible/produits/index.md
           - Socle Case Management: architecture-cible/produits/socle-case-management.md
