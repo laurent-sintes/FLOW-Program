@@ -134,7 +134,7 @@ Elle doit expliquer pourquoi FLOW existe, quel problème d'entreprise il adresse
 - expliciter l'ambition de convergence ;
 - distinguer ce qui relève de la plateforme FLOW et ce qui reste autour ;
 - définir le récit cible : pourquoi FLOW, pour qui, et à quelle échelle ;
-- identifier les promesses de valeur : cohérence, transversalité, réduction des doubles saisies, pilotage de la demande, stock unifié, capacité de décision.
+- identifier les promesses de valeur : cohérence, transversalité, réduction des doubles saisies, pilotage de la demande, stock unifié, capacité de décision métier.
 
 ### Livrables attendus
 
@@ -152,7 +152,7 @@ L'étape est suffisamment mûre lorsque les parties prenantes peuvent expliquer,
 
 Elle fournit le cap.
 
-Les principes directeurs peuvent alors être définis comme les règles de conception nécessaires pour protéger cette vision dans les décisions futures.
+Les principes directeurs peuvent alors être définis comme les règles de conception nécessaires pour protéger cette vision dans les arbitrages futurs.
 
 ---
 
@@ -172,7 +172,7 @@ Ils formalisent les convictions d'architecture qui guident FLOW : fédérer plut
 
 ### Activités
 
-- identifier les décisions récurrentes du programme ;
+- identifier les arbitrages récurrents du programme ;
 - formuler les convictions d'architecture ;
 - expliciter les conséquences pratiques de chaque principe ;
 - vérifier que les principes sont utilisables pour arbitrer ;
