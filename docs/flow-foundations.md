@@ -206,6 +206,7 @@ Les changements principaux sont regroupés dans la page [Les changements à cond
 ## Pages de référence
 
 - [Vision du programme FLOW](vision/vision-programme-flow.md)
+- [Concepts clés du programme FLOW](vision/concepts-cles.md)
 - [Overview de la plateforme FLOW](architecture-cible/overview-plateforme-flow.md)
 - [Journal des insights](insights/journal-des-insights.md)
 - [Glossaire FLOW](glossaire.md)
