@@ -1,195 +1,26 @@
-# Convergence B2B / Wholesale et promesse commerciale
+# Promesse commerciale et priorisation Wholesale
 
 ## Intention
 
-Cette page documente les enseignements relatifs au B2B / Wholesale dans le programme FLOW.
+Cette page documente le hotspot lié au business model des allocations, de la promesse et de la priorisation entre BRD et GBM.
 
-Le sujet est structurant car il traverse plusieurs mondes :
+Le sujet est structurant pour FLOW car il touche directement à la manière dont une demande consomme du stock, reçoit une promesse, peut être priorisée, puis est exécutée.
 
-- le front office B2B ;
-- le CRM et le portail client ;
-- l'engagement commercial ;
-- le catalogue et l'assortiment ;
-- les commandes d'achat et de vente ;
-- le futur ERP ;
-- FLOW et ses responsabilités de demande, stock, promesse, allocation et exécution.
+Il ne s'agit pas seulement d'un sujet B2B / Wholesale.
 
-L'objectif n'est pas de faire entrer mécaniquement tout le B2B dans FLOW.
-
-L'objectif est d'identifier les responsabilités B2B qui doivent être réconciliées dans FLOW parce qu'elles touchent directement au Demand & Fulfillment, tout en laissant aux expériences et systèmes spécialisés leurs responsabilités propres.
+Il s'agit d'un choix de gouvernance métier : une promesse donnée peut-elle être déplacée pour servir un client plus prioritaire ?
 
 ## Pourquoi c'est un hotspot
 
-Le B2B / Wholesale n'est pas seulement un contexte métier.
+Le Wholesale Boardriders repose sur une logique de priorisation des meilleurs clients.
 
-C'est un point de tension du programme FLOW parce qu'il oblige à arbitrer plusieurs frontières :
+Cette logique est différente d'une approche “premier arrivé, premier servi”, plus proche de la culture Beaumanoir.
 
-- business model et pratiques commerciales ;
-- engagement client et portail B2B ;
-- construction d'assortiment et commercial agreement ;
-- commande d'achat et commande de vente ;
-- ERP, OMS et plateforme Demand ;
-- finance, documents et fulfillment ;
-- convergence BRD / GBM et convergence intra-GBM.
+Dans une logique de priorisation, une nouvelle commande d'un client prioritaire peut consommer un stock insuffisant et décaler dans le temps des commandes déjà enregistrées pour des clients moins prioritaires.
 
-Mais le sujet le plus structurant est celui de la <span class="flow-keyword">promesse commerciale</span>.
+Le sujet n'est donc pas seulement : “qui a droit au stock ?”
 
-Le Wholesale Boardriders repose sur une logique de priorisation des meilleurs clients, alors que Beaumanoir porte davantage une logique “premier arrivé, premier servi”.
-
-Ces deux approches ne produisent pas le même comportement lorsque le stock est insuffisant.
-
-Ce hotspot révèle donc une question centrale :
-
-> Une promesse donnée à un client peut-elle être déplacée pour servir un client plus prioritaire ?
-
-Cette question dépasse le B2B.
-
-Elle touche directement au rôle de FLOW : gouverner la demande, la promesse, l'allocation, les règles de priorité et la cohérence du fulfillment.
-
-## Point de départ
-
-Le B2B / Wholesale apparaît comme un domaine pouvant converger entre GBM et BRD sur une partie importante des briques middle office, front office et BI.
-
-La difficulté principale se situe moins dans les usages front / middle que dans les responsabilités à articuler avec :
-
-- le back-office achat / vente ;
-- les ERP ;
-- les commandes ;
-- les catalogues ;
-- les prix ;
-- les stocks ;
-- les règles d'allocation et de promesse ;
-- les responsabilités qui pourraient être reprises ou exposées par FLOW.
-
-Le sujet doit donc être traité comme un domaine contributeur et consommateur de FLOW, et non comme un sous-ensemble automatique de FLOW.
-
-```text
-Expériences B2B / CRM / portail / BI / support
-        ↓ consomment ou produisent
-Responsabilités Demand & Fulfillment
-        ↓ à réconcilier dans FLOW si elles portent la cohérence métier
-ERP, finance, logistique, systèmes d'exécution, partenaires
-        ↓ systèmes spécialisés ou contributeurs selon les responsabilités
-```
-
-## GBM : un B2B greffé sur un SI historiquement retail
-
-GBM est historiquement un SI retail, ouvert ensuite au e-commerce, puis plus difficilement au B2B.
-
-Cette trajectoire explique pourquoi le B2B GBM s'appuie sur plusieurs composants :
-
-- StoreLand ;
-- le module Négoce de StoreLand ;
-- Zoho CRM ;
-- Zoho Analytics ;
-- Zoho Campaigns ;
-- Zoho Desk / Sign selon les usages ;
-- Elastic ;
-- Product Live ;
-- Azure B2C ;
-- C-LOG / COSMOS ;
-- des imports, fichiers ou traitements manuels selon les marques.
-
-Le B2B GBM ne doit donc pas être lu comme un domaine homogène déjà complètement outillé.
-
-## Module Négoce StoreLand
-
-Le module Négoce de StoreLand permet d'adresser deux grandes familles de fonctionnalités.
-
-### 1. Design commercial et engagement
-
-Le module permet d'entrer un client, de construire un assortiment et de préparer un commercial agreement.
-
-Cette famille de responsabilités relève plutôt du monde de l'engagement :
-
-```text
-Client
-Assortiment
-Commercial agreement
-Catalogue
-Prix
-Conditions commerciales
-```
-
-Elle concerne la manière dont l'offre est construite, négociée, rendue vendable et présentée aux clients B2B.
-
-### 2. Commandes d'achat
-
-Le module permet également de passer des commandes d'achat.
-
-Cette responsabilité est d'une autre nature.
-
-Elle touche potentiellement à FLOW si la commande d'achat participe à l'exécution d'une demande, à l'approvisionnement, à la disponibilité future, à la promesse ou au suivi d'exécution.
-
-```text
-Commande d'achat
-Engagement d'approvisionnement
-Suivi d'exécution
-Réception
-Événements
-Disponibilité future
-```
-
-## Couverture différenciée selon les marques
-
-Le module Négoce est coûteux.
-
-Il n'est donc activé que pour les marques premium.
-
-Pour les autres marques, certaines commandes sont passées de manière plus manuelle ou dispersée : mail, Excel, imports depuis d'autres référentiels ou autres mécanismes opérationnels.
-
-Cette situation révèle que GBM n'est pas homogène en interne.
-
-```text
-Marques premium
-    → module Négoce StoreLand
-    → processus outillé
-
-Autres marques
-    → mail / Excel / imports / référentiels divers
-    → processus plus manuel ou dispersé
-```
-
-L'idée cible est d'avoir un module ou une capacité Négoce pour tout le monde.
-
-Mais cela ne signifie pas nécessairement que toutes les responsabilités du module Négoce actuel doivent être reprises au même endroit.
-
-## Insight : la convergence est aussi intra-GBM
-
-Un insight important est que la convergence ne concerne pas seulement BRD et GBM.
-
-Elle concerne aussi les marques au sein de GBM.
-
-```text
-Convergence inter-groupes
-    GBM ↔ BRD
-
-Convergence intra-GBM
-    marques premium ↔ autres marques
-```
-
-Le module Négoce rend cette convergence interne très visible : certaines marques disposent d'un processus outillé, tandis que d'autres opèrent encore par des moyens plus manuels ou dispersés.
-
-FLOW doit donc éviter de considérer GBM comme un bloc homogène.
-
-La convergence doit être pensée à deux niveaux :
-
-- convergence entre groupes ;
-- convergence entre marques et niveaux de maturité au sein de GBM.
-
-## Promesse commerciale : priorisation ou premier arrivé, premier servi ?
-
-Le point le plus sensible du Wholesale Boardriders n'est pas seulement la prise de commande.
-
-C'est la manière dont une commande consomme, réserve ou déplace une promesse de stock.
-
-Dans une logique “premier arrivé, premier servi”, lorsqu'une commande reçoit une promesse, cette promesse est tenue sauf événement exceptionnel.
-
-Le système protège donc la stabilité de l'engagement déjà pris.
-
-Dans une logique de priorisation Wholesale, une nouvelle commande d'un client prioritaire peut remettre en cause l'exécution d'une commande moins prioritaire si le stock disponible est insuffisant.
-
-La nouvelle commande ne consomme pas seulement du stock : elle peut décaler dans le temps d'autres commandes déjà enregistrées.
+Le sujet est aussi : “quelle promesse a déjà été donnée, à qui, et peut-on la déplacer ?”
 
 ```text
 Premier arrivé, premier servi
@@ -201,114 +32,93 @@ Priorisation Wholesale
     → certaines promesses peuvent être déplacées
 ```
 
-Ce point est fondamental pour FLOW.
+Ce hotspot révèle une tension forte entre deux philosophies métier :
 
-Il montre que la promesse n'est pas seulement un calcul de disponibilité.
+- protéger la stabilité de l'engagement déjà pris ;
+- optimiser commercialement le stock disponible au bénéfice des clients prioritaires.
+
+## Deux modèles de promesse
+
+### Modèle “premier arrivé, premier servi”
+
+Dans ce modèle, la promesse donnée à une commande est considérée comme stable.
+
+Lorsqu'une commande a reçu un engagement, le système protège cet engagement sauf événement exceptionnel : rupture fournisseur, anomalie stock, incident logistique ou arbitrage explicite.
+
+Ce modèle est lisible pour les opérations et rassurant pour les clients.
+
+Il limite toutefois la capacité à réallouer le stock à un client plus stratégique après coup.
+
+### Modèle de priorisation Wholesale
+
+Dans ce modèle, la valeur commerciale du client peut modifier l'ordre de traitement.
+
+Une commande plus récente, mais portée par un client prioritaire, peut passer devant une commande plus ancienne si le stock disponible ne permet pas de tout servir.
+
+Ce modèle peut être pertinent commercialement.
+
+Mais il crée un risque de rupture de promesse pour les clients moins prioritaires, surtout si ces clients avaient déjà perçu leur commande comme engagée.
+
+## Pourquoi FLOW est concerné
+
+FLOW porte la demande, la promesse, l'allocation, les règles de priorité et la cohérence du fulfillment.
+
+La plateforme ne doit donc pas seulement répondre à la question : y a-t-il du stock ?
+
+Elle doit aussi répondre à des questions plus exigeantes :
+
+- Ce stock est-il libre, réservé ou déjà promis ?
+- Cette promesse est-elle ferme ou déplaçable ?
+- Quel client, canal, marque ou agreement peut être prioritaire ?
+- Qui peut déplacer une promesse déjà donnée ?
+- Comment les commandes impactées sont-elles identifiées, expliquées et traitées ?
+
+Ce hotspot montre que la promesse n'est pas seulement un calcul de disponibilité.
 
 C'est une décision gouvernée par des règles commerciales, des agreements, des priorités, des engagements et une politique explicite de rupture ou non-rupture de promesse.
 
-FLOW devra donc clarifier :
+## Risques à maîtriser
 
-- si une promesse peut être déplacée après avoir été donnée ;
-- dans quels cas elle peut l'être ;
-- qui porte la responsabilité de cette décision ;
-- comment les commandes impactées sont identifiées ;
-- comment l'impact est expliqué aux clients, aux équipes commerciales et aux opérations ;
-- comment éviter qu'une optimisation commerciale locale dégrade la confiance globale dans la promesse.
+Si ce sujet n'est pas traité explicitement, FLOW risque de produire :
 
-## Recommandation d'architecture — découpler les responsabilités du Négoce
-
-Le module Négoce regroupe aujourd'hui des responsabilités qui pourraient relever de domaines cibles différents.
-
-La recommandation d'architecture est de découpler ces responsabilités dans la cible.
-
-```text
-Engagement / Commercial Design
-    → client
-    → assortiment
-    → commercial agreement
-    → catalogue
-    → prix / conditions
-
-FLOW
-    → commande d'achat si elle participe au cycle de vie transverse
-    → engagement d'approvisionnement
-    → promesse commerciale
-    → allocation et priorisation
-    → suivi d'exécution
-    → événements
-    → disponibilité future
-```
-
-Le processus de négociation, d'assortiment et de fabrication du catalogue relève plutôt du domaine engagement / commercial / consommateur.
-
-La commande d'achat peut entrer dans le champ FLOW si elle participe à l'exécution de la demande, à l'approvisionnement, à la promesse ou à la visibilité des engagements.
-
-FLOW ne doit pas devenir l'outil de construction d'assortiment ou de commercial agreement.
-
-En revanche, FLOW peut avoir besoin de consommer le résultat de ces agreements et de porter ou exposer les commandes d'achat, engagements d'approvisionnement, promesses, allocations, priorisations et événements associés lorsqu'ils contribuent à la cohérence du Demand & Fulfillment.
-
-## Front B2B et domaine d'engagement
-
-Le SI B2B doit conserver ses responsabilités propres autour du front office, du CRM, du portail, du support, des campagnes, des documents et du pilotage commercial.
-
-Ces responsabilités ne sont pas naturellement des responsabilités FLOW.
-
-Elles relèvent plutôt du domaine de l'engagement :
-
-- relation client B2B ;
-- segmentation commerciale ;
-- portail client ;
-- documents commerciaux ;
-- campagnes ;
-- support ;
-- pilotage commercial ;
-- construction ou publication de catalogues.
-
-FLOW doit donc se concentrer sur les responsabilités transverses nécessaires à l'exécution d'une demande.
-
-Cela ne crée pas une frontière étanche entre engagement et FLOW.
-
-Cela crée une règle de lecture : les expériences B2B peuvent rester dans le domaine engagement, tandis que les responsabilités de demande, commande, stock, promesse, allocation, priorisation, événements et exceptions doivent être évaluées comme candidates à FLOW.
-
-## Stocks confiés : un révélateur de divergence BRD / GBM
-
-Le sujet des stocks confiés montre que les mêmes réalités opérationnelles peuvent être classées différemment selon les groupes.
-
-Des objets comme les corners, les franchisés ou les magasins en stocks confiés peuvent être lus comme du B2B côté BRD, alors qu'ils relèvent plutôt du retail côté GBM.
-
-Cette divergence est importante.
-
-Elle montre que le périmètre FLOW ne doit pas être défini uniquement par les canaux — retail, e-commerce, marketplace ou B2B — mais par les responsabilités transverses nécessaires à l'exécution d'une demande.
+- des décisions d'allocation incomprises ;
+- des promesses contradictoires entre canaux ou organisations ;
+- des décalages de commandes non expliqués ;
+- une optimisation commerciale locale au détriment de la confiance globale ;
+- une difficulté à expliquer pourquoi un client a été servi avant un autre ;
+- une complexité cachée dans des règles locales, des contournements ou des arbitrages manuels.
 
 ## Questions structurantes pour FLOW
 
-Le sujet B2B / Wholesale conduit à plusieurs questions :
+Le sujet doit être arbitré avant de stabiliser les règles de promesse et d'allocation :
 
-- La promesse commerciale est-elle ferme dès qu'elle est donnée, ou peut-elle être déplacée selon une priorité client ?
-- Qui décide qu'un client prioritaire peut passer devant une commande déjà promise ?
-- Comment FLOW doit-il tracer et expliquer les commandes impactées par une priorisation ?
-- La commande d'achat B2B / Négoce doit-elle être une capacité FLOW lorsqu'elle participe au cycle de vie transverse d'une demande ou d'un engagement ?
-- La négociation, l'assortiment et le catalogue doivent-ils rester dans le domaine engagement ?
-- Quelles responsabilités du module Négoce doivent être généralisées à toutes les marques GBM ?
-- La convergence GBM doit-elle d'abord harmoniser les marques avant de converger avec BRD ?
-- Le B2B doit-il être traité comme un canal spécifique ou comme une variation d'un même objet demande / commande ?
-- Quelles responsabilités doivent être réunifiées dans FLOW, et lesquelles doivent rester portées par CRM B2B, portail client, ERP, systèmes d'exécution ou systèmes spécialisés ?
-- Les stocks confiés doivent-ils être modélisés par canal, par responsabilité ou par type d'engagement ?
-- Quels demi-flux doivent être pérennes, et lesquels peuvent rester transitoires pendant la trajectoire ?
+- Une promesse commerciale est-elle ferme dès qu'elle est donnée ?
+- Peut-elle être déplacée selon une priorité client, canal, marque ou agreement ?
+- Dans quels cas le déplacement est-il autorisé ?
+- Qui porte la responsabilité de cette décision ?
+- Comment les commandes décalées sont-elles identifiées et expliquées ?
+- Quelle information doit être visible dans les Vues 360 ou dans le suivi de Case ?
+- Comment éviter qu'une optimisation commerciale locale dégrade la confiance globale dans la promesse ?
+- Quelles règles doivent être communes au groupe, et quelles règles peuvent rester propres à un business model ?
+
+## Lien avec le module Négoce StoreLand
+
+Le module Négoce StoreLand est un autre hotspot.
+
+Il concerne le périmètre fonctionnel à reprendre, conserver ou réintégrer autour de FLOW : client, assortiment, commercial agreement, catalogue, prix, commandes d'achat et processus B2B.
+
+Il ne doit pas être confondu avec le présent hotspot.
+
+Le présent hotspot traite la politique de promesse, d'allocation et de priorisation.
+
+Le module Négoce traite plutôt le découpage des responsabilités entre Engagement, FLOW et les systèmes consommateurs de la plateforme.
 
 ## À retenir
 
-Le B2B / Wholesale ne doit pas être absorbé en bloc dans FLOW.
+Le point décisif n'est pas seulement la convergence B2B / Wholesale.
 
-FLOW doit reprendre ou exposer les capacités nécessaires au fulfillment : stock, promesse, allocation, priorisation, commande, exécution, retour, réintégration et événements.
+Le point décisif est la promesse commerciale.
 
-Le SI B2B doit conserver ses responsabilités propres de front office, CRM, portail client, support, campagnes, documents et pilotage commercial.
-
-Le module Négoce StoreLand est un bon révélateur : il regroupe aujourd'hui des responsabilités de design commercial et des responsabilités d'achat / exécution qui pourraient être séparées dans la cible.
-
-Le point décisif est la promesse commerciale : Boardriders et Beaumanoir ne portent pas spontanément la même philosophie entre priorisation client et “premier arrivé, premier servi”.
+Boardriders et Beaumanoir ne portent pas spontanément la même philosophie entre priorisation client et “premier arrivé, premier servi”.
 
 FLOW devra rendre cette politique explicite, gouvernée, traçable et explicable, car elle conditionne directement la confiance dans la promesse client.
-
-Enfin, la convergence ne se limite pas à BRD et GBM. Elle doit aussi traiter les écarts de maturité entre marques GBM, notamment entre les marques premium outillées par le module Négoce et les autres marques encore opérées de manière plus manuelle.
