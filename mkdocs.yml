@@ -48,7 +48,7 @@ nav:
           - CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
           - Operational DataHub: architecture-cible/patterns/operational-datahub.md
           - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
-          - Externalisation des décisions: architecture-cible/patterns/externalisation-des-decisions.md
+          - Externalisation des décisions métier: architecture-cible/patterns/externalisation-des-decisions.md
           - Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
       - Fiches produits FLOW:
           - Repères: architecture-cible/produits/index.md
@@ -92,16 +92,18 @@ nav:
       - Positionnement de FLOW:
           - De l’OMS au Demand Management: insights/oms-vers-demand-management.md
           - FLOW n’est pas une plateforme d’engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
+          - Autonomie des consommateurs de FLOW: insights/autonomie-des-consommateurs-de-flow.md
           - "ERP + OMS : séparation utile ou dette architecturale ?": insights/erp-oms-separation-ou-plateforme-integree.md
           - Convergence, fédération et uniformisation: insights/convergence-federation-uniformisation.md
       - Modèle conceptuel:
           - Agreement comme pivot: insights/agreement-comme-pivot.md
+          - La demande comme point d’entrée de la modélisation: insights/demande-point-entree-modelisation.md
           - Modèle conceptuel FLOW: insights/modele-conceptuel-flow.md
       - Gouvernance et fédération:
           - Plateforme fédérale et multi-tenant: insights/plateforme-federale-multitenant.md
           - GBM, StoreLand, UR et fédération: insights/gbm-storeland-ur-federation.md
           - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
-      - Opérations, décision et données:
+      - Opérations, décision métier et données:
           - "Gouvernance logistique : BRD vs GBM": insights/gouvernance-logistique-brd-vs-gbm.md
           - Allocation et convergence: insights/allocation-point-saillant-de-la-convergence.md
           - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
