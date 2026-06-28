@@ -6,6 +6,11 @@ Il propose plusieurs ruptures de raisonnement nécessaires pour traiter la conve
 
 ## La Demande : l'objet métier central
 
+<div class="flow-conviction">
+  <p>On ne part plus du document.</p>
+  <p>On part de la demande à satisfaire.</p>
+</div>
+
 Dans une approche ERP classique, le système est souvent organisé autour des documents : commande, livraison, facture, avoir, écritures comptables.
 
 Dans une approche OMS classique, le système est souvent organisé autour de la commande, de la promesse, du sourcing ou de l'orchestration omnicanale.
@@ -37,6 +42,11 @@ On part de la demande à comprendre, promettre, exécuter et expliquer.
 
 ## Demand / Supply : dépasser achat / vente
 
+<div class="flow-conviction">
+  <p>FLOW ne découpe pas le SI selon “j'achète” ou “je vends”.</p>
+  <p>FLOW sépare ce qui est demandé de ce qui permet d'exécuter.</p>
+</div>
+
 L'approche classique consiste souvent à découper le SI selon les organisations, les canaux ou les processus :
 
 ```text
@@ -67,6 +77,11 @@ Une commande client, une commande B2B, une demande SAV, un retour, une exception
 
 ## La Demande : l'unité autonome de la décision et de l'orchestration
 
+<div class="flow-conviction">
+  <p>Une demande doit rester lisible de bout en bout.</p>
+  <p>Même lorsqu'elle traverse plusieurs processus, applications et partenaires.</p>
+</div>
+
 FLOW part de la <span class="flow-keyword">demande</span>.
 
 La demande devient l'unité métier qui permet de relier une intention, un contexte, des décisions, des ressources, des documents, des événements et une exécution.
@@ -92,6 +107,11 @@ Dans l'architecture cible, cette demande pourra être portée par des objets de 
 Mais au niveau de la vision, le concept central reste la demande : ce que l'entreprise doit comprendre, arbitrer, satisfaire et expliquer.
 
 ## Configuration du système : paramétrer et implémenter des capacités d'action
+
+<div class="flow-conviction">
+  <p>FLOW configure des capacités d'action.</p>
+  <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
+</div>
 
 FLOW introduit aussi une rupture dans la manière de concevoir les données de configuration.
 
@@ -124,11 +144,6 @@ Cette rupture change la finalité même de la donnée.
 FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
-
-<div class="flow-conviction">
-  <p>FLOW configure des capacités d'action.</p>
-  <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
-</div>
 
 ---
 
