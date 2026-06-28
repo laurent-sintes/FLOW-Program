@@ -20,6 +20,7 @@ Dans FLOW, ces ressources sont notamment :
 - Le <span class="flow-keyword">Fulfillment Network</span>.
 - Les capacités d'allocation, de réservation, de promesse et d'orchestration.
 - Les événements, faits, documents et vues nécessaires à la traçabilité.
+- Les contrats de données qui encadrent la publication, la consommation, la fraîcheur, la qualité et la supervision des données en transit.
 
 Mais une plateforme ne doit pas devenir un bloc fermé.
 
@@ -36,6 +37,7 @@ Par exemple :
 - Définir, versionner et tester des règles.
 - Construire des décisions métier contrôlées.
 - Publier ou consommer des événements selon des contrats explicites.
+- Publier ou consommer des données selon des contrats gouvernés.
 - Exposer des extensions sans fragiliser le socle commun.
 
 ```text
@@ -77,6 +79,31 @@ L'enjeu est d'éviter que chaque application reconstruise sa propre logique de d
   <p>FLOW reconstruit la colonne vertébrale qui leur permet de fonctionner ensemble.</p>
 </div>
 
+## Données en transit : sortir de la tuyauterie projet
+
+FLOW doit également transformer la manière dont les données circulent entre applications.
+
+Aujourd'hui, un besoin de donnée produit souvent un flux spécifique : analyse d'une application source, spécification, développement par une équipe flux, puis consommation par une application cible.
+
+Cette approche est efficace pour répondre à un projet, mais elle fragilise la gouvernance d'entreprise lorsque les flux se multiplient.
+
+L'idée de demi-flux déjà imaginée côté Beaumanoir est une intuition utile : elle distingue la publication d'une donnée de sa consommation.
+
+FLOW doit prolonger cette graine vers une logique de contrats de données gouvernés.
+
+```text
+Flux projet
+    → réponse ponctuelle entre deux applications
+
+Contrat de données
+    → publication durable, consommateurs identifiés, fraîcheur, qualité, supervision et réconciliation
+```
+
+<div class="flow-conviction">
+  <p>FLOW ne doit pas seulement remplacer des applications.</p>
+  <p>Il doit remplacer la logique de tuyauterie projet par une logique de contrats de données gouvernés.</p>
+</div>
+
 ## Composants structurants
 
 Ses composants structurants sont :
@@ -87,6 +114,7 @@ Ses composants structurants sont :
 - Un système de décision fondé sur des règles, contraintes et capacités d'optimisation, potentiellement augmenté par l'IA là où cela crée de la valeur.
 - Un réseau d'exécution Supply connecté en continu à la demande.
 - Des Vues 360 pour rendre les activités, statuts, événements et exceptions plus lisibles.
+- Une capacité de diffusion et gouvernance opérationnelle des données pour encadrer les contrats de données, modes d'échange, consommateurs, qualité, fraîcheur et réconciliation.
 - Des intégrations avec les services existants, lorsque leur valeur métier justifie leur maintien.
 
 ## Fulfillment Network : décrire ce que le réseau sait faire
