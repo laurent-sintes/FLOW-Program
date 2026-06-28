@@ -1,6 +1,6 @@
 # Valeur attendue : rendre la convergence opérable, gouvernable et mesurable
 
-## Idée clé
+## Ancrage fondateur
 
 <div class="flow-conviction">
   <p>La valeur de FLOW n'est pas de moderniser le SI.</p>
@@ -17,12 +17,7 @@ La valeur attendue est donc triple :
 - Préserver la capacité des marques et canaux à se différencier lorsque cela crée de la valeur.
 - Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les données, les coûts et les trajectoires.
 
-## Vue synthétique des bénéfices
-
-<div class="flow-conviction">
-  <p>FLOW ne produit pas une seule valeur.</p>
-  <p>Il rend la convergence exécutable dans les opérations, acceptable pour les métiers, gouvernable pour l'IT et traçable pour la finance.</p>
-</div>
+## Bénéfices du programme
 
 | Famille de valeur | Problème traité | Valeur attendue |
 | --- | --- | --- |
