@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schéma produit — Stock Unifié</title>
+  <desc id="desc">Le Stock Unifié comme Operational DataHub, alimenté par événements, avec ledger, projections, décisions et API de disponibilité.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelDark{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillText{font:700 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="760" rx="24"/>
+  <text class="title" x="52" y="58">Stock Unifié</text>
+  <text class="subtitle" x="52" y="86">Un Operational DataHub qui transforme des mouvements distribués en disponibilité gouvernée et explicable.</text>
+
+  <rect class="panel" x="48" y="132" width="250" height="300" rx="18"/>
+  <text class="h" x="78" y="168">Sources opérationnelles</text>
+  <text class="txt" x="78" y="208">• POS / magasins</text>
+  <text class="txt" x="78" y="236">• WMS / entrepôts</text>
+  <text class="txt" x="78" y="264">• C-LOG / partenaires</text>
+  <text class="txt" x="78" y="292">• SAP / NewStore</text>
+  <text class="txt" x="78" y="320">• Retours / inventaires</text>
+  <rect class="pill" x="78" y="360" width="150" height="30" rx="15"/>
+  <text class="pillText" x="98" y="380">Stock events</text>
+
+  <rect class="core" x="390" y="120" width="500" height="330" rx="26"/>
+  <text class="hWhite" x="520" y="158">Operational DataHub Stock</text>
+  <text class="smallWhite" x="480" y="184">ledger, projections, fraîcheur, confiance, réconciliation</text>
+
+  <rect class="panelDark" x="430" y="220" width="130" height="82" rx="16"/>
+  <text class="h" x="462" y="253">Ledger</text>
+  <text class="small" x="447" y="278">mouvements</text>
+  <text class="small" x="449" y="294">auditables</text>
+
+  <rect class="panelDark" x="575" y="220" width="130" height="82" rx="16"/>
+  <text class="h" x="598" y="253">Projections</text>
+  <text class="small" x="593" y="278">disponible</text>
+  <text class="small" x="596" y="294">promettable</text>
+
+  <rect class="panelDark" x="720" y="220" width="130" height="82" rx="16"/>
+  <text class="h" x="744" y="253">Décision</text>
+  <text class="small" x="741" y="278">réserver</text>
+  <text class="small" x="746" y="294">allouer</text>
+
+  <rect class="accent" x="500" y="344" width="280" height="60" rx="18"/>
+  <text class="h" x="560" y="368">Disponibilité contextualisée</text>
+  <text class="small" x="532" y="390">source · fraîcheur · confiance · explication</text>
+
+  <rect class="panel" x="982" y="132" width="250" height="300" rx="18"/>
+  <text class="h" x="1012" y="168">Consommateurs</text>
+  <text class="txt" x="1012" y="208">• Cases FLOW</text>
+  <text class="txt" x="1012" y="236">• Engagement / canaux</text>
+  <text class="txt" x="1012" y="264">• Supply / exécution</text>
+  <text class="txt" x="1012" y="292">• Vues 360</text>
+  <text class="txt" x="1012" y="320">• Finance / contrôle</text>
+  <rect class="pill" x="1012" y="360" width="150" height="30" rx="15"/>
+  <text class="pillText" x="1032" y="380">API / Events</text>
+
+  <path class="arrow" d="M298 250 C335 250 350 250 386 250"/>
+  <text class="label" x="320" y="235">publie</text>
+  <path class="arrow" d="M890 250 C928 250 942 250 978 250"/>
+  <text class="label" x="913" y="235">expose</text>
+  <path class="arrowAccent dash" d="M982 340 C920 485 360 485 298 340"/>
+  <text class="labelAccent" x="540" y="505">réconciliation, corrections, événements retour</text>
+
+  <rect class="panel" x="80" y="535" width="1120" height="150" rx="22"/>
+  <text class="h" x="112" y="570">Capacités exposées</text>
+  <g transform="translate(112 602)">
+    <rect class="pill" x="0" y="0" width="145" height="34" rx="17"/><text class="pillText" x="20" y="22">Availability</text>
+    <rect class="pill" x="165" y="0" width="135" height="34" rx="17"/><text class="pillText" x="190" y="22">Reserve</text>
+    <rect class="pill" x="320" y="0" width="135" height="34" rx="17"/><text class="pillText" x="346" y="22">Allocate</text>
+    <rect class="pill" x="475" y="0" width="150" height="34" rx="17"/><text class="pillText" x="500" y="22">Release</text>
+    <rect class="pill" x="645" y="0" width="150" height="34" rx="17"/><text class="pillText" x="668" y="22">Explain</text>
+    <rect class="pill" x="815" y="0" width="170" height="34" rx="17"/><text class="pillText" x="842" y="22">Reconcile</text>
+  </g>
+  <text class="small" x="112" y="663">Le Stock Unifié ne centralise pas seulement des quantités : il qualifie ce que l'entreprise peut promettre, à qui, pourquoi et avec quel niveau de confiance.</text>
+</svg>
