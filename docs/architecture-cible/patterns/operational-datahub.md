@@ -8,6 +8,8 @@ Il ne s'agit pas d'un entrepôt analytique.
 
 Il collecte des événements ou faits opérationnels, maintient des projections fiables, expose leur fraîcheur et rend la donnée utilisable dans les décisions.
 
+![Pattern — Operational DataHub](../../assets/images/pattern-operational-datahub.svg)
+
 <div class="flow-conviction">
   <p>Un Operational DataHub ne copie pas seulement des données.</p>
   <p>Il transforme des faits distribués en capacité opérationnelle gouvernée.</p>
