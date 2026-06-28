@@ -1,0 +1,220 @@
+# Concepts clés du programme FLOW
+
+Cette page rassemble les concepts qui structurent la vision FLOW.
+
+Elle ne remplace pas le [glossaire](../glossaire.md).
+
+Le glossaire définit les termes. Cette page explique les idées qui changent la manière de lire le programme.
+
+## Les phrases qui portent FLOW
+
+> FLOW ne cherche pas à mieux gérer les commandes.
+>
+> FLOW cherche à mieux satisfaire les demandes.
+
+> La convergence n'est pas l'uniformisation.
+>
+> Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.
+
+> Les consommateurs peuvent rester différenciés.
+>
+> La plateforme doit être décloisonnée.
+
+> FLOW configure des capacités d'action.
+>
+> Il ne reconstruit pas un grand miroir administratif de l'entreprise.
+
+## Carte des concepts
+
+| Concept | Message clé |
+| --- | --- |
+| Convergence pilotée par niveaux | On ne choisit pas entre tout centraliser et tout laisser local : on centralise, unifie, standardise, fédère ou différencie selon la responsabilité. |
+| Demande / Demand | Le point de départ n'est plus la commande ou le document, mais l'intention à comprendre, décider, promettre, satisfaire et expliquer. |
+| Case | Le Case porte une demande dans la durée : intention, contexte, décisions, événements, ressources, actions et documents. |
+| Plateforme Demand | FLOW devient le lieu de cohérence des demandes, décisions, stock, promesses, événements et exceptions. |
+| Stock Unifié | Le stock devient une capacité d'entreprise, pas une donnée locale extraite d'un système. |
+| Fulfillment Network / Réseau d'exécution | Le réseau d'exécution décrit les nœuds, services, capacités, contraintes et conditions d'usage mobilisables pour satisfaire une demande. |
+| Agreement | L'Agreement porte les conditions et règles de traitement qui permettent de gérer la variation sans multiplier les processus. |
+| Décision / règles / policies | Les décisions doivent être explicites, traçables, gouvernées et capables de faire évoluer le Case. |
+| Vues 360 | Les vues 360 donnent une lecture transverse d'une activité, d'un client, d'un fournisseur, d'une commande ou d'un Case. |
+| Source / projection | Une information peut être source dans un domaine et projection dans un autre ; la question n'est plus “est-ce une Master Data ?”. |
+| Hotspot | Un hotspot est un point de tension à instruire avant de figer une décision ou une architecture cible. |
+| Domaine / responsabilité / capacité / produit | FLOW découpe les problèmes durables avant de parler d'applications, d'organisations ou de fonctionnalités. |
+
+## Convergence pilotée par niveaux
+
+La convergence ne signifie pas que tout doit être identique partout.
+
+FLOW propose une lecture plus fine :
+
+```text
+Centraliser
+    lorsque la cohérence est critique
+
+Unifier
+    lorsque le modèle doit être partagé
+
+Standardiser
+    lorsque la variation n'apporte pas de valeur
+
+Fédérer
+    lorsque plusieurs modèles doivent coexister
+
+Différencier
+    lorsque le business l'exige
+```
+
+Ce concept est important parce qu'il permet de sortir d'un débat trop pauvre : centraliser ou laisser local.
+
+FLOW cherche le bon niveau de commun pour chaque responsabilité.
+
+## Demande / Demand
+
+La demande est le concept central de FLOW.
+
+Elle représente une intention à traiter : commande, retour, litige, SAV, exception, engagement, demande fournisseur ou autre situation à instruire.
+
+Ce que cela change :
+
+- on ne part plus d'abord de la facture, de la commande ou du module applicatif ;
+- on part de ce que l'entreprise doit comprendre, décider, promettre, satisfaire et expliquer ;
+- les canaux et organisations deviennent des contextes de traitement, pas le centre du modèle.
+
+## Case
+
+Le Case est la forme durable de la demande.
+
+Il conserve :
+
+- l'intention initiale ;
+- le contexte ;
+- les parties concernées ;
+- les décisions ;
+- les règles appliquées ;
+- les événements ;
+- les ressources mobilisées ;
+- les actions réalisées ;
+- les documents associés ;
+- l'état courant.
+
+Le Case permet de traiter des transactions longues qui traversent plusieurs processus, applications, domaines ou partenaires.
+
+## Plateforme Demand
+
+FLOW est une plateforme Demand.
+
+Cela signifie qu'elle porte le cœur commun nécessaire pour traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
+
+Une plateforme n'est pas seulement une application centrale.
+
+Elle gouverne des ressources communes, tout en ouvrant des processus contrôlés permettant à d'autres domaines de configurer, développer, étendre ou consommer ses capacités.
+
+## Stock Unifié
+
+Le stock unifié n'est pas seulement une consolidation de données.
+
+C'est une capacité d'entreprise qui doit permettre de répondre à des questions opérationnelles :
+
+- quel stock existe ?
+- quel stock est disponible ?
+- quel stock peut être promis ?
+- quel stock peut être réservé ou alloué ?
+- selon quel contexte business cette disponibilité est-elle vraie ?
+
+Le stock devient une ressource de décision.
+
+## Fulfillment Network / Réseau d'exécution
+
+Le réseau d'exécution ne décrit pas seulement des lieux.
+
+Il décrit ce que le réseau sait faire :
+
+```text
+Nœud logistique
+    ↓
+Capacités disponibles
+    ↓
+Contraintes
+    ↓
+Services exposés
+    ↓
+Conditions d'usage
+```
+
+Ce concept permet à FLOW de raisonner sur la capacité réelle d'exécution, pas seulement sur une liste d'entrepôts, de magasins ou de partenaires.
+
+## Agreement
+
+L'Agreement devient un concept central parce qu'il porte les conditions de traitement.
+
+Il permet de rendre les commandes plus génériques : ce n'est plus la multiplication des types de commandes qui porte toutes les variations métier.
+
+Le contexte, les Agreements et les règles pilotent dynamiquement les variations de processus.
+
+## Décision / règles / policies
+
+Une décision est un choix explicite qui fait progresser une demande.
+
+Elle s'appuie sur des faits, des données et des règles de comportement.
+
+Elle doit pouvoir être comprise, tracée, auditée, simulée et modifiée.
+
+Dans FLOW, le processus émerge des décisions successives prises sur le Case.
+
+## Vues 360
+
+Les vues 360 agrègent des informations autour d'un objet, d'un acteur ou d'une activité.
+
+Elles permettent de lire transversalement ce qui s'est passé : événements, statuts, documents, décisions, exceptions et faits utiles.
+
+Elles ne remplacent pas les domaines sources.
+
+Elles rendent l'activité plus lisible.
+
+## Source / projection
+
+FLOW ne reprend pas la catégorie `Master Data` comme un fourre-tout.
+
+Une information doit être qualifiée par nature et par statut dans un domaine : source ou projection.
+
+La bonne question devient :
+
+> Pour cet usage, cette décision et ce consommateur, quelle source fait foi ?
+
+Cette lecture est essentielle dans un SI distribué.
+
+## Hotspot
+
+Un hotspot est un point de tension à instruire.
+
+Il n'est pas encore une décision stabilisée.
+
+Il concentre souvent plusieurs dimensions : business model, application existante, responsabilité cible, règle, donnée, finance, exécution ou trajectoire de transformation.
+
+Les hotspots évitent de masquer trop tôt les zones difficiles sous une architecture trop propre.
+
+## Domaine / responsabilité / capacité / produit
+
+FLOW ne part pas d'abord des applications ou des organisations.
+
+Il part des problèmes durables de l'entreprise.
+
+```text
+Domaine
+    ↓
+Responsabilité
+    ↓
+Capacité
+    ↓
+Produit
+    ↓
+Fonctionnalité
+```
+
+Cette taxonomie permet de ne pas confondre un outil existant, une équipe, un processus et la responsabilité durable que l'entreprise doit continuer à assumer.
+
+## À retenir
+
+Les concepts FLOW ne sont pas des mots nouveaux pour faire moderne.
+
+Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, et de l'uniformisation vers la convergence pilotée.
