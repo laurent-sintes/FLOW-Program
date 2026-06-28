@@ -411,7 +411,7 @@ La vue BRD montre aussi que BRD possède déjà une manière de représenter son
 
 Le positionnement de Cegid Y2 est particulièrement révélateur : il porte une responsabilité structurante pour les stores et le stock magasin, mais il n'est pas naturellement placé dans un bloc d'urbanisme homogène. C'est un signal concret du travail que FLOW doit mener : passer d'une lecture applicative historique à une lecture par responsabilités comparables.
 
-Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cette décision ouvre immédiatement une question plus large :
+Le point de départ de FLOW est bien le remplacement de SAP et NewStore, mais l'analyse du panorama montre que cet arbitrage ouvre immédiatement une question plus large :
 
 > Quelles capacités transverses faut-il reprendre dans FLOW, et quels systèmes doivent rester contributeurs, consommateurs ou exécutants ?
 
