@@ -44,7 +44,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 - [Vision](vision.md) — synthèse programme structurée.
 - [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 - [Concepts clés du programme FLOW](concepts-cles.md) — les mots et idées qui structurent la vision.
-- [Note de choix stratégique](abstract-comex.md) — formulation orientée arbitrage COMEX.
+- [Note de choix stratégique](note-choix-strategique.md) — formulation orientée arbitrage COMEX.
 
 ## Chaîne de contribution
 
