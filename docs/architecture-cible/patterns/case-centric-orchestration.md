@@ -8,6 +8,8 @@ Le processus n'est plus le point de départ.
 
 Il émerge progressivement des décisions prises sur le Case, au regard du contexte, des événements, des faits observés, des documents et des policies applicables.
 
+![Pattern — Case-centric orchestration](../../assets/images/pattern-case-centric-orchestration.svg)
+
 <div class="flow-conviction">
   <p>Le Case n'exécute pas un processus figé.</p>
   <p>Il pilote une demande qui s'adapte à ce qui se passe réellement.</p>
