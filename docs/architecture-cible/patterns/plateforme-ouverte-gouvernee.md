@@ -6,6 +6,8 @@ Une plateforme ouverte et gouvernée centralise certaines ressources critiques, 
 
 Elle n'est donc ni un monolithe fermé, ni un simple ensemble d'APIs sans gouvernance.
 
+![Pattern — Plateforme ouverte et gouvernée](../../assets/images/pattern-plateforme-ouverte-gouvernee.svg)
+
 <div class="flow-conviction">
   <p>Une plateforme gouverne le commun.</p>
   <p>Une plateforme ouverte permet aux domaines de construire autour du commun sans recréer des silos.</p>
