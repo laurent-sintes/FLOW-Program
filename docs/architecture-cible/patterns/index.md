@@ -6,7 +6,7 @@ Cette section décrit les patterns d'architecture qui structurent la plateforme 
 
 Un pattern n'est pas une technologie.
 
-C'est une manière récurrente d'organiser les responsabilités, les données, les décisions et les interactions entre composants.
+C'est une manière récurrente d'organiser les responsabilités, les données, les décisions métier et les interactions entre composants.
 
 <div class="flow-conviction">
   <p>Les patterns d'architecture donnent le vocabulaire commun.</p>
@@ -15,7 +15,7 @@ C'est une manière récurrente d'organiser les responsabilités, les données, l
 
 ## Pourquoi cette section ?
 
-Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, CQRS, Operational DataHub, Event Sourcing, externalisation des décisions, API conversationnelle, plateforme ouverte et gouvernée.
+Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, CQRS, Operational DataHub, Event Sourcing, externalisation des décisions métier, API conversationnelle, plateforme ouverte et gouvernée.
 
 Sans section dédiée, ces patterns seraient dispersés dans les fiches produit.
 
@@ -37,11 +37,11 @@ Cette section sert donc à :
 | [CQRS et projections](cqrs-et-projections.md) | Séparer actions, événements, modèles de lecture et projections métier. | Stock Unifié, Vues 360, Case Management |
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |
-| [Externalisation des décisions](externalisation-des-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |
+| [Externalisation des décisions métier](externalisation-des-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |
 | [Plateforme ouverte et gouvernée](plateforme-ouverte-gouvernee.md) | Permettre à des domaines externes de configurer, développer et consommer sans recréer des silos. | Plateforme FLOW, tous produits |
 
 ## À retenir
 
 Les patterns ne sont pas des dogmes.
 
-Ils servent à sécuriser les choix structurants de FLOW : où placer la vérité, où placer la décision, où placer la lecture, où placer l'exécution, et comment éviter que la convergence ne recrée un grand monolithe.
+Ils servent à sécuriser les choix structurants de FLOW : où placer la vérité, où placer la décision métier, où placer la lecture, où placer l'exécution, et comment éviter que la convergence ne recrée un grand monolithe.
