@@ -48,7 +48,7 @@ nav:
           - CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
           - Operational DataHub: architecture-cible/patterns/operational-datahub.md
           - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
-          - Externalisation des décisions: architecture-cible/patterns/externalisation-decisions.md
+          - Externalisation des décisions: architecture-cible/patterns/externalisation-des-decisions.md
           - Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
       - Fiches produits FLOW:
           - Repères: architecture-cible/produits/index.md
