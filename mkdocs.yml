@@ -27,11 +27,14 @@ nav:
   - FLOW Foundations: flow-foundations.md
   - Contexte:
       - Repères: contexte/index.md
-      - Panorama BRD / GBM: contexte/panorama-applicatif-brd-gbm.md
+      - Trajectoires SI et convergence: contexte/panorama-applicatif-brd-gbm.md
       - Panorama applicatif BRD: contexte/panorama-brd.md
       - Panorama applicatif GBM: contexte/panorama-gbm.md
   - Hotspots:
       - Repères: hotspots/index.md
+      - SAP ECC Boardriders: hotspots/sap-ecc-boardriders.md
+      - C-LOG et décision de fulfillment: hotspots/c-log-decision-fulfillment.md
+      - Stock temps réel: hotspots/stock-temps-reel.md
       - Convergence B2B / Wholesale: hotspots/convergence-b2b-wholesale.md
   - Insights:
       - Repères: insights/index.md
@@ -87,7 +90,7 @@ nav:
       - Processus de cadrage: methode/processus-de-cadrage.md
   - Transformation:
       - Repères: transformation/index.md
-      - Les changements à conduire: transformation/changements-a-conduire.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
+      - Les changements à conduire: transformation/changements-a-conduire.md
   - Référentiel:
       - Glossaire: glossaire.md
