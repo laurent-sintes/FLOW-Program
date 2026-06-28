@@ -13,7 +13,7 @@ Elle répond d'abord à quelques questions simples :
 - Quel changement de modèle il propose.
 - Ce qui doit devenir commun.
 - Ce qui doit rester différenciant.
-- Comment les décisions futures devront rester cohérentes avec l'ambition.
+- Comment les arbitrages futurs devront rester cohérents avec l'ambition.
 
 Dans FLOW, la vision est particulièrement importante car le programme ne consiste pas seulement à remplacer des applications.
 
@@ -36,7 +36,7 @@ Si la vision devient trop détaillée, elle remplace l'architecture.
 
 Si elle reste trop vague, elle ne guide plus les arbitrages.
 
-Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour orienter, suffisamment stable pour durer, suffisamment concrète pour être testée dans les décisions.
+Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour orienter, suffisamment stable pour durer, suffisamment concrète pour être testée dans les arbitrages.
 
 ## Pages disponibles
 
@@ -48,7 +48,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 
 ## Chaîne de contribution
 
-La vision se situe entre les constats et les décisions d'architecture.
+La vision se situe entre les constats et les arbitrages d'architecture.
 
 ```text
 Contexte / insights
