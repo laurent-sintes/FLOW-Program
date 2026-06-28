@@ -37,7 +37,7 @@ Cette section sert donc à :
 | [CQRS et projections](cqrs-et-projections.md) | Séparer actions, événements, modèles de lecture et projections métier. | Stock Unifié, Vues 360, Case Management |
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |
-| [Externalisation des décisions](externalisation-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |
+| [Externalisation des décisions](externalisation-des-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |
 | [Plateforme ouverte et gouvernée](plateforme-ouverte-gouvernee.md) | Permettre à des domaines externes de configurer, développer et consommer sans recréer des silos. | Plateforme FLOW, tous produits |
 
 ## À retenir
