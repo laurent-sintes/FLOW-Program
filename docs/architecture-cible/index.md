@@ -11,6 +11,7 @@ La Vision explique cette ambition.
 L'architecture cible décrit progressivement comment cette ambition peut se matérialiser :
 
 - les responsabilités qui doivent devenir communes, gouvernées et transverses ;
+- les patterns d'architecture qui structurent la plateforme ;
 - les grands produits de la plateforme FLOW ;
 - le positionnement de FLOW dans les écosystèmes existants ;
 - l'urbanisme fonctionnel cible ;
@@ -19,9 +20,25 @@ L'architecture cible décrit progressivement comment cette ambition peut se mat�
 ## Pages disponibles
 
 - [Overview de la plateforme FLOW](overview-plateforme-flow.md)
+- [Patterns d'architecture](patterns/index.md)
 - [Fiches produits FLOW](produits/index.md)
 - [FLOW dans l’écosystème GBM](flow-dans-ecosysteme-gbm.md)
 - [FLOW dans l’écosystème BRD](flow-dans-ecosysteme-brd.md)
+
+## Patterns d'architecture
+
+Les patterns donnent le vocabulaire commun de l'architecture cible.
+
+Ils expliquent les choix réutilisables avant leur application dans les fiches produits.
+
+- [Case-centric orchestration](patterns/case-centric-orchestration.md)
+- [Event-Driven Architecture](patterns/event-driven-architecture.md)
+- [API conversationnelle](patterns/api-conversationnelle.md)
+- [CQRS et projections](patterns/cqrs-et-projections.md)
+- [Operational DataHub](patterns/operational-datahub.md)
+- [Event Sourcing / Ledger](patterns/event-sourcing-ledger.md)
+- [Externalisation des décisions](patterns/externalisation-decisions.md)
+- [Plateforme ouverte et gouvernée](patterns/plateforme-ouverte-gouvernee.md)
 
 ## Fiches produits initialisées
 
