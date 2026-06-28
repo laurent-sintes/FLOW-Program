@@ -113,6 +113,10 @@ FLOW est une <span class="flow-keyword">plateforme</span> de fédération des de
 
 Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
 
+FLOW réécrit donc la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI : demandes, décisions, stock, promesses, événements, statuts et orchestration transverse.
+
+Il ne réécrit pas tout le SI.
+
 Les premiers produits candidats sont :
 
 - Plateforme de Case Management.
@@ -126,9 +130,11 @@ FLOW n'a pas vocation à absorber tout le SI.
 
 Il doit empêcher que les autonomies locales redeviennent des silos au cœur du traitement de la demande.
 
+Les services existants qui portent une valeur métier spécifique — CBS, SAV Client Sarenza, outils fournisseurs, systèmes logistiques spécialisés — peuvent être réintégrés autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
+
 <div class="flow-conviction">
-  <p>Les consommateurs peuvent rester différenciés.</p>
-  <p>La plateforme doit être décloisonnée.</p>
+  <p>FLOW ne demande pas de tout réécrire.</p>
+  <p>Il demande de rebrancher les services utiles sur une colonne vertébrale commune.</p>
 </div>
 
 ## Points à arbitrer
@@ -167,7 +173,8 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | FLOW cherche à mieux gérer les commandes. | Mieux traiter les demandes, y compris commandes, retours, SAV, exceptions et engagements. |
 | FLOW impose un modèle unique à toutes les marques. | Construire une plateforme commune qui préserve les singularités business utiles. |
 | FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision, le stock et le réseau d'exécution. |
-| FLOW doit absorber tout le SI. | Fédérer les opérations et décisions critiques, tout en laissant les domaines spécialisés jouer leur rôle. |
+| FLOW doit absorber tout le SI. | Réécrire la colonne vertébrale opérationnelle du SI, pas tous ses organes spécialisés. |
+| FLOW oblige à réécrire tous les services existants. | Réintégrer les services utiles autour d'une cohérence commune lorsque leur valeur métier justifie leur maintien. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
 
 ## Aller plus loin
