@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Schéma produit — Socle Case Management</title>
+  <desc id="desc">Le Case comme unité autonome de décision et d'orchestration, alimenté par événements, faits, policies et systèmes d'exécution.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelDark{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillText{font:700 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="760" rx="24"/>
+  <text class="title" x="52" y="58">Socle Case Management</text>
+  <text class="subtitle" x="52" y="86">Le Case porte la demande, le contexte, les décisions et l'histoire ; le workflow n'est qu'un composant d'exécution.</text>
+
+  <rect class="panel" x="50" y="130" width="265" height="210" rx="18"/>
+  <text class="h" x="78" y="166">Canaux &amp; domaines</text>
+  <text class="txt" x="78" y="204">• Engagement client</text>
+  <text class="txt" x="78" y="230">• SAV / retours</text>
+  <text class="txt" x="78" y="256">• Achats / fournisseur</text>
+  <text class="txt" x="78" y="282">• Back-office métier</text>
+  <rect class="pill" x="78" y="300" width="148" height="28" rx="14"/>
+  <text class="pillText" x="94" y="319">Command / Request</text>
+
+  <rect class="panelDark" x="430" y="118" width="420" height="250" rx="24"/>
+  <text class="h" x="540" y="154">Case</text>
+  <text class="small" x="500" y="180">Unité autonome de décision et d'orchestration</text>
+  <rect class="pill" x="465" y="205" width="110" height="30" rx="15"/><text class="pillText" x="487" y="225">Request</text>
+  <rect class="pill" x="590" y="205" width="105" height="30" rx="15"/><text class="pillText" x="622" y="225">Goal</text>
+  <rect class="pill" x="710" y="205" width="105" height="30" rx="15"/><text class="pillText" x="735" y="225">Intent</text>
+  <rect class="pill" x="465" y="250" width="110" height="30" rx="15"/><text class="pillText" x="491" y="270">State</text>
+  <rect class="pill" x="590" y="250" width="105" height="30" rx="15"/><text class="pillText" x="618" y="270">Docs</text>
+  <rect class="pill" x="710" y="250" width="105" height="30" rx="15"/><text class="pillText" x="733" y="270">Views 360</text>
+  <rect class="accent" x="500" y="305" width="280" height="42" rx="18"/>
+  <text class="h" x="550" y="332">Event log + décisions</text>
+
+  <rect class="panel" x="965" y="130" width="265" height="210" rx="18"/>
+  <text class="h" x="996" y="166">Systèmes d'exécution</text>
+  <text class="txt" x="996" y="204">• Stock Unifié</text>
+  <text class="txt" x="996" y="230">• Réseau d'Exécution</text>
+  <text class="txt" x="996" y="256">• Paiement / finance</text>
+  <text class="txt" x="996" y="282">• WMS / POS / partenaires</text>
+  <rect class="pill" x="996" y="300" width="116" height="28" rx="14"/>
+  <text class="pillText" x="1014" y="319">API / Events</text>
+
+  <path class="arrow" d="M315 235 C360 235 378 235 425 235"/>
+  <text class="label" x="337" y="221">crée / agit</text>
+  <path class="arrow" d="M850 235 C895 235 915 235 960 235"/>
+  <text class="label" x="872" y="221">délègue</text>
+  <path class="arrowAccent" d="M965 290 C905 385 770 410 680 370"/>
+  <text class="label" x="805" y="399">événements d'exécution</text>
+
+  <rect class="panel" x="85" y="465" width="1110" height="210" rx="22"/>
+  <text class="h" x="118" y="500">Boucle opérationnelle du Case</text>
+  <text class="small" x="118" y="526">L'exécution de la demande influence la décision et adapte continuellement le plan d'exécution.</text>
+
+  <g transform="translate(130 565)">
+    <circle class="accent" cx="0" cy="0" r="42"/><text class="num" x="-7" y="7">1</text><text class="h" x="-37" y="72">J'observe</text>
+    <path class="arrow" d="M52 0 L140 0"/>
+    <circle class="panelDark" cx="190" cy="0" r="42"/><text class="num" x="183" y="7">2</text><text class="h" x="143" y="72">Je comprends</text>
+    <path class="arrow" d="M242 0 L330 0"/>
+    <circle class="accent" cx="380" cy="0" r="42"/><text class="num" x="373" y="7">3</text><text class="h" x="343" y="72">Je décide</text>
+    <path class="arrow" d="M432 0 L520 0"/>
+    <circle class="panelDark" cx="570" cy="0" r="42"/><text class="num" x="563" y="7">4</text><text class="h" x="528" y="72">Je planifie</text>
+    <path class="arrow" d="M622 0 L710 0"/>
+    <circle class="accent" cx="760" cy="0" r="42"/><text class="num" x="753" y="7">5</text><text class="h" x="729" y="72">J'agis</text>
+    <path class="arrow" d="M812 0 L900 0"/>
+    <circle class="panelDark" cx="950" cy="0" r="42"/><text class="num" x="943" y="7">6</text><text class="h" x="916" y="72">J'apprends</text>
+  </g>
+
+  <rect class="accent" x="430" y="404" width="420" height="42" rx="16"/>
+  <text class="h" x="487" y="431">Le processus émerge des décisions prises sur le Case</text>
+  <path class="arrowAccent dash" d="M640 404 C640 380 640 380 640 368"/>
+</svg>
