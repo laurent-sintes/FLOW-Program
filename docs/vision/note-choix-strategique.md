@@ -5,9 +5,9 @@
   <p>C'est le choix d'un modèle de convergence pour le groupe.</p>
 </div>
 
-## 1. La décision à prendre
+## 1. L'arbitrage à rendre
 
-Beaumanoir doit choisir son modèle de convergence.
+Beaumanoir doit arbitrer son modèle de convergence.
 
 Pas seulement une solution IT.
 
@@ -29,7 +29,7 @@ Deux mauvaises réponses sont possibles.
 | Option | Risque |
 | --- | --- |
 | Tout centraliser | Rigidifier les marques, ralentir les métiers, recréer un grand monolithe. |
-| Tout laisser autonome | Maintenir les silos, les incohérences de stock, les décisions dispersées et les flux projet. |
+| Tout laisser autonome | Maintenir les silos, les incohérences de stock, les décisions opérationnelles dispersées et les flux projet. |
 
 FLOW propose une troisième voie.
 
@@ -43,7 +43,7 @@ FLOW concentre les responsabilités critiques qui doivent rester cohérentes à 
 - promesse ;
 - stock ;
 - allocation ;
-- décision ;
+- décisions métier ;
 - événements ;
 - contrats de données.
 
@@ -92,7 +92,7 @@ FLOW change la manière de piloter le SI.
 | Applications et processus | Responsabilités et capacités |
 | Commandes par canal | Demandes transverses |
 | Stock par système | Stock unifié exploitable |
-| Règles cachées dans les processus | Décisions gouvernées |
+| Règles cachées dans les processus | Décisions métier gouvernées |
 | Flux projet | Contrats de données |
 | Convergence = uniformisation | Convergence = bon niveau de commun |
 
@@ -104,13 +104,13 @@ On part de la demande à satisfaire.
 
 ## 6. Les arbitrages COMEX
 
-La vision FLOW doit être sécurisée par quelques décisions structurantes.
+La vision FLOW doit être sécurisée par quelques arbitrages structurants.
 
 - Jusqu'où centraliser la demande et le stock ?
 - Quelle autonomie conserver aux marques, canaux et domaines spécialisés ?
 - Quelle politique de promesse client adopter : premier arrivé, premier servi, ou priorisation commerciale ?
 - Quels systèmes sortir, conserver, encapsuler ou réintégrer ?
-- Quel niveau d'investissement accepter pour rendre le stock, les événements et les décisions gouvernables ?
+- Quel niveau d'investissement accepter pour rendre le stock, les événements et les décisions métier gouvernables ?
 - Quel catalogue produit FLOW doit-il consommer pour gérer produits conçus et produits importés ?
 - Quelles responsabilités du module Négoce StoreLand doivent entrer dans FLOW ?
 - Quel modèle de gouvernance produit pour piloter FLOW dans la durée ?
