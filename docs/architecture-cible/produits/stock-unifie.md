@@ -13,6 +13,10 @@ Il doit permettre de calculer une disponibilité contextualisée, de réserver, 
   <p>C'est une capacité d'entreprise pour promettre, réserver, allouer et expliquer.</p>
 </div>
 
+## Schéma produit
+
+![Schéma produit — Stock Unifié](../../assets/images/produit-stock-unifie.svg)
+
 ## Pattern d'architecture
 
 Le Stock Unifié est candidat à un pattern d'<span class="flow-keyword">Operational DataHub</span>.
