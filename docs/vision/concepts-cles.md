@@ -29,6 +29,11 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 </div>
 
 <div class="flow-conviction">
+  <p>FLOW ne doit pas seulement remplacer des applications.</p>
+  <p>Il doit remplacer la logique de tuyauterie projet par une logique de contrats de données gouvernés.</p>
+</div>
+
+<div class="flow-conviction">
   <p>FLOW configure des capacités d'action.</p>
   <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
 </div>
@@ -43,6 +48,7 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW devient le lieu de cohérence des demandes, décisions, stock, promesses, événements et exceptions. |
 | <span class="flow-keyword">Colonne vertébrale opérationnelle</span> | FLOW porte les responsabilités qui doivent rester cohérentes — demandes, décisions, statuts, événements, stock, promesses et orchestration — sans réécrire tout le SI. |
 | <span class="flow-keyword">Capacités d'intégration</span> | Un service réintégré autour de FLOW doit pouvoir exposer des APIs, publier des événements, partager des statuts, corréler ses objets et participer à la réconciliation. |
+| <span class="flow-keyword">Contrat de données</span> | Une donnée en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, pas une donnée locale extraite d'un système. |
 | <span class="flow-keyword">Fulfillment Network</span> / <span class="flow-keyword">Réseau d'exécution</span> | Le réseau d'exécution décrit les nœuds, services, capacités, contraintes et conditions d'usage mobilisables pour satisfaire une demande. |
 | <span class="flow-keyword">Agreement</span> | L'Agreement porte les conditions et règles de traitement qui permettent de gérer la variation sans multiplier les processus. |
@@ -139,6 +145,26 @@ Cela suppose qu'il puisse interagir proprement avec FLOW.
 Les <span class="flow-keyword">capacités d'intégration</span> minimales à étudier sont notamment : APIs contractuelles, événements métier, statuts, documents, identifiants de corrélation, supervision, reprise et réconciliation.
 
 Sans ces capacités, on ne réintègre pas vraiment l'outil : on conserve un silo.
+
+## Contrat de données
+
+Un <span class="flow-keyword">contrat de données</span> décrit la manière dont une information circule durablement entre une source, des consommateurs et une responsabilité métier.
+
+Il précise notamment :
+
+- l'information publiée ;
+- la source responsable ;
+- les consommateurs connus ;
+- le mode d'échange ;
+- la granularité ;
+- la fraîcheur attendue ;
+- la qualité attendue ;
+- les règles de supervision ;
+- les mécanismes de reprise et de réconciliation.
+
+Ce concept permet de sortir d'une logique de flux projet point-à-point.
+
+Il prolonge l'intuition du demi-flux : distinguer la publication d'une information de sa consommation.
 
 ## Stock Unifié
 
@@ -248,4 +274,4 @@ Cette taxonomie permet de ne pas confondre un outil existant, une équipe, un pr
 
 Les concepts FLOW ne sont pas des mots nouveaux pour faire moderne.
 
-Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, et de l'uniformisation vers la convergence pilotée.
+Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, du flux projet vers le contrat de données, et de l'uniformisation vers la convergence pilotée.
