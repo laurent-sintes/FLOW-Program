@@ -37,7 +37,8 @@ nav:
       - Stock temps réel: hotspots/stock-temps-reel.md
       - Capacités d'intégration des systèmes réintégrés: hotspots/capacites-integration-systemes-reintegres.md
       - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
-      - Convergence B2B / Wholesale: hotspots/convergence-b2b-wholesale.md
+      - Promesse commerciale Wholesale: hotspots/convergence-b2b-wholesale.md
+      - Module Négoce StoreLand: hotspots/module-negoce-storeland.md
   - Insights:
       - Repères: insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
