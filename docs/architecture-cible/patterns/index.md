@@ -15,7 +15,7 @@ C'est une manière récurrente d'organiser les responsabilités, les données, l
 
 ## Pourquoi cette section ?
 
-Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, CQRS, Operational DataHub, Event Sourcing, externalisation des décisions, plateforme ouverte et gouvernée.
+Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, CQRS, Operational DataHub, Event Sourcing, externalisation des décisions, API conversationnelle, plateforme ouverte et gouvernée.
 
 Sans section dédiée, ces patterns seraient dispersés dans les fiches produit.
 
@@ -33,6 +33,7 @@ Cette section sert donc à :
 | --- | --- | --- |
 | [Case-centric orchestration](case-centric-orchestration.md) | Faire émerger le processus à partir de la demande, des faits et des décisions. | Socle Case Management |
 | [Event-Driven Architecture](event-driven-architecture.md) | Faire circuler les faits opérationnels entre systèmes sans dépendre de flux projet point à point. | Case Management, Stock Unifié, données en transit |
+| [API conversationnelle](api-conversationnelle.md) | Maintenir un dialogue corrélé, asynchrone et observable entre domaines, Cases et systèmes contributeurs. | Case Management, Stock Unifié, Supply Service Registry |
 | [CQRS et projections](cqrs-et-projections.md) | Séparer actions, événements, modèles de lecture et projections métier. | Stock Unifié, Vues 360, Case Management |
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |
