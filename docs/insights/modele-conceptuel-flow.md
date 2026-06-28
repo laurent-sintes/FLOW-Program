@@ -18,7 +18,7 @@ Cadre d'engagement applicable.
 Demande adressée à l'entreprise.
 
 ## Decision
-Arbitrage permettant de satisfaire ou non la demande.
+Décision métier permettant de satisfaire, refuser, prioriser, allouer, promettre ou orienter la demande.
 
 ## Execution
 Réalisation effective de la décision.
