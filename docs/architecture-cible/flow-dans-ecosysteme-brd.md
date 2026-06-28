@@ -25,6 +25,8 @@ FLOW ne remplace pas tout le SI BRD.
 
 FLOW se positionne comme la plateforme Demand qui reprend les responsabilités transverses aujourd'hui distribuées entre SAP, NewStore et plusieurs systèmes périphériques.
 
+Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI BRD : il donne une cohérence commune aux demandes, statuts, décisions, événements, stock et projections, sans déplacer tout BRD dans FLOW.
+
 Le schéma représente les applications satellites qui peuvent rester autour de FLOW.
 
 Il ne représente pas SAP et NewStore comme des satellites durables, car ces deux socles sont dans la trajectoire de retrait ou de remplacement.
@@ -76,6 +78,8 @@ Elles peuvent rester :
 - sources d'événements ;
 - systèmes d'exécution ;
 - domaines spécialisés conservant leur autonomie.
+
+Cette conservation suppose toutefois que ces applications soient réintégrables : APIs, événements, statuts, documents, identifiants de corrélation et mécanismes de réconciliation doivent être clarifiés pour éviter de conserver des silos branchés superficiellement.
 
 Exemples :
 
@@ -182,6 +186,8 @@ Et ce qui reste autour :
 FLOW devient le point de cohérence Demand dans l'univers BRD.
 
 Il ne remplace pas tout le paysage applicatif.
+
+La question n'est donc pas seulement de savoir quelles applications restent, mais lesquelles peuvent se brancher proprement sur la colonne vertébrale FLOW.
 
 Il retire progressivement SAP et NewStore de la cible, mais en découpant leurs responsabilités : certaines relèvent de FLOW, certaines relèvent de Finance, certaines relèvent de Supply, et certaines restent portées par des systèmes spécialisés.
 
