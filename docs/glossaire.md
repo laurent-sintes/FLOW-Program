@@ -9,7 +9,9 @@ Cette section transforme progressivement le glossaire en point d'entrée vers le
 | Concept | Pages de référence |
 | --- | --- |
 | Accord / Agreement | [Concepts clés](vision/concepts-cles.md#agreement) · [Agreement comme pivot](insights/agreement-comme-pivot.md) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#variation-metier-maitriser-sans-rigidifier) |
+| Capacités d'intégration des systèmes réintégrés | [Concepts clés](vision/concepts-cles.md#capacites-dintegration-des-systemes-reintegres) · [Hotspot dédié](hotspots/capacites-integration-systemes-reintegres.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md#colonne-vertebrale-du-si) |
 | Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#la-demande-lunite-autonome-de-la-decision-et-de-lorchestration) |
+| Colonne vertébrale opérationnelle | [Concepts clés](vision/concepts-cles.md#colonne-vertebrale-operationnelle) · [Vision synthétique](vision/vision-programme-flow.md#ce-que-porte-la-plateforme) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md#colonne-vertebrale-reintegrer-sans-tout-reecrire) |
 | Convergence pilotée par niveaux | [Vision synthétique](vision/vision-programme-flow.md#ambition-converger-sans-uniformiser) · [Ambition](vision/vision-detaillee/1-ambition-et-contexte.md#opportunite-converger-sans-basculer-dans-un-modele-unique) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande--demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) |
 | Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand--supply-depasser-achat--vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
@@ -54,6 +56,10 @@ Périmètre issu de Boardriders dans le programme FLOW. Son SI est lu comme hist
 
 Ce que l’entreprise doit durablement être capable de faire pour assumer une responsabilité. Une capacité peut être mise en œuvre par plusieurs produits, équipes ou solutions.
 
+### Capacités d'intégration des systèmes réintégrés
+
+Ensemble des capacités techniques nécessaires pour brancher un service existant sur FLOW sans recréer un silo : APIs contractuelles, événements métier, statuts, documents, identifiants de corrélation, supervision, reprise et réconciliation.
+
 ### Case
 
 Objet métier central qui représente une demande dans la durée. Il conserve son intention, son contexte, ses engagements, les décisions qui le font progresser, les événements, les actions, les ressources et les documents associés.
@@ -81,6 +87,10 @@ Composant d’intégration et d’exécution logistique observé dans le paysage
 ### Cohérence opérationnelle
 
 Propriété selon laquelle les acteurs disposent d’informations suffisamment alignées pour prendre et exécuter des décisions fiables. Elle ne suppose pas nécessairement un temps réel absolu.
+
+### Colonne vertébrale opérationnelle
+
+Responsabilités communes que FLOW porte pour faire fonctionner le SI comme un ensemble cohérent : demandes, décisions, statuts, événements, stock, promesses, allocations et orchestration transverse. La colonne vertébrale ne remplace pas tous les services spécialisés ; elle leur donne un point de cohérence commun.
 
 ### Command
 
