@@ -1,15 +1,15 @@
 # Solution : une plateforme pour fédérer les demandes, opérations et décisions
 
+<div class="flow-conviction">
+  <p>FLOW ne déplace pas tout dans une nouvelle application centrale.</p>
+  <p>FLOW porte ce qui doit rester cohérent, et ne porte pas ce qui relève de domaines spécialisés.</p>
+</div>
+
 FLOW est une <span class="flow-keyword">plateforme</span> de fédération des demandes de l'entreprise.
 
 Elle n'a pas vocation à remplacer tout le SI.
 
 Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
-
-<div class="flow-conviction">
-  <p>FLOW ne déplace pas tout dans une nouvelle application centrale.</p>
-  <p>FLOW porte ce qui doit rester cohérent, et ne porte pas ce qui relève de domaines spécialisés.</p>
-</div>
 
 ## Lecture synthétique : ce que FLOW porte, ce que FLOW ne porte pas
 
