@@ -115,19 +115,25 @@
 }
 
 .flow-conviction {
-  border-bottom: 1px solid #d9e2e7;
-  border-top: 1px solid #d9e2e7;
-  color: #0b3954;
-  font-size: 1.12rem;
-  font-weight: 650;
+  background: #f8fbfa;
+  border: 1px solid #c7e4de;
+  border-left: 0.22rem solid #236159;
+  border-radius: 0.35rem;
+  color: #1e293b;
+  font-size: 1em;
+  font-weight: 500;
   line-height: 1.55;
-  margin: 1.8rem 0;
-  padding: 1.05rem 0.35rem;
-  text-align: center;
+  margin: 1.1rem 0;
+  padding: 0.55rem 0.8rem;
 }
 
 .flow-conviction p {
-  margin: 0.15rem 0;
+  margin: 0.1rem 0;
+}
+
+.flow-conviction strong,
+.flow-conviction em {
+  color: #0b3954;
 }
 
 .flow-keyword {
@@ -231,10 +237,5 @@
     margin-left: -0.4rem;
     margin-right: -0.4rem;
     padding: 1.35rem;
-  }
-
-  .flow-conviction {
-    font-size: 1rem;
-    text-align: left;
   }
 }
