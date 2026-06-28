@@ -12,13 +12,19 @@ Elle vient du lien entre les problèmes observés et les capacités que la plate
 | Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Variations métier portées par des processus ou applications spécifiques | <span class="flow-keyword">Agreements</span>, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
 | Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
+| Décisions difficiles à expliquer entre applications | Traçabilité des règles, décisions, événements et statuts du Case | Capacité à expliquer les arbitrages métier, diagnostiquer les écarts et renforcer la confiance opérationnelle |
+| Processus amont fournisseurs et achats difficiles à relier au fulfillment | Product Agreement Catalog, Cases achat, documents fournisseur, événements Supply | Meilleure continuité entre engagement fournisseur, achat, réception, disponibilité et exécution |
+| Documents financiers et opérationnels produits tardivement ou difficilement réconciliables | Cases, événements, faits économiques et documents associés | Meilleure intégration avec Finance, auditabilité renforcée et réduction des écarts de justification |
 | Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
 | Surstock et promesse client difficiles à équilibrer | Allocation, priorisation, stock disponible contextualisé, réseau d'exécution | Réduction du surstock sans dégrader la garantie de livraison |
+| Coûts applicatifs et licences difficiles à maîtriser | Rationalisation des responsabilités critiques, retrait progressif des socles remplacés, réintégration sélective des services utiles | Meilleure maîtrise du portefeuille applicatif et des coûts IT dans la durée |
+| Roadmaps projet dispersées et vision IT trop court terme | Découpage par responsabilités, capacités et produits, contrats de données gouvernés | Capacité à construire des roadmaps IT consolidées à 3/4 ans |
 
-La valeur attendue est donc double :
+La valeur attendue est donc triple :
 
 - Améliorer la cohérence opérationnelle du groupe.
 - Préserver la capacité des marques et canaux à se différencier lorsque cela crée de la valeur.
+- Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les données, les coûts et les trajectoires.
 
 ## Promesse groupe : soutenir la croissance et la convergence
 
@@ -99,12 +105,15 @@ FLOW réussira si le groupe constate progressivement :
 - Une meilleure cohérence des promesses et engagements.
 - Une vision plus fiable des ressources disponibles.
 - Une meilleure capacité à traiter les exceptions.
+- Une meilleure capacité à expliquer les décisions, arbitrages et changements de statut.
 - Une intégration plus rapide de nouveaux canaux, marques ou business models.
+- Une continuité plus claire entre achat, fournisseur, réception, stock disponible et fulfillment.
 - Une distinction plus claire entre ce qui est source et ce qui est projection.
 - Des flux critiques transformés en contrats de données gouvernés.
 - Une meilleure visibilité sur les consommateurs, la fraîcheur et la qualité des données échangées.
 - Des expériences métier différenciées, mais appuyées sur des capacités communes.
 - Des variations de traitement absorbées par les règles plutôt que par la prolifération de processus.
+- Des roadmaps IT plus consolidées, au-delà des seules roadmaps projet.
 - Une convergence vécue comme un choix métier, pas comme une contrainte IT.
 
 ## À retenir : ne pas se tromper de promesse
@@ -118,6 +127,7 @@ FLOW réussira si le groupe constate progressivement :
 | FLOW doit absorber tout le SI. | Fédérer les opérations et décisions critiques, tout en laissant les domaines spécialisés jouer leur rôle. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
 | FLOW se contente de refaire des flux entre applications. | Gouverner les données en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
+| FLOW promet seulement une modernisation technique. | Produire une convergence mesurable : opérationnelle, métier, IT, financière et documentaire. |
 
 ---
 
