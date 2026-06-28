@@ -6,7 +6,7 @@ Elle ne décrit pas encore la cible. Elle documente le terrain de départ : les 
 
 ## Pages
 
-- [Trajectoires SI et contexte de convergence](panorama-applicatif-brd-gbm.md)
+- [Trajectoires SI et contexte de convergence](trajectoires-si-convergence.md)
 - [Panorama applicatif BRD](panorama-brd.md)
 - [Panorama applicatif GBM](panorama-gbm.md)
 
