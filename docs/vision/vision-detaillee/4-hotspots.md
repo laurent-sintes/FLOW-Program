@@ -2,7 +2,7 @@
 
 <div class="flow-conviction">
   <p>Les hotspots ne contredisent pas la vision.</p>
-  <p>Ils indiquent les endroits où la vision doit devenir une décision robuste.</p>
+  <p>Ils indiquent les endroits où la vision doit devenir un arbitrage robuste.</p>
 </div>
 
 La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
@@ -11,13 +11,13 @@ Elle doit aussi traiter explicitement les points durs du programme.
 
 Un <span class="flow-keyword">hotspot</span> n'est pas un problème isolé.
 
-C'est un point où plusieurs dimensions se croisent : trajectoire de migration, décision métier, intégration technique, donnée, finance, gouvernance ou transformation.
+C'est un point où plusieurs dimensions se croisent : trajectoire de migration, arbitrage métier, intégration technique, donnée, finance, gouvernance ou transformation.
 
 ## Vue synthétique des familles de risques
 
 <div class="flow-conviction">
   <p>Un hotspot n'est pas une difficulté à subir.</p>
-  <p>C'est une décision structurante à rendre explicite.</p>
+  <p>C'est un arbitrage structurant à rendre explicite.</p>
 </div>
 
 | Famille de risque | Hotspots concernés | Question structurante |
@@ -31,7 +31,7 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 
 Cette lecture permet de ne pas voir les hotspots comme une simple liste de sujets.
 
-Elle montre les catégories de décisions à sécuriser pour rendre FLOW opérable.
+Elle montre les catégories d'arbitrages à sécuriser pour rendre FLOW opérable.
 
 ## Risque de trajectoire : SAP ECC Boardriders
 
@@ -130,7 +130,7 @@ Ce hotspot impose de clarifier :
 - Les identifiants de corrélation.
 - Les documents à produire, consommer ou référencer.
 - Les mécanismes de reprise, rejeu, supervision et réconciliation.
-- Les critères permettant de décider : conserver, encapsuler, faire évoluer, remplacer ou rapatrier certaines responsabilités dans FLOW.
+- Les critères permettant d'arbitrer : conserver, encapsuler, faire évoluer, remplacer ou rapatrier certaines responsabilités dans FLOW.
 
 Le hotspot Stock temps réel est un cas critique de cette problématique, mais il ne doit pas porter tout le sujet.
 
@@ -232,7 +232,7 @@ Ce hotspot impose de clarifier :
 
 <div class="flow-conviction">
   <p>La synthèse des hotspots n'est pas une liste de risques.</p>
-  <p>C'est la carte des décisions qui conditionnent la crédibilité de FLOW.</p>
+  <p>C'est la carte des arbitrages qui conditionnent la crédibilité de FLOW.</p>
 </div>
 
 | Hotspot | Famille de risque | Ce que FLOW doit clarifier |
@@ -249,14 +249,14 @@ Ce hotspot impose de clarifier :
 
 <div class="flow-conviction">
   <p>La valeur de cette page n'est pas de lister les difficultés.</p>
-  <p>Elle est de montrer les décisions à sécuriser pour que FLOW tienne réellement sa promesse.</p>
+  <p>Elle est de montrer les arbitrages à sécuriser pour que FLOW tienne réellement sa promesse.</p>
 </div>
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
-FLOW est aussi un cadre de décision pour traiter les tensions réelles de convergence du groupe.
+FLOW est aussi un cadre d'arbitrage pour traiter les tensions réelles de convergence du groupe.
 
-Ils obligent à rendre explicites les choix qui conditionnent la crédibilité de la plateforme : trajectoire, décision, intégration, données, promesse et gouvernance.
+Ils obligent à rendre explicites les choix qui conditionnent la crédibilité de la plateforme : trajectoire, gouvernance des décisions opérationnelles, intégration, données, promesse et gouvernance.
 
 ---
 
