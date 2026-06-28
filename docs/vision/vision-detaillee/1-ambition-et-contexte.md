@@ -1,4 +1,4 @@
-# Ambition et contexte : converger sans uniformiser
+# Ambition : converger
 
 Le Groupe Beaumanoir doit réussir une convergence complexe.
 
