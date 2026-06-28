@@ -48,6 +48,35 @@ Ouvre des processus contrôlés de configuration et d'extension
 
 C'est ce double mouvement qui permet à FLOW d'être à la fois centralisée là où la cohérence est critique, et ouverte là où les domaines doivent conserver leur capacité d'action.
 
+## Colonne vertébrale : réintégrer sans tout réécrire
+
+FLOW doit être compris comme la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI, pas comme la totalité du SI.
+
+Il donne une structure commune aux demandes, décisions, statuts, événements, promesses, stocks et besoins d'exécution.
+
+Mais il ne remplace pas par principe tous les services, applications ou domaines spécialisés existants.
+
+Les services existants qui portent une valeur métier spécifique doivent pouvoir être réintégrés autour de FLOW lorsqu'ils restent pertinents.
+
+C'est le cas, par exemple, de CBS pour certains processus fournisseur spécialisés ou du SAV Client développé par Sarenza pour certaines demandes de service client.
+
+Ces services peuvent rester :
+
+- consommateurs de FLOW ;
+- contributeurs de faits, documents ou événements ;
+- sources spécialisées ;
+- extensions métier ;
+- domaines autonomes connectés à la colonne vertébrale Demand.
+
+L'enjeu n'est donc pas de tout réécrire.
+
+L'enjeu est d'éviter que chaque application reconstruise sa propre logique de demande, de statut, de stock, d'événement ou de décision.
+
+<div class="flow-conviction">
+  <p>FLOW ne remplace pas tous les organes du SI.</p>
+  <p>FLOW reconstruit la colonne vertébrale qui leur permet de fonctionner ensemble.</p>
+</div>
+
 ## Composants structurants
 
 Ses composants structurants sont :
