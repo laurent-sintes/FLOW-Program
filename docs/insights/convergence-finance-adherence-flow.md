@@ -58,15 +58,15 @@ SAP FI/CO
 
 comme socle commun de facturation B2B, de comptabilité et de contrôle de gestion.
 
-## Décision structurante
+## Arbitrage structurant
 
-Le programme SAP Finance / migration S/4HANA, hors périmètre FLOW, a choisi de conserver SAP SD/FI/CO comme socle de :
+Le programme SAP Finance / migration S/4HANA, hors périmètre FLOW, a arbitré la conservation de SAP SD/FI/CO comme socle de :
 
 - facturation B2B ;
 - comptabilité ;
 - contrôle de gestion.
 
-Cette trajectoire constitue une décision structurante déjà engagée.
+Cette trajectoire constitue un arbitrage structurant déjà engagé.
 
 ## Insight
 
