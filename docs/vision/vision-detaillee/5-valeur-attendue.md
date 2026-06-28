@@ -2,14 +2,14 @@
 
 ## Idée clé
 
-La valeur de FLOW ne vient pas d'une promesse générique de modernisation.
-
-Elle vient du lien entre les problèmes observés et les capacités que la plateforme doit rendre possibles.
-
 <div class="flow-conviction">
   <p>La valeur de FLOW n'est pas de moderniser le SI.</p>
   <p>Elle est de rendre la convergence opérable, gouvernable et mesurable.</p>
 </div>
+
+La valeur de FLOW ne vient pas d'une promesse générique de modernisation.
+
+Elle vient du lien entre les problèmes observés et les capacités que la plateforme doit rendre possibles.
 
 La valeur attendue est donc triple :
 
@@ -18,6 +18,11 @@ La valeur attendue est donc triple :
 - Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les données, les coûts et les trajectoires.
 
 ## Vue synthétique des bénéfices
+
+<div class="flow-conviction">
+  <p>FLOW ne produit pas une seule valeur.</p>
+  <p>Il rend la convergence exécutable dans les opérations, acceptable pour les métiers, gouvernable pour l'IT et traçable pour la finance.</p>
+</div>
 
 | Famille de valeur | Problème traité | Valeur attendue |
 | --- | --- | --- |
@@ -31,6 +36,11 @@ Cette lecture évite de réduire FLOW à un bénéfice unique.
 FLOW doit créer de la valeur parce qu'il rend la convergence exécutable dans les opérations, acceptable pour les métiers, gouvernable pour l'IT et traçable pour la finance.
 
 ## Valeur opérationnelle : fiabiliser les demandes, le stock et l'exécution
+
+<div class="flow-conviction">
+  <p>La valeur opérationnelle de FLOW est de mieux promettre, mieux arbitrer et mieux expliquer.</p>
+  <p>Elle vient de la cohérence retrouvée entre demandes, stock, décisions, événements et exécution.</p>
+</div>
 
 FLOW doit d'abord améliorer la cohérence opérationnelle du groupe.
 
@@ -50,6 +60,11 @@ La valeur opérationnelle se mesure donc à la capacité du groupe à prendre de
 
 ## Valeur métier : converger sans effacer les singularités utiles
 
+<div class="flow-conviction">
+  <p>Les consommateurs construisent les expériences.</p>
+  <p>FLOW fournit les capacités transverses.</p>
+</div>
+
 FLOW ne cherche pas à imposer un modèle unique à toutes les marques, tous les canaux et tous les business models.
 
 La valeur métier vient du fait que les expériences peuvent rester différenciées, tandis que les responsabilités critiques sont portées par une plateforme commune.
@@ -61,14 +76,14 @@ La valeur métier vient du fait que les expériences peuvent rester différenci�
 | Demandes de service, retours, litiges et SAV traités comme des cas particuliers | Case Management et logique Demand élargie | Meilleure continuité client : une demande reste une demande, même lorsqu'elle n'est pas une commande |
 | Processus amont fournisseurs et achats difficiles à relier au fulfillment | Product Agreement Catalog, Cases achat, documents fournisseur, événements Supply | Meilleure continuité entre engagement fournisseur, achat, réception, disponibilité et exécution |
 
-<div class="flow-conviction">
-  <p>Les consommateurs construisent les expériences.</p>
-  <p>FLOW fournit les capacités transverses.</p>
-</div>
-
 La convergence devient alors un choix métier piloté par niveaux : centraliser, unifier, standardiser, fédérer ou différencier selon la valeur recherchée.
 
 ## Valeur IT : gouverner les responsabilités, les données et les trajectoires
+
+<div class="flow-conviction">
+  <p>Moins de flux opportunistes.</p>
+  <p>Plus de capacités, de contrats et de trajectoires gouvernées.</p>
+</div>
 
 Pour l'IT, FLOW déplace la discussion.
 
@@ -110,12 +125,12 @@ FLOW doit aider à passer d'une logique de tuyauterie projet à une logique de c
 
 Cette promesse soutient directement la construction de roadmaps IT consolidées au-delà des roadmaps projet.
 
-<div class="flow-conviction">
-  <p>Moins de flux opportunistes.</p>
-  <p>Plus de capacités, de contrats et de trajectoires gouvernées.</p>
-</div>
-
 ## Valeur finance et gouvernance : rendre les faits auditables
+
+<div class="flow-conviction">
+  <p>FLOW ne remplace pas Finance.</p>
+  <p>Il rend les opérations suffisamment explicables pour que Finance s'appuie sur des faits fiables, traçables et réconciliables.</p>
+</div>
 
 FLOW ne remplace pas Finance.
 
@@ -132,6 +147,11 @@ La valeur de FLOW n'est donc pas de devenir un outil financier.
 Elle est de rendre les opérations suffisamment explicables pour que Finance puisse s'appuyer sur des faits fiables, traçables et réconciliables.
 
 ## Signes de réussite : ce qui doit devenir observable
+
+<div class="flow-conviction">
+  <p>La valeur de FLOW doit se voir dans les faits.</p>
+  <p>Si la convergence fonctionne, certaines tensions doivent devenir mesurables, pilotables ou disparaître.</p>
+</div>
 
 FLOW réussira si le groupe constate progressivement :
 
@@ -151,6 +171,11 @@ FLOW réussira si le groupe constate progressivement :
 - Une convergence vécue comme un choix métier, pas comme une contrainte IT.
 
 ## À retenir : ne pas se tromper de promesse
+
+<div class="flow-conviction">
+  <p>La promesse de FLOW n'est pas de remplacer plus proprement l'existant.</p>
+  <p>Elle est de faire converger ce qui doit l'être, sans perdre ce qui doit rester différenciant.</p>
+</div>
 
 | Ne pas imaginer que... | FLOW vise plutôt à... |
 | --- | --- |
