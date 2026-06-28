@@ -1,17 +1,18 @@
 <div class="flow-hero">
   <h1>Programme FLOW</h1>
   <p>Référentiel documentaire et mémoire vivante du programme FLOW.</p>
-  <p>FLOW est une plateforme Demand en construction : elle vise à traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, sans uniformiser ce qui différencie les marques, les canaux et les business models.</p>
+  <p>Le Groupe Beaumanoir doit réussir une convergence complexe : créer du commun entre marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.</p>
+  <p>FLOW explore une réponse fédérée : une plateforme Demand capable de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, sans imposer une uniformisation brutale.</p>
 </div>
 
 ## Explorer FLOW
 
-<p class="flow-section-intro">Le référentiel se lit comme un chemin : du contexte aux constats, puis à la vision, aux principes, à l'architecture cible et à la transformation.</p>
+<p class="flow-section-intro">Le référentiel se lit comme un chemin : partir du contexte et des tensions de convergence, formuler la vision, puis seulement stabiliser les principes, l'architecture cible et la transformation.</p>
 
 <div class="flow-home-grid">
   <a class="flow-card" href="flow-foundations/">
     <strong>FLOW Foundations</strong>
-    <span>Le point d’entrée pour comprendre l’ambition, les constats et le vocabulaire du programme.</span>
+    <span>Le point d’entrée pour comprendre pourquoi FLOW existe, quels problèmes il adresse et quel vocabulaire il installe.</span>
   </a>
   <a class="flow-card flow-card--context" href="contexte/">
     <strong>Contexte</strong>
@@ -23,7 +24,7 @@
   </a>
   <a class="flow-card flow-card--vision" href="architecture-entreprise/vision/">
     <strong>Vision</strong>
-    <span>La cible commune : passer de la commande à la demande, du document au Case, de l'ERP/OMS fragmenté à une plateforme Demand.</span>
+    <span>La réponse cible : réussir la convergence sans monolithe, en déplaçant le centre de gravité du SI vers la demande.</span>
   </a>
   <a class="flow-card flow-card--principles" href="architecture-entreprise/principes-directeurs/">
     <strong>Principes directeurs</strong>
@@ -35,7 +36,7 @@
   </a>
   <a class="flow-card" href="hotspots/">
     <strong>Hotspots</strong>
-    <span>Les sujets de tension à instruire, comme la convergence B2B / Wholesale.</span>
+    <span>Les points durs de convergence à instruire explicitement.</span>
   </a>
   <a class="flow-card flow-card--method" href="methode/">
     <strong>Méthodologie Projet</strong>
