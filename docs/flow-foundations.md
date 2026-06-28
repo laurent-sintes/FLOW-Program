@@ -9,8 +9,9 @@ Il résume les constats, convictions, concepts et principes qui structurent aujo
 Son objectif est de permettre à un nouvel arrivant — humain ou IA — de comprendre rapidement :
 
 - pourquoi FLOW existe ;
-- quels problèmes il cherche à résoudre ;
-- comment il est conçu ;
+- quel problème de convergence il cherche à résoudre ;
+- pourquoi la réponse ne peut pas être une simple centralisation applicative ;
+- comment FLOW est conçu ;
 - quels principes guident son évolution ;
 - où trouver les pages structurantes du référentiel.
 
@@ -27,9 +28,13 @@ BRD : SAP / NewStore
 
 Les travaux ont progressivement montré que cette lecture était insuffisante.
 
-FLOW n'est pas seulement un projet de remplacement applicatif.
+Le vrai sujet n'est pas seulement de remplacer des outils.
 
-FLOW est un programme de convergence IT et business model visant à identifier, mutualiser et gouverner des capacités d'entreprise transverses.
+Le vrai sujet est de réussir une convergence complexe entre des marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.
+
+FLOW est donc un programme de convergence IT et business model.
+
+Il cherche à identifier ce qui doit devenir commun, transverse et gouverné, tout en laissant vivre ce qui doit rester spécialisé, différencié ou local.
 
 ## Le problème fondamental
 
@@ -51,6 +56,10 @@ Dans les deux cas, les mêmes responsabilités finissent par traverser les marqu
 - produire des événements, faits et documents ;
 - suivre les exceptions ;
 - expliquer ce qui s'est passé.
+
+La question centrale devient donc :
+
+> Comment créer un cœur commun pour ces responsabilités, sans construire un monolithe qui uniformiserait toute l'entreprise ?
 
 ## La rupture FLOW
 
@@ -83,9 +92,9 @@ FLOW n'a pas vocation à remplacer tous les outils existants.
 
 ## Ce qu'est FLOW
 
-FLOW est une plateforme Demand d'entreprise.
+FLOW est une réponse fédérée à la convergence.
 
-Elle fait du Case l'unité métier centrale pour traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, absorber les variations de traitement et décloisonner les silos B2B, B2C, marques, canaux et groupes.
+Il prend la forme d'une plateforme Demand d'entreprise, capable de porter les responsabilités communes critiques : demandes, Cases, décisions, stock, réseau d'exécution, promesses, événements, documents et exceptions.
 
 Les consommateurs peuvent rester différenciés.
 
@@ -111,7 +120,7 @@ La vision actuelle fait émerger les premiers produits candidats suivants :
 
 - Plateforme de Case Management ;
 - Stock Unifié ;
-- Réseau d'Exécution ;
+- Fulfillment Network / Réseau d'Exécution ;
 - Supply Service Registry ;
 - Product Agreement Catalog ;
 - Vues 360.
@@ -210,3 +219,5 @@ FLOW cherche à mieux satisfaire les demandes.
 Sa valeur n'est pas de remplacer toutes les applications.
 
 Sa valeur est de rendre cohérentes les demandes, décisions, ressources, promesses, événements, documents et exceptions qui traversent l'entreprise.
+
+FLOW devient une plateforme qui configure des capacités d'action, pas un grand miroir administratif de l'entreprise.
