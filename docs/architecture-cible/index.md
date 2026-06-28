@@ -37,7 +37,7 @@ Ils expliquent les choix réutilisables avant leur application dans les fiches p
 - [CQRS et projections](patterns/cqrs-et-projections.md)
 - [Operational DataHub](patterns/operational-datahub.md)
 - [Event Sourcing / Ledger](patterns/event-sourcing-ledger.md)
-- [Externalisation des décisions](patterns/externalisation-des-decisions.md)
+- [Externalisation des décisions métier](patterns/externalisation-des-decisions.md)
 - [Plateforme ouverte et gouvernée](patterns/plateforme-ouverte-gouvernee.md)
 
 ## Fiches produits initialisées
@@ -58,10 +58,10 @@ Elles ne figent pas la solution, mais elles structurent les responsabilités, co
 
 La cible n'est pas encore une architecture détaillée.
 
-Elle pose une première carte de travail : FLOW est une réponse fédérée à la convergence, centrée sur Demand, les Cases, le stock unifié, le réseau d'exécution et les décisions qui relient la demande à l'exécution.
+Elle pose une première carte de travail : FLOW est une réponse fédérée à la convergence, centrée sur Demand, les Cases, le stock unifié, le réseau d'exécution et les décisions métier qui relient la demande à l'exécution.
 
 FLOW ne remplace pas l'ensemble du SI.
 
-Il reprend les responsabilités transverses qui doivent être gouvernées durablement : demande, décision, stock disponible, réservations, réseau d'exécution, projections opérationnelles et contexte transverse.
+Il reprend les responsabilités transverses qui doivent être gouvernées durablement : demande, décision métier, stock disponible, réservations, réseau d'exécution, projections opérationnelles et contexte transverse.
 
 Le reste du SI peut conserver ses spécialisations, à condition que ces spécialisations ne recréent pas des silos au cœur de la demande.
