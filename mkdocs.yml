@@ -35,6 +35,7 @@ nav:
       - SAP ECC Boardriders: hotspots/sap-ecc-boardriders.md
       - C-LOG et décision de fulfillment: hotspots/c-log-decision-fulfillment.md
       - Stock temps réel: hotspots/stock-temps-reel.md
+      - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
       - Convergence B2B / Wholesale: hotspots/convergence-b2b-wholesale.md
   - Insights:
       - Repères: insights/index.md
