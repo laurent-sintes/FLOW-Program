@@ -41,6 +41,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 ## Pages disponibles
 
 - [Vision du programme FLOW](vision-programme-flow.md) — synthèse courte.
+- [Concepts clés du programme FLOW](concepts-cles.md) — les mots et idées qui structurent la vision.
 - [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 
 ## Chaîne de contribution
@@ -67,4 +68,4 @@ Elle transforme donc les observations du programme en ambition de transformation
 
 Cliquer sur la section Vision doit d'abord permettre de comprendre ce qu'est une vision et pourquoi elle structure le programme.
 
-La vision spécifique du programme FLOW est portée par une synthèse, puis par une vision détaillée découpée en chapitres.
+La vision spécifique du programme FLOW est portée par une synthèse, une page de concepts clés, puis par une vision détaillée découpée en chapitres.
