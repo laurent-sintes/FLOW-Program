@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
   <title id="title">Schéma produit — Socle Case Management</title>
-  <desc id="desc">Le Case comme unité autonome de décision et d'orchestration, alimenté par événements, faits, policies et systèmes d'exécution.</desc>
+  <desc id="desc">Le Case comme unité autonome de décision métier et d'orchestration, alimenté par événements, faits, policies et systèmes d'exécution.</desc>
   <defs>
     <style>
       .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelDark{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillText{font:700 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
@@ -11,7 +11,7 @@
 
   <rect class="bg" x="0" y="0" width="1280" height="760" rx="24"/>
   <text class="title" x="52" y="58">Socle Case Management</text>
-  <text class="subtitle" x="52" y="86">Le Case porte la demande, le contexte, les décisions et l'histoire ; le workflow n'est qu'un composant d'exécution.</text>
+  <text class="subtitle" x="52" y="86">Le Case porte la demande, le contexte, les décisions métier et l'histoire ; le workflow n'est qu'un composant d'exécution.</text>
 
   <rect class="panel" x="50" y="130" width="265" height="210" rx="18"/>
   <text class="h" x="78" y="166">Canaux &amp; domaines</text>
@@ -24,7 +24,7 @@
 
   <rect class="panelDark" x="430" y="118" width="420" height="250" rx="24"/>
   <text class="h" x="540" y="154">Case</text>
-  <text class="small" x="500" y="180">Unité autonome de décision et d'orchestration</text>
+  <text class="small" x="500" y="180">Unité autonome de décision métier et d'orchestration</text>
   <rect class="pill" x="465" y="205" width="110" height="30" rx="15"/><text class="pillText" x="487" y="225">Request</text>
   <rect class="pill" x="590" y="205" width="105" height="30" rx="15"/><text class="pillText" x="622" y="225">Goal</text>
   <rect class="pill" x="710" y="205" width="105" height="30" rx="15"/><text class="pillText" x="735" y="225">Intent</text>
@@ -32,7 +32,7 @@
   <rect class="pill" x="590" y="250" width="105" height="30" rx="15"/><text class="pillText" x="618" y="270">Docs</text>
   <rect class="pill" x="710" y="250" width="105" height="30" rx="15"/><text class="pillText" x="733" y="270">Views 360</text>
   <rect class="accent" x="500" y="305" width="280" height="42" rx="18"/>
-  <text class="h" x="550" y="332">Event log + décisions</text>
+  <text class="h" x="532" y="332">Event log + décisions métier</text>
 
   <rect class="panel" x="965" y="130" width="265" height="210" rx="18"/>
   <text class="h" x="996" y="166">Systèmes d'exécution</text>
@@ -52,7 +52,7 @@
 
   <rect class="panel" x="85" y="465" width="1110" height="210" rx="22"/>
   <text class="h" x="118" y="500">Boucle opérationnelle du Case</text>
-  <text class="small" x="118" y="526">L'exécution de la demande influence la décision et adapte continuellement le plan d'exécution.</text>
+  <text class="small" x="118" y="526">L'exécution de la demande influence la décision métier et adapte continuellement le plan d'exécution.</text>
 
   <g transform="translate(130 565)">
     <circle class="accent" cx="0" cy="0" r="42"/><text class="num" x="-7" y="7">1</text><text class="h" x="-37" y="72">J'observe</text>
@@ -69,6 +69,6 @@
   </g>
 
   <rect class="accent" x="430" y="404" width="420" height="42" rx="16"/>
-  <text class="h" x="487" y="431">Le processus émerge des décisions prises sur le Case</text>
+  <text class="h" x="465" y="431">Le processus émerge des décisions métier prises sur le Case</text>
   <path class="arrowAccent dash" d="M640 404 C640 380 640 380 640 368"/>
 </svg>
