@@ -129,15 +129,15 @@ FLOW réécrit donc la <span class="flow-keyword">colonne vertébrale opération
 
 Il ne réécrit pas tout le SI.
 
-Les premiers produits candidats sont :
+Les composants structurants sont :
 
 - Plateforme de Case Management.
 - Stock Unifié.
 - Fulfillment Network / Réseau d'Exécution.
-- Supply Service Registry.
-- Product Agreement Catalog.
+- Système de décision : règles, policies, contraintes et optimisation.
 - Vues 360.
 - Diffusion et gouvernance opérationnelle des données.
+- Intégrations avec les services existants lorsque leur valeur métier justifie leur maintien.
 
 FLOW n'a pas vocation à absorber tout le SI.
 
@@ -160,8 +160,9 @@ Elle doit traiter plusieurs points durs :
 - C-LOG : une partie de la décision de fulfillment est déjà distribuée côté exécution.
 - Stock temps réel : dépendance aux événements POS et logistiques pour garantir une fraîcheur suffisante.
 - Capacités d'intégration des systèmes réintégrés : APIs, événements, statuts, documents et réconciliation nécessaires pour brancher les services existants sur FLOW.
-- PLM, catalogue, Article / EAN : Article / EAN probablement suffisant pour la vente, mais peut-être insuffisant pour l'achat si les règles restent intégrées dans la fiche produit.
-- Wholesale Boardriders : priorisation commerciale des meilleurs clients, incompatible avec une logique simple de premier arrivé, premier servi.
+- PLM, catalogue, Article / EAN : FLOW ne peut pas dépendre d'un PLM unique ; il doit clarifier le catalogue nécessaire pour vendre, acheter, promettre et exécuter.
+- Promesse Wholesale Boardriders : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
+- Module Négoce StoreLand : responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment.
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
@@ -173,12 +174,13 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 
 | Problème observé | Ce que FLOW apporte | Valeur attendue |
 | --- | --- | --- |
-| Stock dispersé | Stock Unifié, APIs de disponibilité, réservation, allocation | Vision plus fiable du stock et optimisation du fulfillment |
+| Stock dispersé | Stock Unifié, APIs de disponibilité, réservation, allocation | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
 | Demandes dispersées | Plateforme de fédération des demandes, Case Management, événements communs | Décloisonnement et continuité de traitement |
 | Données difficiles à réconcilier | Projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Variations métier spécifiques | Agreements, règles, policies, moteur de décision | Singularités préservées sans prolifération des processus |
 | Décisions de fulfillment distribuées | Contrats entre demande et exécution | Moins d'erreurs d'aiguillage et meilleure optimisation globale |
+| Finance et auditabilité | Faits, événements, documents et statuts exploitables | Meilleure intégration avec Finance et capacité à reconstruire l'histoire d'une demande |
 
 ## À retenir : ne pas se tromper de promesse
 
