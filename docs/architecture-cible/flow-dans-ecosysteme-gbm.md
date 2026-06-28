@@ -24,7 +24,7 @@ FLOW ne remplace pas tout le SI GBM.
 
 FLOW se positionne comme la plateforme Demand qui reprend les responsabilités transverses aujourd'hui dispersées entre plusieurs composants.
 
-Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI GBM : il donne une cohérence commune aux demandes, statuts, décisions, événements, stock et projections, sans déplacer tout GBM dans FLOW.
+Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI GBM : il donne une cohérence commune aux demandes, statuts, décisions métier, événements, stock et projections, sans déplacer tout GBM dans FLOW.
 
 Le schéma représente les applications satellites qui restent autour de FLOW.
 
@@ -131,7 +131,7 @@ La cible ne consiste pas à déplacer tout GBM dans FLOW.
 La cible consiste à clarifier ce qui relève de FLOW :
 
 - le Case ;
-- les décisions ;
+- les décisions métier ;
 - les promesses ;
 - les facts stock ;
 - les réservations ;
