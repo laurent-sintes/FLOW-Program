@@ -1,6 +1,6 @@
 # Solution : une plateforme pour fédérer les demandes, opérations et décisions
 
-FLOW est une plateforme de fédération des demandes de l'entreprise.
+FLOW est une <span class="flow-keyword">plateforme</span> de fédération des demandes de l'entreprise.
 
 Elle n'a pas vocation à remplacer tout le SI.
 
@@ -16,8 +16,8 @@ Dans FLOW, ces ressources sont notamment :
 
 - Les objets de demande et leur cycle de vie.
 - Les règles, décisions et politiques de traitement.
-- Le Stock Unifié.
-- Le Fulfillment Network.
+- Le <span class="flow-keyword">Stock Unifié</span>.
+- Le <span class="flow-keyword">Fulfillment Network</span>.
 - Les capacités d'allocation, de réservation, de promesse et d'orchestration.
 - Les événements, faits, documents et vues nécessaires à la traçabilité.
 
@@ -62,7 +62,7 @@ Ses composants structurants sont :
 
 ## Fulfillment Network : décrire ce que le réseau sait faire
 
-Le Fulfillment Network est essentiel : il ne décrit pas seulement des lieux.
+Le <span class="flow-keyword">Fulfillment Network</span> est essentiel : il ne décrit pas seulement des lieux.
 
 Il décrit ce que le réseau sait faire.
 
@@ -91,7 +91,7 @@ FLOW doit rendre possible une autre voie : un système adaptatif.
 La variation de traitement doit être pilotée par :
 
 - Le contexte de la demande.
-- L'Agreement applicable.
+- L'<span class="flow-keyword">Agreement</span> applicable.
 - Les règles métier.
 - Les politiques de priorité.
 - Les contraintes de stock et d'exécution.
@@ -128,10 +128,10 @@ Elle peut provenir d'un client B2C, d'un client B2B, d'un magasin, d'une marketp
 
 Ce qui change, c'est le contexte, l'Agreement, les règles, les droits, les engagements, les priorités et le réseau d'exécution mobilisable.
 
-```text
-Les consommateurs peuvent être différenciés.
-La plateforme doit être décloisonnée.
-```
+<div class="flow-conviction">
+  <p>Les consommateurs peuvent être différenciés.</p>
+  <p>La plateforme doit être décloisonnée.</p>
+</div>
 
 C'est un écart majeur avec une approche ERP classique, où les variations de canal, d'organisation ou de modèle business finissent souvent par produire des modules, processus ou flux spécialisés.
 
