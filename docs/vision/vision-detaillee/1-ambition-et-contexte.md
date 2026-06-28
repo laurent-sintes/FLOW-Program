@@ -1,6 +1,6 @@
 # Ambition : converger
 
-Le Groupe Beaumanoir doit réussir une convergence complexe.
+Le Groupe Beaumanoir doit réussir une <span class="flow-keyword">convergence</span> complexe.
 
 Il doit créer du commun entre des marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.
 
@@ -8,7 +8,7 @@ La réponse ne peut pas être une uniformisation brutale.
 
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
-L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — demandes, stock, promesses, décisions, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
+L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
 FLOW porte donc une ambition de convergence fédérée.
 
@@ -63,9 +63,7 @@ Ils limitent la capacité du groupe à promettre, arbitrer, prioriser, exécuter
 
 L'opportunité du programme est claire : faire converger.
 
-Mais la question centrale est plus difficile :
-
-> Que faut-il faire converger, et jusqu'où ?
+Mais la question centrale est plus difficile : que faut-il faire converger, et jusqu'où ?
 
 Une étude préalable confiée à Synvance a contribué à objectiver les écarts entre les SI et à éclairer les trajectoires possibles.
 
@@ -79,7 +77,7 @@ Le groupe a besoin de cohérence sur les demandes, le stock, les engagements, le
 
 La réponse ne peut donc être ni une mosaïque d'applications autonomes, ni un modèle unique qui rigidifierait tout le groupe.
 
-FLOW propose une convergence pilotée par niveaux : distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
+FLOW propose une <span class="flow-keyword">convergence pilotée par niveaux</span> : distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
 
 ```text
 Centraliser
@@ -98,9 +96,10 @@ Différencier
     lorsque le business l'exige
 ```
 
-La convergence n'est donc pas l'uniformisation.
-
-La convergence consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.
+<div class="flow-conviction">
+  <p>La convergence n'est pas l'uniformisation.</p>
+  <p>Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.</p>
+</div>
 
 C'est dans ce contexte que le programme FLOW émerge : non comme la recherche d'un socle unique, mais comme la recherche d'un modèle de convergence capable de créer de la cohérence sans effacer les singularités utiles.
 
