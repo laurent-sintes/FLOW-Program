@@ -25,7 +25,7 @@ FLOW ne remplace pas tout le SI BRD.
 
 FLOW se positionne comme la plateforme Demand qui reprend les responsabilités transverses aujourd'hui distribuées entre SAP, NewStore et plusieurs systèmes périphériques.
 
-Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI BRD : il donne une cohérence commune aux demandes, statuts, décisions, événements, stock et projections, sans déplacer tout BRD dans FLOW.
+Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI BRD : il donne une cohérence commune aux demandes, statuts, décisions métier, événements, stock et projections, sans déplacer tout BRD dans FLOW.
 
 Le schéma représente les applications satellites qui peuvent rester autour de FLOW.
 
@@ -125,7 +125,7 @@ NewStore aujourd'hui
     → intégration des deux pour l'OMS, la promesse et certains arbitrages omnicanaux
 
 FLOW demain
-    → capacité cible de stock unifié et de décision sur la demande
+    → capacité cible de stock unifié et de décision métier sur la demande
 ```
 
 ## Point sur le PIM
@@ -162,7 +162,7 @@ La cible consiste à clarifier ce qui relève de FLOW :
 
 - le Case ;
 - le cycle de vie transverse de la demande ;
-- les décisions liées à la demande ;
+- les décisions métier liées à la demande ;
 - la promesse ;
 - les réservations et allocations ;
 - le stock unifié ;
