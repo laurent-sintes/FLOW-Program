@@ -20,6 +20,8 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 020 | FLOW réconcilie ERP et OMS dans une plateforme Demand | FLOW reconstruit une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 027 | FLOW devient le moteur de la convergence | La plateforme et le programme FLOW organisent la convergence des pratiques, responsabilités, capacités, règles, données et trajectoires. |
 | 028 | Le centre de gravité du SI se déplace vers la demande | FLOW déplace le cœur du SI de l'ERP-document vers la demande, le Case, la décision et la satisfaction client / utilisateur. |
+| 032 | FLOW reconstruit la colonne vertébrale opérationnelle | FLOW ne remplace pas tout le SI ; il porte les responsabilités communes qui permettent aux systèmes spécialisés de fonctionner ensemble. |
+| 033 | Réintégrer ne signifie pas tout réécrire | Les services existants qui portent une valeur métier peuvent rester autour de FLOW s'ils exposent APIs, événements, statuts, documents et réconciliation. |
 
 ## Modèle conceptuel
 
@@ -32,6 +34,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 019 | Demand / Supply remplace les oppositions achat / vente | La conception distingue la demande à instruire du réseau d'exécution à mobiliser. |
 | 029 | La variation métier doit être pilotée par règles | Les variations de traitement doivent venir du contexte, des Agreements et des policies, pas d'une prolifération de processus spécialisés. |
 | 030 | Le SAV est une demande comme les autres | Une demande de service, un litige, un retour ou un remboursement peut être traité comme un Case dès lors qu'il faut suivre, décider, résoudre et expliquer. |
+| 034 | Une plateforme est fermée et ouverte à la fois | FLOW gouverne un cœur commun, mais expose des processus contrôlés pour configurer, étendre et développer des produits consommateurs. |
 
 ## Convergence, fédération et gouvernance
 
@@ -55,6 +58,8 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 024 | Les données doivent être qualifiées plutôt que rangées dans “Master Data” | FLOW distingue les natures d'information et leur statut Source ou Projection. |
 | 026 | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI | C-LOG peut porter des responsabilités logistiques, entrepôt, transport, stock et événements d'exécution. |
 | 031 | Les données en transit doivent être gouvernées | FLOW doit passer d'une logique de flux projet à une logique de contrats de données gouvernés, en prolongeant l'intuition du demi-flux. |
+| 035 | Produits conçus et produits importés imposent un catalogue d'exécution | FLOW ne peut pas dépendre d'un PLM unique ; il doit consommer une projection produit adaptée à la vente, l'achat, la promesse et l'exécution. |
+| 036 | Les fiches produits rendent l'architecture actionnable | Les produits FLOW doivent être décrits avec responsabilités, consommateurs, informations, interfaces et premiers epics pour amorcer le backlog. |
 
 ## Finance et adhérences externes
 
@@ -99,3 +104,8 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 029 | Modèle conceptuel | La variation métier doit être pilotée par règles |
 | 030 | Modèle conceptuel | Le SAV est une demande comme les autres |
 | 031 | Opérations, décision et données | Les données en transit doivent être gouvernées |
+| 032 | Positionnement | FLOW reconstruit la colonne vertébrale opérationnelle |
+| 033 | Positionnement | Réintégrer ne signifie pas tout réécrire |
+| 034 | Modèle conceptuel | Une plateforme est fermée et ouverte à la fois |
+| 035 | Opérations, décision et données | Produits conçus et produits importés imposent un catalogue d'exécution |
+| 036 | Opérations, décision et données | Les fiches produits rendent l'architecture actionnable |
