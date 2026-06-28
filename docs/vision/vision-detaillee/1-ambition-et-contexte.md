@@ -9,8 +9,8 @@ La réponse ne peut pas être une uniformisation brutale.
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
 <div class="flow-conviction">
-  <p>Le problème de FLOW n'est pas de choisir entre centralisation et autonomie.</p>
-  <p>Il est de construire le bon commun sans détruire les différences utiles.</p>
+  <p>FLOW ne choisit pas entre système centralisé et applications autarciques.</p>
+  <p>FLOW construit le socle commun qui apporte de la stabilité au SI et rend l'autonomie cohérente.</p>
 </div>
 
 L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
@@ -18,6 +18,11 @@ L'ambition de FLOW est de construire un socle commun là où la cohérence est c
 FLOW porte donc une ambition de convergence fédérée.
 
 ## Héritage du groupe : une diversité devenue structurelle
+
+<div class="flow-conviction">
+  <p>La diversité du groupe n'est pas un accident à corriger.</p>
+  <p>C'est une réalité structurelle à rendre opérable.</p>
+</div>
 
 Le Groupe Beaumanoir s'est construit par croissance, acquisitions et rapprochements successifs.
 
@@ -47,6 +52,11 @@ Le problème est de savoir comment construire ce commun sans écraser les singul
 
 ## Irritants : une cohérence difficile à retrouver
 
+<div class="flow-conviction">
+  <p>Le SI ne manque pas seulement d'outils.</p>
+  <p>Il manque d'un lieu où retrouver une cohérence opérationnelle.</p>
+</div>
+
 Le SI actuel rend certains objectifs de convergence coûteux, fragiles ou difficiles à piloter.
 
 Les irritants principaux sont :
@@ -65,6 +75,11 @@ Ces irritants ne sont pas seulement techniques.
 Ils limitent la capacité du groupe à promettre, arbitrer, prioriser, exécuter et expliquer ses engagements de manière cohérente.
 
 ## Opportunité : converger sans basculer dans un modèle unique
+
+<div class="flow-conviction">
+  <p>L'opportunité n'est pas de tout centraliser.</p>
+  <p>Elle est de choisir précisément ce qui doit devenir commun.</p>
+</div>
 
 L'opportunité du programme est claire : faire converger.
 
