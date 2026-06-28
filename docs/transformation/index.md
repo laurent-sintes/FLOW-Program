@@ -14,13 +14,13 @@ Les impacts sont nombreux, mais un programme qui pousse trop de changements en p
 
 La recommandation est donc de distinguer deux natures de contenus :
 
-- les changements à conduire, regroupés en quelques déplacements de posture concrets ;
-- la gouvernance du changement, qui explique comment l'équipe de change accompagne ces thèmes.
+- la gouvernance du changement, qui explique comment l'équipe de change accompagne ces thèmes ;
+- les changements à conduire, regroupés en quelques déplacements de posture concrets.
 
 ## Pages disponibles
 
-- [Les changements à conduire avec FLOW](changements-a-conduire.md)
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
+- [Les changements à conduire avec FLOW](changements-a-conduire.md)
 
 ## Position de travail
 
