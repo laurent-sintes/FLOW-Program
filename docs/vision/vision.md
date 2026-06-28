@@ -10,7 +10,7 @@ La réponse ne peut pas être une uniformisation brutale.
 
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
-L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
+L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions métier</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
 <div class="flow-conviction">
   <p>La convergence n'est pas l'uniformisation.</p>
@@ -21,13 +21,13 @@ L'ambition de FLOW est de construire un socle commun là où la cohérence est c
 
 <div class="flow-conviction">
   <p>FLOW est le moteur de convergence opérationnelle du groupe.</p>
-  <p>Il fédère les demandes, gouverne les décisions, mobilise le stock et le réseau d'exécution, tout en préservant les singularités business utiles.</p>
+  <p>Il fédère les demandes, gouverne les décisions métier, mobilise le stock et le réseau d'exécution, tout en préservant les singularités business utiles.</p>
 </div>
 
 Cette vision repose sur cinq convictions fortes :
 
 - La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit être pilotée par niveaux.
-- Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client / utilisateur.
+- Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision métier et la satisfaction client / utilisateur.
 - Gérer des commandes n'est plus suffisant : il faut savoir traiter des <span class="flow-keyword">demandes</span>.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
@@ -83,7 +83,7 @@ FLOW déplace donc le centre de gravité du SI :
 ERP / documents / comptabilité
 OMS / commande / canal
         ↓
-Demande / décision
+Demande / décision métier
 Satisfaction client-utilisateur
 Stock et réseau d'exécution
 ```
@@ -123,9 +123,9 @@ Ils doivent devenir des contrats de données gouvernés, publiés et consommés 
 
 FLOW est une <span class="flow-keyword">plateforme</span> de fédération des demandes de l'entreprise.
 
-Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
+Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions métier et mobiliser les ressources d'exécution.
 
-FLOW réécrit donc la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI : demandes, décisions, stock, promesses, événements, statuts et orchestration transverse.
+FLOW réécrit donc la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI : demandes, décisions métier, stock, promesses, événements, statuts et orchestration transverse.
 
 Il ne réécrit pas tout le SI.
 
@@ -134,7 +134,7 @@ Les composants structurants sont :
 - Plateforme de Case Management.
 - Stock Unifié.
 - Fulfillment Network / Réseau d'Exécution.
-- Système de décision : règles, policies, contraintes et optimisation.
+- Système de décision métier : règles, policies, contraintes et optimisation.
 - Vues 360.
 - Diffusion et gouvernance opérationnelle des données.
 - Intégrations avec les services existants lorsque leur valeur métier justifie leur maintien.
@@ -166,7 +166,7 @@ Elle doit traiter plusieurs points durs :
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
-FLOW est aussi un cadre de décision pour traiter les tensions réelles de convergence du groupe.
+FLOW est aussi un cadre d'arbitrage pour traiter les tensions réelles de convergence du groupe.
 
 ## Valeur attendue
 
@@ -178,7 +178,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | Demandes dispersées | Plateforme de fédération des demandes, Case Management, événements communs | Décloisonnement et continuité de traitement |
 | Données difficiles à réconcilier | Projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
-| Variations métier spécifiques | Agreements, règles, policies, moteur de décision | Singularités préservées sans prolifération des processus |
+| Variations métier spécifiques | Agreements, règles, policies, moteur de décision métier | Singularités préservées sans prolifération des processus |
 | Décisions de fulfillment distribuées | Contrats entre demande et exécution | Moins d'erreurs d'aiguillage et meilleure optimisation globale |
 | Finance et auditabilité | Faits, événements, documents et statuts exploitables | Meilleure intégration avec Finance et capacité à reconstruire l'histoire d'une demande |
 
@@ -189,7 +189,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | FLOW est seulement un projet de remplacement applicatif. | Faire converger des responsabilités critiques aujourd'hui dispersées. |
 | FLOW cherche à mieux gérer les commandes. | Mieux traiter les demandes, y compris commandes, retours, SAV, exceptions et engagements. |
 | FLOW impose un modèle unique à toutes les marques. | Construire une plateforme commune qui préserve les singularités business utiles. |
-| FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision, le stock et le réseau d'exécution. |
+| FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision métier, le stock et le réseau d'exécution. |
 | FLOW doit absorber tout le SI. | Réécrire la colonne vertébrale opérationnelle du SI, pas tous ses organes spécialisés. |
 | FLOW oblige à réécrire tous les services existants. | Réintégrer les services utiles autour d'une cohérence commune lorsque leur valeur métier justifie leur maintien. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
@@ -199,7 +199,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 
 La vision détaillée est découpée en chapitres pour faciliter la lecture :
 
-1. [Ambition](vision-detaillee/1-ambition-et-contexte.md).
+1. [Ambition](vision-detaillee/1-ambition.md).
 2. [Ruptures](vision-detaillee/2-ruptures-structurantes.md).
 3. [Solution](vision-detaillee/3-plateforme-flow.md).
 4. [Hotspots](vision-detaillee/4-hotspots.md).
