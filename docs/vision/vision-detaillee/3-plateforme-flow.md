@@ -1,4 +1,4 @@
-# Solution : une plateforme pour fédérer les demandes, opérations et décisions
+# Solution : une plateforme pour fédérer les demandes, opérations et décisions métier
 
 <div class="flow-conviction">
   <p>FLOW ne déplace pas tout dans une nouvelle application centrale.</p>
@@ -9,19 +9,19 @@ FLOW est une <span class="flow-keyword">plateforme</span> de fédération des de
 
 Elle n'a pas vocation à remplacer tout le SI.
 
-Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
+Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions métier et mobiliser les ressources d'exécution.
 
 ## Lecture synthétique : ce que FLOW porte, ce que FLOW ne porte pas
 
 <div class="flow-conviction">
   <p>FLOW n'est pas le nouveau contenant de tout le SI.</p>
-  <p>FLOW est le lieu où les demandes, les décisions et les ressources critiques deviennent cohérentes.</p>
+  <p>FLOW est le lieu où les demandes, les décisions métier et les ressources critiques deviennent cohérentes.</p>
 </div>
 
 | FLOW porte | FLOW ne porte pas |
 | --- | --- |
 | Les <span class="flow-keyword">demandes</span> et leur cycle de vie | Les expériences client, interfaces et parcours d'engagement |
-| Les <span class="flow-keyword">décisions</span>, règles, policies et arbitrages liés à la demande | La totalité des règles locales ou métiers lorsqu'elles relèvent d'un domaine spécialisé |
+| Les <span class="flow-keyword">décisions métier</span>, règles, policies et choix de traitement liés à la demande | La totalité des règles locales ou métiers lorsqu'elles relèvent d'un domaine spécialisé |
 | Le <span class="flow-keyword">Stock Unifié</span>, la promesse, la réservation et l'allocation | Les opérations physiques de magasin, entrepôt, transport ou douane |
 | Le <span class="flow-keyword">Fulfillment Network</span> et les capacités mobilisables | Les WMS, TMS, POS, outils fournisseurs ou systèmes d'exécution spécialisés |
 | Les <span class="flow-keyword">événements</span>, statuts, documents et faits nécessaires à la traçabilité du Case | La Finance, le PLM, le PIM complet, le CRM ou les outils de conception produit |
@@ -47,7 +47,7 @@ C'est une entité autonome qui gère et gouverne un ensemble de ressources centr
 Dans FLOW, ces ressources sont notamment :
 
 - Les objets de <span class="flow-keyword">demande</span> et leur cycle de vie.
-- Les <span class="flow-keyword">décisions</span>, règles et politiques de traitement.
+- Les <span class="flow-keyword">décisions métier</span>, règles et politiques de traitement.
 - Le <span class="flow-keyword">Stock Unifié</span>.
 - Le <span class="flow-keyword">Fulfillment Network</span>.
 - Les capacités d'allocation, de réservation, de promesse et d'orchestration.
@@ -91,7 +91,7 @@ C'est ce double mouvement qui permet à FLOW d'être à la fois centralisée là
 
 FLOW doit être compris comme la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI, pas comme la totalité du SI.
 
-Il donne une structure commune aux demandes, décisions, statuts, événements, promesses, stocks et besoins d'exécution.
+Il donne une structure commune aux demandes, décisions métier, statuts, événements, promesses, stocks et besoins d'exécution.
 
 Mais il ne remplace pas par principe tous les services, applications ou domaines spécialisés existants.
 
@@ -109,7 +109,7 @@ Ces services peuvent rester :
 
 L'enjeu n'est donc pas de tout réécrire.
 
-L'enjeu est d'éviter que chaque application reconstruise sa propre logique de demande, de statut, de stock, d'événement ou de décision.
+L'enjeu est d'éviter que chaque application reconstruise sa propre logique de demande, de statut, de stock, d'événement ou de décision métier.
 
 ## Données en transit : sortir de la tuyauterie projet
 
@@ -140,7 +140,7 @@ Contrat de données
 
 <div class="flow-conviction">
   <p>La solution FLOW n'est pas un module unique.</p>
-  <p>C'est un ensemble de produits cohérents autour de la demande, du stock, du réseau d'exécution et de la décision.</p>
+  <p>C'est un ensemble de produits cohérents autour de la demande, du stock, du réseau d'exécution et de la décision métier.</p>
 </div>
 
 Ses composants structurants sont :
@@ -148,7 +148,7 @@ Ses composants structurants sont :
 - Une plateforme de <span class="flow-keyword">Case Management</span> pour modéliser et piloter les demandes dans la durée.
 - Un <span class="flow-keyword">Stock Unifié</span> exposé par API, capable de gérer disponibilité, réservation, allocation et calcul du stock disponible selon un contexte business.
 - Un référentiel <span class="flow-keyword">Fulfillment Network</span>, décrivant les nœuds logistiques, leurs capacités, leurs contraintes, leurs services et leurs conditions d'usage.
-- Un système de <span class="flow-keyword">décision</span> fondé sur des règles, contraintes et capacités d'optimisation, potentiellement augmenté par l'IA là où cela crée de la valeur.
+- Un système de <span class="flow-keyword">décision métier</span> fondé sur des règles, contraintes et capacités d'optimisation, potentiellement augmenté par l'IA là où cela crée de la valeur.
 - Un réseau d'exécution <span class="flow-keyword">Supply</span> connecté en continu à la demande.
 - Des <span class="flow-keyword">Vues 360</span> pour rendre les activités, statuts, événements et exceptions plus lisibles.
 - Une capacité de diffusion et gouvernance opérationnelle des données pour encadrer les contrats de données, modes d'échange, consommateurs, qualité, fraîcheur et réconciliation.
@@ -183,7 +183,7 @@ Cette approche permet à FLOW de raisonner sur la capacité réelle d'exécution
 
 <div class="flow-conviction">
   <p>La variation métier ne doit plus créer mécaniquement de la complexité SI.</p>
-  <p>Elle doit être pilotée par le contexte, les agreements, les règles et les décisions.</p>
+  <p>Elle doit être pilotée par le contexte, les agreements, les règles et les décisions métier.</p>
 </div>
 
 Le groupe n'a pas besoin d'un modèle rigide qui impose l'uniformisation partout.
@@ -208,7 +208,7 @@ Commande ou demande générique
     + contexte
     + Agreement
     + règles
-    + décisions
+    + décisions métier
     = traitement adapté
 ```
 
