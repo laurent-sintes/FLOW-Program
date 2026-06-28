@@ -1,5 +1,10 @@
 # Hotspots : les risques à arbitrer pour rendre FLOW réaliste
 
+<div class="flow-conviction">
+  <p>Les hotspots ne contredisent pas la vision.</p>
+  <p>Ils indiquent les endroits où la vision doit devenir une décision robuste.</p>
+</div>
+
 La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
 Elle doit aussi traiter explicitement les points durs du programme.
@@ -7,11 +12,6 @@ Elle doit aussi traiter explicitement les points durs du programme.
 Un <span class="flow-keyword">hotspot</span> n'est pas un problème isolé.
 
 C'est un point où plusieurs dimensions se croisent : trajectoire de migration, décision métier, intégration technique, donnée, finance, gouvernance ou transformation.
-
-<div class="flow-conviction">
-  <p>Les hotspots ne contredisent pas la vision.</p>
-  <p>Ils indiquent les endroits où la vision doit devenir une décision robuste.</p>
-</div>
 
 ## Vue synthétique des familles de risques
 
