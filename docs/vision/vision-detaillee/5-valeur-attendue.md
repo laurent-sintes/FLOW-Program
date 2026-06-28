@@ -9,6 +9,7 @@ Elle vient du lien entre les problèmes observés et les capacités que la plate
 | Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | <span class="flow-keyword">Stock Unifié</span>, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
 | Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des <span class="flow-keyword">demandes</span>, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
 | Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Variations métier portées par des processus ou applications spécifiques | <span class="flow-keyword">Agreements</span>, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
 | Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
 | Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
@@ -50,13 +51,13 @@ Cette promesse vaut aussi pour les demandes de service, les retours, les litiges
 
 Une demande reste une demande dès lors qu'elle nécessite d'être comprise, suivie, arbitrée, résolue et expliquée.
 
-## Promesse IT : gouverner les responsabilités avant de choisir les outils
+## Promesse IT : gouverner les responsabilités, les données et les trajectoires
 
 Pour l'IT, FLOW déplace la discussion.
 
 La question n'est plus seulement : quel outil remplace quel outil ?
 
-La question devient : quelle <span class="flow-keyword">responsabilité</span> doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, et avec quelles règles de variation ?
+La question devient : quelle <span class="flow-keyword">responsabilité</span> doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, avec quelles règles de variation, et avec quels contrats de données entre producteurs et consommateurs ?
 
 FLOW s'inscrit dans une logique :
 
@@ -72,11 +73,23 @@ Produit
 Fonctionnalité
 ```
 
-Cette lecture permet d'éviter trois dérives :
+Cette lecture permet d'éviter quatre dérives :
 
 - Remplacer des applications sans clarifier les responsabilités.
 - Élargir indéfiniment FLOW au motif que tout est connecté.
 - Multiplier les variantes de processus au lieu d'externaliser les règles et conditions de traitement.
+- Créer des flux projet qui répondent à court terme, mais ne construisent pas une gouvernance durable des données.
+
+La promesse IT de FLOW est donc aussi une promesse de simplification des échanges.
+
+FLOW doit aider à passer d'une logique de tuyauterie projet à une logique de contrats de données gouvernés : publication, consommation, fraîcheur, qualité, supervision, reprise et réconciliation.
+
+Cette promesse soutient directement la construction de roadmaps IT consolidées au-delà des roadmaps projet.
+
+<div class="flow-conviction">
+  <p>Moins de flux opportunistes.</p>
+  <p>Plus de capacités, de contrats et de trajectoires gouvernées.</p>
+</div>
 
 ## Signes de réussite : ce qui doit devenir observable
 
@@ -88,6 +101,8 @@ FLOW réussira si le groupe constate progressivement :
 - Une meilleure capacité à traiter les exceptions.
 - Une intégration plus rapide de nouveaux canaux, marques ou business models.
 - Une distinction plus claire entre ce qui est source et ce qui est projection.
+- Des flux critiques transformés en contrats de données gouvernés.
+- Une meilleure visibilité sur les consommateurs, la fraîcheur et la qualité des données échangées.
 - Des expériences métier différenciées, mais appuyées sur des capacités communes.
 - Des variations de traitement absorbées par les règles plutôt que par la prolifération de processus.
 - Une convergence vécue comme un choix métier, pas comme une contrainte IT.
@@ -102,6 +117,7 @@ FLOW réussira si le groupe constate progressivement :
 | FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision, le stock et le réseau d'exécution. |
 | FLOW doit absorber tout le SI. | Fédérer les opérations et décisions critiques, tout en laissant les domaines spécialisés jouer leur rôle. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
+| FLOW se contente de refaire des flux entre applications. | Gouverner les données en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
 
 ---
 
