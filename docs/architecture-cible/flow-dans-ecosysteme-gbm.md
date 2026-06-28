@@ -24,6 +24,8 @@ FLOW ne remplace pas tout le SI GBM.
 
 FLOW se positionne comme la plateforme Demand qui reprend les responsabilités transverses aujourd'hui dispersées entre plusieurs composants.
 
+Autrement dit, FLOW reconstruit la colonne vertébrale opérationnelle du SI GBM : il donne une cohérence commune aux demandes, statuts, décisions, événements, stock et projections, sans déplacer tout GBM dans FLOW.
+
 Le schéma représente les applications satellites qui restent autour de FLOW.
 
 Il ne représente pas les applications à retirer.
@@ -80,6 +82,8 @@ Elles peuvent rester :
 - systèmes d'exécution ;
 - sources d'événements ;
 - domaines spécialisés conservant leur autonomie.
+
+Cette conservation suppose toutefois que ces applications soient réintégrables : APIs, événements, statuts, documents, identifiants de corrélation et mécanismes de réconciliation doivent être clarifiés pour éviter de conserver des silos branchés superficiellement.
 
 Exemples :
 
@@ -151,6 +155,8 @@ Et ce qui reste autour :
 FLOW devient le point de cohérence Demand dans l'univers GBM.
 
 Il ne remplace pas tout le paysage applicatif.
+
+La question n'est donc pas seulement de savoir quelles applications restent, mais lesquelles peuvent se brancher proprement sur la colonne vertébrale FLOW.
 
 Il retire progressivement StoreLand, Socloz et UR de la cible, en reprenant ou redistribuant leurs responsabilités transverses.
 
