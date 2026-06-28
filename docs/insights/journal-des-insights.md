@@ -54,6 +54,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 023 | Le PIM n'est pas naturellement dans FLOW | FLOW a besoin d'une projection produit d'exécution, pas d'un PIM bis. |
 | 024 | Les données doivent être qualifiées plutôt que rangées dans “Master Data” | FLOW distingue les natures d'information et leur statut Source ou Projection. |
 | 026 | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI | C-LOG peut porter des responsabilités logistiques, entrepôt, transport, stock et événements d'exécution. |
+| 031 | Les données en transit doivent être gouvernées | FLOW doit passer d'une logique de flux projet à une logique de contrats de données gouvernés, en prolongeant l'intuition du demi-flux. |
 
 ## Finance et adhérences externes
 
@@ -97,3 +98,4 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 028 | Positionnement | Le centre de gravité du SI se déplace vers la demande |
 | 029 | Modèle conceptuel | La variation métier doit être pilotée par règles |
 | 030 | Modèle conceptuel | Le SAV est une demande comme les autres |
+| 031 | Opérations, décision et données | Les données en transit doivent être gouvernées |
