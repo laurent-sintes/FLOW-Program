@@ -4,7 +4,7 @@ La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
 Elle doit aussi traiter explicitement les points durs du programme.
 
-Trois hotspots apparaissent déjà comme structurants.
+Quatre hotspots apparaissent déjà comme structurants.
 
 ## Boardriders / SAP ECC : une migration difficile à phaser
 
@@ -39,6 +39,32 @@ Cela peut produire :
 
 Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, ainsi que le contrat d'échange entre FLOW et C-LOG.
 
+## Stock temps réel : obtenir les mouvements à la source
+
+Le Stock Unifié n'a de valeur opérationnelle que si les mouvements de stock remontent avec une fraîcheur suffisante.
+
+Or cette fraîcheur ne dépend pas seulement de FLOW.
+
+Elle dépend aussi de la capacité des systèmes qui observent ou provoquent les mouvements de stock à les transmettre rapidement.
+
+Les systèmes concernés sont notamment :
+
+- Le Point of Sale, porté par une application éditeur.
+- Les solutions logistiques opérées par des entreprises externes ou des filiales.
+- Les WMS, transporteurs, partenaires et systèmes d'exécution qui manipulent physiquement le stock.
+
+Pour tendre vers un stock temps réel, ces systèmes devront accepter de publier les mouvements de stock en événementiel, en asynchrone court.
+
+Ce hotspot impose donc de clarifier :
+
+- Les capacités événementielles réellement disponibles côté POS et solutions logistiques.
+- Les contrats d'événements nécessaires.
+- Les exigences de fraîcheur par usage métier.
+- Les responsabilités en cas de retard, perte ou incohérence d'événement.
+- Les mécanismes de rattrapage et de réconciliation.
+
+Sans cette capacité, FLOW pourra consolider une vision de stock, mais pas garantir une décision de promesse, d'allocation ou de fulfillment suffisamment fiable à l'échelle omnicanale.
+
 ## Wholesale Boardriders : priorisation commerciale vs premier arrivé, premier servi
 
 La stratégie Wholesale de Boardriders repose sur une logique de priorisation des meilleurs clients.
@@ -67,6 +93,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | --- | --- | --- |
 | SAP ECC Boardriders | Migration difficile à phaser, adhérences fortes, risque de big bang | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
 | C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
+| Stock temps réel | Stock unifié trop peu frais pour promettre, allouer ou optimiser de manière fiable | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Wholesale Boardriders | Priorisation commerciale incompatible avec une logique FIFO simple | Rules, policies, allocation, engagements, promesse client |
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
@@ -75,4 +102,4 @@ FLOW est aussi un cadre de décision pour traiter les tensions réelles de conve
 
 ---
 
-← Page précédente : [Plateforme FLOW](4-plateforme-flow.md) · → Page suivante : [Valeur attendue](6-valeur-attendue.md)
+← Page précédente : [Solution](4-plateforme-flow.md) · → Page suivante : [Valeur attendue](6-valeur-attendue.md)
