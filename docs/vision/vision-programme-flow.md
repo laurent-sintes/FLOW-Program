@@ -2,7 +2,7 @@
 
 ## Ambition : converger sans uniformiser
 
-Le Groupe Beaumanoir doit réussir une convergence complexe.
+Le Groupe Beaumanoir doit réussir une <span class="flow-keyword">convergence</span> complexe.
 
 Il doit créer du commun entre des marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.
 
@@ -10,33 +10,37 @@ La réponse ne peut pas être une uniformisation brutale.
 
 Elle ne peut pas non plus être une centralisation ERP classique qui chercherait à faire rentrer toute la diversité du groupe dans un modèle unique.
 
-L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — demandes, stock, promesses, décisions, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
+L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
-> La convergence n'est pas l'uniformisation.
->
-> Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.
+<div class="flow-conviction">
+  <p>La convergence n'est pas l'uniformisation.</p>
+  <p>Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.</p>
+</div>
 
 ## Vision synthétique : FLOW comme moteur de convergence opérationnelle
 
-> FLOW est le moteur de convergence opérationnelle du groupe : une plateforme de fédération des demandes de l'entreprise, qui permet de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, tout en préservant les singularités business lorsque celles-ci créent de la valeur.
+<div class="flow-conviction">
+  <p>FLOW est le moteur de convergence opérationnelle du groupe.</p>
+  <p>Il fédère les demandes, gouverne les décisions, mobilise le stock et le réseau d'exécution, tout en préservant les singularités business utiles.</p>
+</div>
 
 Cette vision repose sur cinq convictions fortes :
 
-- La convergence n'est pas l'uniformisation : elle doit être pilotée par niveaux.
-- Le centre de gravité du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client / utilisateur.
-- Gérer des commandes n'est plus suffisant : il faut savoir traiter des demandes.
-- Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la plateforme elle-même.
-- La variation métier doit être pilotée par le contexte, les Agreements et les règles, sans rendre le SI ingouvernable.
+- La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit être pilotée par niveaux.
+- Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client / utilisateur.
+- Gérer des commandes n'est plus suffisant : il faut savoir traiter des <span class="flow-keyword">demandes</span>.
+- Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
+- La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
 
 ## Concepts qui structurent FLOW
 
 | Concept | Message |
 | --- | --- |
-| Demande | Le point de départ n'est plus la commande, mais l'intention à instruire, décider, promettre, satisfaire et expliquer. |
-| Plateforme Demand | FLOW gouverne des ressources communes et ouvre des capacités contrôlées aux domaines consommateurs et contributeurs. |
-| Stock Unifié | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
-| Agreement | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
-| Source / Projection | Dans un SI distribué, une information fait autorité pour un usage donné ; elle n'est pas maître de manière absolue. |
+| <span class="flow-keyword">Demande</span> | Le point de départ n'est plus la commande, mais l'intention à instruire, décider, promettre, satisfaire et expliquer. |
+| <span class="flow-keyword">Plateforme Demand</span> | FLOW gouverne des ressources communes et ouvre des capacités contrôlées aux domaines consommateurs et contributeurs. |
+| <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
+| <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
+| <span class="flow-keyword">Source / Projection</span> | Dans un SI distribué, une information fait autorité pour un usage donné ; elle n'est pas maître de manière absolue. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
@@ -83,9 +87,10 @@ Satisfaction client-utilisateur
 Stock et réseau d'exécution
 ```
 
-> FLOW ne cherche pas à mieux gérer les commandes.
->
-> FLOW cherche à mieux satisfaire les demandes.
+<div class="flow-conviction">
+  <p>FLOW ne cherche pas à mieux gérer les commandes.</p>
+  <p>FLOW cherche à mieux satisfaire les demandes.</p>
+</div>
 
 FLOW introduit aussi une rupture sur la donnée.
 
@@ -97,13 +102,14 @@ FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
 
-> FLOW configure des capacités d'action.
->
-> Il ne reconstruit pas un grand miroir administratif de l'entreprise.
+<div class="flow-conviction">
+  <p>FLOW configure des capacités d'action.</p>
+  <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
+</div>
 
 ## Ce que porte la plateforme
 
-FLOW est une plateforme de fédération des demandes de l'entreprise.
+FLOW est une <span class="flow-keyword">plateforme</span> de fédération des demandes de l'entreprise.
 
 Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions et mobiliser les ressources d'exécution.
 
@@ -120,9 +126,10 @@ FLOW n'a pas vocation à absorber tout le SI.
 
 Il doit empêcher que les autonomies locales redeviennent des silos au cœur du traitement de la demande.
 
-> Les consommateurs peuvent rester différenciés.
->
-> La plateforme doit être décloisonnée.
+<div class="flow-conviction">
+  <p>Les consommateurs peuvent rester différenciés.</p>
+  <p>La plateforme doit être décloisonnée.</p>
+</div>
 
 ## Points à arbitrer
 
