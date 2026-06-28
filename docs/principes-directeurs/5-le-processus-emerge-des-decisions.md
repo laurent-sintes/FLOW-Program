@@ -1,4 +1,4 @@
-# Principe 5 — Le processus émerge des décisions
+# Principe 5 — Le processus émerge des décisions métier
 
 ## Introduction
 
@@ -22,7 +22,7 @@ Les priorités changent.
 
 Les contraintes apparaissent et disparaissent.
 
-Les décisions doivent être réévaluées.
+Les décisions métier doivent être réévaluées.
 
 FLOW considère que dans ces contextes, le processus ne doit pas constituer le point de départ de la conception.
 
@@ -64,7 +64,7 @@ Mais les variations réelles dépendent :
 * des stocks ;
 * des allocations ;
 * des disponibilités ;
-* des arbitrages métier.
+* des priorités métier.
 
 Une partie importante de cette logique est aujourd'hui dispersée dans :
 
@@ -83,9 +83,9 @@ Les problématiques liées à :
 * stock unifié ;
 * orchestration logistique ;
 
-montrent également que les décisions sont souvent plus importantes que le chemin théorique du processus.
+montrent également que les décisions métier sont souvent plus importantes que le chemin théorique du processus.
 
-Le scénario réellement exécuté dépend du contexte opérationnel observé au moment de la décision.
+Le scénario réellement exécuté dépend du contexte opérationnel observé au moment de la décision métier.
 
 ---
 
@@ -97,7 +97,7 @@ Dans les besoins cibles, l'allocation apparaît comme un ensemble de règles, de
 
 Cela confirme que certaines problématiques ne peuvent pas être comprises uniquement comme des étapes de processus.
 
-Elles doivent être conçues comme des décisions successives prises à partir d'un contexte métier évolutif.
+Elles doivent être conçues comme des décisions métier successives prises à partir d'un contexte métier évolutif.
 
 ---
 
@@ -149,27 +149,27 @@ Lorsque les variations deviennent nombreuses, la logique finit souvent par être
 
 Le processus reste visible.
 
-Les décisions deviennent invisibles.
+Les décisions métier deviennent invisibles.
 
 ---
 
 ## L'approche FLOW
 
-FLOW considère que les décisions constituent un objet de conception de premier ordre.
+FLOW considère que les décisions métier constituent un objet de conception de premier ordre.
 
 Plutôt que de modéliser toutes les variantes de processus, FLOW cherche à modéliser :
 
 * les états ;
 * les événements ;
 * les règles ;
-* les décisions ;
+* les décisions métier ;
 * les contraintes.
 
 Le processus devient alors une conséquence de leur interaction.
 
 ---
 
-## Une demande évolue par décisions successives
+## Une demande évolue par décisions métier successives
 
 Une demande possède un cycle de vie.
 
@@ -187,7 +187,7 @@ Exécutée
 Résolue
 ```
 
-Chaque transition résulte d'une décision prise à partir :
+Chaque transition résulte d'une décision métier prise à partir :
 
 * des règles ;
 * des événements ;
@@ -196,17 +196,17 @@ Chaque transition résulte d'une décision prise à partir :
 
 ---
 
-## Les décisions deviennent explicites
+## Les décisions métier deviennent explicites
 
 FLOW cherche à rendre visibles :
 
 * les règles métier ;
-* les critères d'arbitrage ;
+* les critères de choix ;
 * les politiques de décision ;
 * les événements déclencheurs ;
 * les raisons ayant conduit à une décision.
 
-Une décision doit pouvoir être :
+Une décision métier doit pouvoir être :
 
 * comprise ;
 * tracée ;
@@ -237,7 +237,7 @@ peut être :
 
 Le modèle de demande reste identique.
 
-Les décisions changent.
+Les décisions métier changent.
 
 Le processus qui en résulte change également.
 
@@ -245,7 +245,7 @@ Le processus qui en résulte change également.
 
 ## L'allocation comme exemple
 
-L'allocation montre concrètement pourquoi le processus émerge des décisions.
+L'allocation montre concrètement pourquoi le processus émerge des décisions métier.
 
 Une même demande peut être :
 
@@ -260,7 +260,7 @@ Une même demande peut être :
 
 Ces transitions ne suivent pas toujours un workflow unique.
 
-Elles résultent de décisions prises à partir de stocks, de priorités, d'engagements, de règles commerciales, de contraintes logistiques et d'événements opérationnels.
+Elles résultent de décisions métier prises à partir de stocks, de priorités, d'engagements, de règles commerciales, de contraintes logistiques et d'événements opérationnels.
 
 ---
 
@@ -275,7 +275,7 @@ Cette approche conduit naturellement à privilégier :
     +
 Règles
     +
-Décisions
+Décisions métier
 ```
 
 plutôt que :
@@ -303,9 +303,9 @@ Le Case :
 * reçoit les événements ;
 * expose le contexte de décision.
 
-Les décisions prises sur le Case déterminent son évolution.
+Les décisions métier prises sur le Case déterminent son évolution.
 
-Le processus observé est la conséquence de ces décisions successives.
+Le processus observé est la conséquence de ces décisions métier successives.
 
 ---
 
@@ -335,12 +335,12 @@ Ils deviennent une vue de lecture du comportement du système.
 
 Les ERP modélisent principalement des processus et des documents.
 
-FLOW modélise principalement des demandes, des règles, des événements et des décisions.
+FLOW modélise principalement des demandes, des règles, des événements et des décisions métier.
 
 Le processus n'est pas défini à l'avance dans toutes ses variantes.
 
-Il émerge des décisions prises sur le Case.
+Il émerge des décisions métier prises sur le Case.
 
 Les processus s'observent.
 
-Les décisions se conçoivent.
+Les décisions métier se conçoivent.
