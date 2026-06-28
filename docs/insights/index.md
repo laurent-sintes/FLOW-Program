@@ -14,7 +14,7 @@ Pour une lecture rapide, commencer par :
 
 - [Histoire de FLOW](histoire-de-flow.md) — le récit d'évolution du programme ;
 - [Journal des insights](journal-des-insights.md) — la liste classée et chronologique des insights ;
-- [Vision du programme FLOW](../architecture-entreprise/vision/vision-programme-flow.md) — la consolidation actuelle des messages structurants.
+- [Vision du programme FLOW](../vision/vision-programme-flow.md) — la consolidation actuelle des messages structurants.
 
 ## Positionnement de FLOW
 
