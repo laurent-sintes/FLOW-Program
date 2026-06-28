@@ -12,15 +12,11 @@ Dans une approche OMS classique, le système est souvent organisé autour de la 
 
 Ces approches ne suffisent plus à traiter la convergence du groupe.
 
-La question centrale n'est plus :
+La question centrale n'est plus : comment gérer une commande ?
 
-> Comment gérer une commande ?
+La question devient : quelle <span class="flow-keyword">demande</span> faut-il comprendre, décider, promettre, satisfaire et expliquer ?
 
-La question devient :
-
-> Quelle demande faut-il comprendre, décider, promettre, satisfaire et expliquer ?
-
-FLOW déplace donc le centre de gravité du système d'information :
+FLOW déplace donc le <span class="flow-keyword">centre de gravité</span> du système d'information :
 
 ```text
 Ancien centre de gravité
@@ -71,7 +67,7 @@ Une commande client, une commande B2B, une demande SAV, un retour, une exception
 
 ## La Demande : l'unité autonome de la décision et de l'orchestration
 
-FLOW part de la demande.
+FLOW part de la <span class="flow-keyword">demande</span>.
 
 La demande devient l'unité métier qui permet de relier une intention, un contexte, des décisions, des ressources, des documents, des événements et une exécution.
 
@@ -91,7 +87,7 @@ Cette lecture permet de dépasser la logique “une application = un processus�
 
 Elle donne une continuité métier lorsque la demande traverse plusieurs domaines, applications, organisations ou partenaires.
 
-Dans l'architecture cible, cette demande pourra être portée par des objets de type Case, développés et opérés dans une plateforme de Case Management.
+Dans l'architecture cible, cette demande pourra être portée par des objets de type <span class="flow-keyword">Case</span>, développés et opérés dans une plateforme de Case Management.
 
 Mais au niveau de la vision, le concept central reste la demande : ce que l'entreprise doit comprendre, arbitrer, satisfaire et expliquer.
 
@@ -129,7 +125,10 @@ FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
 
-FLOW devient une plateforme qui configure des capacités d'action, pas un grand miroir administratif de l'entreprise.
+<div class="flow-conviction">
+  <p>FLOW configure des capacités d'action.</p>
+  <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
+</div>
 
 ---
 
