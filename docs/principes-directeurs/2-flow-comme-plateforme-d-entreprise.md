@@ -33,6 +33,61 @@ Elle vise au contraire à réconcilier dans un même socle les responsabilités 
 
 ---
 
+## Une plateforme gouverne des ressources centralisées
+
+Une plateforme d'entreprise n'est pas seulement un ensemble d'API ou une collection de composants techniques.
+
+C'est une entité autonome qui possède un périmètre de responsabilité, une gouvernance, un cycle de vie et des ressources qu'elle maintient dans la durée.
+
+Dans FLOW, ces ressources centralisées peuvent être :
+
+- des objets métier de demande et de Case ;
+- des règles, politiques et décisions ;
+- le Stock Unifié ;
+- le Fulfillment Network ;
+- les capacités d'allocation, réservation, promesse et orchestration ;
+- les événements, faits, documents et vues nécessaires à la traçabilité ;
+- les standards d'interface et d'extension.
+
+Ces ressources ne sont pas centralisées pour tout contrôler depuis un centre unique.
+
+Elles sont centralisées parce que leur dispersion crée de l'incohérence, des arbitrages contradictoires, des coûts d'intégration et une perte de capacité d'optimisation.
+
+---
+
+## Une plateforme reste ouverte
+
+Une plateforme ne doit pas devenir un monolithe fermé.
+
+Son rôle est aussi de permettre à des acteurs externes à la plateforme de contribuer à son fonctionnement, sans fragiliser le socle commun.
+
+Cette ouverture doit être contrôlée.
+
+FLOW doit donc proposer des processus explicites pour :
+
+- configurer le réseau d'exécution : nœuds, capacités, services, contraintes, SLA ;
+- développer de nouveaux types de Case ou de demandes métier ;
+- définir, versionner, tester et publier des règles ;
+- construire ou faire évoluer des décisions métier ;
+- publier et consommer des événements selon des contrats gouvernés ;
+- exposer des extensions sans créer de dette locale non maîtrisée.
+
+```text
+Plateforme
+    ↓
+Ressources centralisées et gouvernées
+    +
+Processus contrôlés de configuration et d'extension
+```
+
+C'est cette combinaison qui distingue une plateforme d'une application centralisée classique.
+
+Une application centralisée cherche surtout à faire faire.
+
+Une plateforme cherche aussi à permettre à d'autres de configurer, étendre et consommer ses capacités dans un cadre maîtrisé.
+
+---
+
 ## Ce que nous avons observé chez GBM
 
 Au fil du temps, le système d'information de GBM s'est enrichi de nombreuses solutions :
@@ -180,7 +235,20 @@ Elle combine des capacités métier, techniques et organisationnelles permettant
 - Lifecycle Management
 - Standards
 
-### 2. Elle est ouverte et extensible
+### 2. Elle gouverne ses ressources centrales
+
+FLOW doit posséder une gouvernance propre sur les ressources dont la cohérence est critique.
+
+Cela implique :
+
+- des owners identifiés ;
+- des règles d'évolution ;
+- des contrôles de qualité ;
+- une gestion du cycle de vie ;
+- des mécanismes d'arbitrage ;
+- une observabilité opérationnelle.
+
+### 3. Elle est ouverte et extensible
 
 FLOW expose ses capacités au travers de :
 
@@ -190,9 +258,13 @@ FLOW expose ses capacités au travers de :
 - projections de données ;
 - flux analytiques.
 
-De nouvelles capacités, règles ou services peuvent être intégrés sans remettre en cause l'ensemble de la plateforme.
+Mais l'ouverture ne se limite pas à la consommation.
 
-### 3. Elle préserve l'autonomie des consommateurs
+Elle doit aussi permettre à des domaines externes de configurer et d'étendre la plateforme selon des processus gouvernés.
+
+De nouvelles capacités, règles, décisions, types de Case ou services peuvent être intégrés sans remettre en cause l'ensemble de la plateforme.
+
+### 4. Elle préserve l'autonomie des consommateurs
 
 FLOW ne cherche pas à imposer :
 
@@ -205,7 +277,7 @@ FLOW ne cherche pas à imposer :
 >
 > Les consommateurs construisent les expériences.
 
-### 4. Elle porte sa propre gouvernance
+### 5. Elle porte sa propre gouvernance
 
 Une plateforme est un actif partagé.
 
@@ -226,6 +298,10 @@ FLOW n'est ni un ERP, ni un OMS, ni une plateforme d'intégration.
 FLOW est une plateforme d'entreprise composée de capacités métier, techniques et de gouvernance partagées au service des marques, des canaux, des partenaires et des business models du groupe.
 
 FLOW ne juxtapose pas ERP et OMS : il cherche à réconcilier les responsabilités de Demand & Fulfillment dans un socle cohérent.
+
+FLOW gouverne des ressources centralisées lorsque leur dispersion crée de l'incohérence.
+
+FLOW reste ouvert grâce à des processus contrôlés de configuration, d'extension et de consommation.
 
 FLOW n'est pas une recherche du progiciel idéal.
 
