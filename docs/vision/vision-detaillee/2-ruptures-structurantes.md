@@ -1,5 +1,10 @@
 # Ruptures : déplacer le centre de gravité du SI
 
+<div class="flow-conviction">
+  <p>FLOW ne demande pas seulement de changer de plateforme.</p>
+  <p>FLOW demande de changer le point de départ du raisonnement.</p>
+</div>
+
 FLOW ne propose pas seulement une nouvelle plateforme.
 
 Il propose plusieurs ruptures de raisonnement nécessaires pour traiter la convergence du groupe.
