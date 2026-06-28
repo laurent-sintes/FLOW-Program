@@ -34,6 +34,16 @@ FLOW doit donc clarifier :
 - les responsabilités en cas de retard, perte ou incohérence d'événement ;
 - les mécanismes de rattrapage et de réconciliation.
 
+## Lien avec les capacités d'intégration
+
+Ce hotspot traite le cas particulier du stock.
+
+Il ne doit pas porter seul tout le sujet de l'intégration des systèmes existants.
+
+Les exigences de publication d'événements, d'APIs, de statuts, de corrélation, de réconciliation ou de supervision sont traitées plus largement dans le hotspot [Capacités d'intégration des systèmes réintégrés](capacites-integration-systemes-reintegres.md).
+
+Le stock temps réel en est l'un des cas les plus critiques, car la fraîcheur des mouvements conditionne directement la promesse, l'allocation et l'optimisation du fulfillment.
+
 ## À retenir
 
 Le stock temps réel n'est pas seulement une capacité FLOW.
