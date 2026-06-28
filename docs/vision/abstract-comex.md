@@ -1,4 +1,4 @@
-# FLOW en une page : le choix stratégique
+# Note de choix stratégique : FLOW
 
 <div class="flow-conviction">
   <p>FLOW n'est pas le choix d'un outil.</p>
