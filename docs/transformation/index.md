@@ -40,4 +40,4 @@ Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de
 
 La transformation FLOW doit aider les équipes à comprendre que la convergence ne signifie pas la disparition des singularités.
 
-Elle signifie que les responsabilités critiques — demandes, décisions, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées.
+Elle signifie que les responsabilités critiques — demandes, décisions métier, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées.
