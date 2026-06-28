@@ -16,6 +16,7 @@ Cette section transforme progressivement le glossaire en point d'entrée vers le
 | Convergence pilotée par niveaux | [Vision synthétique](vision/vision-programme-flow.md#ambition-converger-sans-uniformiser) · [Ambition](vision/vision-detaillee/1-ambition-et-contexte.md#opportunite-converger-sans-basculer-dans-un-modele-unique) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande--demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) |
 | Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand--supply-depasser-achat--vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Donnée au repos | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Concepts clés](vision/concepts-cles.md#source--projection) |
 | Donnée en transit | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md#donnees-en-transit--des-flux-projet-aux-contrats-gouvernes) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Principe 02](principes-directeurs/2-flow-comme-plateforme-d-entreprise.md) |
@@ -127,6 +128,10 @@ Intuition d'architecture qui sépare la publication d'une information de sa cons
 ### Demand & Fulfillment
 
 Ensemble des responsabilités qui permettent de recevoir une demande, de l’instruire, de décider si et comment elle peut être servie, puis d’en piloter l’exécution. Dans FLOW, ce périmètre réunit notamment demande, commande, stock, promesse, allocation, événements, exceptions, documents et cycle de vie.
+
+### Donnée au repos
+
+Information stockée, maintenue ou consultée dans un domaine, une application, une base, un référentiel ou une projection. Dans FLOW, la donnée au repos se qualifie d'abord par sa nature et par son statut dans le domaine : source ou projection.
 
 ### Donnée de référence / donnée partagée
 
