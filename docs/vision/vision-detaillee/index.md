@@ -10,7 +10,7 @@ Les pages ci-dessous détaillent le raisonnement complet : pourquoi FLOW existe,
 
 1. [Ambition](1-ambition.md) — converger sans uniformiser, grâce à un modèle fédéré.
 2. [Ruptures](2-ruptures-structurantes.md) — déplacer le centre de gravité du SI.
-3. [Solution](3-plateforme-flow.md) — une plateforme pour fédérer les demandes, opérations et décisions.
+3. [Solution](3-plateforme-flow.md) — une plateforme pour fédérer les demandes, opérations et décisions métier.
 4. [Hotspots](4-hotspots.md) — les points à approfondir et arbitrer.
 5. [Valeur attendue](5-valeur-attendue.md) — les bénéfices reliés aux problèmes observés.
 
