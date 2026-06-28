@@ -2,7 +2,7 @@
   <h1>Programme FLOW</h1>
   <p>Référentiel documentaire et mémoire vivante du programme FLOW.</p>
   <p>Le Groupe Beaumanoir doit réussir une convergence complexe : créer du commun entre marques, canaux, business models et héritages IT très différents, sans perdre les singularités qui font leur valeur.</p>
-  <p>FLOW explore une réponse fédérée : une plateforme Demand capable de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, sans imposer une uniformisation brutale.</p>
+  <p>FLOW explore une réponse fédérée : une plateforme Demand capable de traiter les demandes, gouverner les décisions métier, mobiliser le stock et le réseau d'exécution, sans imposer une uniformisation brutale.</p>
 </div>
 
 ## Explorer FLOW
@@ -10,9 +10,9 @@
 <p class="flow-section-intro">Le référentiel se lit comme un chemin : partir du contexte et des tensions de convergence, formuler la vision, puis seulement stabiliser les principes, l'architecture cible et la transformation.</p>
 
 <div class="flow-home-grid">
-  <a class="flow-card" href="flow-foundations/">
-    <strong>FLOW Foundations</strong>
-    <span>Le point d’entrée pour comprendre pourquoi FLOW existe, quels problèmes il adresse et quel vocabulaire il installe.</span>
+  <a class="flow-card" href="vision/abstract/">
+    <strong>Abstract</strong>
+    <span>La lecture en une page du problème, du choix stratégique et de la valeur attendue.</span>
   </a>
   <a class="flow-card flow-card--context" href="contexte/">
     <strong>Contexte</strong>
@@ -56,4 +56,4 @@
 
 Le contexte décrit le point de départ. Les insights constituent la mémoire du programme. Ils alimentent la vision et les principes directeurs. Ces principes guident ensuite l'architecture cible, la méthodologie de cadrage et les sujets de transformation.
 
-Le référentiel détaillé — décisions, standards, interfaces, capacités détaillées et roadmap — sera créé au rythme de sa maturation ; il ne précède pas les éléments qui le justifient.
+Le référentiel détaillé — arbitrages, standards, interfaces, capacités détaillées et roadmap — sera créé au rythme de sa maturation ; il ne précède pas les éléments qui le justifient.
