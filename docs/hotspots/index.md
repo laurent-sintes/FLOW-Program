@@ -28,6 +28,7 @@ Un sujet mérite d'être rangé ici lorsqu'il :
 | SAP ECC Boardriders | Migration difficile à phaser, adhérences fortes, risque de big bang | [SAP ECC Boardriders](sap-ecc-boardriders.md) |
 | C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | [C-LOG et décision de fulfillment](c-log-decision-fulfillment.md) |
 | Stock temps réel | Stock unifié trop peu frais pour promettre, allouer ou optimiser de manière fiable | [Stock temps réel](stock-temps-reel.md) |
+| PLM, catalogue, Article / EAN | Dépendance de FLOW au modèle PLM historique, difficulté à gérer produits conçus et produits importés | [PLM, catalogue, Article / EAN](plm-catalogue-article-ean.md) |
 | Wholesale / B2B | Priorisation commerciale, responsabilités B2B, convergence BRD / GBM et intra-GBM | [Convergence B2B / Wholesale](convergence-b2b-wholesale.md) |
 
 ## À retenir
