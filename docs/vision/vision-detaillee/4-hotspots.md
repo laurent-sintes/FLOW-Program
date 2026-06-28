@@ -4,7 +4,7 @@ La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
 Elle doit aussi traiter explicitement les points durs du programme.
 
-Quatre <span class="flow-keyword">hotspots</span> apparaissent déjà comme structurants.
+Cinq <span class="flow-keyword">hotspots</span> apparaissent déjà comme structurants.
 
 ## Boardriders / SAP ECC : une migration difficile à phaser
 
@@ -65,6 +65,31 @@ Ce hotspot impose donc de clarifier :
 
 Sans cette capacité, FLOW pourra consolider une vision de stock, mais pas garantir une décision de promesse, d'allocation ou de fulfillment suffisamment fiable à l'échelle omnicanale.
 
+## PLM, catalogue, Article / EAN : découpler conception et exécution
+
+Beaumanoir dispose d'un PLM structurant pour gérer les collections, les fiches produits, les grilles taille / couleur, les échanges avec les fournisseurs et les engagements industriels très tôt dans la saison.
+
+Ce modèle est adapté aux produits conçus dans le processus historique de collection.
+
+Mais d'autres stratégies existent, notamment avec Sarenza ou certaines collections Boardriders : l'entreprise peut acheter des produits déjà designés par les fournisseurs, fournis directement sous forme de variantes produit avec EAN, parfois sans respecter les nomenclatures taille / couleur du PLM historique.
+
+Le hotspot est donc le suivant : FLOW devra gérer à la fois des produits conçus et des produits importés.
+
+La question n'est pas seulement produit.
+
+Elle touche à la frontière entre conception amont, catalogue d'exécution, achat, vente, promesse et fulfillment.
+
+FLOW doit clarifier s'il doit connaître la structure du PLM ou consommer un catalogue au niveau Article / EAN, suffisamment riche pour exécuter, mais découplé des variations de processus de conception de saison.
+
+Ce hotspot impose de clarifier :
+
+- La granularité produit minimale nécessaire à FLOW.
+- Le rôle du Product Agreement Catalog.
+- La frontière entre PLM, PIM, catalogue d'exécution et FLOW.
+- La gestion des produits conçus et des produits importés.
+- La gouvernance des nomenclatures taille / couleur.
+- Le découplage entre processus de conception amont et capacités Demand / Fulfillment.
+
 ## Wholesale Boardriders : priorisation commerciale vs premier arrivé, premier servi
 
 La stratégie Wholesale de Boardriders repose sur une logique de priorisation des meilleurs clients.
@@ -90,6 +115,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | SAP ECC Boardriders | Migration difficile à phaser, adhérences fortes, risque de big bang | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
 | C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Stock temps réel | Stock unifié trop peu frais pour promettre, allouer ou optimiser de manière fiable | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
+| PLM, catalogue, Article / EAN | Dépendance excessive de FLOW au modèle PLM historique, difficulté à gérer produits conçus et produits importés | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
 | Wholesale Boardriders | Priorisation commerciale incompatible avec une logique FIFO simple | Rules, policies, allocation, engagements, promesse client |
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
