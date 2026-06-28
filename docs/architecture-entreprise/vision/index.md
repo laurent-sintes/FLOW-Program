@@ -8,12 +8,12 @@ Elle ne décrit pas encore le détail de ce qui sera construit.
 
 Elle répond d'abord à quelques questions simples :
 
-- pourquoi le programme existe ;
-- quel problème d'entreprise il cherche à résoudre ;
-- quel changement de modèle il propose ;
-- ce qui doit devenir commun ;
-- ce qui doit rester différenciant ;
-- comment les décisions futures devront rester cohérentes avec l'ambition.
+- Pourquoi le programme existe.
+- Quel problème d'entreprise il cherche à résoudre.
+- Quel changement de modèle il propose.
+- Ce qui doit devenir commun.
+- Ce qui doit rester différenciant.
+- Comment les décisions futures devront rester cohérentes avec l'ambition.
 
 Dans FLOW, la vision est particulièrement importante car le programme ne consiste pas seulement à remplacer des applications.
 
@@ -25,12 +25,12 @@ La vision doit donc expliquer pourquoi FLOW existe avant de décrire ce que FLOW
 
 Une vision n'est pas :
 
-- une liste de fonctionnalités ;
-- une architecture détaillée ;
-- un choix de progiciel ;
-- un backlog ;
-- une promesse commerciale trop générale ;
-- une description exhaustive du périmètre.
+- Une liste de fonctionnalités.
+- Une architecture détaillée.
+- Un choix de progiciel.
+- Un backlog.
+- Une promesse commerciale trop générale.
+- Une description exhaustive du périmètre.
 
 Si la vision devient trop détaillée, elle remplace l'architecture.
 
@@ -38,18 +38,10 @@ Si elle reste trop vague, elle ne guide plus les arbitrages.
 
 Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour orienter, suffisamment stable pour durer, suffisamment concrète pour être testée dans les décisions.
 
-## Ce qu'on attend d'une vision dans FLOW
+## Pages disponibles
 
-La vision FLOW doit permettre de :
-
-- raconter le problème à résoudre sans partir uniquement des applications existantes ;
-- expliquer pourquoi une centralisation ERP classique n'est pas une réponse suffisante ;
-- expliquer pourquoi FLOW est une plateforme Demand et pas seulement un ERP, un OMS ou un outil d'intégration ;
-- distinguer convergence et uniformisation ;
-- donner un sens commun aux travaux BRD, GBM et marques ;
-- guider les principes directeurs ;
-- alimenter l'architecture cible ;
-- cadrer les sujets de transformation.
+- [Vision du programme FLOW](vision-programme-flow.md) — synthèse courte.
+- [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 
 ## Chaîne de contribution
 
@@ -71,12 +63,8 @@ Fonctionnalités et solutions
 
 Elle transforme donc les observations du programme en ambition de transformation.
 
-## Pages disponibles
-
-- [Vision du programme FLOW](vision-programme-flow.md)
-
 ## À retenir
 
 Cliquer sur la section Vision doit d'abord permettre de comprendre ce qu'est une vision et pourquoi elle structure le programme.
 
-La vision spécifique du programme FLOW est ensuite portée par une page dédiée.
+La vision spécifique du programme FLOW est portée par une synthèse, puis par une vision détaillée découpée en chapitres.
