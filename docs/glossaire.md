@@ -9,6 +9,7 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Concept | Pages de référence |
 | --- | --- |
 | Accord / Agreement | [Concepts clés](vision/concepts-cles.md#agreement) · [Agreement comme pivot](insights/agreement-comme-pivot.md) · [Product Agreement Catalog](architecture-cible/produits/product-agreement-catalog.md) |
+| Arbitrage | [Concepts clés](vision/concepts-cles.md#arbitrage) · [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) |
 | Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
 | Colonne vertébrale opérationnelle | [Concepts clés](vision/concepts-cles.md#colonne-vertebrale-operationnelle) · [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Architecture cible](architecture-cible/index.md) |
 | Contrat de données | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
@@ -41,6 +42,12 @@ Décision de réserver, prioriser ou affecter une ressource à une demande selon
 ### API
 
 Interface contractuelle permettant à un consommateur d'appeler une capacité exposée par un produit ou un domaine.
+
+### Arbitrage
+
+Choix de programme, d'architecture ou de gouvernance qui doit être rendu explicite avant de stabiliser une cible, une frontière de responsabilité ou une trajectoire.
+
+Un arbitrage ne doit pas être confondu avec une décision métier exécutée par FLOW dans le traitement d'un Case.
 
 ### Article / EAN / Product Variant
 
@@ -136,6 +143,8 @@ Choix explicite qui fait progresser le traitement d'un Case.
 
 Une décision s'appuie sur des faits, des données, des règles ou policies, et produit un résultat traçable.
 
+Dans FLOW, une décision est une fonction métier du Case Management et ne doit pas être confondue avec un arbitrage de programme.
+
 ### Document
 
 Pièce opérationnelle, commerciale, logistique ou financière associée à un Case : facture, bon de livraison, bon de retour, avoir, packing list, contrat ou preuve.
@@ -214,7 +223,7 @@ Dans un SI distribué, la Golden Source est contextualisée par l'usage.
 
 ### Hotspot
 
-Sujet de tension métier ou architecture qui nécessite une analyse avant d'être transformé en principe, décision ou architecture cible.
+Sujet de tension métier ou architecture qui nécessite une analyse avant d'être transformé en principe, arbitrage ou architecture cible.
 
 ## I
 
@@ -252,7 +261,7 @@ Manière dont une information circule : API, event, query, stream, batch ou sync
 
 Module StoreLand activé pour certaines marques premium.
 
-Il mélange design commercial, assortment / commercial agreement et commandes d'achat ; FLOW doit découper ces responsabilités avant de décider quoi reprendre.
+Il mélange design commercial, assortment / commercial agreement et commandes d'achat ; FLOW doit découper ces responsabilités avant d'arbitrer quoi reprendre.
 
 ### Moteur de règles
 
