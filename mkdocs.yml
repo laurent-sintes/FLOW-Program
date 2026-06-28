@@ -67,10 +67,8 @@ nav:
           - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Vision:
       - vision/index.md
-      - Note de choix stratégique: vision/abstract-comex.md
-      - Lean Canvas FLOW: vision/lean-canvas-flow.md
-      - Abstract Programme: vision/vision-programme-flow.md
-      - Concepts clés: vision/concepts-cles.md
+      - Abstract: vision/abstract.md
+      - Vision: vision/vision.md
       - Vision détaillée:
           - Sommaire: vision/vision-detaillee/index.md
           - Ambition: vision/vision-detaillee/1-ambition-et-contexte.md
@@ -78,6 +76,8 @@ nav:
           - Solution: vision/vision-detaillee/3-plateforme-flow.md
           - Hotspots: vision/vision-detaillee/4-hotspots.md
           - Valeur attendue: vision/vision-detaillee/5-valeur-attendue.md
+      - Concepts clés: vision/concepts-cles.md
+      - Note de choix stratégique: vision/abstract-comex.md
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
