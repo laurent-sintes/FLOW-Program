@@ -143,4 +143,4 @@ FLOW réussira si certaines tensions deviennent observables, pilotables ou dispa
 
 ---
 
-→ Lire aussi : [Vision](vision.md) · [Vision détaillée](vision-detaillee/index.md) · [Note de choix stratégique](note-choix-strategique.md)
+→ Lire aussi : [Vision](vision.md) · [Vision détaillée](vision-detaillee/index.md) · [Note de choix stratégique](abstract-comex.md)
