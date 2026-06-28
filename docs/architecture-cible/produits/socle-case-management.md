@@ -220,6 +220,123 @@ Cette architecture doit éviter une confusion : le moteur de workflow n'est qu'u
   <p>Le Case porte la demande, le contexte, les décisions métier et l'histoire.</p>
 </div>
 
+## Proposition technique candidate
+
+Cette fiche ne constitue pas encore un choix d'architecture technique.
+
+Elle propose néanmoins une hypothèse de construction réaliste, plutôt open source et maîtrisable, pour initialiser un prototype du Socle Case Management.
+
+<div class="flow-conviction">
+  <p>La technologie ne doit pas ramener FLOW vers un modèle process-centric.</p>
+  <p>Le cœur technique doit rester le Case, pas le workflow.</p>
+</div>
+
+La combinaison la plus cohérente à explorer est :
+
+| Besoin | Candidat technique | Rôle dans le socle |
+| --- | --- | --- |
+| Développer les objets Case | Spring Boot / Java ou Kotlin | Construire les agrégats Case, APIs, règles d'invariants, intégrations et extensions domaine. |
+| Orchestrer les tâches longues | Temporal | Gérer attentes, retries, timers, compensations, appels asynchrones et conversations longues avec les systèmes externes. |
+| Exécuter les décisions métier | Drools / DMN / Decision Services | Évaluer règles, policies, critères de choix, priorités et décisions explicables. |
+| Produire des faits à partir d'événements | Drools CEP / Situation Engine dédié | Transformer des événements opérationnels en faits exploitables par le Case. |
+| Publier et consommer les événements | Kafka, Redpanda ou équivalent | Diffuser les événements de Case, d'exécution, de stock et de statut. |
+| Persister l'état et l'historique | PostgreSQL + event log dédié | Conserver l'état courant, l'historique, les documents de référence et les traces d'audit. |
+| Exposer et sécuriser les interactions | API Gateway + IAM / IDP, par exemple Keycloak | Contrôler les accès, délégations, scopes consommateurs et appels machine-to-machine. |
+| Observer et diagnostiquer | OpenTelemetry + logs / métriques / traces | Comprendre les décisions, workflows, délais, retries, erreurs et écarts de cohérence. |
+
+Cette architecture garde une séparation nette :
+
+```text
+Spring Boot
+    → porte le modèle Case et les APIs métier
+
+Temporal
+    → orchestre les tâches longues et interactions asynchrones
+
+Drools / Decision Services
+    → produit les décisions métier explicables
+
+CEP / Situation Engine
+    → transforme des événements en faits
+
+Event bus
+    → diffuse les événements et alimente les projections
+```
+
+L'intérêt de cette approche est de ne pas confondre quatre responsabilités :
+
+- le Case, qui porte la demande et sa cohérence ;
+- la décision métier, qui produit un choix explicable ;
+- le workflow, qui exécute ou attend des actions ;
+- l'événement, qui décrit ce qui s'est réellement passé.
+
+## Lecture des options techniques
+
+Plusieurs options doivent être comparées avant arbitrage.
+
+| Option | Intérêt | Risque principal | Lecture FLOW |
+| --- | --- | --- | --- |
+| Spring Boot + Temporal + Drools | Forte maîtrise, coût licence faible, modèle Case réellement sur mesure, bonne séparation Case / workflow / décision. | Effort de construction produit plus élevé ; besoin d'une vraie discipline d'architecture, d'observabilité et de tests de règles. | Option recommandée pour un prototype sérieux du socle. |
+| Camunda | Très bon outillage BPMN / DMN, lisibilité des processus, maturité sur l'orchestration métier. | Risque de revenir à un modèle process-centric où le workflow redevient le centre du design. Modèle de licence et coûts à analyser selon l'édition retenue. | À considérer pour orchestrer certains processus explicites, mais pas comme cœur naturel du Case Management FLOW. |
+| NewStore élargi | Produit déjà présent chez BRD, proche de certains besoins OMS : commande, stock, promesse, SFS, notification, paiement, SAV. | Risque de prendre un OMS comme socle Demand général. Couverture incertaine des Cases achat, fournisseur, litige transverse, données en transit et gouvernance multi-domaines. | À utiliser comme source d'apprentissage ou trajectoire de transition, pas comme socle cible élargi par défaut. |
+| Solution Case Management du marché | Accélération possible si le produit porte nativement Case, rules, documents, audit, APIs et extensibilité. | Risque de verrouillage éditeur, coût, adaptation excessive ou modèle conceptuel imposé. | À benchmarker si un produit démontre une vraie approche case-centric et ouverte. |
+
+## Position recommandée à ce stade
+
+La recommandation d'architecture est de ne pas démarrer par NewStore ou Camunda comme socle cible.
+
+Ces solutions peuvent être utiles, mais elles portent chacune un biais :
+
+- NewStore pousse naturellement vers une lecture OMS et commande.
+- Camunda pousse naturellement vers une lecture processus et workflow.
+
+Or FLOW cherche précisément à déplacer le centre de gravité vers la Demande et le Case.
+
+La cible la plus alignée est donc un socle case-centric construit autour d'un modèle métier maîtrisé, avec des composants spécialisés autour :
+
+```text
+Case d'abord
+    ↓
+Décision métier explicite
+    ↓
+Workflow comme composant d'exécution
+    ↓
+Événements et faits comme mémoire opérationnelle
+```
+
+Spring Boot + Temporal + Drools constitue une bonne hypothèse de départ parce que cette combinaison permet de construire un socle modulaire, plutôt gratuit en licences logicielles, sans imposer un progiciel unique comme modèle de pensée.
+
+Cette gratuité doit toutefois être comprise correctement : elle réduit le coût de licence, mais elle augmente l'importance de l'ingénierie produit, de l'exploitation, des tests, de la documentation et de la gouvernance technique.
+
+## Points de vigilance techniques
+
+Cette hypothèse doit être validée par prototype.
+
+Les points à tester en priorité sont :
+
+- Capacité à modéliser plusieurs types de Case sans dupliquer le socle.
+- Séparation stricte entre état du Case, décisions métier, workflows et événements.
+- Traçabilité d'une décision métier : faits utilisés, règle appliquée, version de policy, résultat produit.
+- Capacité CEP : transformer des événements de stock, paiement, supply ou document en faits utilisables.
+- Robustesse Temporal : retries, timers, compensation, attente d'événements externes, reprise après incident.
+- Versioning des règles et rejouabilité des décisions.
+- Intégration avec les systèmes existants par API conversationnelle et événements.
+- Observabilité de bout en bout : Case, workflow, décision, événement, appel externe.
+- Capacité des équipes domaine à contribuer sans fragiliser le socle.
+
+## Premiers choix à instruire
+
+Avant de figer la cible, il faut instruire quelques choix.
+
+| Question | Pourquoi c'est structurant |
+| --- | --- |
+| Le moteur de décision doit-il être Drools, DMN, un moteur maison léger ou une combinaison ? | Le besoin varie entre règles simples, tables de décision, policies et optimisation. |
+| Le CEP doit-il être porté par Drools Fusion, par un moteur de stream processing ou par un Situation Engine développé dans FLOW ? | Les faits doivent être fiables, explicables et rejouables. |
+| Temporal doit-il orchestrer tous les plans d'action ou seulement les tâches longues et interactions externes ? | Le workflow ne doit pas redevenir le modèle métier principal. |
+| Les Cases sont-ils développés uniquement par l'équipe plateforme ou aussi par des équipes domaine dans un cadre contrôlé ? | C'est le cœur du modèle plateforme ouverte et gouvernée. |
+| Quel niveau de standardisation impose-t-on aux événements de Case ? | Les Vues 360, l'auditabilité et les projections en dépendent. |
+| Où s'arrête le Socle Case Management et où commencent Stock Unifié, Réseau d'Exécution et Product Agreement Catalog ? | La séparation des produits FLOW doit rester lisible pour les PO / PM. |
+
 ## Impacts produit pour FLOW
 
 Le Socle Case Management doit permettre de traiter toutes les demandes métier, au-delà de la seule vente.
@@ -254,6 +371,12 @@ Chaque demande doit être traitée comme un petit projet : elle a un objectif, u
 12. Définir le Situation Engine minimal permettant de produire des faits à partir d'événements.
 13. Définir les contrats entre Case, moteur de règles, workflow et systèmes d'exécution.
 14. Définir les règles d'explication : pourquoi telle décision métier a été prise, sur quels faits et selon quelles policies.
+15. Prototyper un Case Spring Boot avec état, event log, documents attachés et APIs.
+16. Prototyper une orchestration Temporal sur une transaction longue avec attente d'événement externe.
+17. Prototyper une décision métier Drools / DMN avec version de règle et trace d'explication.
+18. Prototyper une transformation CEP : événements entrants → faits de situation → décision métier.
+19. Comparer Camunda sur un scénario équivalent afin de vérifier s'il reste un composant d'orchestration ou s'il reprend le centre du modèle.
+20. Documenter ce que NewStore sait déjà faire et ce qui ne doit pas être repris tel quel dans le socle Case Management.
 
 ## Questions ouvertes
 
