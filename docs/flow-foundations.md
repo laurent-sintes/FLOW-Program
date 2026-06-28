@@ -147,7 +147,7 @@ La question structurante devient : quels événements opérationnels, faits éco
 
 ## Principes directeurs
 
-Les principes directeurs constituent le cadre de décision durable de FLOW. Ils sont détaillés dans la section [Principes directeurs](architecture-entreprise/principes-directeurs/index.md).
+Les principes directeurs constituent le cadre de décision durable de FLOW. Ils sont détaillés dans la section [Principes directeurs](principes-directeurs/index.md).
 
 Les principes documentés sont :
 
@@ -205,7 +205,7 @@ Les changements principaux sont regroupés dans la page [Les changements à cond
 
 ## Pages de référence
 
-- [Vision du programme FLOW](architecture-entreprise/vision/vision-programme-flow.md)
+- [Vision du programme FLOW](vision/vision-programme-flow.md)
 - [Overview de la plateforme FLOW](architecture-cible/overview-plateforme-flow.md)
 - [Journal des insights](insights/journal-des-insights.md)
 - [Glossaire FLOW](glossaire.md)
