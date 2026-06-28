@@ -58,11 +58,44 @@ Dans ce cas, chaque variation de stratégie de collection, de fournisseur ou de 
 
 À l'inverse, si FLOW se place à un niveau trop pauvre, il peut perdre les informations nécessaires pour acheter, vendre, promettre, allouer ou expliquer une demande.
 
+## Vente et achat : le même niveau de catalogue ne suffit peut-être pas
+
+Pour les demandes afférentes à la vente, un catalogue d'articles, ou Product Variant, est très probablement suffisant.
+
+La vente a principalement besoin d'un objet exécutable et identifiable : Article, EAN, caractéristiques utiles, disponibilité, prix ou conditions applicables, promesse, allocation et exécution.
+
+À ce niveau, FLOW peut raisonnablement chercher à rester découplé du modèle PLM.
+
+Pour les achats, la situation est plus délicate.
+
+Les règles industrielles, les engagements fournisseurs, les conditions de volume, les contraintes de fabrication et les informations de préparation de saison sont parfois tellement intégrées dans la fiche produit que le simple niveau Article / EAN pourrait être insuffisant.
+
+FLOW pourrait alors avoir besoin d'un <span class="flow-keyword">catalogue Produit d'achat</span>, distinct du catalogue d'articles utilisé pour la vente.
+
+Ce serait une duplication partielle du référentiel produit.
+
+Elle serait dommageable si elle reconstitue deux vérités concurrentes.
+
+Mais elle peut devenir nécessaire si les responsabilités d'achat ne peuvent pas être correctement portées par un catalogue Article / EAN.
+
+L'arbitrage est donc ouvert :
+
+```text
+Demandes de vente
+    Catalogue Article / EAN probablement suffisant
+
+Demandes d'achat
+    Catalogue Article / EAN peut-être insuffisant
+    Catalogue Produit d'achat à étudier
+```
+
+Le sujet doit être analysé en profondeur avant de stabiliser la cible.
+
 ## Question d'architecture
 
 La question centrale est donc :
 
-> FLOW doit-il connaître la structure du PLM, ou doit-il consommer un catalogue d'exécution au niveau le plus fin, Article / EAN, afin d'être découplé des variations de processus de conception de saison amont ?
+> FLOW doit-il connaître la structure du PLM, consommer un catalogue d'exécution au niveau Article / EAN, ou introduire un catalogue Produit d'achat pour couvrir les règles et engagements propres aux achats ?
 
 Cette question est structurante car elle touche directement :
 
@@ -71,23 +104,27 @@ Cette question est structurante car elle touche directement :
 - la granularité minimale nécessaire au fulfillment ;
 - la capacité à vendre et acheter des produits conçus comme des produits importés ;
 - la gouvernance des nomenclatures taille / couleur ;
-- la capacité de FLOW à rester indépendant des variations de processus amont.
+- la capacité de FLOW à rester indépendant des variations de processus amont ;
+- le risque de duplication de référentiel produit entre vente et achat.
 
 ## Hypothèse de travail
 
 L'hypothèse à instruire est que FLOW ne doit pas reproduire la structure complète du PLM.
 
-FLOW devrait plutôt consommer une projection d'exécution, suffisamment riche pour traiter les demandes, mais découplée du processus de conception.
+Pour la vente, FLOW devrait plutôt consommer une projection d'exécution, suffisamment riche pour traiter les demandes, mais découplée du processus de conception.
 
 Cette projection pourrait être portée par le Product Agreement Catalog, au niveau Article / EAN, avec les informations nécessaires pour :
 
-- acheter ;
 - vendre ;
 - promettre ;
 - allouer ;
 - réserver ;
 - exécuter ;
 - expliquer les engagements et conditions applicables.
+
+Pour l'achat, l'hypothèse doit rester ouverte.
+
+Il faut étudier si les responsabilités d'achat peuvent s'appuyer sur la même projection Article / EAN enrichie par les Agreements, ou si un catalogue Produit d'achat distinct est nécessaire pour porter les règles, conditions et informations issues de la fiche produit.
 
 Le PLM resterait alors responsable de la conception produit, de l'affinage avec les fournisseurs et des nomenclatures nécessaires à son propre processus.
 
@@ -97,11 +134,13 @@ FLOW consommerait ce qui est nécessaire à l'exécution, sans absorber toute la
 
 | Sujet | Question à instruire |
 | --- | --- |
-| Granularité produit | Le niveau Article / EAN suffit-il comme unité d'exécution pour FLOW ? |
+| Granularité produit vente | Le niveau Article / EAN suffit-il pour vendre, promettre, allouer et exécuter ? |
+| Granularité produit achat | Les achats peuvent-ils s'appuyer sur Article / EAN ou nécessitent-ils un catalogue Produit d'achat ? |
 | Produits conçus vs produits importés | Comment représenter les deux stratégies sans imposer un modèle unique ? |
 | Nomenclatures taille / couleur | Quelles nomenclatures doivent être gouvernées par le PLM, lesquelles doivent être projetées vers FLOW ? |
 | Product Agreement Catalog | Porte-t-il uniquement une projection d'exécution ou devient-il un référentiel métier plus large ? |
-| Achats et ventes | Les achats et ventes peuvent-ils s'appuyer sur la même projection Article / EAN enrichie par les Agreements ? |
+| Duplication produit | Comment éviter deux référentiels produit concurrents si un catalogue Produit d'achat est nécessaire ? |
+| Achats et ventes | Les achats et ventes peuvent-ils s'appuyer sur la même projection enrichie par les Agreements ? |
 | Découplage amont / aval | Comment éviter que les variations de conception de saison deviennent une complexité FLOW ? |
 
 ## À retenir
@@ -114,4 +153,8 @@ Le PLM conçoit et prépare la collection.
 
 FLOW doit traiter les demandes, achats, ventes et engagements sur des objets suffisamment stabilisés pour l'exécution.
 
-La bonne articulation pourrait être une projection Article / EAN gouvernée, enrichie par les Agreements, plutôt qu'une reprise directe du modèle PLM dans FLOW.
+Pour la vente, le niveau Article / EAN semble probablement suffisant.
+
+Pour les achats, ce niveau doit être challengé : si les règles sont trop intégrées dans la fiche produit, un catalogue Produit d'achat pourrait être nécessaire.
+
+Ce serait une duplication à éviter si possible, mais une contrainte à assumer si elle protège mieux les responsabilités métier.
