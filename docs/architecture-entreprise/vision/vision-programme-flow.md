@@ -16,7 +16,7 @@ FLOW porte donc une ambition de convergence fédérée.
 
 ## Vision synthétique
 
-> FLOW est le moteur de convergence opérationnelle du groupe : une plateforme Demand fédérée qui permet de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, tout en préservant les singularités business lorsque celles-ci créent de la valeur.
+> FLOW est le moteur de convergence opérationnelle du groupe : une plateforme de fédération des demandes de l'entreprise, qui permet de traiter les demandes, gouverner les décisions, mobiliser le stock et le réseau d'exécution, tout en préservant les singularités business lorsque celles-ci créent de la valeur.
 
 Cette vision repose sur cinq convictions fortes :
 
@@ -24,7 +24,7 @@ Cette vision repose sur cinq convictions fortes :
 - le centre de gravité du SI doit se déplacer de l'ERP-document vers la demande, la décision et la satisfaction client / utilisateur ;
 - gérer des commandes n'est plus suffisant : il faut savoir traiter des demandes ;
 - les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la plateforme elle-même ;
-- la variation métier doit être pilotée par le contexte, les Agreements et les règles, sans faire exploser la complexité du SI.
+- la variation métier doit être pilotée par le contexte, les Agreements et les règles, sans rendre le SI ingouvernable.
 
 ## Situation héritée : comment le groupe en est arrivé là
 
@@ -64,8 +64,9 @@ Les irritants principaux sont :
 - une rationalisation encore insuffisante du paysage applicatif ;
 - des synchronisations de données trop fragiles entre systèmes ;
 - des cadences de rafraîchissement non uniformes, qui créent des risques d'incohérence ;
-- une difficulté à diagnostiquer les écarts entre applications ;
-- une vision centralisée du stock et des commandes encore insuffisante ;
+- une difficulté à retrouver une vérité fiable dans une constellation d'applications qui portent chacune une partie des données ;
+- une vision centralisée du stock encore insuffisante, notamment entre stock magasin et stock entrepôt ;
+- une vision centralisée des demandes encore insuffisante, notamment entre demandes B2C, B2B, retours, SAV et exceptions ;
 - une difficulté à optimiser le fulfillment multicanal à l'échelle du groupe.
 
 Ces irritants ne sont pas seulement techniques.
@@ -151,9 +152,9 @@ Ancien centre de gravité
     OMS / commande / canal
 
 Nouveau centre de gravité
-    Demande / Case / décision
+    Demande / décision
     Satisfaction client-utilisateur
-    Réseau d'exécution
+    Stock et réseau d'exécution
 ```
 
 Ce déplacement est majeur.
@@ -162,7 +163,7 @@ Il signifie que l'on ne part plus d'abord de la facture, de la commande ou du mo
 
 On part de la demande à comprendre, promettre, exécuter et expliquer.
 
-## Passer de “j'achète / je vends” à Demand / Supply
+## Passer de “j'achète / je vends” à demande / supply
 
 L'approche classique consiste souvent à découper le SI selon les organisations, les canaux ou les processus :
 
@@ -181,7 +182,7 @@ Au lieu de partir de l'organisation existante, FLOW part des problèmes durables
 Cette approche conduit à distinguer deux grands mondes :
 
 ```text
-Demand
+Demande
     Les demandes à instruire, décider, promettre, suivre et expliquer
 
 Supply
@@ -192,43 +193,35 @@ La demande devient le point de départ.
 
 Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions, mobiliser des ressources et garantir une exécution fiable.
 
-## Le Case comme unité métier d'orchestration
+## La demande comme unité métier d'orchestration
 
 FLOW part de la demande.
 
-Cette demande est portée dans la durée par un Case.
+La demande devient l'unité métier qui permet de relier une intention, un contexte, des décisions, des ressources, des documents, des événements et une exécution.
 
 ```text
-Demande / Case
-        ↓
+Demande
+    ↓
 Contexte et Agreement
-        ↓
+    ↓
 Règles et décisions
-        ↓
+    ↓
 Stock, promesse, allocation, réseau d'exécution
-        ↓
+    ↓
 Action, document, événement, exception
 ```
 
-Le Case devient l'objet métier actif.
-
-Il porte dans la durée :
-
-- le contexte ;
-- les décisions ;
-- les promesses ;
-- les documents ;
-- les événements ;
-- les exceptions ;
-- les interactions avec les capacités FLOW et les systèmes d'exécution.
-
 Cette lecture permet de dépasser la logique “une application = un processus”.
 
-Le Case porte la continuité métier lorsque la demande traverse plusieurs domaines, applications, organisations ou partenaires.
+Elle donne une continuité métier lorsque la demande traverse plusieurs domaines, applications, organisations ou partenaires.
 
-## FLOW comme plateforme Demand fédérée
+Dans l'architecture cible, cette demande pourra être portée par des objets de type Case, développés et opérés dans une plateforme de Case Management.
 
-FLOW est une plateforme Demand fédérée.
+Mais au niveau de la vision, le concept central reste la demande : ce que l'entreprise doit comprendre, arbitrer, satisfaire et expliquer.
+
+## FLOW comme plateforme de fédération des demandes de l'entreprise
+
+FLOW est une plateforme de fédération des demandes de l'entreprise.
 
 Elle n'a pas vocation à remplacer tout le SI.
 
@@ -264,7 +257,7 @@ Cette approche permet à FLOW de raisonner sur la capacité réelle d'exécution
 
 L'ambition n'est pas de construire un nouveau monolithe.
 
-L'ambition est de créer une plateforme fédératrice, capable de dialoguer avec les applications existantes et futures, tout en portant les responsabilités communes critiques.
+L'ambition est de créer une plateforme qui fédère les opérations et les décisions, capable de dialoguer avec les applications existantes et futures, tout en portant les responsabilités communes critiques.
 
 ## Rupture dans l'approche de la donnée
 
@@ -302,7 +295,7 @@ FLOW cherche à définir les objets nécessaires pour traiter les demandes de ma
 
 FLOW devient une plateforme qui configure des capacités d'action, pas un grand miroir administratif de l'entreprise.
 
-## Absorber la variation sans faire exploser la complexité
+## Maîtriser la variation sans rendre le SI ingouvernable
 
 Le groupe n'a pas besoin d'un modèle rigide qui impose l'uniformisation partout.
 
@@ -330,7 +323,7 @@ Commande ou demande générique
     = traitement adapté
 ```
 
-La variation métier ne doit plus mécaniquement augmenter la complexité du SI.
+La variation métier ne doit plus augmenter mécaniquement la complexité du SI.
 
 L'uniformisation cesse alors d'être une contrainte IT.
 
@@ -373,18 +366,7 @@ Les expériences client, les outils métier spécialisés, les systèmes d'exéc
 
 Mais FLOW doit empêcher que ces autonomies redeviennent des silos au cœur du traitement de la demande.
 
-FLOW doit clarifier leur rôle :
-
-```text
-consommateur
-contributeur
-source
-projection
-système d'exécution
-domaine spécialisé
-```
-
-## Les hotspots à traiter
+## Hotspots : les points à approfondir et arbitrer
 
 La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
@@ -413,7 +395,7 @@ C-LOG ne doit pas être lu seulement comme un outil logistique ou un composant d
 
 Il porte déjà une partie des décisions de fulfillment : orientation, exécution, stock entrepôt, transport, événements et capacités opérationnelles.
 
-Si FLOW porte une partie de la décision Demand, et C-LOG une partie de la décision Supply, le risque est de distribuer la décision sans gouvernance claire.
+Si FLOW porte une partie de la décision liée à la demande, et C-LOG une partie de la décision liée à l'exécution, le risque est de distribuer la décision sans gouvernance claire.
 
 Cela peut produire :
 
@@ -423,7 +405,7 @@ Cela peut produire :
 - une optimisation locale au détriment de l'optimisation globale ;
 - une difficulté à expliquer pourquoi une décision a été prise.
 
-Ce hotspot impose de définir précisément la frontière entre décision Demand et décision Supply, ainsi que le contrat d'échange entre FLOW et C-LOG.
+Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, ainsi que le contrat d'échange entre FLOW et C-LOG.
 
 ### Wholesale Boardriders : priorisation commerciale vs premier arrivé, premier servi
 
@@ -452,7 +434,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 | Hotspot | Risque | Ce que FLOW doit clarifier |
 | --- | --- | --- |
 | SAP ECC Boardriders | Migration difficile à phaser, adhérences fortes, risque de big bang | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
-| C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | Frontière Demand / Supply, contrat de décision, gouvernance des arbitrages |
+| C-LOG | Décision de fulfillment distribuée, erreurs d'aiguillage, optimisation locale | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Wholesale Boardriders | Priorisation commerciale incompatible avec une logique FIFO simple | Rules, policies, allocation, engagements, promesse client |
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
@@ -461,20 +443,24 @@ FLOW est aussi un cadre de décision pour traiter les tensions réelles de conve
 
 ## Valeur attendue
 
-FLOW doit permettre au groupe de franchir un palier de convergence opérationnelle.
+La valeur de FLOW ne vient pas d'une promesse générique de modernisation.
 
-Les bénéfices attendus sont :
+Elle vient du lien entre les problèmes observés et les capacités que la plateforme doit rendre possibles.
 
-- décloisonner les logiques B2B, B2C, retail, wholesale et marques ;
-- disposer d'une vision plus fiable et centralisée du stock ;
-- optimiser le fulfillment omnicanal pour l'ensemble du groupe ;
-- réduire les incohérences liées aux synchronisations entre systèmes ;
-- améliorer la transparence des activités grâce aux événements, statuts et Vues 360 ;
-- mieux piloter les commandes, retours, exceptions, SAV et engagements ;
-- intégrer plus facilement de nouveaux canaux, marques ou business models ;
-- développer de nouvelles capacités : extension de gamme, nouveaux modes de gestion du stock, meilleure promesse client ;
-- réduire le surstock sans dégrader la garantie de livraison ;
-- conserver les singularités de gestion lorsqu'elles sont justifiées par le business.
+| Problème observé | Ce que FLOW apporte | Valeur attendue |
+| --- | --- | --- |
+| Stock dispersé entre magasins, entrepôts, systèmes retail, e-commerce et B2B | Stock Unifié, APIs de disponibilité, réservation, allocation et facts stock | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
+| Demandes dispersées entre B2C, B2B, retours, SAV, exceptions et systèmes historiques | Plateforme de fédération des demandes, Case Management, événements et statuts communs | Décloisonnement des demandes et meilleure continuité de traitement |
+| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, Vues 360, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Variations métier portées par des processus ou applications spécifiques | Agreements, règles, policies, contexte de demande et moteur de décision | Singularités préservées sans multiplication incontrôlée des processus |
+| Décisions de fulfillment distribuées et parfois incompatibles | Clarification des responsabilités de décision, contrats entre demande et exécution | Moins d'erreurs d'aiguillage, meilleure optimisation globale |
+| Nouveaux canaux, marques ou business models difficiles à intégrer | Plateforme commune, services exposés, modèle fédéré | Intégration plus rapide sans reconstruire toute la chaîne |
+| Surstock et promesse client difficiles à équilibrer | Allocation, priorisation, stock disponible contextualisé, réseau d'exécution | Réduction du surstock sans dégrader la garantie de livraison |
+
+La valeur attendue est donc double :
+
+- améliorer la cohérence opérationnelle du groupe ;
+- préserver la capacité des marques et canaux à se différencier lorsque cela crée de la valeur.
 
 ## Promesse pour le groupe
 
@@ -547,7 +533,7 @@ Elle appelle des changements de posture dans la manière de concevoir, d'arbitre
 
 Ces changements sont documentés dans la page [Les changements à conduire avec FLOW](../../transformation/changements-a-conduire.md).
 
-Cette page doit servir de référence pour garder la transformation inspirante et concrète : ne plus servir l'organisation existante, raisonner Demand / Supply, réconcilier ERP et OMS, penser fulfillment avant documents, et piloter une convergence par niveaux.
+Cette page doit servir de référence pour garder la transformation inspirante et concrète : ne plus servir l'organisation existante, raisonner demande / supply, réconcilier ERP et OMS, penser fulfillment avant documents, et piloter une convergence par niveaux.
 
 ## Mise en architecture cible
 
@@ -591,16 +577,11 @@ FLOW réussira si le groupe constate progressivement :
 
 ## À retenir
 
-FLOW ne cherche pas à mieux gérer les commandes.
-
-FLOW cherche à mieux satisfaire les demandes.
-
-FLOW ne cherche pas à imposer un modèle unique.
-
-FLOW cherche à construire une plateforme fédérée, décloisonnée et adaptative : commune là où l'entreprise doit converger, différenciée là où le business l'exige.
-
-Sa valeur n'est pas de remplacer toutes les applications.
-
-Sa valeur est de rendre cohérentes les demandes, décisions, ressources, promesses, événements, documents et exceptions qui traversent l'entreprise.
-
-FLOW devient une plateforme qui configure des capacités d'action, pas un grand miroir administratif de l'entreprise.
+| Ne pas imaginer que... | FLOW vise plutôt à... |
+| --- | --- |
+| FLOW est seulement un projet de remplacement applicatif. | Faire converger des responsabilités critiques aujourd'hui dispersées. |
+| FLOW cherche à mieux gérer les commandes. | Mieux traiter les demandes, y compris commandes, retours, SAV, exceptions et engagements. |
+| FLOW impose un modèle unique à toutes les marques. | Construire une plateforme commune qui préserve les singularités business utiles. |
+| FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision, le stock et le réseau d'exécution. |
+| FLOW doit absorber tout le SI. | Fédérer les opérations et décisions critiques, tout en laissant les domaines spécialisés jouer leur rôle. |
+| FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
