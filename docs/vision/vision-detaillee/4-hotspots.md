@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Sponsors, direction, architecture</strong>
+      <strong>Sponsor, Direction, Architecte</strong>
     </div>
     <div>
       <span>Temps de lecture</span>

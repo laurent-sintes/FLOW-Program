@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Change, sponsors, métiers</strong>
+      <strong>Change Manager, Sponsor, Métier</strong>
     </div>
     <div>
       <span>Temps de lecture</span>

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -23,6 +24,14 @@ INSTRUCTIONS = DOCS / "administration" / "instructions-codex.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
+READING_METRICS = DOCS / "referentiel" / "page-metrics.json"
+ROLE_REGISTRY = DOCS / "administration" / "referentiel-roles.md"
+CARD_START = "<!-- FLOW-READING-CARD:START -->"
+CARD_END = "<!-- FLOW-READING-CARD:END -->"
+AUDIENCE_RE = re.compile(
+    r"<span>\s*Public cible\s*</span>\s*<strong>(.*?)</strong>",
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 @dataclass
@@ -87,6 +96,10 @@ def rel(path: Path) -> str:
 
 def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def docs_markdown_pages() -> list[Path]:
+    return sorted(path for path in DOCS.rglob("*.md") if path.is_file())
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
@@ -320,7 +333,10 @@ def check_agents_publication_sync(checks: Checks) -> None:
         "scripts\\build-docs.ps1",
         "scripts\\check-site.ps1",
         "scripts\\update-reading-metrics.ps1",
+        "guide-contribution-contenu.md",
+        "modele-mental-connaissances.md",
         "environnement-codex-windows.md",
+        "referentiel-roles.md",
     ]
 
     for phrase in required_phrases:
@@ -366,6 +382,9 @@ def check_section_indexes(checks: Checks) -> None:
 
     admin_text = read_text(admin_index)
     expected_admin = [
+        "guide-contribution-contenu.md",
+        "modele-mental-connaissances.md",
+        "referentiel-roles.md",
         "environnement-codex-windows.md",
         "instructions-codex.md",
     ]
@@ -376,6 +395,161 @@ def check_section_indexes(checks: Checks) -> None:
 
     if all(page in admin_text for page in expected_admin):
         checks.pass_check("Administration index links to expected operational pages.")
+
+
+def parse_role_registry(checks: Checks) -> set[str]:
+    if not ROLE_REGISTRY.exists():
+        checks.error("ROLE_REGISTRY_MISSING", "Role registry page is missing.", ROLE_REGISTRY)
+        return set()
+
+    roles: set[str] = set()
+    seen: dict[str, str] = {}
+    for line in read_text(ROLE_REGISTRY).splitlines():
+        if not line.startswith("|"):
+            continue
+
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+
+        role = cells[0]
+        if role.casefold() == "rôle" or re.fullmatch(r":?-+:?", role):
+            continue
+
+        if "," in role:
+            checks.error("ROLE_REGISTRY_SEPARATOR", f"Role label cannot contain a comma: {role}", ROLE_REGISTRY)
+            continue
+
+        key = role.casefold()
+        if key in seen:
+            checks.error("ROLE_REGISTRY_DUPLICATE", f"Duplicate role label: {role}", ROLE_REGISTRY)
+            continue
+
+        seen[key] = role
+        roles.add(role)
+
+    if not roles:
+        checks.error("ROLE_REGISTRY_EMPTY", "Role registry does not contain any role.", ROLE_REGISTRY)
+
+    return roles
+
+
+def split_audience_roles(audience: str) -> list[str]:
+    return [role.strip() for role in audience.split(",") if role.strip()]
+
+
+def extract_reading_card_audience(path: Path, checks: Checks) -> str | None:
+    text = read_text(path)
+    start_count = text.count(CARD_START)
+    end_count = text.count(CARD_END)
+
+    if start_count != 1 or end_count != 1:
+        checks.error(
+            "READING_CARD_COUNT",
+            f"Expected exactly one reading card, found {start_count} start marker(s) and {end_count} end marker(s).",
+            path,
+        )
+        return None
+
+    block = text.split(CARD_START, 1)[1].split(CARD_END, 1)[0]
+    match = AUDIENCE_RE.search(block)
+    if not match:
+        checks.error("READING_CARD_AUDIENCE", "Reading card does not expose a Public cible field.", path)
+        return None
+
+    return re.sub(r"\s+", " ", match.group(1)).strip()
+
+
+def validate_audience_roles(path: Path, audience: str, roles: set[str], checks: Checks) -> bool:
+    audience_roles = split_audience_roles(audience)
+    if not audience_roles:
+        checks.error("READING_ROLE_EMPTY", "Reading card audience is empty.", path)
+        return False
+
+    valid = True
+    if len(audience_roles) > 3:
+        checks.error("READING_ROLE_TOO_MANY", f"Reading card uses more than three roles: {audience}", path)
+        valid = False
+
+    unknown = [role for role in audience_roles if role not in roles]
+    if unknown:
+        checks.error(
+            "READING_ROLE_UNKNOWN",
+            f"Reading card uses role(s) outside the registry: {', '.join(unknown)}",
+            path,
+        )
+        valid = False
+
+    return valid
+
+
+def load_metric_audiences(checks: Checks, roles: set[str]) -> dict[str, str]:
+    if not READING_METRICS.exists():
+        checks.error("READING_METRICS_FILE", "Reading metrics JSON is missing.", READING_METRICS)
+        return {}
+
+    try:
+        data = json.loads(read_text(READING_METRICS))
+    except json.JSONDecodeError as exc:
+        checks.error("READING_METRICS_JSON", f"Cannot parse reading metrics JSON: {exc}", READING_METRICS)
+        return {}
+
+    expected_registry = ROLE_REGISTRY.relative_to(DOCS).as_posix()
+    if data.get("role_registry") != expected_registry:
+        checks.error(
+            "READING_METRICS_ROLE_REGISTRY",
+            f"Reading metrics should reference {expected_registry}.",
+            READING_METRICS,
+        )
+
+    pages = data.get("pages")
+    if not isinstance(pages, list):
+        checks.error("READING_METRICS_PAGES", "Reading metrics JSON does not expose a pages list.", READING_METRICS)
+        return {}
+
+    audiences: dict[str, str] = {}
+    for page in pages:
+        if not isinstance(page, dict):
+            checks.error("READING_METRICS_PAGE", "Reading metrics page entry is not an object.", READING_METRICS)
+            continue
+
+        page_path = page.get("path")
+        audience = page.get("target_audience")
+        if not isinstance(page_path, str) or not isinstance(audience, str):
+            checks.error("READING_METRICS_AUDIENCE", "Reading metrics page entry misses path or target_audience.", READING_METRICS)
+            continue
+
+        validate_audience_roles(DOCS / page_path, audience, roles, checks)
+        audiences[page_path] = audience
+
+    return audiences
+
+
+def check_reading_role_registry(checks: Checks) -> None:
+    before = len(checks.errors)
+    roles = parse_role_registry(checks)
+    if not roles:
+        return
+
+    metric_audiences = load_metric_audiences(checks, roles)
+    for path in docs_markdown_pages():
+        audience = extract_reading_card_audience(path, checks)
+        if audience is None:
+            continue
+
+        validate_audience_roles(path, audience, roles, checks)
+
+        page_key = path.relative_to(DOCS).as_posix()
+        metric_audience = metric_audiences.get(page_key)
+        if metric_audience is not None and metric_audience != audience:
+            checks.error(
+                "READING_CARD_METRICS_MISMATCH",
+                f"Reading card audience differs from page metrics: {audience} != {metric_audience}",
+                path,
+            )
+
+    if len(checks.errors) == before:
+        checks.pass_check("Reading card audiences use the role registry.")
 
 
 def check_reading_metrics(checks: Checks) -> None:
@@ -505,6 +679,7 @@ def run_checks() -> Checks:
     check_built_site_links(checks)
     check_agents_publication_sync(checks)
     check_section_indexes(checks)
+    check_reading_role_registry(checks)
     check_reading_metrics(checks)
     check_flow_guardrails(checks)
     check_glossary_core_concepts(checks)

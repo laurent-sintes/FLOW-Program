@@ -16,7 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 METRICS_PATH = DOCS / "referentiel" / "page-metrics.json"
 STATS_PAGE = DOCS / "referentiel" / "statistiques.md"
+ROLE_REGISTRY_PATH = DOCS / "administration" / "referentiel-roles.md"
 READING_WORDS_PER_MINUTE = 220
+PROFILE_VERSION = 2
 
 CARD_START = "<!-- FLOW-READING-CARD:START -->"
 CARD_END = "<!-- FLOW-READING-CARD:END -->"
@@ -102,43 +104,43 @@ STOPWORDS = {
 
 SECTION_PROFILES = {
     "vision": (
-        "Sponsors, direction, architecture",
+        "Sponsor, Direction, Architecte",
         "Comprendre la vision, les arbitrages et le vocabulaire cible",
     ),
     "architecture-cible": (
-        "Architecture, product owners, delivery",
+        "Architecte, Développeur, Delivery",
         "Relier les concepts FLOW aux produits, patterns et responsabilités cible",
     ),
     "principes-directeurs": (
-        "Architecture, product owners, métiers",
+        "Architecte, Métier, Sponsor",
         "Guider les décisions de conception et vérifier la cohérence des arbitrages",
     ),
     "hotspots": (
-        "Sponsors, architecture, métiers concernés",
+        "Sponsor, Architecte, Métier",
         "Préparer les arbitrages sur les points sensibles de convergence",
     ),
     "contexte": (
-        "Architecture, métiers, nouveaux contributeurs",
+        "Architecte, Métier, Contributeur",
         "Comprendre le point de départ et les tensions observées",
     ),
     "insights": (
-        "Architecture, sponsors, contributeurs",
+        "Architecte, Sponsor, Contributeur",
         "Retrouver la mémoire de raisonnement et les hypothèses stabilisées",
     ),
     "methode": (
-        "PMO, architecture, contributeurs",
+        "PMO, Architecte, Contributeur",
         "Cadrer la démarche et passer des observations aux choix de conception",
     ),
     "administration": (
-        "Contributeurs, Codex, mainteneurs",
+        "Mainteneur, Contributeur, Codex",
         "Maintenir le référentiel, l'environnement local et les contrôles",
     ),
     "transformation": (
-        "Change, sponsors, métiers",
+        "Change Manager, Sponsor, Métier",
         "Préparer l'adoption et les changements de posture",
     ),
     "referentiel": (
-        "Tous lecteurs, contributeurs",
+        "Tous lecteurs, Contributeur, Mainteneur",
         "Piloter la lisibilité, les concepts et les repères quantitatifs",
     ),
 }
@@ -176,6 +178,48 @@ def strip_generated_stats(text: str) -> str:
 
 def strip_generated_blocks(text: str) -> str:
     return strip_generated_stats(strip_reading_card(text))
+
+
+def load_role_registry() -> set[str]:
+    if not ROLE_REGISTRY_PATH.exists():
+        raise RuntimeError(f"Référentiel des rôles introuvable : {rel(ROLE_REGISTRY_PATH)}")
+
+    roles: set[str] = set()
+    for line in read_text(ROLE_REGISTRY_PATH).splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+        role = cells[0]
+        if role in {"Rôle", "---"} or set(role) == {"-"}:
+            continue
+        roles.add(role)
+
+    if not roles:
+        raise RuntimeError(f"Aucun rôle trouvé dans {rel(ROLE_REGISTRY_PATH)}")
+
+    return roles
+
+
+def split_roles(audience: str) -> list[str]:
+    return [role.strip() for role in audience.split(",") if role.strip()]
+
+
+def validate_audience(audience: str, path: Path, role_registry: set[str]) -> None:
+    roles = split_roles(audience)
+    if not roles:
+        raise RuntimeError(f"Aucun rôle défini pour {doc_rel(path)}")
+    if len(roles) > 3:
+        raise RuntimeError(f"Trop de rôles dans le cartouche de {doc_rel(path)} : {audience}")
+
+    unknown = [role for role in roles if role not in role_registry]
+    if unknown:
+        allowed = ", ".join(sorted(role_registry))
+        raise RuntimeError(
+            f"Rôle non autorisé dans {doc_rel(path)} : {', '.join(unknown)}. "
+            f"Rôles autorisés : {allowed}"
+        )
 
 
 def plain_text(markdown: str) -> str:
@@ -237,20 +281,28 @@ def section_for(path: Path) -> str:
     return relative.parts[0]
 
 
-def profile_for(path: Path) -> tuple[str, str]:
+def profile_for(path: Path, role_registry: set[str]) -> tuple[str, str]:
     relative = path.relative_to(DOCS)
     if relative.as_posix() == "index.md":
-        return ("Tous lecteurs", "S'orienter dans le référentiel FLOW")
+        profile = ("Tous lecteurs", "S'orienter dans le référentiel FLOW")
+        validate_audience(profile[0], path, role_registry)
+        return profile
     if relative.as_posix() == "glossaire.md":
-        return ("Tous lecteurs, contributeurs", "Stabiliser le vocabulaire et retrouver les pages de référence")
+        profile = ("Tous lecteurs, Contributeur", "Stabiliser le vocabulaire et retrouver les pages de référence")
+        validate_audience(profile[0], path, role_registry)
+        return profile
     section = section_for(path)
     if relative.name == "index.md" and section in SECTION_PROFILES:
         audience, _usage = SECTION_PROFILES[section]
-        return (audience, "S'orienter dans la section et identifier les pages utiles")
-    return SECTION_PROFILES.get(
+        profile = (audience, "S'orienter dans la section et identifier les pages utiles")
+        validate_audience(profile[0], path, role_registry)
+        return profile
+    profile = SECTION_PROFILES.get(
         section,
         ("Tous lecteurs", "Lire et maintenir le référentiel FLOW"),
     )
+    validate_audience(profile[0], path, role_registry)
+    return profile
 
 
 def reading_minutes(word_count: int) -> int:
@@ -271,21 +323,28 @@ def content_hash(markdown: str) -> str:
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 
-def metric_for_page(path: Path, source: str, cached: dict[str, Any] | None = None) -> dict[str, Any]:
+def metric_for_page(
+    path: Path,
+    source: str,
+    role_registry: set[str],
+    cached: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     base = strip_generated_blocks(source)
     digest = content_hash(base)
-    if cached and cached.get("content_hash") == digest:
+    if cached and cached.get("content_hash") == digest and cached.get("profile_version") == PROFILE_VERSION:
+        validate_audience(str(cached.get("target_audience", "")), path, role_registry)
         return cached
 
     word_count = len(words(base))
     terms = term_counts(base)
-    audience, usage = profile_for(path)
+    audience, usage = profile_for(path, role_registry)
     return {
         "path": doc_rel(path),
         "title": extract_title(base, path.stem.replace("-", " ").title()),
         "section": section_for(path),
         "target_audience": audience,
         "usage": usage,
+        "profile_version": PROFILE_VERSION,
         "word_count": word_count,
         "reading_minutes": reading_minutes(word_count),
         "heading_count": len(re.findall(r"^#{1,6}\s+", base, flags=re.MULTILINE)),
@@ -370,17 +429,20 @@ def load_existing_metrics() -> dict[str, dict[str, Any]]:
 
 def collect_metrics() -> list[dict[str, Any]]:
     cached = load_existing_metrics()
+    role_registry = load_role_registry()
     metrics: list[dict[str, Any]] = []
     for path in markdown_pages():
         source = read_text(path)
-        metrics.append(metric_for_page(path, source, cached.get(doc_rel(path))))
+        metrics.append(metric_for_page(path, source, role_registry, cached.get(doc_rel(path))))
     return sorted(metrics, key=lambda item: item["path"])
 
 
 def write_page_metrics(metrics: list[dict[str, Any]]) -> None:
     payload = {
         "schema_version": 1,
+        "profile_version": PROFILE_VERSION,
         "reading_words_per_minute": READING_WORDS_PER_MINUTE,
+        "role_registry": doc_rel(ROLE_REGISTRY_PATH),
         "source": "scripts/update_reading_metrics.py",
         "pages": metrics,
     }
@@ -466,10 +528,11 @@ def stats_page(metrics: list[dict[str, Any]]) -> str:
     terms = aggregate_terms(metrics)
 
     stats_metric = {
-        "target_audience": "Sponsors, architecture, contributeurs",
+        "target_audience": "Sponsor, Architecte, Contributeur",
         "reading_minutes": 3,
         "usage": "Piloter la couverture documentaire et la charge de lecture",
     }
+    validate_audience(stats_metric["target_audience"], STATS_PAGE, load_role_registry())
 
     lines = [
         "# Statistiques du référentiel",
@@ -557,7 +620,9 @@ def current_expected_outputs() -> dict[Path, str]:
 
     payload = {
         "schema_version": 1,
+        "profile_version": PROFILE_VERSION,
         "reading_words_per_minute": READING_WORDS_PER_MINUTE,
+        "role_registry": doc_rel(ROLE_REGISTRY_PATH),
         "source": "scripts/update_reading_metrics.py",
         "pages": metrics,
     }

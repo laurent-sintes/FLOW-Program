@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Contributeurs, Codex, mainteneurs</strong>
+      <strong>Mainteneur, Contributeur, Codex</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -26,5 +26,8 @@ Elle ne porte pas la méthodologie projet elle-même. Elle rassemble les éléme
 
 ## Articles
 
+- [Guide de contribution éditoriale](guide-contribution-contenu.md) — transformer réunions, notes et analyses en contenu maintenable
+- [Modèle mental des connaissances](modele-mental-connaissances.md) — graphe logique pour ranger les informations et mesurer les impacts
+- [Référentiel des rôles](referentiel-roles.md) — rôles autorisés dans les cartouches de lecture
 - [Environnement Codex sous Windows](environnement-codex-windows.md) — poste local, build MkDocs, Git et GitHub CLI
 - [AGENTS.md - Instructions Codex](instructions-codex.md) — mémoire de contribution pour maintenir le référentiel FLOW

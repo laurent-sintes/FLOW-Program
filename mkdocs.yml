@@ -121,6 +121,9 @@ nav:
       - Processus de cadrage: methode/processus-de-cadrage.md
   - Administration du référentiel:
       - Repères: administration/index.md
+      - Guide de contribution éditoriale: administration/guide-contribution-contenu.md
+      - Modèle mental des connaissances: administration/modele-mental-connaissances.md
+      - Référentiel des rôles: administration/referentiel-roles.md
       - Environnement Codex Windows: administration/environnement-codex-windows.md
       - AGENTS.md - Instructions Codex: administration/instructions-codex.md
   - Transformation:

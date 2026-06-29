@@ -44,6 +44,22 @@ Pour lancer la validation complète du référentiel, utiliser :
 
 Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, liens internes, ancres, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
 
+Pour ajouter du contenu documentaire, en particulier à partir d'une réunion ou d'un atelier, se référer à :
+
+```text
+docs/administration/guide-contribution-contenu.md
+```
+
+Cette page rappelle comment dater la source, séparer les faits des analyses, formuler les insights, signaler les hypothèses et vérifier les impacts sur les autres pages. Utiliser le vocabulaire ubiquitaire du référentiel facilite l'analyse humaine et l'intégration par Codex.
+
+Pour comprendre le modèle mental qui permet de ranger l'information et mesurer les impacts, se référer à :
+
+```text
+docs/administration/modele-mental-connaissances.md
+```
+
+Cette page décrit les liens entre source datée, fait observé, insight, vision, principe directeur, concept clé, domaine, capacité, produit FLOW, pattern, hotspot, transformation et règles d'administration.
+
 Pour mettre à jour les cartouches de lecture, le fichier de comptage unitaire par page et la page Statistiques du référentiel, utiliser :
 
 ```powershell
@@ -53,6 +69,7 @@ Pour mettre à jour les cartouches de lecture, le fichier de comptage unitaire p
 Cette commande maintient :
 
 - le cartouche `Repère de lecture` en tête de chaque page ;
+- les rôles de public cible, qui doivent provenir de `docs/administration/referentiel-roles.md` ;
 - `docs/referentiel/page-metrics.json`, qui conserve les comptages unitaires par page ;
 - `docs/referentiel/statistiques.md`, qui agrège les volumes, temps de lecture, concepts, hotspots, composants et nuage de mots.
 
@@ -255,6 +272,9 @@ Impact à vérifier :
 Fichiers clés :
 
 - `docs/administration/index.md`
+- `docs/administration/guide-contribution-contenu.md`
+- `docs/administration/modele-mental-connaissances.md`
+- `docs/administration/referentiel-roles.md`
 - `docs/administration/environnement-codex-windows.md`
 - `docs/administration/instructions-codex.md`
 - `docs/referentiel/statistiques.md`
@@ -263,13 +283,18 @@ Fichiers clés :
 Rôle :
 
 - documenter l'environnement local de contribution ;
+- guider l'ajout de contenu issu des réunions, ateliers, analyses et transcripts ;
+- expliciter le modèle mental des connaissances qui relie vision, principes, concepts, domaines, capacités, produits, patterns, hotspots et impacts ;
 - rendre visible la mémoire de contribution utilisée par Codex ;
+- gouverner les rôles autorisés dans les cartouches de lecture ;
 - garder la construction, les contrôles, les statistiques de lecture et la publication du site reproductibles.
 
 Impact à vérifier :
 
 - tout changement d'outillage doit être répercuté dans `docs/administration/environnement-codex-windows.md` ;
+- tout ajout de contenu issu d'une réunion doit conserver la date de source, distinguer faits, insights, analyse co-construite et questions ouvertes ;
 - tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md` ;
+- tout changement de rôle de public cible doit être répercuté dans `docs/administration/referentiel-roles.md` avant de modifier les cartouches ;
 - tout changement documentaire doit maintenir les cartouches de lecture et `docs/referentiel/page-metrics.json` via `scripts/update-reading-metrics.ps1`.
 
 ### Transformation
@@ -354,4 +379,5 @@ Quand un contenu est ajouté ou modifié, vérifier au minimum :
 - les hotspots associés ;
 - les liens et ancres ;
 - les cartouches de lecture et statistiques via `.\scripts\update-reading-metrics.ps1` ;
+- les rôles de cartouche, qui doivent rester dans le référentiel `docs/administration/referentiel-roles.md` ;
 - le build MkDocs.

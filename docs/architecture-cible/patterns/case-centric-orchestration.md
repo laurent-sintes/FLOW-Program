@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Architecture, product owners, delivery</strong>
+      <strong>Architecte, Développeur, Delivery</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
