@@ -1,6 +1,6 @@
 # Vision
 
-## Ambition : converger sans uniformiser
+## Ambition : converger sans nécessairement uniformiser
 
 Le Groupe Beaumanoir doit réussir une <span class="flow-keyword">convergence</span> complexe.
 
