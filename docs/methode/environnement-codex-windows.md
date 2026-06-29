@@ -100,6 +100,25 @@ Dans un PowerShell Windows classique, elle utilise le Python du `.venv`. Depuis 
 
 Si la commande directe `.\.venv\Scripts\python.exe -m mkdocs build --strict` est utilisée, le bandeau Material peut réapparaître. Ce bandeau vient du paquet `mkdocs-material`, pas d'un problème du référentiel FLOW.
 
+## Vérifier le site
+
+La commande de validation complète est :
+
+```powershell
+.\scripts\check-site.ps1
+```
+
+Elle lance d'abord le build local, puis exécute des contrôles Python sur le site et le référentiel :
+
+- pages Markdown déclarées dans `mkdocs.yml` ;
+- liens internes et ancres du site généré ;
+- absence de contenu généré versionné ;
+- synchronisation entre `AGENTS.md` et la page publiée `Instructions Codex` ;
+- présence des concepts FLOW structurants ;
+- détection de formulations contraires au positionnement de FLOW.
+
+Les erreurs `ERROR` doivent être corrigées avant commit. Les alertes `WARN` signalent un point à examiner, sans bloquer automatiquement.
+
 ## Git et GitHub
 
 Validation Git :
@@ -171,6 +190,7 @@ L'environnement est considéré comme sain lorsque :
 - le `.venv` du projet répond en `3.14.6` ;
 - MkDocs répond en `1.6.1` ;
 - `.\scripts\build-docs.ps1` construit le site ;
+- `.\scripts\check-site.ps1` valide les contrôles automatisés ;
 - `gh auth status` confirme l'authentification GitHub ;
 - `git fetch` passe ;
 - `git status -sb` ne montre pas de changements inattendus hors contenu volontaire.

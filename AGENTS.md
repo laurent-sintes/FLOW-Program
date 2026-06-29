@@ -23,7 +23,7 @@ Le site généré localement n'est pas un livrable final :
 - `.venv/` ne doit jamais être committé ;
 - `.agents/` est un dossier local éventuel, non versionné.
 
-Pour valider le site, utiliser :
+Pour construire le site local, utiliser :
 
 ```powershell
 .\scripts\build-docs.ps1
@@ -36,11 +36,19 @@ Cette commande :
 - fonctionne dans un PowerShell Windows classique ;
 - fonctionne aussi depuis Codex en utilisant le runtime Python embarqué si la sandbox bloque le Python local.
 
+Pour lancer la validation complète du référentiel, utiliser :
+
+```powershell
+.\scripts\check-site.ps1
+```
+
+Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, liens internes, ancres, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+
 Avant de committer :
 
 - vérifier `git status -sb` ;
 - vérifier le diff ;
-- lancer `.\scripts\build-docs.ps1` ;
+- lancer `.\scripts\check-site.ps1` ;
 - ne mettre en stage que les fichiers utiles ;
 - ne pas inclure de contenu généré.
 
