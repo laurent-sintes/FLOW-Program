@@ -10,14 +10,14 @@ Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et 
 
 <div class="flow-conviction">
   <p>Une donnée en transit n'est pas un tuyau technique.</p>
-  <p>C'est un contrat durable entre source, consommateurs et responsabilité métier.</p>
+  <p>C'est un contrat durable entre source de référence, consommateurs et responsabilité métier.</p>
 </div>
 
 ## Responsabilités portées
 
 - Décrire les contrats de données critiques.
 - Distinguer publication et consommation.
-- Documenter nature d'information, source / projection, mode d'échange et granularité.
+- Documenter nature d'information, source de référence / projection, mode d'échange et granularité.
 - Définir fraîcheur, qualité, supervision, reprise et réconciliation.
 - Réduire le foisonnement de flux projet.
 - Soutenir la réintégration des systèmes existants autour de FLOW.
@@ -43,13 +43,13 @@ Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et 
 
 | Information | Nature | Statut probable |
 | --- | --- | --- |
-| Contrat de données | Document / Policy | Source FLOW |
+| Contrat de données | Document / Policy | Source de référence FLOW |
 | Information publiée | Command / Event / Fact / Policy / Objet métier / Document / Nomenclature | Selon contrat |
-| Producteur | Nomenclature / Objet | Source gouvernée |
-| Consommateur | Nomenclature / Objet | Source gouvernée |
-| Mode d'échange | Nomenclature | Source FLOW |
-| Fraîcheur / qualité attendue | Policy | Source FLOW |
-| Écart de réconciliation | Fact | Source ou projection |
+| Producteur | Nomenclature / Objet | Source de référence gouvernée |
+| Consommateur | Nomenclature / Objet | Source de référence gouvernée |
+| Mode d'échange | Nomenclature | Source de référence FLOW |
+| Fraîcheur / qualité attendue | Policy | Source de référence FLOW |
+| Écart de réconciliation | Fact | Source de référence ou projection |
 
 ## Capacités candidates
 

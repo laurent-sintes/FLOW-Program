@@ -4,12 +4,12 @@
 
 Les Vues 360 agrègent les informations nécessaires pour comprendre une activité, un client, un fournisseur, une commande ou un Case.
 
-Elles ne sont pas le système source de toutes les données.
+Elles ne sont pas la source de référence de toutes les données.
 
 Elles fournissent une lecture transverse, principalement en consultation, alimentée par les événements, faits, documents, statuts et décisions.
 
 <div class="flow-conviction">
-  <p>Une Vue 360 ne remplace pas les sources.</p>
+  <p>Une Vue 360 ne remplace pas les sources de référence.</p>
   <p>Elle rend l'activité lisible autour d'un objet ou d'un acteur.</p>
 </div>
 
@@ -23,7 +23,7 @@ Elles fournissent une lecture transverse, principalement en consultation, alimen
 
 ## Ce que le produit ne porte pas
 
-- La création source des données métier.
+- La création ou validation des données métier comme sources de référence.
 - Les règles de décision qui font évoluer un Case.
 - La responsabilité complète CRM ou MDM.
 - Les interfaces d'expérience client complètes.
@@ -36,7 +36,7 @@ Elles fournissent une lecture transverse, principalement en consultation, alimen
 | SAV / service client | Expliquer une situation client. |
 | Finance / contrôle | Retrouver faits, documents et statuts. |
 | PO / PM | Identifier les données manquantes et les besoins de projection. |
-| Systèmes sources | Publier événements, faits ou documents. |
+| Sources de référence | Publier événements, faits ou documents. |
 
 ## Informations clés
 
@@ -45,7 +45,7 @@ Elles fournissent une lecture transverse, principalement en consultation, alimen
 | Case 360 | Projection / Vue | Dérivée FLOW |
 | Customer 360 | Projection | Projection multi-sources |
 | Supplier 360 | Projection | Projection multi-sources |
-| Order / Case 360 | Projection | Dérivée Case + sources externes |
+| Order / Case 360 | Projection | Dérivée Case + sources de référence externes |
 | Historique événements | Event | Projection agrégée |
 | Documents associés | Document | Projection ou référence |
 | Décisions et statuts | Fact / Event | Projection agrégée |
@@ -73,7 +73,7 @@ Elles fournissent une lecture transverse, principalement en consultation, alimen
 
 1. Définir les premières Vues 360 prioritaires.
 2. Définir le modèle de timeline transverse.
-3. Définir les sources et projections nécessaires.
+3. Définir les sources de référence et projections nécessaires.
 4. Exposer une première Case 360.
 5. Intégrer les documents associés.
 6. Intégrer les décisions et statuts.

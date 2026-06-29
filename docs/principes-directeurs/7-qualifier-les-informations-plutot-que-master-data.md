@@ -18,7 +18,7 @@ Le programme doit qualifier les informations selon des dimensions explicites, si
 
 > FLOW ne classe pas les informations en `Master Data` par héritage ERP.
 >
-> FLOW qualifie chaque information selon sa nature et son statut dans le domaine : source ou projection.
+> FLOW qualifie chaque information selon sa nature et son statut dans le domaine : source de référence ou projection.
 
 Ce principe permet de concevoir la plateforme autour de la cohérence opérationnelle, et non autour d'une taxonomie héritée d'un progiciel.
 
@@ -168,7 +168,7 @@ Cette liste ne cherche pas à reproduire les catégories ERP.
 
 Elle cherche à identifier ce que l'information fait dans la cartographie fonctionnelle : commander, signaler, constater, orienter, porter un cycle de vie, prouver ou classifier.
 
-## Dimension 2 — Statut dans le domaine : source ou projection
+## Dimension 2 — Statut dans le domaine : source de référence ou projection
 
 La deuxième dimension décrit le statut de l'information dans un domaine donné.
 
@@ -176,10 +176,10 @@ FLOW retient volontairement deux statuts simples.
 
 | Statut | Définition |
 | --- | --- |
-| Source | Le domaine crée et maintient l'information comme référence pour son périmètre ou son usage. |
-| Projection | Le domaine consomme une représentation issue d'une ou plusieurs sources, adaptée à son usage. |
+| Source de référence | Le domaine, l'application ou le service crée, valide ou maintient l'information comme référence pour son périmètre ou son usage, avec un processus de contrôle identifié. |
+| Projection | Le domaine consomme une représentation issue d'une ou plusieurs sources de référence, adaptée à son usage. |
 
-Une information peut être source dans un domaine et projection dans un autre.
+Une information peut être source de référence dans un domaine et projection dans un autre.
 
 C'est cette distinction qui remplace utilement la question trop vague :
 
@@ -187,30 +187,30 @@ C'est cette distinction qui remplace utilement la question trop vague :
 
 La bonne question devient :
 
-> Dans ce domaine, cette information est-elle source ou projection ?
+> Dans ce domaine, cette information est-elle source de référence ou projection ?
 
 Exemples :
 
 | Information | Nature | Statut dans FLOW |
 | --- | --- | --- |
-| Case | Objet métier | Source |
-| Allocation command | Command | Source |
-| Allocation decided | Event | Source |
-| Allocation decision | Objet métier ou Fact selon le niveau de matérialisation | Source |
-| Available stock | Fact | Source si FLOW le calcule et l'expose ; projection s'il le consomme d'un autre domaine |
+| Case | Objet métier | Source de référence |
+| Allocation command | Command | Source de référence |
+| Allocation decided | Event | Source de référence |
+| Allocation decision | Objet métier ou Fact selon le niveau de matérialisation | Source de référence |
+| Available stock | Fact | Source de référence si FLOW le calcule et l'expose ; projection s'il le consomme d'un autre domaine |
 | Product execution view | Objet métier représenté sous forme de projection | Projection |
 | Customer / Party view | Objet métier représenté sous forme de projection | Projection |
 | Commercial agreement view | Objet métier ou Policy selon l'usage | Projection |
-| Return policy | Policy | Source ou projection selon le domaine responsable |
+| Return policy | Policy | Source de référence ou projection selon le domaine responsable |
 | Packing list | Document | Projection dans FLOW si produite par CBS ou un fournisseur |
-| Order status nomenclature | Nomenclature | Source ou projection selon le domaine qui la gouverne |
+| Order status nomenclature | Nomenclature | Source de référence ou projection selon le domaine qui la gouverne |
 | Shipment delayed | Event | Projection dans FLOW si produit par Transport |
 
 Cette distinction est essentielle.
 
-FLOW peut ne pas être source du produit, du client ou d'un document fournisseur, tout en étant source du Case, de certaines décisions, de certains événements et de certaines informations calculées comme la disponibilité ou la promesse.
+FLOW peut ne pas être source de référence du produit, du client ou d'un document fournisseur, tout en étant source de référence du Case, de certaines décisions, de certains événements et de certaines informations calculées comme la disponibilité ou la promesse.
 
-## Source faisant foi pour un usage donné
+## Source de référence pour un usage donné
 
 Dans un SI distribué, une information peut être accessible depuis plusieurs sources.
 
@@ -222,15 +222,15 @@ La question n'est donc plus :
 
 La question devient :
 
-> Pour ce consommateur, cet usage et cette décision, quelle source fait foi ?
+> Pour ce consommateur, cet usage et cette décision, quelle source de référence fait foi ?
 
-La source faisant foi est contextuelle.
+La source de référence est contextuelle.
 
 Elle dépend de l'usage.
 
 Exemple produit :
 
-| Usage | Source faisant foi possible |
+| Usage | Source de référence possible |
 | --- | --- |
 | Conception produit | PLM |
 | Contenu enrichi client | PIM |
@@ -240,13 +240,13 @@ Exemple produit :
 
 Exemple stock :
 
-| Usage | Source faisant foi possible |
+| Usage | Source de référence possible |
 | --- | --- |
 | Stock physique entrepôt | WMS ou ERP selon le modèle |
 | Stock magasin | Système magasin ou back-office retail |
 | Stock disponible pour promesse | FLOW Inventory Visibility, si FLOW calcule et expose cette information |
 | Stock comptable | ERP / Finance |
-| Stock affiché au client | Projection commerce alimentée par FLOW ou une autre source autoritative |
+| Stock affiché au client | Projection commerce alimentée par FLOW ou une autre source de référence |
 
 Une information n'est donc pas maître de manière absolue.
 
@@ -254,7 +254,7 @@ Elle fait autorité pour un usage, un consommateur, une décision ou un contexte
 
 ## Ce qui sera traité plus tard : interfaces et échanges
 
-Pour la cartographie fonctionnelle, les deux dimensions précédentes suffisent : nature et source / projection.
+Pour la cartographie fonctionnelle, les deux dimensions précédentes suffisent : nature et source de référence / projection.
 
 Lorsqu'il faudra définir les interfaces, d'autres dimensions deviendront nécessaires :
 
@@ -277,12 +277,12 @@ Ce principe conduit FLOW à :
 
 - abandonner la question générique `est-ce de la Master Data ?` ;
 - qualifier chaque information selon sa nature ;
-- qualifier chaque information comme source ou projection dans un domaine donné ;
+- qualifier chaque information comme source de référence ou projection dans un domaine donné ;
 - éviter de transformer FLOW en méga-MDM ;
 - éviter d'importer dans FLOW le modèle SAP sans le challenger ;
-- distinguer ce que FLOW possède vraiment de ce qu'il consomme sous forme de projection ;
+- distinguer ce que FLOW contrôle comme source de référence de ce qu'il consomme sous forme de projection ;
 - préparer la conception future des interfaces sans la mélanger avec la cartographie fonctionnelle ;
-- permettre à FLOW de produire des facts, events, commands ou objets métier sans devenir source de toutes les informations du SI.
+- permettre à FLOW de produire des facts, events, commands ou objets métier sans devenir source de référence de toutes les informations du SI.
 
 ## Matrice de qualification
 
@@ -292,8 +292,8 @@ Pour chaque information importante, FLOW devrait pouvoir renseigner une matrice 
 | --- | --- |
 | Quelle information ? | Available stock |
 | Quelle nature ? | Fact |
-| Dans FLOW, est-ce une source ou une projection ? | Source si FLOW calcule et expose l'information |
-| Quelle source fait foi pour l'usage ? | FLOW Inventory Visibility pour la promesse |
+| Dans FLOW, est-ce une source de référence ou une projection ? | Source de référence si FLOW calcule et expose l'information |
+| Quelle source de référence fait foi pour l'usage ? | FLOW Inventory Visibility pour la promesse |
 | Quel consommateur ? | Case Management, commerce, service client, reporting |
 | Quelle décision ou action sert-elle ? | Promettre, allouer, substituer, réorienter |
 
@@ -307,7 +307,7 @@ FLOW qualifie les informations avec deux questions simples pour la cartographie 
 
 ```text
 Quelle est la nature de cette information ?
-Dans ce domaine, est-elle source ou projection ?
+Dans ce domaine, est-elle source de référence ou projection ?
 ```
 
 Ce principe complète le principe sur la demande comme objet métier central.
@@ -319,3 +319,7 @@ La demande répond à la question :
 La qualification des informations répond à la question :
 
 > Comment organiser les informations autour de ce modèle sans retomber dans le fourre-tout Master Data ?
+
+Le pattern [Sources de référence, projections et vues](../architecture-cible/patterns/sources-reference-projections-vues.md) détaille cette méthode de cartographie.
+
+Il explicite aussi les références MDM associées : `System of Record`, `Source of Record`, `Golden Record`, Master Data Management, DAMA-DMBOK et ISO 8000.

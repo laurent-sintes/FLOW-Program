@@ -55,7 +55,7 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Décision</span> / <span class="flow-keyword">règles</span> / <span class="flow-keyword">policies</span> | Les décisions métier doivent être explicites, traçables, gouvernées et capables de faire évoluer le Case. |
 | <span class="flow-keyword">Arbitrage</span> | Un arbitrage est un choix de programme ou d'architecture à rendre explicite ; il ne doit pas être confondu avec une décision métier exécutée dans FLOW. |
 | <span class="flow-keyword">Vues 360</span> | Les vues 360 donnent une lecture transverse d'une activité, d'un client, d'un fournisseur, d'une commande ou d'un Case. |
-| <span class="flow-keyword">Source / projection</span> | Une information peut être source dans un domaine et projection dans un autre ; la question n'est plus “est-ce une Master Data ?”. |
+| <span class="flow-keyword">Source de référence / projection</span> | Une information fait référence lorsqu'elle est contrôlée par un processus responsable ; les projections, vues et agrégats la rendent consommable sans devenir automatiquement maîtres. |
 | <span class="flow-keyword">Hotspot</span> | Un hotspot est un point de tension à instruire avant de figer un arbitrage ou une architecture cible. |
 | <span class="flow-keyword">Domaine / responsabilité / capacité / produit</span> | FLOW découpe les problèmes durables avant de parler d'applications, d'organisations ou de fonctionnalités. |
 
@@ -156,7 +156,7 @@ Un <span class="flow-keyword">contrat de données</span> décrit la manière don
 Il précise notamment :
 
 - l'information publiée ;
-- la source responsable ;
+- la source de référence responsable ;
 - les consommateurs connus ;
 - le mode d'échange ;
 - la granularité ;
@@ -244,17 +244,23 @@ Elles ne remplacent pas les domaines sources.
 
 Elles rendent l'activité plus lisible.
 
-## Source / projection
+## Source de référence / projection
 
 FLOW ne reprend pas la catégorie `Master Data` comme un fourre-tout.
 
-Une information doit être qualifiée par nature et par statut dans un domaine : <span class="flow-keyword">source</span> ou <span class="flow-keyword">projection</span>.
+Une information doit être qualifiée par nature et par statut dans un domaine : <span class="flow-keyword">source de référence</span> ou <span class="flow-keyword">projection</span>.
+
+Une <span class="flow-keyword">source de référence</span> est l'application, le service ou le domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné.
+
+Une projection, une vue 360 ou un agrégat peut rendre l'information plus accessible, mais ne devient pas source de référence par simple visibilité.
 
 La bonne question devient :
 
-> Pour cet usage, cette décision métier et ce consommateur, quelle source fait foi ?
+> Pour cet usage, cette décision métier et ce consommateur, quelle source de référence fait foi ?
 
 Cette lecture est essentielle dans un SI distribué.
+
+Elle est détaillée dans le pattern [Sources de référence, projections et vues](../architecture-cible/patterns/sources-reference-projections-vues.md).
 
 ## Hotspot
 

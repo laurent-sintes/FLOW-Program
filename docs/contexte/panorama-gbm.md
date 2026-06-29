@@ -347,6 +347,25 @@ Elle permet notamment d'assurer :
 
 Ce type de fonctionnalité montre que CBS porte des processus spécialisés de collaboration fournisseur et de conformité amont.
 
+### Question ouverte : CBS comme SRM cible ?
+
+CBS pose une question d'architecture cible : est-il, ou doit-il devenir, la SRM du Groupe Beaumanoir ?
+
+La question vient de plusieurs responsabilités déjà observées :
+
+- le suivi des commandes d'achat ;
+- les interfaces permettant aux fournisseurs de produire les documents réglementaires liés au déplacement international de marchandises ;
+- la collaboration fournisseur autour de la livraison amont ;
+- la visibilité des événements, jalons et documents nécessaires jusqu'à l'entrepôt.
+
+Le point à instruire est plus précis : CBS est-il le premier lieu où l'on recense fournisseurs, usines et sites de production, ou est-il un domaine spécialisé qui consomme une source de référence fournisseur / usine portée ailleurs ?
+
+Cette distinction est structurante.
+
+Si CBS devient le premier lieu de recensement, il porte une responsabilité de référentiel fournisseur / usine.
+
+S'il reste un domaine de collaboration et de conformité amont, il doit consommer une projection fiable des fournisseurs, usines, relations et habilitations produite par SRM, FLOW ou un autre domaine responsable.
+
 ### Lecture FLOW
 
 CBS doit être considéré, en première lecture, comme un domaine consommateur et contributeur de FLOW.
@@ -402,12 +421,17 @@ FLOW ne doit pas absorber par défaut les processus spécialisés de collaborati
 
 En revanche, les responsabilités génériques de commande, cycle de vie, statuts, événements et vision 360 doivent être évaluées comme candidates à FLOW.
 
+La roadmap devra aussi intégrer une adaptation fonctionnelle de CBS : l'outil doit pouvoir voir les usines ou sites de production, et pas seulement les fournisseurs.
+
+Ce point n'est pas seulement technique. Si la promesse, les lead times, les documents ou les événements amont dépendent de l'usine réellement mobilisée, CBS doit pouvoir manipuler cette granularité ou consommer une projection fiable fournie par FLOW, SRM ou un domaine Supply.
+
 Cette recommandation permet de poser une lecture saine par responsabilité :
 
 - CBS conserve les processus fournisseur spécialisés ;
 - FLOW peut devenir le socle transverse de visibilité, de cycle de vie et d'orchestration ;
 - CBS consomme les informations ou événements exposés par FLOW ;
 - FLOW peut consommer certains faits produits par CBS ;
+- CBS évolue fonctionnellement pour distinguer fournisseur, usine et site de production lorsque cette distinction conditionne la promesse ou l'exécution ;
 - les responsabilités qui donnent de la cohérence au Demand & Fulfillment ne doivent pas être dispersées uniquement parce qu'elles sont aujourd'hui portées par un système spécialisé.
 
 ## B2B / wholesale : Elastic, Zoho et commandes B2B

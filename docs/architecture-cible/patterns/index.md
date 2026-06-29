@@ -35,6 +35,7 @@ Cette section sert donc à :
 | [Event-Driven Architecture](event-driven-architecture.md) | Faire circuler les faits opérationnels entre systèmes sans dépendre de flux projet point à point. | Case Management, Stock Unifié, données en transit |
 | [API conversationnelle](api-conversationnelle.md) | Maintenir un dialogue corrélé, asynchrone et observable entre domaines, Cases et systèmes contributeurs. | Case Management, Stock Unifié, Supply Service Registry |
 | [CQRS et projections](cqrs-et-projections.md) | Séparer actions, événements, modèles de lecture et projections métier. | Stock Unifié, Vues 360, Case Management |
+| [Sources de référence, projections et vues](sources-reference-projections-vues.md) | Cartographier où une information est contrôlée par un processus, et distinguer source de référence, projection, vue et agrégat. | Case Management, Vues 360, Product Agreement Catalog, données en transit |
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |
 | [Externalisation des décisions métier](externalisation-des-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |

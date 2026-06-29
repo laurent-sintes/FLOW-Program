@@ -22,7 +22,7 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Architecture cible](architecture-cible/index.md) |
 | Product Agreement Catalog | [Fiche produit](architecture-cible/produits/product-agreement-catalog.md) · [Hotspot PLM / catalogue](hotspots/plm-catalogue-article-ean.md) |
-| Source / Projection | [Concepts clés](vision/concepts-cles.md#source-projection) · [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
+| Source de référence / Projection | [Concepts clés](vision/concepts-cles.md#source-de-reference-projection) · [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern dédié](architecture-cible/patterns/sources-reference-projections-vues.md) |
 | Stock Unifié | [Concepts clés](vision/concepts-cles.md#stock-unifie) · [Fiche produit](architecture-cible/produits/stock-unifie.md) · [Inventory Visibility](insights/inventory-visibility-capacite-d-entreprise.md) |
 | Supply Service Registry | [Fiche produit](architecture-cible/produits/supply-service-registry.md) |
 | Vues 360 | [Concepts clés](vision/concepts-cles.md#vues-360) · [Fiche produit](architecture-cible/produits/vues-360.md) |
@@ -117,7 +117,7 @@ Nature d'information représentant une intention adressée à un système ou dom
 
 Engagement durable décrivant comment une information est publiée, consommée, supervisée et réconciliée.
 
-Il précise notamment source, consommateurs, mode d'échange, granularité, fraîcheur, qualité et mécanismes de reprise.
+Il précise notamment source de référence, consommateurs, mode d'échange, granularité, fraîcheur, qualité et mécanismes de reprise.
 
 ## D
 
@@ -215,11 +215,13 @@ Dans FLOW, le fournisseur ne doit pas être confondu avec l'usine, l'agent, l'ad
 
 Périmètre des marques historiques du Groupe Beaumanoir, historiquement retail, ouvert ensuite au e-commerce puis plus difficilement au B2B.
 
-### Golden Source / source faisant foi
+### Golden Source / Source of Record
 
-Source reconnue comme faisant autorité pour un usage, un consommateur, une décision ou un contexte donné.
+Termes MDM proches de la notion FLOW de source de référence.
 
-Dans un SI distribué, la Golden Source est contextualisée par l'usage.
+Ils désignent une source reconnue comme faisant autorité pour un usage, un consommateur, une décision ou un contexte donné.
+
+Dans FLOW, on préfère l'expression source de référence.
 
 ### Granularité d'échange
 
@@ -253,7 +255,7 @@ Capacité de rendre visibles les ressources de stock et leur contexte d'usage à
 
 Notion historique issue de la distinction master file / transaction file, puis popularisée par les ERP.
 
-Dans FLOW, elle est jugée trop large : les informations doivent être qualifiées par nature et par statut source / projection.
+Dans FLOW, elle est jugée trop large : les informations doivent être qualifiées par nature et par statut source de référence / projection.
 
 ### Master Data Management
 
@@ -395,9 +397,11 @@ Produit FLOW qui fournit le runtime et le cadre de développement des Cases.
 
 Composant structurant du paysage GBM autour de l'e-commerce, de l'omnicanal, des stocks et des commandes.
 
-### Source
+### Source de référence
 
-Statut d'une information lorsqu'un domaine la crée et la maintient comme référence pour son périmètre ou son usage.
+Application, service ou domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné.
+
+Une source de référence ne doit pas être confondue avec une projection, une vue 360 ou un agrégat de consultation.
 
 ### Stock Unifié
 
@@ -446,6 +450,8 @@ Composant sur mesure .NET / C# du paysage GBM, consolidant les commandes B2C et 
 Site de fabrication ou de production.
 
 Dans le contexte BRD, l'usine peut être le point réel de commande et porter des informations comme les lead times, distinctes du fournisseur juridique ou de l'entité de facturation.
+
+Le terme `plant` doit être évité comme nom métier cible tant que son sens n'est pas clarifié : selon le contexte, il peut désigner une usine, un site de production, une capacité de fabrication ou un objet applicatif SAP.
 
 ## V
 

@@ -116,7 +116,7 @@ Publication / consommation découplées
 Contrats de données gouvernés
 ```
 
-Un contrat de données doit préciser au minimum : source, consommateurs, mode d'échange, granularité, fraîcheur attendue, qualité attendue, supervision, reprise et réconciliation.
+Un contrat de données doit préciser au minimum : source de référence, consommateurs, mode d'échange, granularité, fraîcheur attendue, qualité attendue, supervision, reprise et réconciliation.
 
 Cette capacité est transverse : elle soutient le Case Management, les projections, les Vues 360, le Stock Unifié et la réintégration des services existants.
 
@@ -144,14 +144,14 @@ Le Case reste l'unité métier d'orchestration.
 
 ## Nomenclature d'information appliquée
 
-| Produit FLOW | Informations plutôt Source dans FLOW | Informations plutôt Projection dans FLOW |
+| Produit FLOW | Informations plutôt sources de référence dans FLOW | Informations plutôt projections dans FLOW |
 | --- | --- | --- |
 | Plateforme de Case Management | Case, décisions métier, événements FLOW, documents attachés | événements externes, documents externes, contexte projeté |
-| Stock Unifié | stock disponible, réservations, allocations si calculées par FLOW | stock physique source, mouvements externes, statuts WMS / magasin |
+| Stock Unifié | stock disponible, réservations, allocations si calculées par FLOW | stock physique issu des systèmes sources, mouvements externes, statuts WMS / magasin |
 | Fulfillment Network / Réseau d'Exécution | réseau, capacités, contraintes et conditions d'usage si gouvernés par FLOW | capacités ou contraintes issues de systèmes Supply |
 | Supply Service Registry | éventuellement services normalisés FLOW | services, APIs, SLA exposés par Supply |
-| Product Agreement Catalog | rarement source au départ | product core, agreements vente / achat, assortiments, conditions |
-| Vues 360 | Case 360 probablement source ou dérivée FLOW | Customer 360, Supplier 360, historiques et signaux externes |
+| Product Agreement Catalog | rarement source de référence au départ | product core, agreements vente / achat, assortiments, conditions |
+| Vues 360 | rarement sources de référence ; plutôt dérivées FLOW | Customer 360, Supplier 360, historiques et signaux externes |
 | Diffusion et gouvernance opérationnelle des données | contrats de données, règles de publication, exigences de fraîcheur / qualité si gouvernés par FLOW | catalogues d'échanges existants, flux historiques, capacités d'intégration des domaines |
 
 ## Rupture de conception

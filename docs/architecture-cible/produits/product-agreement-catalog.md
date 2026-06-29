@@ -46,9 +46,9 @@ Il fournit une projection d'exécution suffisamment stable pour vendre, acheter,
 | Article / Product Variant / EAN | Objet métier / Projection | Projection FLOW |
 | Produit | Projection | Projection FLOW |
 | Assortiment | Policy / Projection | Projection FLOW |
-| Agreement | Policy / Objet métier | Projection ou source selon périmètre |
+| Agreement | Policy / Objet métier | Projection ou source de référence selon périmètre |
 | Prix / condition | Policy / Fact | Projection FLOW |
-| Nomenclature taille / couleur | Nomenclature | Projection ou source selon gouvernance |
+| Nomenclature taille / couleur | Nomenclature | Projection ou source de référence selon gouvernance |
 
 ## Capacités candidates
 

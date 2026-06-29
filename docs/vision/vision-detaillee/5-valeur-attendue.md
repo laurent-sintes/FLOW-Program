@@ -84,7 +84,7 @@ Pour l'IT, FLOW déplace la discussion.
 
 La question n'est plus seulement : quel outil remplace quel outil ?
 
-La question devient : quelle <span class="flow-keyword">responsabilité</span> doit être gouvernée durablement, par quel produit, avec quelles informations source ou projetées, avec quelles règles de variation, et avec quels contrats de données entre producteurs et consommateurs ?
+La question devient : quelle <span class="flow-keyword">responsabilité</span> doit être gouvernée durablement, par quel produit, avec quelles informations sources de référence ou projetées, avec quelles règles de variation, et avec quels contrats de données entre producteurs et consommateurs ?
 
 FLOW s'inscrit dans une logique :
 
@@ -102,7 +102,7 @@ Fonctionnalité
 
 | Problème observé | Ce que FLOW apporte | Valeur attendue |
 | --- | --- | --- |
-| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction Source / Projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction source de référence / projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Coûts applicatifs et licences difficiles à maîtriser | Rationalisation des responsabilités critiques, retrait progressif des socles remplacés, réintégration sélective des services utiles | Meilleure maîtrise du portefeuille applicatif et des coûts IT dans la durée |
 | Roadmaps projet dispersées et vision IT trop court terme | Découpage par responsabilités, capacités et produits, contrats de données gouvernés | Capacité à construire des roadmaps IT consolidées à 3/4 ans |
@@ -153,7 +153,7 @@ FLOW réussira si le groupe constate progressivement :
 - Une meilleure capacité à expliquer les décisions métier, choix opérationnels et changements de statut.
 - Une intégration plus rapide de nouveaux canaux, marques ou business models.
 - Une continuité plus claire entre achat, fournisseur, réception, stock disponible et fulfillment.
-- Une distinction plus claire entre ce qui est source et ce qui est projection.
+- Une distinction plus claire entre ce qui est source de référence et ce qui est projection.
 - Des flux critiques transformés en contrats de données gouvernés.
 - Une meilleure visibilité sur les consommateurs, la fraîcheur et la qualité des données échangées.
 - Des expériences métier différenciées, mais appuyées sur des capacités communes.

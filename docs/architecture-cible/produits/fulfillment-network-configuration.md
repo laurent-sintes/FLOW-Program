@@ -43,12 +43,12 @@ Le produit décrit ce que chaque nœud sait faire, dans quelles conditions, avec
 
 | Information | Nature | Statut probable |
 | --- | --- | --- |
-| Nœud d'exécution | Objet métier / Nomenclature | Source FLOW si gouverné par FLOW |
-| Capacité d'exécution | Policy / Nomenclature | Source FLOW |
-| Service Supply | Objet métier / Nomenclature | Source ou projection |
-| Contrainte d'usage | Policy | Source FLOW ou projection Supply |
-| SLA | Policy / Fact | Projection ou source selon gouvernance |
-| Zone de couverture | Nomenclature / Policy | Source ou projection |
+| Nœud d'exécution | Objet métier / Nomenclature | Source de référence FLOW si gouverné par FLOW |
+| Capacité d'exécution | Policy / Nomenclature | Source de référence FLOW |
+| Service Supply | Objet métier / Nomenclature | Source de référence ou projection |
+| Contrainte d'usage | Policy | Source de référence FLOW ou projection Supply |
+| SLA | Policy / Fact | Projection ou source de référence selon gouvernance |
+| Zone de couverture | Nomenclature / Policy | Source de référence ou projection |
 
 ## Capacités candidates
 
@@ -84,7 +84,7 @@ Le produit décrit ce que chaque nœud sait faire, dans quelles conditions, avec
 ## Questions ouvertes
 
 - Qui est owner de la configuration du réseau : FLOW, Supply, C-LOG, marques ?
-- Quels éléments sont source dans FLOW et lesquels sont projections Supply ?
+- Quels éléments sont sources de référence dans FLOW et lesquels sont projections Supply ?
 - Comment gérer les capacités temporaires ou saisonnières ?
 - Quelle granularité de nœud : entrepôt, zone, magasin, partenaire, service ?
 - Comment éviter que la configuration réseau devienne un nouveau fourre-tout applicatif ?

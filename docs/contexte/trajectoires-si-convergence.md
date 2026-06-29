@@ -170,7 +170,7 @@ Elle ne doit pas encore être lue comme un mapping définitif application à app
 | Vision stock | SAP porte le stock entrepôt ; Cegid porte le stock magasin ; NewStore agrège les deux | StoreLand, Socloz, Zoho, C-LOG / EAI et les stocks magasins contribuent à la visibilité | Inventory Visibility est une capacité transverse critique, pas une simple extraction d'un système |
 | Promesse / allocation | NewStore, SAP et les règles d'allocation / ATP sont à clarifier | Socloz, StoreLand, stock virtuel, réassort et canaux contribuent à la décision | FLOW doit distinguer disponibilité, réservation, allocation, promesse et réassort |
 | Retours / litiges / exceptions | NewStore et les systèmes d'exécution participent au cycle retour ; la responsabilité exacte reste à clarifier | UR porte explicitement retours, remboursements, litiges et réintégration stock | Les exceptions sont candidates à une capacité Case / Order Lifecycle transverse |
-| Achat fournisseur | SAP et les outils amont contribuent aux achats et commandes fournisseur | StoreLand Négoce, CBS et processus manuels contribuent aux achats fournisseur | La commande d'achat peut être candidate FLOW si elle participe au cycle de vie transverse, à la disponibilité future ou à un engagement d'approvisionnement |
+| Achat fournisseur | SAP et les outils amont contribuent aux achats et commandes fournisseur | StoreLand Négoce, CBS et processus manuels contribuent aux achats fournisseur | La commande d'achat peut être candidate FLOW si elle participe au cycle de vie transverse, à la disponibilité future ou à un engagement d'approvisionnement ; CBS devra aussi pouvoir distinguer fournisseur et usine lorsque cette granularité conditionne la promesse |
 | Engagement commercial / catalogue | PIM / PLM / pricing / canaux contribuent à l'offre et aux contenus | Module Négoce, Zoho, Elastic, Product Live et processus manuels contribuent à l'assortiment et au catalogue | FLOW ne doit pas absorber le design de l'engagement ; il doit consommer les agreements utiles à l'exécution |
 | B2B / Wholesale | Centre de gravité historique plus naturel côté BRD | Canal ajouté plus difficilement dans un SI historiquement retail | FLOW doit modéliser les responsabilités, pas plaquer une étiquette canal unique |
 | Logistique / exécution | WMS, transport, douanes, partenaires et systèmes d'exécution à connecter | C-LOG / EAI, OMS C-LOG, Transport, CBS et suivi expéditions à connecter | FLOW doit exposer et consommer des événements, sans devenir tous les systèmes d'exécution |
@@ -188,6 +188,8 @@ Plusieurs points ne sont pas encore assez stabilisés pour trancher :
 - la granularité de la vision stock attendue par canal, dépôt, marque, pays ou client ;
 - les règles d'allocation, de promesse, de réassort et de priorisation ;
 - le rôle futur de CBS comme domaine consommateur / contributeur ou comme source de responsabilités candidates FLOW ;
+- l'hypothèse CBS comme SRM cible du groupe, ou comme premier lieu de recensement des fournisseurs, usines et sites de production ;
+- l'adaptation fonctionnelle de CBS pour voir les usines ou sites de production, et pas seulement les fournisseurs ;
 - le traitement des stocks confiés, parfois lus comme B2B côté BRD et retail côté GBM.
 
 Ces incertitudes ne bloquent pas la comparaison. Elles doivent être affichées comme des hypothèses à instruire.
@@ -211,6 +213,10 @@ Le cas d'UR côté GBM illustre ce point : UR entre dans le champ d'étude non p
 Le cas du module Négoce StoreLand ajoute un autre enseignement : certaines responsabilités actuellement regroupées dans une application devront probablement être séparées dans la cible entre engagement commercial et exécution / achat.
 
 Le cas de CBS ajoute une nuance supplémentaire : certains systèmes sont surtout des domaines consommateurs ou contributeurs de FLOW, mais manipulent des objets ou événements qui peuvent relever d'une responsabilité transverse FLOW.
+
+La trajectoire CBS ne devra donc pas être lue uniquement comme une adaptation technique. Elle devra aussi intégrer une évolution fonctionnelle : voir les usines ou sites de production lorsque ces informations conditionnent les lead times, la promesse, les documents ou les événements d'exécution.
+
+Elle devra surtout clarifier si CBS devient la SRM cible du groupe, s'il est le premier lieu de recensement fournisseur / usine, ou s'il reste un domaine spécialisé qui consomme une source de référence maintenue ailleurs.
 
 ## À retenir
 

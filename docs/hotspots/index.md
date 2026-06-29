@@ -30,7 +30,7 @@ Un sujet mérite d'être rangé ici lorsqu'il :
 | Stock temps réel | Stock unifié trop peu frais pour promettre, allouer ou optimiser de manière fiable | [Stock temps réel](stock-temps-reel.md) |
 | Capacités d'intégration des systèmes réintégrés | Services existants métier-pertinents mais incapables de se brancher proprement sur FLOW | [Capacités d'intégration des systèmes réintégrés](capacites-integration-systemes-reintegres.md) |
 | PLM, catalogue, Article / EAN | Dépendance de FLOW au modèle PLM historique, difficulté à gérer produits conçus et produits importés | [PLM, catalogue, Article / EAN](plm-catalogue-article-ean.md) |
-| Fournisseur, usine et Agreement BRD | Modèle BRD orienté usine, modèle GBM orienté fournisseur, risque de reconduire un paramétrage SAP monolithique | [Fournisseur, usine et Agreement BRD](fournisseur-usine-agreement-brd.md) |
+| Fournisseur, usine et Agreement BRD | Paramétrage fournisseur monolithique, sources de référence SRM / PLM / Finance / Supply, dates de promesse, adaptation CBS et hypothèse CBS comme SRM cible | [Fournisseur, usine et Agreement BRD](fournisseur-usine-agreement-brd.md) |
 | Promesse commerciale Wholesale | Priorisation client, allocation, promesse déplaçable ou non, divergence BRD / GBM | [Promesse commerciale Wholesale](promesse-commerciale-wholesale.md) |
 | Module Négoce StoreLand | Responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment | [Module Négoce StoreLand](module-negoce-storeland.md) |
 

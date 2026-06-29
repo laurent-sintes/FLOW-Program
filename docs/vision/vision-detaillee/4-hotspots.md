@@ -177,6 +177,12 @@ Chez BRD, les fournisseurs sont créés manuellement par l'équipe Finance. Les 
 
 Le référentiel officiel est SRM, mais il est orienté usine et ne semble pas synchronisé aujourd'hui. Cette situation crée une différence avec GBM, où les Agreements sont plutôt associés à des fournisseurs.
 
+Le sujet n'est pas de choisir définitivement entre un modèle fournisseur et un modèle usine. L'enjeu est plutôt de sortir d'un paramétrage monolithique et de distribuer la configuration dans les domaines responsables : parfois le fournisseur orchestre l'opération vers l'usine, parfois la commande opérationnelle doit cibler directement l'usine, et les habilitations SRM doivent suivre ces responsabilités réelles.
+
+Le critère décisif est le calcul des dates de promesse. La configuration cible doit permettre de déterminer une date fiable à partir du bon fournisseur, de la bonne usine, du bon Agreement, du bon lead time, du bon contexte PLM / SRM et des contraintes d'exécution.
+
+Cela implique une cartographie data et flux : SRM, PLM, module Négoce, Finance, Supply et FLOW doivent clarifier qui est source de référence de quelle donnée, quelle projection est consommée par la décision Case Management, et quelle fraîcheur est nécessaire.
+
 Le hotspot peut se résumer ainsi :
 
 ```text
@@ -191,7 +197,11 @@ BRD
 
 SAP concentre dans un même paramétrage des notions qui relèvent de domaines différents : stock, lead time, conditions de prix, responsabilité juridique, facturation, transport, PLM et relation fournisseur.
 
-FLOW doit donc clarifier s'il consomme une fiche fournisseur enrichie ou s'il sépare les responsabilités par domaine : Party, usine, Agreement, Finance, Fulfillment Network, Supply Service Registry et PLM.
+FLOW doit donc clarifier s'il consomme une fiche fournisseur enrichie ou s'il sépare les responsabilités par domaine : Party, usine, Agreement, Finance, Fulfillment Network, Supply Service Registry, PLM, habilitations SRM et calcul de promesse.
+
+Ce hotspot ne paraît pas infranchissable, mais il impose un travail de cartographie précis. Il a aussi un impact de roadmap côté CBS : l'outil devra probablement évoluer pour voir les usines ou sites de production, et pas seulement les fournisseurs, si cette granularité devient nécessaire à la promesse et à l'exécution.
+
+Une adhérence doit être instruite explicitement : CBS est-il la SRM cible du Groupe Beaumanoir, le premier lieu de recensement des fournisseurs et usines, ou un domaine spécialisé de suivi achat, collaboration fournisseur et conformité documentaire consommant une source de référence externe ?
 
 ## Promesse commerciale : prioriser sans rompre les engagements
 
@@ -271,7 +281,7 @@ Ce hotspot impose de clarifier :
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
-| Fournisseur, usine et Agreement BRD | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, séparation des responsabilités SAP |
+| Fournisseur, usine et Agreement BRD | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
 | Promesse Wholesale Boardriders | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 

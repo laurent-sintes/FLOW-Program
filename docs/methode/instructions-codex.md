@@ -291,7 +291,7 @@ Concepts à maintenir dans le temps :
 - Agreement comme pivot de variation ;
 - Fulfillment Network comme réseau d'exécution configurable ;
 - stock unifié comme capacité d'entreprise ;
-- distinction source / projection ;
+- distinction source de référence / projection ;
 - données en transit gouvernées comme des actifs ;
 - contrats de données plutôt que flux projet opportunistes ;
 - domaines, responsabilités, capacités et produits avant applications ou organigrammes ;

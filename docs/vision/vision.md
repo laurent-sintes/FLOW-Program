@@ -40,7 +40,7 @@ Cette vision repose sur cinq convictions fortes :
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW gouverne des ressources communes et ouvre des capacités contrôlées aux domaines consommateurs et contributeurs. |
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
 | <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
-| <span class="flow-keyword">Source / Projection</span> | Dans un SI distribué, une information fait autorité pour un usage donné ; elle n'est pas maître de manière absolue. |
+| <span class="flow-keyword">Source de référence / Projection</span> | Dans un SI distribué, une information fait référence lorsqu'elle est contrôlée par un processus responsable ; elle n'est pas maître de manière absolue. |
 | <span class="flow-keyword">Contrat de données</span> | La donnée en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
@@ -161,6 +161,7 @@ Elle doit traiter plusieurs points durs :
 - Stock temps réel : dépendance aux événements POS et logistiques pour garantir une fraîcheur suffisante.
 - Capacités d'intégration des systèmes réintégrés : APIs, événements, statuts, documents et réconciliation nécessaires pour brancher les services existants sur FLOW.
 - PLM, catalogue, Article / EAN : FLOW ne peut pas dépendre d'un PLM unique ; il doit clarifier le catalogue nécessaire pour vendre, acheter, promettre et exécuter.
+- Fournisseur, usine et Agreement BRD : FLOW doit sortir du paramétrage fournisseur monolithique, cartographier les sources de référence, sécuriser le calcul des dates de promesse et clarifier si CBS devient la SRM cible.
 - Promesse Wholesale Boardriders : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
 - Module Négoce StoreLand : responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment.
 

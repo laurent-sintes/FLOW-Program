@@ -112,6 +112,7 @@ La vision FLOW doit être sécurisée par quelques arbitrages structurants.
 - Quels systèmes sortir, conserver, encapsuler ou réintégrer ?
 - Quel niveau d'investissement accepter pour rendre le stock, les événements et les décisions métier gouvernables ?
 - Quel catalogue produit FLOW doit-il consommer pour gérer produits conçus et produits importés ?
+- Qui est source de référence des données fournisseur, usine, Agreement, PLM, Finance et Supply nécessaires au calcul des dates de promesse ?
 - Quelles responsabilités du module Négoce StoreLand doivent entrer dans FLOW ?
 - Quel modèle de gouvernance produit pour piloter FLOW dans la durée ?
 

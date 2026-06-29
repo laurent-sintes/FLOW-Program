@@ -21,7 +21,7 @@ Dans un SI distribué, plusieurs systèmes portent une partie de la vérité.
 
 Sans hub opérationnel, les consommateurs doivent composer eux-mêmes avec :
 
-- des sources multiples ;
+- des sources de référence multiples ;
 - des cadences de mise à jour différentes ;
 - des écarts de cohérence ;
 - une fraîcheur incertaine ;
@@ -47,7 +47,7 @@ Il peut aussi servir à structurer certaines Vues 360 ou capacités de données 
 ## Risques
 
 - Le réduire à un simple miroir de bases applicatives.
-- Ne pas qualifier la fraîcheur et la source.
+- Ne pas qualifier la fraîcheur et les sources de référence.
 - Créer une vérité centrale trop lente pour les décisions opérationnelles.
 - Mélanger usages opérationnels et analytiques sans gouvernance.
 
@@ -56,3 +56,4 @@ Il peut aussi servir à structurer certaines Vues 360 ou capacités de données 
 - [Stock Unifié](../produits/stock-unifie.md)
 - [Vues 360](../produits/vues-360.md)
 - [Gouvernance des données en transit](../produits/gouvernance-donnees-transit.md)
+- [Sources de référence, projections et vues](sources-reference-projections-vues.md)

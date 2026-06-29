@@ -77,13 +77,13 @@ availability, reservation, allocation, explanation
 | Information | Nature | Statut probable |
 | --- | --- | --- |
 | Stock physique observé | Fact | Projection FLOW |
-| Stock disponible | Fact | Source ou dérivé FLOW |
+| Stock disponible | Fact | Source de référence ou dérivé FLOW |
 | Stock promettable | Fact / Decision | Dérivé FLOW |
-| Réservation | Objet métier / Fact | Source FLOW |
-| Allocation / tagging | Decision / Fact | Source FLOW |
+| Réservation | Objet métier / Fact | Source de référence FLOW |
+| Allocation / tagging | Decision / Fact | Source de référence FLOW |
 | Mouvement de stock | Event | Projection consommée |
-| Écart de stock | Fact | Source ou projection |
-| Règle de disponibilité | Policy | Source ou projection selon gouvernance |
+| Écart de stock | Fact | Source de référence ou projection |
+| Règle de disponibilité | Policy | Source de référence ou projection selon gouvernance |
 | Fraîcheur de stock | Fact | Dérivé FLOW |
 | Niveau de confiance | Fact / Policy | Dérivé FLOW |
 
@@ -214,7 +214,7 @@ Le bon usage probable est donc :
 
 ## Questions ouvertes
 
-- Le Stock Unifié est-il source de disponibilité ou seulement projection calculée ?
+- Le Stock Unifié est-il source de référence de disponibilité ou seulement projection calculée ?
 - Quelle fraîcheur minimale est nécessaire par cas d'usage ?
 - Quels mouvements doivent être temps réel et lesquels peuvent rester batch ?
 - Quelle frontière avec C-LOG, WMS, POS et NewStore / StoreLand pendant la transition ?

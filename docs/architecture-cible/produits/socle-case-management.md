@@ -143,20 +143,34 @@ Ce modèle doit rester générique : le Case peut représenter une commande clie
 
 | Information | Nature | Statut probable |
 | --- | --- | --- |
-| Case | Objet métier | Source FLOW |
-| Request | Command / Objet métier | Source consommateur, traitée par FLOW |
-| Requester | Projection / Objet métier selon domaine | Source externe ou projection FLOW |
-| Goal / Intent | Fact / Policy selon usage | Source FLOW |
-| Command de création / action | Command | Source consommateur, traitée par FLOW |
-| Événement de Case | Event | Source FLOW |
-| Event log | Event | Source FLOW |
+| Case | Objet métier | Source de référence FLOW |
+| Request | Command / Objet métier | Source de référence consommateur, traitée par FLOW |
+| Requester | Projection / Objet métier selon domaine | Source de référence externe ou projection FLOW |
+| Goal / Intent | Fact / Policy selon usage | Source de référence FLOW |
+| Command de création / action | Command | Source de référence consommateur, traitée par FLOW |
+| Événement de Case | Event | Source de référence FLOW |
+| Event log | Event | Source de référence FLOW |
 | Fact de situation | Fact | Dérivé FLOW ou projection consommée |
-| Décision métier de Case | Decision / Fact | Source FLOW ou projection |
-| Policy model | Policy | Source FLOW ou projection selon gouvernance |
-| Document attaché | Document | Source ou projection selon origine |
-| Statut de Case | Fact / Nomenclature | Source FLOW |
+| Décision métier de Case | Decision / Fact | Source de référence FLOW ou projection |
+| Policy model | Policy | Source de référence FLOW ou projection selon gouvernance |
+| Document attaché | Document | Source de référence ou projection selon origine |
+| Statut de Case | Fact / Nomenclature | Source de référence FLOW |
 | Contexte client / fournisseur / produit | Projection | Projection FLOW |
 | Vue 360 | Projection | Dérivé FLOW |
+
+Les décisions de Case Management ne sont pas autonomes.
+
+Elles s'appuient sur des projections issues de domaines responsables, avec un ownership explicite.
+
+| Domaine contributeur | Données ou règles consommées par la décision | Usage dans le Case |
+| --- | --- | --- |
+| SRM | Fournisseur, usine / site de production, relation fournisseur-usine, habilitations, Agreement selon périmètre | Identifier le bon acteur opérationnel et les droits applicables |
+| PLM | Contrats ou éléments d'Agreement négociés pendant la conception produit | Comprendre les conditions utiles à l'achat, à la promesse ou à l'exécution |
+| Module Négoce | Conditions commerciales, commandes d'achat, contexte d'assortiment ou d'approvisionnement | Relier engagement commercial, achat et disponibilité future |
+| Finance | Règles de facturation, entités juridiques, contraintes documentaires | Vérifier les obligations économiques ou documentaires liées au Case |
+| Supply / exécution | Lead times, capacités, contraintes transport, disponibilité future | Calculer une promesse et orienter l'exécution |
+
+Le produit Case Management doit donc consommer des informations qualifiées, pas redéfinir seul les sources d'autorité.
 
 ## Décision métier, événement et fait
 

@@ -46,6 +46,7 @@ nav:
           - Event-Driven Architecture: architecture-cible/patterns/event-driven-architecture.md
           - API conversationnelle: architecture-cible/patterns/api-conversationnelle.md
           - CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
+          - Sources de référence, projections et vues: architecture-cible/patterns/sources-reference-projections-vues.md
           - Operational DataHub: architecture-cible/patterns/operational-datahub.md
           - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
           - Externalisation des décisions métier: architecture-cible/patterns/externalisation-des-decisions.md

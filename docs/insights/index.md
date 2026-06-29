@@ -70,7 +70,7 @@ Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spé
 | Agreement | L'Agreement permet de piloter les variations de traitement sans multiplier les variantes de commande. |
 | Convergence | Converger ne signifie pas uniformiser : il faut choisir le bon niveau de commun et de différenciation. |
 | Organisation | Les organisations consomment la plateforme, elles ne doivent pas la structurer. |
-| Données | Les informations doivent être qualifiées par nature et par statut Source / Projection plutôt que rangées dans “Master Data”. |
+| Données | Les informations doivent être qualifiées par nature et par statut source de référence / projection plutôt que rangées dans “Master Data”. |
 | Données en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |
 | Stock | Le stock unifié et l'Inventory Visibility sont des capacités d'entreprise. |
 | Décision métier | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |

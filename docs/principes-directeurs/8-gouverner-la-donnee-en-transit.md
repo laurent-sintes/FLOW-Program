@@ -16,7 +16,7 @@ Mais elle crée aussi un foisonnement de flux, souvent difficiles à gouverner d
 
 > Une donnée en transit n'est pas un simple flux technique entre deux applications.
 >
-> C'est un contrat durable entre une source, des consommateurs et une responsabilité métier.
+> C'est un contrat durable entre une source de référence, des consommateurs et une responsabilité métier.
 
 FLOW doit donc traiter les échanges de données comme des capacités d'entreprise.
 
@@ -81,8 +81,8 @@ Un contrat de données précise au minimum :
 
 - l'information publiée ;
 - sa nature : command, event, fact, policy, objet métier, document ou nomenclature ;
-- son statut pour le domaine qui la publie : source ou projection ;
-- la source faisant foi pour l'usage ;
+- son statut pour le domaine qui la publie : source de référence ou projection ;
+- la source de référence pour l'usage ;
 - les consommateurs connus ;
 - le mode d'échange : event, API, query, synchronisation, stream ou batch ;
 - la granularité : unitaire ou masse ;
@@ -95,16 +95,16 @@ Ce contrat ne doit pas être une documentation morte.
 
 Il doit devenir un élément gouverné de l'architecture.
 
-## Lien avec Source / Projection
+## Lien avec Source de référence / Projection
 
-Le principe 7 qualifie les informations par nature et par statut Source / Projection.
+Le principe 7 qualifie les informations par nature et par statut Source de référence / Projection.
 
 Le présent principe ajoute une dimension complémentaire : que se passe-t-il lorsque cette information circule ?
 
 ```text
 Information au repos
     → nature
-    → source ou projection
+    → source de référence ou projection
 
 Information en transit
     → contrat de données

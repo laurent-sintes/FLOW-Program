@@ -57,12 +57,17 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 006 | Decision Services est une Shared Business Capability | ATP, allocation, sourcing et promesse relèvent d'une même famille de décisions métier. |
 | 009 | L'observabilité est un sujet métier | La confiance dépend de la capacité à expliquer données, événements et décisions métier. |
 | 023 | Le PIM n'est pas naturellement dans FLOW | FLOW a besoin d'une projection produit d'exécution, pas d'un PIM bis. |
-| 024 | Les données doivent être qualifiées plutôt que rangées dans “Master Data” | FLOW distingue les natures d'information et leur statut Source ou Projection. |
+| 024 | Les données doivent être qualifiées plutôt que rangées dans “Master Data” | FLOW distingue les natures d'information et leur statut source de référence ou projection. |
 | 026 | C-LOG doit être lu comme un acteur Supply, pas comme un simple EAI | C-LOG peut porter des responsabilités logistiques, entrepôt, transport, stock et événements d'exécution. |
 | 031 | Les données en transit doivent être gouvernées | FLOW doit passer d'une logique de flux projet à une logique de contrats de données gouvernés, en prolongeant l'intuition du demi-flux. |
 | 035 | Produits conçus et produits importés imposent un catalogue d'exécution | FLOW ne peut pas dépendre d'un PLM unique ; il doit consommer une projection produit adaptée à la vente, l'achat, la promesse et l'exécution. |
 | 036 | Les fiches produits rendent l'architecture actionnable | Les produits FLOW doivent être décrits avec responsabilités, consommateurs, informations, interfaces et premiers epics pour amorcer le backlog. |
 | 039 | BRD commande une usine, GBM commande un fournisseur | Le modèle cible doit distinguer fournisseur, usine, agent, facturation et Agreement au lieu de reconduire une fiche fournisseur monolithique. |
+| 040 | Sortir du paramétrage monolithique | FLOW doit distribuer fournisseur, usine, PLM, SRM, habilitations et conditions dans les domaines responsables, puis résoudre l'usage applicable selon le contexte. |
+| 041 | La date de promesse est le test métier | Le modèle fournisseur / usine / Agreement n'a de valeur que s'il permet de calculer une date de promesse fiable, explicable et contextualisée. |
+| 042 | La décision dépend de sources de référence explicites | Case Management doit consommer des projections SRM, PLM, Négoce, Finance et Supply en sachant quel domaine est source de référence de chaque donnée. |
+| 043 | CBS doit voir les usines | La trajectoire CBS doit intégrer une évolution fonctionnelle pour distinguer fournisseurs, usines et sites de production lorsque cela conditionne promesse et exécution. |
+| 044 | CBS pourrait être la SRM cible | La trajectoire doit clarifier si CBS devient le premier lieu de recensement fournisseurs / usines, ou s'il reste un domaine spécialisé consommateur d'une source de référence externe. |
 
 ## Finance et adhérences externes
 
@@ -115,3 +120,8 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 037 | Positionnement | Les consommateurs de FLOW doivent rester autonomes |
 | 038 | Modèle conceptuel | La demande est le point d'entrée de la modélisation |
 | 039 | Opérations, décision métier et données | BRD commande une usine, GBM commande un fournisseur |
+| 040 | Opérations, décision métier et données | Sortir du paramétrage monolithique |
+| 041 | Opérations, décision métier et données | La date de promesse est le test métier |
+| 042 | Opérations, décision métier et données | La décision dépend de sources de référence explicites |
+| 043 | Opérations, décision métier et données | CBS doit voir les usines |
+| 044 | Opérations, décision métier et données | CBS pourrait être la SRM cible |

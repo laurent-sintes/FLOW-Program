@@ -428,7 +428,7 @@ def check_glossary_core_concepts(checks: Checks) -> None:
         "plateforme demand",
         "fulfillment network",
         "agreement",
-        "source / projection",
+        "source de référence / projection",
         "stock unifié",
         "vues 360",
     ]

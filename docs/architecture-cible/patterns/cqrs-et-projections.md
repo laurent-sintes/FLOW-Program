@@ -46,7 +46,7 @@ CQRS est particulièrement utile pour :
 
 - Créer trop de projections sans gouvernance.
 - Oublier la fraîcheur et la traçabilité des projections.
-- Confondre projection et source de vérité.
+- Confondre projection et source de référence.
 - Sous-estimer l'observabilité nécessaire pour diagnostiquer les écarts.
 
 ## Produits associés

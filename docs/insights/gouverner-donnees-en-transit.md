@@ -31,7 +31,7 @@ Consommation par une application cible
 Cette approche rend plus difficile la maîtrise d'entreprise :
 
 - Qui publie réellement la donnée ?
-- Quelle source fait foi pour quel usage ?
+- Quelle source de référence fait foi pour quel usage ?
 - Quelle fraîcheur est attendue ?
 - Quelle qualité est garantie ?
 - Quels consommateurs dépendent de cette donnée ?
@@ -86,7 +86,7 @@ La cible est de passer d'une logique de flux projet à une logique de <span clas
 Un échange de données doit préciser :
 
 - la donnée publiée ;
-- sa source responsable ;
+- sa source de référence responsable ;
 - ses consommateurs ;
 - sa fraîcheur attendue ;
 - sa qualité attendue ;
@@ -114,7 +114,7 @@ Elle décrit plutôt une responsabilité d'architecture : rendre les échanges d
 
 Elle est directement liée :
 
-- à la qualification Source / Projection ;
+- à la qualification Source de référence / Projection ;
 - aux modes d'échange ;
 - aux événements ;
 - aux APIs ;

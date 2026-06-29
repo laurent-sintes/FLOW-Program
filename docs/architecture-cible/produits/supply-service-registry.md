@@ -41,11 +41,11 @@ Il permet aux Cases de dialoguer avec Supply sans connaître directement toutes 
 
 | Information | Nature | Statut probable |
 | --- | --- | --- |
-| Service Supply | Objet métier / Nomenclature | Source FLOW ou projection Supply |
-| API exposée | Nomenclature / Document | Source FLOW |
-| SLA | Policy | Source ou projection |
-| Contrat d'événement | Document / Policy | Source FLOW |
-| Éligibilité service | Policy | Source ou projection |
+| Service Supply | Objet métier / Nomenclature | Source de référence FLOW ou projection Supply |
+| API exposée | Nomenclature / Document | Source de référence FLOW |
+| SLA | Policy | Source de référence ou projection |
+| Contrat d'événement | Document / Policy | Source de référence FLOW |
+| Éligibilité service | Policy | Source de référence ou projection |
 | Statut de service | Fact | Projection |
 
 ## Capacités candidates

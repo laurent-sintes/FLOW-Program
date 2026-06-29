@@ -103,6 +103,7 @@
       <li>Frontière entre décision de demande et décision d'exécution chez C-LOG.</li>
       <li>Stock temps réel et capacités événementielles des POS, WMS et partenaires.</li>
       <li>Catalogue produit : PLM, articles, EAN, produits conçus et produits importés.</li>
+      <li>Fournisseur, usine et Agreement BRD : sources de référence, dates de promesse, adaptation CBS et hypothèse SRM cible.</li>
       <li>Promesse Wholesale, priorisation commerciale et rupture de promesse.</li>
       <li>Module Négoce StoreLand et découpage Engagement / Demand / Supply.</li>
     </ul>
