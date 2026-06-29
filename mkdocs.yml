@@ -49,6 +49,7 @@ nav:
           - Operational DataHub: architecture-cible/patterns/operational-datahub.md
           - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
           - Externalisation des décisions métier: architecture-cible/patterns/externalisation-des-decisions.md
+          - Rôles, relations et policies: architecture-cible/patterns/roles-relations-policies.md
           - Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
       - Fiches produits FLOW:
           - Repères: architecture-cible/produits/index.md
@@ -78,6 +79,7 @@ nav:
       - Stock temps réel: hotspots/stock-temps-reel.md
       - Capacités d'intégration des systèmes réintégrés: hotspots/capacites-integration-systemes-reintegres.md
       - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
+      - Fournisseur, usine et Agreement BRD: hotspots/fournisseur-usine-agreement-brd.md
       - Promesse commerciale Wholesale: hotspots/promesse-commerciale-wholesale.md
       - Module Négoce StoreLand: hotspots/module-negoce-storeland.md
   - Contexte:

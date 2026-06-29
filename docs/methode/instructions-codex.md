@@ -295,6 +295,7 @@ Concepts à maintenir dans le temps :
 - données en transit gouvernées comme des actifs ;
 - contrats de données plutôt que flux projet opportunistes ;
 - domaines, responsabilités, capacités et produits avant applications ou organigrammes ;
+- rôles, relations et policies plutôt que cardinalités figées dans le cœur ;
 - hotspots comme points de tension à instruire, pas comme détails à masquer.
 
 Formulations à éviter :

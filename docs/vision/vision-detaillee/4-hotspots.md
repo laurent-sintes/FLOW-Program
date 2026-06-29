@@ -25,7 +25,7 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 | Trajectoire de migration | SAP ECC Boardriders | Comment sortir d'un socle monolithique sans créer un big bang ? |
 | Décision distribuée | C-LOG, promesse Wholesale Boardriders | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
 | Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
-| Données produit et amont | PLM, catalogue, Article / EAN | Quel catalogue FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
+| Données produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement BRD | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
 | Gouvernance métier | Promesse Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
 | Périmètre fonctionnel | Module Négoce StoreLand | Quelles responsabilités doivent être reprises dans FLOW, et lesquelles doivent rester dans un domaine consommateur ? |
 
@@ -164,6 +164,35 @@ Ce hotspot impose de clarifier :
 - La gouvernance des nomenclatures taille / couleur.
 - Le découplage entre processus de conception amont et capacités Demand / Fulfillment.
 
+## Fournisseur, usine et Agreement BRD : séparer les rôles
+
+<div class="flow-conviction">
+  <p>La fiche fournisseur SAP n'est pas forcément le bon modèle cible.</p>
+  <p>FLOW doit distinguer fournisseur, usine, agent, entité de facturation, Agreement et capacité Supply.</p>
+</div>
+
+L'atelier Boardriders du 29 juin 2026 a mis en évidence une tension forte autour du modèle fournisseur.
+
+Chez BRD, les fournisseurs sont créés manuellement par l'équipe Finance. Les fiches portent notamment des partner functions, une Transportation Zone, des entités de facturation, des intermédiaires et des usines avec leurs lead times.
+
+Le référentiel officiel est SRM, mais il est orienté usine et ne semble pas synchronisé aujourd'hui. Cette situation crée une différence avec GBM, où les Agreements sont plutôt associés à des fournisseurs.
+
+Le hotspot peut se résumer ainsi :
+
+```text
+GBM
+    commande passée à un fournisseur
+    Agreement associé au fournisseur
+
+BRD
+    commande passée à une usine
+    autres rôles retrouvés via partner functions
+```
+
+SAP concentre dans un même paramétrage des notions qui relèvent de domaines différents : stock, lead time, conditions de prix, responsabilité juridique, facturation, transport, PLM et relation fournisseur.
+
+FLOW doit donc clarifier s'il consomme une fiche fournisseur enrichie ou s'il sépare les responsabilités par domaine : Party, usine, Agreement, Finance, Fulfillment Network, Supply Service Registry et PLM.
+
 ## Promesse commerciale : prioriser sans rompre les engagements
 
 <div class="flow-conviction">
@@ -242,6 +271,7 @@ Ce hotspot impose de clarifier :
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
+| Fournisseur, usine et Agreement BRD | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, séparation des responsabilités SAP |
 | Promesse Wholesale Boardriders | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 

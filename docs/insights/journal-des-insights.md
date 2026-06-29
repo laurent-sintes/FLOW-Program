@@ -62,6 +62,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 031 | Les données en transit doivent être gouvernées | FLOW doit passer d'une logique de flux projet à une logique de contrats de données gouvernés, en prolongeant l'intuition du demi-flux. |
 | 035 | Produits conçus et produits importés imposent un catalogue d'exécution | FLOW ne peut pas dépendre d'un PLM unique ; il doit consommer une projection produit adaptée à la vente, l'achat, la promesse et l'exécution. |
 | 036 | Les fiches produits rendent l'architecture actionnable | Les produits FLOW doivent être décrits avec responsabilités, consommateurs, informations, interfaces et premiers epics pour amorcer le backlog. |
+| 039 | BRD commande une usine, GBM commande un fournisseur | Le modèle cible doit distinguer fournisseur, usine, agent, facturation et Agreement au lieu de reconduire une fiche fournisseur monolithique. |
 
 ## Finance et adhérences externes
 
@@ -113,3 +114,4 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 036 | Opérations, décision métier et données | Les fiches produits rendent l'architecture actionnable |
 | 037 | Positionnement | Les consommateurs de FLOW doivent rester autonomes |
 | 038 | Modèle conceptuel | La demande est le point d'entrée de la modélisation |
+| 039 | Opérations, décision métier et données | BRD commande une usine, GBM commande un fournisseur |

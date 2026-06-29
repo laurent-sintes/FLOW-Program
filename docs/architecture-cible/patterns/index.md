@@ -38,6 +38,7 @@ Cette section sert donc à :
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |
 | [Externalisation des décisions métier](externalisation-des-decisions.md) | Sortir règles, policies et variations métier des processus figés. | Case Management, Product Agreement Catalog, Stock Unifié |
+| [Rôles, relations et policies](roles-relations-policies.md) | Éviter de figer dans le cœur des cardinalités qui relèvent de règles métier variables. | Product Agreement Catalog, Supply Service Registry, Vues 360 |
 | [Plateforme ouverte et gouvernée](plateforme-ouverte-gouvernee.md) | Permettre à des domaines externes de configurer, développer et consommer sans recréer des silos. | Plateforme FLOW, tous produits |
 
 ## À retenir

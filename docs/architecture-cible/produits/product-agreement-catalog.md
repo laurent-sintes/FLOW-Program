@@ -86,5 +86,6 @@ Il fournit une projection d'exécution suffisamment stable pour vendre, acheter,
 - Un catalogue Article / EAN suffit-il pour la vente ?
 - Faut-il un catalogue Produit d'achat distinct ?
 - Quels agreements doivent être sources dans FLOW et lesquels restent hors FLOW ?
+- Comment représenter les Agreements lorsque BRD passe commande à une usine, alors que GBM associe plutôt ses Agreements à un fournisseur ?
 - Comment éviter une duplication excessive du référentiel produit ?
 - Quelle gouvernance pour les produits importés qui ne respectent pas les nomenclatures historiques ?

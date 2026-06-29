@@ -82,5 +82,6 @@ Il permet aux Cases de dialoguer avec Supply sans connaître directement toutes 
 
 - Le registry est-il un produit FLOW autonome ou une partie du Fulfillment Network ?
 - Qui maintient les contrats : FLOW, Supply, architecture, intégration ?
+- Les usines BRD et leurs lead times doivent-ils être modélisés comme services Supply, comme capacités de fabrication ou comme projections issues d'un référentiel spécialisé ?
 - Quels services doivent être obligatoirement event-driven ?
 - Quels systèmes existants ne peuvent pas être réintégrés sans évolution technique ?

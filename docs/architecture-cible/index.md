@@ -38,6 +38,7 @@ Ils expliquent les choix réutilisables avant leur application dans les fiches p
 - [Operational DataHub](patterns/operational-datahub.md)
 - [Event Sourcing / Ledger](patterns/event-sourcing-ledger.md)
 - [Externalisation des décisions métier](patterns/externalisation-des-decisions.md)
+- [Rôles, relations et policies](patterns/roles-relations-policies.md)
 - [Plateforme ouverte et gouvernée](patterns/plateforme-ouverte-gouvernee.md)
 
 ## Fiches produits initialisées

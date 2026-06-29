@@ -203,6 +203,12 @@ Responsabilités permettant d'exécuter une demande : disponibilité, promesse, 
 
 Ensemble des lieux, partenaires, services, capacités, contraintes et ressources mobilisables pour satisfaire une demande.
 
+### Fournisseur / Vendor
+
+Partie qui fournit un produit ou un service.
+
+Dans FLOW, le fournisseur ne doit pas être confondu avec l'usine, l'agent, l'adresse de commande ou l'entité de facturation.
+
 ## G
 
 ### GBM — Groupe Beaumanoir
@@ -300,6 +306,12 @@ Coordination de décisions, actions, événements, documents et systèmes autour
 ### Packing list
 
 Document ou jeu d'informations publié par un fournisseur fabricant pour décrire les objets expédiés et soutenir transport, taxes et conformité.
+
+### Partner function
+
+Rôle porté par une partie dans une relation commerciale ou opérationnelle : vendor, ordering address, invoicing party ou autre rôle spécialisé.
+
+Les partner functions permettent de représenter des chaînes commerciales complexes sans réduire tous les rôles à un fournisseur unique.
 
 ### PIM — Product Information Management
 
@@ -403,6 +415,12 @@ Domaine qui porte les responsabilités relatives à la disponibilité, à la mob
 
 Référentiel des services Supply consommables par FLOW : API, SLA, contraintes, périmètres, conditions d'appel et événements attendus.
 
+### SRM — Supplier Relationship Management
+
+Référentiel ou système de gestion de la relation fournisseur.
+
+Dans le contexte BRD, SRM est présenté comme référentiel officiel, mais orienté usine et sans mécanisme de synchronisation opérationnel observé avec SAP ou le PLM.
+
 ## T
 
 ### Tenant
@@ -413,11 +431,21 @@ Unité de gouvernance à laquelle s'appliquent des règles, données ou droits d
 
 Système spécialisé dans la planification, l'exécution ou le suivi du transport.
 
+### Transportation Zone
+
+Zone de transport utilisée pour qualifier les contraintes, conditions ou routes d'acheminement associées à un fournisseur, une usine ou un service Supply.
+
 ## U
 
 ### UR — United Retail
 
 Composant sur mesure .NET / C# du paysage GBM, consolidant les commandes B2C et leur cycle de vie dans un contexte StoreLand multi-instances.
+
+### Usine / Factory
+
+Site de fabrication ou de production.
+
+Dans le contexte BRD, l'usine peut être le point réel de commande et porter des informations comme les lead times, distinctes du fournisseur juridique ou de l'entité de facturation.
 
 ## V
 
