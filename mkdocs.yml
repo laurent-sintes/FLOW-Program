@@ -117,6 +117,7 @@ nav:
       - La méthodologie: methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
       - Environnement Codex Windows: methode/environnement-codex-windows.md
+      - Instructions Codex: methode/instructions-codex.md
   - Transformation:
       - Repères: transformation/index.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md

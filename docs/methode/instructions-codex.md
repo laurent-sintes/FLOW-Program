@@ -1,18 +1,12 @@
-# AGENTS.md - Instructions Codex pour FLOW
+# Instructions Codex pour FLOW
 
-Ce fichier sert de mémoire de travail pour Codex et les agents qui interviennent sur le référentiel FLOW.
+Cette page rend visible la mémoire de travail utilisée par Codex pour contribuer au référentiel FLOW.
 
-Il ne remplace pas la documentation publiée dans `docs/`. Il décrit les règles de contribution, les impacts à vérifier et les concepts à préserver quand le contenu évolue.
+Elle reprend les règles du fichier racine `AGENTS.md` dans une forme consultable depuis le site.
 
-Une version lisible dans le site est publiée dans :
+Elle ne remplace pas les pages de fond du référentiel. Elle sert à guider la contribution : comment construire le site, où vérifier les impacts d'un changement, et quels concepts FLOW préserver dans le temps.
 
-```text
-docs/methode/instructions-codex.md
-```
-
-Lorsqu'une règle structurante change ici, mettre à jour cette page également.
-
-## 1. Administrer et construire le site
+## Administrer et construire le site
 
 Le projet est un site MkDocs Material.
 
@@ -56,7 +50,7 @@ Pour les détails d'environnement Windows, se référer à :
 docs/methode/environnement-codex-windows.md
 ```
 
-## 2. Structure du site et impacts à vérifier
+## Structure du site et impacts à vérifier
 
 La navigation principale est portée par `mkdocs.yml`. Quand une page est ajoutée, renommée ou déplacée, vérifier aussi :
 
@@ -66,9 +60,11 @@ La navigation principale est portée par `mkdocs.yml`. Quand une page est ajout�
 - les liens depuis les pages de vision, principes, architecture ou insights ;
 - les ancres Markdown si un titre a changé.
 
+## Sections du référentiel
+
 ### Accueil
 
-Fichiers clés :
+Fichier clé :
 
 - `docs/index.md`
 
@@ -220,15 +216,18 @@ Fichiers clés :
 - `docs/methode/index.md`
 - `docs/methode/processus-de-cadrage.md`
 - `docs/methode/environnement-codex-windows.md`
+- `docs/methode/instructions-codex.md`
 
 Rôle :
 
 - expliquer comment le programme passe des observations aux choix de conception ;
-- documenter l'environnement local de contribution.
+- documenter l'environnement local de contribution ;
+- rendre visible la mémoire de contribution utilisée par Codex.
 
 Impact à vérifier :
 
 - tout changement d'outillage doit être répercuté dans `environnement-codex-windows.md` ;
+- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `instructions-codex.md` ;
 - tout changement de méthode doit rester cohérent avec la chaîne vision, principes, domaines, responsabilités, capacités, produits, solutions candidates.
 
 ### Transformation
@@ -265,7 +264,7 @@ Impact à vérifier :
 - les ancres vers les titres doivent être revérifiées après un renommage ;
 - le glossaire ne doit pas devenir une seconde vision : il définit, il n'argumente pas longuement.
 
-## 3. Concepts FLOW à préserver
+## Concepts FLOW à préserver
 
 FLOW n'est pas un ERP, pas un OMS classique et pas une simple couche d'intégration.
 
