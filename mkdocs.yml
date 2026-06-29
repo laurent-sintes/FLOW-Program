@@ -25,7 +25,7 @@ extra_css:
 nav:
   - Accueil: index.md
   - FAQ:
-      - Questions pour les nouveaux: faq/index.md
+      - faq/index.md
       - Questions pour les experts:
           - Stock temps réel: faq/stock-temps-reel.md
   - Vision:
