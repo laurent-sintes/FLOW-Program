@@ -83,7 +83,7 @@ Le site généré localement sert uniquement à tester le rendu.
 Commande :
 
 ```powershell
-.\.venv\Scripts\python.exe -m mkdocs build --strict
+.\scripts\build-docs.ps1
 ```
 
 Le résultat est écrit dans :
@@ -94,7 +94,11 @@ site/
 
 Ce répertoire est généré automatiquement. Il ne doit pas être poussé sur GitHub.
 
-Le warning Material for MkDocs sur MkDocs 2.0 n'est pas bloquant pour le build actuel. Les messages `INFO` sur des ancres manquantes signalent des liens à nettoyer, mais ils ne bloquent pas la génération.
+Cette commande active `NO_MKDOCS_2_WARNING` avant le build afin de masquer le bandeau d'alerte Material for MkDocs sur MkDocs 2.0. Le projet reste construit avec `mkdocs build --strict`.
+
+Dans un PowerShell Windows classique, elle utilise le Python du `.venv`. Depuis Codex, elle peut utiliser le Python embarqué de Codex avec les paquets du `.venv`, afin d'éviter les blocages du bac à sable sur l'exécutable Python local.
+
+Si la commande directe `.\.venv\Scripts\python.exe -m mkdocs build --strict` est utilisée, le bandeau Material peut réapparaître. Ce bandeau vient du paquet `mkdocs-material`, pas d'un problème du référentiel FLOW.
 
 ## Git et GitHub
 
@@ -166,7 +170,7 @@ L'environnement est considéré comme sain lorsque :
 - Python Windows répond en `3.14.6` ;
 - le `.venv` du projet répond en `3.14.6` ;
 - MkDocs répond en `1.6.1` ;
-- `mkdocs build --strict` construit le site ;
+- `.\scripts\build-docs.ps1` construit le site ;
 - `gh auth status` confirme l'authentification GitHub ;
 - `git fetch` passe ;
 - `git status -sb` ne montre pas de changements inattendus hors contenu volontaire.
