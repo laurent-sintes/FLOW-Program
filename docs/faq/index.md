@@ -25,7 +25,9 @@ La FAQ est séparée en deux niveaux pour permettre une lecture rapide sans perd
 ## Entrées disponibles
 
 - [Questions pour les nouveaux](questions-pour-les-nouveaux.md) : réponses courtes pour comprendre le vocabulaire, le périmètre et les décisions structurantes de FLOW.
-- [Questions pour les experts](stock-temps-reel.md) : analyses dédiées aux questions complexes qui méritent un raisonnement argumenté.
+- Questions pour les experts :
+  - [À quoi ça sert un stock temps réel ?](stock-temps-reel.md)
+  - [Supprimer ERP et OMS ? Une folie !](supprimer-erp-oms-folie.md)
 
 ## Règle de lecture
 

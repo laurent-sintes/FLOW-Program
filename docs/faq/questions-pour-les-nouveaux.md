@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>5 min</strong>
+      <strong>6 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -49,6 +49,20 @@ Il reprend ou gouverne les responsabilités transverses qui doivent devenir coh�
 Certaines applications pourront être remplacées, d'autres conservées, raccordées ou réintégrées selon leur valeur métier et leur capacité à exposer leurs responsabilités proprement.
 
 À lire ensuite : [Vision FLOW](../vision/vision.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
+
+### Supprimer ERP et OMS, c'est une folie ?
+
+Ce serait une folie si l'objectif était de recréer un gros monolithe qui porterait à la fois ERP, OMS, canaux, finance, stock, promesse, règles et exécution.
+
+Ce n'est pas l'objectif de FLOW.
+
+FLOW cherche plutôt à clarifier les responsabilités : l'ERP garde ce qui relève du cœur transactionnel, financier ou référentiel ; les canaux portent l'engagement ; Supply porte les capacités et l'exécution ; FLOW porte Demand + Fulfillment, c'est-à-dire les demandes, promesses, décisions et événements transverses.
+
+Le vrai problème n'est pas seulement de séparer ERP et OMS. C'est que chacun peut devenir un système complet avec ses propres règles, décisions, orchestrations et statuts, sans partager le modèle cible Demand / Fulfillment / Supply.
+
+→ Réponse pour les experts : [Supprimer ERP et OMS ? Une folie !](supprimer-erp-oms-folie.md)
+
+À lire ensuite : [ERP + OMS : séparation utile ou dette architecturale ?](../insights/erp-oms-separation-ou-plateforme-integree.md).
 
 ### Pourquoi ne pas simplement uniformiser tout le groupe ?
 

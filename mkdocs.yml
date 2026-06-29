@@ -29,6 +29,7 @@ nav:
       - Questions pour les nouveaux: faq/questions-pour-les-nouveaux.md
       - Questions pour les experts:
           - À quoi ça sert un stock temps réel ?: faq/stock-temps-reel.md
+          - Supprimer ERP et OMS ? Une folie !: faq/supprimer-erp-oms-folie.md
   - Vision:
       - vision/index.md
       - Abstract: vision/abstract.md
