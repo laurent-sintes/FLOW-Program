@@ -24,7 +24,7 @@ Ces pages expliquent ce que FLOW est — et surtout ce qu'il n'est pas.
 - [FLOW n'est pas une plateforme d'engagement](flow-n-est-pas-une-plateforme-d-engagement.md)
 - [Autonomie des consommateurs de FLOW](autonomie-des-consommateurs-de-flow.md)
 - [ERP + OMS : séparation utile ou dette architecturale ?](erp-oms-separation-ou-plateforme-integree.md)
-- [Convergence, fédération et uniformisation](convergence-federation-uniformisation.md)
+- [Convergence et bon niveau de commun](convergence-federation-uniformisation.md)
 
 ## Modèle conceptuel
 
@@ -68,7 +68,7 @@ Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spé
 | Centre de gravité | Le cœur du SI se déplace de l'ERP-document vers la demande, le Case et la satisfaction client / utilisateur. |
 | Modèle conceptuel | La demande est plus stable que les processus, canaux ou organisations. |
 | Agreement | L'Agreement permet de piloter les variations de traitement sans multiplier les variantes de commande. |
-| Convergence | Converger ne signifie pas uniformiser : il faut piloter le bon niveau de commun et de différenciation. |
+| Convergence | Converger ne signifie pas uniformiser : il faut choisir le bon niveau de commun et de différenciation. |
 | Organisation | Les organisations consomment la plateforme, elles ne doivent pas la structurer. |
 | Données | Les informations doivent être qualifiées par nature et par statut Source / Projection plutôt que rangées dans “Master Data”. |
 | Données en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |

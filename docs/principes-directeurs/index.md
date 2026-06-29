@@ -6,7 +6,7 @@ Ils ne prescrivent pas une solution technique. Ils donnent un cadre pour décide
 
 ## Principes documentés
 
-1. [Converger, c’est fédérer](1-converger-c-est-federer.md)
+1. [Construire le bon niveau de commun](1-converger-c-est-federer.md)
 2. [FLOW comme plateforme d’entreprise](2-flow-comme-plateforme-d-entreprise.md)
 3. [Les domaines avant les structures](3-domaines-avant-les-structures.md)
 4. [Séparer Demand et Supply](4-separer-demand-et-supply.md)

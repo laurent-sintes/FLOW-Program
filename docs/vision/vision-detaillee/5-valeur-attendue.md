@@ -71,7 +71,7 @@ La valeur métier vient du fait que les expériences peuvent rester différenci�
 | Demandes de service, retours, litiges et SAV traités comme des cas particuliers | Case Management et logique Demand élargie | Meilleure continuité client : une demande reste une demande, même lorsqu'elle n'est pas une commande |
 | Processus amont fournisseurs et achats difficiles à relier au fulfillment | Product Agreement Catalog, Cases achat, documents fournisseur, événements Supply | Meilleure continuité entre engagement fournisseur, achat, réception, disponibilité et exécution |
 
-La convergence devient alors un choix métier piloté par niveaux : centraliser, unifier, standardiser, fédérer ou différencier selon la valeur recherchée.
+La convergence devient alors un choix métier explicite : construire le bon niveau de commun en centralisant, unifiant, standardisant, fédérant ou différenciant selon la valeur recherchée.
 
 ## Valeur IT : gouverner les responsabilités, les données et les trajectoires
 

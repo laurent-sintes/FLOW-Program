@@ -63,7 +63,7 @@ nav:
       - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:
       - Les principes: principes-directeurs/index.md
-      - "01 — Converger, c’est fédérer": principes-directeurs/1-converger-c-est-federer.md
+      - "01 — Construire le bon niveau de commun": principes-directeurs/1-converger-c-est-federer.md
       - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
       - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
       - "04 — Séparer Demand et Supply": principes-directeurs/4-separer-demand-et-supply.md
@@ -94,7 +94,7 @@ nav:
           - FLOW n’est pas une plateforme d’engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
           - Autonomie des consommateurs de FLOW: insights/autonomie-des-consommateurs-de-flow.md
           - "ERP + OMS : séparation utile ou dette architecturale ?": insights/erp-oms-separation-ou-plateforme-integree.md
-          - Convergence, fédération et uniformisation: insights/convergence-federation-uniformisation.md
+          - Convergence et bon niveau de commun: insights/convergence-federation-uniformisation.md
       - Modèle conceptuel:
           - Agreement comme pivot: insights/agreement-comme-pivot.md
           - La demande comme point d’entrée de la modélisation: insights/demande-point-entree-modelisation.md

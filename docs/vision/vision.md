@@ -26,7 +26,7 @@ L'ambition de FLOW est de construire un socle commun là où la cohérence est c
 
 Cette vision repose sur cinq convictions fortes :
 
-- La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit être pilotée par niveaux.
+- La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit construire le bon niveau de commun pour chaque responsabilité.
 - Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision métier et la satisfaction client / utilisateur.
 - Gérer des commandes n'est plus suffisant : il faut savoir traiter des <span class="flow-keyword">demandes</span>.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.

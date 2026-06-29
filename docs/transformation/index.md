@@ -30,7 +30,7 @@ La recommandation est donc de distinguer deux natures de contenus :
 2. passer de “j'achète / je vends” à Demand / Supply ;
 3. réconcilier ERP et OMS dans une plateforme Demand ;
 4. penser fulfillment et satisfaction client avant documents ;
-5. piloter la convergence par niveaux.
+5. construire le bon niveau de commun.
 
 Cette structuration permet de couvrir la profondeur de FLOW sans multiplier les campagnes de changement.
 

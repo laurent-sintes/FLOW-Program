@@ -42,7 +42,7 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 
 | Concept | Message clé |
 | --- | --- |
-| <span class="flow-keyword">Convergence pilotée par niveaux</span> | On ne choisit pas entre tout centraliser et tout laisser local : on centralise, unifie, standardise, fédère ou différencie selon la responsabilité. |
+| <span class="flow-keyword">Bon niveau de commun</span> | On ne choisit pas entre tout centraliser et tout laisser local : pour chaque responsabilité, FLOW décide ce qui doit être commun, fédéré ou différencié. |
 | <span class="flow-keyword">Demande / Demand</span> | Le point de départ n'est plus la commande ou le document, mais l'intention à comprendre, décider, promettre, satisfaire et expliquer. |
 | <span class="flow-keyword">Case</span> | Le Case porte une demande dans la durée : intention, contexte, décisions métier, événements, ressources, actions et documents. |
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW devient le lieu de cohérence des demandes, décisions métier, stock, promesses, événements et exceptions. |
@@ -59,11 +59,13 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Hotspot</span> | Un hotspot est un point de tension à instruire avant de figer un arbitrage ou une architecture cible. |
 | <span class="flow-keyword">Domaine / responsabilité / capacité / produit</span> | FLOW découpe les problèmes durables avant de parler d'applications, d'organisations ou de fonctionnalités. |
 
-## Convergence pilotée par niveaux
+## Bon niveau de commun
 
 La <span class="flow-keyword">convergence</span> ne signifie pas que tout doit être identique partout.
 
-FLOW propose une lecture plus fine :
+FLOW ne cherche pas un niveau unique de convergence.
+
+Il cherche le <span class="flow-keyword">bon niveau de commun</span> pour chaque responsabilité :
 
 ```text
 Centraliser
@@ -84,7 +86,7 @@ Différencier
 
 Ce concept est important parce qu'il permet de sortir d'un débat trop pauvre : centraliser ou laisser local.
 
-FLOW cherche le bon niveau de commun pour chaque responsabilité.
+FLOW rend explicite ce qui doit devenir commun, ce qui doit être fédéré entre plusieurs modèles, et ce qui peut rester différencié parce que cela crée de la valeur.
 
 ## Demande / Demand
 
@@ -288,4 +290,4 @@ Cette taxonomie permet de ne pas confondre un outil existant, une équipe, un pr
 
 Les concepts FLOW ne sont pas des mots nouveaux pour faire moderne.
 
-Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, du flux projet vers le contrat de données, et de l'uniformisation vers la convergence pilotée.
+Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, du flux projet vers le contrat de données, et de l'uniformisation vers le bon niveau de commun.

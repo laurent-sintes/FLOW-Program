@@ -20,7 +20,7 @@ Ces changements doivent inspirer la transformation : ils disent ce que les équi
 | 2. Passer de “j'achète / je vends” à Demand / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître une demande à instruire et satisfaire, puis mobiliser le bon réseau d'exécution. |
 | 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts de données. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 4. Penser fulfillment et satisfaction client avant documents | Commencer par les documents à produire : facture, livraison, commande, écritures. | Commencer par la demande à satisfaire, puis intégrer les documents et la finance au bon moment. |
-| 5. Piloter la convergence par niveaux | Choisir entre tout centraliser ou tout laisser spécifique. | Centraliser, unifier, standardiser ou différencier selon la responsabilité et l'exigence business. |
+| 5. Construire le bon niveau de commun | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré ou différencié selon la responsabilité et l'exigence business. |
 
 ## Changement 1 — Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise
 
@@ -171,7 +171,7 @@ On ne nie pas la facture.
 
 On la remet à sa place : elle documente et comptabilise une réalité opérationnelle que FLOW doit d'abord savoir instruire, promettre et exécuter.
 
-## Changement 5 — Piloter la convergence par niveaux
+## Changement 5 — Construire le bon niveau de commun
 
 ### Changement attendu
 
@@ -185,7 +185,7 @@ tout laisser spécifique
 
 Cette lecture est trop manichéenne.
 
-La convergence doit être pilotée par niveaux.
+La convergence doit devenir un choix explicite du bon niveau de commun.
 
 Selon la responsabilité, le contexte et l'exigence business, le programme peut décider de :
 
@@ -221,7 +221,7 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | Sujet détaillé | À rattacher à |
 | --- | --- |
 | Domain-Driven Design | Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise |
-| Urbanisme commun BRD / GBM | Ne plus servir l'organisation + piloter la convergence par niveaux |
+| Urbanisme commun BRD / GBM | Ne plus servir l'organisation + construire le bon niveau de commun |
 | B2C / B2B / retail / wholesale | Passer à Demand / Supply |
 | Achats / ventes | Passer à Demand / Supply |
 | SAV / litiges / retours / remboursements | Passer à Demand / Supply + fulfillment avant documents |
@@ -231,7 +231,7 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | Allocation et promesse | Réconcilier ERP et OMS + Demand / Supply |
 | Facture, bon de livraison, avoir, écritures | Fulfillment et satisfaction client avant documents |
 | Finance | Fulfillment et satisfaction client avant documents |
-| Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + piloter la convergence par niveaux |
+| Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + construire le bon niveau de commun |
 | Product ownership | Support de gouvernance pour tous les changements, mais pas un sujet autonome au départ |
 | Nomenclature data | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
 

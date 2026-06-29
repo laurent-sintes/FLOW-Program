@@ -1,4 +1,4 @@
-# Convergence, fédération et uniformisation
+# Convergence et bon niveau de commun
 
 ## Contexte
 
@@ -19,7 +19,7 @@ Les travaux menés autour de FLOW montrent que cette interprétation serait trop
 
 Converger ne signifie pas uniformiser.
 
-Converger signifie identifier ce qui doit être partagé à l'échelle du groupe et ce qui doit rester différenciant pour les marques, enseignes, canaux ou business models.
+Converger signifie décider explicitement ce qui doit devenir commun, ce qui doit être fédéré entre plusieurs modèles, et ce qui doit rester différenciant pour les marques, enseignes, canaux ou business models.
 
 ## Ce que convergence ne veut pas dire
 
@@ -33,11 +33,14 @@ Convergence ne signifie pas :
 
 ## Ce que convergence veut dire pour FLOW
 
-Dans FLOW, converger signifie fédérer.
+Dans FLOW, converger signifie construire le bon niveau de commun.
 
 Cela implique :
 
-- de mutualiser les capacités communes ;
+- de rendre communes les capacités critiques ;
+- d'unifier les modèles qui doivent être partagés ;
+- de standardiser lorsque la variation n'apporte pas de valeur ;
+- de fédérer lorsque plusieurs modèles doivent coexister ;
 - de partager les ressources opérationnelles nécessaires ;
 - de rendre les décisions plus cohérentes ;
 - de préserver les spécificités utiles ;
@@ -60,6 +63,6 @@ Converger, ce n'est pas tout centraliser.
 
 Converger, ce n'est pas tout uniformiser.
 
-Converger, c'est fédérer.
+Converger, c'est construire le bon niveau de commun.
 
-La logique FLOW consiste à mutualiser ce qui est commun afin de préserver ce qui différencie réellement les marques, les canaux et les business models.
+La logique FLOW consiste à rendre communes les responsabilités qui exigent de la cohérence, afin de préserver ce qui différencie réellement les marques, les canaux et les business models.

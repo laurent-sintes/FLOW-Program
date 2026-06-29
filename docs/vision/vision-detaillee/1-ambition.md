@@ -97,7 +97,7 @@ Le groupe a besoin de cohérence sur les demandes, le stock, les engagements, le
 
 La réponse ne peut donc être ni une mosaïque d'applications autonomes, ni un modèle unique qui rigidifierait tout le groupe.
 
-FLOW propose une <span class="flow-keyword">convergence pilotée par niveaux</span> : distinguer ce qui doit être commun, gouverné et transverse, de ce qui doit rester spécialisé, différencié ou local.
+FLOW propose de construire le <span class="flow-keyword">bon niveau de commun</span> : rendre communes les responsabilités qui exigent de la cohérence, fédérer celles qui doivent coexister, et préserver ce qui reste spécialisé, différencié ou local.
 
 ```text
 Centraliser

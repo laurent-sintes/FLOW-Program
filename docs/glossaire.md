@@ -13,7 +13,7 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
 | Colonne vertébrale opérationnelle | [Concepts clés](vision/concepts-cles.md#colonne-vertebrale-operationnelle) · [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Architecture cible](architecture-cible/index.md) |
 | Contrat de données | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
-| Convergence pilotée par niveaux | [Vision](vision/vision.md#ambition--converger-sans-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
+| Bon niveau de commun | [Vision](vision/vision.md#ambition--converger-sans-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande--demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
 | Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand--supply-depasser-achat--vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
 | Donnée au repos | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
@@ -56,6 +56,12 @@ Granularité produit fine, souvent nécessaire pour vendre, promettre, réserver
 Le hotspot PLM / catalogue pose la question de savoir si FLOW doit consommer une projection au niveau Article / EAN plutôt que dépendre directement de la structure PLM.
 
 ## B
+
+### Bon niveau de commun
+
+Principe selon lequel la convergence ne consiste pas à appliquer un modèle unique partout.
+
+Selon la responsabilité, FLOW peut rendre une capacité commune, unifier, standardiser, fédérer ou différencier.
 
 ### B2B — Business to Business
 
@@ -112,12 +118,6 @@ Nature d'information représentant une intention adressée à un système ou dom
 Engagement durable décrivant comment une information est publiée, consommée, supervisée et réconciliée.
 
 Il précise notamment source, consommateurs, mode d'échange, granularité, fraîcheur, qualité et mécanismes de reprise.
-
-### Convergence pilotée par niveaux
-
-Approche selon laquelle la convergence ne signifie pas uniformiser partout.
-
-Selon la responsabilité, FLOW peut centraliser, unifier, standardiser, fédérer ou différencier.
 
 ## D
 

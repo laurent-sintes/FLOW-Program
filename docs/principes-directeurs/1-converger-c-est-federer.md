@@ -1,4 +1,4 @@
-# Principe 1 — Converger, c'est fédérer
+# Principe 1 — Construire le bon niveau de commun
 
 ## Introduction
 
@@ -17,11 +17,15 @@ La convergence recherchée par FLOW repose donc sur un équilibre entre :
 
 ## Principe
 
-> Mutualiser ce qui est commun.
+> Rendre commun ce qui doit être cohérent.
 >
-> Préserver ce qui différencie.
+> Préserver ce qui différencie réellement.
+>
+> Fédérer ce qui doit coexister.
 
-FLOW fédère les capacités qui créent de la valeur à l'échelle du groupe tout en préservant l'autonomie nécessaire des marques, des canaux et des business models.
+FLOW ne cherche pas un niveau unique de convergence.
+
+Pour chaque responsabilité, FLOW doit décider explicitement ce qui devient commun à l'échelle du groupe, ce qui doit être fédéré entre plusieurs modèles, et ce qui reste différencié parce que cela crée de la valeur métier.
 
 ## Ce que convergence ne signifie pas
 
@@ -35,15 +39,18 @@ Converger ne signifie pas :
 
 ## Ce que convergence signifie pour FLOW
 
-Converger signifie fédérer.
+Converger signifie construire le bon niveau de commun pour chaque responsabilité.
 
 Cela implique :
 
-- identifier les capacités communes ;
-- mutualiser les ressources et référentiels qui doivent être partagés ;
+- identifier les responsabilités qui exigent une cohérence groupe ;
+- rendre communes les capacités critiques ;
+- unifier les modèles qui doivent être partagés ;
+- standardiser lorsque la variation n'apporte pas de valeur ;
+- fédérer lorsque plusieurs modèles doivent coexister ;
 - clarifier les responsabilités ;
 - permettre plusieurs business models ;
-- préserver l'autonomie métier lorsque celle-ci crée de la valeur ;
+- préserver l'autonomie métier lorsqu'elle crée de la valeur ;
 - fournir un cadre commun permettant d'intégrer de nouvelles marques ou acquisitions.
 
 ## Ce que nous avons observé chez GBM
@@ -87,12 +94,13 @@ GBM montre les limites d'un modèle trop ségrégé.
 
 BRD montre les limites d'une mutualisation qui ne clarifie pas suffisamment les responsabilités.
 
-Les deux trajectoires convergent vers la même nécessité : construire une plateforme fédérale capable de mutualiser certaines capacités tout en préservant l'autonomie nécessaire.
+Les deux trajectoires convergent vers la même nécessité : construire une plateforme fédérale capable de rendre communes certaines responsabilités tout en préservant l'autonomie nécessaire.
 
 ## Conséquences pour FLOW
 
 FLOW doit permettre :
 
+- de construire le bon niveau de commun pour chaque responsabilité ;
 - de mutualiser les capacités réellement communes ;
 - de préserver les spécificités utiles ;
 - de clarifier les responsabilités entre groupe, marques, domaines et partenaires ;
@@ -105,6 +113,6 @@ Converger, ce n'est pas tout centraliser.
 
 Converger, ce n'est pas tout uniformiser.
 
-Converger, c'est fédérer.
+Converger, c'est construire le bon niveau de commun.
 
-La logique FLOW consiste à mutualiser ce qui est commun afin de préserver ce qui différencie réellement les marques, les canaux et les business models.
+La logique FLOW consiste à rendre communes les responsabilités qui exigent de la cohérence, afin de préserver ce qui différencie réellement les marques, les canaux et les business models.
