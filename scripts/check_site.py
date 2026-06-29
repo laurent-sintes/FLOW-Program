@@ -29,6 +29,7 @@ INSTRUCTIONS = DOCS / "administration" / "instructions-codex.md"
 IMAGE_REGISTRY = DOCS / "administration" / "referentiel-schemas.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
+GITATTRIBUTES = ROOT / ".gitattributes"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
 READING_METRICS = DOCS / "referentiel" / "page-metrics.json"
 ROLE_REGISTRY = DOCS / "administration" / "referentiel-roles.md"
@@ -324,6 +325,22 @@ def check_generated_content_not_tracked(checks: Checks) -> None:
         checks.pass_check(".gitignore protects generated/local paths.")
 
 
+def check_repository_line_endings(checks: Checks) -> None:
+    if not GITATTRIBUTES.exists():
+        checks.error("GITATTRIBUTES", ".gitattributes is missing.", GITATTRIBUTES)
+        return
+
+    text = read_text(GITATTRIBUTES)
+    required_patterns = ["* text=auto eol=lf"]
+    missing = [pattern for pattern in required_patterns if pattern not in text]
+
+    for pattern in missing:
+        checks.error("GITATTRIBUTES_PATTERN", f"Missing .gitattributes pattern: {pattern}", GITATTRIBUTES)
+
+    if not missing:
+        checks.pass_check(".gitattributes stabilizes repository line endings.")
+
+
 def parse_html(path: Path) -> LinkParser:
     parser = LinkParser()
     parser.feed(read_text(path))
@@ -561,7 +578,9 @@ def check_agents_publication_sync(checks: Checks) -> None:
         "concepts flow",
         "scripts\\build-docs.ps1",
         "scripts\\check-site.ps1",
+        "scripts\\doctor.ps1",
         "scripts\\update-reading-metrics.ps1",
+        ".gitattributes",
         "guide-contribution-contenu.md",
         "modele-mental-connaissances.md",
         "environnement-codex-windows.md",
@@ -976,6 +995,7 @@ def run_checks(check_external: bool = False, external_timeout: float = 8.0, stri
     check_nav_coverage(checks)
     check_nav_title_alignment(checks)
     check_generated_content_not_tracked(checks)
+    check_repository_line_endings(checks)
     check_built_site_links(checks)
     if check_external:
         check_external_links(checks, external_timeout, strict_external)

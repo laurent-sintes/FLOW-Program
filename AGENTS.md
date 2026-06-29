@@ -22,6 +22,15 @@ Le site généré localement n'est pas un livrable final :
 - `site/` ne doit jamais être committé ;
 - `.venv/` ne doit jamais être committé ;
 - `.agents/` est un dossier local éventuel, non versionné.
+- `.gitattributes` stabilise les fins de ligne du dépôt en `LF` pour éviter le bruit Windows / Linux.
+
+Pour diagnostiquer l'environnement local, utiliser :
+
+```powershell
+.\scripts\doctor.ps1
+```
+
+Cette commande vérifie les chemins du projet, `.venv`, Git, GitHub CLI, MkDocs, le contexte Codex / PowerShell classique et `.gitattributes`. L'option `-Network` ajoute un test HTTPS léger depuis un PowerShell Windows classique.
 
 Pour construire le site local, utiliser :
 
@@ -94,6 +103,7 @@ Avant de committer :
 - vérifier `git status -sb` ;
 - vérifier le diff ;
 - lancer `.\scripts\check-site.ps1` ;
+- lancer `.\scripts\doctor.ps1` si le problème ressemble à un souci d'environnement ;
 - ne mettre en stage que les fichiers utiles ;
 - ne pas inclure de contenu généré.
 

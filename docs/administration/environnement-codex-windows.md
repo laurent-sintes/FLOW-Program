@@ -40,6 +40,22 @@ C:\Users\laure\Documents\Codex\FLOW-Program
 
 Les commandes doivent être lancées depuis ce répertoire.
 
+## Diagnostic rapide
+
+La commande de diagnostic local est :
+
+```powershell
+.\scripts\doctor.ps1
+```
+
+Elle vérifie les chemins attendus, `.venv`, les packages Python, Git, GitHub CLI, `.gitattributes` et le contexte d'exécution.
+
+Depuis Codex, certains contrôles peuvent afficher des alertes liées au bac à sable. Depuis un PowerShell Windows classique, l'option suivante ajoute un test HTTPS léger :
+
+```powershell
+.\scripts\doctor.ps1 -Network
+```
+
 ## Python
 
 Python est installé côté Windows dans le profil utilisateur.
@@ -152,6 +168,12 @@ Avant une publication importante, le mode strict permet de transformer les éche
 Depuis Codex, ce contrôle peut être ignoré si le runtime embarqué bloque HTTPS. Dans ce cas, lancer la commande depuis un PowerShell Windows classique, où le Python du projet peut accéder au réseau.
 
 Les erreurs `ERROR` doivent être corrigées avant commit. Les alertes `WARN` signalent un point à examiner, sans bloquer automatiquement.
+
+## Fins de ligne Git
+
+Le fichier `.gitattributes` force les fichiers texte du dépôt en `LF`.
+
+Cette règle évite les avertissements du type `LF will be replaced by CRLF` et limite le bruit dans les diffs entre Windows, Codex et GitHub Actions.
 
 ## Git et GitHub
 

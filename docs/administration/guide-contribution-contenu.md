@@ -174,6 +174,7 @@ Après intégration :
 - relancer `.\scripts\update-reading-metrics.ps1` ;
 - relancer `.\scripts\check-site.ps1` ;
 - lancer `.\scripts\check-site.ps1 -ExternalLinks` si des références Internet ont été ajoutées ou modifiées ;
+- lancer `.\scripts\doctor.ps1` si le problème observé ressemble à un souci d'environnement local ;
 - vérifier le diff ;
 - vérifier que les cartouches utilisent les rôles du référentiel ;
 - vérifier que les liens, concepts, hotspots et pages d'impact sont cohérents.
@@ -258,4 +259,5 @@ Avant de considérer une contribution comme intégrée :
 - les références Internet nouvelles ou modifiées ont été contrôlées avec `.\scripts\check-site.ps1 -ExternalLinks` quand le réseau est disponible ;
 - les schémas SVG ajoutés ou modifiés sont valides ;
 - les schémas impactés par un concept ajouté, renommé ou supprimé ont été vérifiés dans le [Référentiel des schémas](referentiel-schemas.md) ;
+- les alertes d'environnement ont été diagnostiquées avec `.\scripts\doctor.ps1` quand elles ne relèvent pas du contenu ;
 - `.\scripts\check-site.ps1` passe sans erreur.
