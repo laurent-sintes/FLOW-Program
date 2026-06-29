@@ -171,6 +171,17 @@ Impact à vérifier :
 - toute page autonome dans `docs/faq/` doit rester liée depuis l'index FAQ ;
 - toute réponse experte doit être rapprochée des pages internes concernées : vision, principes, hotspots, insights, architecture cible ou glossaire.
 
+Procédure pour ajouter une question experte :
+
+1. Créer une page dédiée dans `docs/faq/` avec un nom de fichier stable et un H1 identique au libellé prévu dans `mkdocs.yml`.
+2. Structurer la réponse avec le problème posé, l'analyse, le rapprochement avec les hotspots / insights, le lien avec la proposition de solution, les pratiques complémentaires et les références utiles.
+3. Rechercher sur le web si le problème est traité par des standards, bonnes pratiques, éditeurs de référence, retours d'expérience ou études, puis citer les sources utiles. Si aucune référence solide n'est trouvée, le signaler explicitement.
+4. Ajouter la page dans `mkdocs.yml`, sous `FAQ > Questions pour les experts`, avec un libellé identique au H1.
+5. Ajouter un lien vers cette page depuis `docs/faq/index.md`.
+6. Si la question aide aussi les nouveaux, ajouter ou ajuster une réponse courte dans `docs/faq/questions-pour-les-nouveaux.md` qui pointe vers la page experte.
+7. Vérifier les impacts sur glossaire, principes, hotspots, architecture cible, référentiel des schémas, cartouches et statistiques.
+8. Si des références web ont été ajoutées, lancer `.\scripts\check-site.ps1 -ExternalLinks` depuis un PowerShell Windows classique quand le réseau est disponible.
+
 ### Vision
 
 Fichiers clés :

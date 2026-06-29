@@ -256,6 +256,8 @@ Avant de considérer une contribution comme intégrée :
 - les cartouches et statistiques ont été régénérés ;
 - les libellés explicites du menu correspondent aux titres H1 des pages ;
 - les pages autonomes FAQ sont reliées depuis l'index FAQ ;
+- les questions expertes FAQ suivent la procédure décrite dans `AGENTS.md` et les [Instructions Codex](instructions-codex.md) ;
+- les questions expertes FAQ citent, quand elles existent, les standards, bonnes pratiques, retours d'expérience ou études externes qui éclairent le problème ;
 - les références Internet nouvelles ou modifiées ont été contrôlées avec `.\scripts\check-site.ps1 -ExternalLinks` quand le réseau est disponible ;
 - les schémas SVG ajoutés ou modifiés sont valides ;
 - les schémas impactés par un concept ajouté, renommé ou supprimé ont été vérifiés dans le [Référentiel des schémas](referentiel-schemas.md) ;
