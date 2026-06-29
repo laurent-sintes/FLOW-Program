@@ -18,7 +18,14 @@ METRICS_PATH = DOCS / "referentiel" / "page-metrics.json"
 STATS_PAGE = DOCS / "referentiel" / "statistiques.md"
 ROLE_REGISTRY_PATH = DOCS / "administration" / "referentiel-roles.md"
 READING_WORDS_PER_MINUTE = 220
-PROFILE_VERSION = 2
+PROFILE_VERSION = 3
+SOURCE_LANGUAGE = "fr"
+PUBLISHED_LANGUAGES = ["fr", "en"]
+METRICS_SCOPE = "canonical_source"
+LANGUAGE_METRICS_POLICY = (
+    "Les métriques mesurent la source éditoriale française dans docs/. "
+    "Les sorties publiées par langue ne sont pas additionnées."
+)
 
 CARD_START = "<!-- FLOW-READING-CARD:START -->"
 CARD_END = "<!-- FLOW-READING-CARD:END -->"
@@ -340,6 +347,7 @@ def metric_for_page(
     audience, usage = profile_for(path, role_registry)
     return {
         "path": doc_rel(path),
+        "language": SOURCE_LANGUAGE,
         "title": extract_title(base, path.stem.replace("-", " ").title()),
         "section": section_for(path),
         "target_audience": audience,
@@ -438,15 +446,22 @@ def collect_metrics() -> list[dict[str, Any]]:
 
 
 def write_page_metrics(metrics: list[dict[str, Any]]) -> None:
-    payload = {
+    write_text(METRICS_PATH, json.dumps(metrics_payload(metrics), ensure_ascii=False, indent=2) + "\n")
+
+
+def metrics_payload(metrics: list[dict[str, Any]]) -> dict[str, Any]:
+    return {
         "schema_version": 1,
         "profile_version": PROFILE_VERSION,
+        "metrics_scope": METRICS_SCOPE,
+        "source_language": SOURCE_LANGUAGE,
+        "published_languages": PUBLISHED_LANGUAGES,
+        "language_metrics_policy": LANGUAGE_METRICS_POLICY,
         "reading_words_per_minute": READING_WORDS_PER_MINUTE,
         "role_registry": doc_rel(ROLE_REGISTRY_PATH),
         "source": "scripts/update_reading_metrics.py",
         "pages": metrics,
     }
-    write_text(METRICS_PATH, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 
 
 def update_reading_cards(metrics: list[dict[str, Any]]) -> None:
@@ -543,6 +558,15 @@ def stats_page(metrics: list[dict[str, Any]]) -> str:
         "",
         "Cette page est générée par `scripts/update_reading_metrics.py` à partir du fichier `docs/referentiel/page-metrics.json`.",
         "",
+        "## Périmètre linguistique",
+        "",
+        f"- Langue source des métriques : `{SOURCE_LANGUAGE}`.",
+        "- Source mesurée : `docs/`, c'est-à-dire la base éditoriale française de référence.",
+        f"- Langues publiées : {', '.join(f'`/{code}/`' for code in PUBLISHED_LANGUAGES)}.",
+        "- Les sorties générées par langue ne sont pas additionnées afin d'éviter un double comptage artificiel.",
+        "- Tant que la traduction anglaise est générée depuis le français, ses cartouches et durées de lecture reprennent les métriques de la source française.",
+        "- Quand un cache de traduction anglais sera versionné, il faudra ajouter des métriques par langue plutôt que remplacer les métriques de référence.",
+        "",
         "## Synthèse quantitative",
         "",
         "| Indicateur | Valeur |",
@@ -618,15 +642,7 @@ def current_expected_outputs() -> dict[Path, str]:
     for path in markdown_pages():
         outputs[path] = insert_reading_card(path, read_text(path), by_path[doc_rel(path)])
 
-    payload = {
-        "schema_version": 1,
-        "profile_version": PROFILE_VERSION,
-        "reading_words_per_minute": READING_WORDS_PER_MINUTE,
-        "role_registry": doc_rel(ROLE_REGISTRY_PATH),
-        "source": "scripts/update_reading_metrics.py",
-        "pages": metrics,
-    }
-    outputs[METRICS_PATH] = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    outputs[METRICS_PATH] = json.dumps(metrics_payload(metrics), ensure_ascii=False, indent=2) + "\n"
     outputs[STATS_PAGE] = stats_page(metrics)
     return outputs
 

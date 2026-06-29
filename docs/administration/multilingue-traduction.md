@@ -64,6 +64,22 @@ La cible est d'ajouter ensuite un cache de traduction par page ou par fragment :
 
 Les termes structurants doivent rester maîtrisés : `FLOW`, `Demand`, `Fulfillment`, `Supply`, `Case`, `Agreement`, `Source de référence`, `Projection`, `Decision`, `Promise`.
 
+## Métriques de lecture par langue
+
+Les métriques sont des métriques de source, pas des métriques de publication.
+
+Le fichier `docs/referentiel/page-metrics.json` déclare explicitement :
+
+- `metrics_scope: canonical_source` ;
+- `source_language: fr` ;
+- `published_languages: ["fr", "en"]`.
+
+Ne pas additionner les métriques de `site/fr/` et `site/en/` : cela doublerait artificiellement le volume documentaire.
+
+La version française publiée reprend directement les cartouches de lecture de `docs/`. La version anglaise publiée reprend temporairement les mêmes cartouches, car elle est encore générée depuis la source française avec un bandeau de traduction.
+
+Quand un cache de traduction anglais sera versionné, il faudra ajouter des métriques par langue, par exemple `metrics_by_language`, sans remplacer les métriques de référence françaises.
+
 ## Commandes
 
 Build local :

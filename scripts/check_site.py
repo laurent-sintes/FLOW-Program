@@ -34,6 +34,9 @@ GITHUB_PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "github-pages.yml"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
 READING_METRICS = DOCS / "referentiel" / "page-metrics.json"
 ROLE_REGISTRY = DOCS / "administration" / "referentiel-roles.md"
+EXPECTED_METRICS_SCOPE = "canonical_source"
+EXPECTED_SOURCE_LANGUAGE = "fr"
+EXPECTED_PUBLISHED_LANGUAGES = ["fr", "en"]
 CARD_START = "<!-- FLOW-READING-CARD:START -->"
 CARD_END = "<!-- FLOW-READING-CARD:END -->"
 AUDIENCE_RE = re.compile(
@@ -823,6 +826,35 @@ def load_metric_audiences(checks: Checks, roles: set[str]) -> dict[str, str]:
             READING_METRICS,
         )
 
+    if data.get("metrics_scope") != EXPECTED_METRICS_SCOPE:
+        checks.error(
+            "READING_METRICS_SCOPE",
+            f"Reading metrics should use scope {EXPECTED_METRICS_SCOPE}.",
+            READING_METRICS,
+        )
+
+    if data.get("source_language") != EXPECTED_SOURCE_LANGUAGE:
+        checks.error(
+            "READING_METRICS_SOURCE_LANGUAGE",
+            f"Reading metrics should declare source language {EXPECTED_SOURCE_LANGUAGE}.",
+            READING_METRICS,
+        )
+
+    if data.get("published_languages") != EXPECTED_PUBLISHED_LANGUAGES:
+        checks.error(
+            "READING_METRICS_PUBLISHED_LANGUAGES",
+            f"Reading metrics should declare published languages {', '.join(EXPECTED_PUBLISHED_LANGUAGES)}.",
+            READING_METRICS,
+        )
+
+    policy = data.get("language_metrics_policy")
+    if not isinstance(policy, str) or EXPECTED_SOURCE_LANGUAGE not in policy:
+        checks.error(
+            "READING_METRICS_LANGUAGE_POLICY",
+            "Reading metrics should document the language counting policy.",
+            READING_METRICS,
+        )
+
     pages = data.get("pages")
     if not isinstance(pages, list):
         checks.error("READING_METRICS_PAGES", "Reading metrics JSON does not expose a pages list.", READING_METRICS)
@@ -839,6 +871,13 @@ def load_metric_audiences(checks: Checks, roles: set[str]) -> dict[str, str]:
         if not isinstance(page_path, str) or not isinstance(audience, str):
             checks.error("READING_METRICS_AUDIENCE", "Reading metrics page entry misses path or target_audience.", READING_METRICS)
             continue
+
+        if page.get("language") != EXPECTED_SOURCE_LANGUAGE:
+            checks.error(
+                "READING_METRICS_PAGE_LANGUAGE",
+                f"Reading metrics page {page_path} should declare language {EXPECTED_SOURCE_LANGUAGE}.",
+                READING_METRICS,
+            )
 
         validate_audience_roles(DOCS / page_path, audience, roles, checks)
         audiences[page_path] = audience

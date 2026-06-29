@@ -112,6 +112,8 @@ Cette commande maintient :
 - `docs/referentiel/page-metrics.json`, qui conserve les comptages unitaires par page ;
 - `docs/referentiel/statistiques.md`, qui agrège les volumes, temps de lecture, concepts, hotspots, composants et nuage de mots.
 
+Les métriques sont calculées sur la source canonique française `docs/`, pas sur les sorties publiées `site/fr/` et `site/en/`. `docs/referentiel/page-metrics.json` doit conserver `metrics_scope: canonical_source`, `source_language: fr` et `published_languages: ["fr", "en"]`. Ne jamais additionner les langues publiées : tant que l'anglais est généré depuis la source française, ses cartouches de lecture reprennent les métriques de référence françaises.
+
 Après toute modification documentaire significative, relancer `.\scripts\update-reading-metrics.ps1` avant `.\scripts\check-site.ps1`.
 
 Avant de committer :

@@ -24,12 +24,21 @@
 
 Cette page est générée par `scripts/update_reading_metrics.py` à partir du fichier `docs/referentiel/page-metrics.json`.
 
+## Périmètre linguistique
+
+- Langue source des métriques : `fr`.
+- Source mesurée : `docs/`, c'est-à-dire la base éditoriale française de référence.
+- Langues publiées : `/fr/`, `/en/`.
+- Les sorties générées par langue ne sont pas additionnées afin d'éviter un double comptage artificiel.
+- Tant que la traduction anglaise est générée depuis le français, ses cartouches et durées de lecture reprennent les métriques de la source française.
+- Quand un cache de traduction anglais sera versionné, il faudra ajouter des métriques par langue plutôt que remplacer les métriques de référence.
+
 ## Synthèse quantitative
 
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 101 |
-| Nombre de mots | 80 301 |
+| Nombre de mots | 80 481 |
 | Temps de lecture complet | 6 h 54 min |
 | Concepts du glossaire | 84 |
 | Hotspots documentés | 8 |
@@ -42,7 +51,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Section | Pages | Mots | Lecture |
 | --- | ---: | ---: | ---: |
 | accueil | 1 | 325 | 2 min |
-| administration | 8 | 7 187 | 36 min |
+| administration | 8 | 7 367 | 36 min |
 | architecture-cible | 24 | 15 545 | 1 h 21 min |
 | contexte | 4 | 8 517 | 41 min |
 | faq | 4 | 4 961 | 25 min |
@@ -61,7 +70,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | [Panorama applicatif GBM](../contexte/panorama-gbm.md) | 3 346 | 16 min |
 | [Fiche produit — Socle Case Management](../architecture-cible/produits/socle-case-management.md) | 3 107 | 15 min |
 | [Panorama applicatif BRD](../contexte/panorama-brd.md) | 2 986 | 14 min |
-| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 2 549 | 12 min |
+| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 2 613 | 12 min |
 | [Glossaire FLOW](../glossaire.md) | 2 460 | 12 min |
 | [Hotspots : les décisions à instruire pour rendre FLOW réaliste](../vision/vision-detaillee/4-hotspots.md) | 2 322 | 11 min |
 | [Supprimer ERP et OMS ? Une folie !](../faq/supprimer-erp-oms-folie.md) | 2 283 | 11 min |
@@ -83,12 +92,12 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="196 occurrences">decisions</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="189 occurrences">promesse</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="169 occurrences">supply</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="166 occurrences">reference</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="167 occurrences">reference</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="165 occurrences">donnees</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="163 occurrences">source</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="163 occurrences">fulfillment</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="162 occurrences">regles</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="152 occurrences">processus</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="149 occurrences">source</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="146 occurrences">plateforme</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="146 occurrences">produit</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="145 occurrences">modele</span>
@@ -99,8 +108,8 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="118 occurrences">systemes</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="115 occurrences">cible</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="109 occurrences">architecture</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="106 occurrences">docs</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="104 occurrences">convergence</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="102 occurrences">docs</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="101 occurrences">vision</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="93 occurrences">engagement</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="91 occurrences">agreement</span>
