@@ -1,11 +1,16 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import re
+import socket
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
@@ -21,6 +26,7 @@ DOCS = ROOT / "docs"
 SITE = ROOT / "site"
 AGENTS = ROOT / "AGENTS.md"
 INSTRUCTIONS = DOCS / "administration" / "instructions-codex.md"
+IMAGE_REGISTRY = DOCS / "administration" / "referentiel-schemas.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
@@ -32,6 +38,9 @@ AUDIENCE_RE = re.compile(
     r"<span>\s*Public cible\s*</span>\s*<strong>(.*?)</strong>",
     re.IGNORECASE | re.DOTALL,
 )
+MARKDOWN_SVG_RE = re.compile(r"!\[[^\]]*]\(([^)\s]+\.svg)(?:\s+\"[^\"]*\")?\)")
+EXTERNAL_LINK_SCHEMES = {"http", "https"}
+EXTERNAL_LINK_USER_AGENT = "FLOW-Program link checker (+https://github.com/laurent-sintes/FLOW-Program)"
 
 
 @dataclass
@@ -40,6 +49,13 @@ class Finding:
     code: str
     message: str
     path: Path | None = None
+
+
+@dataclass
+class ExternalLinkResult:
+    status: int | None
+    final_url: str | None
+    error: str | None = None
 
 
 class LinkParser(HTMLParser):
@@ -102,6 +118,32 @@ def docs_markdown_pages() -> list[Path]:
     return sorted(path for path in DOCS.rglob("*.md") if path.is_file())
 
 
+def resolve_markdown_asset(markdown_path: Path, href: str) -> Path | None:
+    parsed = urllib.parse.urlsplit(href.strip())
+    if parsed.scheme or parsed.netloc:
+        return None
+
+    raw_path = urllib.parse.unquote(parsed.path)
+    if not raw_path:
+        return None
+
+    return (markdown_path.parent / raw_path).resolve()
+
+
+def collect_markdown_svg_references() -> dict[Path, set[Path]]:
+    references: dict[Path, set[Path]] = {}
+
+    for markdown_path in docs_markdown_pages():
+        text = read_text(markdown_path)
+        for match in MARKDOWN_SVG_RE.finditer(text):
+            target = resolve_markdown_asset(markdown_path, match.group(1))
+            if target is None:
+                continue
+            references.setdefault(target, set()).add(markdown_path)
+
+    return references
+
+
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", *args],
@@ -153,6 +195,81 @@ def collect_nav_pages(nav: object) -> set[str]:
         return pages
 
     return pages
+
+
+def collect_nav_entries(nav: object) -> list[tuple[str | None, str]]:
+    entries: list[tuple[str | None, str]] = []
+
+    if isinstance(nav, str):
+        if nav.endswith(".md"):
+            entries.append((None, nav.replace("\\", "/")))
+        return entries
+
+    if isinstance(nav, list):
+        for item in nav:
+            entries.extend(collect_nav_entries(item))
+        return entries
+
+    if isinstance(nav, dict):
+        for label, value in nav.items():
+            if isinstance(value, str) and value.endswith(".md"):
+                entries.append((str(label), value.replace("\\", "/")))
+            else:
+                entries.extend(collect_nav_entries(value))
+
+    return entries
+
+
+def comparable_title(value: str) -> str:
+    value = value.replace("’", "'").replace("–", "—")
+    value = re.sub(r"\s+", " ", value)
+    return value.strip().casefold()
+
+
+def extract_page_title(path: Path) -> str | None:
+    text = read_text(path)
+
+    for line in text.splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+
+    match = re.search(r"<h1[^>]*>(.*?)</h1>", text, re.IGNORECASE | re.DOTALL)
+    if match:
+        title = re.sub(r"<[^>]+>", "", match.group(1))
+        return html.unescape(re.sub(r"\s+", " ", title).strip())
+
+    return None
+
+
+def check_nav_title_alignment(checks: Checks) -> None:
+    config = load_mkdocs_config(checks)
+    entries = collect_nav_entries(config.get("nav", []))
+    mismatches = 0
+
+    for label, page in entries:
+        if label is None or page == "index.md":
+            continue
+
+        path = DOCS / page
+        if not path.exists():
+            continue
+
+        title = extract_page_title(path)
+        if title is None:
+            checks.error("NAV_TITLE_MISSING", f"Page declared in mkdocs.yml has no H1 title: {page}", path)
+            mismatches += 1
+            continue
+
+        if comparable_title(label) != comparable_title(title):
+            checks.error(
+                "NAV_TITLE_MISMATCH",
+                f"Navigation label differs from page title for {page}: '{label}' != '{title}'",
+                MKDOCS,
+            )
+            mismatches += 1
+
+    if not mismatches:
+        checks.pass_check("Explicit navigation labels match page titles.")
 
 
 def check_nav_coverage(checks: Checks) -> None:
@@ -223,6 +340,73 @@ def should_skip_href(href: str) -> bool:
 
     parsed = urllib.parse.urlsplit(href)
     return parsed.scheme in {"http", "https", "mailto", "tel", "javascript", "data"}
+
+
+def normalize_external_href(href: str) -> str | None:
+    value = href.strip()
+    if not value:
+        return None
+
+    if value.startswith("//"):
+        value = f"https:{value}"
+
+    parsed = urllib.parse.urlsplit(value)
+    if parsed.scheme not in EXTERNAL_LINK_SCHEMES or not parsed.netloc:
+        return None
+
+    path = urllib.parse.quote(parsed.path or "/", safe="/%:@")
+    query = urllib.parse.quote(parsed.query, safe="=&?/:;%+,.@")
+    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, path, query, ""))
+
+
+def request_external_url(url: str, method: str, timeout: float) -> ExternalLinkResult:
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "User-Agent": EXTERNAL_LINK_USER_AGENT,
+    }
+    if method == "GET":
+        headers["Range"] = "bytes=0-0"
+
+    request = urllib.request.Request(url, headers=headers, method=method)
+
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            if method == "GET":
+                response.read(1)
+            return ExternalLinkResult(response.getcode(), response.geturl())
+    except urllib.error.HTTPError as exc:
+        return ExternalLinkResult(exc.code, exc.geturl(), str(exc))
+    except (urllib.error.URLError, TimeoutError, socket.timeout, OSError, ValueError) as exc:
+        return ExternalLinkResult(None, None, str(exc))
+
+
+def check_external_url(url: str, timeout: float) -> ExternalLinkResult:
+    head_result = request_external_url(url, "HEAD", timeout)
+    if head_result.status is not None and head_result.status not in {403, 405, 406, 429, 501}:
+        return head_result
+
+    get_result = request_external_url(url, "GET", timeout)
+    if get_result.status is not None:
+        return get_result
+
+    if head_result.status is not None:
+        return head_result
+
+    return get_result
+
+
+def collect_external_site_links() -> dict[str, set[Path]]:
+    links: dict[str, set[Path]] = {}
+
+    for html_file in sorted(SITE.rglob("*.html")):
+        page = parse_html(html_file)
+        for href in page.links:
+            url = normalize_external_href(href)
+            if url is None:
+                continue
+            links.setdefault(url, set()).add(html_file)
+
+    return links
 
 
 def normalize_site_target(source: Path, href: str) -> tuple[Path, str]:
@@ -314,6 +498,51 @@ def check_built_site_links(checks: Checks) -> None:
         checks.pass_check(f"Built site internal links and anchors are valid ({checked_links} checked).")
 
 
+def check_external_links(checks: Checks, timeout: float, strict: bool) -> None:
+    if not SITE.exists():
+        checks.error("SITE_MISSING", "site/ does not exist. Run the MkDocs build first.", SITE)
+        return
+
+    external_links = collect_external_site_links()
+    if not external_links:
+        checks.pass_check("No external links found in built site.")
+        return
+
+    checked = 0
+    issues = 0
+
+    for url, source_pages in sorted(external_links.items()):
+        source_page = sorted(source_pages)[0]
+        result = check_external_url(url, timeout)
+        checked += 1
+
+        if result.status is not None and 200 <= result.status < 400:
+            continue
+
+        issues += 1
+        source_count = len(source_pages)
+        source_detail = f"first seen in {rel(source_page)}"
+        if source_count > 1:
+            source_detail += f", {source_count} pages total"
+
+        if result.status is None:
+            checks.warn(
+                "EXTERNAL_LINK_UNREACHABLE",
+                f"External link could not be reached: {url} ({result.error}; {source_detail})",
+                source_page,
+            )
+            continue
+
+        message = f"External link returned HTTP {result.status}: {url} ({source_detail})"
+        if strict and result.status not in {401, 403, 429}:
+            checks.error("EXTERNAL_LINK_STATUS", message, source_page)
+        else:
+            checks.warn("EXTERNAL_LINK_STATUS", message, source_page)
+
+    if not issues:
+        checks.pass_check(f"External links are reachable ({checked} checked).")
+
+
 def check_agents_publication_sync(checks: Checks) -> None:
     if not AGENTS.exists():
         checks.error("AGENTS_MISSING", "AGENTS.md is missing.", AGENTS)
@@ -337,6 +566,7 @@ def check_agents_publication_sync(checks: Checks) -> None:
         "modele-mental-connaissances.md",
         "environnement-codex-windows.md",
         "referentiel-roles.md",
+        "referentiel-schemas.md",
     ]
 
     for phrase in required_phrases:
@@ -356,6 +586,24 @@ def check_agents_publication_sync(checks: Checks) -> None:
 
 
 def check_section_indexes(checks: Checks) -> None:
+    faq_index = DOCS / "faq" / "index.md"
+    faq_dir = DOCS / "faq"
+    if not faq_index.exists():
+        checks.error("FAQ_INDEX", "FAQ index is missing.", faq_index)
+    else:
+        faq_text = read_text(faq_index)
+        faq_child_pages = sorted(
+            path for path in faq_dir.glob("*.md")
+            if path.is_file() and path.name != "index.md"
+        )
+
+        for page in faq_child_pages:
+            if page.name not in faq_text:
+                checks.error("FAQ_INDEX_LINK", f"FAQ index does not link to FAQ page: {page.name}.", faq_index)
+
+        if all(page.name in faq_text for page in faq_child_pages):
+            checks.pass_check("FAQ index links to FAQ child pages.")
+
     methode_index = DOCS / "methode" / "index.md"
     if not methode_index.exists():
         checks.error("METHODE_INDEX", "Methodology index is missing.", methode_index)
@@ -385,6 +633,7 @@ def check_section_indexes(checks: Checks) -> None:
         "guide-contribution-contenu.md",
         "modele-mental-connaissances.md",
         "referentiel-roles.md",
+        "referentiel-schemas.md",
         "environnement-codex-windows.md",
         "instructions-codex.md",
     ]
@@ -657,6 +906,56 @@ def check_glossary_core_concepts(checks: Checks) -> None:
         checks.pass_check("Glossary contains the expected core FLOW concepts.")
 
 
+def check_svg_assets(checks: Checks) -> None:
+    svg_files = sorted(DOCS.rglob("*.svg"))
+    invalid = 0
+
+    for path in svg_files:
+        try:
+            ET.parse(path)
+        except ET.ParseError as exc:
+            checks.error("SVG_XML", f"SVG is not valid XML: {exc}", path)
+            invalid += 1
+
+    if not invalid:
+        checks.pass_check(f"SVG assets are valid XML ({len(svg_files)} checked).")
+
+
+def check_image_registry(checks: Checks) -> None:
+    if not IMAGE_REGISTRY.exists():
+        checks.error("IMAGE_REGISTRY_MISSING", "Image dependency registry is missing.", IMAGE_REGISTRY)
+        return
+
+    registry_text = read_text(IMAGE_REGISTRY)
+    svg_files = sorted(DOCS.rglob("*.svg"))
+    references = collect_markdown_svg_references()
+    missing_entries = 0
+    missing_usages = 0
+
+    for svg_file in svg_files:
+        if svg_file.name not in registry_text:
+            checks.error("IMAGE_REGISTRY_ENTRY", f"SVG is missing from image registry: {svg_file.name}", IMAGE_REGISTRY)
+            missing_entries += 1
+
+    for svg_file, pages in sorted(references.items(), key=lambda item: item[0].name):
+        if svg_file.name not in registry_text:
+            checks.error("IMAGE_REGISTRY_REFERENCE", f"Referenced SVG is missing from image registry: {svg_file.name}", IMAGE_REGISTRY)
+            missing_entries += 1
+
+        for page in sorted(pages):
+            page_ref = rel(page)
+            if page_ref not in registry_text:
+                checks.error(
+                    "IMAGE_REGISTRY_USAGE",
+                    f"Image registry does not mention page using {svg_file.name}: {page_ref}",
+                    IMAGE_REGISTRY,
+                )
+                missing_usages += 1
+
+    if not missing_entries and not missing_usages:
+        checks.pass_check(f"Image dependency registry covers SVG assets and usages ({len(svg_files)} SVG files).")
+
+
 def print_report(checks: Checks) -> None:
     print("FLOW site checks")
     print("================")
@@ -672,25 +971,50 @@ def print_report(checks: Checks) -> None:
     print(f"Summary: {len(checks.errors)} error(s), {len(checks.warnings)} warning(s)")
 
 
-def run_checks() -> Checks:
+def run_checks(check_external: bool = False, external_timeout: float = 8.0, strict_external: bool = False) -> Checks:
     checks = Checks()
     check_nav_coverage(checks)
+    check_nav_title_alignment(checks)
     check_generated_content_not_tracked(checks)
     check_built_site_links(checks)
+    if check_external:
+        check_external_links(checks, external_timeout, strict_external)
     check_agents_publication_sync(checks)
     check_section_indexes(checks)
     check_reading_role_registry(checks)
     check_reading_metrics(checks)
     check_flow_guardrails(checks)
     check_glossary_core_concepts(checks)
+    check_svg_assets(checks)
+    check_image_registry(checks)
     return checks
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run FLOW documentation consistency checks.")
-    parser.parse_args()
+    parser.add_argument(
+        "--external-links",
+        action="store_true",
+        help="Also check external HTTP(S) links from the built site. This requires network access.",
+    )
+    parser.add_argument(
+        "--external-timeout",
+        type=float,
+        default=8.0,
+        help="Timeout in seconds for each external link request.",
+    )
+    parser.add_argument(
+        "--strict-external-links",
+        action="store_true",
+        help="Turn confirmed external HTTP failures into errors. Network failures remain warnings.",
+    )
+    args = parser.parse_args()
 
-    checks = run_checks()
+    checks = run_checks(
+        check_external=args.external_links or args.strict_external_links,
+        external_timeout=args.external_timeout,
+        strict_external=args.strict_external_links,
+    )
     print_report(checks)
 
     return 1 if checks.errors else 0

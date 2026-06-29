@@ -137,6 +137,20 @@ Elle lance d'abord le build local, puis exécute des contrôles Python sur le si
 - présence des concepts FLOW structurants ;
 - détection de formulations contraires au positionnement de FLOW.
 
+Le contrôle des liens externes est volontairement optionnel, car il dépend du réseau :
+
+```powershell
+.\scripts\check-site.ps1 -ExternalLinks
+```
+
+Avant une publication importante, le mode strict permet de transformer les échecs HTTP confirmés en erreurs :
+
+```powershell
+.\scripts\check-site.ps1 -StrictExternalLinks
+```
+
+Depuis Codex, ce contrôle peut être ignoré si le runtime embarqué bloque HTTPS. Dans ce cas, lancer la commande depuis un PowerShell Windows classique, où le Python du projet peut accéder au réseau.
+
 Les erreurs `ERROR` doivent être corrigées avant commit. Les alertes `WARN` signalent un point à examiner, sans bloquer automatiquement.
 
 ## Git et GitHub

@@ -42,7 +42,21 @@ Pour lancer la validation complète du référentiel, utiliser :
 .\scripts\check-site.ps1
 ```
 
-Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, liens internes, ancres, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, index FAQ, SVG, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+
+Le contrôle des liens externes est optionnel, car il dépend du réseau et peut être plus lent :
+
+```powershell
+.\scripts\check-site.ps1 -ExternalLinks
+```
+
+Utiliser ce contrôle quand une page ajoute ou modifie des références Internet. Le mode strict existe pour transformer les échecs HTTP confirmés en erreurs avant une publication importante :
+
+```powershell
+.\scripts\check-site.ps1 -StrictExternalLinks
+```
+
+Depuis Codex, ce contrôle peut être ignoré si le runtime embarqué bloque HTTPS. Dans ce cas, lancer la commande depuis un PowerShell Windows classique.
 
 Pour ajouter du contenu documentaire, en particulier à partir d'une réunion ou d'un atelier, se référer à :
 
@@ -101,6 +115,7 @@ La navigation principale est portée par `mkdocs.yml`. Quand une page est ajout�
 
 - l'entrée correspondante dans `mkdocs.yml` ;
 - la page d'index de la section ;
+- le libellé explicite du menu, qui doit correspondre au titre H1 de la page ;
 - les liens depuis le glossaire ;
 - les liens depuis les pages de vision, principes, architecture ou insights ;
 - les ancres Markdown si un titre a changé.
@@ -126,18 +141,22 @@ Impact à vérifier :
 Fichiers clés :
 
 - `docs/faq/index.md`
+- `docs/faq/questions-pour-les-nouveaux.md`
 - `docs/faq/`
 
 Rôle :
 
+- donner une entrée FAQ autonome ;
 - répondre aux questions des nouveaux sans les noyer dans l'architecture ;
 - séparer les questions pour les nouveaux des questions pour les experts ;
-- orienter vers les analyses expertes sans alourdir la page principale.
+- orienter vers les analyses expertes sans alourdir la page des nouveaux.
 
 Impact à vérifier :
 
-- une question pour les nouveaux doit rester courte dans `docs/faq/index.md` ;
+- `docs/faq/index.md` est la page d'accueil de la FAQ, pas la page des questions pour les nouveaux ;
+- une question pour les nouveaux doit rester courte dans `docs/faq/questions-pour-les-nouveaux.md` ;
 - une question pour les experts doit avoir une page dédiée dans `docs/faq/`, avec un résumé et un lien depuis `docs/faq/index.md` ;
+- toute page autonome dans `docs/faq/` doit rester liée depuis l'index FAQ ;
 - toute réponse experte doit être rapprochée des pages internes concernées : vision, principes, hotspots, insights, architecture cible ou glossaire.
 
 ### Vision
@@ -204,6 +223,7 @@ Fichiers clés :
 - `docs/architecture-cible/flow-dans-ecosysteme-gbm.md`
 - `docs/architecture-cible/flow-dans-ecosysteme-brd.md`
 - `docs/assets/images/`
+- `docs/administration/referentiel-schemas.md`
 
 Rôle :
 
@@ -215,7 +235,8 @@ Rôle :
 Impact à vérifier :
 
 - toute évolution d'un produit FLOW peut impacter l'overview, les schémas, les concepts clés, les hotspots et le glossaire ;
-- toute évolution d'un schéma doit rester cohérente avec la page qui l'explique ;
+- toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
+- tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
 - ne pas introduire un composant technique sans clarifier sa responsabilité métier ou de plateforme.
 
 ### Hotspots

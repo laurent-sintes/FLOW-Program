@@ -1,3 +1,10 @@
+param(
+    [switch]$ExternalLinks,
+    [switch]$StrictExternalLinks,
+    [ValidateRange(1, 60)]
+    [int]$ExternalTimeoutSeconds = 8
+)
+
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
@@ -5,8 +12,25 @@ $venvPython = Join-Path $repoRoot ".venv\Scripts\python.exe"
 $venvPackages = Join-Path $repoRoot ".venv\Lib\site-packages"
 $codexPython = Join-Path $env:USERPROFILE ".cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe"
 $checkScript = Join-Path $repoRoot "scripts\check_site.py"
-$isCodexRuntime = ($env:Path -split ";") -match "codex-runtimes|OpenAI\\Codex|\\.codex"
+$isCodexRuntime = @($env:Path -split ";" | Where-Object { $_ -match "codex-runtimes|OpenAI\\Codex|\\.codex" }).Count -gt 0
 $previousPythonPath = $env:PYTHONPATH
+$checkArgs = @()
+$externalChecksRequested = $ExternalLinks -or $StrictExternalLinks
+$canRunExternalChecks = $externalChecksRequested -and -not $isCodexRuntime
+
+if ($externalChecksRequested -and $isCodexRuntime) {
+    Write-Warning "Controle des liens externes ignore depuis Codex : le runtime embarque peut bloquer HTTPS. Lancez cette option depuis un PowerShell Windows classique."
+}
+
+if ($canRunExternalChecks) {
+    $checkArgs += "--external-links"
+    $checkArgs += "--external-timeout"
+    $checkArgs += $ExternalTimeoutSeconds.ToString([System.Globalization.CultureInfo]::InvariantCulture)
+}
+
+if ($StrictExternalLinks -and $canRunExternalChecks) {
+    $checkArgs += "--strict-external-links"
+}
 
 if (-not (Test-Path $checkScript)) {
     throw "Script de controle introuvable : $checkScript"
@@ -30,10 +54,10 @@ try {
 
     if ($isCodexRuntime -and (Test-Path $codexPython)) {
         $env:PYTHONPATH = $venvPackages
-        & $codexPython $checkScript
+        & $codexPython $checkScript @checkArgs
     }
     else {
-        & $venvPython $checkScript
+        & $venvPython $checkScript @checkArgs
     }
 
     if ($LASTEXITCODE -ne 0) {

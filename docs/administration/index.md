@@ -29,5 +29,6 @@ Elle ne porte pas la méthodologie projet elle-même. Elle rassemble les éléme
 - [Guide de contribution éditoriale](guide-contribution-contenu.md) — transformer réunions, notes et analyses en contenu maintenable
 - [Modèle mental des connaissances](modele-mental-connaissances.md) — graphe logique pour ranger les informations et mesurer les impacts
 - [Référentiel des rôles](referentiel-roles.md) — rôles autorisés dans les cartouches de lecture
+- [Référentiel des schémas](referentiel-schemas.md) — dictionnaire des SVG, de leurs pages d'affichage et de leurs dépendances à surveiller
 - [Environnement Codex sous Windows](environnement-codex-windows.md) — poste local, build MkDocs, Git et GitHub CLI
 - [AGENTS.md - Instructions Codex](instructions-codex.md) — mémoire de contribution pour maintenir le référentiel FLOW

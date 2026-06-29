@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>6 min</strong>
+      <strong>7 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -173,6 +173,7 @@ Après intégration :
 
 - relancer `.\scripts\update-reading-metrics.ps1` ;
 - relancer `.\scripts\check-site.ps1` ;
+- lancer `.\scripts\check-site.ps1 -ExternalLinks` si des références Internet ont été ajoutées ou modifiées ;
 - vérifier le diff ;
 - vérifier que les cartouches utilisent les rôles du référentiel ;
 - vérifier que les liens, concepts, hotspots et pages d'impact sont cohérents.
@@ -252,4 +253,9 @@ Avant de considérer une contribution comme intégrée :
 - les impacts sur les pages existantes ont été vérifiés ;
 - le vocabulaire est cohérent avec le glossaire ;
 - les cartouches et statistiques ont été régénérés ;
+- les libellés explicites du menu correspondent aux titres H1 des pages ;
+- les pages autonomes FAQ sont reliées depuis l'index FAQ ;
+- les références Internet nouvelles ou modifiées ont été contrôlées avec `.\scripts\check-site.ps1 -ExternalLinks` quand le réseau est disponible ;
+- les schémas SVG ajoutés ou modifiés sont valides ;
+- les schémas impactés par un concept ajouté, renommé ou supprimé ont été vérifiés dans le [Référentiel des schémas](referentiel-schemas.md) ;
 - `.\scripts\check-site.ps1` passe sans erreur.

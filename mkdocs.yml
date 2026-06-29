@@ -26,6 +26,7 @@ nav:
   - Accueil: index.md
   - FAQ:
       - faq/index.md
+      - Questions pour les nouveaux: faq/questions-pour-les-nouveaux.md
       - Questions pour les experts:
           - À quoi ça sert un stock temps réel ?: faq/stock-temps-reel.md
   - Vision:
@@ -33,111 +34,112 @@ nav:
       - Abstract: vision/abstract.md
       - Vision: vision/vision.md
       - Positionnement de FLOW: vision/positionnement-flow.md
-      - Modèle de fonctionnement: vision/modele-fonctionnement-flow.md
+      - Modèle de fonctionnement de FLOW: vision/modele-fonctionnement-flow.md
       - Vision détaillée:
-          - Sommaire: vision/vision-detaillee/index.md
-          - Ambition: vision/vision-detaillee/1-ambition.md
-          - Ruptures: vision/vision-detaillee/2-ruptures-structurantes.md
-          - Solution: vision/vision-detaillee/3-plateforme-flow.md
-          - Hotspots: vision/vision-detaillee/4-hotspots.md
-          - Valeur attendue: vision/vision-detaillee/5-valeur-attendue.md
-      - Concepts clés: vision/concepts-cles.md
-      - Note de choix stratégique: vision/note-choix-strategique.md
+          - vision/vision-detaillee/index.md
+          - "Ambition : converger": vision/vision-detaillee/1-ambition.md
+          - "Ruptures : déplacer le centre de gravité du SI": vision/vision-detaillee/2-ruptures-structurantes.md
+          - "Solution : une plateforme pour fédérer les demandes, opérations et décisions métier": vision/vision-detaillee/3-plateforme-flow.md
+          - "Hotspots : les décisions à instruire pour rendre FLOW réaliste": vision/vision-detaillee/4-hotspots.md
+          - "Valeur attendue : rendre la convergence opérable, gouvernable et mesurable": vision/vision-detaillee/5-valeur-attendue.md
+      - Concepts clés du programme FLOW: vision/concepts-cles.md
+      - "Note de choix stratégique : FLOW": vision/note-choix-strategique.md
   - Architecture cible:
-      - Repères: architecture-cible/index.md
+      - architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
       - Flux fonctionnels FLOW: architecture-cible/flux-fonctionnels-flow.md
       - Patterns d'architecture:
-          - Repères: architecture-cible/patterns/index.md
-          - Case-centric orchestration: architecture-cible/patterns/case-centric-orchestration.md
-          - Event-Driven Architecture: architecture-cible/patterns/event-driven-architecture.md
-          - API conversationnelle: architecture-cible/patterns/api-conversationnelle.md
-          - CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
-          - Sources de référence, projections et vues: architecture-cible/patterns/sources-reference-projections-vues.md
-          - Operational DataHub: architecture-cible/patterns/operational-datahub.md
-          - Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
-          - Externalisation des décisions métier: architecture-cible/patterns/externalisation-des-decisions.md
-          - Rôles, relations et policies: architecture-cible/patterns/roles-relations-policies.md
-          - Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
+          - architecture-cible/patterns/index.md
+          - Pattern — Case-centric orchestration: architecture-cible/patterns/case-centric-orchestration.md
+          - Pattern — Event-Driven Architecture: architecture-cible/patterns/event-driven-architecture.md
+          - Pattern — API conversationnelle: architecture-cible/patterns/api-conversationnelle.md
+          - Pattern — CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
+          - Pattern — Sources de référence, projections et vues: architecture-cible/patterns/sources-reference-projections-vues.md
+          - Pattern — Operational DataHub: architecture-cible/patterns/operational-datahub.md
+          - Pattern — Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
+          - Pattern — Externalisation des décisions métier: architecture-cible/patterns/externalisation-des-decisions.md
+          - Rôles, relations et policies plutôt que cardinalités figées: architecture-cible/patterns/roles-relations-policies.md
+          - Pattern — Plateforme ouverte et gouvernée: architecture-cible/patterns/plateforme-ouverte-gouvernee.md
       - Fiches produits FLOW:
-          - Repères: architecture-cible/produits/index.md
-          - Socle Case Management: architecture-cible/produits/socle-case-management.md
-          - Stock Unifié: architecture-cible/produits/stock-unifie.md
-          - Fulfillment Network Configuration: architecture-cible/produits/fulfillment-network-configuration.md
-          - Product Agreement Catalog: architecture-cible/produits/product-agreement-catalog.md
-          - Supply Service Registry: architecture-cible/produits/supply-service-registry.md
-          - Vues 360: architecture-cible/produits/vues-360.md
-          - Gouvernance des données en transit: architecture-cible/produits/gouvernance-donnees-transit.md
+          - architecture-cible/produits/index.md
+          - Fiche produit — Socle Case Management: architecture-cible/produits/socle-case-management.md
+          - Fiche produit — Stock Unifié: architecture-cible/produits/stock-unifie.md
+          - Fiche produit — Fulfillment Network Configuration: architecture-cible/produits/fulfillment-network-configuration.md
+          - Fiche produit — Product Agreement Catalog: architecture-cible/produits/product-agreement-catalog.md
+          - Fiche produit — Supply Service Registry: architecture-cible/produits/supply-service-registry.md
+          - Fiche produit — Vues 360: architecture-cible/produits/vues-360.md
+          - Fiche produit — Gouvernance des données en transit: architecture-cible/produits/gouvernance-donnees-transit.md
       - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
       - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:
-      - Les principes: principes-directeurs/index.md
-      - Abstract: principes-directeurs/abstract.md
-      - "01 — Construire le bon niveau de commun": principes-directeurs/1-converger-c-est-federer.md
-      - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
-      - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
-      - "04 — Articuler Demand, Fulfillment et Supply": principes-directeurs/4-separer-demand-et-supply.md
-      - "05 — Le processus émerge des décisions métier": principes-directeurs/5-le-processus-emerge-des-decisions.md
-      - "06 — La demande comme objet métier central d’orchestration": principes-directeurs/6-demande-objet-metier-central-orchestration.md
-      - "07 — Qualifier les informations plutôt que parler de Master Data": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
-      - "08 — Gouverner la donnée en transit": principes-directeurs/8-gouverner-la-donnee-en-transit.md
+      - principes-directeurs/index.md
+      - Abstract des principes directeurs: principes-directeurs/abstract.md
+      - Principe 1 — Construire le bon niveau de commun: principes-directeurs/1-converger-c-est-federer.md
+      - Principe 2 — FLOW comme plateforme d'entreprise: principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
+      - Principe 3 — Les domaines avant les structures: principes-directeurs/3-domaines-avant-les-structures.md
+      - Principe 4 — Articuler Demand, Fulfillment et Supply: principes-directeurs/4-separer-demand-et-supply.md
+      - Principe 5 — Le processus émerge des décisions métier: principes-directeurs/5-le-processus-emerge-des-decisions.md
+      - Principe 6 — La demande comme objet métier central d’orchestration: principes-directeurs/6-demande-objet-metier-central-orchestration.md
+      - Principe 7 — Qualifier les informations plutôt que parler de Master Data: principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
+      - Principe 8 — Gouverner la donnée en transit: principes-directeurs/8-gouverner-la-donnee-en-transit.md
   - Hotspots:
-      - Repères: hotspots/index.md
-      - Sortie progressive de SAP ECC: hotspots/sap-ecc-boardriders.md
-      - C-LOG et décision de fulfillment: hotspots/c-log-decision-fulfillment.md
-      - Stock temps réel: hotspots/stock-temps-reel.md
+      - hotspots/index.md
+      - "Sortie progressive de SAP ECC : découper les responsabilités": hotspots/sap-ecc-boardriders.md
+      - "C-LOG : une décision de fulfillment déjà distribuée": hotspots/c-log-decision-fulfillment.md
+      - "Stock temps réel : obtenir les mouvements à la source": hotspots/stock-temps-reel.md
       - Capacités d'intégration des systèmes réintégrés: hotspots/capacites-integration-systemes-reintegres.md
       - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
-      - Fournisseur, usine et Agreement: hotspots/fournisseur-usine-agreement-brd.md
-      - Promesse commerciale Wholesale: hotspots/promesse-commerciale-wholesale.md
+      - "Fournisseur, usine et Agreement : séparer les rôles": hotspots/fournisseur-usine-agreement-brd.md
+      - Promesse commerciale et priorisation Wholesale: hotspots/promesse-commerciale-wholesale.md
       - Module Négoce StoreLand: hotspots/module-negoce-storeland.md
   - Contexte:
-      - Repères: contexte/index.md
-      - Trajectoires SI et convergence: contexte/trajectoires-si-convergence.md
+      - contexte/index.md
+      - Trajectoires SI et contexte de convergence: contexte/trajectoires-si-convergence.md
       - Panorama applicatif BRD: contexte/panorama-brd.md
       - Panorama applicatif GBM: contexte/panorama-gbm.md
   - Insights:
-      - Repères: insights/index.md
+      - insights/index.md
       - Histoire de FLOW: insights/histoire-de-flow.md
       - Journal des insights: insights/journal-des-insights.md
       - Positionnement de FLOW:
-          - De l’OMS au Demand Management: insights/oms-vers-demand-management.md
-          - FLOW n’est pas une plateforme d’engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
+          - OMS vers Demand Management: insights/oms-vers-demand-management.md
+          - FLOW n'est pas une plateforme d'engagement: insights/flow-n-est-pas-une-plateforme-d-engagement.md
           - Autonomie des consommateurs de FLOW: insights/autonomie-des-consommateurs-de-flow.md
           - "ERP + OMS : séparation utile ou dette architecturale ?": insights/erp-oms-separation-ou-plateforme-integree.md
           - Convergence et bon niveau de commun: insights/convergence-federation-uniformisation.md
       - Modèle conceptuel:
           - Agreement comme pivot: insights/agreement-comme-pivot.md
-          - La demande comme point d’entrée de la modélisation: insights/demande-point-entree-modelisation.md
+          - La demande comme point d’entrée de la modélisation FLOW: insights/demande-point-entree-modelisation.md
           - Modèle conceptuel FLOW: insights/modele-conceptuel-flow.md
       - Gouvernance et fédération:
           - Plateforme fédérale et multi-tenant: insights/plateforme-federale-multitenant.md
-          - GBM, StoreLand, UR et fédération: insights/gbm-storeland-ur-federation.md
-          - L’organisation masque parfois les domaines: insights/organisation-masque-domaines.md
+          - "GBM : StoreLand par marque, UR et besoin de fédération": insights/gbm-storeland-ur-federation.md
+          - L'organisation masque parfois les domaines: insights/organisation-masque-domaines.md
       - Opérations, décision métier et données:
           - "Gouvernance logistique : BRD vs GBM": insights/gouvernance-logistique-brd-vs-gbm.md
-          - Allocation et convergence: insights/allocation-point-saillant-de-la-convergence.md
-          - Engagements, soft allocation et priorisation: insights/engagements-soft-allocation-et-priorisation-commerciale.md
-          - Cohérence des données, DataHub et CEP: insights/coherence-donnees-fraicheur-datahub-cep.md
+          - L'allocation révèle la vraie nature de la convergence: insights/allocation-point-saillant-de-la-convergence.md
+          - Engagements, Soft Allocation et Priorisation Commerciale: insights/engagements-soft-allocation-et-priorisation-commerciale.md
+          - "Cohérence des données : fraîcheur, DataHub et CEP": insights/coherence-donnees-fraicheur-datahub-cep.md
           - Gouverner les données en transit: insights/gouverner-donnees-en-transit.md
-          - Inventory Visibility: insights/inventory-visibility-capacite-d-entreprise.md
+          - Inventory Visibility est une capacité d'entreprise: insights/inventory-visibility-capacite-d-entreprise.md
       - Finance:
-          - Convergence Finance et adhérence FLOW: insights/convergence-finance-adherence-flow.md
-          - "Facturation : un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
+          - La convergence Finance constitue une adhérence forte pour FLOW: insights/convergence-finance-adherence-flow.md
+          - "La facturation n'est pas un domaine, c'est un assemblage de responsabilités": insights/facturation-capacite-documentaire-transverse.md
   - Méthodologie Projet:
-      - La méthodologie: methode/index.md
+      - methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
   - Administration du référentiel:
-      - Repères: administration/index.md
+      - administration/index.md
       - Guide de contribution éditoriale: administration/guide-contribution-contenu.md
       - Modèle mental des connaissances: administration/modele-mental-connaissances.md
       - Référentiel des rôles: administration/referentiel-roles.md
-      - Environnement Codex Windows: administration/environnement-codex-windows.md
-      - AGENTS.md - Instructions Codex: administration/instructions-codex.md
+      - Référentiel des schémas: administration/referentiel-schemas.md
+      - Environnement Codex sous Windows: administration/environnement-codex-windows.md
+      - AGENTS.md - Instructions Codex pour FLOW: administration/instructions-codex.md
   - Transformation:
-      - Repères: transformation/index.md
-      - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md
-      - Les changements à conduire: transformation/changements-a-conduire.md
+      - transformation/index.md
+      - Pourquoi deux Change Managers dans la Core Team FLOW ?: transformation/pourquoi-deux-change-managers.md
+      - Les changements à conduire avec FLOW: transformation/changements-a-conduire.md
   - Référentiel:
-      - Glossaire: glossaire.md
+      - Glossaire FLOW: glossaire.md
       - Statistiques du référentiel: referentiel/statistiques.md
