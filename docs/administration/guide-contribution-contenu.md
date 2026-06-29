@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>4 min</strong>
+      <strong>6 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -51,6 +51,133 @@ Quand le contenu provient d'une réunion, commencer par qualifier la source :
 Exemple de source attendue : `Atelier BoardRiders du 29/06/2026`.
 
 Ensuite, séparer la matière en plusieurs blocs.
+
+## Procédure réunion et transcript
+
+Cette procédure s'applique lorsqu'un contributeur assiste à une réunion, récupère ensuite un transcript, puis veut intégrer les informations utiles dans le référentiel.
+
+### 1. Préparer la réunion
+
+Avant ou pendant la réunion, noter les informations de contexte qui permettront de comprendre le transcript plus tard :
+
+- date complète ;
+- nom de la réunion ou de l'atelier ;
+- sujet traité ;
+- périmètre métier ou applicatif ;
+- systèmes cités ;
+- décisions attendues ou questions à instruire ;
+- niveau de sensibilité politique ou organisationnelle.
+
+Le but n'est pas de tout prendre en note. Le but est de garder les repères que le transcript ne donnera pas toujours clairement.
+
+### 2. Récupérer le transcript
+
+Après la réunion, récupérer le transcript si les droits le permettent.
+
+Si le transcript n'est pas accessible directement, demander son extraction à l'organisateur ou au propriétaire de la réunion.
+
+Avant de l'utiliser, vérifier :
+
+- si le transcript est complet ou coupé ;
+- si les intervenants sont correctement identifiés ;
+- si certaines formulations sont ambiguës à cause de la transcription automatique ;
+- si le contenu peut être utilisé dans le référentiel ou doit rester comme matière de travail locale ;
+- si des passages sensibles doivent être reformulés avant publication.
+
+Le transcript brut n'est pas le livrable documentaire. Il ne doit pas être committé tel quel sauf décision explicite. Il sert de matière d'analyse.
+
+### 3. Demander une première analyse sans mise à jour
+
+La première interaction avec Codex doit viser la compréhension, pas l'écriture immédiate.
+
+Demande recommandée :
+
+```text
+Voici le transcript de la réunion du [date / sujet].
+Analyse sans mettre à jour les fichiers.
+Dis-moi :
+- les faits nouveaux ;
+- les points déjà connus ;
+- les contradictions ou tensions ;
+- les insights potentiels ;
+- les concepts FLOW concernés ;
+- les pages probablement impactées ;
+- les questions à clarifier avant intégration.
+```
+
+À ce stade, Codex doit distinguer explicitement :
+
+- ce qui vient du transcript ;
+- ce qui est une inférence ;
+- ce qui semble important mais reste à confirmer ;
+- ce qui relève d'une reformulation politique ou pédagogique.
+
+### 4. Arbitrer humainement ce qui entre dans le référentiel
+
+Le contributeur décide ensuite ce qui mérite d'être intégré.
+
+Toutes les informations d'une réunion ne doivent pas devenir du contenu publié.
+
+À conserver en priorité :
+
+- les faits structurants ;
+- les décisions ou arbitrages confirmés ;
+- les tensions qui deviennent des hotspots ;
+- les insights qui changent la compréhension de FLOW ;
+- les questions ouvertes qui conditionnent une décision future ;
+- les exemples qui éclairent un concept déjà présent.
+
+À éviter :
+
+- les détails anecdotiques ;
+- les formulations trop personnelles ;
+- les citations sensibles ;
+- les hypothèses non signalées ;
+- les débats qui ne changent pas le modèle de connaissance.
+
+### 5. Mapper les informations sur le modèle mental
+
+Avant d'écrire, rattacher chaque information à une catégorie du [modèle mental des connaissances](modele-mental-connaissances.md).
+
+Questions utiles :
+
+- Est-ce un fait observé, un insight, une question ouverte ou une décision ?
+- Est-ce que cela modifie la vision ou seulement un exemple ?
+- Est-ce un principe durable ou un cas particulier ?
+- Est-ce un hotspot à instruire ?
+- Est-ce un concept de glossaire ?
+- Est-ce une responsabilité de domaine, une capacité, un produit FLOW ou un pattern ?
+- Est-ce que cela impacte la transformation ou l'adoption ?
+
+Cette étape évite de ranger directement une observation brute comme une solution cible.
+
+### 6. Intégrer dans les pages concernées
+
+L'intégration doit être faite dans les pages existantes lorsque c'est possible.
+
+Créer une nouvelle page seulement si le sujet devient autonome : nouveau hotspot, nouveau pattern, nouvelle fiche produit, nouveau principe ou nouveau guide d'administration.
+
+Lors de l'écriture :
+
+- citer la réunion comme source datée quand c'est utile ;
+- reformuler les faits dans le vocabulaire ubiquitaire FLOW ;
+- distinguer les faits des analyses ;
+- signaler les hypothèses ;
+- conserver les questions ouvertes ;
+- relier les pages concernées par des liens internes ;
+- relire les formulations sensibles avant commit.
+
+### 7. Contrôler la cohérence
+
+Après intégration :
+
+- relancer `.\scripts\update-reading-metrics.ps1` ;
+- relancer `.\scripts\check-site.ps1` ;
+- vérifier le diff ;
+- vérifier que les cartouches utilisent les rôles du référentiel ;
+- vérifier que les liens, concepts, hotspots et pages d'impact sont cohérents.
+
+Si le transcript a révélé une règle de contribution nouvelle, mettre à jour cette page et, si nécessaire, `AGENTS.md`.
 
 ## Structure recommandée
 
