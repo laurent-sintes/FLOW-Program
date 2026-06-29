@@ -1,5 +1,25 @@
 # Valeur attendue : rendre la convergence opérable, gouvernable et mesurable
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, direction, architecture</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>8 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Comprendre la vision, les arbitrages et le vocabulaire cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Ancrage fondateur
 
 <div class="flow-conviction">

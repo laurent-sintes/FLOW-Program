@@ -1,5 +1,25 @@
 # Fiche produit — Socle Case Management
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, delivery</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>15 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Relier les concepts FLOW aux produits, patterns et responsabilités cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Le Socle Case Management fournit le cœur applicatif permettant de modéliser, piloter et faire évoluer les demandes dans la durée.
@@ -56,6 +76,26 @@ Cette comparaison est structurante pour FLOW.
 
 FLOW ne cherche pas seulement à remplacer un OMS ou un ERP par un autre outil. Il déplace le centre de gravité de l'orchestration vers la <span class="flow-keyword">Demande</span>.
 
+## Lien avec Demand, Fulfillment et Supply
+
+Le Socle Case Management est le point où les concepts de domaine deviennent opérables dans une solution.
+
+Il ne remplace pas à lui seul Demand, Fulfillment et Supply.
+
+Il fournit le runtime qui permet à une demande de porter son contexte, d'appeler les décisions de Fulfillment et de dialoguer avec les capacités Supply.
+
+| Notion de domaine | Traduction dans le Socle Case Management | Produits ou capacités associés |
+| --- | --- | --- |
+| Demand | Le Case porte l'intention, l'engagement, le contexte, la priorité, l'état courant et l'historique de la demande. | Socle Case Management, APIs de création et d'action, cycle de vie du Case |
+| Fulfillment | Les décisions métier déterminent comment servir la demande : promettre, réserver, allouer, splitter, reporter, substituer ou ouvrir une exception. | Moteur de règles, Decision Services, Situation Engine, plan d'exécution |
+| Supply | Les ressources et contraintes sont consommées comme faits, projections, services ou événements d'exécution. | Stock Unifié, Fulfillment Network, Supply Service Registry, systèmes d'exécution |
+
+Cette lecture évite deux confusions.
+
+Le Case n'est pas seulement une commande enrichie : il porte la demande et son histoire.
+
+Le Fulfillment n'est pas seulement la logistique : il est la décision qui relie la demande aux ressources mobilisables.
+
 ## Boucle opérationnelle du Case
 
 Un Case doit pouvoir apprendre de ce qui se passe pendant son exécution.
@@ -98,6 +138,8 @@ Il doit porter au minimum :
 | Goal | Résultat attendu. |
 | Intent | Intention ou raison métier de la demande. |
 | Policy model | Ensemble des règles, contraintes et politiques applicables. |
+| Fulfillment decision | Décision qui détermine comment servir la demande dans un contexte donné. |
+| Execution plan | Trajectoire d'exécution retenue, éventuellement adaptée au fil des événements. |
 | State | État courant de la demande. |
 | Event log | Historique immuable de ce qui s'est passé. |
 | Attachments | Documents attachés : facture, bon de livraison, preuve, justificatif, échange client. |
@@ -152,6 +194,8 @@ Ce modèle doit rester générique : le Case peut représenter une commande clie
 | Event log | Event | Source de référence FLOW |
 | Fact de situation | Fact | Dérivé FLOW ou projection consommée |
 | Décision métier de Case | Decision / Fact | Source de référence FLOW ou projection |
+| Décision de Fulfillment | Decision | Source de référence FLOW |
+| Plan d'exécution | Fact / Projection | Dérivé FLOW, adapté selon événements |
 | Policy model | Policy | Source de référence FLOW ou projection selon gouvernance |
 | Document attaché | Document | Source de référence ou projection selon origine |
 | Statut de Case | Fact / Nomenclature | Source de référence FLOW |

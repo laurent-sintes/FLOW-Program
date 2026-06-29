@@ -1,4 +1,24 @@
-# Principe 4 — Séparer Demand et Supply
+# Principe 4 — Articuler Demand, Fulfillment et Supply
+
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>7 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Guider les décisions de conception et vérifier la cohérence des arbitrages</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
 
 ## Introduction
 
@@ -29,13 +49,25 @@ Elles ne sont pourtant pas de même nature.
 
 FLOW considère que les demandes et les ressources doivent être pensées séparément.
 
+Mais cette séparation ne suffit pas.
+
+Entre ce qui est demandé et ce qui est disponible, il faut une capacité d'arbitrage : le <span class="flow-keyword">Fulfillment</span>.
+
+Le Fulfillment transforme une demande qualifiée en trajectoire d'exécution, en arbitrant entre promesse, stock, priorités, contraintes Supply et règles métier.
+
 ---
 
 ## Principe
 
 > Les demandes et les ressources évoluent indépendamment.
 >
-> FLOW distingue le domaine des engagements du domaine des ressources.
+> FLOW distingue Demand, Fulfillment et Supply.
+>
+> Demand porte l'intention et les engagements.
+>
+> Fulfillment porte la décision opérationnelle.
+>
+> Supply porte les ressources, contraintes et capacités d'exécution.
 
 ---
 
@@ -45,10 +77,11 @@ FLOW ne cherche pas à opposer les métiers commerciaux aux métiers logistiques
 
 FLOW ne cherche pas à créer de nouveaux silos.
 
-FLOW cherche à distinguer deux responsabilités fondamentalement différentes :
+FLOW cherche à distinguer trois responsabilités fondamentalement différentes :
 
-* décider ce qui doit être réalisé ;
-* déterminer ce qui peut être réalisé.
+* qualifier ce qui est demandé ou engagé ;
+* arbitrer comment cette demande peut être servie ;
+* exposer ce qui peut réellement être mobilisé.
 
 ---
 
@@ -119,6 +152,59 @@ Les demandes sont concurrentes.
 Les arbitrages deviennent nécessaires.
 
 C'est précisément cette rareté qui justifie l'existence d'une couche de décision.
+
+---
+
+## Vue d'ensemble : Demand, Fulfillment, Supply
+
+Les trois notions ne décrivent pas trois silos.
+
+Elles décrivent trois responsabilités complémentaires.
+
+```text
+Demand
+    intention, engagement, priorité, promesse attendue
+        ↓
+Fulfillment
+    arbitrage, promesse, allocation, plan d'exécution
+        ↓
+Supply
+    stock, sites, usines, fournisseurs, transport, capacités
+```
+
+Le point clé est le suivant : le Fulfillment n'est pas seulement l'exécution logistique.
+
+Dans FLOW, il représente la capacité de décision qui fait le lien entre une demande à servir et des ressources limitées, distribuées ou contraintes.
+
+---
+
+## Alignement avec les pratiques standard
+
+Le triptyque <span class="flow-keyword">Demand / Fulfillment / Supply</span> est une formulation FLOW.
+
+Ce n'est pas un standard académique cité tel quel dans toutes les écoles de commerce.
+
+En revanche, il est aligné avec une évolution largement reconnue des pratiques Supply Chain, Operations et Case Management : sortir d'une lecture linéaire achat / vente / logistique pour distinguer la demande, les ressources, la planification intégrée, la décision et l'exécution des commandes ou services.
+
+La solidité de la proposition vient précisément du croisement entre deux familles de connaissances :
+
+- le <span class="flow-keyword">Case Management</span>, qui permet de traiter une demande comme un objet durable, contextualisé, évolutif et explicable ;
+- les modèles Supply Chain, qui distinguent les processus de commande, planification, orchestration, fulfillment et mobilisation des ressources.
+
+Trois références permettent d'appuyer cette lecture :
+
+- [OMG — Case Management Model and Notation](https://www.omg.org/spec/CMMN/) : CMMN définit un méta-modèle et une notation pour modéliser et exprimer graphiquement des Cases. Cette référence soutient l'idée qu'une demande complexe ne doit pas être réduite à un workflow figé.
+- [ASCM — SCOR Digital Standard](https://www.ascm.org/corporate-solutions/standards-tools/scor-ds/) : SCOR DS distingue notamment les processus `Order`, `Plan`, `Source`, `Transform`, `Fulfill`, `Return` et `Orchestrate`. La séparation entre `Order`, `Plan` et `Fulfill` soutient l'idée qu'une demande, une capacité de planification / arbitrage et l'exécution ne doivent pas être confondues.
+- [IBM — Integrated Business Planning](https://www.ibm.com/think/topics/integrated-business-planning) : l'IBP est présenté comme un cadre réunissant planification stratégique, opérationnelle et financière, avec collaboration entre sales, marketing, finance, supply chain, procurement et IT. Il confirme que la bonne maille n'est plus le silo applicatif, mais la décision transverse entre demande, ressources et contraintes.
+
+La position FLOW est donc la suivante :
+
+```text
+Le vocabulaire exact est propre à FLOW.
+L'évolution de fond est standard.
+```
+
+FLOW traduit cette évolution en un principe d'architecture : Demand porte l'intention, Fulfillment porte l'arbitrage opérationnel, Supply porte les ressources mobilisables.
 
 ---
 
@@ -199,29 +285,52 @@ Le domaine Supply nécessite généralement :
 
 Supply produit des informations.
 
-Demand les utilise pour prendre des décisions.
+Fulfillment les utilise pour prendre des décisions au service de Demand.
 
 ---
 
-## La décision relie Demand et Supply
+## Fulfillment : la décision opérationnelle
 
-Demand et Supply ne sont pas indépendants.
+Fulfillment représente la capacité qui transforme une demande qualifiée en trajectoire d'exécution.
+
+Il s'intéresse à des questions comme :
+
+* D'où servir cette demande ?
+* Quel stock réserver ou allouer ?
+* Quelle date peut être promise ?
+* Faut-il splitter, substituer, reporter ou prioriser ?
+* Quelle exception ouvrir si la promesse ne tient plus ?
+* Quel plan d'exécution envoyer aux systèmes Supply ?
+
+Fulfillment ne possède pas toute la Demand.
+
+Il ne possède pas non plus toute la Supply.
+
+Il arbitre entre les deux, à partir des règles métier, des priorités, des faits observés et des contraintes disponibles.
+
+Il ne doit pas être confondu avec le <span class="flow-keyword">Fulfillment Network</span> : le réseau d'exécution décrit les lieux, partenaires, services et capacités mobilisables ; le Fulfillment décide comment les mobiliser pour satisfaire une demande.
+
+---
+
+## Fulfillment relie Demand et Supply
+
+Demand, Fulfillment et Supply ne sont pas indépendants.
 
 Ils collaborent en permanence.
 
 Une demande interroge les ressources disponibles.
 
-Les ressources influencent les décisions.
+Les ressources influencent les décisions de Fulfillment.
 
 ```text
 Demande
         ↓
-Décision
+Décision de Fulfillment
         ↓
 Ressource affectée
 ```
 
-La décision constitue le point de rencontre entre les deux domaines.
+La décision de Fulfillment constitue le point de rencontre entre Demand et Supply.
 
 ---
 
@@ -255,7 +364,7 @@ Supply répond :
 Oui.
 ```
 
-La décision émerge progressivement de cette interaction.
+La décision de Fulfillment émerge progressivement de cette interaction.
 
 Cette logique est particulièrement visible dans :
 
@@ -291,19 +400,23 @@ Elle constitue une capacité transverse de la plateforme.
 
 ## Première hypothèse de structuration
 
-FLOW identifie aujourd'hui deux domaines majeurs :
+FLOW identifie aujourd'hui trois responsabilités majeures :
 
 ```text
 Demand
     ↓
-Décider
+Qualifier l'intention et l'engagement
+
+Fulfillment
+    ↓
+Arbitrer et construire la trajectoire d'exécution
 
 Supply
     ↓
-Exécuter
+Exposer et mobiliser les ressources
 ```
 
-Les produits qui composeront ces domaines restent à préciser.
+Les produits qui composeront ces responsabilités restent à préciser.
 
 ---
 
@@ -313,7 +426,7 @@ Cette séparation conduit naturellement à distinguer :
 
 * les systèmes qui gèrent des engagements ;
 * les systèmes qui gèrent des ressources ;
-* les mécanismes qui prennent des décisions.
+* les mécanismes qui prennent les décisions de Fulfillment.
 
 Elle favorise :
 
@@ -328,12 +441,14 @@ Elle favorise :
 
 Demand gère les engagements.
 
+Fulfillment arbitre la manière de les servir.
+
 Supply gère les ressources.
 
 Les ressources sont limitées.
 
 Les demandes sont concurrentes.
 
-Les décisions permettent de relier les deux.
+Les décisions de Fulfillment permettent de relier les deux.
 
 FLOW construit sa plateforme autour de cette distinction fondamentale.

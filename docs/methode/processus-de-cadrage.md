@@ -1,5 +1,25 @@
 # Processus de cadrage
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>PMO, architecture, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>7 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Cadrer la démarche et passer des observations aux choix de conception</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Introduction
 
 Le programme FLOW ne part pas des produits du marché.
@@ -168,7 +188,7 @@ Cette étape transforme la vision en règles de conception.
 
 Les principes directeurs servent à éviter que chaque arbitrage soit rejoué de zéro.
 
-Ils formalisent les convictions d'architecture qui guident FLOW : fédérer plutôt qu'uniformiser, séparer Demand et Supply, faire émerger le processus des décisions, qualifier les informations plutôt que parler indistinctement de Master Data, etc.
+Ils formalisent les convictions d'architecture qui guident FLOW : fédérer plutôt qu'uniformiser, articuler Demand, Fulfillment et Supply, faire émerger le processus des décisions, qualifier les informations plutôt que parler indistinctement de Master Data, etc.
 
 ### Activités
 

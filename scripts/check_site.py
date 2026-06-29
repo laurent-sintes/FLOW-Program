@@ -22,6 +22,7 @@ AGENTS = ROOT / "AGENTS.md"
 INSTRUCTIONS = DOCS / "administration" / "instructions-codex.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
+READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
 
 
 @dataclass
@@ -318,6 +319,7 @@ def check_agents_publication_sync(checks: Checks) -> None:
         "concepts flow",
         "scripts\\build-docs.ps1",
         "scripts\\check-site.ps1",
+        "scripts\\update-reading-metrics.ps1",
         "environnement-codex-windows.md",
     ]
 
@@ -374,6 +376,26 @@ def check_section_indexes(checks: Checks) -> None:
 
     if all(page in admin_text for page in expected_admin):
         checks.pass_check("Administration index links to expected operational pages.")
+
+
+def check_reading_metrics(checks: Checks) -> None:
+    if not READING_METRICS_SCRIPT.exists():
+        checks.error("READING_METRICS_SCRIPT", "Reading metrics script is missing.", READING_METRICS_SCRIPT)
+        return
+
+    result = subprocess.run(
+        [sys.executable, str(READING_METRICS_SCRIPT), "--check"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    if result.returncode != 0:
+        details = (result.stdout + result.stderr).strip()
+        checks.error("READING_METRICS_STALE", details or "Reading metrics are stale.", READING_METRICS_SCRIPT)
+    else:
+        checks.pass_check("Reading cards and repository statistics are up to date.")
 
 
 def all_markdown_text() -> str:
@@ -483,6 +505,7 @@ def run_checks() -> Checks:
     check_built_site_links(checks)
     check_agents_publication_sync(checks)
     check_section_indexes(checks)
+    check_reading_metrics(checks)
     check_flow_guardrails(checks)
     check_glossary_core_concepts(checks)
     return checks

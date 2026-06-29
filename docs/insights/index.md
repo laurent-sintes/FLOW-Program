@@ -1,5 +1,25 @@
 # Insights
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, sponsors, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 Cette section conserve les découvertes, hypothèses, convictions et enseignements du programme FLOW.
 
 Elle sert de mémoire vivante du programme : chaque page capture un raisonnement, un constat ou une conviction avant sa transformation éventuelle en vision, principe directeur, standard d'architecture ou arbitrage.

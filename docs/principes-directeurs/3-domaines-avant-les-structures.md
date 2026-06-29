@@ -1,5 +1,25 @@
 # Principe 3 — Les domaines avant les structures
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>5 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Guider les décisions de conception et vérifier la cohérence des arbitrages</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Introduction
 
 Les systèmes d'information reflètent souvent l'histoire de l'entreprise.

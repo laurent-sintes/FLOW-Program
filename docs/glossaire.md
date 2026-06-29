@@ -1,5 +1,25 @@
 # Glossaire FLOW
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Tous lecteurs, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>11 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Stabiliser le vocabulaire et retrouver les pages de référence</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 Ce glossaire établit le langage commun du programme FLOW.
 
 Il sert aussi d'index vers les pages qui approfondissent les concepts structurants.
@@ -15,7 +35,7 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Contrat de données | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
 | Bon niveau de commun | [Vision](vision/vision.md#ambition-converger-sans-necessairement-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande-demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
-| Demand / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Demand / Fulfillment / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
 | Donnée au repos | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
 | Donnée en transit | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
 | Fulfillment Network / Réseau d'exécution | [Concepts clés](vision/concepts-cles.md#fulfillment-network-reseau-dexecution) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) · [Fiche produit](architecture-cible/produits/fulfillment-network-configuration.md) |
@@ -133,9 +153,13 @@ Expression d'un besoin ou d'une intention à traiter.
 
 La demande constitue le point de départ de FLOW : comprendre, décider, promettre, satisfaire et expliquer.
 
+Elle doit être distinguée du [Fulfillment](#fulfillment), qui décide comment la servir, et de [Supply](#supply), qui porte les ressources et contraintes mobilisables.
+
 ### Demand & Fulfillment
 
 Ensemble des responsabilités permettant de recevoir une demande, l'instruire, décider si et comment elle peut être servie, puis piloter son exécution.
+
+Dans cette expression, Demand porte l'intention et l'engagement ; [Fulfillment](#fulfillment) porte l'arbitrage opérationnel entre cette demande et les capacités [Supply](#supply).
 
 ### Décision
 
@@ -197,7 +221,11 @@ Un fait peut servir à constater, décider, promettre, allouer ou expliquer.
 
 ### Fulfillment
 
-Responsabilités permettant d'exécuter une demande : disponibilité, promesse, allocation, préparation, livraison, retour, réintégration et suivi d'exécution.
+Capacité de décision opérationnelle qui transforme une [Demand / Demande](#demand-demande) qualifiée en trajectoire d'exécution.
+
+Le Fulfillment arbitre entre promesse, stock, priorités, contraintes [Supply](#supply), règles métier et événements observés pour décider comment servir une demande.
+
+Il ne se réduit pas à la logistique physique : préparation, livraison et retour sont des actes d'exécution, tandis que le Fulfillment porte aussi la décision de promettre, réserver, allouer, splitter, reporter, substituer ou ouvrir une exception.
 
 ### Fulfillment Network / Réseau d'exécution
 
@@ -414,6 +442,8 @@ Socle historique majeur du SI GBM, décliné en instances par marque.
 ### Supply
 
 Domaine qui porte les responsabilités relatives à la disponibilité, à la mobilisation, à l'allocation et à l'exécution des ressources.
+
+Supply expose les ressources, capacités, contraintes et événements que le [Fulfillment](#fulfillment) mobilise pour servir une [Demand / Demande](#demand-demande).
 
 ### Supply Service Registry
 

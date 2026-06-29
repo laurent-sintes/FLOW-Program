@@ -1,5 +1,25 @@
 # Principe 2 — FLOW comme plateforme d'entreprise
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>6 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Guider les décisions de conception et vérifier la cohérence des arbitrages</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Introduction
 
 Les premières discussions autour de FLOW étaient largement structurées autour du remplacement d'applications existantes :

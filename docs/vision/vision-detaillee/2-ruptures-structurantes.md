@@ -1,5 +1,25 @@
 # Ruptures : déplacer le centre de gravité du SI
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, direction, architecture</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Comprendre la vision, les arbitrages et le vocabulaire cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 <div class="flow-conviction">
   <p>FLOW ne demande pas seulement de changer de plateforme.</p>
   <p>FLOW demande de changer le point de départ du raisonnement.</p>
@@ -45,11 +65,11 @@ Il signifie que l'on ne part plus d'abord de la facture, de la commande ou du mo
 
 On part de la demande à comprendre, promettre, exécuter et expliquer.
 
-## Demand / Supply : dépasser achat / vente
+## Demand / Fulfillment / Supply : dépasser achat / vente
 
 <div class="flow-conviction">
   <p>FLOW ne découpe pas le SI selon “j'achète” ou “je vends”.</p>
-  <p>FLOW sépare ce qui est demandé de ce qui permet d'exécuter.</p>
+  <p>FLOW distingue ce qui est demandé, la décision qui arbitre comment le servir, et ce qui permet d'exécuter.</p>
 </div>
 
 L'approche classique consiste souvent à découper le SI selon les organisations, les canaux ou les processus :
@@ -66,11 +86,14 @@ FLOW propose une autre lecture.
 
 Au lieu de partir de l'organisation existante, FLOW part des problèmes durables de l'entreprise.
 
-Cette approche conduit à distinguer deux grands mondes :
+Cette approche conduit à distinguer trois responsabilités :
 
 ```text
-Demande
+Demand
     Les demandes à instruire, décider, promettre, suivre et expliquer
+
+Fulfillment
+    Les décisions de promesse, allocation, sourcing, priorisation et trajectoire d'exécution
 
 Supply
     Les ressources, lieux, partenaires et capacités d'exécution à mobiliser
@@ -78,7 +101,7 @@ Supply
 
 La demande devient le point de départ.
 
-Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions, mobiliser des ressources et garantir une exécution fiable.
+Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions de Fulfillment, mobiliser des ressources et garantir une exécution fiable.
 
 ## La Demande : l'unité autonome de la décision et de l'orchestration
 

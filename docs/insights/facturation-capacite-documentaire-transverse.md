@@ -1,5 +1,25 @@
 # La facturation n'est pas un domaine, c'est un assemblage de responsabilités
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, sponsors, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>2 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Retrouver la mémoire de raisonnement et les hypothèses stabilisées</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Contexte
 
 Les échanges autour de SAP SD, SAP FI/CO et de la convergence Finance ont mis en évidence une question fondamentale :

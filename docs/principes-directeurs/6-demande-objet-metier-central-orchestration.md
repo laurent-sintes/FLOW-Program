@@ -1,5 +1,25 @@
 # Principe 6 — La demande comme objet métier central d’orchestration
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Guider les décisions de conception et vérifier la cohérence des arbitrages</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 FLOW organise la plateforme autour des demandes que l’entreprise doit instruire, décider et exécuter.
@@ -77,18 +97,20 @@ Promesse ou exécution
 
 Le Case doit donc pouvoir conserver les décisions d'allocation successives, les règles appliquées, les événements déclencheurs et les conséquences produites sur la promesse, la réservation ou l'exécution.
 
-## Demand et Supply
+## Demand, Fulfillment et Supply
 
 Demand porte l’intention, les engagements et le cycle de vie de la demande.
 
+Fulfillment porte la décision opérationnelle : promettre, allouer, orienter, prioriser, adapter ou ouvrir une exception.
+
 Supply porte la visibilité, la disponibilité et la mobilisation des ressources.
 
-La décision constitue leur point de rencontre.
+La décision de Fulfillment constitue le point de rencontre entre la demande et les ressources.
 
 ```text
 Demande
         ↓
-Décision
+Décision de Fulfillment
         ↓
 Ressource affectée
         ↓

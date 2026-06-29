@@ -86,7 +86,7 @@
   <text x="1294" y="454" text-anchor="middle" class="box-text">douanes • statuts • événements</text>
 
   <text x="1294" y="560" text-anchor="middle" class="zone-title">Finance</text>
-  <text x="1294" y="586" text-anchor="middle" class="zone-sub">domaine séparé de Demand et Supply</text>
+  <text x="1294" y="586" text-anchor="middle" class="zone-sub">domaine séparé de Demand, Fulfillment et Supply</text>
   <rect class="box box-red" x="1166" y="612" width="256" height="112"/>
   <text x="1294" y="646" text-anchor="middle" class="box-title">SAP FI/CO</text>
   <text x="1294" y="674" text-anchor="middle" class="box-text">comptabilité • contrôle</text>

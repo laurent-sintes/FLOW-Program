@@ -1,5 +1,25 @@
 # Architecture cible
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, delivery</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>2 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 Cette section décrit le positionnement cible de FLOW.
 
 Elle ne part pas d'une solution à déployer.

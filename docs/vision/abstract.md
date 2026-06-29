@@ -1,5 +1,25 @@
 # Abstract
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, direction, architecture</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Comprendre la vision, les arbitrages et le vocabulaire cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 <div class="flow-conviction">
   <p><strong>FLOW est le choix d'un nouveau centre de gravité pour le SI.</strong></p>
   <p>Le programme ne cherche pas à remplacer tout le système d'information. Il construit la colonne vertébrale commune qui permet de traiter les demandes, gouverner les décisions métier et rendre les ressources disponibles sans effacer les singularités utiles.</p>
@@ -105,7 +125,7 @@
       <li>Catalogue produit : PLM, articles, EAN, produits conçus et produits importés.</li>
       <li>Fournisseur, usine et Agreement : sources de référence, dates de promesse, adaptation CBS et hypothèse SRM cible.</li>
       <li>Promesse Wholesale, priorisation commerciale et rupture de promesse.</li>
-      <li>Module Négoce StoreLand et découpage Engagement / Demand / Supply.</li>
+      <li>Module Négoce StoreLand et découpage Engagement / Demand / Fulfillment / Supply.</li>
     </ul>
   </section>
 

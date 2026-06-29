@@ -1,5 +1,25 @@
 # Module Négoce StoreLand
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, architecture, métiers concernés</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Préparer les arbitrages sur les points sensibles de convergence</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Cette page documente le hotspot lié au module Négoce de StoreLand.

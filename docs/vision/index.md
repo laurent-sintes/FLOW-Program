@@ -1,5 +1,25 @@
 # Qu’est-ce qu’une vision ?
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, direction, architecture</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>2 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## À quoi sert une vision ?
 
 Une vision sert à donner une direction commune avant de descendre dans l'architecture, les produits, les fonctionnalités ou les choix de solution.

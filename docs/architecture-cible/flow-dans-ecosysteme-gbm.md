@@ -1,5 +1,25 @@
 # FLOW dans l’écosystème GBM
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, delivery</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Relier les concepts FLOW aux produits, patterns et responsabilités cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Cette page propose un premier positionnement de FLOW dans l'écosystème applicatif GBM.

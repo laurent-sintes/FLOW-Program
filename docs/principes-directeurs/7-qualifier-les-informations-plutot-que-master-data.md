@@ -1,5 +1,25 @@
 # Principe 7 — Qualifier les informations plutôt que parler de Master Data
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>8 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Guider les décisions de conception et vérifier la cohérence des arbitrages</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 FLOW ne doit pas reprendre sans recul la notion ERP de `Master Data`.

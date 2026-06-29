@@ -1,5 +1,25 @@
 # Panorama applicatif BRD
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, métiers, nouveaux contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>14 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Comprendre le point de départ et les tensions observées</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Cette page documente l'environnement IT de Boardriders tel qu'il apparaît dans les éléments de travail du projet et dans les échanges d'urbanisme.

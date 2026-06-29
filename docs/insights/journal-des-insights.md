@@ -1,5 +1,25 @@
 # Journal des Insights
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, sponsors, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>8 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Retrouver la mémoire de raisonnement et les hypothèses stabilisées</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Ce journal conserve les insights du programme FLOW sous une forme courte et classée.
@@ -32,7 +52,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 003 | Agreement est le pivot métier | Les différences B2B, B2C ou Achat proviennent principalement des engagements applicables. |
 | 014 | Agreement évite de multiplier les variantes de commandes | Une commande peut rester générique si contexte, Agreement et règles pilotent dynamiquement les variations. |
 | 018 | Les organisations consomment la plateforme, elles ne la structurent pas | B2B, B2C, retail, wholesale ou achat sont des contextes de consommation, pas la structure profonde de FLOW. |
-| 019 | Demand / Supply remplace les oppositions achat / vente | La conception distingue la demande à instruire du réseau d'exécution à mobiliser. |
+| 019 | Demand / Fulfillment / Supply remplace les oppositions achat / vente | La conception distingue la demande à instruire, la décision de Fulfillment et le réseau d'exécution à mobiliser. |
 | 029 | La variation métier doit être pilotée par règles | Les variations de traitement doivent venir du contexte, des Agreements et des policies, pas d'une prolifération de processus spécialisés. |
 | 030 | Le SAV est une demande comme les autres | Une demande de service, un litige, un retour ou un remboursement peut être traité comme un Case dès lors qu'il faut suivre, décider, résoudre et expliquer. |
 | 034 | Une plateforme est fermée et ouverte à la fois | FLOW gouverne un cœur commun, mais expose des processus contrôlés pour configurer, étendre et développer des produits consommateurs. |
@@ -99,7 +119,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 016 | Convergence, fédération et gouvernance | BRD et GBM ont des centres de gravité inverses |
 | 017 | Convergence, fédération et gouvernance | La convergence est aussi intra-GBM |
 | 018 | Modèle conceptuel | Les organisations consomment la plateforme, elles ne la structurent pas |
-| 019 | Modèle conceptuel | Demand / Supply remplace les oppositions achat / vente |
+| 019 | Modèle conceptuel | Demand / Fulfillment / Supply remplace les oppositions achat / vente |
 | 020 | Positionnement | FLOW réconcilie ERP et OMS dans une plateforme Demand |
 | 021 | Finance et adhérences externes | Le fulfillment précède les documents |
 | 022 | Finance et adhérences externes | La finance doit rester un domaine séparé |

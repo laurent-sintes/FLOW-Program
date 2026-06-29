@@ -1,5 +1,25 @@
 # FLOW dans l’écosystème BRD
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, product owners, delivery</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>5 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Relier les concepts FLOW aux produits, patterns et responsabilités cible</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Cette page propose un premier positionnement de FLOW dans l'écosystème applicatif BRD.
@@ -140,9 +160,9 @@ Cette projection doit fournir les informations nécessaires pour instruire un Ca
 
 Elle ne doit pas transformer FLOW en PIM bis.
 
-## Finance séparée de Demand et Supply
+## Finance séparée de Demand, Fulfillment et Supply
 
-La Finance ne doit pas être rangée dans Supply.
+La Finance ne doit pas être rangée dans Supply, ni absorbée dans Fulfillment.
 
 SAP FI/CO et les responsabilités financières restent un domaine séparé.
 

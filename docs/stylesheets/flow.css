@@ -136,6 +136,48 @@
   color: #0b3954;
 }
 
+.flow-reading-card {
+  background: #fbfdfc;
+  border: 1px solid #d7e5e2;
+  border-left: 0.25rem solid #e09238;
+  border-radius: 0.35rem;
+  margin: 0.8rem 0 1.4rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.flow-reading-card__title {
+  color: #0b3954;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.flow-reading-card__grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flow-reading-card span {
+  color: #5b6b78;
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.12rem;
+  text-transform: uppercase;
+}
+
+.flow-reading-card strong {
+  color: #1e293b;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .flow-keyword {
   background: #eaf4f2;
   border: 1px solid #c7e4de;
@@ -285,6 +327,50 @@
   border-top-color: #b5701b;
 }
 
+.flow-word-cloud {
+  align-items: center;
+  background: #fbfdfc;
+  border: 1px solid #d7e5e2;
+  border-radius: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  line-height: 1.25;
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem;
+}
+
+.flow-word-cloud__term {
+  color: #236159;
+  font-weight: 650;
+}
+
+.flow-word-cloud__term--1 {
+  font-size: 0.82rem;
+  opacity: 0.76;
+}
+
+.flow-word-cloud__term--2 {
+  font-size: 0.95rem;
+  opacity: 0.84;
+}
+
+.flow-word-cloud__term--3 {
+  color: #1e5a51;
+  font-size: 1.1rem;
+}
+
+.flow-word-cloud__term--4 {
+  color: #0b3954;
+  font-size: 1.28rem;
+}
+
+.flow-word-cloud__term--5 {
+  color: #8a4f0f;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
 .md-footer {
   background-color: #0b3954;
 }
@@ -302,6 +388,10 @@
 
 @media screen and (max-width: 44.9844em) {
   .flow-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-reading-card__grid {
     grid-template-columns: 1fr;
   }
 

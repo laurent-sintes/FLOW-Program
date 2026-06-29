@@ -1,5 +1,25 @@
 # Environnement Codex sous Windows
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Contributeurs, Codex, mainteneurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>4 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Maintenir le référentiel, l'environnement local et les contrôles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Objectif
 
 Cette page décrit l'environnement local nécessaire pour mettre à jour et piloter le référentiel FLOW avec Codex sous Windows.

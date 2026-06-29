@@ -1,5 +1,25 @@
 # AGENTS.md - Instructions Codex pour FLOW
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Contributeurs, Codex, mainteneurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>8 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Maintenir le référentiel, l'environnement local et les contrôles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 Cette page rend visible la mémoire de travail utilisée par Codex pour contribuer au référentiel FLOW.
 
 Elle reprend les règles du fichier racine `AGENTS.md` dans une forme consultable depuis le site.
@@ -37,6 +57,20 @@ Pour lancer la validation complète du référentiel, utiliser :
 ```
 
 Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, liens internes, ancres, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+
+Pour mettre à jour les cartouches de lecture, le fichier de comptage unitaire par page et la page Statistiques du référentiel, utiliser :
+
+```powershell
+.\scripts\update-reading-metrics.ps1
+```
+
+Cette commande maintient :
+
+- le cartouche `Repère de lecture` en tête de chaque page ;
+- `docs/referentiel/page-metrics.json`, qui conserve les comptages unitaires par page ;
+- `docs/referentiel/statistiques.md`, qui agrège les volumes, temps de lecture, concepts, hotspots, composants et nuage de mots.
+
+Après toute modification documentaire significative, relancer `.\scripts\update-reading-metrics.ps1` avant `.\scripts\check-site.ps1`.
 
 Avant de committer :
 
@@ -239,17 +273,20 @@ Fichiers clés :
 - `docs/administration/index.md`
 - `docs/administration/environnement-codex-windows.md`
 - `docs/administration/instructions-codex.md`
+- `docs/referentiel/statistiques.md`
+- `docs/referentiel/page-metrics.json`
 
 Rôle :
 
 - documenter l'environnement local de contribution ;
 - rendre visible la mémoire de contribution utilisée par Codex ;
-- garder la construction, les contrôles et la publication du site reproductibles.
+- garder la construction, les contrôles, les statistiques de lecture et la publication du site reproductibles.
 
 Impact à vérifier :
 
 - tout changement d'outillage doit être répercuté dans `docs/administration/environnement-codex-windows.md` ;
-- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md`.
+- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md` ;
+- tout changement documentaire doit maintenir les cartouches de lecture et `docs/referentiel/page-metrics.json` via `scripts/update-reading-metrics.ps1`.
 
 ### Transformation
 
@@ -273,17 +310,21 @@ Impact à vérifier :
 Fichier clé :
 
 - `docs/glossaire.md`
+- `docs/referentiel/statistiques.md`
+- `docs/referentiel/page-metrics.json`
 
 Rôle :
 
 - stabiliser le langage commun ;
-- servir d'index vers les pages de référence.
+- servir d'index vers les pages de référence ;
+- donner une lecture quantitative du référentiel.
 
 Impact à vérifier :
 
 - toute notion nouvelle ou renommée doit être vérifiée dans le glossaire ;
 - les ancres vers les titres doivent être revérifiées après un renommage ;
-- le glossaire ne doit pas devenir une seconde vision : il définit, il n'argumente pas longuement.
+- le glossaire ne doit pas devenir une seconde vision : il définit, il n'argumente pas longuement ;
+- les statistiques sont générées, ne pas les recalculer manuellement.
 
 ## Concepts FLOW à préserver
 
@@ -296,7 +337,7 @@ Concepts à maintenir dans le temps :
 - convergence sans nécessairement uniformiser ;
 - bon niveau de commun ;
 - plateforme fédérale et multi-tenant ;
-- séparation Demand / Supply ;
+- articulation Demand / Fulfillment / Supply ;
 - demande comme objet métier central ;
 - Case comme support durable de la demande ;
 - décision métier explicite, traçable et gouvernée ;
@@ -328,4 +369,5 @@ Quand un contenu est ajouté ou modifié, vérifier au minimum :
 - les pages d'architecture ou de produit concernées ;
 - les hotspots associés ;
 - les liens et ancres ;
+- les cartouches de lecture et statistiques via `.\scripts\update-reading-metrics.ps1` ;
 - le build MkDocs.

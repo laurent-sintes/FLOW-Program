@@ -1,5 +1,25 @@
 # La convergence Finance constitue une adhérence forte pour FLOW
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, sponsors, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Retrouver la mémoire de raisonnement et les hypothèses stabilisées</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Contexte
 
 Chez GBM comme chez BRD, la facturation et l'intégration comptable reposent fortement sur SAP.

@@ -1,5 +1,25 @@
 # C-LOG : une décision de fulfillment déjà distribuée
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Sponsors, architecture, métiers concernés</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>1 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Préparer les arbitrages sur les points sensibles de convergence</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Pourquoi c'est un hotspot
 
 C-LOG ne doit pas être lu seulement comme un outil logistique ou un composant d'intégration.

@@ -1,5 +1,25 @@
 # Les changements à conduire avec FLOW
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Change, sponsors, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>8 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Préparer l'adoption et les changements de posture</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Intention
 
 Cette page identifie les grands changements de posture à conduire avec le programme FLOW.
@@ -17,7 +37,7 @@ Ces changements doivent inspirer la transformation : ils disent ce que les équi
 | Changement | Ancien réflexe | Nouveau réflexe FLOW |
 | --- | --- | --- |
 | 1. Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise | Partir des marques, canaux, directions ou organisations existantes. | Partir des problèmes durables de l'entreprise, des domaines et des responsabilités à gouverner. |
-| 2. Passer de “j'achète / je vends” à Demand / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître une demande à instruire et satisfaire, puis mobiliser le bon réseau d'exécution. |
+| 2. Passer de “j'achète / je vends” à Demand / Fulfillment / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître une demande à instruire, décider comment la servir, puis mobiliser le bon réseau d'exécution. |
 | 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts de données. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 4. Penser fulfillment et satisfaction client avant documents | Commencer par les documents à produire : facture, livraison, commande, écritures. | Commencer par la demande à satisfaire, puis intégrer les documents et la finance au bon moment. |
 | 5. Construire le bon niveau de commun | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré ou différencié selon la responsabilité et l'exigence business. |
@@ -57,7 +77,7 @@ FLOW ne sert pas l'organisation telle qu'elle est.
 
 FLOW aide l'entreprise à résoudre ses problèmes durables avec une structure plus lisible.
 
-## Changement 2 — Passer de “j'achète / je vends” à Demand / Supply
+## Changement 2 — Passer de “j'achète / je vends” à Demand / Fulfillment / Supply
 
 ### Changement attendu
 
@@ -222,13 +242,13 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | --- | --- |
 | Domain-Driven Design | Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise |
 | Urbanisme commun BRD / GBM | Ne plus servir l'organisation + construire le bon niveau de commun |
-| B2C / B2B / retail / wholesale | Passer à Demand / Supply |
-| Achats / ventes | Passer à Demand / Supply |
-| SAV / litiges / retours / remboursements | Passer à Demand / Supply + fulfillment avant documents |
-| Services SAV Sarenza | Passer à Demand / Supply |
+| B2C / B2B / retail / wholesale | Passer à Demand / Fulfillment / Supply |
+| Achats / ventes | Passer à Demand / Fulfillment / Supply |
+| SAV / litiges / retours / remboursements | Passer à Demand / Fulfillment / Supply avant documents |
+| Services SAV Sarenza | Passer à Demand / Fulfillment / Supply |
 | Case Management | Réconcilier ERP et OMS dans une plateforme Demand |
 | Stock unifié | Réconcilier ERP et OMS + fulfillment avant documents |
-| Allocation et promesse | Réconcilier ERP et OMS + Demand / Supply |
+| Allocation et promesse | Réconcilier ERP et OMS + Demand / Fulfillment / Supply |
 | Facture, bon de livraison, avoir, écritures | Fulfillment et satisfaction client avant documents |
 | Finance | Fulfillment et satisfaction client avant documents |
 | Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + construire le bon niveau de commun |

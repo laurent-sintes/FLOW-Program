@@ -1,5 +1,25 @@
 # L'allocation révèle la vraie nature de la convergence
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Architecture, sponsors, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>4 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Retrouver la mémoire de raisonnement et les hypothèses stabilisées</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Contexte
 
 Dans le référentiel documentaire constitué avant FLOW, la problématique d'allocation apparaît de manière récurrente.

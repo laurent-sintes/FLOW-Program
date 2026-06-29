@@ -1,5 +1,25 @@
 # Pourquoi deux Change Managers dans la Core Team FLOW ?
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Change, sponsors, métiers</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>3 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>Préparer l'adoption et les changements de posture</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Une question légitime
 
 La présence de deux Change Managers dans la Core Team FLOW peut surprendre.

@@ -1,5 +1,25 @@
 # Méthodologie Projet
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>PMO, architecture, contributeurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>1 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 La méthodologie projet décrit la manière dont le programme FLOW passe des observations terrain aux choix d’urbanisme, de plateforme et de solution.
 
 Elle structure la progression du travail, en cohérence avec la vision et les principes directeurs.

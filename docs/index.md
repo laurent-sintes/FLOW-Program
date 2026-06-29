@@ -5,6 +5,26 @@
   <p>FLOW explore une réponse fédérée : une plateforme Demand capable de traiter les demandes, gouverner les décisions métier, mobiliser le stock et le réseau d'exécution, sans imposer une uniformisation brutale.</p>
 </div>
 
+<!-- FLOW-READING-CARD:START -->
+<div class="flow-reading-card">
+  <div class="flow-reading-card__title">Repère de lecture</div>
+  <div class="flow-reading-card__grid">
+    <div>
+      <span>Public cible</span>
+      <strong>Tous lecteurs</strong>
+    </div>
+    <div>
+      <span>Temps de lecture</span>
+      <strong>2 min</strong>
+    </div>
+    <div>
+      <span>Usage</span>
+      <strong>S'orienter dans le référentiel FLOW</strong>
+    </div>
+  </div>
+</div>
+<!-- FLOW-READING-CARD:END -->
+
 ## Explorer FLOW
 
 <p class="flow-section-intro">Le référentiel se lit comme un chemin : partir du contexte et des tensions de convergence, formuler la vision, puis seulement stabiliser les principes, l'architecture cible et la transformation.</p>
