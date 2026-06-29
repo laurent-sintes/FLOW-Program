@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>12 min</strong>
+      <strong>13 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -72,6 +72,8 @@ docs/administration/multilingue-traduction.md
 ```
 
 Le français reste la source de référence dans `docs/`. La version anglaise est générée dans `.generated/i18n/en/` puis publiée dans `site/en/`. Tant que le cache de traduction n'est pas branché, le build anglais ajoute un bandeau indiquant que la page est générée depuis la source française.
+
+Le build génère aussi `site/index.html`, qui aiguille la racine vers `/fr/`, et `site/404.html`, qui redirige les anciens liens profonds sans préfixe de langue vers `/fr/...` sans rediriger les chemins déjà préfixés par `/fr/` ou `/en/`.
 
 Pour lancer la validation complète du référentiel, utiliser :
 

@@ -527,6 +527,7 @@ def check_built_site_links(checks: Checks) -> None:
 def check_multilingual_site(checks: Checks) -> None:
     expected_pages = [
         SITE / "index.html",
+        SITE / "404.html",
         SITE / "fr" / "index.html",
         SITE / "en" / "index.html",
     ]
@@ -534,6 +535,24 @@ def check_multilingual_site(checks: Checks) -> None:
     for page in expected_pages:
         if not page.exists():
             checks.error("I18N_SITE_PAGE", f"Multilingual site page is missing: {rel(page)}", page)
+
+    root_page = SITE / "index.html"
+    if root_page.exists():
+        root_text = read_text(root_page)
+        if 'url=fr/' not in root_text or 'window.location.replace("fr/"' not in root_text:
+            checks.error("I18N_ROOT_REDIRECT", "Site root should redirect to the French version.", root_page)
+
+    not_found_page = SITE / "404.html"
+    if not_found_page.exists():
+        not_found_text = read_text(not_found_page)
+        required_fragments = [
+            'var projectBase = "/FLOW-Program"',
+            'var languages = ["fr", "en"]',
+            'window.location.replace(projectBase + "/fr" + rest',
+        ]
+        for fragment in required_fragments:
+            if fragment not in not_found_text:
+                checks.error("I18N_404_REDIRECT", f"404 page misses compatibility redirect fragment: {fragment}", not_found_page)
 
     english_pages = sorted((SITE / "en").rglob("*.html")) if (SITE / "en").exists() else []
     if english_pages:

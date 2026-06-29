@@ -20,6 +20,7 @@ SITE = ROOT / "site"
 GENERATED = ROOT / ".generated" / "i18n"
 BASE_CONFIG = ROOT / "mkdocs.yml"
 PUBLISHED_BASE_URL = "https://laurent-sintes.github.io/FLOW-Program"
+PUBLISHED_BASE_PATH = "/FLOW-Program"
 
 LANGUAGES = {
     "fr": {
@@ -147,13 +148,17 @@ def run_mkdocs(config_path: Path) -> None:
         raise SystemExit(process.returncode)
 
 
-def write_root_landing() -> None:
-    choices = "\n".join(
+def language_choices() -> str:
+    return "\n".join(
         f'<a class="language-card" href="{html.escape(code)}/">'
         f"<span>{html.escape(language['display_name'])}</span>"
         "</a>"
         for code, language in LANGUAGES.items()
     )
+
+
+def write_root_landing() -> None:
+    choices = language_choices()
     page = f"""<!doctype html>
 <html lang="fr">
 <head>
@@ -218,6 +223,95 @@ def write_root_landing() -> None:
     write_text(SITE / "index.html", page)
 
 
+def write_404_page() -> None:
+    choices = "\n".join(
+        f'<a class="language-card" href="{PUBLISHED_BASE_PATH}/{html.escape(code)}/">'
+        f"<span>{html.escape(language['display_name'])}</span>"
+        "</a>"
+        for code, language in LANGUAGES.items()
+    )
+    page = f"""<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {{
+      var projectBase = "{PUBLISHED_BASE_PATH}";
+      var languages = ["fr", "en"];
+      var path = window.location.pathname.replace(/\\/+$/, "");
+
+      function hasLanguagePrefix(value) {{
+        return languages.some(function (language) {{
+          var languagePath = projectBase + "/" + language;
+          return value === languagePath || value.indexOf(languagePath + "/") === 0;
+        }});
+      }}
+
+      if (window.location.pathname.indexOf(projectBase + "/") === 0 && !hasLanguagePrefix(path)) {{
+        var rest = window.location.pathname.slice(projectBase.length);
+        if (!rest || rest === "/") {{
+          rest = "/";
+        }}
+        window.location.replace(projectBase + "/fr" + rest + window.location.search + window.location.hash);
+      }}
+    }}());
+  </script>
+  <title>Page introuvable - Programme FLOW</title>
+  <style>
+    body {{
+      margin: 0;
+      font-family: Aptos, Calibri, Arial, sans-serif;
+      background: #f7fbfa;
+      color: #173f3a;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+    }}
+    main {{
+      width: min(680px, calc(100vw - 48px));
+    }}
+    h1 {{
+      font-size: 2rem;
+      margin: 0 0 0.75rem;
+    }}
+    p {{
+      color: #58706b;
+      line-height: 1.5;
+    }}
+    .language-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }}
+    .language-card {{
+      border: 1px solid #d7e5e2;
+      background: #fff;
+      border-radius: 8px;
+      color: #173f3a;
+      display: block;
+      font-weight: 700;
+      padding: 18px 20px;
+      text-decoration: none;
+    }}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Page introuvable</h1>
+    <p>Si vous avez utilisé un ancien lien sans préfixe de langue, redirection vers la version française en cours.</p>
+    <p>Sinon, sélectionnez une langue pour revenir à l'accueil du programme FLOW.</p>
+    <div class="language-grid">
+      {choices}
+    </div>
+  </main>
+</body>
+</html>
+"""
+    write_text(SITE / "404.html", page)
+
+
 def main() -> int:
     if SITE.exists():
         shutil.rmtree(SITE)
@@ -234,6 +328,7 @@ def main() -> int:
         run_mkdocs(config_path)
 
     write_root_landing()
+    write_404_page()
     return 0
 
 

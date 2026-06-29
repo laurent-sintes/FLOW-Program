@@ -38,8 +38,8 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 101 |
-| Nombre de mots | 80 481 |
-| Temps de lecture complet | 6 h 54 min |
+| Nombre de mots | 80 622 |
+| Temps de lecture complet | 6 h 56 min |
 | Concepts du glossaire | 84 |
 | Hotspots documentés | 8 |
 | Produits FLOW | 7 |
@@ -51,7 +51,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Section | Pages | Mots | Lecture |
 | --- | ---: | ---: | ---: |
 | accueil | 1 | 325 | 2 min |
-| administration | 8 | 7 367 | 36 min |
+| administration | 8 | 7 508 | 38 min |
 | architecture-cible | 24 | 15 545 | 1 h 21 min |
 | contexte | 4 | 8 517 | 41 min |
 | faq | 4 | 4 961 | 25 min |
@@ -70,7 +70,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | [Panorama applicatif GBM](../contexte/panorama-gbm.md) | 3 346 | 16 min |
 | [Fiche produit — Socle Case Management](../architecture-cible/produits/socle-case-management.md) | 3 107 | 15 min |
 | [Panorama applicatif BRD](../contexte/panorama-brd.md) | 2 986 | 14 min |
-| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 2 613 | 12 min |
+| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 2 652 | 13 min |
 | [Glossaire FLOW](../glossaire.md) | 2 460 | 12 min |
 | [Hotspots : les décisions à instruire pour rendre FLOW réaliste](../vision/vision-detaillee/4-hotspots.md) | 2 322 | 11 min |
 | [Supprimer ERP et OMS ? Une folie !](../faq/supprimer-erp-oms-folie.md) | 2 283 | 11 min |

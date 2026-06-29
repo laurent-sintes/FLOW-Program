@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -48,6 +48,14 @@ Chaque configuration ajoute le sélecteur de langue Material via `extra.alternat
 Le lecteur peut donc passer de la version française à la version anglaise depuis l'en-tête du site.
 
 Un script léger ajuste le lien pour conserver le chemin courant : depuis `/fr/faq/`, le bouton `English` pointe vers `/en/faq/`.
+
+## Compatibilité des anciens liens
+
+La racine publiée `https://laurent-sintes.github.io/FLOW-Program` redirige vers `/fr/`.
+
+Le build génère aussi `site/404.html` pour préserver les anciens liens profonds diffusés avant le passage multilingue. Si un lecteur arrive sur un chemin sans préfixe de langue, par exemple `/FLOW-Program/vision/`, la 404 redirige vers `/FLOW-Program/fr/vision/`.
+
+La redirection ne s'applique pas aux chemins déjà préfixés par `/fr/` ou `/en/`, afin d'éviter une boucle lorsqu'une vraie page manque.
 
 ## Traduction anglaise
 
@@ -114,6 +122,8 @@ Diagnostic environnement :
 Après toute évolution du multilingue :
 
 - vérifier que `site/fr/` et `site/en/` sont générés ;
+- vérifier que `site/index.html` redirige vers `/fr/` ;
+- vérifier que `site/404.html` protège les anciens liens profonds sans préfixe de langue ;
 - vérifier que le sélecteur de langue apparaît dans l'en-tête ;
 - vérifier que `.generated/` et `site/` ne sont pas suivis par Git ;
 - relancer `.\scripts\check-site.ps1`.
