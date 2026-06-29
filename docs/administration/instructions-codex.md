@@ -168,6 +168,7 @@ Impact à vérifier :
 Fichiers clés :
 
 - `docs/principes-directeurs/index.md`
+- `docs/principes-directeurs/abstract.md`
 - `docs/principes-directeurs/1-converger-c-est-federer.md`
 - `docs/principes-directeurs/2-flow-comme-plateforme-d-entreprise.md`
 - `docs/principes-directeurs/3-domaines-avant-les-structures.md`

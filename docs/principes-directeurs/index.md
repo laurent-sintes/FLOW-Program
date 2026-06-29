@@ -26,6 +26,8 @@ Ils ne prescrivent pas une solution technique. Ils donnent un cadre pour décide
 
 ## Principes documentés
 
+Pour une lecture rapide, commencer par [l'abstract des principes directeurs](abstract.md).
+
 1. [Construire le bon niveau de commun](1-converger-c-est-federer.md)
 2. [FLOW comme plateforme d’entreprise](2-flow-comme-plateforme-d-entreprise.md)
 3. [Les domaines avant les structures](3-domaines-avant-les-structures.md)

@@ -34,6 +34,10 @@
     <strong>Abstract</strong>
     <span>La lecture en une page du problème, du choix stratégique et de la valeur attendue.</span>
   </a>
+  <a class="flow-card" href="faq/">
+    <strong>FAQ</strong>
+    <span>Les réponses courtes aux questions et malentendus les plus fréquents.</span>
+  </a>
   <a class="flow-card flow-card--context" href="contexte/">
     <strong>Contexte</strong>
     <span>Le panorama de départ : patrimoines applicatifs, disparités BRD / GBM et terrain initial.</span>
@@ -48,7 +52,7 @@
   </a>
   <a class="flow-card flow-card--principles" href="principes-directeurs/">
     <strong>Principes directeurs</strong>
-    <span>Le cadre durable qui oriente les choix de conception et de gouvernance.</span>
+    <span>Le cadre durable qui oriente les choix de conception et de gouvernance, avec une synthèse courte.</span>
   </a>
   <a class="flow-card" href="architecture-cible/">
     <strong>Architecture cible</strong>

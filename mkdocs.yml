@@ -24,6 +24,7 @@ extra_css:
 
 nav:
   - Accueil: index.md
+  - FAQ: faq.md
   - Vision:
       - vision/index.md
       - Abstract: vision/abstract.md
@@ -68,6 +69,7 @@ nav:
       - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:
       - Les principes: principes-directeurs/index.md
+      - Abstract: principes-directeurs/abstract.md
       - "01 — Construire le bon niveau de commun": principes-directeurs/1-converger-c-est-federer.md
       - "02 — FLOW comme plateforme d’entreprise": principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
       - "03 — Les domaines avant les structures": principes-directeurs/3-domaines-avant-les-structures.md
