@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>7 min</strong>
+      <strong>8 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -63,7 +63,7 @@ Le Fulfillment transforme une demande qualifiée en trajectoire d'exécution, en
 >
 > FLOW distingue Demand, Fulfillment et Supply.
 >
-> Demand porte l'intention et les engagements.
+> Demand porte l'intention qualifiée, la priorité et la promesse à tenir.
 >
 > Fulfillment porte la décision opérationnelle.
 >
@@ -155,22 +155,29 @@ C'est précisément cette rareté qui justifie l'existence d'une couche de déci
 
 ---
 
-## Vue d'ensemble : Demand, Fulfillment, Supply
+## Vue d'ensemble : Engagement, Demand, Fulfillment, Supply
 
-Les trois notions ne décrivent pas trois silos.
+Les notions ne décrivent pas des silos.
 
-Elles décrivent trois responsabilités complémentaires.
+Elles décrivent des responsabilités complémentaires autour du cœur FLOW.
 
 ```text
+Engagement
+    parcours, canaux, interfaces, négociation, contexte relationnel
+        ↓
 Demand
-    intention, engagement, priorité, promesse attendue
+    intention qualifiée, priorité, promesse à tenir
         ↓
 Fulfillment
-    arbitrage, promesse, allocation, plan d'exécution
+    arbitrage, promesse tenable, allocation, plan d'exécution
         ↓
 Supply
     stock, sites, usines, fournisseurs, transport, capacités
 ```
+
+Le cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span>.
+
+<span class="flow-keyword">Engagement</span> et <span class="flow-keyword">Supply</span> sont adhérents à FLOW : ils gardent leur autonomie, mais doivent exposer ou consommer les capacités, statuts, événements, règles et contrats de données nécessaires à la cohérence de bout en bout.
 
 Le point clé est le suivant : le Fulfillment n'est pas seulement l'exécution logistique.
 
@@ -180,7 +187,7 @@ Dans FLOW, il représente la capacité de décision qui fait le lien entre une d
 
 ## Alignement avec les pratiques standard
 
-Le triptyque <span class="flow-keyword">Demand / Fulfillment / Supply</span> est une formulation FLOW.
+La chaîne <span class="flow-keyword">Engagement / Demand / Fulfillment / Supply</span> est une formulation FLOW.
 
 Ce n'est pas un standard académique cité tel quel dans toutes les écoles de commerce.
 
@@ -204,24 +211,49 @@ Le vocabulaire exact est propre à FLOW.
 L'évolution de fond est standard.
 ```
 
-FLOW traduit cette évolution en un principe d'architecture : Demand porte l'intention, Fulfillment porte l'arbitrage opérationnel, Supply porte les ressources mobilisables.
+FLOW traduit cette évolution en un principe d'architecture : Engagement capte l'intention, Demand la qualifie et porte la promesse à tenir, Fulfillment porte l'arbitrage opérationnel, Supply porte les ressources mobilisables.
+
+Le périmètre cœur de FLOW reste <span class="flow-keyword">Demand + Fulfillment</span>. Engagement et Supply sont des domaines adhérents : ils doivent être raccordés au cœur, sans être absorbés par lui.
 
 ---
 
-## Demand : le domaine des engagements
+## Engagement : le domaine adhérent des parcours
 
-Demand représente les intentions de l'entreprise.
+Engagement représente les espaces où l'intention naît, se formule, se négocie ou se contextualise.
+
+Engagement peut prendre plusieurs formes :
+
+* site e-commerce ;
+* portail B2B ;
+* CRM ;
+* marketplace ;
+* outil de négoce ;
+* service client ;
+* portail fournisseur ;
+* application partenaire.
+
+Engagement ne constitue pas le cœur de FLOW.
+
+Il capte l'intention, porte les parcours, les interfaces et certaines règles locales de relation.
+
+Il devient adhérent à FLOW lorsqu'il doit créer une demande, consulter une promesse, suivre un Case, recevoir des statuts ou contribuer des événements.
+
+---
+
+## Demand : le domaine de la demande et de la promesse
+
+Demand représente les intentions qualifiées de l'entreprise.
 
 Demand s'intéresse à :
 
 * ce qui est demandé ;
 * ce qui est promis ;
 * ce qui est attendu ;
-* ce qui est engagé.
+* ce qui doit rester explicable.
 
 Demand ne représente pas un référentiel.
 
-Demand représente un système de pilotage des engagements.
+Demand représente un système de pilotage de la demande et de la promesse à tenir.
 
 Demand doit répondre à des questions comme :
 
@@ -242,7 +274,7 @@ Le domaine Demand nécessite généralement :
 * un moteur de règles ;
 * une gestion des événements ;
 * une traçabilité des décisions ;
-* une gestion des engagements.
+* une gestion des promesses.
 
 L'objectif n'est pas de stocker des données.
 
@@ -405,7 +437,7 @@ FLOW identifie aujourd'hui trois responsabilités majeures :
 ```text
 Demand
     ↓
-Qualifier l'intention et l'engagement
+Qualifier l'intention et la promesse à tenir
 
 Fulfillment
     ↓
@@ -424,9 +456,11 @@ Les produits qui composeront ces responsabilités restent à préciser.
 
 Cette séparation conduit naturellement à distinguer :
 
-* les systèmes qui gèrent des engagements ;
+* les systèmes Engagement qui captent les intentions et portent les parcours ;
+* les systèmes FLOW qui qualifient les demandes et arbitrent le Fulfillment ;
 * les systèmes qui gèrent des ressources ;
-* les mécanismes qui prennent les décisions de Fulfillment.
+* les mécanismes qui prennent les décisions de Fulfillment ;
+* les contrats qui raccordent ces domaines sans les fusionner.
 
 Elle favorise :
 
@@ -439,7 +473,9 @@ Elle favorise :
 
 ## À retenir
 
-Demand gère les engagements.
+Engagement capte les intentions et porte les parcours.
+
+Demand gère les demandes et les promesses à tenir.
 
 Fulfillment arbitre la manière de les servir.
 

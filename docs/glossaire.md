@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>11 min</strong>
+      <strong>12 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -35,9 +35,10 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Contrat de données | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
 | Bon niveau de commun | [Vision](vision/vision.md#ambition-converger-sans-necessairement-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande-demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
-| Demand / Fulfillment / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Engagement / Demand / Fulfillment / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#engagement-demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
 | Donnée au repos | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
 | Donnée en transit | [Principe 08](principes-directeurs/8-gouverner-la-donnee-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
+| Engagement | [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#engagement-demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) |
 | Fulfillment Network / Réseau d'exécution | [Concepts clés](vision/concepts-cles.md#fulfillment-network-reseau-dexecution) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) · [Fiche produit](architecture-cible/produits/fulfillment-network-configuration.md) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Architecture cible](architecture-cible/index.md) |
@@ -159,7 +160,7 @@ Elle doit être distinguée du [Fulfillment](#fulfillment), qui décide comment 
 
 Ensemble des responsabilités permettant de recevoir une demande, l'instruire, décider si et comment elle peut être servie, puis piloter son exécution.
 
-Dans cette expression, Demand porte l'intention et l'engagement ; [Fulfillment](#fulfillment) porte l'arbitrage opérationnel entre cette demande et les capacités [Supply](#supply).
+Dans cette expression, Demand porte l'intention qualifiée et la [promesse](#promesse) à tenir ; [Fulfillment](#fulfillment) porte l'arbitrage opérationnel entre cette demande et les capacités [Supply](#supply).
 
 ### Décision
 
@@ -193,7 +194,9 @@ Elle ne suppose pas une base unique ni une catégorie ERP de type Master Data.
 
 ### Engagement
 
-Promesse ou obligation envers une partie prenante : disponibilité, livraison, prix, service, priorité ou autre condition.
+Espace de relation qui capte l'intention et porte les parcours, interfaces, canaux, négociations ou interactions avec un client, partenaire, fournisseur ou collaborateur.
+
+Dans FLOW, Engagement est adhérent au cœur [Demand & Fulfillment](#demand-fulfillment) : il peut créer une demande, consulter une promesse, suivre un Case ou publier des événements, mais il ne constitue pas le cœur de FLOW.
 
 ### ERP — Enterprise Resource Planning
 
@@ -383,7 +386,9 @@ Représentation consommée par un domaine, issue d'une ou plusieurs sources et a
 
 ### Promesse
 
-Engagement pris sur la capacité à servir une demande : disponibilité, quantité, délai, lieu ou service.
+Obligation ou garantie à tenir sur la capacité à servir une demande : disponibilité, quantité, délai, lieu ou service.
+
+La promesse relève du cœur Demand + Fulfillment : Demand porte la promesse attendue ou déjà donnée ; Fulfillment arbitre la promesse tenable à partir des ressources et contraintes Supply.
 
 ## R
 

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920" role="img" aria-labelledby="title desc">
+  <title id="title">Positionnement de FLOW entre Engagement, Demand, Fulfillment et Supply</title>
+  <desc id="desc">Schéma de périmètre montrant que FLOW porte le cœur Demand et Fulfillment, tandis qu'Engagement et Supply sont des domaines adhérents raccordés par APIs, événements, statuts, contrats de données et règles d'interaction.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7fbfa}
+      .panel{fill:#ffffff;stroke:#d5e6e2;stroke-width:2}
+      .eng{fill:#f2f0fb;stroke:#6d5ea8;stroke-width:2.5}
+      .demand{fill:#e8f5f2;stroke:#21695f;stroke-width:2.5}
+      .fulfill{fill:#fff6e8;stroke:#d98b28;stroke-width:2.5}
+      .supply{fill:#eef4ff;stroke:#4d6fae;stroke-width:2.5}
+      .core{fill:none;stroke:#173f3a;stroke-width:4}
+      .coreFill{fill:#ffffff;stroke:#173f3a;stroke-width:3}
+      .contract{fill:#ffffff;stroke:#91a7a1;stroke-width:2;stroke-dasharray:7 7}
+      .title{font:700 34px Aptos,Calibri,sans-serif;fill:#123f3a}
+      .subtitle{font:600 17px Aptos,Calibri,sans-serif;fill:#58706b}
+      .h{font:700 25px Aptos,Calibri,sans-serif;fill:#173f3a}
+      .hw{font:700 22px Aptos,Calibri,sans-serif;fill:#ffffff}
+      .t{font:500 16px Aptos,Calibri,sans-serif;fill:#24333f}
+      .s{font:600 13px Aptos,Calibri,sans-serif;fill:#62756f}
+      .label{font:700 14px Aptos,Calibri,sans-serif;fill:#21695f;letter-spacing:.5px}
+      .small{font:500 14px Aptos,Calibri,sans-serif;fill:#43544f}
+      .arrow{stroke:#21695f;stroke-width:3.5;fill:none;marker-end:url(#arrow)}
+      .arrow2{stroke:#d98b28;stroke-width:3.5;fill:none;marker-end:url(#arrow2)}
+      .arrow3{stroke:#4d6fae;stroke-width:3.5;fill:none;marker-end:url(#arrow3)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#21695f"/>
+    </marker>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#d98b28"/>
+    </marker>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#4d6fae"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="920" rx="30"/>
+  <text class="title" x="70" y="72">Positionnement de FLOW</text>
+  <text class="subtitle" x="70" y="103">FLOW porte le cœur Demand + Fulfillment. Engagement et Supply sont adhérents, autonomes, mais raccordés contractuellement.</text>
+
+  <rect class="panel" x="55" y="145" width="1490" height="610" rx="28"/>
+
+  <rect class="eng" x="95" y="245" width="300" height="310" rx="24"/>
+  <text class="label" x="130" y="286">DOMAINE ADHÉRENT</text>
+  <text class="h" x="130" y="326">Engagement</text>
+  <text class="t" x="130" y="366">Capte l'intention</text>
+  <text class="t" x="130" y="394">Porte les parcours</text>
+  <text class="t" x="130" y="422">Négocie le contexte</text>
+  <text class="t" x="130" y="450">Pilote l'expérience</text>
+  <text class="s" x="130" y="505">CRM · portails · marketplace</text>
+  <text class="s" x="130" y="529">B2B · B2C · SAV · négoce</text>
+
+  <rect class="coreFill" x="465" y="185" width="665" height="420" rx="30"/>
+  <text class="label" x="690" y="226">CŒUR FLOW</text>
+
+  <rect class="demand" x="505" y="265" width="285" height="265" rx="22"/>
+  <text class="h" x="545" y="309">Demand</text>
+  <text class="t" x="545" y="349">Qualifie la demande</text>
+  <text class="t" x="545" y="377">Porte le Case</text>
+  <text class="t" x="545" y="405">Suit les statuts</text>
+  <text class="t" x="545" y="433">Porte la promesse</text>
+  <text class="s" x="545" y="486">intention qualifiée</text>
+  <text class="s" x="545" y="510">priorité · contexte · promesse</text>
+
+  <rect class="fulfill" x="805" y="265" width="285" height="265" rx="22"/>
+  <text class="h" x="845" y="309">Fulfillment</text>
+  <text class="t" x="845" y="349">Arbitre la promesse</text>
+  <text class="t" x="845" y="377">Choisit la trajectoire</text>
+  <text class="t" x="845" y="405">Alloue et réserve</text>
+  <text class="t" x="845" y="433">Ouvre les exceptions</text>
+  <text class="s" x="845" y="486">promesse tenable</text>
+  <text class="s" x="845" y="510">sourcing · split · priorisation</text>
+
+  <rect class="supply" x="1200" y="245" width="300" height="310" rx="24"/>
+  <text class="label" x="1235" y="286">DOMAINE ADHÉRENT</text>
+  <text class="h" x="1235" y="326">Supply</text>
+  <text class="t" x="1235" y="366">Expose les ressources</text>
+  <text class="t" x="1235" y="394">Publie les contraintes</text>
+  <text class="t" x="1235" y="422">Exécute physiquement</text>
+  <text class="t" x="1235" y="450">Retourne les événements</text>
+  <text class="s" x="1235" y="505">stock · entrepôts · magasins</text>
+  <text class="s" x="1235" y="529">transport · usines · fournisseurs</text>
+
+  <path class="arrow" d="M395 390 L505 390"/>
+  <path class="arrow2" d="M790 390 L805 390"/>
+  <path class="arrow3" d="M1090 390 L1200 390"/>
+
+  <rect class="contract" x="410" y="610" width="335" height="82" rx="18"/>
+  <text class="h" x="450" y="642">Contrats d'entrée</text>
+  <text class="small" x="450" y="670">APIs · événements · demandes · contexte</text>
+
+  <rect class="contract" x="855" y="610" width="335" height="82" rx="18"/>
+  <text class="h" x="895" y="642">Contrats Supply</text>
+  <text class="small" x="895" y="670">disponibilités · SLA · statuts · contraintes</text>
+
+  <path class="arrow" d="M570 610 C560 575 575 555 612 530"/>
+  <path class="arrow3" d="M1024 610 C1035 575 1020 555 980 530"/>
+
+  <rect class="core" x="465" y="185" width="665" height="420" rx="30"/>
+
+  <rect class="panel" x="155" y="790" width="1290" height="72" rx="20"/>
+  <text class="h" x="205" y="834">Règle de périmètre</text>
+  <text class="t" x="395" y="834">FLOW ne remplace pas Engagement ni Supply ; il gouverne la cohérence Demand + Fulfillment qui les relie.</text>
+</svg>

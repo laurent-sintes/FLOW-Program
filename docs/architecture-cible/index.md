@@ -40,6 +40,7 @@ L'architecture cible décrit progressivement comment cette ambition peut se mat�
 ## Pages disponibles
 
 - [Overview de la plateforme FLOW](overview-plateforme-flow.md)
+- [Flux fonctionnels FLOW](flux-fonctionnels-flow.md)
 - [Patterns d'architecture](patterns/index.md)
 - [Fiches produits FLOW](produits/index.md)
 - [FLOW dans l’écosystème GBM](flow-dans-ecosysteme-gbm.md)
@@ -80,6 +81,11 @@ Elles ne figent pas la solution, mais elles structurent les responsabilités, co
 La cible n'est pas encore une architecture détaillée.
 
 Elle pose une première carte de travail : FLOW est une réponse fédérée à la convergence, centrée sur Demand, les Cases, le stock unifié, le réseau d'exécution et les décisions métier qui relient la demande à l'exécution.
+
+Le "comment ça marche" se lit à deux niveaux :
+
+- au niveau Vision, le [Modèle de fonctionnement de FLOW](../vision/modele-fonctionnement-flow.md) explique les notions clés et la chronologie de bout en bout ;
+- au niveau Architecture cible, les [Flux fonctionnels FLOW](flux-fonctionnels-flow.md) montrent comment ces notions traversent les produits, fonctionnalités et contrats d'information.
 
 FLOW ne remplace pas l'ensemble du SI.
 

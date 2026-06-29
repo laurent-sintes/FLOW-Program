@@ -47,7 +47,7 @@ La recommandation est donc de distinguer deux natures de contenus :
 À ce stade, les changements doivent être regroupés en cinq thèmes maximum :
 
 1. ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise ;
-2. passer de “j'achète / je vends” à Demand / Fulfillment / Supply ;
+2. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
 3. réconcilier ERP et OMS dans une plateforme Demand ;
 4. penser fulfillment et satisfaction client avant documents ;
 5. construire le bon niveau de commun.

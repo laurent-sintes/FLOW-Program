@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>7 min</strong>
+      <strong>8 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -49,6 +49,7 @@ Cette vision repose sur cinq convictions fortes :
 - La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit construire le bon niveau de commun pour chaque responsabilité.
 - Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision métier et la satisfaction client / utilisateur.
 - Gérer des commandes n'est plus suffisant : il faut savoir traiter des <span class="flow-keyword">demandes</span>.
+- Le cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span> : qualifier la demande, porter la promesse à tenir et arbitrer la trajectoire d'exécution.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
 
@@ -56,7 +57,9 @@ Cette vision repose sur cinq convictions fortes :
 
 | Concept | Message |
 | --- | --- |
+| <span class="flow-keyword">Engagement</span> | Les parcours, canaux, interfaces et négociations captent l'intention, mais ne constituent pas le cœur de FLOW. |
 | <span class="flow-keyword">Demande</span> | Le point de départ n'est plus la commande, mais l'intention à instruire, décider, promettre, satisfaire et expliquer. |
+| <span class="flow-keyword">Demand + Fulfillment</span> | Le cœur de FLOW qualifie la demande, porte la promesse à tenir et arbitre comment la servir. |
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW gouverne des ressources communes et ouvre des capacités contrôlées aux domaines consommateurs et contributeurs. |
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
 | <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
@@ -143,7 +146,13 @@ Ils doivent devenir des contrats de données gouvernés, publiés et consommés 
 
 FLOW est une <span class="flow-keyword">plateforme</span> de fédération des demandes de l'entreprise.
 
-Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions métier et mobiliser les ressources d'exécution.
+Elle porte le cœur commun <span class="flow-keyword">Demand + Fulfillment</span> : qualifier les demandes, gouverner les décisions métier, porter la promesse à tenir et arbitrer les trajectoires d'exécution.
+
+![Positionnement de FLOW entre Engagement, Demand, Fulfillment et Supply](../assets/images/positionnement-flow-4-domaines.svg)
+
+→ Voir aussi : [Positionnement de FLOW](positionnement-flow.md).
+
+→ Pour comprendre le déroulé opérationnel, voir aussi : [Modèle de fonctionnement de FLOW](modele-fonctionnement-flow.md).
 
 FLOW réécrit donc la <span class="flow-keyword">colonne vertébrale opérationnelle</span> du SI : demandes, décisions métier, stock, promesses, événements, statuts et orchestration transverse.
 
@@ -163,7 +172,15 @@ FLOW n'a pas vocation à absorber tout le SI.
 
 Il doit empêcher que les autonomies locales redeviennent des silos au cœur du traitement de la demande.
 
-Les services existants qui portent une valeur métier spécifique — CBS, SAV Client Sarenza, outils fournisseurs, systèmes logistiques spécialisés — peuvent être réintégrés autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
+<span class="flow-keyword">Engagement</span> et <span class="flow-keyword">Supply</span> sont des domaines adhérents à FLOW.
+
+Engagement capte l'intention et porte les parcours : front-office, CRM, portails, marketplaces, négoce, service client ou outils partenaires.
+
+Supply expose les ressources, capacités, contraintes et événements d'exécution : stock, entrepôts, magasins, transport, usines, fournisseurs ou partenaires logistiques.
+
+Ces domaines conservent leur autonomie, mais ils doivent être raccordés à FLOW par des APIs, événements, contrats de données, statuts, projections ou règles d'interaction.
+
+Les services existants qui portent une valeur métier spécifique — CBS, SAV Client Sarenza, outils fournisseurs, systèmes logistiques spécialisés — peuvent donc être réintégrés autour de FLOW comme consommateurs, contributeurs, sources d'événements ou domaines spécialisés.
 
 <div class="flow-conviction">
   <p>FLOW ne demande pas de tout réécrire.</p>
@@ -208,7 +225,8 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | Ne pas imaginer que... | FLOW vise plutôt à... |
 | --- | --- |
 | FLOW est seulement un projet de remplacement applicatif. | Faire converger des responsabilités critiques aujourd'hui dispersées. |
-| FLOW cherche à mieux gérer les commandes. | Mieux traiter les demandes, y compris commandes, retours, SAV, exceptions et engagements. |
+| FLOW cherche à mieux gérer les commandes. | Mieux traiter les demandes, y compris commandes, retours, SAV, exceptions et promesses à tenir. |
+| FLOW est une plateforme d'engagement. | FLOW laisse Engagement porter les parcours et concentre son cœur sur Demand + Fulfillment. |
 | FLOW impose un modèle unique à toutes les marques. | Construire une plateforme commune qui préserve les singularités business utiles. |
 | FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision métier, le stock et le réseau d'exécution. |
 | FLOW doit absorber tout le SI. | Réécrire la colonne vertébrale opérationnelle du SI, pas tous ses organes spécialisés. |

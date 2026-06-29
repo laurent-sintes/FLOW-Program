@@ -28,6 +28,8 @@ nav:
       - vision/index.md
       - Abstract: vision/abstract.md
       - Vision: vision/vision.md
+      - Positionnement de FLOW: vision/positionnement-flow.md
+      - Modèle de fonctionnement: vision/modele-fonctionnement-flow.md
       - Vision détaillée:
           - Sommaire: vision/vision-detaillee/index.md
           - Ambition: vision/vision-detaillee/1-ambition.md
@@ -40,6 +42,7 @@ nav:
   - Architecture cible:
       - Repères: architecture-cible/index.md
       - Overview de la plateforme FLOW: architecture-cible/overview-plateforme-flow.md
+      - Flux fonctionnels FLOW: architecture-cible/flux-fonctionnels-flow.md
       - Patterns d'architecture:
           - Repères: architecture-cible/patterns/index.md
           - Case-centric orchestration: architecture-cible/patterns/case-centric-orchestration.md

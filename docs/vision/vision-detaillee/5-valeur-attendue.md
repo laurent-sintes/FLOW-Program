@@ -167,7 +167,7 @@ Mais FLOW doit produire, conserver ou transmettre les faits, événements, docum
 FLOW réussira si le groupe constate progressivement :
 
 - Moins de décisions métier contradictoires entre applications.
-- Une meilleure cohérence des promesses et engagements.
+- Une meilleure cohérence des promesses et obligations explicites.
 - Une vision plus fiable des ressources disponibles.
 - Une meilleure capacité à traiter les exceptions.
 - Une meilleure capacité à expliquer les décisions métier, choix opérationnels et changements de statut.

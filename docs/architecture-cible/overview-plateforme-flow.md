@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>5 min</strong>
+      <strong>6 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -37,6 +37,53 @@ Le point de départ est :
 FLOW est ici décrit comme une plateforme Demand fédérée.
 
 Elle est centrée sur les Cases, enrichie par des services partagés et des projections opérationnelles.
+
+## Périmètre fonctionnel : quatre domaines
+
+Le positionnement de FLOW se lit à travers quatre domaines.
+
+![Positionnement de FLOW entre Engagement, Demand, Fulfillment et Supply](../assets/images/positionnement-flow-4-domaines.svg)
+
+En lecture d'architecture fonctionnelle :
+
+- <span class="flow-keyword">Engagement</span> capte l'intention et porte les parcours, interfaces, canaux et négociations.
+- <span class="flow-keyword">Demand</span> qualifie la demande, porte le Case, le contexte, les statuts et la promesse à tenir.
+- <span class="flow-keyword">Fulfillment</span> arbitre la promesse tenable, l'allocation, le sourcing, la priorisation et la trajectoire d'exécution.
+- <span class="flow-keyword">Supply</span> expose les ressources, capacités, contraintes, SLA et événements d'exécution.
+
+Le périmètre cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span>.
+
+Engagement et Supply restent adhérents : ils conservent leur autonomie, mais doivent être raccordés par des APIs, événements, statuts, projections, règles d'interaction et contrats de données.
+
+## Deux niveaux de lecture du fonctionnement
+
+Le "comment ça marche" doit rester lisible à deux niveaux.
+
+Au niveau Vision, on explique le modèle mental : intention, Case, fait, événement, règle, décision, promesse, plan d'exécution et retours d'information.
+
+Au niveau Architecture cible, on montre comment ces notions traversent les produits FLOW, les fonctionnalités attendues et les contrats d'information.
+
+→ Niveau vision : [Modèle de fonctionnement de FLOW](../vision/modele-fonctionnement-flow.md).
+
+→ Niveau architecture : [Flux fonctionnels FLOW](flux-fonctionnels-flow.md).
+
+## Chronologie fonctionnelle
+
+Le fonctionnement de FLOW doit aussi être lu dans le temps.
+
+![Chronologie Engagement vers FLOW vers Supply](../assets/images/chronologie-engagement-supply-flow.svg)
+
+Cette chronologie montre le cycle fonctionnel minimal :
+
+- Engagement crée ou actualise une intention.
+- FLOW porte la demande dans un Case.
+- Demand enrichit la demande avec contexte, Agreement, priorité et promesse attendue.
+- Fulfillment applique les règles, interroge les ressources et décide une promesse tenable.
+- Supply exécute ou confirme selon le plan.
+- Les faits, statuts et événements remontent vers FLOW.
+- Le Case reste à jour et peut être réarbitré en cas d'exception.
+
+→ Pour la lecture pédagogique complète, voir : [Modèle de fonctionnement de FLOW](../vision/modele-fonctionnement-flow.md).
 
 ## Schéma d'overview
 

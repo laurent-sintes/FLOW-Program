@@ -271,7 +271,7 @@ C'est typiquement le genre de variation métier que FLOW doit absorber sans mult
 
 Le module Négoce de StoreLand porte plusieurs responsabilités : client, assortiment, commercial agreement, catalogue, prix, conditions commerciales et commandes d'achat.
 
-Certaines relèvent plutôt du design commercial et du domaine d'Engagement.
+Certaines relèvent plutôt du design commercial et d'Engagement.
 
 D'autres peuvent relever de FLOW si elles participent au cycle de vie transverse d'une demande, à l'approvisionnement, à la promesse, à l'allocation ou à l'exécution.
 

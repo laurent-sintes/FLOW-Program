@@ -144,6 +144,8 @@ Fichiers clés :
 - `docs/vision/index.md`
 - `docs/vision/abstract.md`
 - `docs/vision/vision.md`
+- `docs/vision/positionnement-flow.md`
+- `docs/vision/modele-fonctionnement-flow.md`
 - `docs/vision/vision-detaillee/`
 - `docs/vision/concepts-cles.md`
 - `docs/vision/note-choix-strategique.md`
@@ -192,6 +194,7 @@ Fichiers clés :
 
 - `docs/architecture-cible/index.md`
 - `docs/architecture-cible/overview-plateforme-flow.md`
+- `docs/architecture-cible/flux-fonctionnels-flow.md`
 - `docs/architecture-cible/patterns/`
 - `docs/architecture-cible/produits/`
 - `docs/architecture-cible/flow-dans-ecosysteme-gbm.md`
@@ -362,7 +365,7 @@ Concepts à maintenir dans le temps :
 - convergence sans nécessairement uniformiser ;
 - bon niveau de commun ;
 - plateforme fédérale et multi-tenant ;
-- articulation Demand / Fulfillment / Supply ;
+- articulation Engagement / Demand / Fulfillment / Supply ;
 - demande comme objet métier central ;
 - Case comme support durable de la demande ;
 - décision métier explicite, traçable et gouvernée ;

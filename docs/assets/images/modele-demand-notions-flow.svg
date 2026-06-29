@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">Modèle mental des notions FLOW</title>
+  <desc id="desc">Carte des notions qui expliquent comment FLOW traite une demande : intention, Case, contexte, fait, événement, règle, décision, promesse, plan d'exécution, ressource, statut et exception.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7fbfa}
+      .panel{fill:#ffffff;stroke:#d8e7e3;stroke-width:2}
+      .core{fill:#21695f;stroke:#123f3a;stroke-width:3}
+      .flow{fill:#e8f5f2;stroke:#21695f;stroke-width:2.5}
+      .decide{fill:#fff6e8;stroke:#d98b28;stroke-width:2.5}
+      .external{fill:#f2f0fb;stroke:#6d5ea8;stroke-width:2.5}
+      .supply{fill:#eef4ff;stroke:#4d6fae;stroke-width:2.5}
+      .trace{fill:#ffffff;stroke:#91a7a1;stroke-width:2;stroke-dasharray:7 7}
+      .title{font:700 34px Aptos,Calibri,sans-serif;fill:#123f3a}
+      .subtitle{font:600 17px Aptos,Calibri,sans-serif;fill:#58706b}
+      .h{font:700 22px Aptos,Calibri,sans-serif;fill:#173f3a}
+      .hw{font:700 25px Aptos,Calibri,sans-serif;fill:#ffffff}
+      .t{font:500 15px Aptos,Calibri,sans-serif;fill:#24333f}
+      .tw{font:500 15px Aptos,Calibri,sans-serif;fill:#eaf5f3}
+      .s{font:600 13px Aptos,Calibri,sans-serif;fill:#62756f}
+      .label{font:700 13px Aptos,Calibri,sans-serif;fill:#21695f;letter-spacing:0}
+      .arrow{stroke:#21695f;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .arrow2{stroke:#d98b28;stroke-width:3;fill:none;marker-end:url(#arrow2)}
+      .arrow3{stroke:#4d6fae;stroke-width:3;fill:none;marker-end:url(#arrow3)}
+      .dash{stroke:#6d5ea8;stroke-width:2.5;fill:none;stroke-dasharray:8 8;marker-end:url(#arrow4)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#21695f"/>
+    </marker>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#d98b28"/>
+    </marker>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#4d6fae"/>
+    </marker>
+    <marker id="arrow4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10z" fill="#6d5ea8"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="980" rx="30"/>
+  <text class="title" x="70" y="72">Modèle mental des notions FLOW</text>
+  <text class="subtitle" x="70" y="103">Comprendre qui fait quoi dans le traitement d'une demande : faits, événements, règles, décisions, promesses et retours d'information.</text>
+
+  <rect class="panel" x="55" y="140" width="1490" height="735" rx="28"/>
+
+  <rect class="external" x="95" y="245" width="250" height="160" rx="20"/>
+  <text class="label" x="125" y="282">ENGAGEMENT</text>
+  <text class="h" x="125" y="318">Intention</text>
+  <text class="t" x="125" y="350">parcours, canal</text>
+  <text class="t" x="125" y="374">contexte relationnel</text>
+
+  <rect class="flow" x="420" y="210" width="300" height="230" rx="24"/>
+  <text class="label" x="455" y="248">DEMAND</text>
+  <text class="h" x="455" y="286">Case</text>
+  <text class="t" x="455" y="322">demande qualifiée</text>
+  <text class="t" x="455" y="350">contexte et statut</text>
+  <text class="t" x="455" y="378">promesse attendue</text>
+  <text class="s" x="455" y="416">l'objet qui reste lisible</text>
+
+  <rect class="flow" x="420" y="510" width="300" height="165" rx="20"/>
+  <text class="h" x="455" y="552">Contexte</text>
+  <text class="t" x="455" y="584">Agreement, priorité</text>
+  <text class="t" x="455" y="610">client, canal, pays</text>
+  <text class="t" x="455" y="636">contraintes métier</text>
+
+  <rect class="decide" x="805" y="210" width="300" height="230" rx="24"/>
+  <text class="label" x="840" y="248">FULFILLMENT</text>
+  <text class="h" x="840" y="286">Décision</text>
+  <text class="t" x="840" y="322">applique règles</text>
+  <text class="t" x="840" y="350">compare contraintes</text>
+  <text class="t" x="840" y="378">arbitre la promesse</text>
+  <text class="s" x="840" y="416">explicable et traçable</text>
+
+  <rect class="decide" x="805" y="510" width="300" height="165" rx="20"/>
+  <text class="h" x="840" y="552">Règle / policy</text>
+  <text class="t" x="840" y="584">priorisation</text>
+  <text class="t" x="840" y="610">éligibilité</text>
+  <text class="t" x="840" y="636">fallback ou exception</text>
+
+  <rect class="supply" x="1235" y="245" width="250" height="160" rx="20"/>
+  <text class="label" x="1265" y="282">SUPPLY</text>
+  <text class="h" x="1265" y="318">Ressource</text>
+  <text class="t" x="1265" y="350">stock, capacité</text>
+  <text class="t" x="1265" y="374">SLA, contrainte</text>
+
+  <rect class="supply" x="1235" y="510" width="250" height="165" rx="20"/>
+  <text class="h" x="1265" y="552">Fait / event</text>
+  <text class="t" x="1265" y="584">disponibilité</text>
+  <text class="t" x="1265" y="610">confirmation</text>
+  <text class="t" x="1265" y="636">exception terrain</text>
+
+  <rect class="core" x="610" y="735" width="380" height="90" rx="22"/>
+  <text class="hw" x="675" y="772">Promesse + plan</text>
+  <text class="tw" x="675" y="802">ce qui est décidé, expliqué et suivi</text>
+
+  <rect class="trace" x="180" y="735" width="340" height="90" rx="20"/>
+  <text class="h" x="220" y="772">Journal du Case</text>
+  <text class="t" x="220" y="802">faits, événements, décisions, statuts</text>
+
+  <rect class="trace" x="1080" y="735" width="340" height="90" rx="20"/>
+  <text class="h" x="1120" y="772">Projection consommable</text>
+  <text class="t" x="1120" y="802">vue statut, promesse, disponibilité</text>
+
+  <path class="arrow" d="M345 325 L420 325"/>
+  <path class="arrow" d="M720 325 L805 325"/>
+  <path class="arrow3" d="M1105 325 L1235 325"/>
+  <path class="dash" d="M1235 590 C1140 560 1120 505 1030 440"/>
+  <path class="arrow2" d="M955 440 L955 510"/>
+  <path class="arrow2" d="M955 675 C930 710 900 725 860 735"/>
+  <path class="arrow" d="M570 440 L570 510"/>
+  <path class="arrow" d="M570 675 C600 705 640 722 695 735"/>
+  <path class="dash" d="M805 780 L520 780"/>
+  <path class="dash" d="M990 780 L1080 780"/>
+
+  <text class="s" x="365" y="306">crée</text>
+  <text class="s" x="742" y="306">demande une décision</text>
+  <text class="s" x="1135" y="306">interroge / mobilise</text>
+  <text class="s" x="1095" y="548">remonte faits et événements</text>
+</svg>

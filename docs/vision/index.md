@@ -62,6 +62,8 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 
 - [Abstract](abstract.md) — lecture en une page du problème, du choix et de la valeur attendue.
 - [Vision](vision.md) — synthèse programme structurée.
+- [Positionnement de FLOW](positionnement-flow.md) — schéma des quatre domaines et du cœur Demand + Fulfillment.
+- [Modèle de fonctionnement de FLOW](modele-fonctionnement-flow.md) — niveau Vision du "comment ça marche" : notions clés et chronologie de bout en bout.
 - [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 - [Concepts clés du programme FLOW](concepts-cles.md) — les mots et idées qui structurent la vision.
 - [Note de choix stratégique](note-choix-strategique.md) — formulation orientée arbitrage COMEX.
@@ -90,4 +92,4 @@ Elle transforme donc les observations du programme en ambition de transformation
 
 Cliquer sur la section Vision doit d'abord permettre de comprendre ce qu'est une vision et pourquoi elle structure le programme.
 
-La vision spécifique du programme FLOW est portée par un abstract, une vision synthétique, une vision détaillée, une page de concepts clés et une note de choix stratégique.
+La vision spécifique du programme FLOW est portée par un abstract, une vision synthétique, une page de positionnement, un modèle de fonctionnement, une vision détaillée, une page de concepts clés et une note de choix stratégique.

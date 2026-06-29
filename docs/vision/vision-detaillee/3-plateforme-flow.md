@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>7 min</strong>
+      <strong>8 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -29,7 +29,7 @@ FLOW est une <span class="flow-keyword">plateforme</span> de fédération des de
 
 Elle n'a pas vocation à remplacer tout le SI.
 
-Elle porte le cœur commun qui permet de traiter les demandes, gouverner les décisions métier et mobiliser les ressources d'exécution.
+Elle porte le cœur commun <span class="flow-keyword">Demand + Fulfillment</span> qui permet de qualifier les demandes, gouverner les décisions métier, rendre les promesses tenables et mobiliser les ressources d'exécution.
 
 ## Lecture synthétique : ce que FLOW porte, ce que FLOW ne porte pas
 
@@ -40,9 +40,9 @@ Elle porte le cœur commun qui permet de traiter les demandes, gouverner les dé
 
 | FLOW porte | FLOW ne porte pas |
 | --- | --- |
-| Les <span class="flow-keyword">demandes</span> et leur cycle de vie | Les expériences client, interfaces et parcours d'engagement |
+| Les <span class="flow-keyword">demandes</span> et leur cycle de vie | Engagement : expériences client, interfaces, canaux, parcours et négociations |
 | Les <span class="flow-keyword">décisions métier</span>, règles, policies et choix de traitement liés à la demande | La totalité des règles locales ou métiers lorsqu'elles relèvent d'un domaine spécialisé |
-| Le <span class="flow-keyword">Stock Unifié</span>, la promesse, la réservation et l'allocation | Les opérations physiques de magasin, entrepôt, transport ou douane |
+| Le <span class="flow-keyword">Fulfillment</span>, la promesse tenable, la réservation et l'allocation | Supply : opérations physiques de magasin, entrepôt, transport ou douane |
 | Le <span class="flow-keyword">Fulfillment Network</span> et les capacités mobilisables | Les WMS, TMS, POS, outils fournisseurs ou systèmes d'exécution spécialisés |
 | Les <span class="flow-keyword">événements</span>, statuts, documents et faits nécessaires à la traçabilité du Case | La Finance, le PLM, le PIM complet, le CRM ou les outils de conception produit |
 | Les <span class="flow-keyword">contrats de données</span> et la gouvernance des échanges critiques | Les applications satellites lorsqu'elles portent une valeur métier spécifique |
@@ -52,6 +52,10 @@ Cette lecture est essentielle.
 FLOW est central là où la cohérence est critique.
 
 FLOW reste ouvert là où les domaines doivent continuer à agir, configurer, contribuer ou exécuter.
+
+La frontière doit être explicite : <span class="flow-keyword">Engagement</span> et <span class="flow-keyword">Supply</span> sont adhérents à FLOW, mais ne sont pas absorbés par FLOW.
+
+Engagement capte l'intention et porte les parcours. Supply expose les ressources et exécute. FLOW qualifie la demande, porte la promesse à tenir et arbitre le Fulfillment.
 
 ## Modèle plateforme : un cœur gouverné, des extensions ouvertes
 
@@ -70,7 +74,7 @@ Dans FLOW, ces ressources sont notamment :
 - Les <span class="flow-keyword">décisions métier</span>, règles et politiques de traitement.
 - Le <span class="flow-keyword">Stock Unifié</span>.
 - Le <span class="flow-keyword">Fulfillment Network</span>.
-- Les capacités d'allocation, de réservation, de promesse et d'orchestration.
+- Les capacités de Fulfillment : allocation, réservation, promesse tenable, sourcing, priorisation et orchestration.
 - Les événements, faits, documents et vues nécessaires à la traçabilité.
 - Les contrats de données qui encadrent la publication, la consommation, la fraîcheur, la qualité et la supervision des données en transit.
 

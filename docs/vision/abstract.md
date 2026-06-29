@@ -59,7 +59,7 @@
   <section class="flow-canvas-card flow-canvas-card--dark">
     <h2>Proposition</h2>
     <p class="flow-canvas-punchline">Une plateforme <span class="flow-keyword">Demand</span> commune, ouverte et gouvernée.</p>
-    <p>FLOW combine <span class="flow-keyword">Case Management</span>, <span class="flow-keyword">Stock Unifié</span>, <span class="flow-keyword">Réseau d'Exécution</span>, décisions métier, règles, événements, documents et vues 360.</p>
+    <p>Le cœur FLOW est <span class="flow-keyword">Demand + Fulfillment</span> : demandes, promesses à tenir, décisions métier, règles, événements, documents et vues 360.</p>
   </section>
 
   <section class="flow-canvas-card flow-canvas-card--dark">
@@ -72,6 +72,7 @@
     <h2>Ce que FLOW porte</h2>
     <ul>
       <li><span class="flow-keyword">Demandes</span> et cycle de vie.</li>
+      <li><span class="flow-keyword">Fulfillment</span>, promesse tenable, allocation et trajectoire d'exécution.</li>
       <li><span class="flow-keyword">Décisions métier</span>, règles, policies et agreements.</li>
       <li><span class="flow-keyword">Stock Unifié</span>, disponibilité, réservation et allocation.</li>
       <li><span class="flow-keyword">Réseau d'Exécution</span> et capacités logistiques.</li>
@@ -83,19 +84,19 @@
   <section class="flow-canvas-card">
     <h2>Ce que FLOW ne porte pas</h2>
     <ul>
-      <li>Les expériences client et interfaces d'engagement.</li>
+      <li>Engagement : expériences client, parcours, interfaces, canaux et négociations.</li>
       <li>Le PLM complet et la conception produit amont.</li>
       <li>La Finance comme système comptable.</li>
-      <li>Les WMS, TMS, POS et opérations physiques spécialisées.</li>
+      <li>Supply : WMS, TMS, POS et opérations physiques spécialisées.</li>
       <li>Les outils spécialisés qui conservent une valeur propre.</li>
     </ul>
   </section>
 
   <section class="flow-canvas-card">
-    <h2>Utilisateurs de la plateforme</h2>
+    <h2>Domaines adhérents</h2>
     <ul>
-      <li>Marques, enseignes, B2C, B2B, retail, wholesale, marketplace.</li>
-      <li>Supply, C-LOG, partenaires logistiques, transporteurs.</li>
+      <li>Engagement : marques, enseignes, B2C, B2B, retail, wholesale, marketplace.</li>
+      <li>Supply : C-LOG, partenaires logistiques, transporteurs, entrepôts, magasins.</li>
       <li>SAV, CBS, outils fournisseurs et systèmes spécialisés.</li>
       <li>Finance, audit, contrôle et reporting.</li>
       <li>Équipes IT, produit, data, architecture et intégration.</li>

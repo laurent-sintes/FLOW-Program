@@ -65,11 +65,11 @@ Il signifie que l'on ne part plus d'abord de la facture, de la commande ou du mo
 
 On part de la demande à comprendre, promettre, exécuter et expliquer.
 
-## Demand / Fulfillment / Supply : dépasser achat / vente
+## Engagement / Demand / Fulfillment / Supply : dépasser achat / vente
 
 <div class="flow-conviction">
   <p>FLOW ne découpe pas le SI selon “j'achète” ou “je vends”.</p>
-  <p>FLOW distingue ce qui est demandé, la décision qui arbitre comment le servir, et ce qui permet d'exécuter.</p>
+  <p>FLOW distingue ce qui capte l'intention, ce qui qualifie la demande, ce qui arbitre comment la servir, et ce qui permet d'exécuter.</p>
 </div>
 
 L'approche classique consiste souvent à découper le SI selon les organisations, les canaux ou les processus :
@@ -86,20 +86,27 @@ FLOW propose une autre lecture.
 
 Au lieu de partir de l'organisation existante, FLOW part des problèmes durables de l'entreprise.
 
-Cette approche conduit à distinguer trois responsabilités :
+Cette approche conduit à distinguer quatre responsabilités, dont deux constituent le cœur de FLOW :
 
 ```text
+Engagement
+    Les parcours, canaux, interfaces et négociations qui captent l'intention
+
 Demand
-    Les demandes à instruire, décider, promettre, suivre et expliquer
+    Les demandes à qualifier, instruire, promettre, suivre et expliquer
 
 Fulfillment
-    Les décisions de promesse, allocation, sourcing, priorisation et trajectoire d'exécution
+    Les décisions de promesse tenable, allocation, sourcing, priorisation et trajectoire d'exécution
 
 Supply
     Les ressources, lieux, partenaires et capacités d'exécution à mobiliser
 ```
 
-La demande devient le point de départ.
+Le cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span>.
+
+<span class="flow-keyword">Engagement</span> et <span class="flow-keyword">Supply</span> sont adhérents à FLOW : ils conservent leurs responsabilités propres, mais ils doivent exposer ou consommer les capacités, événements, statuts et contrats de données nécessaires à la cohérence de bout en bout.
+
+La demande devient le point de départ du cœur FLOW.
 
 Une commande client, une commande B2B, une demande SAV, un retour, une exception, une allocation, une promesse ou une demande fournisseur sont des formes différentes d'un même problème : comprendre une intention, prendre des décisions de Fulfillment, mobiliser des ressources et garantir une exécution fiable.
 
