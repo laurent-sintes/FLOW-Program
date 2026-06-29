@@ -45,6 +45,7 @@ Il fonctionne comme une base de connaissance structurée :
 | Source datée | D'où vient l'information ? Quand a-t-elle été observée ? | Page concernée, notes d'analyse, insights |
 | Fait observé | Qu'est-ce qui a été dit, constaté ou confirmé ? | `contexte/`, `hotspots/`, `insights/` |
 | Insight | Qu'est-ce que ce fait change dans notre compréhension de FLOW ? | `insights/`, parfois `vision/` ou `principes-directeurs/` |
+| Question fréquente | Quel malentendu ou quelle objection revient souvent chez les lecteurs ? | `faq/index.md` pour les nouveaux, puis `faq/` pour les questions d'experts |
 | Vision | Pourquoi FLOW existe et quelle ambition il porte ? | `vision/` |
 | Principe directeur | Quelle règle durable doit guider les arbitrages futurs ? | `principes-directeurs/` |
 | Concept clé | Quel vocabulaire structure la pensée FLOW ? | `vision/concepts-cles.md`, `glossaire.md` |

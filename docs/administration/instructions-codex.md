@@ -137,6 +137,25 @@ Impact à vérifier :
 
 - toute nouvelle section majeure doit apparaître dans l'accueil si elle change le parcours de lecture.
 
+### FAQ
+
+Fichiers clés :
+
+- `docs/faq/index.md`
+- `docs/faq/`
+
+Rôle :
+
+- répondre aux questions des nouveaux sans les noyer dans l'architecture ;
+- séparer les questions pour les nouveaux des questions pour les experts ;
+- orienter vers les analyses expertes sans alourdir la page principale.
+
+Impact à vérifier :
+
+- une question pour les nouveaux doit rester courte dans `docs/faq/index.md` ;
+- une question pour les experts doit avoir une page dédiée dans `docs/faq/`, avec un résumé et un lien depuis `docs/faq/index.md` ;
+- toute réponse experte doit être rapprochée des pages internes concernées : vision, principes, hotspots, insights, architecture cible ou glossaire.
+
 ### Vision
 
 Fichiers clés :

@@ -36,7 +36,7 @@
   </a>
   <a class="flow-card" href="faq/">
     <strong>FAQ</strong>
-    <span>Les réponses courtes aux questions et malentendus les plus fréquents.</span>
+    <span>Les questions pour les nouveaux, avec des pages séparées pour les sujets d'experts.</span>
   </a>
   <a class="flow-card flow-card--context" href="contexte/">
     <strong>Contexte</strong>
