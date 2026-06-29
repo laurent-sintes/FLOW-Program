@@ -27,7 +27,7 @@ nav:
   - FAQ:
       - faq/index.md
       - Questions pour les experts:
-          - Stock temps réel: faq/stock-temps-reel.md
+          - À quoi ça sert un stock temps réel ?: faq/stock-temps-reel.md
   - Vision:
       - vision/index.md
       - Abstract: vision/abstract.md
