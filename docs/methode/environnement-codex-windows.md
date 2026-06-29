@@ -132,12 +132,32 @@ git push
 
 Codex peut exécuter certaines commandes dans un bac à sable plus restrictif que le PowerShell Windows classique.
 
+Ce bac à sable, ou sandbox, est une protection : il limite ce qu'un agent peut faire sur le poste sans validation explicite. Il peut empêcher l'écriture dans certains répertoires sensibles, l'accès à des secrets Windows, l'utilisation du keyring GitHub ou l'exécution de certains programmes installés dans le profil utilisateur.
+
+Il faut donc distinguer deux niveaux de validation :
+
+- la commande fonctionne dans Windows ou dans PowerShell ;
+- la commande fonctionne depuis Codex, avec ou sans autorisation hors sandbox.
+
+Une erreur dans Codex ne signifie pas automatiquement que l'installation Windows est mauvaise.
+
 Deux symptômes peuvent alors apparaître :
 
 - `Permission denied` lors d'un `git fetch`, parce que Git doit écrire dans `.git/FETCH_HEAD` ;
 - `Accès refusé` ou `python` non résolu lors de l'exécution du Python installé localement.
+- `gh auth status` peut échouer dans la sandbox si Codex n'accède pas correctement au keyring Windows.
 
-Dans ce cas, cela ne signifie pas forcément que Git, Python ou GitHub sont mal installés. Il faut vérifier la même commande hors bac à sable, avec l'autorisation Codex demandée à l'écran, ou dans un PowerShell Windows classique.
+La bonne méthode est de tester la même commande hors bac à sable, avec l'autorisation Codex demandée à l'écran, ou dans un PowerShell Windows classique.
+
+Si la commande passe hors sandbox, le composant est considéré comme sain :
+
+- Git est sain si `git fetch` passe hors sandbox ;
+- GitHub CLI est sain si `gh auth status` confirme l'authentification hors sandbox ;
+- Python est sain si `python --version`, `python -m pip --version` et `.\.venv\Scripts\python.exe -m mkdocs --version` passent hors sandbox.
+
+Le problème n'est alors pas l'installation elle-même, mais le niveau d'autorisation utilisé par Codex pour exécuter la commande.
+
+Dans ce projet, c'est le fonctionnement attendu : les commandes sensibles peuvent demander une autorisation ponctuelle ou persistante, puis le travail peut continuer normalement.
 
 ## État de référence
 
