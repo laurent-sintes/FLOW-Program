@@ -1,4 +1,5 @@
 site/
 .venv/
+.agents/
 __pycache__/
 *.py[cod]
