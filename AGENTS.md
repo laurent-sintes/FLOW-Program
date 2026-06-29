@@ -113,6 +113,8 @@ Après un changement validé :
 - pousser sur `main` si l'utilisateur a demandé ou validé la publication ;
 - vérifier que `git status -sb` revient à `main...origin/main`.
 
+Si un push qui modifie `.github/workflows/` est refusé, vérifier le scope GitHub CLI `workflow`. La procédure est documentée dans `docs/administration/environnement-codex-windows.md`.
+
 Pour les détails d'environnement Windows, se référer à :
 
 ```text

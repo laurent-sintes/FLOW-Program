@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>4 min</strong>
+      <strong>5 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -195,8 +195,36 @@ Résultat attendu :
 ```text
 Logged in to github.com account laurent-sintes
 Git operations protocol: https
-Token scopes: repo
+Token scopes: gist, read:org, repo
 ```
+
+Le scope `workflow` est nécessaire dès qu'un commit modifie un fichier dans `.github/workflows/`.
+
+Sans ce scope, le push peut être refusé par GitHub avec un message proche de :
+
+```text
+refusing to allow an OAuth App to create or update workflow `.github/workflows/...` without `workflow` scope
+```
+
+Les droits GitHub CLI peuvent expirer, être réinitialisés ou avoir été accordés avant qu'un nouveau besoin apparaisse. Dans ce cas, relancer l'autorisation depuis un PowerShell Windows classique :
+
+```powershell
+gh auth refresh --hostname github.com --scopes workflow
+```
+
+Puis vérifier :
+
+```powershell
+gh auth status
+```
+
+Résultat attendu pour modifier les workflows :
+
+```text
+Token scopes: gist, read:org, repo, workflow
+```
+
+Cette procédure doit être faite côté Windows, pas depuis Codex, car elle peut ouvrir le navigateur et accéder au keyring Windows.
 
 Pour pousser les changements :
 
@@ -225,6 +253,7 @@ Deux symptômes peuvent alors apparaître :
 - `Permission denied` lors d'un `git fetch`, parce que Git doit écrire dans `.git/FETCH_HEAD` ;
 - `Accès refusé` ou `python` non résolu lors de l'exécution du Python installé localement.
 - `gh auth status` peut échouer dans la sandbox si Codex n'accède pas correctement au keyring Windows.
+- un push qui modifie `.github/workflows/` peut être refusé si le token GitHub CLI n'a pas le scope `workflow`.
 
 La bonne méthode est de tester la même commande hors bac à sable, avec l'autorisation Codex demandée à l'écran, ou dans un PowerShell Windows classique.
 
@@ -248,5 +277,6 @@ L'environnement est considéré comme sain lorsque :
 - `.\scripts\build-docs.ps1` construit le site ;
 - `.\scripts\check-site.ps1` valide les contrôles automatisés ;
 - `gh auth status` confirme l'authentification GitHub ;
+- `gh auth status` affiche le scope `workflow` lorsque les workflows GitHub Actions doivent être modifiés ;
 - `git fetch` passe ;
 - `git status -sb` ne montre pas de changements inattendus hors contenu volontaire.
