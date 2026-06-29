@@ -175,6 +175,7 @@ Après intégration :
 - relancer `.\scripts\check-site.ps1` ;
 - lancer `.\scripts\check-site.ps1 -ExternalLinks` si des références Internet ont été ajoutées ou modifiées ;
 - lancer `.\scripts\doctor.ps1` si le problème observé ressemble à un souci d'environnement local ;
+- vérifier le [multilingue et traduction](multilingue-traduction.md) si le changement touche le build, la navigation, la structure de page ou le glossaire ;
 - vérifier le diff ;
 - vérifier que les cartouches utilisent les rôles du référentiel ;
 - vérifier que les liens, concepts, hotspots et pages d'impact sont cohérents.
@@ -262,4 +263,5 @@ Avant de considérer une contribution comme intégrée :
 - les schémas SVG ajoutés ou modifiés sont valides ;
 - les schémas impactés par un concept ajouté, renommé ou supprimé ont été vérifiés dans le [Référentiel des schémas](referentiel-schemas.md) ;
 - les alertes d'environnement ont été diagnostiquées avec `.\scripts\doctor.ps1` quand elles ne relèvent pas du contenu ;
+- le build multilingue `/fr/` et `/en/` reste cohérent si le changement touche la structure du site ;
 - `.\scripts\check-site.ps1` passe sans erreur.

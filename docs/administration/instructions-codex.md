@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>11 min</strong>
+      <strong>12 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -32,8 +32,12 @@ Le projet est un site MkDocs Material.
 
 Le site généré localement n'est pas un livrable final :
 
-- `site/` est généré par MkDocs ;
+- `site/` est généré par MkDocs en mode multilingue ;
+- `site/fr/` contient la version française ;
+- `site/en/` contient la version anglaise générée ;
+- `.generated/` contient les sources temporaires de build multilingue ;
 - `site/` ne doit jamais être committé ;
+- `.generated/` ne doit jamais être committé ;
 - `.venv/` ne doit jamais être committé ;
 - `.agents/` est un dossier local éventuel, non versionné.
 - `.gitattributes` stabilise les fins de ligne du dépôt en `LF` pour éviter le bruit Windows / Linux.
@@ -54,10 +58,20 @@ Pour construire le site local, utiliser :
 
 Cette commande :
 
-- lance `mkdocs build --strict` ;
+- lance `scripts\build_multilang.py` ;
+- génère les configurations MkDocs temporaires pour `/fr/` et `/en/` ;
+- lance `mkdocs build --strict` pour chaque langue ;
 - masque le bandeau Material for MkDocs sur MkDocs 2.0 via `NO_MKDOCS_2_WARNING` ;
 - fonctionne dans un PowerShell Windows classique ;
 - fonctionne aussi depuis Codex en utilisant le runtime Python embarqué si la sandbox bloque le Python local.
+
+Pour maintenir la stratégie multilingue, se référer à :
+
+```text
+docs/administration/multilingue-traduction.md
+```
+
+Le français reste la source de référence dans `docs/`. La version anglaise est générée dans `.generated/i18n/en/` puis publiée dans `site/en/`. Tant que le cache de traduction n'est pas branché, le build anglais ajoute un bandeau indiquant que la page est générée depuis la source française.
 
 Pour lancer la validation complète du référentiel, utiliser :
 
@@ -80,6 +94,8 @@ Utiliser ce contrôle quand une page ajoute ou modifie des références Internet
 ```
 
 Depuis Codex, ce contrôle peut être ignoré si le runtime embarqué bloque HTTPS. Dans ce cas, lancer la commande depuis un PowerShell Windows classique.
+
+GitHub Actions construit aussi le site multilingue et exécute `scripts\check_site.py --external-links` avant publication GitHub Pages. Le scope GitHub CLI `workflow` est nécessaire pour modifier ce workflow.
 
 Pour ajouter du contenu documentaire, en particulier à partir d'une réunion ou d'un atelier, se référer à :
 

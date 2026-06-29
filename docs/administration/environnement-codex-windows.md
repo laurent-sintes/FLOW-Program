@@ -130,7 +130,22 @@ site/
 
 Ce répertoire est généré automatiquement. Il ne doit pas être poussé sur GitHub.
 
-Cette commande active `NO_MKDOCS_2_WARNING` avant le build afin de masquer le bandeau d'alerte Material for MkDocs sur MkDocs 2.0. Le projet reste construit avec `mkdocs build --strict`.
+Le build produit maintenant deux langues :
+
+```powershell
+site/fr/
+site/en/
+```
+
+Le dossier temporaire suivant est aussi généré localement :
+
+```powershell
+.generated/i18n/
+```
+
+Il ne doit pas être poussé sur GitHub.
+
+Cette commande active `NO_MKDOCS_2_WARNING` avant le build afin de masquer le bandeau d'alerte Material for MkDocs sur MkDocs 2.0. Le projet reste construit avec `mkdocs build --strict`, langue par langue, via `scripts\build_multilang.py`.
 
 Dans un PowerShell Windows classique, elle utilise le Python du `.venv`. Depuis Codex, elle peut utiliser le Python embarqué de Codex avec les paquets du `.venv`, afin d'éviter les blocages du bac à sable sur l'exécutable Python local.
 

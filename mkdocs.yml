@@ -22,6 +22,9 @@ plugins:
 extra_css:
   - stylesheets/flow.css
 
+extra_javascript:
+  - javascripts/language-switcher.js
+
 nav:
   - Accueil: index.md
   - FAQ:
@@ -135,6 +138,7 @@ nav:
       - Modèle mental des connaissances: administration/modele-mental-connaissances.md
       - Référentiel des rôles: administration/referentiel-roles.md
       - Référentiel des schémas: administration/referentiel-schemas.md
+      - Multilingue et traduction: administration/multilingue-traduction.md
       - Environnement Codex sous Windows: administration/environnement-codex-windows.md
       - AGENTS.md - Instructions Codex pour FLOW: administration/instructions-codex.md
   - Transformation:

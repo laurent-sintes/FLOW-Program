@@ -30,6 +30,7 @@ IMAGE_REGISTRY = DOCS / "administration" / "referentiel-schemas.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
 GITATTRIBUTES = ROOT / ".gitattributes"
+GITHUB_PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "github-pages.yml"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
 READING_METRICS = DOCS / "referentiel" / "page-metrics.json"
 ROLE_REGISTRY = DOCS / "administration" / "referentiel-roles.md"
@@ -296,7 +297,7 @@ def check_nav_coverage(checks: Checks) -> None:
 
 
 def check_generated_content_not_tracked(checks: Checks) -> None:
-    tracked = run_git(["ls-files", "site", ".venv", ".agents", "__pycache__"])
+    tracked = run_git(["ls-files", "site", ".generated", ".venv", ".agents", "__pycache__"])
 
     if tracked.returncode != 0:
         checks.warn("GIT_LS_FILES", f"Cannot inspect tracked generated files: {tracked.stderr.strip()}")
@@ -311,7 +312,7 @@ def check_generated_content_not_tracked(checks: Checks) -> None:
     else:
         checks.pass_check("Generated/local paths are not tracked by Git.")
 
-    expected_patterns = ["site/", ".venv/", ".agents/"]
+    expected_patterns = ["site/", ".generated/", ".venv/", ".agents/"]
     if not GITIGNORE.exists():
         checks.error("GITIGNORE", ".gitignore is missing.", GITIGNORE)
         return
@@ -431,6 +432,11 @@ def normalize_site_target(source: Path, href: str) -> tuple[Path, str]:
     path_part = urllib.parse.unquote(parsed.path)
     fragment = urllib.parse.unquote(parsed.fragment)
 
+    if path_part == "/FLOW-Program":
+        path_part = "/"
+    elif path_part.startswith("/FLOW-Program/"):
+        path_part = path_part.removeprefix("/FLOW-Program")
+
     if not path_part:
         target = source
     elif path_part.startswith("/"):
@@ -515,6 +521,29 @@ def check_built_site_links(checks: Checks) -> None:
         checks.pass_check(f"Built site internal links and anchors are valid ({checked_links} checked).")
 
 
+def check_multilingual_site(checks: Checks) -> None:
+    expected_pages = [
+        SITE / "index.html",
+        SITE / "fr" / "index.html",
+        SITE / "en" / "index.html",
+    ]
+
+    for page in expected_pages:
+        if not page.exists():
+            checks.error("I18N_SITE_PAGE", f"Multilingual site page is missing: {rel(page)}", page)
+
+    english_pages = sorted((SITE / "en").rglob("*.html")) if (SITE / "en").exists() else []
+    if english_pages:
+        sample_text = "\n".join(read_text(page) for page in english_pages[:5])
+        if "English version in progress" not in sample_text:
+            checks.error("I18N_EN_NOTICE", "English generated site does not include the translation notice.", SITE / "en")
+    elif (SITE / "en").exists():
+        checks.error("I18N_EN_EMPTY", "English generated site has no HTML pages.", SITE / "en")
+
+    if not any(finding.code.startswith("I18N_") for finding in checks.errors):
+        checks.pass_check("Multilingual site structure is generated for fr and en.")
+
+
 def check_external_links(checks: Checks, timeout: float, strict: bool) -> None:
     if not SITE.exists():
         checks.error("SITE_MISSING", "site/ does not exist. Run the MkDocs build first.", SITE)
@@ -577,10 +606,12 @@ def check_agents_publication_sync(checks: Checks) -> None:
         "structure du site et impacts",
         "concepts flow",
         "scripts\\build-docs.ps1",
+        "scripts\\build_multilang.py",
         "scripts\\check-site.ps1",
         "scripts\\doctor.ps1",
         "scripts\\update-reading-metrics.ps1",
         ".gitattributes",
+        "multilingue-traduction.md",
         "guide-contribution-contenu.md",
         "modele-mental-connaissances.md",
         "environnement-codex-windows.md",
@@ -602,6 +633,27 @@ def check_agents_publication_sync(checks: Checks) -> None:
 
     if not any(finding.code.startswith("AGENTS") or finding.code.startswith("INSTRUCTIONS") for finding in checks.errors):
         checks.pass_check("AGENTS.md and the published Codex instructions are synchronized on key rules.")
+
+
+def check_ci_workflow(checks: Checks) -> None:
+    if not GITHUB_PAGES_WORKFLOW.exists():
+        checks.error("CI_WORKFLOW", "GitHub Pages workflow is missing.", GITHUB_PAGES_WORKFLOW)
+        return
+
+    text = read_text(GITHUB_PAGES_WORKFLOW)
+    required_fragments = [
+        "cache: \"pip\"",
+        "pip install -r requirements.txt",
+        "python scripts/build_multilang.py",
+        "python scripts/check_site.py --external-links",
+    ]
+    missing = [fragment for fragment in required_fragments if fragment not in text]
+
+    for fragment in missing:
+        checks.error("CI_WORKFLOW_RULE", f"GitHub Pages workflow is missing: {fragment}", GITHUB_PAGES_WORKFLOW)
+
+    if not missing:
+        checks.pass_check("GitHub Pages workflow builds the multilingual site and runs external-link checks.")
 
 
 def check_section_indexes(checks: Checks) -> None:
@@ -653,6 +705,7 @@ def check_section_indexes(checks: Checks) -> None:
         "modele-mental-connaissances.md",
         "referentiel-roles.md",
         "referentiel-schemas.md",
+        "multilingue-traduction.md",
         "environnement-codex-windows.md",
         "instructions-codex.md",
     ]
@@ -997,9 +1050,11 @@ def run_checks(check_external: bool = False, external_timeout: float = 8.0, stri
     check_generated_content_not_tracked(checks)
     check_repository_line_endings(checks)
     check_built_site_links(checks)
+    check_multilingual_site(checks)
     if check_external:
         check_external_links(checks, external_timeout, strict_external)
     check_agents_publication_sync(checks)
+    check_ci_workflow(checks)
     check_section_indexes(checks)
     check_reading_role_registry(checks)
     check_reading_metrics(checks)

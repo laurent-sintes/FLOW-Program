@@ -407,3 +407,12 @@
     grid-column: 1 / -1;
   }
 }
+.flow-translation-notice {
+  border: 1px solid #b8d8d2;
+  border-left: 4px solid #21695f;
+  border-radius: 8px;
+  background: #f1faf7;
+  color: #173f3a;
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+}

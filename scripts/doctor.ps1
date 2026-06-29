@@ -108,6 +108,7 @@ try {
     Test-RequiredPath (Join-Path $repoRoot ".gitattributes") "Configuration Git des fins de ligne"
     Test-RequiredPath (Join-Path $repoRoot ".github\workflows\github-pages.yml") "Workflow GitHub Pages"
     Test-RequiredPath (Join-Path $repoRoot "scripts\build-docs.ps1") "Script de build"
+    Test-RequiredPath (Join-Path $repoRoot "scripts\build_multilang.py") "Script de build multilingue"
     Test-RequiredPath (Join-Path $repoRoot "scripts\check-site.ps1") "Script de controle"
     Test-RequiredPath (Join-Path $repoRoot "scripts\update-reading-metrics.ps1") "Script de metriques"
     Test-RequiredPath $venvPython "Python du .venv"
