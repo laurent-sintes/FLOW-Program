@@ -82,13 +82,16 @@ Le moteur de règles ne doit pas masquer le modèle.
 
 Il doit résoudre des relations explicites, typées, gouvernées et observables.
 
-## Filiation DDD
+## Filiation et références
 
-Ce pattern est cohérent avec plusieurs patterns de Domain-Driven Design.
+Ce pattern n'est pas un standard nommé de façon unique.
 
-Dans le *DDD Reference*, Eric Evans décrit le pattern **Knowledge Level** : lorsque les rôles et relations entre entités varient selon les situations, il peut être utile de créer un niveau d'objets séparé qui décrit et contraint le comportement du modèle de base.
+Il assemble plusieurs patterns reconnus qui convergent vers la même idée : ne pas enfermer des rôles, relations et règles variables dans des cardinalités physiques trop précoces.
 
-Le pattern **Specification**, décrit par Eric Evans et Martin Fowler, va dans le même sens : séparer le critère ou la règle d'applicabilité de l'objet candidat.
+- **Knowledge Level** — Eric Evans décrit un niveau d'objets séparé pour représenter les règles, rôles et relations qui contraignent le modèle concret. C'est la référence la plus directe lorsque la complexité vient de règles de composition variables.
+- **Specification** — Eric Evans et Martin Fowler isolent le critère d'applicabilité dans un objet séparé, testable et combinable. Dans FLOW, une policy ou specification décide quelle relation, quel Agreement ou quel service est applicable à une demande.
+- **Accountability / Typed Relationship** — Martin Fowler modélise une relation entre parties comme un objet de domaine à part entière, typé selon la nature du lien. Cela justifie de ne pas réduire fournisseur / usine / agent / facturé à des clés étrangères figées.
+- **Role Object** — Dirk Bäumer, Dirk Riehle, Wolf Siberski et Martina Wulf représentent les rôles comme des objets attachés dynamiquement à une entité selon le contexte. C'est utile pour éviter qu'une même partie soit dupliquée parce qu'elle joue fournisseur ici, usine là, entité de facturation ailleurs.
 
 Dans FLOW, cette filiation se traduit par une règle de conception :
 
@@ -98,6 +101,8 @@ Références :
 
 - [DDD Reference — Eric Evans](https://www.domainlanguage.com/ddd/reference/)
 - [Specification — Eric Evans & Martin Fowler](https://www.martinfowler.com/apsupp/spec.pdf)
+- [Accountability — Martin Fowler](https://martinfowler.com/apsupp/accountability.pdf)
+- [Role Object — Bäumer, Riehle, Siberski & Wulf](https://www.riehle.org/computer-science/research/1997/plop-1997-role-object.html)
 
 ## Exemple BRD : fournisseur, usine et entité de facturation
 
