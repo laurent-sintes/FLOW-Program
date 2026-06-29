@@ -1,4 +1,4 @@
-# Fournisseur, usine et Agreement BRD
+# Fournisseur, usine et Agreement : séparer les rôles
 
 ## Intention
 
@@ -6,7 +6,7 @@ Cette page documente un hotspot issu de l'atelier Boardriders du 29 juin 2026.
 
 Le sujet n'est pas seulement la création des fournisseurs dans SAP.
 
-Le sujet est la manière dont BRD mélange ou distingue, dans son existant, plusieurs réalités qui ne relèvent pas forcément du même domaine cible :
+Le sujet est la manière dont l'existant BRD articule plusieurs réalités qui ne relèvent pas forcément du même domaine cible :
 
 - fournisseur ;
 - usine ;

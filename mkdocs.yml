@@ -75,12 +75,12 @@ nav:
       - "08 — Gouverner la donnée en transit": principes-directeurs/8-gouverner-la-donnee-en-transit.md
   - Hotspots:
       - Repères: hotspots/index.md
-      - SAP ECC Boardriders: hotspots/sap-ecc-boardriders.md
+      - Sortie progressive de SAP ECC: hotspots/sap-ecc-boardriders.md
       - C-LOG et décision de fulfillment: hotspots/c-log-decision-fulfillment.md
       - Stock temps réel: hotspots/stock-temps-reel.md
       - Capacités d'intégration des systèmes réintégrés: hotspots/capacites-integration-systemes-reintegres.md
       - PLM, catalogue, Article / EAN: hotspots/plm-catalogue-article-ean.md
-      - Fournisseur, usine et Agreement BRD: hotspots/fournisseur-usine-agreement-brd.md
+      - Fournisseur, usine et Agreement: hotspots/fournisseur-usine-agreement-brd.md
       - Promesse commerciale Wholesale: hotspots/promesse-commerciale-wholesale.md
       - Module Négoce StoreLand: hotspots/module-negoce-storeland.md
   - Contexte:
@@ -119,8 +119,10 @@ nav:
   - Méthodologie Projet:
       - La méthodologie: methode/index.md
       - Processus de cadrage: methode/processus-de-cadrage.md
-      - Environnement Codex Windows: methode/environnement-codex-windows.md
-      - Instructions Codex: methode/instructions-codex.md
+  - Administration du référentiel:
+      - Repères: administration/index.md
+      - Environnement Codex Windows: administration/environnement-codex-windows.md
+      - AGENTS.md - Instructions Codex: administration/instructions-codex.md
   - Transformation:
       - Repères: transformation/index.md
       - Pourquoi deux Change Managers ?: transformation/pourquoi-deux-change-managers.md

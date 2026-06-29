@@ -1,4 +1,4 @@
-# Hotspots : les risques à arbitrer pour rendre FLOW réaliste
+# Hotspots : les décisions à instruire pour rendre FLOW réaliste
 
 <div class="flow-conviction">
   <p>Les hotspots ne contredisent pas la vision.</p>
@@ -7,25 +7,25 @@
 
 La vision FLOW ne peut pas être portée uniquement comme une cible théorique.
 
-Elle doit aussi traiter explicitement les points durs du programme.
+Elle doit aussi traiter explicitement les points sensibles du programme.
 
 Un <span class="flow-keyword">hotspot</span> n'est pas un problème isolé.
 
 C'est un point où plusieurs dimensions se croisent : trajectoire de migration, arbitrage métier, intégration technique, donnée, finance, gouvernance ou transformation.
 
-## Vue synthétique des familles de risques
+## Vue synthétique des familles de décisions
 
 <div class="flow-conviction">
   <p>Un hotspot n'est pas une difficulté à subir.</p>
   <p>C'est un arbitrage structurant à rendre explicite.</p>
 </div>
 
-| Famille de risque | Hotspots concernés | Question structurante |
+| Famille de décision | Hotspots concernés | Question structurante |
 | --- | --- | --- |
-| Trajectoire de migration | SAP ECC Boardriders | Comment sortir d'un socle monolithique sans créer un big bang ? |
-| Décision distribuée | C-LOG, promesse Wholesale Boardriders | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
+| Trajectoire de migration | Sortie progressive de SAP ECC | Comment sortir d'un socle monolithique sans créer un big bang ? |
+| Décision distribuée | C-LOG, promesse commerciale Wholesale | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
 | Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
-| Données produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement BRD | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
+| Données produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
 | Gouvernance métier | Promesse Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
 | Périmètre fonctionnel | Module Négoce StoreLand | Quelles responsabilités doivent être reprises dans FLOW, et lesquelles doivent rester dans un domaine consommateur ? |
 
@@ -33,14 +33,14 @@ Cette lecture permet de ne pas voir les hotspots comme une simple liste de sujet
 
 Elle montre les catégories d'arbitrages à sécuriser pour rendre FLOW opérable.
 
-## Risque de trajectoire : SAP ECC Boardriders
+## Trajectoire de migration : sortie progressive de SAP ECC
 
 <div class="flow-conviction">
   <p>Le monolithe SAP ECC ne se découpe pas comme une application modulaire.</p>
   <p>La trajectoire de sortie doit être pensée comme un sujet d'architecture, pas seulement comme un planning de migration.</p>
 </div>
 
-Boardriders s'appuie fortement sur SAP ECC.
+Le périmètre BRD s'appuie fortement sur SAP ECC.
 
 La nature monolithique de cette solution rend une migration progressive vers FLOW plus difficile qu'un simple remplacement par lots fonctionnels.
 
@@ -53,7 +53,7 @@ Le risque est de devoir arbitrer entre :
 
 Ce hotspot impose de clarifier très tôt quelles responsabilités doivent sortir de SAP ECC, lesquelles doivent rester articulées avec SAP Finance, et dans quel ordre la migration peut réellement être sécurisée.
 
-## Risque de décision distribuée : C-LOG et fulfillment
+## Décision distribuée : C-LOG et fulfillment
 
 <div class="flow-conviction">
   <p>Distribuer l'exécution est normal.</p>
@@ -76,7 +76,7 @@ Cela peut produire :
 
 Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, ainsi que le contrat d'échange entre FLOW et C-LOG.
 
-## Risque d'intégration et de fraîcheur : stock temps réel
+## Intégration et fraîcheur : stock temps réel
 
 <div class="flow-conviction">
   <p>Un stock unifié n'est utile que si les mouvements remontent assez vite.</p>
@@ -164,7 +164,7 @@ Ce hotspot impose de clarifier :
 - La gouvernance des nomenclatures taille / couleur.
 - Le découplage entre processus de conception amont et capacités Demand / Fulfillment.
 
-## Fournisseur, usine et Agreement BRD : séparer les rôles
+## Fournisseur, usine et Agreement : séparer les rôles
 
 <div class="flow-conviction">
   <p>La fiche fournisseur SAP n'est pas forcément le bon modèle cible.</p>
@@ -210,7 +210,7 @@ Une adhérence doit être instruite explicitement : CBS est-il la SRM cible du G
   <p>Cela peut décaler les autres commandes et rompre des promesses déjà perçues comme acquises.</p>
 </div>
 
-La stratégie Wholesale de Boardriders repose sur une logique de priorisation des meilleurs clients.
+La pratique Wholesale observée côté BRD repose sur une logique de priorisation des meilleurs clients.
 
 Cette logique est très différente d'une approche “premier arrivé, premier servi”.
 
@@ -274,15 +274,15 @@ Ce hotspot impose de clarifier :
   <p>C'est la carte des arbitrages qui conditionnent la crédibilité de FLOW.</p>
 </div>
 
-| Hotspot | Famille de risque | Ce que FLOW doit clarifier |
+| Hotspot | Famille de décision | Ce que FLOW doit clarifier |
 | --- | --- | --- |
-| SAP ECC Boardriders | Trajectoire de migration | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
+| Sortie progressive de SAP ECC | Trajectoire de migration | Découpage des responsabilités, trajectoire de sortie, articulation avec Finance |
 | C-LOG | Décision distribuée | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
-| Fournisseur, usine et Agreement BRD | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
-| Promesse Wholesale Boardriders | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
+| Fournisseur, usine et Agreement | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
+| Promesse commerciale Wholesale | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 
 ## À retenir

@@ -19,6 +19,4 @@ La méthodologie de delivery sera écrite plus tard dans une page dédiée.
 ## Articles
 
 - [Processus de cadrage](processus-de-cadrage.md) — méthodologie de cadrage et de conception amont
-- [Environnement Codex sous Windows](environnement-codex-windows.md) — poste local, build MkDocs, Git et GitHub CLI
-- [Instructions Codex](instructions-codex.md) — mémoire de contribution pour maintenir le référentiel FLOW
 - Méthodologie de delivery — à rédiger

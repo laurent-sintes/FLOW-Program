@@ -42,6 +42,10 @@
     <strong>Méthodologie Projet</strong>
     <span>Le passage des observations terrain aux capacités, produits et solutions candidates.</span>
   </a>
+  <a class="flow-card" href="administration/">
+    <strong>Administration du référentiel</strong>
+    <span>L'environnement local, les contrôles et la mémoire de contribution Codex.</span>
+  </a>
   <a class="flow-card" href="transformation/">
     <strong>Transformation</strong>
     <span>Les changements de posture à conduire pour rendre FLOW compréhensible et adoptable.</span>

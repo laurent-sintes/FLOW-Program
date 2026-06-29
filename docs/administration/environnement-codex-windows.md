@@ -113,7 +113,7 @@ Elle lance d'abord le build local, puis exécute des contrôles Python sur le si
 - pages Markdown déclarées dans `mkdocs.yml` ;
 - liens internes et ancres du site généré ;
 - absence de contenu généré versionné ;
-- synchronisation entre `AGENTS.md` et la page publiée `Instructions Codex` ;
+- synchronisation entre `AGENTS.md` et la page publiée `AGENTS.md - Instructions Codex` ;
 - présence des concepts FLOW structurants ;
 - détection de formulations contraires au positionnement de FLOW.
 

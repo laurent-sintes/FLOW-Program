@@ -99,11 +99,11 @@
     <h2>Hotspots à arbitrer</h2>
     <p class="flow-canvas-punchline">La vision est forte parce qu'elle rend visibles les arbitrages difficiles.</p>
     <ul>
-      <li>Sortie progressive de SAP ECC Boardriders.</li>
+      <li>Sortie progressive de SAP ECC.</li>
       <li>Frontière entre décision de demande et décision d'exécution chez C-LOG.</li>
       <li>Stock temps réel et capacités événementielles des POS, WMS et partenaires.</li>
       <li>Catalogue produit : PLM, articles, EAN, produits conçus et produits importés.</li>
-      <li>Fournisseur, usine et Agreement BRD : sources de référence, dates de promesse, adaptation CBS et hypothèse SRM cible.</li>
+      <li>Fournisseur, usine et Agreement : sources de référence, dates de promesse, adaptation CBS et hypothèse SRM cible.</li>
       <li>Promesse Wholesale, priorisation commerciale et rupture de promesse.</li>
       <li>Module Négoce StoreLand et découpage Engagement / Demand / Supply.</li>
     </ul>

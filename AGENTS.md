@@ -7,7 +7,7 @@ Il ne remplace pas la documentation publiée dans `docs/`. Il décrit les règle
 Une version lisible dans le site est publiée dans :
 
 ```text
-docs/methode/instructions-codex.md
+docs/administration/instructions-codex.md
 ```
 
 Lorsqu'une règle structurante change ici, mettre à jour cette page également.
@@ -61,7 +61,7 @@ Après un changement validé :
 Pour les détails d'environnement Windows, se référer à :
 
 ```text
-docs/methode/environnement-codex-windows.md
+docs/administration/environnement-codex-windows.md
 ```
 
 ## 2. Structure du site et impacts à vérifier
@@ -227,17 +227,33 @@ Fichiers clés :
 
 - `docs/methode/index.md`
 - `docs/methode/processus-de-cadrage.md`
-- `docs/methode/environnement-codex-windows.md`
 
 Rôle :
 
 - expliquer comment le programme passe des observations aux choix de conception ;
-- documenter l'environnement local de contribution.
 
 Impact à vérifier :
 
-- tout changement d'outillage doit être répercuté dans `environnement-codex-windows.md` ;
 - tout changement de méthode doit rester cohérent avec la chaîne vision, principes, domaines, responsabilités, capacités, produits, solutions candidates.
+
+### Administration du référentiel
+
+Fichiers clés :
+
+- `docs/administration/index.md`
+- `docs/administration/environnement-codex-windows.md`
+- `docs/administration/instructions-codex.md`
+
+Rôle :
+
+- documenter l'environnement local de contribution ;
+- rendre visible la mémoire de contribution utilisée par Codex ;
+- garder la construction, les contrôles et la publication du site reproductibles.
+
+Impact à vérifier :
+
+- tout changement d'outillage doit être répercuté dans `docs/administration/environnement-codex-windows.md` ;
+- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md`.
 
 ### Transformation
 

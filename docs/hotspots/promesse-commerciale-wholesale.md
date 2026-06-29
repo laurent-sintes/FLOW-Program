@@ -12,7 +12,7 @@ Il s'agit d'un choix de gouvernance métier : une promesse donnée peut-elle êt
 
 ## Pourquoi c'est un hotspot
 
-Le Wholesale Boardriders repose sur une logique de priorisation des meilleurs clients.
+La pratique Wholesale observée chez Boardriders repose sur une logique de priorisation des meilleurs clients.
 
 Cette logique est différente d'une approche “premier arrivé, premier servi”, plus proche de la culture Beaumanoir.
 

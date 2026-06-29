@@ -156,13 +156,13 @@ La vision ne peut pas rester théorique.
 
 Elle doit traiter plusieurs points durs :
 
-- SAP ECC Boardriders : migration difficile à phaser du fait de la nature monolithique de la solution.
+- Sortie progressive de SAP ECC : migration difficile à phaser du fait de la nature monolithique de la solution.
 - C-LOG : une partie de la décision de fulfillment est déjà distribuée côté exécution.
 - Stock temps réel : dépendance aux événements POS et logistiques pour garantir une fraîcheur suffisante.
 - Capacités d'intégration des systèmes réintégrés : APIs, événements, statuts, documents et réconciliation nécessaires pour brancher les services existants sur FLOW.
 - PLM, catalogue, Article / EAN : FLOW ne peut pas dépendre d'un PLM unique ; il doit clarifier le catalogue nécessaire pour vendre, acheter, promettre et exécuter.
-- Fournisseur, usine et Agreement BRD : FLOW doit sortir du paramétrage fournisseur monolithique, cartographier les sources de référence, sécuriser le calcul des dates de promesse et clarifier si CBS devient la SRM cible.
-- Promesse Wholesale Boardriders : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
+- Fournisseur, usine et Agreement : FLOW doit sortir du paramétrage fournisseur monolithique, cartographier les sources de référence, sécuriser le calcul des dates de promesse et clarifier si CBS devient la SRM cible.
+- Promesse commerciale Wholesale : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
 - Module Négoce StoreLand : responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment.
 
 Ces hotspots montrent que FLOW n'est pas seulement un outil cible.

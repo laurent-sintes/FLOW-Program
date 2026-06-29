@@ -1,4 +1,4 @@
-# Instructions Codex pour FLOW
+# AGENTS.md - Instructions Codex pour FLOW
 
 Cette page rend visible la mémoire de travail utilisée par Codex pour contribuer au référentiel FLOW.
 
@@ -55,7 +55,7 @@ Après un changement validé :
 Pour les détails d'environnement Windows, se référer à :
 
 ```text
-docs/methode/environnement-codex-windows.md
+docs/administration/environnement-codex-windows.md
 ```
 
 ## Structure du site et impacts à vérifier
@@ -223,20 +223,33 @@ Fichiers clés :
 
 - `docs/methode/index.md`
 - `docs/methode/processus-de-cadrage.md`
-- `docs/methode/environnement-codex-windows.md`
-- `docs/methode/instructions-codex.md`
 
 Rôle :
 
 - expliquer comment le programme passe des observations aux choix de conception ;
-- documenter l'environnement local de contribution ;
-- rendre visible la mémoire de contribution utilisée par Codex.
 
 Impact à vérifier :
 
-- tout changement d'outillage doit être répercuté dans `environnement-codex-windows.md` ;
-- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `instructions-codex.md` ;
 - tout changement de méthode doit rester cohérent avec la chaîne vision, principes, domaines, responsabilités, capacités, produits, solutions candidates.
+
+### Administration du référentiel
+
+Fichiers clés :
+
+- `docs/administration/index.md`
+- `docs/administration/environnement-codex-windows.md`
+- `docs/administration/instructions-codex.md`
+
+Rôle :
+
+- documenter l'environnement local de contribution ;
+- rendre visible la mémoire de contribution utilisée par Codex ;
+- garder la construction, les contrôles et la publication du site reproductibles.
+
+Impact à vérifier :
+
+- tout changement d'outillage doit être répercuté dans `docs/administration/environnement-codex-windows.md` ;
+- tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md`.
 
 ### Transformation
 

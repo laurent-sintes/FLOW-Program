@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 SITE = ROOT / "site"
 AGENTS = ROOT / "AGENTS.md"
-INSTRUCTIONS = DOCS / "methode" / "instructions-codex.md"
+INSTRUCTIONS = DOCS / "administration" / "instructions-codex.md"
 MKDOCS = ROOT / "mkdocs.yml"
 GITIGNORE = ROOT / ".gitignore"
 
@@ -327,7 +327,7 @@ def check_agents_publication_sync(checks: Checks) -> None:
         if phrase.casefold() not in instructions:
             checks.error("INSTRUCTIONS_SYNC", f"Published instructions do not mention: {phrase}", INSTRUCTIONS)
 
-    if "docs/methode/instructions-codex.md" not in agents:
+    if "docs/administration/instructions-codex.md" not in agents:
         checks.error("AGENTS_PUBLIC_PAGE", "AGENTS.md does not point to the published instructions page.", AGENTS)
 
     if "agents.md" not in instructions:
@@ -337,25 +337,43 @@ def check_agents_publication_sync(checks: Checks) -> None:
         checks.pass_check("AGENTS.md and the published Codex instructions are synchronized on key rules.")
 
 
-def check_methodology_links(checks: Checks) -> None:
+def check_section_indexes(checks: Checks) -> None:
     methode_index = DOCS / "methode" / "index.md"
     if not methode_index.exists():
         checks.error("METHODE_INDEX", "Methodology index is missing.", methode_index)
+    else:
+        index_text = read_text(methode_index)
+        expected = ["processus-de-cadrage.md"]
+
+        for page in expected:
+            if page not in index_text:
+                checks.error("METHODE_INDEX_LINK", f"Methodology index does not link to {page}.", methode_index)
+
+        forbidden = ["environnement-codex-windows.md", "instructions-codex.md"]
+        for page in forbidden:
+            if page in index_text:
+                checks.error("METHODE_INDEX_SCOPE", f"Methodology index should not link to administration page: {page}.", methode_index)
+
+        if all(page in index_text for page in expected) and not any(page in index_text for page in forbidden):
+            checks.pass_check("Methodology index stays focused on project methodology.")
+
+    admin_index = DOCS / "administration" / "index.md"
+    if not admin_index.exists():
+        checks.error("ADMIN_INDEX", "Administration index is missing.", admin_index)
         return
 
-    index_text = read_text(methode_index)
-    expected = [
-        "processus-de-cadrage.md",
+    admin_text = read_text(admin_index)
+    expected_admin = [
         "environnement-codex-windows.md",
         "instructions-codex.md",
     ]
 
-    for page in expected:
-        if page not in index_text:
-            checks.error("METHODE_INDEX_LINK", f"Methodology index does not link to {page}.", methode_index)
+    for page in expected_admin:
+        if page not in admin_text:
+            checks.error("ADMIN_INDEX_LINK", f"Administration index does not link to {page}.", admin_index)
 
-    if all(page in index_text for page in expected):
-        checks.pass_check("Methodology index links to expected operational pages.")
+    if all(page in admin_text for page in expected_admin):
+        checks.pass_check("Administration index links to expected operational pages.")
 
 
 def all_markdown_text() -> str:
@@ -464,7 +482,7 @@ def run_checks() -> Checks:
     check_generated_content_not_tracked(checks)
     check_built_site_links(checks)
     check_agents_publication_sync(checks)
-    check_methodology_links(checks)
+    check_section_indexes(checks)
     check_flow_guardrails(checks)
     check_glossary_core_concepts(checks)
     return checks

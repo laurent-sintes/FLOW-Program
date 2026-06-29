@@ -283,7 +283,7 @@ Pour FLOW, cela pose une question importante : certaines demandes à orchestrer 
 
 L'atelier Boardriders du 29 juin 2026 a ajouté un point d'attention : le modèle fournisseur BRD est fortement lié aux usines, aux partner functions, aux entités de facturation et aux données poussées vers le PLM puis SAP. Le référentiel officiel est SRM, mais l'absence de synchronisation opérationnelle conduit aujourd'hui à une saisie manuelle.
 
-Ce sujet fait l'objet d'un hotspot dédié : [Fournisseur, usine et Agreement BRD](../hotspots/fournisseur-usine-agreement-brd.md).
+Ce sujet fait l'objet d'un hotspot dédié : [Fournisseur, usine et Agreement](../hotspots/fournisseur-usine-agreement-brd.md).
 
 ## Commerce et canaux
 

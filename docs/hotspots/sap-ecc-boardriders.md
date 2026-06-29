@@ -1,8 +1,8 @@
-# SAP ECC Boardriders : une migration difficile à phaser
+# Sortie progressive de SAP ECC : découper les responsabilités
 
 ## Pourquoi c'est un hotspot
 
-Boardriders s'appuie fortement sur SAP ECC.
+Le périmètre BRD s'appuie fortement sur SAP ECC.
 
 La nature monolithique de cette solution rend une migration progressive vers FLOW plus difficile qu'un remplacement par lots fonctionnels simples.
 
@@ -34,6 +34,6 @@ FLOW doit notamment clarifier :
 
 ## À retenir
 
-SAP ECC Boardriders n'est pas seulement un système à remplacer.
+SAP ECC n'est pas seulement un système à remplacer.
 
 C'est un nœud d'adhérences qui oblige FLOW à préciser sa trajectoire de migration, ses frontières avec Finance et le découpage réel des responsabilités.
