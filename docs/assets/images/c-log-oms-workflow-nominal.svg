@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">OMS C-LOG - workflow nominal</title>
+  <desc id="desc">Workflow nominal entre ERP, OMS, WMS et TMS Aval pour une commande orchestrée par l'OMS C-LOG.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="820" rx="24"/>
+  <text class="title" x="52" y="58">OMS C-LOG - cas nominal</text>
+  <text class="subtitle" x="52" y="86">Création de commande, orchestration, exécution WMS / TMS et remontée de mise à jour.</text>
+  <line x1="52" y1="104" x2="1448" y2="104" stroke="#e09238" stroke-width="2"/>
+  <rect class="accent" x="52" y="130" width="1396" height="105" rx="8"/>
+  <text class="h" x="72" y="164">ERP</text>
+  <rect class="blue" x="52" y="270" width="1396" height="115" rx="8"/>
+  <text class="h" x="72" y="304">OMS</text>
+  <rect class="green" x="52" y="430" width="1396" height="120" rx="8"/>
+  <text class="h" x="72" y="464">WMS</text>
+  <rect class="purple" x="52" y="620" width="1396" height="120" rx="8"/>
+  <text class="h" x="72" y="654">TMS Aval</text>
+  <rect class="panel" x="500" y="152" width="150" height="54" rx="8"/>
+  <text class="small" x="575" y="184" text-anchor="middle">Création commande</text>
+  <rect class="panel" x="980" y="152" width="150" height="54" rx="8"/>
+  <text class="small" x="1055" y="175" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1055" y="192" text-anchor="middle">commande</text>
+  <rect class="panel" x="500" y="304" width="150" height="58" rx="8"/>
+  <text class="small" x="575" y="338" text-anchor="middle">Orchestration</text>
+  <rect class="panel" x="980" y="304" width="150" height="58" rx="8"/>
+  <text class="small" x="1055" y="329" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1055" y="346" text-anchor="middle">commande</text>
+  <rect class="panel" x="250" y="465" width="150" height="58" rx="8"/>
+  <text class="small" x="325" y="499" text-anchor="middle">Image de stock</text>
+  <rect class="panel" x="500" y="465" width="150" height="58" rx="8"/>
+  <text class="small" x="575" y="490" text-anchor="middle">Intégration</text>
+  <text class="small" x="575" y="507" text-anchor="middle">commande</text>
+  <rect class="panel" x="700" y="465" width="190" height="58" rx="8"/>
+  <text class="small" x="795" y="499" text-anchor="middle">Picking packing expédition</text>
+  <rect class="panel" x="980" y="465" width="150" height="58" rx="8"/>
+  <text class="small" x="1055" y="499" text-anchor="middle">Clôture commande</text>
+  <rect class="panel" x="250" y="655" width="150" height="58" rx="8"/>
+  <text class="small" x="325" y="689" text-anchor="middle">Plan de transport</text>
+  <rect class="panel" x="700" y="655" width="190" height="58" rx="8"/>
+  <text class="small" x="795" y="689" text-anchor="middle">Picking packing expédition</text>
+  <path class="arrow" d="M575 206 L575 304"/>
+  <path class="arrow" d="M500 333 L445 333 L445 494 L400 494"/>
+  <path class="arrow" d="M400 494 L500 494"/>
+  <path class="arrow" d="M575 362 L575 465"/>
+  <path class="arrow" d="M650 494 L700 494"/>
+  <path class="arrow" d="M890 494 L980 494"/>
+  <path class="arrow" d="M1055 465 L1055 362"/>
+  <path class="arrow" d="M1055 304 L1055 206"/>
+  <path class="arrow" d="M400 684 L700 684"/>
+  <path class="arrow" d="M795 655 L795 523"/>
+  <path class="arrowSoft" d="M400 684 L445 684 L445 333 L500 333"/>
+  <text class="label" x="452" y="318">stock + transport</text>
+  <text class="label" x="810" y="594">coordination TMS / WMS</text>
+</svg>

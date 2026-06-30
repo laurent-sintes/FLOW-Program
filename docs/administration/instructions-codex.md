@@ -138,7 +138,7 @@ Pour régénérer les schémas SVG pilotés par script, utiliser :
 .\scripts\generate-svg-diagrams.ps1
 ```
 
-Cette commande maintient les SVG pilotés par `scripts/generate_svg_diagrams.py`, notamment l'overview FLOW, l'écosystème BRD, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management. Le générateur découpe les textes selon la largeur disponible, calcule la hauteur nécessaire des cartes et aligne la hauteur d'une même rangée. Il n'utilise aucune librairie Python externe : seulement la bibliothèque standard (`argparse`, `dataclasses`, `html`, `pathlib`). Modifier les données du schéma dans `scripts/generate_svg_diagrams.py` plutôt que d'ajuster manuellement les coordonnées d'un SVG généré.
+Cette commande maintient les SVG pilotés par `scripts/generate_svg_diagrams.py`, notamment l'overview FLOW, l'écosystème BRD, les workflows OMS C-LOG, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management. Le générateur découpe les textes selon la largeur disponible, calcule la hauteur nécessaire des cartes et aligne la hauteur d'une même rangée. Il n'utilise aucune librairie Python externe : seulement la bibliothèque standard (`argparse`, `dataclasses`, `html`, `pathlib`). Modifier les données du schéma dans `scripts/generate_svg_diagrams.py` plutôt que d'ajuster manuellement les coordonnées d'un SVG généré.
 
 Après toute modification documentaire significative, relancer `.\scripts\update-reading-metrics.ps1` avant `.\scripts\check-site.ps1`.
 
@@ -307,7 +307,7 @@ Impact à vérifier :
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
 - la gouvernance des données en transit est une pratique transverse, pas un produit FLOW candidat ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
-- les SVG générés par `scripts/generate_svg_diagrams.py`, dont l'overview FLOW, l'écosystème BRD, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management, doivent être modifiés via le générateur afin de préserver les retours à la ligne et les hauteurs automatiques de blocs ;
+- les SVG générés par `scripts/generate_svg_diagrams.py`, dont l'overview FLOW, l'écosystème BRD, les workflows OMS C-LOG, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management, doivent être modifiés via le générateur afin de préserver les retours à la ligne et les hauteurs automatiques de blocs ;
 - tous les SVG doivent rester exportables dans Word / PowerPoint : vectoriels, avec `viewBox`, `preserveAspectRatio="xMidYMid meet"`, sans image bitmap embarquée et sans `foreignObject` ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
 - ne pas introduire un composant technique sans clarifier sa responsabilité métier ou de plateforme.

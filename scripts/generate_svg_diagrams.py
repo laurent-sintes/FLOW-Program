@@ -13,6 +13,9 @@ IMAGES = ROOT / "docs" / "assets" / "images"
 GENERATED_DIAGRAMS = {
     "architecture-cible-flow-overview.svg": IMAGES / "architecture-cible-flow-overview.svg",
     "architecture-cible-flow-ecosysteme-brd.svg": IMAGES / "architecture-cible-flow-ecosysteme-brd.svg",
+    "c-log-oms-workflow-nominal.svg": IMAGES / "c-log-oms-workflow-nominal.svg",
+    "c-log-oms-workflow-crossdock.svg": IMAGES / "c-log-oms-workflow-crossdock.svg",
+    "c-log-oms-workflow-equilibrage-stock.svg": IMAGES / "c-log-oms-workflow-equilibrage-stock.svg",
     "methodologie-flow-overview.svg": IMAGES / "methodologie-flow-overview.svg",
     "panorama-brd-ecosystem.svg": IMAGES / "panorama-brd-ecosystem.svg",
     "panorama-gbm-ecosystem.svg": IMAGES / "panorama-gbm-ecosystem.svg",
@@ -247,6 +250,41 @@ def render_chip(x: int, y: int, label: str, css_class: str = "pill", min_width: 
 
 def arrow(path: str, css_class: str = "arrow") -> str:
     return f'  <path class="{css_class}" d="{path}"/>'
+
+
+def connector(points: list[tuple[int, int]], css_class: str = "arrow") -> str:
+    if not points:
+        raise ValueError("connector requires at least one point")
+
+    commands = [f"M{points[0][0]} {points[0][1]}"]
+    commands.extend(f"L{x} {y}" for x, y in points[1:])
+    return arrow(" ".join(commands), css_class)
+
+
+def render_step_box(x: int, y: int, width: int, height: int, label: str) -> list[str]:
+    lines = [
+        f'  <rect class="panel" x="{x}" y="{y}" width="{width}" height="{height}" rx="8"/>',
+    ]
+    wrapped = wrap_text(label, width - 24, 13, bold=True)
+    line_height = 17
+    first_y = int(y + (height / 2) - (((len(wrapped) - 1) * line_height) / 2) + 5)
+    lines.extend(text_lines(wrapped, "small", int(x + width / 2), first_y, line_height, anchor="middle"))
+    return lines
+
+
+def render_workflow_lane(label: str, css_class: str, y: int, height: int, width: int) -> list[str]:
+    return [
+        f'  <rect class="{css_class}" x="52" y="{y}" width="{width - 104}" height="{height}" rx="8"/>',
+        text_element("h", 72, y + 34, label),
+    ]
+
+
+def render_workflow_title(title: str, subtitle: str, width: int) -> list[str]:
+    return [
+        text_element("title", 52, 58, title),
+        text_element("subtitle", 52, 86, subtitle),
+        f'  <line x1="52" y1="104" x2="{width - 52}" y2="104" stroke="#e09238" stroke-width="2"/>',
+    ]
 
 
 def render_overview_svg() -> str:
@@ -751,10 +789,203 @@ def render_product_case_management_svg() -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_c_log_nominal_workflow_svg() -> str:
+    width = 1500
+    height = 820
+    lines = svg_start(
+        width,
+        height,
+        "OMS C-LOG - workflow nominal",
+        "Workflow nominal entre ERP, OMS, WMS et TMS Aval pour une commande orchestrée par l'OMS C-LOG.",
+    )
+    lines.extend(render_workflow_title("OMS C-LOG - cas nominal", "Création de commande, orchestration, exécution WMS / TMS et remontée de mise à jour.", width))
+    lanes = [
+        ("ERP", "accent", 130, 105),
+        ("OMS", "blue", 270, 115),
+        ("WMS", "green", 430, 120),
+        ("TMS Aval", "purple", 620, 120),
+    ]
+    for label, css_class, y, lane_height in lanes:
+        lines.extend(render_workflow_lane(label, css_class, y, lane_height, width))
+
+    steps = [
+        (500, 152, 150, 54, "Création commande"),
+        (980, 152, 150, 54, "Mise à jour commande"),
+        (500, 304, 150, 58, "Orchestration"),
+        (980, 304, 150, 58, "Mise à jour commande"),
+        (250, 465, 150, 58, "Image de stock"),
+        (500, 465, 150, 58, "Intégration commande"),
+        (700, 465, 190, 58, "Picking packing expédition"),
+        (980, 465, 150, 58, "Clôture commande"),
+        (250, 655, 150, 58, "Plan de transport"),
+        (700, 655, 190, 58, "Picking packing expédition"),
+    ]
+    for step in steps:
+        lines.extend(render_step_box(*step))
+
+    lines.extend(
+        [
+            connector([(575, 206), (575, 304)]),
+            connector([(500, 333), (445, 333), (445, 494), (400, 494)]),
+            connector([(400, 494), (500, 494)]),
+            connector([(575, 362), (575, 465)]),
+            connector([(650, 494), (700, 494)]),
+            connector([(890, 494), (980, 494)]),
+            connector([(1055, 465), (1055, 362)]),
+            connector([(1055, 304), (1055, 206)]),
+            connector([(400, 684), (700, 684)]),
+            connector([(795, 655), (795, 523)]),
+            connector([(400, 684), (445, 684), (445, 333), (500, 333)], "arrowSoft"),
+            text_element("label", 452, 318, "stock + transport"),
+            text_element("label", 810, 594, "coordination TMS / WMS"),
+            "</svg>",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def render_c_log_crossdock_workflow_svg() -> str:
+    width = 1700
+    height = 930
+    lines = svg_start(
+        width,
+        height,
+        "OMS C-LOG - workflow crossdock",
+        "Workflow crossdock avec commande maître, sous-commandes, réception XDO et coordination entre deux entrepôts.",
+    )
+    lines.extend(render_workflow_title("OMS C-LOG - crossdock", "Une commande à cheval entre deux entrepôts produit des sous-commandes et une consolidation d'exécution.", width))
+    lanes = [
+        ("ERP", "accent", 125, 105),
+        ("OMS", "blue", 260, 115),
+        ("WMS 1", "green", 415, 115),
+        ("WMS 2", "green", 580, 115),
+        ("TMS Aval", "purple", 760, 110),
+    ]
+    for label, css_class, y, lane_height in lanes:
+        lines.extend(render_workflow_lane(label, css_class, y, lane_height, width))
+
+    steps = [
+        (110, 148, 150, 58, "Création commande"),
+        (1480, 148, 150, 58, "Mise à jour commande"),
+        (80, 292, 180, 62, "Orchestration"),
+        (430, 292, 150, 62, "Mise à jour commande"),
+        (610, 292, 150, 62, "Création réception XDO"),
+        (945, 292, 150, 62, "Mise à jour commande"),
+        (1125, 292, 160, 62, "Création commande globale"),
+        (1480, 292, 150, 62, "Mise à jour commande"),
+        (74, 448, 86, 62, "Image de stock"),
+        (180, 448, 150, 62, "Intégration commande XDO"),
+        (360, 448, 150, 62, "Picking packing expédition"),
+        (540, 448, 150, 62, "Clôture commande XDO"),
+        (610, 614, 160, 62, "Intégration réception XDO"),
+        (790, 614, 150, 62, "Réception XDO"),
+        (970, 614, 150, 62, "Clôture réception XDO"),
+        (1125, 614, 160, 62, "Intégration commande globale"),
+        (1305, 614, 160, 62, "Picking packing expédition"),
+        (1480, 614, 150, 62, "Clôture commande"),
+        (110, 786, 150, 58, "Plan de transport"),
+        (1305, 786, 160, 58, "Picking packing expédition"),
+    ]
+    for step in steps:
+        lines.extend(render_step_box(*step))
+
+    lines.extend(
+        [
+            connector([(185, 206), (185, 292)]),
+            connector([(160, 479), (180, 479)]),
+            connector([(185, 354), (185, 448)]),
+            connector([(330, 479), (360, 479)]),
+            connector([(510, 479), (540, 479)]),
+            connector([(615, 448), (615, 354), (505, 354)]),
+            connector([(580, 323), (610, 323)]),
+            connector([(685, 354), (685, 614)]),
+            connector([(770, 645), (790, 645)]),
+            connector([(940, 645), (970, 645)]),
+            connector([(1045, 614), (1045, 354), (1020, 354)]),
+            connector([(1095, 323), (1125, 323)]),
+            connector([(1205, 354), (1205, 614)]),
+            connector([(1285, 645), (1305, 645)]),
+            connector([(1465, 645), (1480, 645)]),
+            connector([(1555, 614), (1555, 354)]),
+            connector([(1555, 292), (1555, 206)]),
+            connector([(260, 815), (1305, 815)]),
+            connector([(1385, 786), (1385, 676)]),
+            connector([(260, 815), (150, 815), (150, 354), (80, 354)], "arrowSoft"),
+            text_element("label", 274, 468, "commande XDO"),
+            text_element("label", 802, 630, "réception XDO"),
+            text_element("label", 1178, 602, "commande globale"),
+            text_element("label", 1398, 735, "coordination TMS / WMS"),
+            "</svg>",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def render_c_log_stock_balancing_workflow_svg() -> str:
+    width = 1500
+    height = 820
+    lines = svg_start(
+        width,
+        height,
+        "OMS C-LOG - workflow équilibrage de stock",
+        "Workflow d'équilibrage de stock avec commande de transfert intersite, expédition, réception et clôture.",
+    )
+    lines.extend(render_workflow_title("OMS C-LOG - équilibrage de stock", "Transfert intersite pour rééquilibrer les stocks entre deux entrepôts.", width))
+    lanes = [
+        ("OMS", "blue", 125, 110),
+        ("WMS 1", "green", 310, 115),
+        ("WMS 2", "green", 490, 115),
+        ("TMS Aval", "purple", 670, 110),
+    ]
+    for label, css_class, y, lane_height in lanes:
+        lines.extend(render_workflow_lane(label, css_class, y, lane_height, width))
+
+    steps = [
+        (230, 150, 180, 62, "Création commande de transfert intersite"),
+        (690, 150, 180, 62, "Mise à jour commande transfert intersite"),
+        (910, 150, 170, 62, "Création réception transfert intersite"),
+        (1310, 150, 150, 62, "Mise à jour commande"),
+        (230, 342, 180, 62, "Intégration commande transfert intersite"),
+        (460, 342, 180, 62, "Picking packing expédition"),
+        (690, 342, 180, 62, "Clôture commande transfert intersite"),
+        (910, 522, 170, 62, "Intégration réception transfert intersite"),
+        (1130, 522, 150, 62, "Réception transfert intersite"),
+        (1310, 522, 150, 62, "Clôture réception transfert intersite"),
+        (230, 704, 150, 58, "Plan de transport"),
+        (460, 704, 180, 58, "Picking packing expédition"),
+    ]
+    for step in steps:
+        lines.extend(render_step_box(*step))
+
+    lines.extend(
+        [
+            connector([(320, 212), (320, 342)]),
+            connector([(410, 373), (460, 373)]),
+            connector([(640, 373), (690, 373)]),
+            connector([(780, 342), (780, 212)]),
+            connector([(870, 181), (910, 181)]),
+            connector([(995, 212), (995, 522)]),
+            connector([(1080, 553), (1130, 553)]),
+            connector([(1280, 553), (1310, 553)]),
+            connector([(1385, 522), (1385, 212)]),
+            connector([(380, 733), (460, 733)]),
+            connector([(550, 704), (550, 404)]),
+            text_element("label", 420, 358, "expédition intersite"),
+            text_element("label", 1088, 538, "réception intersite"),
+            text_element("label", 566, 640, "coordination transport"),
+            "</svg>",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
 def render_all() -> dict[str, str]:
     return {
         "architecture-cible-flow-overview.svg": render_overview_svg(),
         "architecture-cible-flow-ecosysteme-brd.svg": render_architecture_brd_svg(),
+        "c-log-oms-workflow-nominal.svg": render_c_log_nominal_workflow_svg(),
+        "c-log-oms-workflow-crossdock.svg": render_c_log_crossdock_workflow_svg(),
+        "c-log-oms-workflow-equilibrage-stock.svg": render_c_log_stock_balancing_workflow_svg(),
         "methodologie-flow-overview.svg": render_methodology_svg(),
         "panorama-brd-ecosystem.svg": render_panorama_brd_svg(),
         "panorama-gbm-ecosystem.svg": render_panorama_gbm_svg(),

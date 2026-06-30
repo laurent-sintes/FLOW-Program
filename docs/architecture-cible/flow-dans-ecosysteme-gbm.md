@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>3 min</strong>
+      <strong>4 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -135,6 +135,8 @@ Dans la lecture cible, C-LOG est positionné comme une filiale ou un opérateur 
 - événements logistiques.
 
 Il faudra donc éviter de réduire C-LOG à une brique d'intégration.
+
+L'atelier du 30 juin 2026 sur l'OMS C-LOG confirme ce point : Crossroad porte déjà des règles de scoring, d'orchestration, de crossdock, de split de commande et de file manuelle. Voir [OMS C-LOG - atelier du 30 juin 2026](../contexte/panorama-oms-c-log.md).
 
 ## Finance séparée de Supply
 

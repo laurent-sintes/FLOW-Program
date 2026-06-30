@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">OMS C-LOG - workflow équilibrage de stock</title>
+  <desc id="desc">Workflow d'équilibrage de stock avec commande de transfert intersite, expédition, réception et clôture.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="820" rx="24"/>
+  <text class="title" x="52" y="58">OMS C-LOG - équilibrage de stock</text>
+  <text class="subtitle" x="52" y="86">Transfert intersite pour rééquilibrer les stocks entre deux entrepôts.</text>
+  <line x1="52" y1="104" x2="1448" y2="104" stroke="#e09238" stroke-width="2"/>
+  <rect class="blue" x="52" y="125" width="1396" height="110" rx="8"/>
+  <text class="h" x="72" y="159">OMS</text>
+  <rect class="green" x="52" y="310" width="1396" height="115" rx="8"/>
+  <text class="h" x="72" y="344">WMS 1</text>
+  <rect class="green" x="52" y="490" width="1396" height="115" rx="8"/>
+  <text class="h" x="72" y="524">WMS 2</text>
+  <rect class="purple" x="52" y="670" width="1396" height="110" rx="8"/>
+  <text class="h" x="72" y="704">TMS Aval</text>
+  <rect class="panel" x="230" y="150" width="180" height="62" rx="8"/>
+  <text class="small" x="320" y="177" text-anchor="middle">Création commande de</text>
+  <text class="small" x="320" y="194" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="690" y="150" width="180" height="62" rx="8"/>
+  <text class="small" x="780" y="177" text-anchor="middle">Mise à jour commande</text>
+  <text class="small" x="780" y="194" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="910" y="150" width="170" height="62" rx="8"/>
+  <text class="small" x="995" y="177" text-anchor="middle">Création réception</text>
+  <text class="small" x="995" y="194" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="1310" y="150" width="150" height="62" rx="8"/>
+  <text class="small" x="1385" y="177" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1385" y="194" text-anchor="middle">commande</text>
+  <rect class="panel" x="230" y="342" width="180" height="62" rx="8"/>
+  <text class="small" x="320" y="369" text-anchor="middle">Intégration commande</text>
+  <text class="small" x="320" y="386" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="460" y="342" width="180" height="62" rx="8"/>
+  <text class="small" x="550" y="369" text-anchor="middle">Picking packing</text>
+  <text class="small" x="550" y="386" text-anchor="middle">expédition</text>
+  <rect class="panel" x="690" y="342" width="180" height="62" rx="8"/>
+  <text class="small" x="780" y="369" text-anchor="middle">Clôture commande</text>
+  <text class="small" x="780" y="386" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="910" y="522" width="170" height="62" rx="8"/>
+  <text class="small" x="995" y="549" text-anchor="middle">Intégration réception</text>
+  <text class="small" x="995" y="566" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="1130" y="522" width="150" height="62" rx="8"/>
+  <text class="small" x="1205" y="549" text-anchor="middle">Réception transfert</text>
+  <text class="small" x="1205" y="566" text-anchor="middle">intersite</text>
+  <rect class="panel" x="1310" y="522" width="150" height="62" rx="8"/>
+  <text class="small" x="1385" y="549" text-anchor="middle">Clôture réception</text>
+  <text class="small" x="1385" y="566" text-anchor="middle">transfert intersite</text>
+  <rect class="panel" x="230" y="704" width="150" height="58" rx="8"/>
+  <text class="small" x="305" y="738" text-anchor="middle">Plan de transport</text>
+  <rect class="panel" x="460" y="704" width="180" height="58" rx="8"/>
+  <text class="small" x="550" y="729" text-anchor="middle">Picking packing</text>
+  <text class="small" x="550" y="746" text-anchor="middle">expédition</text>
+  <path class="arrow" d="M320 212 L320 342"/>
+  <path class="arrow" d="M410 373 L460 373"/>
+  <path class="arrow" d="M640 373 L690 373"/>
+  <path class="arrow" d="M780 342 L780 212"/>
+  <path class="arrow" d="M870 181 L910 181"/>
+  <path class="arrow" d="M995 212 L995 522"/>
+  <path class="arrow" d="M1080 553 L1130 553"/>
+  <path class="arrow" d="M1280 553 L1310 553"/>
+  <path class="arrow" d="M1385 522 L1385 212"/>
+  <path class="arrow" d="M380 733 L460 733"/>
+  <path class="arrow" d="M550 704 L550 404"/>
+  <text class="label" x="420" y="358">expédition intersite</text>
+  <text class="label" x="1088" y="538">réception intersite</text>
+  <text class="label" x="566" y="640">coordination transport</text>
+</svg>

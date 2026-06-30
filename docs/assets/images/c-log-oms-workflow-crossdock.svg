@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="930" viewBox="0 0 1700 930" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">OMS C-LOG - workflow crossdock</title>
+  <desc id="desc">Workflow crossdock avec commande maître, sous-commandes, réception XDO et coordination entre deux entrepôts.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1700" height="930" rx="24"/>
+  <text class="title" x="52" y="58">OMS C-LOG - crossdock</text>
+  <text class="subtitle" x="52" y="86">Une commande à cheval entre deux entrepôts produit des sous-commandes et une consolidation d'exécution.</text>
+  <line x1="52" y1="104" x2="1648" y2="104" stroke="#e09238" stroke-width="2"/>
+  <rect class="accent" x="52" y="125" width="1596" height="105" rx="8"/>
+  <text class="h" x="72" y="159">ERP</text>
+  <rect class="blue" x="52" y="260" width="1596" height="115" rx="8"/>
+  <text class="h" x="72" y="294">OMS</text>
+  <rect class="green" x="52" y="415" width="1596" height="115" rx="8"/>
+  <text class="h" x="72" y="449">WMS 1</text>
+  <rect class="green" x="52" y="580" width="1596" height="115" rx="8"/>
+  <text class="h" x="72" y="614">WMS 2</text>
+  <rect class="purple" x="52" y="760" width="1596" height="110" rx="8"/>
+  <text class="h" x="72" y="794">TMS Aval</text>
+  <rect class="panel" x="110" y="148" width="150" height="58" rx="8"/>
+  <text class="small" x="185" y="182" text-anchor="middle">Création commande</text>
+  <rect class="panel" x="1480" y="148" width="150" height="58" rx="8"/>
+  <text class="small" x="1555" y="173" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1555" y="190" text-anchor="middle">commande</text>
+  <rect class="panel" x="80" y="292" width="180" height="62" rx="8"/>
+  <text class="small" x="170" y="328" text-anchor="middle">Orchestration</text>
+  <rect class="panel" x="430" y="292" width="150" height="62" rx="8"/>
+  <text class="small" x="505" y="319" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="505" y="336" text-anchor="middle">commande</text>
+  <rect class="panel" x="610" y="292" width="150" height="62" rx="8"/>
+  <text class="small" x="685" y="319" text-anchor="middle">Création réception</text>
+  <text class="small" x="685" y="336" text-anchor="middle">XDO</text>
+  <rect class="panel" x="945" y="292" width="150" height="62" rx="8"/>
+  <text class="small" x="1020" y="319" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1020" y="336" text-anchor="middle">commande</text>
+  <rect class="panel" x="1125" y="292" width="160" height="62" rx="8"/>
+  <text class="small" x="1205" y="319" text-anchor="middle">Création commande</text>
+  <text class="small" x="1205" y="336" text-anchor="middle">globale</text>
+  <rect class="panel" x="1480" y="292" width="150" height="62" rx="8"/>
+  <text class="small" x="1555" y="319" text-anchor="middle">Mise à jour</text>
+  <text class="small" x="1555" y="336" text-anchor="middle">commande</text>
+  <rect class="panel" x="74" y="448" width="86" height="62" rx="8"/>
+  <text class="small" x="117" y="475" text-anchor="middle">Image de</text>
+  <text class="small" x="117" y="492" text-anchor="middle">stock</text>
+  <rect class="panel" x="180" y="448" width="150" height="62" rx="8"/>
+  <text class="small" x="255" y="475" text-anchor="middle">Intégration</text>
+  <text class="small" x="255" y="492" text-anchor="middle">commande XDO</text>
+  <rect class="panel" x="360" y="448" width="150" height="62" rx="8"/>
+  <text class="small" x="435" y="475" text-anchor="middle">Picking packing</text>
+  <text class="small" x="435" y="492" text-anchor="middle">expédition</text>
+  <rect class="panel" x="540" y="448" width="150" height="62" rx="8"/>
+  <text class="small" x="615" y="475" text-anchor="middle">Clôture commande</text>
+  <text class="small" x="615" y="492" text-anchor="middle">XDO</text>
+  <rect class="panel" x="610" y="614" width="160" height="62" rx="8"/>
+  <text class="small" x="690" y="641" text-anchor="middle">Intégration réception</text>
+  <text class="small" x="690" y="658" text-anchor="middle">XDO</text>
+  <rect class="panel" x="790" y="614" width="150" height="62" rx="8"/>
+  <text class="small" x="865" y="650" text-anchor="middle">Réception XDO</text>
+  <rect class="panel" x="970" y="614" width="150" height="62" rx="8"/>
+  <text class="small" x="1045" y="641" text-anchor="middle">Clôture réception</text>
+  <text class="small" x="1045" y="658" text-anchor="middle">XDO</text>
+  <rect class="panel" x="1125" y="614" width="160" height="62" rx="8"/>
+  <text class="small" x="1205" y="641" text-anchor="middle">Intégration commande</text>
+  <text class="small" x="1205" y="658" text-anchor="middle">globale</text>
+  <rect class="panel" x="1305" y="614" width="160" height="62" rx="8"/>
+  <text class="small" x="1385" y="641" text-anchor="middle">Picking packing</text>
+  <text class="small" x="1385" y="658" text-anchor="middle">expédition</text>
+  <rect class="panel" x="1480" y="614" width="150" height="62" rx="8"/>
+  <text class="small" x="1555" y="650" text-anchor="middle">Clôture commande</text>
+  <rect class="panel" x="110" y="786" width="150" height="58" rx="8"/>
+  <text class="small" x="185" y="820" text-anchor="middle">Plan de transport</text>
+  <rect class="panel" x="1305" y="786" width="160" height="58" rx="8"/>
+  <text class="small" x="1385" y="811" text-anchor="middle">Picking packing</text>
+  <text class="small" x="1385" y="828" text-anchor="middle">expédition</text>
+  <path class="arrow" d="M185 206 L185 292"/>
+  <path class="arrow" d="M160 479 L180 479"/>
+  <path class="arrow" d="M185 354 L185 448"/>
+  <path class="arrow" d="M330 479 L360 479"/>
+  <path class="arrow" d="M510 479 L540 479"/>
+  <path class="arrow" d="M615 448 L615 354 L505 354"/>
+  <path class="arrow" d="M580 323 L610 323"/>
+  <path class="arrow" d="M685 354 L685 614"/>
+  <path class="arrow" d="M770 645 L790 645"/>
+  <path class="arrow" d="M940 645 L970 645"/>
+  <path class="arrow" d="M1045 614 L1045 354 L1020 354"/>
+  <path class="arrow" d="M1095 323 L1125 323"/>
+  <path class="arrow" d="M1205 354 L1205 614"/>
+  <path class="arrow" d="M1285 645 L1305 645"/>
+  <path class="arrow" d="M1465 645 L1480 645"/>
+  <path class="arrow" d="M1555 614 L1555 354"/>
+  <path class="arrow" d="M1555 292 L1555 206"/>
+  <path class="arrow" d="M260 815 L1305 815"/>
+  <path class="arrow" d="M1385 786 L1385 676"/>
+  <path class="arrowSoft" d="M260 815 L150 815 L150 354 L80 354"/>
+  <text class="label" x="274" y="468">commande XDO</text>
+  <text class="label" x="802" y="630">réception XDO</text>
+  <text class="label" x="1178" y="602">commande globale</text>
+  <text class="label" x="1398" y="735">coordination TMS / WMS</text>
+</svg>

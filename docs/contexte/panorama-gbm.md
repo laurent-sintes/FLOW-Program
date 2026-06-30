@@ -327,6 +327,8 @@ Pour FLOW, la question est de distinguer :
 
 Cette distinction est importante pour éviter de remplacer un composant d'intégration par une plateforme métier, ou inversement de laisser dans un EAI des responsabilités de décision et d'orchestration qui devraient être explicites.
 
+L'atelier C-LOG du 30 juin 2026 précise ce point : l'OMS C-LOG porte déjà des règles de fulfillment, de scoring, de crossdock, de split et d'orchestration manuelle. Voir la page dédiée : [OMS C-LOG - atelier du 30 juin 2026](panorama-oms-c-log.md).
+
 ## CBS — SI fournisseur et achat amont
 
 CBS n'a pas besoin d'une page autonome, mais il constitue un élément important du panorama GBM.

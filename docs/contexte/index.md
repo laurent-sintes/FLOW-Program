@@ -29,10 +29,11 @@ Elle ne décrit pas encore la cible. Elle documente le terrain de départ : les 
 - [Trajectoires SI et contexte de convergence](trajectoires-si-convergence.md)
 - [Panorama applicatif BRD](panorama-brd.md)
 - [Panorama applicatif GBM](panorama-gbm.md)
+- [OMS C-LOG - atelier du 30 juin 2026](panorama-oms-c-log.md)
 
 ## Lecture conseillée
 
-Pour comprendre le contexte, commencer par la page de trajectoires SI et de convergence, puis lire séparément les panoramas applicatifs BRD et GBM.
+Pour comprendre le contexte, commencer par la page de trajectoires SI et de convergence, puis lire séparément les panoramas applicatifs BRD et GBM. La page dédiée à l'OMS C-LOG détaille ensuite un composant majeur du fulfillment GBM.
 
 La première page ne doit pas être lue comme une simple cartographie applicative. Elle explique plutôt pourquoi les histoires de BRD, GBM et Sarenza créent une situation de convergence particulière.
 

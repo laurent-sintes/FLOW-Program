@@ -86,6 +86,8 @@ Il porte déjà une partie des décisions de fulfillment : orientation, exécuti
 
 Si FLOW porte une partie de la décision liée à la demande, et C-LOG une partie de la décision liée à l'exécution, le risque est de distribuer la décision sans gouvernance claire.
 
+L'atelier C-LOG du 30 juin 2026 fait apparaître un arbitrage plus large : si l'OMS C-LOG prend en charge complètement les magasins et l'omnicanalité, la promesse client devient largement détenue par la filiale logistique ; si l'OMS est remonté au niveau FLOW, C-LOG devient plutôt une capacité Supply spécialisée ; si un autre OMS est ajouté pour les usages non couverts, la cohérence de promesse et l'intégration deviennent beaucoup plus difficiles.
+
 Cela peut produire :
 
 - Des choix incompatibles entre demande et exécution.
@@ -94,7 +96,7 @@ Cela peut produire :
 - Une optimisation locale au détriment de l'optimisation globale.
 - Une difficulté à expliquer pourquoi une décision a été prise.
 
-Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, ainsi que le contrat d'échange entre FLOW et C-LOG.
+Ce hotspot impose de définir précisément la frontière entre décision de demande et décision d'exécution, le propriétaire cible de la promesse client omnicanale, ainsi que le contrat d'échange entre FLOW et C-LOG.
 
 ## Intégration et fraîcheur : stock temps réel
 

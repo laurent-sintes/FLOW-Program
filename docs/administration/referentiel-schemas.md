@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>5 min</strong>
+      <strong>6 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -48,6 +48,9 @@ Schémas actuellement pilotés par `scripts/generate_svg_diagrams.py` :
 
 - `architecture-cible-flow-overview.svg`
 - `architecture-cible-flow-ecosysteme-brd.svg`
+- `c-log-oms-workflow-nominal.svg`
+- `c-log-oms-workflow-crossdock.svg`
+- `c-log-oms-workflow-equilibrage-stock.svg`
 - `methodologie-flow-overview.svg`
 - `panorama-brd-ecosystem.svg`
 - `panorama-gbm-ecosystem.svg`
@@ -78,6 +81,9 @@ Les schémas plus anciens peuvent rester en l'état lorsqu'ils sont cohérents d
 | `architecture-cible-flow-ecosysteme-brd.svg` | `docs/architecture-cible/flow-dans-ecosysteme-brd.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; écosystème BRD, panorama BRD, frontières FLOW / SRM / PLM / SAP / CBS, hotspot fournisseur / usine / Agreement |
 | `architecture-cible-flow-ecosysteme-gbm.svg` | `docs/architecture-cible/flow-dans-ecosysteme-gbm.md` | Écosystème GBM, panorama GBM, frontières FLOW / SAP / StoreLand / Socloz / NewStore / CBS |
 | `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; overview de la plateforme FLOW, six produits candidats, domaines Engagement / Demand / Fulfillment / Supply, pratiques transverses de gouvernance des données |
+| `c-log-oms-workflow-nominal.svg` | `docs/contexte/panorama-oms-c-log.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; atelier C-LOG du 30 juin 2026, cas nominal, ERP, OMS, WMS, TMS Aval, orchestration et mise à jour commande |
+| `c-log-oms-workflow-crossdock.svg` | `docs/contexte/panorama-oms-c-log.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; atelier C-LOG du 30 juin 2026, OMS Crossroad, crossdock, commande maître, sous-commandes, WMS 1 / WMS 2, TMS Aval |
+| `c-log-oms-workflow-equilibrage-stock.svg` | `docs/contexte/panorama-oms-c-log.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; atelier C-LOG du 30 juin 2026, stock optimal, transfert intersite, réception intersite, IRMA, Dataiku, WMS et TMS Aval |
 | `chronologie-engagement-supply-flow.svg` | `docs/architecture-cible/overview-plateforme-flow.md`, `docs/vision/modele-fonctionnement-flow.md` | Chronologie Engagement vers FLOW vers Supply, promesse, décision, plan d'exécution, remontées d'information |
 | `flux-produits-fonctionnalites-flow.svg` | `docs/architecture-cible/flux-fonctionnels-flow.md` | Produits FLOW, pratiques transverses, fonctionnalités, Case Management, Stock Unifié, Agreement, règles, événements, vues |
 | `methodologie-flow-overview.svg` | `docs/methode/processus-de-cadrage.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; processus de cadrage, passage des observations aux choix de conception, livrables de méthode |
