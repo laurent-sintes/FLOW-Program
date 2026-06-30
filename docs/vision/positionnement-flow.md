@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Sponsor, Direction, Architecte</strong>
+      <strong>Sponsor, Architecte, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>Comprendre la vision, les arbitrages et le vocabulaire cible</strong>
+      <strong>Comprendre le périmètre FLOW et ses impacts d'adoption</strong>
     </div>
   </div>
 </div>

@@ -69,7 +69,7 @@ Ces pages documentent les capacités opérationnelles et les tensions de cohére
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
 - [Allocation et convergence](allocation-point-saillant-de-la-convergence.md)
 - [Engagements, soft allocation et priorisation](engagements-soft-allocation-et-priorisation-commerciale.md)
-- [Cohérence de l'information, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+- [Cohérence de l'information, DataHub et CEP](coherence-information-fraicheur-datahub-cep.md)
 - [Gouverner les données en transit](gouverner-donnees-en-transit.md)
 - [Inventory Visibility](inventory-visibility-capacite-d-entreprise.md)
 

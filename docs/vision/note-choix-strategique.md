@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Sponsor, Direction, Architecte</strong>
+      <strong>Sponsor, Architecte, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>Comprendre la vision, les arbitrages et le vocabulaire cible</strong>
+      <strong>Partager les arbitrages structurants et préparer leur appropriation</strong>
     </div>
   </div>
 </div>
@@ -141,6 +141,8 @@ La question prioritaire n'est pas encore le détail de chaque composant. Elle es
 Ces arbitrages conditionnent les autres décisions.
 
 Ils doivent être partagés tôt parce qu'ils peuvent être déroutants : ils déplacent la lecture du SI depuis les applications et les processus historiques vers les responsabilités de décision.
+
+Ils alimentent directement les messages de transformation décrits dans [Les changements à conduire avec FLOW](../transformation/changements-a-conduire.md).
 
 ## 7. Les arbitrages structurants à instruire ensuite
 

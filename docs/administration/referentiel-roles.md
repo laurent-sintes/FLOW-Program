@@ -35,7 +35,7 @@ L'objectif est de garder les cartouches utiles et homogènes. Un cartouche doit 
 | Métier | Lecteur qui porte les usages, règles, exceptions, arbitrages fonctionnels ou impacts opérationnels. | Contexte, hotspots, transformation, principes métier |
 | Développeur | Lecteur qui doit comprendre les composants techniques, APIs, scripts, prototypes, moteurs ou choix d'implémentation. | Architecture technique, produits FLOW, administration, scripts |
 | Delivery | Lecteur qui prépare la construction, l'intégration, le déploiement, l'exploitation ou la mise en œuvre. | Fiches produits, architecture cible, intégration, environnement |
-| Change Manager | Lecteur qui prépare l'adoption, la communication, les changements de posture et l'accompagnement. | Transformation, valeur attendue, méthodologie |
+| Change Manager | Lecteur qui prépare l'adoption, la communication, les changements de posture et l'accompagnement. | Transformation, valeur attendue, méthodologie, arbitrages, hotspots |
 | PMO | Lecteur qui pilote la méthode, le cadrage, les livrables, les dépendances et la gouvernance projet. | Méthodologie Projet, processus de cadrage |
 | Contributeur | Personne qui enrichit, corrige ou maintient le contenu du référentiel. | Administration, instructions Codex, statistiques |
 | Mainteneur | Personne qui administre le site, les checks, GitHub Actions, l'environnement local ou la publication. | Administration du référentiel, environnement, workflows |

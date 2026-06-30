@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Architecte, Métier, Contributeur</strong>
+      <strong>Architecte, Métier, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>Comprendre le point de départ et les tensions observées</strong>
+      <strong>Comprendre C-LOG et les impacts d'appropriation du positionnement OMS</strong>
     </div>
   </div>
 </div>

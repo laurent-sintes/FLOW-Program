@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Sponsor, Architecte, Métier</strong>
+      <strong>Sponsor, Architecte, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>Préparer les arbitrages sur les points sensibles de convergence</strong>
+      <strong>Préparer l'arbitrage sur C-LOG, la promesse et son accompagnement</strong>
     </div>
   </div>
 </div>

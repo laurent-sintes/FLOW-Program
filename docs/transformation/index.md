@@ -42,22 +42,22 @@ La recommandation est donc de distinguer deux natures de contenus :
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
 - [Les changements à conduire avec FLOW](changements-a-conduire.md)
 
-## Position de travail
+## Priorité de travail
 
 À ce stade, les changements doivent être regroupés en cinq thèmes maximum :
 
-1. ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise ;
-2. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
-3. réconcilier ERP et OMS dans une plateforme Demand ;
-4. penser fulfillment et satisfaction client avant documents ;
-5. construire le bon niveau de commun.
+1. déplacer le centre de gravité du SI de l'ERP vers la demande, la promesse et la satisfaction client ;
+2. réconcilier ERP et OMS dans une plateforme Demand, sans recréer un monolithe ;
+3. clarifier qui détient la promesse omnicanale, notamment dans l'arbitrage FLOW / C-LOG ;
+4. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
+5. construire le bon niveau de commun, sans faire croire que FLOW embarque tout.
 
-Cette structuration permet de couvrir la profondeur de FLOW sans multiplier les campagnes de changement.
+Cette structuration reprend les arbitrages prioritaires identifiés avec les leaders projet et les enseignements de l'atelier OMS C-LOG du 30 juin 2026.
 
-Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception et d'arbitrage.
+Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage et de lecture du périmètre FLOW.
 
 ## À retenir
 
 La transformation FLOW doit aider les équipes à comprendre que la convergence ne signifie pas la disparition des singularités.
 
-Elle signifie que les responsabilités critiques — demandes, décisions métier, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées.
+Elle signifie que les responsabilités critiques — demandes, décisions métier, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées, même lorsqu'elles restent portées par plusieurs domaines ou partenaires comme C-LOG.

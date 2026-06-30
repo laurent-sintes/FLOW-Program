@@ -18,7 +18,7 @@ METRICS_PATH = DOCS / "referentiel" / "page-metrics.json"
 STATS_PAGE = DOCS / "referentiel" / "statistiques.md"
 ROLE_REGISTRY_PATH = DOCS / "administration" / "referentiel-roles.md"
 READING_WORDS_PER_MINUTE = 220
-PROFILE_VERSION = 3
+PROFILE_VERSION = 4
 SOURCE_LANGUAGE = "fr"
 PUBLISHED_LANGUAGES = ["fr", "en"]
 METRICS_SCOPE = "canonical_source"
@@ -149,6 +149,45 @@ SECTION_PROFILES = {
     "referentiel": (
         "Tous lecteurs, Contributeur, Mainteneur",
         "Piloter la lisibilité, les concepts et les repères quantitatifs",
+    ),
+}
+
+PAGE_PROFILES = {
+    "vision/note-choix-strategique.md": (
+        "Sponsor, Architecte, Change Manager",
+        "Partager les arbitrages structurants et préparer leur appropriation",
+    ),
+    "vision/positionnement-flow.md": (
+        "Sponsor, Architecte, Change Manager",
+        "Comprendre le périmètre FLOW et ses impacts d'adoption",
+    ),
+    "vision/vision-detaillee/5-valeur-attendue.md": (
+        "Sponsor, Direction, Change Manager",
+        "Relier la valeur attendue aux changements à conduire",
+    ),
+    "principes-directeurs/abstract.md": (
+        "Sponsor, Architecte, Change Manager",
+        "Partager rapidement les principes à faire adopter",
+    ),
+    "methode/index.md": (
+        "PMO, Architecte, Change Manager",
+        "S'orienter dans la démarche de cadrage et ses impacts d'accompagnement",
+    ),
+    "methode/processus-de-cadrage.md": (
+        "PMO, Architecte, Change Manager",
+        "Cadrer la démarche, les arbitrages Build / Buy et les messages d'accompagnement",
+    ),
+    "contexte/panorama-oms-c-log.md": (
+        "Architecte, Métier, Change Manager",
+        "Comprendre C-LOG et les impacts d'appropriation du positionnement OMS",
+    ),
+    "hotspots/index.md": (
+        "Sponsor, Architecte, Change Manager",
+        "Identifier les tensions à arbitrer et à rendre appropriables",
+    ),
+    "hotspots/c-log-decision-fulfillment.md": (
+        "Sponsor, Architecte, Change Manager",
+        "Préparer l'arbitrage sur C-LOG, la promesse et son accompagnement",
     ),
 }
 
@@ -290,6 +329,10 @@ def section_for(path: Path) -> str:
 
 def profile_for(path: Path, role_registry: set[str]) -> tuple[str, str]:
     relative = path.relative_to(DOCS)
+    page_profile = PAGE_PROFILES.get(relative.as_posix())
+    if page_profile:
+        validate_audience(page_profile[0], path, role_registry)
+        return page_profile
     if relative.as_posix() == "index.md":
         profile = ("Tous lecteurs", "S'orienter dans le référentiel FLOW")
         validate_audience(profile[0], path, role_registry)

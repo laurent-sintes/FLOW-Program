@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>Sponsor, Architecte, Métier</strong>
+      <strong>Sponsor, Architecte, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+      <strong>Identifier les tensions à arbitrer et à rendre appropriables</strong>
     </div>
   </div>
 </div>

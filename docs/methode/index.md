@@ -6,7 +6,7 @@
   <div class="flow-reading-card__grid">
     <div>
       <span>Public cible</span>
-      <strong>PMO, Architecte, Contributeur</strong>
+      <strong>PMO, Architecte, Change Manager</strong>
     </div>
     <div>
       <span>Temps de lecture</span>
@@ -14,7 +14,7 @@
     </div>
     <div>
       <span>Usage</span>
-      <strong>S'orienter dans la section et identifier les pages utiles</strong>
+      <strong>S'orienter dans la démarche de cadrage et ses impacts d'accompagnement</strong>
     </div>
   </div>
 </div>

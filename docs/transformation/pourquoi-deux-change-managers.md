@@ -65,7 +65,8 @@ Le Change Management doit donc accompagner :
 - la compréhension des responsabilités cibles ;
 - la distinction entre convergence et uniformisation ;
 - la capacité à raisonner par domaines, capacités et produits ;
-- l'acceptation progressive d'une plateforme Demand transverse.
+- l'acceptation progressive d'une plateforme Demand transverse ;
+- l'appropriation des arbitrages sensibles, notamment le centre de gravité ERP / OMS, la promesse omnicanale et le positionnement de C-LOG.
 
 ## Pourquoi deux Change Managers ?
 
