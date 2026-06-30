@@ -38,7 +38,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 103 |
-| Nombre de mots | 91 349 |
+| Nombre de mots | 91 343 |
 | Temps de lecture complet | 7 h 43 min |
 | Concepts du glossaire | 94 |
 | Hotspots documentés | 8 |
@@ -60,8 +60,8 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | methode | 2 | 2 962 | 14 min |
 | principes-directeurs | 9 | 8 863 | 45 min |
 | referentiel | 1 | 2 979 | 14 min |
-| transformation | 3 | 2 995 | 15 min |
-| vision | 13 | 13 494 | 1 h 6 min |
+| transformation | 3 | 2 991 | 15 min |
+| vision | 13 | 13 492 | 1 h 6 min |
 
 ## Pages les plus longues
 

@@ -1,4 +1,4 @@
-# Les changements à conduire avec FLOW
+# Les changements à conduire
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">

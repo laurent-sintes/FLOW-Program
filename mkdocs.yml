@@ -147,7 +147,7 @@ nav:
   - Transformation:
       - transformation/index.md
       - Pourquoi deux Change Managers dans la Core Team FLOW ?: transformation/pourquoi-deux-change-managers.md
-      - Les changements à conduire avec FLOW: transformation/changements-a-conduire.md
+      - Les changements à conduire: transformation/changements-a-conduire.md
   - Référentiel:
       - Glossaire FLOW: glossaire.md
       - Statistiques du référentiel: referentiel/statistiques.md

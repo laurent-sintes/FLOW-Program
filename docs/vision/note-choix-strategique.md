@@ -142,7 +142,7 @@ Ces arbitrages conditionnent les autres décisions.
 
 Ils doivent être partagés tôt parce qu'ils peuvent être déroutants : ils déplacent la lecture du SI depuis les applications et les processus historiques vers les responsabilités de décision.
 
-Ils alimentent directement les messages de transformation décrits dans [Les changements à conduire avec FLOW](../transformation/changements-a-conduire.md).
+Ils alimentent directement les messages de transformation décrits dans [Les changements à conduire](../transformation/changements-a-conduire.md).
 
 ## 7. Les arbitrages structurants à instruire ensuite
 

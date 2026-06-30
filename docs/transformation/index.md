@@ -40,7 +40,7 @@ La recommandation est donc de distinguer deux natures de contenus :
 ## Pages disponibles
 
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
-- [Les changements à conduire avec FLOW](changements-a-conduire.md)
+- [Les changements à conduire](changements-a-conduire.md)
 
 ## Priorité de travail
 
