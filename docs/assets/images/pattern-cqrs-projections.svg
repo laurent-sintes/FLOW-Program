@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img"><defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.cmd{fill:#fff8f0;stroke:#e09238;stroke-width:2}.read{fill:#eaf4f2;stroke:#236159;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.t{font:500 16px Aptos,Calibri,sans-serif;fill:#1e293b}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs><rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">CQRS et projections</text><text class="s" x="54" y="84">Séparer ce qui modifie le système de ce qui est lu par les consommateurs.</text><rect class="cmd" x="80" y="210" width="230" height="130" rx="18"/><text class="h" x="130" y="255">Command</text><text class="t" x="118" y="286">ReserveStock</text><text class="t" x="118" y="312">CreateCase</text><rect class="box" x="440" y="190" width="260" height="170" rx="22"/><text class="h" x="505" y="240">Write model</text><text class="t" x="485" y="272">valide l'intention</text><text class="t" x="485" y="300">produit des événements</text><rect class="cmd" x="820" y="135" width="260" height="110" rx="18"/><text class="h" x="890" y="178">Events</text><text class="t" x="864" y="207">faits immuables</text><rect class="read" x="820" y="340" width="260" height="120" rx="18"/><text class="h" x="880" y="385">Read models</text><text class="t" x="860" y="415">projections spécialisées</text><rect class="read" x="520" y="450" width="250" height="90" rx="18"/><text class="h" x="576" y="486">Consommateurs</text><text class="t" x="560" y="515">API · Vues 360 · UI</text><path class="aa" d="M310 275 L440 275"/><path class="aa" d="M700 252 C760 230 780 190 820 190"/><path class="a" d="M950 245 L950 340"/><path class="a" d="M820 405 C770 440 760 480 770 495"/><path class="a" d="M520 495 C420 495 360 360 310 315"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">CQRS et projections</title>
+  <desc id="desc">Séparer ce qui modifie le système de ce qui est lu par les consommateurs.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="620" rx="24"/>
+  <text class="title" x="60" y="58">CQRS et projections</text>
+  <text class="subtitle" x="60" y="86">Séparer ce qui modifie le système de ce qui est lu par les consommateurs.</text>
+  <rect class="blue" x="70" y="170" width="220" height="140" rx="18"/>
+  <text class="h" x="94" y="210">Command</text>
+  <text class="small" x="94" y="242">ReserveStock</text>
+  <text class="small" x="94" y="262">CreateCase</text>
+  <rect class="panelSoft" x="360" y="160" width="250" height="160" rx="18"/>
+  <text class="h" x="384" y="200">Write model</text>
+  <text class="small" x="384" y="232">valide l'intention</text>
+  <text class="small" x="384" y="252">produit des événements</text>
+  <rect class="accent" x="690" y="180" width="180" height="130" rx="18"/>
+  <text class="h" x="714" y="220">Events</text>
+  <text class="small" x="714" y="252">faits immuables</text>
+  <rect class="green" x="940" y="150" width="260" height="145" rx="18"/>
+  <text class="h" x="964" y="190">Read models</text>
+  <text class="small" x="964" y="222">projections spécialisées</text>
+  <rect class="grey" x="940" y="370" width="260" height="120" rx="18"/>
+  <text class="h" x="964" y="410">Consommateurs</text>
+  <text class="small" x="964" y="442">API · Vues 360 · UI</text>
+  <path class="arrow" d="M290 235 L360 235"/>
+  <path class="arrowAccent" d="M610 235 L690 235"/>
+  <path class="arrow" d="M870 235 L940 220"/>
+  <path class="arrow" d="M1070 295 L1070 370"/>
+</svg>

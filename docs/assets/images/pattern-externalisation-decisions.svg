@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img"><defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.hw{font:700 24px Aptos,Calibri,sans-serif;fill:#fff}.t{font:500 16px Aptos,Calibri,sans-serif;fill:#1e293b}.tw{font:500 16px Aptos,Calibri,sans-serif;fill:#eaf4f2}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs><rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">Externalisation des décisions métier</text><text class="s" x="54" y="84">Les variations métier sont gouvernées par des policies et règles explicites, pas codées dans tous les processus.</text><rect class="box" x="70" y="185" width="230" height="250" rx="18"/><text class="h" x="112" y="228">Contexte</text><text class="t" x="105" y="270">Case</text><text class="t" x="105" y="300">Client</text><text class="t" x="105" y="330">Stock</text><text class="t" x="105" y="360">Canal</text><text class="t" x="105" y="390">SLA</text><rect class="accent" x="385" y="135" width="230" height="130" rx="18"/><text class="h" x="442" y="180">Facts</text><text class="t" x="425" y="210">situation exploitable</text><rect class="accent" x="385" y="350" width="230" height="130" rx="18"/><text class="h" x="436" y="395">Policies</text><text class="t" x="422" y="425">règles / contraintes</text><rect class="core" x="730" y="215" width="240" height="170" rx="24"/><text class="hw" x="765" y="280">Decision service</text><text class="tw" x="778" y="312">choix explicable</text><rect class="box" x="1070" y="185" width="160" height="250" rx="18"/><text class="h" x="1110" y="228">Action</text><text class="t" x="1100" y="270">réserver</text><text class="t" x="1100" y="300">allouer</text><text class="t" x="1100" y="330">annuler</text><text class="t" x="1100" y="360">rembourser</text><path class="a" d="M300 300 C340 260 350 220 385 200"/><path class="a" d="M300 330 C340 380 350 410 385 415"/><path class="aa" d="M615 200 C665 220 690 255 730 270"/><path class="aa" d="M615 415 C670 390 690 350 730 330"/><path class="a" d="M970 300 L1070 300"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Externalisation des décisions métier</title>
+  <desc id="desc">Les variations métier sont gouvernées par des policies explicites.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="620" rx="24"/>
+  <text class="title" x="60" y="58">Externalisation des décisions métier</text>
+  <text class="subtitle" x="60" y="86">Les variations métier sont gouvernées par des policies et règles explicites, pas codées dans tous les processus.</text>
+  <rect class="blue" x="70" y="175" width="260" height="235" rx="18"/>
+  <text class="h" x="94" y="215">Contexte</text>
+  <text class="small" x="94" y="247">Case</text>
+  <text class="small" x="94" y="267">Client</text>
+  <text class="small" x="94" y="287">Stock</text>
+  <text class="small" x="94" y="307">Canal</text>
+  <text class="small" x="94" y="327">SLA</text>
+  <rect class="panelSoft" x="405" y="210" width="230" height="125" rx="18"/>
+  <text class="h" x="429" y="250">Facts</text>
+  <text class="small" x="429" y="282">situation exploitable</text>
+  <rect class="accent" x="405" y="390" width="230" height="125" rx="18"/>
+  <text class="h" x="429" y="430">Policies</text>
+  <text class="small" x="429" y="462">règles / contraintes</text>
+  <rect class="core" x="710" y="250" width="250" height="150" rx="18"/>
+  <text class="hWhite" x="734" y="290">Decision service</text>
+  <text class="smallWhite" x="734" y="322">choix explicable</text>
+  <rect class="green" x="1030" y="205" width="200" height="210" rx="18"/>
+  <text class="h" x="1054" y="245">Action</text>
+  <text class="small" x="1054" y="277">réserver</text>
+  <text class="small" x="1054" y="297">allouer</text>
+  <text class="small" x="1054" y="317">annuler</text>
+  <text class="small" x="1054" y="337">rembourser</text>
+  <path class="arrow" d="M330 275 L405 275"/>
+  <path class="arrowAccent" d="M330 360 C360 410 375 430 405 452"/>
+  <path class="arrow" d="M635 275 L710 305"/>
+  <path class="arrowAccent" d="M635 452 C675 420 690 374 710 340"/>
+  <path class="arrow" d="M960 325 L1030 325"/>
+</svg>

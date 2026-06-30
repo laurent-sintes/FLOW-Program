@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import html
 import json
 import re
@@ -1153,6 +1154,41 @@ def check_generated_svg_diagrams(checks: Checks) -> None:
         return
 
     checks.pass_check("Generated SVG diagrams are up to date.")
+
+    try:
+        tree = ast.parse(read_text(SVG_GENERATOR_SCRIPT))
+    except SyntaxError as exc:
+        checks.error("SVG_GENERATOR_PARSE", f"SVG generator cannot be parsed: {exc}", SVG_GENERATOR_SCRIPT)
+        return
+
+    generated_names: set[str] = set()
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        if not any(isinstance(target, ast.Name) and target.id == "GENERATED_DIAGRAMS" for target in node.targets):
+            continue
+        if not isinstance(node.value, ast.Dict):
+            continue
+        for key in node.value.keys:
+            if isinstance(key, ast.Constant) and isinstance(key.value, str):
+                generated_names.add(key.value)
+
+    if not generated_names:
+        checks.error("SVG_GENERATOR_REGISTRY", "SVG generator does not expose a GENERATED_DIAGRAMS registry.", SVG_GENERATOR_SCRIPT)
+        return
+
+    svg_names = {path.name for path in DOCS.rglob("*.svg")}
+    unmanaged = sorted(svg_names - generated_names)
+    missing_files = sorted(generated_names - svg_names)
+
+    for name in unmanaged:
+        checks.error("SVG_UNMANAGED", f"SVG is not managed by scripts\\generate_svg_diagrams.py: {name}", SVG_GENERATOR_SCRIPT)
+
+    for name in missing_files:
+        checks.error("SVG_GENERATOR_ORPHAN", f"SVG generator references a file that does not exist in docs: {name}", SVG_GENERATOR_SCRIPT)
+
+    if not unmanaged and not missing_files:
+        checks.pass_check(f"All SVG assets are managed by the Python generator ({len(svg_names)} checked).")
 
 
 def check_image_registry(checks: Checks) -> None:

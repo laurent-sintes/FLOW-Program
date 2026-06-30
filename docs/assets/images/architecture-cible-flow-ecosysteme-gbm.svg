@@ -1,64 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="920" viewBox="0 0 1500 920" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">FLOW dans l'écosystème GBM</title>
-  <desc id="desc">Diagramme de positionnement cible de FLOW dans l'écosystème applicatif GBM, avec les applications satellites conservées autour de FLOW.</desc>
+  <desc id="desc">Schéma de positionnement cible de FLOW dans l'écosystème applicatif GBM.</desc>
   <defs>
     <style>
-      .bg{fill:#f7f8fb}.title{font:700 34px Arial,sans-serif;fill:#172033}.subtitle{font:400 17px Arial,sans-serif;fill:#596579}.zone{fill:#fff;stroke:#d8dee9;stroke-width:1.6;rx:24}.zone-title{font:700 18px Arial,sans-serif;fill:#172033}.chip{fill:#fff;stroke:#c8d0dc;stroke-width:1.4;rx:13}.chip-finance{fill:#fff;stroke:#d0b3ff;stroke-width:1.8;rx:13}.chip-flow{fill:#111827;stroke:#111827;rx:18}.chip-text{font:700 14px Arial,sans-serif;fill:#253044}.chip-small{font:400 12px Arial,sans-serif;fill:#596579}.flow-title{font:700 24px Arial,sans-serif;fill:#fff}.flow-sub{font:400 13px Arial,sans-serif;fill:#dbe3f0}.caption{font:400 14px Arial,sans-serif;fill:#596579}.arrow{stroke:#8a94a6;stroke-width:2;fill:none;marker-end:url(#arrow);stroke-dasharray:7 6}.arrow-strong{stroke:#4f66e8;stroke-width:2.5;fill:none;marker-end:url(#arrow-strong)}
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
     </style>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a94a6"/></marker>
-    <marker id="arrow-strong" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4f66e8"/></marker>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
   </defs>
-  <rect class="bg" width="1500" height="900"/>
-  <text class="title" x="60" y="58">FLOW dans l’écosystème GBM</text>
-  <text class="subtitle" x="60" y="88">Positionnement cible : FLOW reprend les responsabilités transverses sans remplacer tous les systèmes satellites.</text>
 
-  <rect class="zone" x="60" y="135" width="420" height="205" rx="24"/>
-  <text class="zone-title" x="88" y="170">Engagement / Expériences</text>
-  <rect class="chip" x="90" y="200" width="105" height="42" rx="13"/><text class="chip-text" x="125" y="226">SFCC</text>
-  <rect class="chip" x="215" y="200" width="105" height="42" rx="13"/><text class="chip-text" x="247" y="226">Mirakl</text>
-  <rect class="chip" x="340" y="200" width="105" height="42" rx="13"/><text class="chip-text" x="374" y="226">Zoho</text>
-  <rect class="chip" x="90" y="260" width="105" height="42" rx="13"/><text class="chip-text" x="123" y="286">Elastic</text>
-  <rect class="chip" x="215" y="260" width="230" height="42" rx="13"/><text class="chip-text" x="275" y="286">Outils magasins</text>
+  <rect class="bg" x="0" y="0" width="1500" height="920" rx="24"/>
+  <text class="title" x="750" y="70" text-anchor="middle">FLOW dans l'écosystème GBM</text>
+  <text class="subtitle" x="750" y="100" text-anchor="middle">FLOW reprend les responsabilités transverses sans remplacer tous les systèmes satellites.</text>
+  <rect class="panel" x="42" y="132" width="1416" height="728" rx="24"/>
+  <rect class="core" x="496" y="242" width="508" height="350" rx="30"/>
+  <text class="hWhite" x="750" y="296" text-anchor="middle">Plateforme FLOW</text>
+  <text class="smallWhite" x="750" y="326" text-anchor="middle">Demand + Fulfillment à réunifier</text>
+  <rect class="pill" x="552" y="370" width="178" height="30" rx="15"/>
+  <text class="pillText" x="589" y="390">Case Management</text>
+  <rect class="pill" x="770" y="370" width="178" height="30" rx="15"/>
+  <text class="pillText" x="824" y="390">Stock Unifié</text>
+  <rect class="pill" x="552" y="427" width="178" height="30" rx="15"/>
+  <text class="pillText" x="585" y="447">Réseau d'Exécution</text>
+  <rect class="pill" x="770" y="427" width="178" height="30" rx="15"/>
+  <text class="pillText" x="814" y="447">Supply Registry</text>
+  <rect class="pill" x="552" y="484" width="178" height="30" rx="15"/>
+  <text class="pillText" x="588" y="504">Product Agreement</text>
+  <rect class="pill" x="770" y="484" width="178" height="30" rx="15"/>
+  <text class="pillText" x="832" y="504">Vues 360</text>
+  <text class="smallWhite" x="750" y="555" text-anchor="middle">Case, stock, réseau, projections et contexte transverse.</text>
+  <rect class="blue" x="78" y="166" width="300" height="190" rx="18"/>
+  <text class="h" x="102" y="206">Engagement / expériences</text>
+  <text class="small" x="102" y="238">SFCC, Mirakl, Zoho, Elastic, outils</text>
+  <text class="small" x="102" y="258">magasins.</text>
+  <text class="small" x="102" y="278">Canaux, parcours, CRM, B2B / B2C,</text>
+  <text class="small" x="102" y="298">marketplace.</text>
 
-  <rect class="zone" x="60" y="390" width="420" height="205" rx="24"/>
-  <text class="zone-title" x="88" y="425">Produit / Offre / Agreements</text>
-  <rect class="chip" x="90" y="455" width="130" height="42" rx="13"/><text class="chip-text" x="124" y="481">PLM</text>
-  <rect class="chip" x="240" y="455" width="205" height="42" rx="13"/><text class="chip-text" x="291" y="481">PIM / Catalogue</text>
-  <rect class="chip" x="90" y="515" width="160" height="42" rx="13"/><text class="chip-text" x="136" y="541">Pricing</text>
-  <rect class="chip" x="270" y="515" width="175" height="42" rx="13"/><text class="chip-text" x="312" y="541">Assortiments</text>
+  <rect class="purple" x="78" y="420" width="300" height="180" rx="18"/>
+  <text class="h" x="102" y="460">Produit / offre / agreements</text>
+  <text class="small" x="102" y="492">PLM, PIM / catalogue, pricing,</text>
+  <text class="small" x="102" y="512">assortiments.</text>
+  <text class="small" x="102" y="532">Contexte d'engagement consommé par</text>
+  <text class="small" x="102" y="552">FLOW.</text>
 
-  <rect class="zone" x="1020" y="135" width="420" height="245" rx="24"/>
-  <text class="zone-title" x="1048" y="170">Supply</text>
-  <rect class="chip" x="1050" y="200" width="135" height="52" rx="13"/><text class="chip-text" x="1096" y="226">C-LOG</text><text class="chip-small" x="1078" y="244">logistique 3PL / 4PL</text>
-  <rect class="chip" x="1205" y="200" width="105" height="52" rx="13"/><text class="chip-text" x="1236" y="226">CBS</text><text class="chip-small" x="1224" y="244">amont fournisseur</text>
-  <rect class="chip" x="1330" y="200" width="85" height="52" rx="13"/><text class="chip-text" x="1350" y="226">WMS</text><text class="chip-small" x="1342" y="244">si séparé</text>
-  <rect class="chip" x="1050" y="275" width="130" height="42" rx="13"/><text class="chip-text" x="1085" y="301">Transport</text>
-  <rect class="chip" x="1200" y="275" width="120" height="42" rx="13"/><text class="chip-text" x="1233" y="301">Dépôts</text>
-  <rect class="chip" x="1340" y="275" width="75" height="42" rx="13"/><text class="chip-text" x="1355" y="301">Stores</text>
+  <rect class="green" x="1120" y="160" width="300" height="235" rx="18"/>
+  <text class="h" x="1144" y="200">Supply</text>
+  <text class="small" x="1144" y="232">C-LOG comme opérateur logistique.</text>
+  <text class="small" x="1144" y="252">OMS C-LOG, WMS, TMS / Transware,</text>
+  <text class="small" x="1144" y="272">dépôts et stores.</text>
 
-  <rect class="zone" x="1020" y="430" width="420" height="165" rx="24"/>
-  <text class="zone-title" x="1048" y="465">Finance</text>
-  <rect class="chip-finance" x="1050" y="495" width="165" height="48" rx="13"/><text class="chip-text" x="1092" y="524">SAP FI/CO</text>
-  <rect class="chip-finance" x="1240" y="495" width="175" height="48" rx="13"/><text class="chip-text" x="1280" y="524">Comptabilité</text>
-  <text class="chip-small" x="1050" y="570">Documents, écritures, contrôles, fiscalité</text>
+  <rect class="red" x="1120" y="455" width="300" height="175" rx="18"/>
+  <text class="h" x="1144" y="495">Finance</text>
+  <text class="small" x="1144" y="527">SAP FI/CO, comptabilité, documents,</text>
+  <text class="small" x="1144" y="547">écritures et contrôles.</text>
+  <text class="small" x="1144" y="567">Domaine à raccorder sans l'absorber.</text>
 
-  <rect class="chip-flow" x="535" y="235" width="430" height="360" rx="24"/>
-  <text class="flow-title" x="585" y="280">Plateforme FLOW</text>
-  <text class="flow-sub" x="585" y="307">Demand transverse — responsabilités à réunifier</text>
-  <rect class="chip" x="585" y="335" width="330" height="42" rx="13"/><text class="chip-text" x="639" y="361">Plateforme de Case Management</text>
-  <rect class="chip" x="585" y="390" width="150" height="42" rx="13"/><text class="chip-text" x="617" y="416">Stock Unifié</text>
-  <rect class="chip" x="765" y="390" width="150" height="42" rx="13"/><text class="chip-text" x="784" y="416">Réseau d’Exécution</text>
-  <rect class="chip" x="585" y="445" width="330" height="42" rx="13"/><text class="chip-text" x="645" y="471">Supply Service Registry</text>
-  <rect class="chip" x="585" y="500" width="160" height="42" rx="13"/><text class="chip-text" x="607" y="526">Product Agreement</text>
-  <rect class="chip" x="765" y="500" width="150" height="42" rx="13"/><text class="chip-text" x="813" y="526">Vues 360</text>
-  <text class="flow-sub" x="585" y="570">Case, stock, réseau, projections et contexte transverse</text>
+  <rect class="grey" x="492" y="675" width="516" height="150" rx="18"/>
+  <text class="h" x="516" y="715">Applications retirées ou remplacées</text>
+  <text class="small" x="516" y="747">StoreLand, Socloz et UR sont traités comme des responsabilités à reprendre,</text>
+  <text class="small" x="516" y="767">généraliser ou retirer dans la trajectoire cible.</text>
+  <text class="small" x="516" y="787">Le schéma est un positionnement, pas une cartographie de flux.</text>
 
-  <path class="arrow-strong" d="M480 240 C515 245 515 280 535 310"/>
-  <path class="arrow-strong" d="M480 495 C520 490 520 455 535 445"/>
-  <path class="arrow-strong" d="M965 315 C995 300 998 270 1020 250"/>
-  <path class="arrow" d="M965 505 C995 510 998 512 1020 515"/>
-
-  <text class="caption" x="60" y="650">Lecture : le schéma montre les applications satellites conservées autour de FLOW. Il ne représente pas les applications à retirer.</text>
-  <text class="caption" x="60" y="676">StoreLand, Socloz et UR sont traités dans le texte comme applications à retirer / remplacer dans la trajectoire cible.</text>
-  <text class="caption" x="60" y="702">Ce schéma est un positionnement, pas une cartographie de flux. Les interactions détaillées seront décrites dans l’architecture fonctionnelle cible.</text>
+  <path class="arrowSoft" d="M378 260 C430 292 455 320 496 352"/>
+  <path class="arrowSoft" d="M378 510 C430 498 455 478 496 456"/>
+  <path class="arrow" d="M1004 352 C1050 322 1080 285 1120 260"/>
+  <path class="arrow" d="M1004 470 C1060 498 1088 525 1120 545"/>
+  <path class="arrowAccent" d="M750 592 L750 675"/>
+  <rect class="panelSoft" x="142" y="826" width="1216" height="60" rx="16"/>
+  <text class="small" x="750" y="858" text-anchor="middle">Lecture : FLOW porte la cohérence Demand + Fulfillment ; Engagement, Supply et Finance restent autonomes mais raccordés par contrats, événements et projections.</text>
 </svg>

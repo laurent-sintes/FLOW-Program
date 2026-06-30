@@ -83,7 +83,7 @@ Pour lancer la validation complète du référentiel, utiliser :
 .\scripts\check-site.ps1
 ```
 
-Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, version de cache des assets publiés, index FAQ, SVG valides et exportables Office, SVG générés à jour, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, version de cache des assets publiés, index FAQ, SVG valides et exportables Office, SVG générés à jour, absence de SVG hors générateur, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
 
 Le contrôle des liens externes est optionnel, car il dépend du réseau et peut être plus lent :
 
@@ -132,13 +132,13 @@ Cette commande maintient :
 
 Les métriques sont calculées sur la source canonique française `docs/`, pas sur les sorties publiées `site/fr/` et `site/en/`. `docs/referentiel/page-metrics.json` doit conserver `metrics_scope: canonical_source`, `source_language: fr` et `published_languages: ["fr", "en"]`. Ne jamais additionner les langues publiées : tant que l'anglais est généré depuis la source française, ses cartouches de lecture reprennent les métriques de référence françaises.
 
-Pour régénérer les schémas SVG pilotés par script, utiliser :
+Pour régénérer les schémas SVG, utiliser :
 
 ```powershell
 .\scripts\generate-svg-diagrams.ps1
 ```
 
-Cette commande maintient les SVG pilotés par `scripts/generate_svg_diagrams.py`, notamment l'overview FLOW, l'écosystème BRD, les workflows OMS C-LOG, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management. Le générateur découpe les textes selon la largeur disponible, calcule la hauteur nécessaire des cartes et aligne la hauteur d'une même rangée. Il n'utilise aucune librairie Python externe : seulement la bibliothèque standard (`argparse`, `dataclasses`, `html`, `pathlib`). Modifier les données du schéma dans `scripts/generate_svg_diagrams.py` plutôt que d'ajuster manuellement les coordonnées d'un SVG généré.
+Cette commande maintient tous les SVG de `docs/assets/images/` via `scripts/generate_svg_diagrams.py`. Les PNG d'atelier restent des sources documentaires statiques. Le générateur découpe les textes selon la largeur disponible, calcule la hauteur nécessaire des cartes et aligne la hauteur d'une même rangée. Il n'utilise aucune librairie Python externe : seulement la bibliothèque standard (`argparse`, `dataclasses`, `html`, `pathlib`). Modifier les données du schéma dans `scripts/generate_svg_diagrams.py` plutôt que d'ajuster manuellement les coordonnées d'un SVG généré.
 
 Après toute modification documentaire significative, relancer `.\scripts\update-reading-metrics.ps1` avant `.\scripts\check-site.ps1`.
 
@@ -307,7 +307,7 @@ Impact à vérifier :
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
 - la gouvernance des données en transit est une pratique transverse, pas un produit FLOW candidat ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
-- les SVG générés par `scripts/generate_svg_diagrams.py`, dont l'overview FLOW, l'écosystème BRD, les workflows OMS C-LOG, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management, doivent être modifiés via le générateur afin de préserver les retours à la ligne et les hauteurs automatiques de blocs ;
+- tous les SVG de `docs/assets/images/` sont générés par `scripts/generate_svg_diagrams.py` et doivent être modifiés via le générateur afin de préserver les retours à la ligne, les hauteurs automatiques de blocs et le contrôle de cohérence ;
 - tous les SVG doivent rester exportables dans Word / PowerPoint : vectoriels, avec `viewBox`, `preserveAspectRatio="xMidYMid meet"`, sans image bitmap embarquée et sans `foreignObject` ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
 - ne pas introduire un composant technique sans clarifier sa responsabilité métier ou de plateforme.

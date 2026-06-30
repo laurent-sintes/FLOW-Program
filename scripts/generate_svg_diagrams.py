@@ -13,15 +13,28 @@ IMAGES = ROOT / "docs" / "assets" / "images"
 GENERATED_DIAGRAMS = {
     "architecture-cible-flow-overview.svg": IMAGES / "architecture-cible-flow-overview.svg",
     "architecture-cible-flow-ecosysteme-brd.svg": IMAGES / "architecture-cible-flow-ecosysteme-brd.svg",
+    "architecture-cible-flow-ecosysteme-gbm.svg": IMAGES / "architecture-cible-flow-ecosysteme-gbm.svg",
+    "chronologie-engagement-supply-flow.svg": IMAGES / "chronologie-engagement-supply-flow.svg",
     "c-log-oms-workflow-nominal.svg": IMAGES / "c-log-oms-workflow-nominal.svg",
     "c-log-oms-workflow-crossdock.svg": IMAGES / "c-log-oms-workflow-crossdock.svg",
     "c-log-oms-workflow-equilibrage-stock.svg": IMAGES / "c-log-oms-workflow-equilibrage-stock.svg",
+    "flux-produits-fonctionnalites-flow.svg": IMAGES / "flux-produits-fonctionnalites-flow.svg",
     "methodologie-flow-overview.svg": IMAGES / "methodologie-flow-overview.svg",
+    "modele-demand-notions-flow.svg": IMAGES / "modele-demand-notions-flow.svg",
+    "modele-mental-connaissances-flow.svg": IMAGES / "modele-mental-connaissances-flow.svg",
     "panorama-brd-ecosystem.svg": IMAGES / "panorama-brd-ecosystem.svg",
     "panorama-gbm-ecosystem.svg": IMAGES / "panorama-gbm-ecosystem.svg",
     "pattern-api-conversationnelle.svg": IMAGES / "pattern-api-conversationnelle.svg",
+    "pattern-case-centric-orchestration.svg": IMAGES / "pattern-case-centric-orchestration.svg",
+    "pattern-cqrs-projections.svg": IMAGES / "pattern-cqrs-projections.svg",
+    "pattern-event-driven-architecture.svg": IMAGES / "pattern-event-driven-architecture.svg",
+    "pattern-event-sourcing-ledger.svg": IMAGES / "pattern-event-sourcing-ledger.svg",
+    "pattern-externalisation-decisions.svg": IMAGES / "pattern-externalisation-decisions.svg",
     "pattern-operational-datahub.svg": IMAGES / "pattern-operational-datahub.svg",
+    "pattern-plateforme-ouverte-gouvernee.svg": IMAGES / "pattern-plateforme-ouverte-gouvernee.svg",
+    "positionnement-flow-4-domaines.svg": IMAGES / "positionnement-flow-4-domaines.svg",
     "produit-socle-case-management.svg": IMAGES / "produit-socle-case-management.svg",
+    "produit-stock-unifie.svg": IMAGES / "produit-stock-unifie.svg",
 }
 
 
@@ -147,6 +160,10 @@ def wrapped_text(
 
 def rect(css_class: str, x: int, y: int, width: int, height: int, rx: int = 18) -> str:
     return f'  <rect class="{css_class}" x="{x}" y="{y}" width="{width}" height="{height}" rx="{rx}"/>'
+
+
+def circle(css_class: str, x: int, y: int, radius: int) -> str:
+    return f'  <circle class="{css_class}" cx="{x}" cy="{y}" r="{radius}"/>'
 
 
 def badge_width(label: str, minimum: int, font_size: int = 12) -> int:
@@ -979,29 +996,605 @@ def render_c_log_stock_balancing_workflow_svg() -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_architecture_gbm_svg() -> str:
+    lines = svg_start(
+        1500,
+        920,
+        "FLOW dans l'écosystème GBM",
+        "Schéma de positionnement cible de FLOW dans l'écosystème applicatif GBM.",
+    )
+    lines.extend(
+        [
+            text_element("title", 750, 70, "FLOW dans l'écosystème GBM", "middle"),
+            text_element("subtitle", 750, 100, "FLOW reprend les responsabilités transverses sans remplacer tous les systèmes satellites.", "middle"),
+            rect("panel", 42, 132, 1416, 728, 24),
+            rect("core", 496, 242, 508, 350, 30),
+            text_element("hWhite", 750, 296, "Plateforme FLOW", "middle"),
+            text_element("smallWhite", 750, 326, "Demand + Fulfillment à réunifier", "middle"),
+        ]
+    )
+    for x, y, label in [
+        (552, 370, "Case Management"),
+        (770, 370, "Stock Unifié"),
+        (552, 427, "Réseau d'Exécution"),
+        (770, 427, "Supply Registry"),
+        (552, 484, "Product Agreement"),
+        (770, 484, "Vues 360"),
+    ]:
+        lines.extend(render_chip(x, y, label, min_width=178))
+    lines.extend(wrapped_text("Case, stock, réseau, projections et contexte transverse.", "smallWhite", 750, 555, 390, 13, 18, anchor="middle"))
+
+    cards = [
+        Card(78, 166, 300, "Engagement / expériences", ["SFCC, Mirakl, Zoho, Elastic, outils magasins.", "Canaux, parcours, CRM, B2B / B2C, marketplace."], "blue", 190),
+        Card(78, 420, 300, "Produit / offre / agreements", ["PLM, PIM / catalogue, pricing, assortiments.", "Contexte d'engagement consommé par FLOW."], "purple", 180),
+        Card(1120, 160, 300, "Supply", ["C-LOG comme opérateur logistique.", "OMS C-LOG, WMS, TMS / Transware, dépôts et stores."], "green", 235),
+        Card(1120, 455, 300, "Finance", ["SAP FI/CO, comptabilité, documents, écritures et contrôles.", "Domaine à raccorder sans l'absorber."], "red", 175),
+        Card(492, 675, 516, "Applications retirées ou remplacées", ["StoreLand, Socloz et UR sont traités comme des responsabilités à reprendre, généraliser ou retirer dans la trajectoire cible.", "Le schéma est un positionnement, pas une cartographie de flux."], "grey", 150),
+    ]
+    for card in cards:
+        lines.extend(render_card(card))
+        lines.append("")
+
+    lines.extend(
+        [
+            arrow("M378 260 C430 292 455 320 496 352", "arrowSoft"),
+            arrow("M378 510 C430 498 455 478 496 456", "arrowSoft"),
+            arrow("M1004 352 C1050 322 1080 285 1120 260", "arrow"),
+            arrow("M1004 470 C1060 498 1088 525 1120 545", "arrow"),
+            arrow("M750 592 L750 675", "arrowAccent"),
+            rect("panelSoft", 142, 826, 1216, 60, 16),
+        ]
+    )
+    lines.extend(wrapped_text("Lecture : FLOW porte la cohérence Demand + Fulfillment ; Engagement, Supply et Finance restent autonomes mais raccordés par contrats, événements et projections.", "small", 750, 858, 1100, 13, 18, anchor="middle"))
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_positioning_domains_svg() -> str:
+    lines = svg_start(
+        1600,
+        920,
+        "Positionnement de FLOW",
+        "FLOW porte le coeur Demand + Fulfillment ; Engagement et Supply sont adhérents et raccordés contractuellement.",
+    )
+    lines.extend(
+        [
+            text_element("title", 800, 68, "Positionnement de FLOW", "middle"),
+            text_element("subtitle", 800, 98, "Engagement capte l'intention ; FLOW gouverne Demand + Fulfillment ; Supply exécute et remonte les faits.", "middle"),
+            rect("panel", 58, 150, 330, 500, 24),
+            rect("core", 430, 130, 740, 540, 30),
+            rect("panel", 1212, 150, 330, 500, 24),
+            text_element("labelAccent", 223, 190, "DOMAINE ADHÉRENT", "middle"),
+            text_element("h", 223, 236, "Engagement", "middle"),
+            text_element("hWhite", 800, 178, "COEUR FLOW", "middle"),
+            text_element("labelAccent", 1377, 190, "DOMAINE ADHÉRENT", "middle"),
+            text_element("h", 1377, 236, "Supply", "middle"),
+        ]
+    )
+    engagement = ["Capte l'intention", "Porte les parcours", "Négocie le contexte", "Pilote l'expérience", "CRM · portails · marketplace", "B2B · B2C · SAV · négoce"]
+    supply = ["Expose les ressources", "Publie les contraintes", "Exécute physiquement", "Retourne les événements", "stock · entrepôts · magasins", "transport · usines · fournisseurs"]
+    lines.extend(text_lines(engagement[:4], "txt", 115, 300, 34))
+    lines.extend(text_lines(engagement[4:], "small", 115, 478, 26))
+    lines.extend(text_lines(supply[:4], "txt", 1268, 300, 34))
+    lines.extend(text_lines(supply[4:], "small", 1268, 478, 26))
+
+    for card in [
+        Card(500, 250, 275, "Demand", ["Qualifie la demande.", "Porte le Case.", "Suit les statuts.", "Porte la promesse attendue.", "intention qualifiée · priorité · contexte"], "panelSoft", 295),
+        Card(825, 250, 275, "Fulfillment", ["Arbitre la promesse.", "Choisit la trajectoire.", "Alloue et réserve.", "Ouvre les exceptions.", "sourcing · split · priorisation"], "accent", 295),
+        Card(150, 725, 390, "Contrats d'entrée", ["APIs, événements, demandes, contexte et engagements utiles à la décision."], "blue", 105),
+        Card(605, 725, 390, "Règle de périmètre", ["FLOW ne remplace pas Engagement ni Supply ; il gouverne la cohérence Demand + Fulfillment qui les relie."], "grey", 105),
+        Card(1060, 725, 390, "Contrats Supply", ["Disponibilités, SLA, statuts, contraintes, confirmations et exceptions terrain."], "green", 105),
+    ]:
+        lines.extend(render_card(card))
+
+    lines.extend(
+        [
+            arrow("M388 400 C420 400 450 397 500 397", "arrow"),
+            arrow("M775 397 L825 397", "arrowAccent"),
+            arrow("M1100 397 C1145 397 1175 400 1212 400", "arrow"),
+            arrow("M800 545 L800 725", "arrowAccent"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_chronology_engagement_supply_svg() -> str:
+    lines = svg_start(
+        1600,
+        1040,
+        "Chronologie Engagement vers Supply",
+        "La demande progresse avec les faits, événements, contraintes et retours d'exécution.",
+    )
+    lines.extend(
+        [
+            text_element("title", 800, 70, "Chronologie Engagement → FLOW → Supply", "middle"),
+            text_element("subtitle", 800, 100, "Une demande n'est pas un aller simple : la décision se réévalue avec les faits et retours d'exécution.", "middle"),
+            rect("blue", 70, 145, 310, 90, 20),
+            rect("core", 430, 145, 740, 90, 20),
+            rect("green", 1220, 145, 310, 90, 20),
+            text_element("h", 225, 197, "Engagement", "middle"),
+            text_element("hWhite", 800, 197, "FLOW : Demand + Fulfillment", "middle"),
+            text_element("h", 1375, 197, "Supply", "middle"),
+        ]
+    )
+    steps = [
+        ("1", "Capte l'intention", ["parcours", "canal", "contexte"], "blue"),
+        ("2", "Crée le Case", ["demande qualifiée", "statut initial"], "panelSoft"),
+        ("3", "Enrichit", ["Agreement", "règles", "priorités"], "panelSoft"),
+        ("4", "Décide", ["promesse tenable", "allocation", "sourcing"], "accent"),
+        ("5", "Exécute", ["prépare", "transporte", "confirme"], "green"),
+        ("6", "Remonte", ["faits", "statuts", "events"], "green"),
+        ("7", "Actualise", ["Case", "promesse", "exception si besoin"], "panelSoft"),
+        ("8", "Informe", ["promesse", "statut", "choix"], "blue"),
+    ]
+    for index, (num, title, body, css) in enumerate(steps):
+        cx = 75 + index * 190
+        lines.append(rect(css, cx, 315, 168, 215, 20))
+        lines.append(circle("accent", cx + 34, 353, 24))
+        lines.append(text_element("num", cx + 34, 361, num, "middle"))
+        lines.extend(wrapped_text(title, "h", cx + 84, 360, 88, 18, 22, bold=True, anchor="middle"))
+        lines.extend(text_lines(body, "small", cx + 24, 430, 22))
+        if index < len(steps) - 1:
+            lines.append(arrow(f"M{cx + 168} 423 L{cx + 190} 423", "arrow"))
+
+    lines.extend(
+        [
+            rect("panelSoft", 130, 640, 350, 90, 18),
+            rect("accent", 625, 640, 350, 90, 18),
+            rect("panelSoft", 1120, 640, 350, 90, 18),
+            text_element("h", 305, 680, "demande", "middle"),
+            text_element("small", 305, 708, "intention qualifiée et suivie", "middle"),
+            text_element("h", 800, 680, "plan d'exécution", "middle"),
+            text_element("small", 800, 708, "sourcing, allocation, promesse", "middle"),
+            text_element("h", 1295, 680, "retour d'information", "middle"),
+            text_element("small", 1295, 708, "faits, statuts, exceptions", "middle"),
+            arrow("M480 685 L625 685", "arrowAccent"),
+            arrow("M975 685 L1120 685", "arrow"),
+            arrow("M1295 730 C1295 850 305 850 305 730", "arrowSoft"),
+            rect("panel", 225, 900, 1150, 70, 18),
+        ]
+    )
+    lines.extend(wrapped_text("La promesse et le statut ne sont pas seulement calculés au départ : ils sont actualisés par les retours d'exécution et les exceptions observées.", "small", 800, 938, 1000, 13, 18, anchor="middle"))
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_demand_notions_svg() -> str:
+    lines = svg_start(
+        1600,
+        980,
+        "Modèle mental des notions FLOW",
+        "Schéma des notions Demand, fait, événement, décision, règle, promesse, Case et plan d'exécution.",
+    )
+    lines.extend(
+        [
+            text_element("title", 800, 70, "Modèle mental des notions FLOW", "middle"),
+            text_element("subtitle", 800, 100, "Comprendre qui fait quoi dans le traitement d'une demande.", "middle"),
+        ]
+    )
+    for card in [
+        Card(70, 170, 290, "ENGAGEMENT", ["Intention", "parcours, canal", "contexte relationnel"], "blue", 170),
+        Card(430, 160, 300, "DEMAND", ["Case", "demande qualifiée", "contexte et statut", "promesse attendue", "l'objet qui reste lisible"], "panelSoft", 250),
+        Card(790, 150, 330, "FULFILLMENT", ["Décision", "applique les règles", "compare les contraintes", "arbitre la promesse", "explicable et traçable"], "accent", 255),
+        Card(1230, 170, 300, "SUPPLY", ["Ressource", "stock, capacité", "SLA, contrainte", "Fait / event", "disponibilité, confirmation, exception terrain"], "green", 265),
+        Card(430, 510, 300, "Contexte", ["Agreement, priorité", "client, canal, pays", "contraintes métier"], "panel", 155),
+        Card(790, 510, 330, "Règle / policy", ["priorisation", "éligibilité", "fallback ou exception"], "amber", 155),
+        Card(455, 760, 300, "Journal du Case", ["faits, événements, décisions, statuts"], "grey", 100),
+        Card(845, 760, 300, "Projection consommable", ["vue statut, promesse, disponibilité"], "grey", 100),
+    ]:
+        lines.extend(render_card(card))
+        lines.append("")
+    lines.extend(
+        [
+            rect("core", 620, 690, 360, 70, 18),
+            text_element("hWhite", 800, 730, "Promesse + plan", "middle"),
+            text_element("smallWhite", 800, 752, "ce qui est décidé, expliqué et suivi", "middle"),
+            arrow("M360 255 L430 255", "arrow"),
+            arrow("M730 270 L790 270", "arrowAccent"),
+            arrow("M1120 275 L1230 275", "arrow"),
+            arrow("M1380 435 C1380 620 1000 660 980 690", "arrowSoft"),
+            arrow("M945 405 L945 510", "arrowAccent"),
+            arrow("M580 410 L580 510", "arrowSoft"),
+            arrow("M800 760 L800 690", "arrowAccent"),
+            arrow("M620 725 C555 725 560 760 605 760", "arrow"),
+            arrow("M980 725 C1050 725 1045 760 995 760", "arrow"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_knowledge_model_svg() -> str:
+    lines = svg_start(
+        1600,
+        980,
+        "Modèle mental des connaissances FLOW",
+        "Reconnaître une information, la ranger au bon endroit, puis mesurer ses impacts.",
+    )
+    lines.extend(
+        [
+            text_element("title", 800, 70, "Modèle mental des connaissances FLOW", "middle"),
+            text_element("subtitle", 800, 100, "Reconnaître une information, la ranger au bon endroit, puis mesurer ses impacts dans le référentiel.", "middle"),
+        ]
+    )
+    columns = [
+        (70, "1. MATIÈRE ENTRANTE", "blue", [
+            ("Réunion datée", ["atelier, transcript, notes", "contexte et périmètre"]),
+            ("Faits observés", ["ce qui est dit ou confirmé", "sans sur-interprétation"]),
+            ("Insights", ["ce que cela change", "dans la compréhension FLOW"]),
+            ("Questions ouvertes", ["hypothèses, risques", "arbitrages à instruire"]),
+        ]),
+        (560, "2. STRUCTURE DE CONNAISSANCE", "panelSoft", [
+            ("Vision", ["pourquoi, ambition", "positionnement cible"]),
+            ("Principes", ["règles durables", "de conception"]),
+            ("Concepts / domaines", ["vocabulaire, glossaire", "frontières stables"]),
+            ("Capacités / produits", ["ce qu'il faut savoir faire", "socles et services FLOW"]),
+            ("Patterns", ["formes réutilisables", "de solution"]),
+        ]),
+        (1090, "3. IMPACTS ET GOUVERNANCE", "green", [
+            ("Hotspots", ["points sensibles", "à arbitrer"]),
+            ("Architecture cible", ["produits, flux", "responsabilités"]),
+            ("Transformation", ["changements", "d'usage et posture"]),
+            ("Contrôles", ["cartouches, métriques", "liens, rôles, build"]),
+        ]),
+    ]
+    for x, title, css, items in columns:
+        lines.append(rect(css, x, 150, 440, 700, 24))
+        lines.append(text_element("h", x + 220, 198, title, "middle"))
+        y = 240
+        for item_title, body in items:
+            lines.extend(render_card(Card(x + 35, y, 370, item_title, body, "panel", 94)))
+            y += 116
+    lines.extend(
+        [
+            arrow("M510 500 L560 500", "arrow"),
+            arrow("M1000 500 L1090 500", "arrow"),
+            arrow("M1310 850 C1310 925 270 925 270 850", "arrowSoft"),
+            text_element("label", 535, 480, "alimente", "middle"),
+            text_element("label", 1045, 480, "structure", "middle"),
+            text_element("label", 800, 912, "vérifie et maintient", "middle"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_functional_flows_svg() -> str:
+    lines = svg_start(
+        1320,
+        780,
+        "Flux fonctionnels FLOW",
+        "Les flux traversent les produits et fonctionnalités FLOW, pas seulement les domaines.",
+    )
+    lines.extend(
+        [
+            text_element("title", 660, 58, "Flux fonctionnels FLOW", "middle"),
+            text_element("subtitle", 660, 86, "Niveau architecture : les flux traversent les produits et fonctionnalités, pas seulement les domaines.", "middle"),
+            rect("blue", 45, 140, 230, 470, 22),
+            rect("core", 325, 115, 670, 520, 28),
+            rect("green", 1045, 140, 230, 470, 22),
+            text_element("h", 160, 185, "ENGAGEMENT", "middle"),
+            text_element("hWhite", 660, 160, "COEUR FLOW : DEMAND + FULFILLMENT", "middle"),
+            text_element("h", 1160, 185, "SUPPLY", "middle"),
+        ]
+    )
+    lines.extend(text_lines(["Capte l'intention", "Canaux", "Portails", "CRM", "Négoce", "Interfaces partenaires", "API d'entrée"], "small", 92, 235, 32))
+    lines.extend(text_lines(["Expose les ressources", "Stocks", "Capacités", "Services", "WMS, TMS, POS", "usines, fournisseurs", "transporteurs"], "small", 1090, 235, 32))
+    for card in [
+        Card(365, 205, 260, "Socle Case Management", ["Case, statut, journal", "documents, exception"], "panel", 112),
+        Card(690, 205, 260, "Product Agreement Catalog", ["Produits, assortiments", "agreements, conditions"], "panel", 112),
+        Card(365, 350, 260, "Vues 360", ["Contexte client, fournisseur", "Case et historique transverse"], "panel", 112),
+        Card(690, 350, 260, "Règles et policies", ["Éligibilité, priorité", "fallback, arbitrage"], "accent", 112),
+        Card(365, 495, 260, "Stock Unifié", ["Disponibilité, réservation", "allocation"], "panel", 112),
+        Card(690, 495, 260, "Fulfillment Network", ["Noeuds, capacités", "contraintes, SLA"], "panel", 112),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            rect("amber", 430, 650, 460, 64, 18),
+            text_element("h", 660, 675, "Pratique transverse : gouvernance des données en transit", "middle"),
+            text_element("small", 660, 700, "Contrats de données, fraîcheur, qualité, supervision, réconciliation", "middle"),
+            arrow("M275 375 L325 375", "arrow"),
+            arrow("M995 375 L1045 375", "arrow"),
+            arrow("M1045 535 C1010 585 935 620 890 660", "arrowSoft"),
+            arrow("M325 535 C285 585 235 620 190 610", "arrowSoft"),
+            text_element("label", 300, 355, "demande", "middle"),
+            text_element("label", 1020, 355, "ressources", "middle"),
+            text_element("labelAccent", 1015, 620, "retours d'exécution", "middle"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_product_stock_unifie_svg() -> str:
+    lines = svg_start(
+        1280,
+        760,
+        "Stock Unifié",
+        "Un Operational DataHub qui transforme des mouvements distribués en disponibilité gouvernée et explicable.",
+    )
+    lines.extend(
+        [
+            text_element("title", 640, 58, "Stock Unifié", "middle"),
+            text_element("subtitle", 640, 86, "Un Operational DataHub qui transforme des mouvements distribués en disponibilité gouvernée et explicable.", "middle"),
+        ]
+    )
+    for card in [
+        Card(60, 145, 260, "Sources opérationnelles", ["POS / magasins", "WMS / entrepôts", "C-LOG / partenaires", "SAP / NewStore", "Retours / inventaires"], "blue", 330),
+        Card(405, 145, 470, "Operational DataHub Stock", ["ledger, projections, fraîcheur, confiance, réconciliation"], "core", 160, "hWhite", "smallWhite"),
+        Card(960, 145, 260, "Consommateurs", ["Cases FLOW", "Engagement / canaux", "Supply / exécution", "Vues 360", "Finance / contrôle"], "green", 330),
+        Card(430, 340, 175, "Ledger", ["mouvements", "auditables"], "panel", 105),
+        Card(625, 340, 175, "Projections", ["disponible", "promettable"], "panel", 105),
+        Card(430, 480, 175, "Décision", ["réserver", "allouer"], "accent", 105),
+        Card(625, 480, 175, "Explain", ["source", "fraîcheur", "confiance"], "panel", 105),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M320 300 L405 300", "arrow"),
+            arrow("M875 300 L960 300", "arrow"),
+            arrow("M640 305 L640 340", "arrowAccent"),
+            rect("panelSoft", 140, 645, 1000, 62, 18),
+            text_element("h", 640, 672, "Capacités exposées : Availability · Reserve · Allocate · Release · Explain · Reconcile", "middle"),
+            text_element("small", 640, 696, "Le Stock Unifié qualifie ce que l'entreprise peut promettre, à qui, pourquoi et avec quel niveau de confiance.", "middle"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_case_centric_orchestration_svg() -> str:
+    lines = svg_start(1280, 620, "Case-centric orchestration", "Le Case porte la demande, le contexte, les décisions et l'histoire.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "Case-centric orchestration"),
+            text_element("subtitle", 60, 86, "Le Case porte la demande, le contexte, les décisions et l'histoire ; le plan s'adapte aux faits observés."),
+            rect("core", 470, 210, 340, 180, 28),
+            text_element("hWhite", 640, 270, "CASE", "middle"),
+            text_element("smallWhite", 640, 302, "unité autonome de décision", "middle"),
+            text_element("smallWhite", 640, 328, "et d'orchestration", "middle"),
+        ]
+    )
+    for card in [
+        Card(70, 155, 250, "Demande", ["Request · Goal · Intent"], "blue", 100),
+        Card(70, 355, 250, "Événements", ["Ce qui s'est passé"], "green", 100),
+        Card(930, 150, 270, "Policies / règles", ["guident la décision"], "accent", 100),
+        Card(930, 315, 270, "Plan adaptable", ["tâches · attentes · exceptions"], "panel", 105),
+        Card(500, 455, 280, "Exécution", ["API · Supply · finance · partenaires"], "grey", 100),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M320 205 L470 265", "arrow"),
+            arrow("M320 405 L470 335", "arrow"),
+            arrow("M930 200 L810 265", "arrowAccent"),
+            arrow("M810 335 L930 365", "arrow"),
+            arrow("M640 390 L640 455", "arrow"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_cqrs_projections_svg() -> str:
+    lines = svg_start(1280, 620, "CQRS et projections", "Séparer ce qui modifie le système de ce qui est lu par les consommateurs.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "CQRS et projections"),
+            text_element("subtitle", 60, 86, "Séparer ce qui modifie le système de ce qui est lu par les consommateurs."),
+        ]
+    )
+    for card in [
+        Card(70, 170, 220, "Command", ["ReserveStock", "CreateCase"], "blue", 140),
+        Card(360, 160, 250, "Write model", ["valide l'intention", "produit des événements"], "panelSoft", 160),
+        Card(690, 180, 180, "Events", ["faits immuables"], "accent", 130),
+        Card(940, 150, 260, "Read models", ["projections spécialisées"], "green", 145),
+        Card(940, 370, 260, "Consommateurs", ["API · Vues 360 · UI"], "grey", 120),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M290 235 L360 235", "arrow"),
+            arrow("M610 235 L690 235", "arrowAccent"),
+            arrow("M870 235 L940 220", "arrow"),
+            arrow("M1070 295 L1070 370", "arrow"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_event_driven_architecture_svg() -> str:
+    lines = svg_start(1280, 620, "Event-Driven Architecture", "Les systèmes publient des faits métier ; les consommateurs réagissent sans dépendre de flux point à point.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "Event-Driven Architecture"),
+            text_element("subtitle", 60, 86, "Les systèmes publient des faits métier ; les consommateurs réagissent sans dépendre de flux point à point."),
+            rect("core", 465, 215, 350, 170, 24),
+            text_element("hWhite", 640, 270, "Event Backbone", "middle"),
+            text_element("smallWhite", 640, 302, "topics · contrats · rejeu", "middle"),
+            text_element("smallWhite", 640, 330, "observabilité · gouvernance", "middle"),
+        ]
+    )
+    for card in [
+        Card(70, 150, 230, "POS", ["StockSold"], "panel", 95),
+        Card(70, 285, 230, "WMS", ["StockReceived"], "panel", 95),
+        Card(70, 420, 230, "Case", ["CaseUpdated"], "panel", 95),
+        Card(970, 125, 240, "Stock Unifié", ["projette la disponibilité"], "accent", 85),
+        Card(970, 268, 240, "Vues 360", ["agrège la situation"], "accent", 85),
+        Card(970, 411, 240, "Décision", ["déclenche règles / actions"], "accent", 85),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M300 198 C365 198 400 250 465 268", "arrow"),
+            arrow("M300 333 C365 333 400 315 465 310", "arrow"),
+            arrow("M300 468 C365 468 400 365 465 340", "arrow"),
+            arrow("M815 270 C880 240 905 168 970 168", "arrowAccent"),
+            arrow("M815 305 C880 305 905 310 970 310", "arrowAccent"),
+            arrow("M815 340 C880 370 905 454 970 454", "arrowAccent"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_event_sourcing_ledger_svg() -> str:
+    lines = svg_start(1280, 620, "Event Sourcing / Ledger", "Conserver l'histoire des événements pour reconstruire, auditer et expliquer l'état courant.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "Event Sourcing / Ledger"),
+            text_element("subtitle", 60, 86, "Conserver l'histoire des événements pour reconstruire, auditer et expliquer l'état courant."),
+        ]
+    )
+    lines.extend(render_card(Card(70, 210, 220, "Action", ["ReserveStock"], "blue", 115)))
+    lines.append(rect("core", 390, 145, 430, 330, 26))
+    lines.append(text_element("hWhite", 605, 190, "Ledger immuable", "middle"))
+    for index, event in enumerate(["+10  Received", "-1  Sold", "-1  Reserved", "+1  Returned"]):
+        y = 235 + index * 58
+        lines.append(rect("panel", 455, y, 300, 44, 10))
+        lines.append(text_element("txt", 605, y + 28, event, "middle"))
+    for card in [
+        Card(930, 180, 240, "Projection", ["stock disponible"], "accent", 115),
+        Card(930, 360, 240, "Audit", ["preuve / explication"], "grey", 115),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M290 268 L390 280", "arrow"),
+            arrow("M820 280 L930 238", "arrowAccent"),
+            arrow("M820 340 L930 418", "arrow"),
+            rect("panelSoft", 240, 520, 800, 54, 16),
+            text_element("small", 640, 553, "La vérité courante est reconstruite depuis l'historique.", "middle"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_externalisation_decisions_svg() -> str:
+    lines = svg_start(1280, 620, "Externalisation des décisions métier", "Les variations métier sont gouvernées par des policies explicites.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "Externalisation des décisions métier"),
+            text_element("subtitle", 60, 86, "Les variations métier sont gouvernées par des policies et règles explicites, pas codées dans tous les processus."),
+        ]
+    )
+    for card in [
+        Card(70, 175, 260, "Contexte", ["Case", "Client", "Stock", "Canal", "SLA"], "blue", 235),
+        Card(405, 210, 230, "Facts", ["situation exploitable"], "panelSoft", 125),
+        Card(405, 390, 230, "Policies", ["règles / contraintes"], "accent", 125),
+        Card(710, 250, 250, "Decision service", ["choix explicable"], "core", 150, "hWhite", "smallWhite"),
+        Card(1030, 205, 200, "Action", ["réserver", "allouer", "annuler", "rembourser"], "green", 210),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M330 275 L405 275", "arrow"),
+            arrow("M330 360 C360 410 375 430 405 452", "arrowAccent"),
+            arrow("M635 275 L710 305", "arrow"),
+            arrow("M635 452 C675 420 690 374 710 340", "arrowAccent"),
+            arrow("M960 325 L1030 325", "arrow"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def render_pattern_open_governed_platform_svg() -> str:
+    lines = svg_start(1280, 620, "Plateforme ouverte et gouvernée", "Centraliser le commun, ouvrir des capacités contrôlées aux domaines.")
+    lines.extend(
+        [
+            text_element("title", 60, 58, "Plateforme ouverte et gouvernée"),
+            text_element("subtitle", 60, 86, "Centraliser le commun, ouvrir des capacités contrôlées aux domaines, éviter le monolithe comme le foisonnement."),
+            rect("core", 410, 145, 460, 250, 28),
+            text_element("hWhite", 640, 205, "Plateforme FLOW", "middle"),
+            text_element("smallWhite", 640, 238, "ressources communes gouvernées", "middle"),
+            text_element("smallWhite", 640, 266, "contrats API / événements", "middle"),
+            text_element("smallWhite", 640, 294, "standards d'extension", "middle"),
+            text_element("smallWhite", 640, 322, "observabilité / sécurité", "middle"),
+            text_element("smallWhite", 640, 350, "catalogue de capacités", "middle"),
+        ]
+    )
+    for card in [
+        Card(80, 155, 220, "B2C", ["expérience / apps"], "blue", 105),
+        Card(80, 350, 220, "B2B", ["domaines consommateurs"], "blue", 105),
+        Card(980, 250, 220, "Supply", ["exécution / partenaires"], "green", 115),
+        Card(320, 465, 180, "Configurer", ["network · règles"], "accent", 95),
+        Card(550, 465, 180, "Développer", ["types de Case"], "accent", 95),
+        Card(780, 465, 180, "Consommer", ["API · events · vues"], "accent", 95),
+    ]:
+        lines.extend(render_card(card))
+    lines.extend(
+        [
+            arrow("M300 207 L410 240", "arrow"),
+            arrow("M300 402 L410 330", "arrow"),
+            arrow("M870 290 L980 305", "arrow"),
+            arrow("M640 395 L640 465", "arrowAccent"),
+        ]
+    )
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
 def render_all() -> dict[str, str]:
     return {
         "architecture-cible-flow-overview.svg": render_overview_svg(),
         "architecture-cible-flow-ecosysteme-brd.svg": render_architecture_brd_svg(),
+        "architecture-cible-flow-ecosysteme-gbm.svg": render_architecture_gbm_svg(),
+        "chronologie-engagement-supply-flow.svg": render_chronology_engagement_supply_svg(),
         "c-log-oms-workflow-nominal.svg": render_c_log_nominal_workflow_svg(),
         "c-log-oms-workflow-crossdock.svg": render_c_log_crossdock_workflow_svg(),
         "c-log-oms-workflow-equilibrage-stock.svg": render_c_log_stock_balancing_workflow_svg(),
+        "flux-produits-fonctionnalites-flow.svg": render_functional_flows_svg(),
         "methodologie-flow-overview.svg": render_methodology_svg(),
+        "modele-demand-notions-flow.svg": render_demand_notions_svg(),
+        "modele-mental-connaissances-flow.svg": render_knowledge_model_svg(),
         "panorama-brd-ecosystem.svg": render_panorama_brd_svg(),
         "panorama-gbm-ecosystem.svg": render_panorama_gbm_svg(),
         "pattern-api-conversationnelle.svg": render_pattern_api_svg(),
+        "pattern-case-centric-orchestration.svg": render_pattern_case_centric_orchestration_svg(),
+        "pattern-cqrs-projections.svg": render_pattern_cqrs_projections_svg(),
+        "pattern-event-driven-architecture.svg": render_pattern_event_driven_architecture_svg(),
+        "pattern-event-sourcing-ledger.svg": render_pattern_event_sourcing_ledger_svg(),
+        "pattern-externalisation-decisions.svg": render_pattern_externalisation_decisions_svg(),
         "pattern-operational-datahub.svg": render_pattern_operational_datahub_svg(),
+        "pattern-plateforme-ouverte-gouvernee.svg": render_pattern_open_governed_platform_svg(),
+        "positionnement-flow-4-domaines.svg": render_positioning_domains_svg(),
         "produit-socle-case-management.svg": render_product_case_management_svg(),
+        "produit-stock-unifie.svg": render_product_stock_unifie_svg(),
     }
 
 
 def write_diagrams() -> None:
-    for name, content in render_all().items():
+    rendered = render_all()
+    declared = set(GENERATED_DIAGRAMS)
+    missing_declarations = sorted(set(rendered) - declared)
+    missing_renderers = sorted(declared - set(rendered))
+    if missing_declarations or missing_renderers:
+        raise SystemExit(
+            "SVG generator registry mismatch: "
+            f"missing declarations={missing_declarations}; missing renderers={missing_renderers}"
+        )
+
+    for name, content in rendered.items():
         GENERATED_DIAGRAMS[name].write_text(content, encoding="utf-8", newline="\n")
 
 
 def check_diagrams() -> int:
     expected_by_name = render_all()
+    declared = set(GENERATED_DIAGRAMS)
+    missing_declarations = sorted(set(expected_by_name) - declared)
+    missing_renderers = sorted(declared - set(expected_by_name))
+    if missing_declarations or missing_renderers:
+        print(
+            "SVG generator registry mismatch: "
+            f"missing declarations={missing_declarations}; missing renderers={missing_renderers}"
+        )
+        return 1
+
     stale: list[str] = []
 
     for name, expected in expected_by_name.items():

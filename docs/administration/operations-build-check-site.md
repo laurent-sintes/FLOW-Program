@@ -105,7 +105,7 @@ Il réalise les opérations suivantes :
 | Statistiques | Les cartouches et `page-metrics.json` sont à jour. |
 | Garde-fous FLOW | Les formulations interdites ou dangereuses ne réapparaissent pas. |
 | Glossaire | Les concepts FLOW essentiels restent présents. |
-| SVG générés | Les SVG pilotés par script sont à jour. |
+| SVG générés | Tous les SVG de `docs/assets/images/` sont pilotés par `scripts/generate_svg_diagrams.py` et à jour. |
 | SVG | Les fichiers SVG sont valides, vectoriels, redimensionnables et exportables Word / PowerPoint. |
 | Référentiel des schémas | Les SVG et leurs usages sont couverts par le registre d'impact. |
 
@@ -119,6 +119,7 @@ Il ne met pas automatiquement à jour :
 - `docs/referentiel/page-metrics.json` ;
 - `docs/referentiel/statistiques.md` ;
 - les SVG générés par script ;
+- les nouveaux SVG ajoutés hors générateur ;
 - les références web obsolètes ;
 - les erreurs de navigation ou de titre.
 

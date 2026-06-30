@@ -1,13 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
-<title id="title">Pattern Case-centric orchestration</title><desc id="desc">La demande au centre, alimentée par événements, faits, policies et systèmes d'exécution.</desc>
-<defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.core{fill:#236159}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.hw{font:700 24px Aptos,Calibri,sans-serif;fill:#fff}.t{font:500 17px Aptos,Calibri,sans-serif;fill:#1e293b}.tw{font:500 16px Aptos,Calibri,sans-serif;fill:#eaf4f2}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs>
-<rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">Case-centric orchestration</text><text class="s" x="54" y="84">Le Case porte la demande, le contexte, les décisions et l'histoire ; le plan s'adapte aux faits observés.</text>
-<rect class="box" x="70" y="160" width="240" height="120" rx="18"/><text class="h" x="110" y="205">Demande</text><text class="t" x="110" y="235">Request · Goal · Intent</text>
-<rect class="box" x="70" y="365" width="240" height="120" rx="18"/><text class="h" x="108" y="410">Événements</text><text class="t" x="108" y="440">Ce qui s'est passé</text>
-<circle class="core" cx="640" cy="305" r="128"/><text class="hw" x="580" y="292">CASE</text><text class="tw" x="538" y="324">unité autonome de décision</text><text class="tw" x="570" y="350">et d'orchestration</text>
-<rect class="accent" x="490" y="78" width="300" height="88" rx="18"/><text class="h" x="548" y="113">Policies / règles</text><text class="t" x="532" y="142">guident la décision</text>
-<rect class="box" x="930" y="160" width="270" height="120" rx="18"/><text class="h" x="982" y="205">Plan adaptable</text><text class="t" x="976" y="235">tâches · attentes · exceptions</text>
-<rect class="box" x="930" y="365" width="270" height="120" rx="18"/><text class="h" x="982" y="410">Exécution</text><text class="t" x="975" y="440">API · Supply · finance · partenaires</text>
-<path class="a" d="M310 220 C390 220 445 250 515 278"/><path class="a" d="M310 425 C390 425 440 372 515 334"/><path class="aa" d="M640 166 L640 180"/><path class="a" d="M765 280 C830 248 870 222 930 220"/><path class="a" d="M930 425 C850 425 795 375 745 340"/><path class="aa" d="M640 433 C640 490 430 520 230 485"/>
-<text class="s" x="455" y="250">contexte</text><text class="s" x="812" y="250">décision</text><text class="s" x="790" y="405">retours d'exécution</text><text class="s" x="425" y="520">apprentissage / adaptation</text>
+  <title id="title">Case-centric orchestration</title>
+  <desc id="desc">Le Case porte la demande, le contexte, les décisions et l'histoire.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="620" rx="24"/>
+  <text class="title" x="60" y="58">Case-centric orchestration</text>
+  <text class="subtitle" x="60" y="86">Le Case porte la demande, le contexte, les décisions et l'histoire ; le plan s'adapte aux faits observés.</text>
+  <rect class="core" x="470" y="210" width="340" height="180" rx="28"/>
+  <text class="hWhite" x="640" y="270" text-anchor="middle">CASE</text>
+  <text class="smallWhite" x="640" y="302" text-anchor="middle">unité autonome de décision</text>
+  <text class="smallWhite" x="640" y="328" text-anchor="middle">et d'orchestration</text>
+  <rect class="blue" x="70" y="155" width="250" height="102" rx="18"/>
+  <text class="h" x="94" y="195">Demande</text>
+  <text class="small" x="94" y="227">Request · Goal · Intent</text>
+  <rect class="green" x="70" y="355" width="250" height="102" rx="18"/>
+  <text class="h" x="94" y="395">Événements</text>
+  <text class="small" x="94" y="427">Ce qui s'est passé</text>
+  <rect class="accent" x="930" y="150" width="270" height="102" rx="18"/>
+  <text class="h" x="954" y="190">Policies / règles</text>
+  <text class="small" x="954" y="222">guident la décision</text>
+  <rect class="panel" x="930" y="315" width="270" height="105" rx="18"/>
+  <text class="h" x="954" y="355">Plan adaptable</text>
+  <text class="small" x="954" y="387">tâches · attentes · exceptions</text>
+  <rect class="grey" x="500" y="455" width="280" height="102" rx="18"/>
+  <text class="h" x="524" y="495">Exécution</text>
+  <text class="small" x="524" y="527">API · Supply · finance · partenaires</text>
+  <path class="arrow" d="M320 205 L470 265"/>
+  <path class="arrow" d="M320 405 L470 335"/>
+  <path class="arrowAccent" d="M930 200 L810 265"/>
+  <path class="arrow" d="M810 335 L930 365"/>
+  <path class="arrow" d="M640 390 L640 455"/>
 </svg>

@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img"><defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.hw{font:700 24px Aptos,Calibri,sans-serif;fill:#fff}.t{font:500 16px Aptos,Calibri,sans-serif;fill:#1e293b}.tw{font:500 16px Aptos,Calibri,sans-serif;fill:#eaf4f2}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs><rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">Plateforme ouverte et gouvernée</text><text class="s" x="54" y="84">Centraliser le commun, ouvrir des capacités contrôlées aux domaines, éviter le monolithe comme le foisonnement.</text><rect class="core" x="390" y="145" width="500" height="330" rx="30"/><text class="hw" x="520" y="190">Plateforme FLOW</text><text class="tw" x="492" y="230">ressources communes gouvernées</text><text class="tw" x="492" y="260">contrats API / événements</text><text class="tw" x="492" y="290">standards d'extension</text><text class="tw" x="492" y="320">observabilité / sécurité</text><text class="tw" x="492" y="350">catalogue de capacités</text><rect class="box" x="70" y="135" width="230" height="100" rx="18"/><text class="h" x="116" y="176">B2C</text><text class="t" x="105" y="205">expérience / apps</text><rect class="box" x="70" y="260" width="230" height="100" rx="18"/><text class="h" x="116" y="301">B2B</text><text class="t" x="105" y="330">domaines consommateurs</text><rect class="box" x="70" y="385" width="230" height="100" rx="18"/><text class="h" x="105" y="426">Supply</text><text class="t" x="105" y="455">exécution / partenaires</text><rect class="accent" x="980" y="155" width="230" height="100" rx="18"/><text class="h" x="1010" y="196">Configurer</text><text class="t" x="1018" y="225">network · règles</text><rect class="accent" x="980" y="285" width="230" height="100" rx="18"/><text class="h" x="1010" y="326">Développer</text><text class="t" x="1018" y="355">types de Case</text><rect class="accent" x="980" y="415" width="230" height="100" rx="18"/><text class="h" x="1010" y="456">Consommer</text><text class="t" x="1018" y="485">API · events · vues</text><path class="a" d="M300 185 L390 220"/><path class="a" d="M300 310 L390 310"/><path class="a" d="M300 435 L390 400"/><path class="aa" d="M890 230 L980 205"/><path class="aa" d="M890 310 L980 335"/><path class="aa" d="M890 390 L980 465"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Plateforme ouverte et gouvernée</title>
+  <desc id="desc">Centraliser le commun, ouvrir des capacités contrôlées aux domaines.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="620" rx="24"/>
+  <text class="title" x="60" y="58">Plateforme ouverte et gouvernée</text>
+  <text class="subtitle" x="60" y="86">Centraliser le commun, ouvrir des capacités contrôlées aux domaines, éviter le monolithe comme le foisonnement.</text>
+  <rect class="core" x="410" y="145" width="460" height="250" rx="28"/>
+  <text class="hWhite" x="640" y="205" text-anchor="middle">Plateforme FLOW</text>
+  <text class="smallWhite" x="640" y="238" text-anchor="middle">ressources communes gouvernées</text>
+  <text class="smallWhite" x="640" y="266" text-anchor="middle">contrats API / événements</text>
+  <text class="smallWhite" x="640" y="294" text-anchor="middle">standards d'extension</text>
+  <text class="smallWhite" x="640" y="322" text-anchor="middle">observabilité / sécurité</text>
+  <text class="smallWhite" x="640" y="350" text-anchor="middle">catalogue de capacités</text>
+  <rect class="blue" x="80" y="155" width="220" height="105" rx="18"/>
+  <text class="h" x="104" y="195">B2C</text>
+  <text class="small" x="104" y="227">expérience / apps</text>
+  <rect class="blue" x="80" y="350" width="220" height="105" rx="18"/>
+  <text class="h" x="104" y="390">B2B</text>
+  <text class="small" x="104" y="422">domaines consommateurs</text>
+  <rect class="green" x="980" y="250" width="220" height="115" rx="18"/>
+  <text class="h" x="1004" y="290">Supply</text>
+  <text class="small" x="1004" y="322">exécution / partenaires</text>
+  <rect class="accent" x="320" y="465" width="180" height="102" rx="18"/>
+  <text class="h" x="344" y="505">Configurer</text>
+  <text class="small" x="344" y="537">network · règles</text>
+  <rect class="accent" x="550" y="465" width="180" height="102" rx="18"/>
+  <text class="h" x="574" y="505">Développer</text>
+  <text class="small" x="574" y="537">types de Case</text>
+  <rect class="accent" x="780" y="465" width="180" height="102" rx="18"/>
+  <text class="h" x="804" y="505">Consommer</text>
+  <text class="small" x="804" y="537">API · events · vues</text>
+  <path class="arrow" d="M300 207 L410 240"/>
+  <path class="arrow" d="M300 402 L410 330"/>
+  <path class="arrow" d="M870 290 L980 305"/>
+  <path class="arrowAccent" d="M640 395 L640 465"/>
+</svg>

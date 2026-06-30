@@ -1,127 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1320" height="780" viewBox="0 0 1320 780" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
-  <title id="title">Flux fonctionnels FLOW a travers produits et fonctionnalites</title>
-  <desc id="desc">Schema d architecture fonctionnelle montrant comment une intention venant de l Engagement traverse les produits FLOW, produit une promesse et un plan d execution, puis recoit les retours Supply.</desc>
+  <title id="title">Flux fonctionnels FLOW</title>
+  <desc id="desc">Les flux traversent les produits et fonctionnalités FLOW, pas seulement les domaines.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#405466" />
-    </marker>
-    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#2b7a58" />
-    </marker>
     <style>
-      .bg { fill: #f7f9fb; }
-      .domain { fill: #ffffff; stroke: #c9d3dc; stroke-width: 2; rx: 18; }
-      .flow-core { fill: #f0f7ff; stroke: #5f8bb5; stroke-width: 3; rx: 22; }
-      .product { fill: #ffffff; stroke: #8fa7bc; stroke-width: 2; rx: 12; }
-      .feature { fill: #eef5f0; stroke: #86aa94; stroke-width: 1.5; rx: 10; }
-      .decision { fill: #fff6df; stroke: #d6a542; stroke-width: 2; rx: 14; }
-      .data { fill: #f6eef8; stroke: #ad83b8; stroke-width: 1.5; rx: 10; }
-      .feedback { fill: none; stroke: #2b7a58; stroke-width: 3; marker-end: url(#arrow-green); }
-      .arrow { fill: none; stroke: #405466; stroke-width: 3; marker-end: url(#arrow); }
-      .thin { fill: none; stroke: #6c7d8a; stroke-width: 2; marker-end: url(#arrow); }
-      .label { font: 700 22px Arial, Helvetica, sans-serif; fill: #23313d; }
-      .sub { font: 400 15px Arial, Helvetica, sans-serif; fill: #536574; }
-      .small { font: 400 13px Arial, Helvetica, sans-serif; fill: #536574; }
-      .box-title { font: 700 16px Arial, Helvetica, sans-serif; fill: #23313d; }
-      .box-text { font: 400 13px Arial, Helvetica, sans-serif; fill: #536574; }
-      .badge { font: 700 12px Arial, Helvetica, sans-serif; fill: #5a6b78; letter-spacing: .6px; }
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
     </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1320" height="780" />
-
-  <text class="label" x="48" y="48">Flux fonctionnels FLOW</text>
-  <text class="sub" x="48" y="74">Niveau architecture : les flux traversent les produits et fonctionnalites, pas seulement les domaines.</text>
-
-  <rect class="domain" x="40" y="118" width="210" height="520" />
-  <text class="badge" x="64" y="150">ENGAGEMENT</text>
-  <text class="box-title" x="64" y="182">Capte l'intention</text>
-  <text class="box-text" x="64" y="210">Canaux</text>
-  <text class="box-text" x="64" y="234">Portails</text>
-  <text class="box-text" x="64" y="258">CRM</text>
-  <text class="box-text" x="64" y="282">Negoce</text>
-  <text class="box-text" x="64" y="306">Interfaces partenaires</text>
-  <rect class="feature" x="64" y="354" width="162" height="86" />
-  <text class="box-title" x="82" y="386">API d'entree</text>
-  <text class="box-text" x="82" y="410">Creation ou mise a</text>
-  <text class="box-text" x="82" y="430">jour de demande</text>
-
-  <rect class="flow-core" x="305" y="104" width="710" height="560" />
-  <text class="badge" x="330" y="138">COEUR FLOW : DEMAND + FULFILLMENT</text>
-
-  <rect class="product" x="335" y="168" width="260" height="142" />
-  <text class="box-title" x="356" y="199">Socle Case Management</text>
-  <text class="box-text" x="356" y="226">Case, statut, journal</text>
-  <text class="box-text" x="356" y="248">documents, exception</text>
-  <text class="box-text" x="356" y="270">decision et promesse</text>
-
-  <rect class="product" x="335" y="348" width="260" height="118" />
-  <text class="box-title" x="356" y="379">Product Agreement Catalog</text>
-  <text class="box-text" x="356" y="406">Produits, assortiments</text>
-  <text class="box-text" x="356" y="428">agreements, conditions</text>
-
-  <rect class="product" x="335" y="502" width="260" height="104" />
-  <text class="box-title" x="356" y="533">Vues 360</text>
-  <text class="box-text" x="356" y="560">Contexte client, fournisseur</text>
-  <text class="box-text" x="356" y="582">Case et historique transverse</text>
-
-  <rect class="product" x="642" y="168" width="330" height="88" />
-  <text class="box-title" x="664" y="199">Regles et policies</text>
-  <text class="box-text" x="664" y="226">Eligibilite, priorite, fallback, arbitrage</text>
-
-  <rect class="product" x="642" y="282" width="330" height="92" />
-  <text class="box-title" x="664" y="313">Stock Unifie</text>
-  <text class="box-text" x="664" y="340">Disponibilite, reservation, allocation</text>
-
-  <rect class="product" x="642" y="400" width="330" height="94" />
-  <text class="box-title" x="664" y="431">Fulfillment Network Configuration</text>
-  <text class="box-text" x="664" y="458">Noeuds, capacites, contraintes, SLA</text>
-
-  <rect class="product" x="642" y="520" width="330" height="86" />
-  <text class="box-title" x="664" y="551">Supply Service Registry</text>
-  <text class="box-text" x="664" y="578">Services exposables par Supply</text>
-
-  <rect class="decision" x="1035" y="255" width="230" height="150" />
-  <text class="box-title" x="1060" y="288">Decision de Fulfillment</text>
-  <text class="box-text" x="1060" y="316">Promesse tenable</text>
-  <text class="box-text" x="1060" y="338">Plan d'execution</text>
-  <text class="box-text" x="1060" y="360">Splits, substitutions</text>
-  <text class="box-text" x="1060" y="382">ou exceptions</text>
-
-  <rect class="domain" x="1040" y="118" width="230" height="112" />
-  <text class="badge" x="1064" y="150">SUPPLY</text>
-  <text class="box-title" x="1064" y="180">Expose les ressources</text>
-  <text class="box-text" x="1064" y="206">Stocks, capacites, services</text>
-
-  <rect class="domain" x="1040" y="442" width="230" height="196" />
-  <text class="badge" x="1064" y="474">EXECUTION SUPPLY</text>
-  <text class="box-text" x="1064" y="504">WMS, TMS, POS</text>
-  <text class="box-text" x="1064" y="528">usines, fournisseurs</text>
-  <text class="box-text" x="1064" y="552">transporteurs</text>
-  <text class="box-text" x="1064" y="590">Faits, statuts, evenements</text>
-  <text class="box-text" x="1064" y="612">preuves et exceptions</text>
-
-  <rect class="data" x="330" y="686" width="620" height="70" />
-  <text class="box-title" x="354" y="714">Pratique transverse : gouvernance des donnees en transit</text>
-  <text class="box-text" x="354" y="738">Contrats de donnees, fraicheur, qualite, supervision, reconciliation</text>
-
-  <path class="arrow" d="M226 397 C260 397 274 239 333 239" />
-  <path class="thin" d="M595 239 L642 212" />
-  <path class="thin" d="M595 407 L642 212" />
-  <path class="thin" d="M595 407 L642 328" />
-  <path class="thin" d="M972 212 C1010 212 1012 298 1035 318" />
-  <path class="thin" d="M972 328 C1005 328 1010 330 1035 330" />
-  <path class="thin" d="M972 447 C1012 447 1015 365 1035 354" />
-  <path class="thin" d="M972 563 C1012 563 1015 383 1035 372" />
-  <path class="arrow" d="M1150 405 L1150 442" />
-  <path class="feedback" d="M1040 578 C838 640 630 646 466 606" />
-  <path class="feedback" d="M1040 604 C750 708 438 714 226 430" />
-  <path class="thin" d="M466 606 L466 690" />
-  <path class="thin" d="M807 606 L807 690" />
-
-  <text class="small" x="270" y="376">demande</text>
-  <text class="small" x="1005" y="246">ressources</text>
-  <text class="small" x="1170" y="428">plan</text>
-  <text class="small" x="792" y="640">retours d'execution</text>
-  <text class="small" x="250" y="588">statuts vers Engagement</text>
+  <rect class="bg" x="0" y="0" width="1320" height="780" rx="24"/>
+  <text class="title" x="660" y="58" text-anchor="middle">Flux fonctionnels FLOW</text>
+  <text class="subtitle" x="660" y="86" text-anchor="middle">Niveau architecture : les flux traversent les produits et fonctionnalités, pas seulement les domaines.</text>
+  <rect class="blue" x="45" y="140" width="230" height="470" rx="22"/>
+  <rect class="core" x="325" y="115" width="670" height="520" rx="28"/>
+  <rect class="green" x="1045" y="140" width="230" height="470" rx="22"/>
+  <text class="h" x="160" y="185" text-anchor="middle">ENGAGEMENT</text>
+  <text class="hWhite" x="660" y="160" text-anchor="middle">COEUR FLOW : DEMAND + FULFILLMENT</text>
+  <text class="h" x="1160" y="185" text-anchor="middle">SUPPLY</text>
+  <text class="small" x="92" y="235">Capte l'intention</text>
+  <text class="small" x="92" y="267">Canaux</text>
+  <text class="small" x="92" y="299">Portails</text>
+  <text class="small" x="92" y="331">CRM</text>
+  <text class="small" x="92" y="363">Négoce</text>
+  <text class="small" x="92" y="395">Interfaces partenaires</text>
+  <text class="small" x="92" y="427">API d'entrée</text>
+  <text class="small" x="1090" y="235">Expose les ressources</text>
+  <text class="small" x="1090" y="267">Stocks</text>
+  <text class="small" x="1090" y="299">Capacités</text>
+  <text class="small" x="1090" y="331">Services</text>
+  <text class="small" x="1090" y="363">WMS, TMS, POS</text>
+  <text class="small" x="1090" y="395">usines, fournisseurs</text>
+  <text class="small" x="1090" y="427">transporteurs</text>
+  <rect class="panel" x="365" y="205" width="260" height="122" rx="18"/>
+  <text class="h" x="389" y="245">Socle Case Management</text>
+  <text class="small" x="389" y="277">Case, statut, journal</text>
+  <text class="small" x="389" y="297">documents, exception</text>
+  <rect class="panel" x="690" y="205" width="260" height="146" rx="18"/>
+  <text class="h" x="714" y="245">Product Agreement</text>
+  <text class="h" x="714" y="269">Catalog</text>
+  <text class="small" x="714" y="301">Produits, assortiments</text>
+  <text class="small" x="714" y="321">agreements, conditions</text>
+  <rect class="panel" x="365" y="350" width="260" height="122" rx="18"/>
+  <text class="h" x="389" y="390">Vues 360</text>
+  <text class="small" x="389" y="422">Contexte client, fournisseur</text>
+  <text class="small" x="389" y="442">Case et historique transverse</text>
+  <rect class="accent" x="690" y="350" width="260" height="122" rx="18"/>
+  <text class="h" x="714" y="390">Règles et policies</text>
+  <text class="small" x="714" y="422">Éligibilité, priorité</text>
+  <text class="small" x="714" y="442">fallback, arbitrage</text>
+  <rect class="panel" x="365" y="495" width="260" height="122" rx="18"/>
+  <text class="h" x="389" y="535">Stock Unifié</text>
+  <text class="small" x="389" y="567">Disponibilité, réservation</text>
+  <text class="small" x="389" y="587">allocation</text>
+  <rect class="panel" x="690" y="495" width="260" height="122" rx="18"/>
+  <text class="h" x="714" y="535">Fulfillment Network</text>
+  <text class="small" x="714" y="567">Noeuds, capacités</text>
+  <text class="small" x="714" y="587">contraintes, SLA</text>
+  <rect class="amber" x="430" y="650" width="460" height="64" rx="18"/>
+  <text class="h" x="660" y="675" text-anchor="middle">Pratique transverse : gouvernance des données en transit</text>
+  <text class="small" x="660" y="700" text-anchor="middle">Contrats de données, fraîcheur, qualité, supervision, réconciliation</text>
+  <path class="arrow" d="M275 375 L325 375"/>
+  <path class="arrow" d="M995 375 L1045 375"/>
+  <path class="arrowSoft" d="M1045 535 C1010 585 935 620 890 660"/>
+  <path class="arrowSoft" d="M325 535 C285 585 235 620 190 610"/>
+  <text class="label" x="300" y="355" text-anchor="middle">demande</text>
+  <text class="label" x="1020" y="355" text-anchor="middle">ressources</text>
+  <text class="labelAccent" x="1015" y="620" text-anchor="middle">retours d'exécution</text>
 </svg>

@@ -1,113 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
-  <title id="title">Chronologie de traitement FLOW</title>
-  <desc id="desc">Chronologie montrant comment une intention captée dans Engagement devient une demande FLOW, une décision de Fulfillment, un plan d'exécution Supply, puis des faits et événements remontent vers le Case.</desc>
+  <title id="title">Chronologie Engagement vers Supply</title>
+  <desc id="desc">La demande progresse avec les faits, événements, contraintes et retours d'exécution.</desc>
   <defs>
     <style>
-      .bg{fill:#f7fbfa}
-      .lane{fill:#ffffff;stroke:#d8e7e3;stroke-width:2}
-      .eng{fill:#f2f0fb;stroke:#6d5ea8;stroke-width:2.5}
-      .flow{fill:#e8f5f2;stroke:#21695f;stroke-width:2.5}
-      .fulfill{fill:#fff6e8;stroke:#d98b28;stroke-width:2.5}
-      .supply{fill:#eef4ff;stroke:#4d6fae;stroke-width:2.5}
-      .feedback{fill:#ffffff;stroke:#91a7a1;stroke-width:2;stroke-dasharray:7 7}
-      .title{font:700 34px Aptos,Calibri,sans-serif;fill:#123f3a}
-      .subtitle{font:600 17px Aptos,Calibri,sans-serif;fill:#58706b}
-      .laneTitle{font:700 20px Aptos,Calibri,sans-serif;fill:#173f3a}
-      .num{font:700 22px Aptos,Calibri,sans-serif;fill:#ffffff}
-      .h{font:700 19px Aptos,Calibri,sans-serif;fill:#173f3a}
-      .t{font:500 14px Aptos,Calibri,sans-serif;fill:#24333f}
-      .s{font:600 13px Aptos,Calibri,sans-serif;fill:#62756f}
-      .badge{fill:#21695f}
-      .badge2{fill:#d98b28}
-      .badge3{fill:#4d6fae}
-      .badge4{fill:#6d5ea8}
-      .arrow{stroke:#21695f;stroke-width:3;fill:none;marker-end:url(#arrow)}
-      .arrow2{stroke:#d98b28;stroke-width:3;fill:none;marker-end:url(#arrow2)}
-      .arrow3{stroke:#4d6fae;stroke-width:3;fill:none;marker-end:url(#arrow3)}
-      .dash{stroke:#6d5ea8;stroke-width:2.5;fill:none;stroke-dasharray:8 8;marker-end:url(#arrow4)}
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
     </style>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M0,0 L10,5 L0,10z" fill="#21695f"/>
-    </marker>
-    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M0,0 L10,5 L0,10z" fill="#d98b28"/>
-    </marker>
-    <marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M0,0 L10,5 L0,10z" fill="#4d6fae"/>
-    </marker>
-    <marker id="arrow4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M0,0 L10,5 L0,10z" fill="#6d5ea8"/>
-    </marker>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
   </defs>
 
-  <rect class="bg" width="1600" height="1040" rx="30"/>
-  <text class="title" x="70" y="72">Chronologie Engagement → FLOW → Supply</text>
-  <text class="subtitle" x="70" y="103">Une demande n'est pas un aller simple : la décision progresse avec les faits, événements, contraintes et retours d'exécution.</text>
-
-  <rect class="lane" x="70" y="150" width="1460" height="195" rx="24"/>
-  <text class="laneTitle" x="105" y="188">Engagement</text>
-
-  <rect class="lane" x="70" y="380" width="1460" height="300" rx="24"/>
-  <text class="laneTitle" x="105" y="418">FLOW : Demand + Fulfillment</text>
-
-  <rect class="lane" x="70" y="715" width="1460" height="205" rx="24"/>
-  <text class="laneTitle" x="105" y="753">Supply</text>
-
-  <rect class="eng" x="190" y="205" width="245" height="100" rx="18"/>
-  <circle class="badge4" cx="220" cy="235" r="19"/><text class="num" x="214" y="243">1</text>
-  <text class="h" x="252" y="238">Capte l'intention</text>
-  <text class="t" x="252" y="266">parcours, canal, contexte</text>
-
-  <rect class="flow" x="330" y="455" width="245" height="120" rx="18"/>
-  <circle class="badge" cx="360" cy="485" r="19"/><text class="num" x="354" y="493">2</text>
-  <text class="h" x="392" y="488">Crée le Case</text>
-  <text class="t" x="392" y="516">demande qualifiée</text>
-  <text class="t" x="392" y="542">statut initial</text>
-
-  <rect class="flow" x="625" y="455" width="245" height="120" rx="18"/>
-  <circle class="badge" cx="655" cy="485" r="19"/><text class="num" x="649" y="493">3</text>
-  <text class="h" x="687" y="488">Enrichit</text>
-  <text class="t" x="687" y="516">Agreement, règles</text>
-  <text class="t" x="687" y="542">priorités, contexte</text>
-
-  <rect class="fulfill" x="920" y="455" width="245" height="120" rx="18"/>
-  <circle class="badge2" cx="950" cy="485" r="19"/><text class="num" x="944" y="493">4</text>
-  <text class="h" x="982" y="488">Décide</text>
-  <text class="t" x="982" y="516">promesse tenable</text>
-  <text class="t" x="982" y="542">allocation, sourcing</text>
-
-  <rect class="supply" x="1090" y="780" width="245" height="100" rx="18"/>
-  <circle class="badge3" cx="1120" cy="810" r="19"/><text class="num" x="1114" y="818">5</text>
-  <text class="h" x="1152" y="813">Exécute</text>
-  <text class="t" x="1152" y="841">prépare, transporte</text>
-
-  <rect class="supply" x="780" y="780" width="245" height="100" rx="18"/>
-  <circle class="badge3" cx="810" cy="810" r="19"/><text class="num" x="804" y="818">6</text>
-  <text class="h" x="842" y="813">Remonte</text>
-  <text class="t" x="842" y="841">faits, statuts, events</text>
-
-  <rect class="feedback" x="1215" y="455" width="245" height="120" rx="18"/>
-  <circle class="badge" cx="1245" cy="485" r="19"/><text class="num" x="1239" y="493">7</text>
-  <text class="h" x="1277" y="488">Actualise</text>
-  <text class="t" x="1277" y="516">Case, promesse</text>
-  <text class="t" x="1277" y="542">exception si besoin</text>
-
-  <rect class="eng" x="1240" y="205" width="245" height="100" rx="18"/>
-  <circle class="badge4" cx="1270" cy="235" r="19"/><text class="num" x="1264" y="243">8</text>
-  <text class="h" x="1302" y="238">Informe</text>
-  <text class="t" x="1302" y="266">promesse, statut, choix</text>
-
-  <path class="arrow" d="M435 255 C500 285 505 420 455 455"/>
-  <path class="arrow" d="M575 515 L625 515"/>
-  <path class="arrow2" d="M870 515 L920 515"/>
-  <path class="arrow3" d="M1042 575 C1110 650 1180 705 1212 780"/>
-  <path class="arrow3" d="M1090 830 L1025 830"/>
-  <path class="dash" d="M780 830 C650 805 560 690 525 575"/>
-  <path class="dash" d="M1025 830 C1160 780 1250 670 1305 575"/>
-  <path class="dash" d="M1338 455 C1350 405 1360 350 1362 305"/>
-
-  <text class="s" x="500" y="312">demande</text>
-  <text class="s" x="1180" y="695">plan d'exécution</text>
-  <text class="s" x="590" y="780">retour d'information</text>
-  <text class="s" x="1372" y="385">promesse et statut</text>
+  <rect class="bg" x="0" y="0" width="1600" height="1040" rx="24"/>
+  <text class="title" x="800" y="70" text-anchor="middle">Chronologie Engagement → FLOW → Supply</text>
+  <text class="subtitle" x="800" y="100" text-anchor="middle">Une demande n'est pas un aller simple : la décision se réévalue avec les faits et retours d'exécution.</text>
+  <rect class="blue" x="70" y="145" width="310" height="90" rx="20"/>
+  <rect class="core" x="430" y="145" width="740" height="90" rx="20"/>
+  <rect class="green" x="1220" y="145" width="310" height="90" rx="20"/>
+  <text class="h" x="225" y="197" text-anchor="middle">Engagement</text>
+  <text class="hWhite" x="800" y="197" text-anchor="middle">FLOW : Demand + Fulfillment</text>
+  <text class="h" x="1375" y="197" text-anchor="middle">Supply</text>
+  <rect class="blue" x="75" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="109" cy="353" r="24"/>
+  <text class="num" x="109" y="361" text-anchor="middle">1</text>
+  <text class="h" x="159" y="360" text-anchor="middle">Capte</text>
+  <text class="h" x="159" y="382" text-anchor="middle">l'intention</text>
+  <text class="small" x="99" y="430">parcours</text>
+  <text class="small" x="99" y="452">canal</text>
+  <text class="small" x="99" y="474">contexte</text>
+  <path class="arrow" d="M243 423 L265 423"/>
+  <rect class="panelSoft" x="265" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="299" cy="353" r="24"/>
+  <text class="num" x="299" y="361" text-anchor="middle">2</text>
+  <text class="h" x="349" y="360" text-anchor="middle">Crée le</text>
+  <text class="h" x="349" y="382" text-anchor="middle">Case</text>
+  <text class="small" x="289" y="430">demande qualifiée</text>
+  <text class="small" x="289" y="452">statut initial</text>
+  <path class="arrow" d="M433 423 L455 423"/>
+  <rect class="panelSoft" x="455" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="489" cy="353" r="24"/>
+  <text class="num" x="489" y="361" text-anchor="middle">3</text>
+  <text class="h" x="539" y="360" text-anchor="middle">Enrichit</text>
+  <text class="small" x="479" y="430">Agreement</text>
+  <text class="small" x="479" y="452">règles</text>
+  <text class="small" x="479" y="474">priorités</text>
+  <path class="arrow" d="M623 423 L645 423"/>
+  <rect class="accent" x="645" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="679" cy="353" r="24"/>
+  <text class="num" x="679" y="361" text-anchor="middle">4</text>
+  <text class="h" x="729" y="360" text-anchor="middle">Décide</text>
+  <text class="small" x="669" y="430">promesse tenable</text>
+  <text class="small" x="669" y="452">allocation</text>
+  <text class="small" x="669" y="474">sourcing</text>
+  <path class="arrow" d="M813 423 L835 423"/>
+  <rect class="green" x="835" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="869" cy="353" r="24"/>
+  <text class="num" x="869" y="361" text-anchor="middle">5</text>
+  <text class="h" x="919" y="360" text-anchor="middle">Exécute</text>
+  <text class="small" x="859" y="430">prépare</text>
+  <text class="small" x="859" y="452">transporte</text>
+  <text class="small" x="859" y="474">confirme</text>
+  <path class="arrow" d="M1003 423 L1025 423"/>
+  <rect class="green" x="1025" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="1059" cy="353" r="24"/>
+  <text class="num" x="1059" y="361" text-anchor="middle">6</text>
+  <text class="h" x="1109" y="360" text-anchor="middle">Remonte</text>
+  <text class="small" x="1049" y="430">faits</text>
+  <text class="small" x="1049" y="452">statuts</text>
+  <text class="small" x="1049" y="474">events</text>
+  <path class="arrow" d="M1193 423 L1215 423"/>
+  <rect class="panelSoft" x="1215" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="1249" cy="353" r="24"/>
+  <text class="num" x="1249" y="361" text-anchor="middle">7</text>
+  <text class="h" x="1299" y="360" text-anchor="middle">Actualise</text>
+  <text class="small" x="1239" y="430">Case</text>
+  <text class="small" x="1239" y="452">promesse</text>
+  <text class="small" x="1239" y="474">exception si besoin</text>
+  <path class="arrow" d="M1383 423 L1405 423"/>
+  <rect class="blue" x="1405" y="315" width="168" height="215" rx="20"/>
+  <circle class="accent" cx="1439" cy="353" r="24"/>
+  <text class="num" x="1439" y="361" text-anchor="middle">8</text>
+  <text class="h" x="1489" y="360" text-anchor="middle">Informe</text>
+  <text class="small" x="1429" y="430">promesse</text>
+  <text class="small" x="1429" y="452">statut</text>
+  <text class="small" x="1429" y="474">choix</text>
+  <rect class="panelSoft" x="130" y="640" width="350" height="90" rx="18"/>
+  <rect class="accent" x="625" y="640" width="350" height="90" rx="18"/>
+  <rect class="panelSoft" x="1120" y="640" width="350" height="90" rx="18"/>
+  <text class="h" x="305" y="680" text-anchor="middle">demande</text>
+  <text class="small" x="305" y="708" text-anchor="middle">intention qualifiée et suivie</text>
+  <text class="h" x="800" y="680" text-anchor="middle">plan d'exécution</text>
+  <text class="small" x="800" y="708" text-anchor="middle">sourcing, allocation, promesse</text>
+  <text class="h" x="1295" y="680" text-anchor="middle">retour d'information</text>
+  <text class="small" x="1295" y="708" text-anchor="middle">faits, statuts, exceptions</text>
+  <path class="arrowAccent" d="M480 685 L625 685"/>
+  <path class="arrow" d="M975 685 L1120 685"/>
+  <path class="arrowSoft" d="M1295 730 C1295 850 305 850 305 730"/>
+  <rect class="panel" x="225" y="900" width="1150" height="70" rx="18"/>
+  <text class="small" x="800" y="938" text-anchor="middle">La promesse et le statut ne sont pas seulement calculés au départ : ils sont actualisés par les retours d'exécution et les exceptions observées.</text>
 </svg>
