@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>6 min</strong>
+      <strong>7 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -113,8 +113,8 @@ FLOW change la manière de piloter le SI.
 | Commandes par canal | Demandes transverses |
 | Stock par système | Stock unifié exploitable |
 | Règles cachées dans les processus | Décisions métier gouvernées |
-| Flux projet | Contrats de données |
-| Lecture base à base et batchs Talend à la demande | Interfaces d'échange stables, contrats compatibles et gouvernance des données en transit |
+| Master Data = inventaire d'objets supposés maîtres | Sources de référence et projections gouvernées |
+| Flux projet, base à base et batchs Talend à la demande | Interfaces d'échange stables et contrats de données gouvernés |
 | Convergence = uniformisation | Convergence = bon niveau de commun |
 
 Le centre de gravité se déplace.
@@ -131,31 +131,64 @@ La réunion leaders du 30 juin 2026 confirme que certains arbitrages doivent êt
 
 La question prioritaire n'est pas encore le détail de chaque composant. Elle est de confirmer le nouveau centre de gravité du SI cible.
 
-| Priorité | Arbitrage | Décision à sécuriser |
-| --- | --- | --- |
-| 1 | Déplacer le centre de gravité de l'ERP vers le Case Management | Confirmer que le SI cible se construit autour de la demande, de la promesse et de la satisfaction client, plutôt qu'autour du document transactionnel ERP. |
-| 2 | Réunifier les responsabilités ERP / OMS de décision | Confirmer que les décisions de promesse, allocation, réservation, statuts et exceptions ne doivent pas rester dispersées entre un ERP et un OMS concurrents. La cible est un centre de décision cohérent, pas un nouveau monolithe qui absorberait finance, canaux et exécution. |
-| 3 | Placer la responsabilité de la promesse client | Arbitrer si la promesse omnicanale est portée par FLOW ou par C-LOG. Si C-LOG détient la promesse, FLOW devient plus coordinateur. Si FLOW la détient, C-LOG devient une capacité Supply spécialisée raccordée par contrat. |
-| 4 | Assumer le découpage Engagement / Demand / Fulfillment / Supply | Expliquer que `J'achète` et `Je vends` restent des parcours ou macro-usages, mais ne structurent plus le cœur du SI cible. Le cœur se structure par responsabilités : capter l'intention, qualifier la demande, arbitrer la promesse, exécuter. |
-| 5 | Clarifier le périmètre de la plateforme FLOW et celui du programme | Confirmer que FLOW n'embarque pas tout : le cœur plateforme est Demand + Fulfillment. Des applications ou chantiers Engagement et Supply peuvent être nécessaires, et éventuellement portés par le programme FLOW, mais ils restent des domaines adhérents ou des projets connexes selon l'arbitrage de gouvernance. |
+Pour éviter de mélanger les sujets, les arbitrages sont qualifiés selon trois natures simples.
+
+| Nature | Question posée |
+| --- | --- |
+| Positionnement | Où place-t-on les responsabilités structurantes de FLOW dans le SI et dans l'entreprise ? |
+| Périmètre | Qu'est-ce que FLOW embarque, délègue, fédère ou laisse hors programme ? |
+| Gouvernance | Quels rôles, règles, responsabilités et pratiques doivent être institués pour que la cible fonctionne dans la durée ? |
+
+| Priorité | Nature | Arbitrage | Décision à sécuriser |
+| --- | --- | --- | --- |
+| 1 | Positionnement | Déplacer le centre de gravité de l'ERP vers le Case Management | Confirmer que le SI cible se construit autour de la demande, de la promesse et de la satisfaction client, plutôt qu'autour du document transactionnel ERP. |
+| 2 | Positionnement | Réunifier les responsabilités ERP / OMS de décision | Confirmer que les décisions de promesse, allocation, réservation, statuts et exceptions ne doivent pas rester dispersées entre un ERP et un OMS concurrents. La cible est un centre de décision cohérent, pas un nouveau monolithe qui absorberait finance, canaux et exécution. |
+| 3 | Positionnement | Placer la responsabilité de la promesse client | Arbitrer si la promesse omnicanale est portée par FLOW ou par C-LOG. Si C-LOG détient la promesse, FLOW devient plus coordinateur. Si FLOW la détient, C-LOG devient une capacité Supply spécialisée raccordée par contrat. |
+| 4 | Positionnement | Assumer le découpage Engagement / Demand / Fulfillment / Supply | Expliquer que `J'achète` et `Je vends` restent des parcours ou macro-usages, mais ne structurent plus le cœur du SI cible. Le cœur se structure par responsabilités : capter l'intention, qualifier la demande, arbitrer la promesse, exécuter. |
+| 5 | Périmètre | Clarifier le périmètre de la plateforme FLOW et celui du programme | Confirmer que FLOW n'embarque pas tout : le cœur plateforme est Demand + Fulfillment. Des applications ou chantiers Engagement et Supply peuvent être nécessaires, et éventuellement portés par le programme FLOW, mais ils restent des domaines adhérents ou des projets connexes selon l'arbitrage de gouvernance. |
+| 6 | Gouvernance | Instituer une gouvernance MDM de l'information | Décider les rôles, règles et pratiques permettant de gouverner les sources de référence, projections et contrats d'échange. L'enjeu est de sortir du réflexe `Master Data = inventaire d'objets`, de la lecture base à base et de la commande de flux opportunistes. |
 
 Ces arbitrages conditionnent les autres décisions.
 
-Ils doivent être partagés tôt parce qu'ils peuvent être déroutants : ils déplacent la lecture du SI depuis les applications et les processus historiques vers les responsabilités de décision.
+Ils doivent être partagés tôt parce qu'ils peuvent être déroutants : ils déplacent la lecture du SI depuis les applications et les processus historiques vers les responsabilités de décision, de périmètre et de gouvernance.
 
 Ils alimentent directement les messages de transformation décrits dans [Les changements à conduire](../transformation/changements-a-conduire.md).
 
-La réunion leaders du 30 juin 2026 a aussi confirmé un point d'adhésion important : l'opposition entre `Master Data` et MDM gouverné a été comprise côté métier.
+## 7. Clarification : informations au repos et en transit
 
-Le problème n'est pas seulement de nommer des objets maîtres. Le problème est d'éviter qu'un responsable applicatif cherche une information dans une autre application, analyse directement sa base de données, rédige une spécification puis commande à une équipe Flux centralisée un batch Talend de plus.
+La réunion leaders du 30 juin 2026 a confirmé un point d'adhésion important : l'opposition entre `Master Data` et MDM gouverné a été comprise côté métier.
+
+Conceptuellement, le MDM cible couvre à la fois les informations au repos et les informations en transit.
+
+Mais pour analyser les problèmes terrain, il faut les séparer. Sinon le message devient abstrait : on mélange le sujet “qui fait référence ?” avec le sujet “comment l'information circule ?”.
+
+### Informations au repos : sources de référence et projections
+
+Le problème n'est pas de nommer une liste d'objets maîtres.
+
+Le problème est d'identifier quelle information fait référence, dans quel domaine, pour quel usage, avec quel processus de contrôle et quelles projections de consommation.
+
+Cette lecture évite le piège `MDM = inventaire de Master Data`.
+
+Elle permet aussi de distinguer la source responsable d'une information, les projections qui la rendent consommable, et les vues qui l'agrègent sans devenir automatiquement maîtres.
+
+### Informations en transit : contrats d'échange
+
+Le problème terrain est différent.
+
+Un responsable applicatif peut avoir besoin d'une information, chercher une source dans une autre application, analyser directement sa base de données, rédiger une spécification puis commander à une équipe Flux centralisée un batch Talend de plus.
 
 Ce mode de fonctionnement produit progressivement des flux non gouvernés, difficiles à tracer, à faire évoluer et à réconcilier.
 
-FLOW doit donc traiter la gouvernance des données en transit comme un sujet de fond : une application ne doit pas exposer sa base de données comme ressource publique d'échange. Elle doit proposer des interfaces stables, pilotées, compatibles dans le temps, et protéger son modèle interne.
+FLOW doit donc traiter la gouvernance des données en transit comme un sujet de fond.
+
+Une base de données applicative n'est pas une ressource publique d'échange. Une application doit proposer des interfaces stables, pilotées, compatibles dans le temps, et protéger son modèle interne.
 
 Le `base à base` doit être considéré comme une pratique legacy à résorber, pas comme un modèle d'intégration cible.
 
-## 7. Les arbitrages structurants à instruire ensuite
+Cette clarification détaille l'arbitrage de gouvernance prioritaire 6. Elle renforce le [principe 7](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) et la pratique transverse de [gouvernance des données en transit](../architecture-cible/produits/gouvernance-donnees-transit.md).
+
+## 8. Les arbitrages structurants à instruire ensuite
 
 Une fois le centre de gravité confirmé, la vision FLOW doit être sécurisée par des arbitrages plus détaillés.
 
@@ -170,7 +203,7 @@ Une fois le centre de gravité confirmé, la vision FLOW doit être sécurisée 
 - Quelles responsabilités du module Négoce StoreLand doivent entrer dans FLOW ?
 - Quel modèle de gouvernance produit pour piloter FLOW dans la durée ?
 
-## 8. Point de clarification : Vues 360 et ressources partagées
+## 9. Point de clarification : Vues 360 et ressources partagées
 
 Les Vues 360 ne doivent pas être lues comme un composant limité au fulfillment.
 

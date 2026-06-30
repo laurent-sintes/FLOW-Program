@@ -48,7 +48,7 @@ Pour les Change Managers, le point d'entrée recommandé est [Les changements à
 
 ## Priorité de travail
 
-À ce stade, les changements doivent être regroupés en cinq thèmes maximum :
+À ce stade, les messages de posture doivent rester regroupés en cinq thèmes maximum :
 
 1. déplacer le centre de gravité du SI de l'ERP vers la demande, la promesse et la satisfaction client ;
 2. réconcilier ERP et OMS dans une plateforme Demand, sans recréer un monolithe ;
@@ -56,7 +56,10 @@ Pour les Change Managers, le point d'entrée recommandé est [Les changements à
 4. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
 5. construire le bon niveau de commun, sans faire croire que FLOW embarque tout.
 
-Un message transverse doit également être porté : la gouvernance des données en transit n'est pas une affaire de tuyauterie IT. Elle change le réflexe projet qui consiste à demander un flux, lire une base de données applicative et livrer un batch supplémentaire.
+Un sixième arbitrage prioritaire porte sur la gouvernance MDM de l'information. Côté conduite du changement, il se traduit par deux réflexes transverses à travailler :
+
+- au repos, ne plus chercher “la bonne base” mais identifier la source de référence, le processus de contrôle et les projections légitimes ;
+- en transit, ne plus commander “un flux de plus” mais définir un contrat d'échange stable, compatible et gouverné.
 
 Cette structuration reprend les arbitrages prioritaires identifiés avec les leaders projet et les enseignements de l'atelier OMS C-LOG du 30 juin 2026.
 
