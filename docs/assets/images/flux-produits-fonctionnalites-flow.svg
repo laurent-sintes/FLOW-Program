@@ -101,9 +101,9 @@
   <text class="box-text" x="1064" y="590">Faits, statuts, evenements</text>
   <text class="box-text" x="1064" y="612">preuves et exceptions</text>
 
-  <rect class="data" x="330" y="690" width="620" height="54" />
-  <text class="box-title" x="354" y="722">Diffusion et gouvernance des donnees en transit</text>
-  <text class="box-text" x="690" y="722">Contrats de donnees, fraicheur, qualite, supervision, reconciliation</text>
+  <rect class="data" x="330" y="686" width="620" height="70" />
+  <text class="box-title" x="354" y="714">Pratique transverse : gouvernance des donnees en transit</text>
+  <text class="box-text" x="354" y="738">Contrats de donnees, fraicheur, qualite, supervision, reconciliation</text>
 
   <path class="arrow" d="M226 397 C260 397 274 239 333 239" />
   <path class="thin" d="M595 239 L642 212" />

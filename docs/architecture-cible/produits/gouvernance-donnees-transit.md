@@ -1,4 +1,4 @@
-# Fiche produit — Gouvernance des données en transit
+# Pratique transverse — Gouvernance des données en transit
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">
@@ -24,9 +24,9 @@
 
 La Gouvernance des données en transit transforme les échanges entre applications en contrats durables.
 
-Le produit ne vise pas seulement à créer des flux.
+Cette page ne décrit pas un produit FLOW autonome.
 
-Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et maintenu dans la durée.
+Elle décrit une pratique transverse qui gouverne ce qui est publié, consommé, supervisé, réconcilié et maintenu dans la durée.
 
 <div class="flow-conviction">
   <p>Une donnée en transit n'est pas un tuyau technique.</p>
@@ -42,7 +42,7 @@ Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et 
 - Réduire le foisonnement de flux projet.
 - Soutenir la réintégration des systèmes existants autour de FLOW.
 
-## Ce que le produit ne porte pas
+## Ce que la pratique ne porte pas
 
 - Tous les flux techniques du SI.
 - L'implémentation détaillée de chaque connecteur.
@@ -82,7 +82,7 @@ Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et 
 - Définir les mécanismes de reprise et réconciliation.
 - Cartographier les flux remplacés ou rationalisés.
 
-## Interfaces candidates
+## Supports candidats
 
 - Catalogue des contrats de données.
 - API de consultation des contrats.
@@ -105,7 +105,7 @@ Il vise à gouverner ce qui est publié, consommé, supervisé, réconcilié et 
 
 ## Questions ouvertes
 
-- Ce produit est-il un produit FLOW ou un standard d'architecture transverse ?
+- Quel niveau de formalisation faut-il imposer pour que la pratique reste utile sans devenir bureaucratique ?
 - Quelle frontière avec les outils d'intégration existants : Talend, Tibco, EAI ?
 - Quels contrats doivent être obligatoires dès le MVP ?
 - Comment articuler contrats de données et ownership produit ?

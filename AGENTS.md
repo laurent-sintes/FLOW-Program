@@ -251,7 +251,7 @@ Rôle :
 Impact à vérifier :
 
 - tout changement d'un principe peut impacter la vision, les fiches produits, les patterns d'architecture et les insights ;
-- le principe 07 porte aussi la doctrine MDM sur les contrats de données ; vérifier les impacts sur `docs/architecture-cible/produits/gouvernance-donnees-transit.md` ;
+- le principe 07 porte aussi la doctrine MDM sur les contrats de données ; vérifier les impacts sur la pratique transverse `docs/architecture-cible/produits/gouvernance-donnees-transit.md` ;
 - le principe 01 doit conserver l'idée de bon niveau de commun plutôt qu'une opposition simpliste entre convergence et uniformisation.
 
 ### Architecture cible
@@ -280,6 +280,7 @@ Impact à vérifier :
 - toute évolution d'un produit FLOW peut impacter l'overview, les schémas, les concepts clés, les hotspots et le glossaire ;
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
+- la gouvernance des données en transit est une pratique transverse, pas un produit FLOW candidat ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
 - ne pas introduire un composant technique sans clarifier sa responsabilité métier ou de plateforme.
 

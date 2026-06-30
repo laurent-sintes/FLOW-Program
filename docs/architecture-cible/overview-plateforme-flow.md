@@ -99,7 +99,10 @@ Cette chronologie montre le cycle fonctionnel minimal :
 | Supply Service Registry | Référencer les services Supply exposés : APIs, SLA, conditions d'accès, éligibilités et contraintes. |
 | Product Agreement Catalog | Exposer les produits, assortiments et agreements utiles à la vente, à l'achat et à l'exécution. |
 | Vues 360 | Agréger le contexte transverse autour du client, du fournisseur ou du Case. |
-| Diffusion et gouvernance opérationnelle des données | Gouverner les contrats de données, modes d'échange, consommateurs, fraîcheur, qualité, supervision et réconciliation des données en transit. |
+
+La gouvernance des données en transit reste une pratique transverse importante : elle encadre les contrats de données, les modes d'échange, les consommateurs, la fraîcheur, la qualité, la supervision et la réconciliation.
+
+Elle n'est pas représentée comme un produit FLOW candidat dans ce schéma.
 
 ## Lecture fonctionnelle
 
@@ -127,9 +130,6 @@ Product Agreement Catalog
 
 Vues 360
     → donnent du contexte transverse et sont enrichies par les événements des Cases
-
-Diffusion et gouvernance opérationnelle des données
-    → transforme les flux projet en contrats de données gouvernés
 ```
 
 ## Colonne vertébrale du SI
@@ -219,7 +219,8 @@ Le Case reste l'unité métier d'orchestration.
 | Supply Service Registry | éventuellement services normalisés FLOW | services, APIs, SLA exposés par Supply |
 | Product Agreement Catalog | rarement source de référence au départ | product core, agreements vente / achat, assortiments, conditions |
 | Vues 360 | rarement sources de référence ; plutôt dérivées FLOW | Customer 360, Supplier 360, historiques et signaux externes |
-| Diffusion et gouvernance opérationnelle des données | contrats de données, règles de publication, exigences de fraîcheur / qualité si gouvernés par FLOW | catalogues d'échanges existants, flux historiques, capacités d'intégration des domaines |
+
+Les contrats de données, règles de publication et exigences de fraîcheur / qualité relèvent d'une pratique transverse de gouvernance. Ils soutiennent les produits FLOW sans constituer un produit fonctionnel autonome dans cette cartographie.
 
 ## Rupture de conception
 

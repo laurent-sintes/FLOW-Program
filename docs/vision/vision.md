@@ -165,8 +165,9 @@ Les composants structurants sont :
 - Fulfillment Network / Réseau d'Exécution.
 - Système de décision métier : règles, policies, contraintes et optimisation.
 - Vues 360.
-- Diffusion et gouvernance opérationnelle des données.
 - Intégrations avec les services existants lorsque leur valeur métier justifie leur maintien.
+
+La gouvernance des données en transit reste une pratique transverse : elle évite que les échanges entre ces composants redeviennent des flux projet opportunistes.
 
 FLOW n'a pas vocation à absorber tout le SI.
 

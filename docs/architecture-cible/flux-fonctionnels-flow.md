@@ -47,7 +47,7 @@ Il combine une demande initiale, des décisions de Fulfillment, des ressources S
 
 ## Produits traversés
 
-| Produit ou domaine | Contribution dans le flux |
+| Produit, domaine ou pratique | Contribution dans le flux |
 | --- | --- |
 | Engagement | Capte l'intention, porte le parcours et consomme les statuts ou promesses. |
 | Socle Case Management | Porte le Case, son cycle de vie, son journal, ses documents, ses décisions et ses exceptions. |
@@ -57,7 +57,7 @@ Il combine une demande initiale, des décisions de Fulfillment, des ressources S
 | Fulfillment Network Configuration | Décrit le réseau d'exécution mobilisable : sites, usines, partenaires, capacités, contraintes et SLA. |
 | Supply Service Registry | Donne à FLOW une lecture gouvernée des services Supply appelables. |
 | Vues 360 | Restituent le contexte transversal autour d'un Case, d'un client, d'un fournisseur ou d'une usine. |
-| Diffusion et gouvernance des données en transit | Transforme les flux projet en contrats de données supervisables et réconciliables. |
+| Gouvernance des données en transit | Pratique transverse qui transforme les flux projet en contrats de données supervisables et réconciliables. |
 | Supply | Exécute, confirme, signale les contraintes et publie les événements d'exécution. |
 
 ## Fonctionnalités à concevoir

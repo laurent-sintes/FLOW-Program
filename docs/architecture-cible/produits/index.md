@@ -34,6 +34,9 @@ Elle sert à donner à un PO ou un PM une base cohérente pour démarrer : inten
 - [Product Agreement Catalog](product-agreement-catalog.md)
 - [Supply Service Registry](supply-service-registry.md)
 - [Vues 360](vues-360.md)
+
+## Pratique transverse associée
+
 - [Gouvernance des données en transit](gouvernance-donnees-transit.md)
 
 ## Lecture commune
@@ -61,3 +64,5 @@ Ses premiers epics
 Ces fiches sont volontairement initiales.
 
 Elles doivent être enrichies par les ateliers de cadrage, les arbitrages d'architecture, les contraintes techniques et les retours des futurs PO / PM.
+
+La gouvernance des données en transit suit la même logique de cadrage, mais elle reste une pratique transverse plutôt qu'un produit fonctionnel autonome.

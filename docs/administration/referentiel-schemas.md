@@ -54,9 +54,9 @@ Les schémas plus anciens peuvent rester en l'état lorsqu'ils sont cohérents d
 | --- | --- | --- |
 | `architecture-cible-flow-ecosysteme-brd.svg` | `docs/architecture-cible/flow-dans-ecosysteme-brd.md` | Écosystème BRD, panorama BRD, frontières FLOW / SRM / PLM / SAP / CBS, hotspot fournisseur / usine / Agreement |
 | `architecture-cible-flow-ecosysteme-gbm.svg` | `docs/architecture-cible/flow-dans-ecosysteme-gbm.md` | Écosystème GBM, panorama GBM, frontières FLOW / SAP / StoreLand / Socloz / NewStore / CBS |
-| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | Overview de la plateforme FLOW, sept produits candidats, domaines Engagement / Demand / Fulfillment / Supply, composants de gouvernance des données |
+| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | Overview de la plateforme FLOW, six produits candidats, domaines Engagement / Demand / Fulfillment / Supply, pratiques transverses de gouvernance des données |
 | `chronologie-engagement-supply-flow.svg` | `docs/architecture-cible/overview-plateforme-flow.md`, `docs/vision/modele-fonctionnement-flow.md` | Chronologie Engagement vers FLOW vers Supply, promesse, décision, plan d'exécution, remontées d'information |
-| `flux-produits-fonctionnalites-flow.svg` | `docs/architecture-cible/flux-fonctionnels-flow.md` | Produits FLOW, fonctionnalités transverses, Case Management, Stock Unifié, Agreement, règles, événements, vues |
+| `flux-produits-fonctionnalites-flow.svg` | `docs/architecture-cible/flux-fonctionnels-flow.md` | Produits FLOW, pratiques transverses, fonctionnalités, Case Management, Stock Unifié, Agreement, règles, événements, vues |
 | `methodologie-flow-overview.svg` | `docs/methode/processus-de-cadrage.md` | Processus de cadrage, passage des observations aux choix de conception, livrables de méthode |
 | `modele-demand-notions-flow.svg` | `docs/vision/modele-fonctionnement-flow.md` | Notions Demand, fait, événement, décision, règle, promesse, Case, plan d'exécution |
 | `modele-mental-connaissances-flow.svg` | `docs/administration/modele-mental-connaissances.md` | Source datée, fait observé, insight, vision, principe, concept, domaine, capacité, produit, pattern, hotspot, transformation, administration |

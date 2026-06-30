@@ -72,7 +72,8 @@ nav:
           - Fiche produit — Product Agreement Catalog: architecture-cible/produits/product-agreement-catalog.md
           - Fiche produit — Supply Service Registry: architecture-cible/produits/supply-service-registry.md
           - Fiche produit — Vues 360: architecture-cible/produits/vues-360.md
-          - Fiche produit — Gouvernance des données en transit: architecture-cible/produits/gouvernance-donnees-transit.md
+      - Pratiques transverses:
+          - Pratique transverse — Gouvernance des données en transit: architecture-cible/produits/gouvernance-donnees-transit.md
       - FLOW dans l’écosystème GBM: architecture-cible/flow-dans-ecosysteme-gbm.md
       - FLOW dans l’écosystème BRD: architecture-cible/flow-dans-ecosysteme-brd.md
   - Principes directeurs:

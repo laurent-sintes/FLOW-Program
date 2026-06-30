@@ -62,7 +62,7 @@ Ils expliquent les choix réutilisables avant leur application dans les fiches p
 - [Rôles, relations et policies](patterns/roles-relations-policies.md)
 - [Plateforme ouverte et gouvernée](patterns/plateforme-ouverte-gouvernee.md)
 
-## Fiches produits initialisées
+## Fiches produits initialisées et pratiques transverses
 
 Les fiches produits donnent une première matière concrète aux PO / PM pour démarrer une réflexion de backlog.
 
@@ -74,6 +74,9 @@ Elles ne figent pas la solution, mais elles structurent les responsabilités, co
 - [Product Agreement Catalog](produits/product-agreement-catalog.md)
 - [Supply Service Registry](produits/supply-service-registry.md)
 - [Vues 360](produits/vues-360.md)
+
+Pratique transverse associée :
+
 - [Gouvernance des données en transit](produits/gouvernance-donnees-transit.md)
 
 ## Lecture actuelle
