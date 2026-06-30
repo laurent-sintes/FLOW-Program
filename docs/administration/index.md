@@ -30,6 +30,7 @@ Elle ne porte pas la méthodologie projet elle-même. Elle rassemble les éléme
 - [Modèle mental des connaissances](modele-mental-connaissances.md) — graphe logique pour ranger les informations et mesurer les impacts
 - [Référentiel des rôles](referentiel-roles.md) — rôles autorisés dans les cartouches de lecture
 - [Référentiel des schémas](referentiel-schemas.md) — dictionnaire des SVG, de leurs pages d'affichage et de leurs dépendances à surveiller
+- [Opérations de build et de contrôle](operations-build-check-site.md) — détail des opérations réalisées par `build-docs` et `check-site`
 - [Multilingue et traduction](multilingue-traduction.md) — génération `/fr/` et `/en/`, sélecteur de langue et stratégie de traduction
 - [Environnement Codex sous Windows](environnement-codex-windows.md) — poste local, build MkDocs, Git et GitHub CLI
 - [AGENTS.md - Instructions Codex](instructions-codex.md) — mémoire de contribution pour maintenir le référentiel FLOW

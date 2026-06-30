@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="848" viewBox="0 0 1280 848" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">Overview de la plateforme FLOW</title>
   <desc id="desc">Cartographie claire des six produits candidats de la plateforme FLOW, avec Case Management au cœur, services partagés et projections opérationnelles.</desc>
   <defs>
     <style>
-      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
     </style>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
     <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="1280" height="820" rx="24"/>
+  <rect class="bg" x="0" y="0" width="1280" height="848" rx="24"/>
   <text class="title" x="52" y="58">Overview de la plateforme FLOW</text>
   <text class="subtitle" x="52" y="86">Une plateforme Demand centrée sur les Cases, enrichie par des services partagés et projections opérationnelles.</text>
 
-  <rect class="panel" x="48" y="122" width="1184" height="610" rx="24"/>
+  <rect class="panel" x="48" y="122" width="1184" height="662" rx="24"/>
   <text class="h" x="82" y="160">Produits fonctionnels candidats</text>
   <text class="small" x="82" y="184">Lecture cible : FLOW porte le cœur Demand + Fulfillment et raccorde Engagement, Supply et les domaines spécialisés.</text>
 
@@ -21,8 +21,8 @@
   <text class="hWhite" x="502" y="250">Plateforme de Case Management</text>
   <text class="smallWhite" x="472" y="278">Le Case porte la demande, son contexte, ses décisions</text>
   <text class="smallWhite" x="492" y="302">métier, ses promesses, documents et événements.</text>
-  <rect class="pillAccent" x="542" y="326" width="196" height="30" rx="15"/>
-  <text class="pillAccentText" x="566" y="346">CŒUR DEMAND + FULFILLMENT</text>
+  <rect class="pillAccent" x="520" y="326" width="240" height="30" rx="15"/>
+  <text class="pillAccentText" x="542" y="346">CŒUR DEMAND + FULFILLMENT</text>
 
   <rect class="panelSoft" x="82" y="220" width="270" height="132" rx="18"/>
   <text class="h" x="112" y="256">Stock Unifié</text>
@@ -41,35 +41,35 @@
   <path class="arrow" d="M856 286 C888 286 894 286 924 286"/>
   <text class="label" x="872" y="270">ressources</text>
 
-  <rect class="panel" x="82" y="420" width="340" height="150" rx="18"/>
-  <rect class="pill" x="112" y="444" width="100" height="28" rx="14"/>
-  <text class="pillText" x="132" y="463">PROJECTION</text>
+  <rect class="panel" x="82" y="420" width="340" height="192" rx="18"/>
+  <rect class="pill" x="112" y="444" width="125" height="28" rx="14"/>
+  <text class="pillText" x="135" y="463">PROJECTION</text>
   <text class="h" x="112" y="506">Product Agreement Catalog</text>
-  <text class="txt" x="112" y="536">Produits, assortiments,</text>
-  <text class="txt" x="112" y="560">agreements, prix et conditions</text>
-  <text class="txt" x="112" y="584">utiles à l'exécution.</text>
+  <text class="txt" x="112" y="536">Produits, assortiments, agreements,</text>
+  <text class="txt" x="112" y="560">prix et conditions utiles à</text>
+  <text class="txt" x="112" y="584">l'exécution.</text>
 
-  <rect class="panel" x="470" y="420" width="340" height="150" rx="18"/>
-  <rect class="pill" x="500" y="444" width="100" height="28" rx="14"/>
-  <text class="pillText" x="520" y="463">PROJECTION</text>
+  <rect class="panel" x="470" y="420" width="340" height="192" rx="18"/>
+  <rect class="pill" x="500" y="444" width="125" height="28" rx="14"/>
+  <text class="pillText" x="523" y="463">PROJECTION</text>
   <text class="h" x="500" y="506">Vues 360</text>
-  <text class="txt" x="500" y="536">Contextes client, fournisseur,</text>
-  <text class="txt" x="500" y="560">Case et signaux transverses</text>
-  <text class="txt" x="500" y="584">pour décider et expliquer.</text>
+  <text class="txt" x="500" y="536">Contextes client, fournisseur, Case</text>
+  <text class="txt" x="500" y="560">et signaux transverses pour décider</text>
+  <text class="txt" x="500" y="584">et expliquer.</text>
 
-  <rect class="panel" x="858" y="420" width="340" height="150" rx="18"/>
-  <rect class="pill" x="888" y="444" width="142" height="28" rx="14"/>
-  <text class="pillText" x="907" y="463">SERVICE SUPPLY</text>
+  <rect class="panel" x="858" y="420" width="340" height="192" rx="18"/>
+  <rect class="pill" x="888" y="444" width="154" height="28" rx="14"/>
+  <text class="pillText" x="911" y="463">SERVICE SUPPLY</text>
   <text class="h" x="888" y="506">Supply Service Registry</text>
-  <text class="txt" x="888" y="536">Services Supply exposés :</text>
-  <text class="txt" x="888" y="560">APIs, SLA, éligibilités</text>
-  <text class="txt" x="888" y="584">et contraintes d'appel.</text>
+  <text class="txt" x="888" y="536">Services Supply exposés : APIs,</text>
+  <text class="txt" x="888" y="560">SLA, éligibilités et contraintes</text>
+  <text class="txt" x="888" y="584">d'appel.</text>
 
   <path class="arrowAccent dash" d="M640 374 C640 402 640 402 640 414"/>
   <text class="labelAccent" x="560" y="406">contextes et projections</text>
 
-  <rect class="panelSoft" x="82" y="632" width="1116" height="86" rx="18"/>
-  <text class="h" x="112" y="662">Message clé</text>
-  <text class="small" x="112" y="688">FLOW n'est pas un ERP bis : c'est une plateforme Demand composée de produits fonctionnels gouvernés.</text>
-  <text class="small" x="112" y="710">Elle expose des capacités communes sans absorber Engagement, Supply ni les domaines spécialisés.</text>
+  <rect class="panelSoft" x="82" y="662" width="1116" height="86" rx="18"/>
+  <text class="h" x="112" y="692">Message clé</text>
+  <text class="small" x="112" y="718">FLOW n'est pas un ERP bis : c'est une plateforme Demand composée de produits fonctionnels gouvernés.</text>
+  <text class="small" x="112" y="740">Elle expose des capacités communes sans absorber Engagement, Supply ni les domaines spécialisés.</text>
 </svg>

@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>4 min</strong>
+      <strong>5 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -30,7 +30,30 @@ Un schéma n'est pas seulement une illustration. Il porte souvent une partie du 
 - Toute page Markdown qui affiche un SVG doit être citée dans la colonne `Affiché dans`.
 - La colonne `Dépendances à surveiller` indique les pages ou concepts qui peuvent rendre le schéma obsolète.
 - Le contenu XML du SVG reste utile pour repérer du texte, mais il ne suffit pas à mesurer les impacts : certaines dépendances sont implicites ou conceptuelles.
+- Les SVG générés par script doivent être modifiés depuis leur générateur, puis régénérés.
+- Tous les SVG doivent rester agrandissables ou diminuables pour export Word / PowerPoint : `viewBox` obligatoire, `preserveAspectRatio="xMidYMid meet"`, contenu vectoriel, pas d'image bitmap embarquée, pas de `foreignObject`.
 - Après ajout, renommage ou modification d'un SVG, relancer `.\scripts\check-site.ps1`.
+
+Pour les schémas pilotés par script :
+
+```powershell
+.\scripts\generate-svg-diagrams.ps1
+```
+
+Cette commande reconstruit les SVG générés avec un calcul déterministe des retours à la ligne et de la hauteur des blocs. Le contrôle `.\scripts\check-site.ps1` signale ensuite si un SVG généré n'est plus à jour.
+
+Le générateur actuel ne dépend d'aucune librairie Python externe. Il utilise uniquement la bibliothèque standard Python (`argparse`, `dataclasses`, `html`, `pathlib`) afin de rester portable dans Codex, en local Windows et dans GitHub Actions.
+
+Schémas actuellement pilotés par `scripts/generate_svg_diagrams.py` :
+
+- `architecture-cible-flow-overview.svg`
+- `architecture-cible-flow-ecosysteme-brd.svg`
+- `methodologie-flow-overview.svg`
+- `panorama-brd-ecosystem.svg`
+- `panorama-gbm-ecosystem.svg`
+- `pattern-api-conversationnelle.svg`
+- `pattern-operational-datahub.svg`
+- `produit-socle-case-management.svg`
 
 ## Style visuel cible
 
@@ -52,26 +75,26 @@ Les schémas plus anciens peuvent rester en l'état lorsqu'ils sont cohérents d
 
 | Schéma | Affiché dans | Dépendances à surveiller |
 | --- | --- | --- |
-| `architecture-cible-flow-ecosysteme-brd.svg` | `docs/architecture-cible/flow-dans-ecosysteme-brd.md` | Écosystème BRD, panorama BRD, frontières FLOW / SRM / PLM / SAP / CBS, hotspot fournisseur / usine / Agreement |
+| `architecture-cible-flow-ecosysteme-brd.svg` | `docs/architecture-cible/flow-dans-ecosysteme-brd.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; écosystème BRD, panorama BRD, frontières FLOW / SRM / PLM / SAP / CBS, hotspot fournisseur / usine / Agreement |
 | `architecture-cible-flow-ecosysteme-gbm.svg` | `docs/architecture-cible/flow-dans-ecosysteme-gbm.md` | Écosystème GBM, panorama GBM, frontières FLOW / SAP / StoreLand / Socloz / NewStore / CBS |
-| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | Overview de la plateforme FLOW, six produits candidats, domaines Engagement / Demand / Fulfillment / Supply, pratiques transverses de gouvernance des données |
+| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; overview de la plateforme FLOW, six produits candidats, domaines Engagement / Demand / Fulfillment / Supply, pratiques transverses de gouvernance des données |
 | `chronologie-engagement-supply-flow.svg` | `docs/architecture-cible/overview-plateforme-flow.md`, `docs/vision/modele-fonctionnement-flow.md` | Chronologie Engagement vers FLOW vers Supply, promesse, décision, plan d'exécution, remontées d'information |
 | `flux-produits-fonctionnalites-flow.svg` | `docs/architecture-cible/flux-fonctionnels-flow.md` | Produits FLOW, pratiques transverses, fonctionnalités, Case Management, Stock Unifié, Agreement, règles, événements, vues |
-| `methodologie-flow-overview.svg` | `docs/methode/processus-de-cadrage.md` | Processus de cadrage, passage des observations aux choix de conception, livrables de méthode |
+| `methodologie-flow-overview.svg` | `docs/methode/processus-de-cadrage.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; processus de cadrage, passage des observations aux choix de conception, livrables de méthode |
 | `modele-demand-notions-flow.svg` | `docs/vision/modele-fonctionnement-flow.md` | Notions Demand, fait, événement, décision, règle, promesse, Case, plan d'exécution |
 | `modele-mental-connaissances-flow.svg` | `docs/administration/modele-mental-connaissances.md` | Source datée, fait observé, insight, vision, principe, concept, domaine, capacité, produit, pattern, hotspot, transformation, administration |
-| `panorama-brd-ecosystem.svg` | `docs/contexte/panorama-brd.md` | Cartographie applicative BRD, PLM, PIM, SAP, SRM, CBS, modèle fournisseur / usine |
-| `panorama-gbm-ecosystem.svg` | `docs/contexte/panorama-gbm.md` | Cartographie applicative GBM, SAP, StoreLand, Socloz, NewStore, CBS, B2B / B2C / retail |
-| `pattern-api-conversationnelle.svg` | `docs/architecture-cible/patterns/api-conversationnelle.md` | Pattern API conversationnelle, demande progressive, contexte, décision, réponse et reprise de conversation |
+| `panorama-brd-ecosystem.svg` | `docs/contexte/panorama-brd.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; cartographie applicative BRD, PLM, PIM, SAP, SRM, CBS, modèle fournisseur / usine |
+| `panorama-gbm-ecosystem.svg` | `docs/contexte/panorama-gbm.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; cartographie applicative GBM, SAP, StoreLand, Socloz, NewStore, CBS, B2B / B2C / retail |
+| `pattern-api-conversationnelle.svg` | `docs/architecture-cible/patterns/api-conversationnelle.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; Pattern API conversationnelle, demande progressive, contexte, décision, réponse et reprise de conversation |
 | `pattern-case-centric-orchestration.svg` | `docs/architecture-cible/patterns/case-centric-orchestration.md` | Case Management, événement, tâche, décision, document, exception, historique |
 | `pattern-cqrs-projections.svg` | `docs/architecture-cible/patterns/cqrs-et-projections.md` | CQRS, modèle d'écriture, événements, projections, modèles de lecture, vues 360 |
 | `pattern-event-driven-architecture.svg` | `docs/architecture-cible/patterns/event-driven-architecture.md` | Event-Driven Architecture, producteurs, événements, consommateurs, contrats d'événements |
 | `pattern-event-sourcing-ledger.svg` | `docs/architecture-cible/patterns/event-sourcing-ledger.md` | Event Sourcing, ledger, faits, audit, relecture, projections |
 | `pattern-externalisation-decisions.svg` | `docs/architecture-cible/patterns/externalisation-des-decisions.md` | Décisions métier, règles, policies, paramètres, moteur de règles |
-| `pattern-operational-datahub.svg` | `docs/architecture-cible/patterns/operational-datahub.md` | Operational DataHub, ingestion, normalisation, disponibilité opérationnelle, distribution |
+| `pattern-operational-datahub.svg` | `docs/architecture-cible/patterns/operational-datahub.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; Operational DataHub, ingestion, normalisation, disponibilité opérationnelle, distribution |
 | `pattern-plateforme-ouverte-gouvernee.svg` | `docs/architecture-cible/patterns/plateforme-ouverte-gouvernee.md` | Plateforme ouverte, gouvernance, contrats, APIs, événements, extensions |
 | `positionnement-flow-4-domaines.svg` | `docs/architecture-cible/overview-plateforme-flow.md`, `docs/vision/positionnement-flow.md`, `docs/vision/vision.md` | Engagement, Demand, Fulfillment, Supply, périmètre FLOW, domaines adhérents, promesse |
-| `produit-socle-case-management.svg` | `docs/architecture-cible/produits/socle-case-management.md` | Socle Case Management, Case, statuts, décisions, événements, documents, exceptions |
+| `produit-socle-case-management.svg` | `docs/architecture-cible/produits/socle-case-management.md` | SVG généré par `scripts/generate_svg_diagrams.py` ; Socle Case Management, Case, statuts, décisions, événements, documents, exceptions |
 | `produit-stock-unifie.svg` | `docs/architecture-cible/produits/stock-unifie.md` | Stock Unifié, disponibilité, réservation, ATP, mouvements, qualité et fraîcheur de stock |
 
 ## Comment décider de régénérer un SVG ?

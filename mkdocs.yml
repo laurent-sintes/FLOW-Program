@@ -138,6 +138,7 @@ nav:
       - Modèle mental des connaissances: administration/modele-mental-connaissances.md
       - Référentiel des rôles: administration/referentiel-roles.md
       - Référentiel des schémas: administration/referentiel-schemas.md
+      - Opérations de build et de contrôle: administration/operations-build-check-site.md
       - Multilingue et traduction: administration/multilingue-traduction.md
       - Environnement Codex sous Windows: administration/environnement-codex-windows.md
       - AGENTS.md - Instructions Codex pour FLOW: administration/instructions-codex.md

@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import html
+import hashlib
 import os
+import re
 import shutil
 import subprocess
 import sys
+import urllib.parse
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +24,18 @@ GENERATED = ROOT / ".generated" / "i18n"
 BASE_CONFIG = ROOT / "mkdocs.yml"
 PUBLISHED_BASE_URL = "https://laurent-sintes.github.io/FLOW-Program"
 PUBLISHED_BASE_PATH = "/FLOW-Program"
+CACHE_BUST_EXTENSIONS = r"css|js|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|otf"
+CACHE_BUST_QUERY_PARAM = "v"
+HTML_ASSET_RE = re.compile(
+    rf'(?P<prefix>\b(?:href|src)=")'
+    rf'(?P<url>[^"]+\.(?:{CACHE_BUST_EXTENSIONS})(?:\?[^"#]*)?(?:#[^"]*)?)'
+    rf'(?P<suffix>")',
+    re.IGNORECASE,
+)
+CSS_ASSET_RE = re.compile(
+    rf"url\((?P<quote>['\"]?)(?P<url>[^)'\" ]+\.(?:{CACHE_BUST_EXTENSIONS})(?:\?[^)'\"]*)?(?:#[^)'\"]*)?)(?P=quote)\)",
+    re.IGNORECASE,
+)
 
 LANGUAGES = {
     "fr": {
@@ -312,6 +327,95 @@ def write_404_page() -> None:
     write_text(SITE / "404.html", page)
 
 
+def should_skip_asset_url(url: str) -> bool:
+    value = url.strip().lower()
+    if not value or value.startswith(("#", "//")):
+        return True
+
+    parsed = urllib.parse.urlsplit(value)
+    return parsed.scheme in {"http", "https", "mailto", "tel", "javascript", "data"}
+
+
+def split_asset_url(url: str) -> tuple[str, str]:
+    parsed = urllib.parse.urlsplit(url)
+    suffix = ""
+    if parsed.fragment:
+        suffix = f"#{parsed.fragment}"
+    return parsed.path, suffix
+
+
+def resolve_site_asset(source_file: Path, asset_path: str) -> Path | None:
+    if not asset_path:
+        return None
+
+    decoded_path = urllib.parse.unquote(asset_path)
+    if decoded_path == PUBLISHED_BASE_PATH:
+        return SITE / "index.html"
+
+    if decoded_path.startswith(f"{PUBLISHED_BASE_PATH}/"):
+        candidate = SITE / decoded_path.removeprefix(f"{PUBLISHED_BASE_PATH}/")
+    elif decoded_path.startswith("/"):
+        candidate = SITE / decoded_path.lstrip("/")
+    else:
+        candidate = source_file.parent / decoded_path
+
+    candidate = candidate.resolve()
+    try:
+        candidate.relative_to(SITE.resolve())
+    except ValueError:
+        return None
+
+    if not candidate.is_file():
+        return None
+
+    return candidate
+
+
+def versioned_asset_url(url: str, source_file: Path) -> str:
+    if should_skip_asset_url(url):
+        return url
+
+    asset_path, suffix = split_asset_url(url)
+    asset_file = resolve_site_asset(source_file, asset_path)
+    if asset_file is None:
+        return url
+
+    digest = hashlib.sha256(asset_file.read_bytes()).hexdigest()[:12]
+    return f"{asset_path}?{CACHE_BUST_QUERY_PARAM}={digest}{suffix}"
+
+
+def cache_bust_css_file(path: Path) -> None:
+    text = read_text(path)
+
+    def replace(match: re.Match[str]) -> str:
+        quote = match.group("quote") or ""
+        url = versioned_asset_url(match.group("url"), path)
+        return f"url({quote}{url}{quote})"
+
+    updated = CSS_ASSET_RE.sub(replace, text)
+    if updated != text:
+        write_text(path, updated)
+
+
+def cache_bust_html_file(path: Path) -> None:
+    text = read_text(path)
+
+    def replace(match: re.Match[str]) -> str:
+        return f"{match.group('prefix')}{versioned_asset_url(match.group('url'), path)}{match.group('suffix')}"
+
+    updated = HTML_ASSET_RE.sub(replace, text)
+    if updated != text:
+        write_text(path, updated)
+
+
+def cache_bust_site_assets() -> None:
+    for css_file in sorted(SITE.rglob("*.css")):
+        cache_bust_css_file(css_file)
+
+    for html_file in sorted(SITE.rglob("*.html")):
+        cache_bust_html_file(html_file)
+
+
 def main() -> int:
     if SITE.exists():
         shutil.rmtree(SITE)
@@ -329,6 +433,7 @@ def main() -> int:
 
     write_root_landing()
     write_404_page()
+    cache_bust_site_assets()
     return 0
 
 

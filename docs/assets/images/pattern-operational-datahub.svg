@@ -1,1 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img"><defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.hw{font:700 23px Aptos,Calibri,sans-serif;fill:#fff}.t{font:500 16px Aptos,Calibri,sans-serif;fill:#1e293b}.tw{font:500 15px Aptos,Calibri,sans-serif;fill:#eaf4f2}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs><rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">Operational DataHub</text><text class="s" x="54" y="84">Transformer des faits distribués en vérité opérationnelle fraîche, gouvernée et consommable.</text><rect class="box" x="70" y="150" width="230" height="310" rx="18"/><text class="h" x="116" y="192">Sources</text><text class="t" x="106" y="235">POS</text><text class="t" x="106" y="265">WMS</text><text class="t" x="106" y="295">C-LOG</text><text class="t" x="106" y="325">SAP / NewStore</text><text class="t" x="106" y="355">Partenaires</text><rect class="core" x="440" y="135" width="400" height="340" rx="28"/><text class="hw" x="535" y="178">Operational DataHub</text><rect class="accent" x="488" y="220" width="130" height="68" rx="16"/><text class="h" x="516" y="250">Ledger</text><text class="s" x="509" y="273">historique</text><rect class="accent" x="662" y="220" width="130" height="68" rx="16"/><text class="h" x="682" y="250">Qualité</text><text class="s" x="678" y="273">fraîcheur</text><rect class="accent" x="488" y="330" width="130" height="68" rx="16"/><text class="h" x="506" y="360">Projection</text><text class="s" x="512" y="383">lecture</text><rect class="accent" x="662" y="330" width="130" height="68" rx="16"/><text class="h" x="680" y="360">Confiance</text><text class="s" x="690" y="383">source</text><rect class="box" x="980" y="150" width="230" height="310" rx="18"/><text class="h" x="1025" y="192">Usages</text><text class="t" x="1016" y="235">API métier</text><text class="t" x="1016" y="265">Décisions</text><text class="t" x="1016" y="295">Vues 360</text><text class="t" x="1016" y="325">Audit</text><text class="t" x="1016" y="355">Monitoring</text><path class="a" d="M300 305 L440 305"/><text class="s" x="328" y="287">événements / faits</text><path class="aa" d="M840 305 L980 305"/><text class="s" x="872" y="287">produits de données</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Pattern Operational DataHub</title>
+  <desc id="desc">Transformer des faits distribués en vérité opérationnelle fraîche, gouvernée et consommable.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="640" rx="24"/>
+  <text class="title" x="54" y="58">Operational DataHub</text>
+  <text class="subtitle" x="54" y="84">Transformer des faits distribués en vérité opérationnelle fraîche, gouvernée et consommable.</text>
+  <rect class="panel" x="70" y="150" width="235" height="310" rx="18"/>
+  <text class="h" x="94" y="190">Sources</text>
+  <text class="small" x="94" y="222">POS</text>
+  <text class="small" x="94" y="242">WMS</text>
+  <text class="small" x="94" y="262">C-LOG</text>
+  <text class="small" x="94" y="282">SAP / NewStore</text>
+  <text class="small" x="94" y="302">Partenaires</text>
+  <rect class="panel" x="975" y="150" width="235" height="310" rx="18"/>
+  <text class="h" x="999" y="190">Usages</text>
+  <text class="small" x="999" y="222">API métier</text>
+  <text class="small" x="999" y="242">Décisions</text>
+  <text class="small" x="999" y="262">Vues 360</text>
+  <text class="small" x="999" y="282">Audit</text>
+  <text class="small" x="999" y="302">Monitoring</text>
+  <rect class="core" x="430" y="132" width="420" height="350" rx="28"/>
+  <text class="hWhite" x="640" y="178" text-anchor="middle">Operational DataHub</text>
+  <rect class="accent" x="480" y="220" width="145" height="102" rx="18"/>
+  <text class="h" x="504" y="260">Ledger</text>
+  <text class="small" x="504" y="292">historique</text>
+  <rect class="accent" x="655" y="220" width="145" height="102" rx="18"/>
+  <text class="h" x="679" y="260">Qualité</text>
+  <text class="small" x="679" y="292">fraîcheur</text>
+  <rect class="accent" x="480" y="335" width="145" height="102" rx="18"/>
+  <text class="h" x="504" y="375">Projection</text>
+  <text class="small" x="504" y="407">lecture</text>
+  <rect class="accent" x="655" y="335" width="145" height="102" rx="18"/>
+  <text class="h" x="679" y="375">Confiance</text>
+  <text class="small" x="679" y="407">source</text>
+  <path class="arrow" d="M305 305 L430 305"/>
+  <text class="small" x="328" y="287">événements / faits</text>
+  <path class="arrowAccent" d="M850 305 L975 305"/>
+  <text class="small" x="872" y="287">produits de données</text>
+</svg>

@@ -32,6 +32,7 @@ GITIGNORE = ROOT / ".gitignore"
 GITATTRIBUTES = ROOT / ".gitattributes"
 GITHUB_PAGES_WORKFLOW = ROOT / ".github" / "workflows" / "github-pages.yml"
 READING_METRICS_SCRIPT = ROOT / "scripts" / "update_reading_metrics.py"
+SVG_GENERATOR_SCRIPT = ROOT / "scripts" / "generate_svg_diagrams.py"
 READING_METRICS = DOCS / "referentiel" / "page-metrics.json"
 ROLE_REGISTRY = DOCS / "administration" / "referentiel-roles.md"
 EXPECTED_METRICS_SCOPE = "canonical_source"
@@ -46,6 +47,16 @@ AUDIENCE_RE = re.compile(
 MARKDOWN_SVG_RE = re.compile(r"!\[[^\]]*]\(([^)\s]+\.svg)(?:\s+\"[^\"]*\")?\)")
 EXTERNAL_LINK_SCHEMES = {"http", "https"}
 EXTERNAL_LINK_USER_AGENT = "FLOW-Program link checker (+https://github.com/laurent-sintes/FLOW-Program)"
+CACHE_BUST_EXTENSIONS = r"css|js|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|otf"
+CACHE_BUST_QUERY_RE = re.compile(r"(?:^|[?&])v=[0-9a-f]{12}(?:$|[&#])", re.IGNORECASE)
+HTML_ASSET_RE = re.compile(
+    rf'\b(?:href|src)="(?P<url>[^"]+\.(?:{CACHE_BUST_EXTENSIONS})(?:\?[^"#]*)?(?:#[^"]*)?)"',
+    re.IGNORECASE,
+)
+CSS_ASSET_RE = re.compile(
+    rf"url\((?P<quote>['\"]?)(?P<url>[^)'\" ]+\.(?:{CACHE_BUST_EXTENSIONS})(?:\?[^)'\"]*)?(?:#[^)'\"]*)?)(?P=quote)\)",
+    re.IGNORECASE,
+)
 
 
 @dataclass
@@ -363,6 +374,19 @@ def should_skip_href(href: str) -> bool:
     return parsed.scheme in {"http", "https", "mailto", "tel", "javascript", "data"}
 
 
+def should_skip_asset_url(url: str) -> bool:
+    value = url.strip()
+    if not value or value.startswith(("#", "//")):
+        return True
+
+    parsed = urllib.parse.urlsplit(value)
+    return parsed.scheme in {"http", "https", "mailto", "tel", "javascript", "data"}
+
+
+def has_cache_busting_version(url: str) -> bool:
+    return bool(CACHE_BUST_QUERY_RE.search(url))
+
+
 def normalize_external_href(href: str) -> str | None:
     value = href.strip()
     if not value:
@@ -522,6 +546,35 @@ def check_built_site_links(checks: Checks) -> None:
 
     if not broken_links and not broken_anchors:
         checks.pass_check(f"Built site internal links and anchors are valid ({checked_links} checked).")
+
+
+def check_built_asset_cache_busting(checks: Checks) -> None:
+    if not SITE.exists():
+        checks.error("SITE_MISSING", "site/ does not exist. Run the MkDocs build first.", SITE)
+        return
+
+    missing = 0
+
+    for html_file in sorted(SITE.rglob("*.html")):
+        text = read_text(html_file)
+        for match in HTML_ASSET_RE.finditer(text):
+            url = match.group("url")
+            if should_skip_asset_url(url) or has_cache_busting_version(url):
+                continue
+            checks.error("ASSET_CACHE_BUSTING", f"Local asset URL is missing a cache-busting version: {url}", html_file)
+            missing += 1
+
+    for css_file in sorted(SITE.rglob("*.css")):
+        text = read_text(css_file)
+        for match in CSS_ASSET_RE.finditer(text):
+            url = match.group("url")
+            if should_skip_asset_url(url) or has_cache_busting_version(url):
+                continue
+            checks.error("ASSET_CACHE_BUSTING", f"CSS asset URL is missing a cache-busting version: {url}", css_file)
+            missing += 1
+
+    if not missing:
+        checks.pass_check("Built local asset URLs include cache-busting versions.")
 
 
 def check_multilingual_site(checks: Checks) -> None:
@@ -1039,16 +1092,67 @@ def check_glossary_core_concepts(checks: Checks) -> None:
 def check_svg_assets(checks: Checks) -> None:
     svg_files = sorted(DOCS.rglob("*.svg"))
     invalid = 0
+    exportability_errors = 0
 
     for path in svg_files:
         try:
-            ET.parse(path)
+            root = ET.parse(path).getroot()
         except ET.ParseError as exc:
             checks.error("SVG_XML", f"SVG is not valid XML: {exc}", path)
             invalid += 1
+            continue
+
+        if not root.get("viewBox"):
+            checks.error("SVG_VIEWBOX", "SVG must define a viewBox so it can scale cleanly in Word or PowerPoint.", path)
+            exportability_errors += 1
+
+        if root.get("preserveAspectRatio") != "xMidYMid meet":
+            checks.error(
+                "SVG_ASPECT_RATIO",
+                'SVG must preserve proportions explicitly with preserveAspectRatio="xMidYMid meet".',
+                path,
+            )
+            exportability_errors += 1
+
+        for element in root.iter():
+            tag = element.tag.rsplit("}", 1)[-1]
+            if tag == "image":
+                checks.error("SVG_BITMAP", "SVG must not embed bitmap images for Word/PowerPoint export.", path)
+                exportability_errors += 1
+                break
+            if tag == "foreignObject":
+                checks.error("SVG_FOREIGN_OBJECT", "SVG must not use foreignObject because Office export support is fragile.", path)
+                exportability_errors += 1
+                break
 
     if not invalid:
         checks.pass_check(f"SVG assets are valid XML ({len(svg_files)} checked).")
+
+    if not exportability_errors:
+        checks.pass_check("SVG assets are scalable and Office-export friendly.")
+
+
+def check_generated_svg_diagrams(checks: Checks) -> None:
+    if not SVG_GENERATOR_SCRIPT.exists():
+        checks.error("SVG_GENERATOR_MISSING", "SVG generator script is missing.", SVG_GENERATOR_SCRIPT)
+        return
+
+    result = subprocess.run(
+        [sys.executable, str(SVG_GENERATOR_SCRIPT), "--check"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode:
+        details = (result.stdout or result.stderr).strip()
+        message = "Generated SVG diagrams are not up to date. Run scripts\\generate-svg-diagrams.ps1."
+        if details:
+            message = f"{message} {details}"
+        checks.error("SVG_GENERATED_STALE", message, SVG_GENERATOR_SCRIPT)
+        return
+
+    checks.pass_check("Generated SVG diagrams are up to date.")
 
 
 def check_image_registry(checks: Checks) -> None:
@@ -1108,6 +1212,7 @@ def run_checks(check_external: bool = False, external_timeout: float = 8.0, stri
     check_generated_content_not_tracked(checks)
     check_repository_line_endings(checks)
     check_built_site_links(checks)
+    check_built_asset_cache_busting(checks)
     check_multilingual_site(checks)
     if check_external:
         check_external_links(checks, external_timeout, strict_external)
@@ -1118,6 +1223,7 @@ def run_checks(check_external: bool = False, external_timeout: float = 8.0, stri
     check_reading_metrics(checks)
     check_flow_guardrails(checks)
     check_glossary_core_concepts(checks)
+    check_generated_svg_diagrams(checks)
     check_svg_assets(checks)
     check_image_registry(checks)
     return checks

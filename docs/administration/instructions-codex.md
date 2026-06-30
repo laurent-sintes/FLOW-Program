@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>13 min</strong>
+      <strong>14 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -75,13 +75,15 @@ Le français reste la source de référence dans `docs/`. La version anglaise es
 
 Le build génère aussi `site/index.html`, qui aiguille la racine vers `/fr/`, et `site/404.html`, qui redirige les anciens liens profonds sans préfixe de langue vers `/fr/...` sans rediriger les chemins déjà préfixés par `/fr/` ou `/en/`.
 
+Le build ajoute également une version de cache aux assets locaux publiés (`?v=<empreinte>`). Cette empreinte est calculée sur le contenu des styles, scripts, images, SVG et polices afin d'éviter d'imposer un `Ctrl+F5` aux lecteurs quand ces fichiers changent.
+
 Pour lancer la validation complète du référentiel, utiliser :
 
 ```powershell
 .\scripts\check-site.ps1
 ```
 
-Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, index FAQ, SVG, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, version de cache des assets publiés, index FAQ, SVG valides et exportables Office, SVG générés à jour, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
 
 Le contrôle des liens externes est optionnel, car il dépend du réseau et peut être plus lent :
 
@@ -129,6 +131,14 @@ Cette commande maintient :
 - `docs/referentiel/statistiques.md`, qui agrège les volumes, temps de lecture, concepts, hotspots, composants et nuage de mots.
 
 Les métriques sont calculées sur la source canonique française `docs/`, pas sur les sorties publiées `site/fr/` et `site/en/`. `docs/referentiel/page-metrics.json` doit conserver `metrics_scope: canonical_source`, `source_language: fr` et `published_languages: ["fr", "en"]`. Ne jamais additionner les langues publiées : tant que l'anglais est généré depuis la source française, ses cartouches de lecture reprennent les métriques de référence françaises.
+
+Pour régénérer les schémas SVG pilotés par script, utiliser :
+
+```powershell
+.\scripts\generate-svg-diagrams.ps1
+```
+
+Cette commande maintient les SVG pilotés par `scripts/generate_svg_diagrams.py`, notamment l'overview FLOW, l'écosystème BRD, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management. Le générateur découpe les textes selon la largeur disponible, calcule la hauteur nécessaire des cartes et aligne la hauteur d'une même rangée. Il n'utilise aucune librairie Python externe : seulement la bibliothèque standard (`argparse`, `dataclasses`, `html`, `pathlib`). Modifier les données du schéma dans `scripts/generate_svg_diagrams.py` plutôt que d'ajuster manuellement les coordonnées d'un SVG généré.
 
 Après toute modification documentaire significative, relancer `.\scripts\update-reading-metrics.ps1` avant `.\scripts\check-site.ps1`.
 
@@ -297,6 +307,8 @@ Impact à vérifier :
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
 - la gouvernance des données en transit est une pratique transverse, pas un produit FLOW candidat ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
+- les SVG générés par `scripts/generate_svg_diagrams.py`, dont l'overview FLOW, l'écosystème BRD, le schéma de méthodologie, les panoramas BRD / GBM, le pattern API conversationnelle, le pattern Operational DataHub et le produit Socle Case Management, doivent être modifiés via le générateur afin de préserver les retours à la ligne et les hauteurs automatiques de blocs ;
+- tous les SVG doivent rester exportables dans Word / PowerPoint : vectoriels, avec `viewBox`, `preserveAspectRatio="xMidYMid meet"`, sans image bitmap embarquée et sans `foreignObject` ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
 - ne pas introduire un composant technique sans clarifier sa responsabilité métier ou de plateforme.
 
@@ -380,6 +392,7 @@ Fichiers clés :
 - `docs/administration/guide-contribution-contenu.md`
 - `docs/administration/modele-mental-connaissances.md`
 - `docs/administration/referentiel-roles.md`
+- `docs/administration/operations-build-check-site.md`
 - `docs/administration/environnement-codex-windows.md`
 - `docs/administration/instructions-codex.md`
 - `docs/referentiel/statistiques.md`
@@ -388,6 +401,7 @@ Fichiers clés :
 Rôle :
 
 - documenter l'environnement local de contribution ;
+- expliciter les opérations réalisées par le build, les contrôles locaux et les contrôles de publication ;
 - guider l'ajout de contenu issu des réunions, ateliers, analyses et transcripts ;
 - expliciter le modèle mental des connaissances qui relie vision, principes, concepts, domaines, capacités, produits, patterns, hotspots et impacts ;
 - rendre visible la mémoire de contribution utilisée par Codex ;
@@ -397,6 +411,7 @@ Rôle :
 Impact à vérifier :
 
 - tout changement d'outillage doit être répercuté dans `docs/administration/environnement-codex-windows.md` ;
+- tout changement de build, contrôle, génération SVG, métriques ou publication doit être répercuté dans `docs/administration/operations-build-check-site.md` ;
 - tout ajout de contenu issu d'une réunion doit conserver la date de source, distinguer faits, insights, analyse co-construite et questions ouvertes ;
 - tout changement de règle de contribution doit être répercuté dans `AGENTS.md` et `docs/administration/instructions-codex.md` ;
 - tout changement de rôle de public cible doit être répercuté dans `docs/administration/referentiel-roles.md` avant de modifier les cartouches ;

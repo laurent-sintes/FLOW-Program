@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
   <title id="title">FLOW dans l'écosystème GBM</title>
   <desc id="desc">Diagramme de positionnement cible de FLOW dans l'écosystème applicatif GBM, avec les applications satellites conservées autour de FLOW.</desc>
   <defs>

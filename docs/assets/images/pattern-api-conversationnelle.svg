@@ -1,17 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-labelledby="title desc">
-<title id="title">Pattern API conversationnelle</title><desc id="desc">Une API conversationnelle maintient un dialogue corrélé entre un consommateur, un Case et des systèmes contributeurs.</desc>
-<defs><style>.bg{fill:#f8fbfa}.box{fill:#fff;stroke:#c7e4de;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.h{font:700 24px Aptos,Calibri,sans-serif;fill:#236159}.hw{font:700 24px Aptos,Calibri,sans-serif;fill:#fff}.t{font:500 16px Aptos,Calibri,sans-serif;fill:#1e293b}.tw{font:500 16px Aptos,Calibri,sans-serif;fill:#eaf4f2}.s{font:600 14px Aptos,Calibri,sans-serif;fill:#5b6b78}.a{stroke:#236159;stroke-width:3;fill:none;marker-end:url(#m)}.aa{stroke:#e09238;stroke-width:3;fill:none;marker-end:url(#ma)}.dash{stroke-dasharray:7 7}</style><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#236159"/></marker><marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#e09238"/></marker></defs>
-<rect class="bg" width="1280" height="620" rx="24"/><text class="h" x="54" y="58">API conversationnelle</text><text class="s" x="54" y="84">Une interaction longue n'est pas un appel unique : c'est un dialogue corrélé, observable et pilotable.</text>
-<rect class="box" x="70" y="210" width="250" height="150" rx="20"/><text class="h" x="116" y="255">Consommateur</text><text class="t" x="108" y="288">canal · domaine · partenaire</text><text class="s" x="108" y="322">initie, suit, complète</text>
-<rect class="core" x="500" y="180" width="280" height="210" rx="28"/><text class="hw" x="565" y="235">Conversation</text><text class="tw" x="555" y="268">correlation id</text><text class="tw" x="555" y="296">état du dialogue</text><text class="tw" x="555" y="324">messages / événements</text><text class="tw" x="555" y="352">timeouts / relances</text>
-<rect class="box" x="955" y="120" width="250" height="112" rx="18"/><text class="h" x="1015" y="162">Case FLOW</text><text class="t" x="995" y="192">porte la demande</text>
-<rect class="box" x="955" y="285" width="250" height="112" rx="18"/><text class="h" x="1004" y="327">Services FLOW</text><text class="t" x="995" y="357">stock · rules · network</text>
-<rect class="box" x="955" y="450" width="250" height="112" rx="18"/><text class="h" x="1010" y="492">Systèmes tiers</text><text class="t" x="995" y="522">WMS · POS · paiement</text>
-<path class="a" d="M320 255 C390 235 430 235 500 250"/><text class="s" x="352" y="228">request / command</text>
-<path class="aa dash" d="M500 318 C430 356 392 360 320 330"/><text class="s" x="350" y="386">status / callback</text>
-<path class="a" d="M780 235 C850 205 890 176 955 176"/><text class="s" x="820" y="190">pilote</text>
-<path class="a" d="M780 300 C850 320 890 340 955 340"/><text class="s" x="820" y="330">interroge / réserve</text>
-<path class="aa dash" d="M955 506 C860 520 805 438 740 390"/><text class="s" x="780" y="520">événements retour</text>
-<rect class="accent" x="430" y="470" width="420" height="70" rx="18"/><text class="h" x="486" y="502">Contrat conversationnel</text><text class="t" x="475" y="528">états · messages · SLA · erreurs · reprise · audit</text>
-<path class="aa" d="M640 390 L640 470"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Pattern API conversationnelle</title>
+  <desc id="desc">Une API conversationnelle maintient un dialogue corrélé entre un consommateur, un Case et des systèmes contributeurs.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.amber{fill:#fff8f0;stroke:#e09238;stroke-width:2}.green{fill:#eaf4f2;stroke:#236159;stroke-width:2}.blue{fill:#edf6fb;stroke:#7fb2d4;stroke-width:2}.purple{fill:#f4f0fb;stroke:#a98bd3;stroke-width:2}.grey{fill:#f4f6f8;stroke:#cbd5e1;stroke-width:2}.red{fill:#fff0ef;stroke:#d98b7d;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.dark{fill:#0b3954;stroke:#052437;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.arrowSoft{stroke:#8aa7a1;stroke-width:2;fill:none;stroke-dasharray:6 6;marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.num{font:800 20px Aptos,Calibri,Segoe UI,sans-serif;fill:#e09238}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="640" rx="24"/>
+  <text class="title" x="54" y="58">API conversationnelle</text>
+  <text class="subtitle" x="54" y="84">Une interaction longue n'est pas un appel unique : c'est un dialogue corrélé, observable et pilotable.</text>
+  <rect class="panel" x="70" y="205" width="260" height="160" rx="20"/>
+  <text class="h" x="108" y="250">Consommateur</text>
+  <text class="txt" x="108" y="282">Canal, domaine ou</text>
+  <text class="txt" x="108" y="304">partenaire. Initie, suit et</text>
+  <text class="txt" x="108" y="326">complète la demande.</text>
+  <rect class="core" x="500" y="175" width="280" height="220" rx="28"/>
+  <text class="hWhite" x="640" y="230" text-anchor="middle">Conversation</text>
+  <text class="smallWhite" x="555" y="265">correlation id</text>
+  <text class="smallWhite" x="555" y="292">état du dialogue</text>
+  <text class="smallWhite" x="555" y="319">messages / événements</text>
+  <text class="smallWhite" x="555" y="346">timeouts / relances</text>
+  <rect class="panel" x="955" y="118" width="250" height="122" rx="18"/>
+  <text class="h" x="979" y="158">Case FLOW</text>
+  <text class="small" x="979" y="190">Porte la demande et son contexte</text>
+  <text class="small" x="979" y="210">durable.</text>
+
+  <rect class="panel" x="955" y="286" width="250" height="122" rx="18"/>
+  <text class="h" x="979" y="326">Services FLOW</text>
+  <text class="small" x="979" y="358">Stock, rules, network et autres</text>
+  <text class="small" x="979" y="378">capacités interrogées.</text>
+
+  <rect class="panel" x="955" y="454" width="250" height="122" rx="18"/>
+  <text class="h" x="979" y="494">Systèmes tiers</text>
+  <text class="small" x="979" y="526">WMS, POS, paiement et</text>
+  <text class="small" x="979" y="546">événements retour.</text>
+
+  <path class="arrow" d="M330 255 C390 235 430 235 500 250"/>
+  <text class="small" x="352" y="228">request / command</text>
+  <path class="arrowAccent dash" d="M500 318 C430 356 392 360 330 330"/>
+  <text class="small" x="350" y="386">status / callback</text>
+  <path class="arrow" d="M780 235 C850 205 890 176 955 176"/>
+  <text class="small" x="820" y="190">pilote</text>
+  <path class="arrow" d="M780 306 C850 326 890 344 955 344"/>
+  <text class="small" x="820" y="336">interroge / réserve</text>
+  <path class="arrowAccent dash" d="M955 510 C860 526 805 438 740 395"/>
+  <text class="small" x="845" y="528" text-anchor="middle">événements retour</text>
+  <rect class="accent" x="420" y="480" width="440" height="82" rx="18"/>
+  <text class="h" x="475" y="513">Contrat conversationnel</text>
+  <text class="txt" x="470" y="540">États, messages, SLA, erreurs, reprise et audit.</text>
+  <path class="arrowAccent" d="M640 395 L640 480"/>
 </svg>
