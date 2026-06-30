@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -34,6 +34,12 @@ L'arbitrage ne porte donc pas seulement sur le maintien ou le remplacement d'une
 
 Il porte sur le positionnement de l'OMS dans l'entreprise : la promesse client omnicanale doit-elle être portée par C-LOG, par FLOW, ou par une orchestration distribuée gouvernée explicitement ?
 
+Le compte rendu Teams ajoute trois signaux importants :
+
+- StoreLand ne voit pas toutes les réservations, car certaines commandes sont intégrées directement dans les systèmes C-LOG ;
+- Transware porte des informations structurantes de transport : cut-off, jours de livraison possibles, jours de départ, délais et disponibilités de points relais ;
+- certaines spécificités marketplace relèvent du WMS, tandis que le regroupement par destinataire est paramétré dans l'OMS.
+
 ## Risques principaux
 
 Cette distribution peut produire :
@@ -42,6 +48,8 @@ Cette distribution peut produire :
 - des erreurs d'aiguillage ;
 - des promesses impossibles à tenir ;
 - une optimisation locale au détriment de l'optimisation globale ;
+- une vision incomplète des réservations et disponibilités ;
+- une dépendance implicite à des référentiels transport non gouvernés comme sources de décision ;
 - une difficulté à expliquer pourquoi une décision a été prise.
 
 ## Ce que FLOW doit clarifier
@@ -55,6 +63,7 @@ FLOW doit définir précisément :
 - les décisions que FLOW garde, délègue ou orchestre ;
 - les règles d'arbitrage lorsque plusieurs options d'exécution sont possibles ;
 - le statut cible de l'OMS C-LOG : service conservé, service encapsulé, composant à remplacer ou moteur d'exécution spécialisé.
+- les sources de référence pour réservations, plan transport, cut-off, disponibilités et contraintes marketplace.
 
 Trois hypothèses doivent être comparées :
 

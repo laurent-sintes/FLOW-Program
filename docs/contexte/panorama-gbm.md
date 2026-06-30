@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>16 min</strong>
+      <strong>17 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -148,7 +148,7 @@ Les zones visibles sont notamment :
 | Magasins | Outils magasins | Point de contact retail et opérations magasin |
 | Marketplace | Intégrateur type Tradebyte | Intégration des flux marketplace |
 | B2B / wholesale | Elastic, Zoho, import / saisie commandes B2B | Canal B2B / wholesale à clarifier |
-| Orchestration / commandes | Socloz, UR, C-LOG / EAI, OMS C-LOG | Cycle de vie commande, intégration, orchestration et exécution |
+| Orchestration / commandes | Socloz, UR, OMS C-LOG, EAI C-LOG | Cycle de vie commande, intégration, orchestration et exécution |
 | StoreLand | instances StoreLand, stocks magasins, dépôts, commandes B2B, moteur réassort | Socle historique retail et stock, avec plusieurs périmètres d'instance |
 | Logistique | Transport, suivi expéditions, dépôts, moteur réassort | Exécution, suivi et décisions opérationnelles |
 | Collaboration fournisseur / achat amont | CBS | Commandes d'achat fournisseur, processus support achat, livraison amont et conformité documentaire |
@@ -306,17 +306,28 @@ Il faut identifier les responsabilités qu'il porte réellement aujourd'hui :
 - orchestration des flux e-commerce ;
 - articulation avec les magasins ;
 - relation avec UR ;
-- relation avec C-LOG / EAI ;
+- relation avec l'écosystème d'exécution C-LOG ;
 - contribution à la vision stock ;
 - contribution à la promesse ou à la réservation.
 
-## C-LOG / EAI et OMS C-LOG
+## C-LOG et l'écosystème d'exécution logistique
 
-C-LOG / EAI apparaît comme un pivot d'intégration logistique.
+C-LOG ne doit pas être lu comme une brique applicative.
 
-Il se situe au croisement des flux e-commerce, magasins, marketplace et wholesale.
+C-LOG est une entité juridique et une filiale logistique du Groupe Beaumanoir. Elle opère un écosystème d'exécution qui combine applications métier, systèmes d'exécution, référentiels opérationnels et couche d'intégration.
 
-OMS C-LOG et Transport apparaissent à proximité, ce qui suggère une articulation entre orchestration, intégration, exécution et suivi.
+Le panorama doit donc distinguer plusieurs niveaux :
+
+| Niveau | Exemples | Lecture FLOW |
+| --- | --- | --- |
+| Organisation | C-LOG | Opérateur logistique et filiale du groupe |
+| Décision / orchestration fulfillment | OMS C-LOG, Crossroad | Scoring, choix du plan, crossdock, split, file manuelle |
+| Exécution entrepôt et transport | WMS, TMS Aval, Transware | Préparation, expédition, plan transport, cut-off, jours de livraison |
+| Intégration technique | EAI C-LOG, Talend, Dollar Universe | Échanges de fichiers, transformations, ordonnancement et dépose |
+
+Cette distinction évite d'attribuer à l'entité C-LOG les responsabilités d'un composant applicatif, ou à l'EAI des décisions métier qu'il ne fait que transporter ou transformer.
+
+L'écosystème C-LOG se situe au croisement des flux e-commerce, magasins, marketplace et wholesale.
 
 Pour FLOW, la question est de distinguer :
 
@@ -483,7 +494,7 @@ Le panorama GBM fait apparaître plusieurs lieux de stock ou de décision stock 
 - dépôts dédiés par canal de distribution ;
 - stock virtuel ;
 - moteur réassort ;
-- flux de stock entre Socloz, StoreLand, C-LOG / EAI et les systèmes de canal.
+- flux de stock entre Socloz, StoreLand, l'écosystème C-LOG, WMS et les systèmes de canal.
 
 Le moteur réassort est un signal important.
 
@@ -509,8 +520,11 @@ Les composants mentionnés dans le panorama GBM sont notamment :
 - module Négoce StoreLand ;
 - UR / United Retail ;
 - Socloz ;
-- C-LOG / EAI ;
+- C-LOG, entité logistique du groupe ;
 - OMS C-LOG ;
+- EAI C-LOG ;
+- WMS ;
+- TMS Aval / Transware ;
 - Transport ;
 - CBS ;
 - SFCC ;
@@ -544,15 +558,15 @@ La comparaison doit se faire par responsabilités, et non seulement par applicat
 | Responsabilité | Composants GBM à investiguer | Lecture FLOW |
 | --- | --- | --- |
 | Cycle de vie commande B2C | UR, StoreLand, Socloz | Responsabilité transverse candidate FLOW |
-| Orchestration omnicanale | Socloz, C-LOG / EAI, UR | Clarifier orchestration, intégration et exécution |
-| Stock disponible | StoreLand, Socloz, Zoho, C-LOG / EAI | Construire une capacité d'Inventory Visibility fiable |
+| Orchestration omnicanale | Socloz, UR, OMS C-LOG, EAI C-LOG | Clarifier orchestration, intégration et exécution |
+| Stock disponible | StoreLand, Socloz, Zoho, OMS C-LOG, WMS, EAI C-LOG | Construire une capacité d'Inventory Visibility fiable |
 | Retours / remboursements / litiges | UR, StoreLand, Service Client | Candidat Case / exception management |
 | Négoce / B2B | StoreLand Négoce, Zoho, Elastic, commandes manuelles | Découpler engagement commercial et commande d'achat |
 | Commandes d'achat fournisseur | CBS, StoreLand Négoce | Distinguer collaboration fournisseur spécialisée et responsabilités transverses FLOW |
 | Collaboration fournisseur / conformité | CBS | Domaine spécialisé contributeur et consommateur de FLOW |
 | Réassort | Moteur réassort, StoreLand, stocks magasins | Décision à expliciter et gouverner |
 | B2B / wholesale | Elastic, Zoho, commandes B2B | Canal à intégrer sans le plaquer sur le modèle retail |
-| Exécution logistique | C-LOG / EAI, OMS C-LOG, Transport, suivi expéditions, CBS | Exécution, documents et événements à connecter à FLOW |
+| Exécution logistique | C-LOG, OMS C-LOG, WMS, TMS / Transware, EAI C-LOG, CBS | Exécution, documents et événements à connecter à FLOW |
 
 ## Responsabilités à investiguer
 
@@ -564,6 +578,7 @@ Plusieurs responsabilités devront être clarifiées dans les prochains travaux 
 - rôle précis du module Négoce StoreLand ;
 - rôle précis de UR / United Retail ;
 - rôle précis de Socloz ;
+- rôle précis de C-LOG comme filiale logistique, séparé du rôle de ses composants applicatifs et techniques ;
 - rôle précis de CBS dans l'achat amont, la collaboration fournisseur et la livraison jusqu'à l'entrepôt ;
 - gestion des stocks et disponibilités ;
 - allocation et promesse ;
@@ -590,7 +605,8 @@ Le panorama GBM conduit à plusieurs questions :
 - UR doit-il être remplacé, absorbé progressivement par FLOW, ou conservé comme composant transitoire ?
 - Les responsabilités d'UR relèvent-elles d'une capacité cible de Case / Order Lifecycle Orchestration ?
 - Socloz porte-t-il une responsabilité d'OMS, de promesse, de réservation, d'orchestration omnicanale ou seulement d'intégration e-commerce ?
-- C-LOG / EAI porte-t-il uniquement de l'intégration technique ou aussi de la logique métier ?
+- Quelles responsabilités relèvent de C-LOG en tant qu'opérateur logistique, de l'OMS C-LOG, de l'EAI C-LOG, du WMS et de Transware ?
+- L'EAI C-LOG transporte-t-il uniquement des données ou masque-t-il aussi des transformations structurantes pour la décision ?
 - Où se trouve aujourd'hui la vision fiable du stock disponible par canal ?
 - Le moteur réassort est-il une capacité décisionnelle à conserver hors FLOW, à connecter ou à intégrer ?
 - Comment intégrer le B2B dans FLOW sans forcer le modèle retail historique de GBM ?

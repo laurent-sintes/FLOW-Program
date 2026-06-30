@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>10 min</strong>
+      <strong>14 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -66,6 +66,12 @@ Les briques visibles ou mentionnées sont :
 
 L'EAI utilisé pour les échanges repose sur Dollar Universe (`$U`), ordonnanceur de batch, et Talend. Il s'agit de la même plateforme technologique que Beaumanoir, mais avec une instance dédiée C-LOG.
 
+La brique EAI interne gère notamment la transformation et la dépose des fichiers. Les jobs Talend assurent aussi des transcodifications, par exemple vers le format attendu par UR.
+
+Les informations de tracking et de confirmation de commande transitent par l'OMS, qui retransmet ensuite les données vers UR.
+
+L'OMS modifie uniquement les informations nécessaires dans les fichiers d'interface, de manière transparente pour les sites.
+
 ## Activités couvertes par C-LOG
 
 C-LOG opère plusieurs types de flux :
@@ -73,6 +79,8 @@ C-LOG opère plusieurs types de flux :
 - entrepôt vers entrepôt, quelles que soient les marques ;
 - entrepôt vers magasin ;
 - entrepôt vers client final.
+
+Toutes les préparations de commandes pour les marques passent par l'OMS, y compris les intégrations avec VP et showroomprive.
 
 Le site de Poupry est plutôt associé à l'activité e-commerce.
 
@@ -116,6 +124,10 @@ Le choix du meilleur site de préparation repose sur plusieurs critères :
 
 Ces critères sont paramétrables selon les règles retenues et la gouvernance de l'offre de service.
 
+Le paramétrage des plans dépend des besoins des clients finaux, du type de commande, du destinataire et des règles propres à certaines marques ou marketplaces.
+
+La validation des règles d'expédition se fait au niveau groupe via les marques, ce qui confirme que le sujet relève d'une gouvernance métier, pas seulement d'un paramétrage technique C-LOG.
+
 Le coût total de livraison est compris comme la somme des coûts nécessaires depuis la préparation initiale jusqu'à la livraison finale :
 
 ```text
@@ -125,7 +137,9 @@ coût de préparation
 + coût de transport
 ```
 
-Le délai de livraison est comparé à la promesse de livraison. L'écart peut être converti en pénalité exprimée en euros par jour de retard.
+Le délai de livraison est estimé à partir des interfaces de la station chargeur, puis comparé à la promesse client affichée sur le site. L'écart peut être converti en pénalité exprimée en euros par jour de retard.
+
+La pénalisation des retards est paramétrée par canal, par exemple B2B ou B2C. Une pénalisation des livraisons anticipées est possible dans le produit, mais elle n'est pas activée aujourd'hui.
 
 ## Complétude, score et file manuelle
 
@@ -143,6 +157,8 @@ S'il n'existe pas de plan éligible, la commande tombe en orchestration manuelle
 
 Dans l'atelier, cette logique a aussi été décrite comme une agilité d'exécution du plan : si une commande n'est pas assurée, elle finit par entrer dans une file manuelle afin d'être traitée manuellement ou relancée automatiquement.
 
+L'ordre de grandeur donné pendant la réunion est faible au regard du volume total : environ 10 à 20 commandes par jour nécessitent une orchestration manuelle, sur environ 20 000 commandes intégrées quotidiennement.
+
 ## Transporteurs et comportements par flux
 
 Les règles de transport ne sont pas uniformes.
@@ -150,6 +166,12 @@ Les règles de transport ne sont pas uniformes.
 Pour les commandes B2C qui arrivent depuis UR, le transporteur est imposé par la commande.
 
 Pour les commandes vers entrepôt ou magasin, un transporteur par défaut est paramétré.
+
+Les informations sur les transporteurs, les cut-off et les jours de départ sont intégrées quotidiennement dans l'OMS via des fichiers référentiels provenant de Transware.
+
+Le plan de transport définit les jours de livraison possibles selon le magasin et le transporteur. Ces données viennent de Transware, pas de StoreLand.
+
+L'OMS utilise donc le plan de transport, les jours de départ transporteur, les cut-off, les délais et les disponibilités des points relais pour orchestrer les commandes.
 
 Pour Bonobo, Cache Cache et Bréal, le calcul n'est pas identique : le transporteur est calculé comme dans le réassort.
 
@@ -163,9 +185,13 @@ Le crossdock permet de traiter une commande à cheval entre deux entrepôts.
 
 L'objectif est de réaliser un transfert afin d'obtenir une seule expédition.
 
+Le traitement crossdock est présenté comme rapide : dès qu'un fichier arrive dans l'OMS, la réception et l'orchestration peuvent être réalisées en quelques minutes, permettant une expédition le jour même lorsque les cut-off le permettent.
+
 Les marques peuvent choisir ces comportements dans une offre de service en cours de consolidation, mais elles ne choisissent pas directement seules : la décision passe par une gouvernance et une décision groupe Beaumanoir.
 
 L'OMS autorise aussi le split de commande.
+
+Dans certains cas, le crossdock n'est pas autorisé : le split de commande est alors appliqué pour gérer l'opération.
 
 Dans le cas du crossdock, la commande maître produit des sous-commandes pour piloter plusieurs WMS.
 
@@ -183,6 +209,8 @@ Dans le cas nominal, l'ERP crée la commande, l'OMS orchestre, le WMS intègre e
 
 Le TMS Aval intervient sur le plan de transport et le picking / packing / expédition.
 
+La clôture d'une commande dans le WMS déclenche la génération d'un fichier d'interface. Ce fichier permet à l'OMS de mettre à jour la commande, puis de générer un fichier de mise à jour vers l'ERP.
+
 ### Crossdock
 
 ![OMS C-LOG - workflow crossdock](../assets/images/c-log-oms-workflow-crossdock.svg)
@@ -191,6 +219,8 @@ Le scénario crossdock montre la création de réceptions XDO, la création d'un
 
 Ce flux illustre bien la différence entre commande maître, sous-commandes et mouvements d'exécution.
 
+Pour une commande répartie sur deux sites, l'OMS attend la validation d'expédition de chaque entrepôt avant de clôturer la commande et d'envoyer la confirmation à l'ERP.
+
 ### Équilibrage de stock
 
 ![OMS C-LOG - workflow équilibrage de stock](../assets/images/c-log-oms-workflow-equilibrage-stock.svg)
@@ -198,6 +228,10 @@ Ce flux illustre bien la différence entre commande maître, sous-commandes et m
 L'équilibrage de stock repose sur des commandes de transfert intersite, des réceptions intersite et des clôtures associées.
 
 L'atelier mentionne également un usage de Dataiku pour calculer les volumes à rééquilibrer.
+
+Les transferts intersites sont transparents pour StoreLand : l'image de stock ne prend pas en compte les commandes en transit, et le transport est assuré par un camion dédié entre les sites.
+
+Des transferts quotidiens vers l'entrepôt de Poupry sont nécessaires, car il n'y a pas de réception fournisseur sur ce site. L'approvisionnement se fait selon les meilleures ventes sur les sites e-commerce, puis l'ajustement des stocks entre sites se fait progressivement selon les ventes et les besoins.
 
 ## Stock, disponibilité et ship from store
 
@@ -219,10 +253,30 @@ Pour les stocks e-commerce et marketplace, des fichiers sont échangés entre pl
 
 Les cadences et traitements mentionnés sont :
 
-- envoi tous les soirs de l'état des stocks à StoreLand pour contrôler les écarts ;
+- envoi chaque matin du flux d'image de stock `MVTOPT2` à StoreLand pour contrôler les écarts ;
+- absence d'ajustement automatique du stock côté StoreLand à partir de cette image ;
+- suppression cible du flux `MVTOPT2`, car il n'est plus jugé nécessaire pour StoreLand et BR ;
 - batch de stock optimal, destiné à éviter pénurie et surstock pour un magasin ou un entrepôt ;
 - remplacement de SCORETEX, vieillissant, par IRMA, nouveau produit développé sur mesure pour calculer ces stocks optimum ;
 - usage de Dataiku pour calculer les volumes à rééquilibrer.
+
+Un point structurant ressort du compte rendu : certaines commandes sont intégrées directement dans les systèmes C-LOG. StoreLand ne dispose donc pas d'une vision exhaustive des réservations actuelles.
+
+L'OMS dispose d'un compteur interne, mais nécessite une synchronisation régulière avec le WMS pour garantir une image de stock fiable.
+
+## Spécificités marketplace et organisation
+
+Les spécificités marketplace ne sont pas toutes portées par l'OMS.
+
+Les documents à placer dans le colis, cartes cadeaux ou messages personnalisés sont gérés dans le WMS.
+
+Le regroupement des commandes selon le destinataire est paramétré dans l'OMS.
+
+L'organisation actuelle porte aussi une information utile pour FLOW :
+
+- l'équipe Omnicanalité assure normalement le lien entre sites, entrepôts et marques, mais elle est en veille partielle ;
+- une équipe dédiée B2C gère les projets marketplace et les arbitrages d'orchestration lors d'un point hebdomadaire ;
+- un atelier complémentaire avec le service distribution est proposé pour approfondir transporteurs, cut-off et communication avec les marques.
 
 ## Lecture FLOW
 
@@ -248,9 +302,10 @@ Cette situation conforte plusieurs concepts FLOW :
 | Case Management | Une commande qui tombe en file manuelle ou doit être relancée automatiquement ressemble à un Case d'exception, avec historique, décisions et actions. |
 | Stock Unifié | Le ship from store et les flux e-commerce / marketplace montrent que la disponibilité ne peut pas être traitée uniquement comme un stock entrepôt C-LOG : elle doit intégrer stock réel, capacité et contraintes magasin. |
 | Fulfillment Network Configuration | Les entrepôts, capacités, plans actifs, services transport, crossdock et tournées relèvent d'une configuration de réseau d'exécution. |
-| Supply Service Registry | Les services WMS, TMS, transporteurs, SLA, disponibilités et conditions d'appel doivent être décrits comme services mobilisables, pas seulement comme interfaces techniques. |
+| Supply Service Registry | Les services WMS, TMS, Transware, transporteurs, SLA, cut-off, disponibilités et conditions d'appel doivent être décrits comme services mobilisables, pas seulement comme interfaces techniques. |
 | Décision métier explicite | Le score coût / délai / complétude est une décision métier paramétrable, explicable et gouvernable. |
-| Données en transit gouvernées | Les fichiers stock, batchs, SCORETEX / IRMA, Dataiku, EAI et mises à jour ERP montrent un fort besoin de contrats de données, fraîcheur, supervision et réconciliation. |
+| Données en transit gouvernées | Les fichiers stock, `MVTOPT2`, batchs, SCORETEX / IRMA, Dataiku, EAI, Transware et mises à jour ERP montrent un fort besoin de contrats de données, fraîcheur, supervision et réconciliation. |
+| Source de référence / projection | StoreLand ne voit pas toutes les réservations ; Transware porte le plan transport ; le WMS porte certaines spécificités colis. FLOW devra donc distinguer précisément les sources de référence, projections et vues. |
 
 ## Arbitrage de positionnement de l'OMS
 
@@ -286,7 +341,11 @@ L'hypothèse 2 est la plus alignée avec la vision FLOW, mais elle impose d'inst
 - Quel rôle cible donner à l'OMS C-LOG si FLOW reprend une partie du fulfillment : service conservé, service encapsulé, composant à remplacer ou moteur d'exécution spécialisé ?
 - C-LOG peut-il absorber le ship from store à l'échelle groupe si les stocks magasins sont intégrés ?
 - Quelle source ou projection doit assembler la disponibilité magasin complète : stock réel, capacité et contraintes ?
+- Quelle source fait foi pour les réservations lorsque StoreLand ne voit pas toutes les commandes intégrées directement chez C-LOG ?
+- Transware doit-il être considéré comme source de référence du plan transport, des cut-off et des jours de livraison possibles ?
+- Que devient le flux `MVTOPT2` dans une architecture cible orientée Stock Unifié et contrats de données ?
 - Comment articuler IRMA, Dataiku et le Stock Unifié cible autour du stock optimal et du rééquilibrage ?
+- Quelle frontière cible entre OMS et WMS pour les spécificités marketplace : regroupement de commande, documents colis, cartes cadeaux, messages personnalisés ?
 - Comment tracer les décisions et sous-commandes afin d'expliquer une promesse, un crossdock ou une expédition partielle ?
 - Quels événements C-LOG doit-il publier pour que FLOW, les Vues 360 et le service client puissent comprendre l'état réel d'une demande ?
 

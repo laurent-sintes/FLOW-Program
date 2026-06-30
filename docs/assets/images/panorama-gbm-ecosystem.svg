@@ -32,7 +32,8 @@
   <text class="h" x="74" y="355">Orchestration transverse et cycle de vie</text>
   <text class="small" x="74" y="387">UR : cycle de vie B2C, retours, litiges.</text>
   <text class="small" x="74" y="407">Socloz : omnicanal, stock, promesse.</text>
-  <text class="small" x="74" y="427">C-LOG / EAI : pivot intégration, exécution, événements et statuts.</text>
+  <text class="small" x="74" y="427">OMS C-LOG : fulfillment, scoring, crossdock.</text>
+  <text class="small" x="74" y="447">EAI C-LOG : échanges, transformations et statuts.</text>
 
   <rect class="green" x="50" y="580" width="825" height="240" rx="18"/>
   <text class="h" x="74" y="620">Socle retail historique et stock</text>

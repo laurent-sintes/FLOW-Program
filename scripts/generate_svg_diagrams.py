@@ -582,7 +582,7 @@ def render_panorama_gbm_svg() -> str:
         lines.extend(render_chip(x, y, label, "pill", 115))
 
     cards = [
-        Card(50, 315, 825, "Orchestration transverse et cycle de vie", ["UR : cycle de vie B2C, retours, litiges.", "Socloz : omnicanal, stock, promesse.", "C-LOG / EAI : pivot intégration, exécution, événements et statuts."], "amber", 220),
+        Card(50, 315, 825, "Orchestration transverse et cycle de vie", ["UR : cycle de vie B2C, retours, litiges.", "Socloz : omnicanal, stock, promesse.", "OMS C-LOG : fulfillment, scoring, crossdock.", "EAI C-LOG : échanges, transformations et statuts."], "amber", 220),
         Card(50, 580, 825, "Socle retail historique et stock", ["StoreLand par marque, StoreLand Fournitures mutualisé.", "Stocks magasins, dépôts B2C, dépôts canal.", "Module Négoce, moteur réassort, stock virtuel."], "green", 240),
         Card(910, 315, 440, "B2B / wholesale et engagement commercial", ["Zoho CRM, Elastic, Négoce, Product Live.", "Assortiment, achats, catalogue et pilotage commercial."], "purple", 220),
         Card(910, 580, 440, "Exécution, fournisseurs et systèmes spécialisés", ["CBS, dépôts, transport, finance.", "Achats fournisseur, packing list, documents et écritures."], "grey", 240),
