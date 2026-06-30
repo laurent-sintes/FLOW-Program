@@ -81,11 +81,10 @@ nav:
       - Principe 1 — Construire le bon niveau de commun: principes-directeurs/1-converger-c-est-federer.md
       - Principe 2 — FLOW comme plateforme d'entreprise: principes-directeurs/2-flow-comme-plateforme-d-entreprise.md
       - Principe 3 — Les domaines avant les structures: principes-directeurs/3-domaines-avant-les-structures.md
-      - Principe 4 — Articuler Demand, Fulfillment et Supply: principes-directeurs/4-separer-demand-et-supply.md
+      - Principe 4 — Articuler Engagement, Demand, Fulfillment et Supply: principes-directeurs/4-separer-demand-et-supply.md
       - Principe 5 — Le processus émerge des décisions métier: principes-directeurs/5-le-processus-emerge-des-decisions.md
       - Principe 6 — La demande comme objet métier central d’orchestration: principes-directeurs/6-demande-objet-metier-central-orchestration.md
-      - Principe 7 — Qualifier les informations plutôt que parler de Master Data: principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
-      - Principe 8 — Gouverner la donnée en transit: principes-directeurs/8-gouverner-la-donnee-en-transit.md
+      - "Principe 7 — Master Data : des objets maîtres aux sources gouvernées": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
   - Hotspots:
       - hotspots/index.md
       - "Sortie progressive de SAP ECC : découper les responsabilités": hotspots/sap-ecc-boardriders.md

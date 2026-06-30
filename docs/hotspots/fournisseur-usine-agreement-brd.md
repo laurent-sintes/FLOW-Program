@@ -216,7 +216,7 @@ Si l'usage dit que la PO s'adresse au fournisseur dans un cas et à l'usine dans
 Cette séparation est cohérente avec les principes FLOW :
 
 - ne pas importer le modèle SAP sans le challenger ;
-- qualifier les informations plutôt que parler indistinctement de Master Data ;
+- faire du MDM par les sources de référence, les projections et les contrats de données plutôt que définir une Master Data indistincte ;
 - séparer Demand, Supply, Finance et conception produit ;
 - utiliser l'Agreement pour piloter les variations métier sans multiplier les processus ;
 - construire le bon niveau de commun sans effacer les spécificités BRD.

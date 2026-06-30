@@ -31,15 +31,14 @@ Pour une lecture rapide, commencer par [l'abstract des principes directeurs](abs
 1. [Construire le bon niveau de commun](1-converger-c-est-federer.md)
 2. [FLOW comme plateforme d’entreprise](2-flow-comme-plateforme-d-entreprise.md)
 3. [Les domaines avant les structures](3-domaines-avant-les-structures.md)
-4. [Articuler Demand, Fulfillment et Supply](4-separer-demand-et-supply.md)
+4. [Articuler Engagement, Demand, Fulfillment et Supply](4-separer-demand-et-supply.md)
 5. [Le processus émerge des décisions métier](5-le-processus-emerge-des-decisions.md)
 6. [La demande comme objet métier central d’orchestration](6-demande-objet-metier-central-orchestration.md)
-7. [Qualifier les informations plutôt que parler de Master Data](7-qualifier-les-informations-plutot-que-master-data.md)
-8. [Gouverner la donnée en transit](8-gouverner-la-donnee-en-transit.md)
+7. [Master Data : des objets maîtres aux sources gouvernées](7-qualifier-les-informations-plutot-que-master-data.md)
 
 ## Principes à consolider
 
-9. Cohérence opérationnelle dans un monde distribué  
-10. API First / Experience Agnostic  
+8. Cohérence opérationnelle dans un monde distribué
+9. API First / Experience Agnostic
 
 Chaque principe a vocation à expliciter son intention, les insights qui le fondent, ses conséquences et les arbitrages qu’il guide.

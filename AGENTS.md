@@ -241,7 +241,6 @@ Fichiers clés :
 - `docs/principes-directeurs/5-le-processus-emerge-des-decisions.md`
 - `docs/principes-directeurs/6-demande-objet-metier-central-orchestration.md`
 - `docs/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md`
-- `docs/principes-directeurs/8-gouverner-la-donnee-en-transit.md`
 
 Rôle :
 
@@ -252,6 +251,7 @@ Rôle :
 Impact à vérifier :
 
 - tout changement d'un principe peut impacter la vision, les fiches produits, les patterns d'architecture et les insights ;
+- le principe 07 porte aussi la doctrine MDM sur les contrats de données ; vérifier les impacts sur `docs/architecture-cible/produits/gouvernance-donnees-transit.md` ;
 - le principe 01 doit conserver l'idée de bon niveau de commun plutôt qu'une opposition simpliste entre convergence et uniformisation.
 
 ### Architecture cible

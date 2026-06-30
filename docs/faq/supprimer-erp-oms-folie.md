@@ -197,9 +197,9 @@ Elle rejoint aussi le hotspot [Sortie progressive de SAP ECC : découper les res
 
 Elle éclaire également :
 
-- le principe [Articuler Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md) ;
+- le principe [Articuler Engagement, Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md) ;
 - le principe [Le processus émerge des décisions métier](../principes-directeurs/5-le-processus-emerge-des-decisions.md) ;
-- le principe [Qualifier les informations plutôt que parler de Master Data](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) ;
+- le principe [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) ;
 - le pattern [Externalisation des décisions métier](../architecture-cible/patterns/externalisation-des-decisions.md) ;
 - le pattern [Sources de référence, projections et vues](../architecture-cible/patterns/sources-reference-projections-vues.md).
 

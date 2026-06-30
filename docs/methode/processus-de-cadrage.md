@@ -188,7 +188,7 @@ Cette étape transforme la vision en règles de conception.
 
 Les principes directeurs servent à éviter que chaque arbitrage soit rejoué de zéro.
 
-Ils formalisent les convictions d'architecture qui guident FLOW : fédérer plutôt qu'uniformiser, articuler Demand, Fulfillment et Supply, faire émerger le processus des décisions, qualifier les informations plutôt que parler indistinctement de Master Data, etc.
+Ils formalisent les convictions d'architecture qui guident FLOW : fédérer plutôt qu'uniformiser, articuler Engagement, Demand, Fulfillment et Supply, faire émerger le processus des décisions, faire du MDM par les sources de référence, les projections et les contrats de données plutôt que définir une Master Data indistincte, etc.
 
 ### Activités
 

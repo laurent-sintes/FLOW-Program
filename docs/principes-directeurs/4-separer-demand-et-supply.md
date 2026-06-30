@@ -1,4 +1,4 @@
-# Principe 4 — Articuler Demand, Fulfillment et Supply
+# Principe 4 — Articuler Engagement, Demand, Fulfillment et Supply
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">
@@ -21,6 +21,10 @@
 <!-- FLOW-READING-CARD:END -->
 
 ## Introduction
+
+FLOW articule quatre responsabilités complémentaires : <span class="flow-keyword">Engagement</span>, <span class="flow-keyword">Demand</span>, <span class="flow-keyword">Fulfillment</span> et <span class="flow-keyword">Supply</span>.
+
+Le cœur de FLOW reste <span class="flow-keyword">Demand + Fulfillment</span>. Engagement et Supply sont des domaines adhérents : ils ne sont pas absorbés par FLOW, mais ils doivent être raccordés au cœur pour que les intentions, promesses, décisions et ressources restent cohérentes.
 
 Les entreprises gèrent simultanément deux réalités fondamentalement différentes.
 
@@ -61,13 +65,17 @@ Le Fulfillment transforme une demande qualifiée en trajectoire d'exécution, en
 
 > Les demandes et les ressources évoluent indépendamment.
 >
-> FLOW distingue Demand, Fulfillment et Supply.
+> FLOW articule Engagement, Demand, Fulfillment et Supply.
+>
+> Engagement capte l'intention, le parcours et le contexte relationnel.
 >
 > Demand porte l'intention qualifiée, la priorité et la promesse à tenir.
 >
 > Fulfillment porte la décision opérationnelle.
 >
 > Supply porte les ressources, contraintes et capacités d'exécution.
+>
+> Le cœur de FLOW reste Demand + Fulfillment.
 
 ---
 
@@ -77,8 +85,9 @@ FLOW ne cherche pas à opposer les métiers commerciaux aux métiers logistiques
 
 FLOW ne cherche pas à créer de nouveaux silos.
 
-FLOW cherche à distinguer trois responsabilités fondamentalement différentes :
+FLOW cherche à distinguer quatre responsabilités fondamentalement différentes :
 
+* capter l'intention, le parcours et le contexte relationnel ;
 * qualifier ce qui est demandé ou engagé ;
 * arbitrer comment cette demande peut être servie ;
 * exposer ce qui peut réellement être mobilisé.
@@ -432,9 +441,13 @@ Elle constitue une capacité transverse de la plateforme.
 
 ## Première hypothèse de structuration
 
-FLOW identifie aujourd'hui trois responsabilités majeures :
+FLOW identifie aujourd'hui quatre responsabilités majeures :
 
 ```text
+Engagement
+    ↓
+Capter l'intention, le parcours et le contexte relationnel
+
 Demand
     ↓
 Qualifier l'intention et la promesse à tenir

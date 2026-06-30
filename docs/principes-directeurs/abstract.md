@@ -32,18 +32,17 @@ Ce commun ne se construit pas en imposant un processus unique ou un monolithe ap
 
 Il se construit en clarifiant les responsabilités durables, en rendant les décisions explicites, en traitant la demande comme objet central, et en gouvernant les informations selon leur rôle réel : source de référence, projection ou donnée en transit.
 
-## Les huit principes en synthèse
+## Les sept principes en synthèse
 
 | Principe | Règle courte | Ce que cela protège |
 | --- | --- | --- |
 | [01 — Construire le bon niveau de commun](1-converger-c-est-federer.md) | Rendre commun ce qui doit être cohérent, préserver ce qui différencie réellement. | Éviter à la fois la prolifération de silos et l'uniformisation inutile. |
 | [02 — FLOW comme plateforme d'entreprise](2-flow-comme-plateforme-d-entreprise.md) | FLOW est une plateforme de capacités partagées, pas une application de plus. | Éviter de réduire FLOW à un remplacement d'OMS, d'ERP ou d'outil existant. |
 | [03 — Les domaines avant les structures](3-domaines-avant-les-structures.md) | Les domaines métier sont plus durables que les organisations, applications et processus. | Concevoir autour des responsabilités stables plutôt qu'autour de l'existant. |
-| [04 — Articuler Demand, Fulfillment et Supply](4-separer-demand-et-supply.md) | Demand qualifie la demande, Fulfillment arbitre, Supply expose les ressources. | Ne pas mélanger intention, décision et exécution dans le même modèle. |
+| [04 — Articuler Engagement, Demand, Fulfillment et Supply](4-separer-demand-et-supply.md) | Engagement capte l'intention, Demand qualifie la demande, Fulfillment arbitre, Supply expose les ressources. | Ne pas mélanger parcours, intention qualifiée, décision et exécution dans le même modèle. |
 | [05 — Le processus émerge des décisions métier](5-le-processus-emerge-des-decisions.md) | Les décisions métier doivent être conçues avant les variantes de workflow. | Rendre visibles les règles, priorités, exceptions et arbitrages réels. |
 | [06 — La demande comme objet métier central d'orchestration](6-demande-objet-metier-central-orchestration.md) | Le Case porte la demande, son contexte, son historique, ses décisions et ses engagements. | Garder un fil métier cohérent malgré les canaux, domaines et systèmes traversés. |
-| [07 — Qualifier les informations plutôt que parler de Master Data](7-qualifier-les-informations-plutot-que-master-data.md) | Demander quelle est la nature d'une information et si elle est source de référence ou projection. | Éviter le fourre-tout `Master Data` et clarifier qui contrôle quoi. |
-| [08 — Gouverner la donnée en transit](8-gouverner-la-donnee-en-transit.md) | Un flux important est un contrat durable entre source de référence, consommateurs et responsabilité métier. | Sortir de la tuyauterie projet et rendre les échanges observables, maintenables et réconciliables. |
+| [07 — Master Data : des objets maîtres aux sources gouvernées](7-qualifier-les-informations-plutot-que-master-data.md) | Faire du MDM, c'est passer d'un modèle d'objets, attributs et cardinalités à une cartographie des sources de référence, projections, contrats et responsabilités de gouvernance. | Éviter le piège `MDM = inventaire des objets "maîtres" de l'entreprise` et le foisonnement de flux projet. |
 
 ## Lecture d'ensemble
 
@@ -56,15 +55,13 @@ Plateforme d'entreprise
         ↓
 Domaines durables
         ↓
-Demand + Fulfillment + Supply
+Engagement + Demand + Fulfillment + Supply
         ↓
 Décisions métier explicites
         ↓
 Case comme objet central
         ↓
-Informations qualifiées
-        ↓
-Contrats de données gouvernés
+Informations qualifiées et contractualisées
 ```
 
 Cette chaîne permet de passer d'une ambition de convergence à une architecture gouvernable.

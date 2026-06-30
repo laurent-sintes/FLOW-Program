@@ -1,4 +1,4 @@
-# Principe 7 — Qualifier les informations plutôt que parler de Master Data
+# Principe 7 — Master Data : des objets maîtres aux sources gouvernées
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">
@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>8 min</strong>
+      <strong>11 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -26,6 +26,27 @@ FLOW ne doit pas reprendre sans recul la notion ERP de `Master Data`.
 
 Cette notion a une histoire utile, mais elle est devenue trop ambiguë pour concevoir une plateforme distribuée comme FLOW.
 
+Le piège est de croire que le MDM consiste à lister les objets "maîtres" de l'entreprise.
+
+La culture ERP conduit souvent les concepteurs à représenter l'entreprise comme un modèle complet : objets, attributs, tables de paramétrage, relations et cardinalités, comme si tout devait être stabilisé au même endroit.
+
+Cette étape devient risquée si elle arrive trop tôt.
+
+Avant la spécification détaillée, FLOW doit d'abord découper l'information en sources, identifier les responsabilités, déterminer les processus de contrôle et expliciter la gouvernance de ces sources.
+
+Ce changement de pratique est central : on ne part plus d'un modèle unique à compléter, on part des responsabilités qui rendent une information fiable pour un usage donné.
+
+Pour FLOW, faire du MDM consiste plutôt à identifier les sources de référence, les projections et les responsabilités de gouvernance qui rendent une information fiable pour un usage donné.
+
+Cette gouvernance couvre deux situations complémentaires :
+
+- les informations au repos : objets stables, politiques, facts, documents, nomenclatures ou projections maintenus dans un domaine ;
+- les informations en circulation : commands, events, facts, documents ou vues publiés vers d'autres domaines sous contrat de données.
+
+Une approche MDM utile ne commence donc pas par demander quelle liste d'objets doit être déclarée `Master Data`.
+
+Elle commence par identifier quelles informations font référence, pour quel domaine, quel usage, quel niveau de qualité, quel processus de contrôle, quelles projections de consommation et quels contrats de circulation.
+
 Dans un ERP, `Master Data` désigne souvent les objets stables qui donnent du contexte aux transactions : client, fournisseur, article, site, emplacement, condition, centre de coût ou compte comptable.
 
 Dans une démarche de Master Data Management, le même terme renvoie plutôt à des processus de mise en qualité, de déduplication, de consolidation, de gouvernance et de diffusion d'informations partagées.
@@ -36,9 +57,17 @@ Le programme doit qualifier les informations selon des dimensions explicites, si
 
 ## Principe
 
+> FLOW ne transforme pas le MDM en inventaire d'objets "maîtres".
+>
+> Faire du MDM, c'est identifier les sources de référence, les projections et les responsabilités de gouvernance qui rendent une information fiable pour un usage donné.
+>
 > FLOW ne classe pas les informations en `Master Data` par héritage ERP.
 >
 > FLOW qualifie chaque information selon sa nature et son statut dans le domaine : source de référence ou projection.
+>
+> Une information ne fait référence que pour un domaine, un usage, un consommateur ou une décision explicitement qualifiés.
+>
+> Lorsqu'elle circule, cette information doit être publiée, consommée, supervisée et réconciliée sous contrat de données.
 
 Ce principe permet de concevoir la plateforme autour de la cohérence opérationnelle, et non autour d'une taxonomie héritée d'un progiciel.
 
@@ -118,6 +147,18 @@ Le Master Data Management ne désigne pas seulement une catégorie de données.
 
 Il désigne une discipline et des processus permettant de rendre certaines informations cohérentes, fiables, gouvernées et réutilisables dans plusieurs systèmes.
 
+Autrement dit, faire du MDM ne consiste pas seulement à décider que `Customer`, `Vendor`, `Article` ou `Plant` sont des master data.
+
+La vraie question MDM est plus opérationnelle :
+
+```text
+Quelle information doit faire référence ?
+Qui la crée, la valide ou la maintient ?
+Pour quel usage fait-elle autorité ?
+Quelle qualité minimale est garantie ?
+Quelles projections peuvent la consommer sans devenir maîtres ?
+```
+
 Il traite notamment de :
 
 - qualité ;
@@ -141,10 +182,13 @@ Master Data au sens ERP
     → catégorie applicative d'un progiciel
 
 Master Data Management
-    → discipline de qualité, gouvernance et diffusion
+    → discipline de qualité, gouvernance, diffusion et contrats
 
 Qualification des informations FLOW
     → nomenclature simple pour cartographier la plateforme
+
+Contrat de données FLOW
+    → règle durable de publication, consommation, fraîcheur, qualité et réconciliation
 ```
 
 ## Définition de base : information
@@ -272,18 +316,46 @@ Une information n'est donc pas maître de manière absolue.
 
 Elle fait autorité pour un usage, un consommateur, une décision ou un contexte donné.
 
-## Ce qui sera traité plus tard : interfaces et échanges
+## Dimension 3 — Circulation sous contrat
 
-Pour la cartographie fonctionnelle, les deux dimensions précédentes suffisent : nature et source de référence / projection.
+Le MDM ne doit pas gouverner seulement les informations au repos.
 
-Lorsqu'il faudra définir les interfaces, d'autres dimensions deviendront nécessaires :
+Dans un SI distribué, une information devient souvent utile lorsqu'elle circule : un événement de stock, une décision d'allocation, une projection produit d'exécution, une nomenclature de statut ou un document fournisseur.
 
-- mode d'échange : command, event, query, synchronization, stream ;
-- granularité : unitaire ou masse ;
-- fréquence ;
-- fraîcheur attendue ;
-- contrat d'interface ;
-- mécanisme technique : API, event bus, fichier, flux, Pub/Sub ou autre.
+Une donnée en circulation n'est donc pas un simple flux technique.
+
+C'est une information qualifiée qui quitte un domaine pour être consommée par un autre.
+
+Elle doit conserver son contexte de gouvernance :
+
+- quelle information est publiée ;
+- quelle est sa nature : command, event, fact, policy, objet métier, document ou nomenclature ;
+- le domaine qui la publie est-il source de référence ou projection ;
+- quelle source de référence fait foi pour l'usage ;
+- quels consommateurs sont connus ;
+- quel mode d'échange est utilisé : event, API, query, synchronisation, stream ou batch ;
+- quelle granularité est attendue : unitaire ou masse ;
+- quelle fraîcheur est promise ;
+- quelle qualité minimale est garantie ;
+- quels mécanismes de supervision, reprise et réconciliation sont prévus.
+
+Le contrat de données est l'objet de gouvernance qui porte ces engagements.
+
+Il prolonge la qualification source de référence / projection dans la circulation entre domaines.
+
+```text
+Information au repos
+    → nature
+    → source de référence ou projection
+    → usage et qualité
+
+Information en circulation
+    → contrat de données
+    → mode d'échange
+    → consommateurs
+    → fraîcheur et qualité promises
+    → supervision, reprise, réconciliation
+```
 
 Ces dimensions ne doivent pas être confondues avec la nature de l'information.
 
@@ -291,17 +363,24 @@ Par exemple, `Command` est une nature utile dans la cartographie fonctionnelle, 
 
 Le même mot peut donc être utilisé à deux niveaux différents, à condition d'expliciter le niveau d'analyse.
 
+Le produit d'architecture [Gouvernance des données en transit](../architecture-cible/produits/gouvernance-donnees-transit.md) détaille cette responsabilité cible.
+
+L'overview de la plateforme applique aussi la nomenclature `command`, `event`, `fact`, `policy`, objet métier, document et nomenclature aux produits FLOW dans la section [Nomenclature d'information appliquée](../architecture-cible/overview-plateforme-flow.md#nomenclature-dinformation-appliquee).
+
 ## Conséquences pour FLOW
 
 Ce principe conduit FLOW à :
 
 - abandonner la question générique `est-ce de la Master Data ?` ;
+- éviter le piège `MDM = inventaire des objets "maîtres" de l'entreprise` ;
 - qualifier chaque information selon sa nature ;
 - qualifier chaque information comme source de référence ou projection dans un domaine donné ;
 - éviter de transformer FLOW en méga-MDM ;
 - éviter d'importer dans FLOW le modèle SAP sans le challenger ;
 - distinguer ce que FLOW contrôle comme source de référence de ce qu'il consomme sous forme de projection ;
-- préparer la conception future des interfaces sans la mélanger avec la cartographie fonctionnelle ;
+- contractualiser les informations qui circulent entre domaines ;
+- distinguer publication et consommation ;
+- expliciter les consommateurs, la fraîcheur, la qualité, la supervision, la reprise et la réconciliation ;
 - permettre à FLOW de produire des facts, events, commands ou objets métier sans devenir source de référence de toutes les informations du SI.
 
 ## Matrice de qualification
@@ -316,6 +395,8 @@ Pour chaque information importante, FLOW devrait pouvoir renseigner une matrice 
 | Quelle source de référence fait foi pour l'usage ? | FLOW Inventory Visibility pour la promesse |
 | Quel consommateur ? | Case Management, commerce, service client, reporting |
 | Quelle décision ou action sert-elle ? | Promettre, allouer, substituer, réorienter |
+| Circule-t-elle vers d'autres domaines ? | Oui, vers commerce et service client |
+| Quel contrat de données la gouverne ? | Contrat `AvailableStockPublished` avec fraîcheur, qualité, consommateurs et réconciliation |
 
 Cette matrice permet de passer d'un vocabulaire vague à une conception explicite.
 
@@ -323,11 +404,15 @@ Cette matrice permet de passer d'un vocabulaire vague à une conception explicit
 
 FLOW ne remplace pas `Master Data` par une autre catégorie unique.
 
-FLOW qualifie les informations avec deux questions simples pour la cartographie fonctionnelle :
+FLOW évite le piège `MDM = inventaire des objets "maîtres" de l'entreprise`.
+
+FLOW qualifie les informations avec quatre questions simples pour la cartographie fonctionnelle :
 
 ```text
 Quelle est la nature de cette information ?
 Dans ce domaine, est-elle source de référence ou projection ?
+Pour quel usage cette source fait-elle autorité ?
+Si elle circule, quel contrat de données la gouverne ?
 ```
 
 Ce principe complète le principe sur la demande comme objet métier central.

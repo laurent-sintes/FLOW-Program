@@ -82,7 +82,7 @@ Demand qualifie la demande, porte le Case, le contexte, les priorités et la pro
 
 Fulfillment arbitre une promesse tenable et une trajectoire d'exécution à partir des règles, des priorités, du stock, des capacités et des contraintes Supply.
 
-À lire ensuite : [Positionnement de FLOW](../vision/positionnement-flow.md) et [Articuler Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md).
+À lire ensuite : [Positionnement de FLOW](../vision/positionnement-flow.md) et [Articuler Engagement, Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md).
 
 ### Engagement et Supply sont-ils dans FLOW ?
 
@@ -122,7 +122,7 @@ Parce que c'est le lieu de décision entre une demande à servir et des ressourc
 
 Fulfillment répond à des questions concrètes : peut-on promettre, depuis où servir, quel stock réserver, faut-il splitter, substituer, reporter, prioriser ou ouvrir une exception ?
 
-À lire ensuite : [Articuler Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md) et [Flux fonctionnels FLOW](../architecture-cible/flux-fonctionnels-flow.md).
+À lire ensuite : [Articuler Engagement, Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md) et [Flux fonctionnels FLOW](../architecture-cible/flux-fonctionnels-flow.md).
 
 ### À quoi ça sert un stock temps réel ?
 
@@ -138,12 +138,14 @@ Il sert à réduire fortement la fenêtre d'erreur, rendre la disponibilité exp
 
 Parce que le terme mélange trop de choses : objets ERP, données de référence, discipline MDM, projections, paramètres, règles, faits, documents.
 
-FLOW préfère qualifier les informations avec deux questions simples :
+FLOW préfère qualifier les informations avec quatre questions simples :
 
 - quelle est la nature de cette information ;
-- pour cet usage, est-elle source de référence ou projection ?
+- pour cet usage, est-elle source de référence ou projection ;
+- si elle circule, quel contrat de données la gouverne ;
+- quels consommateurs, fraîcheur, qualité et mécanismes de réconciliation sont attendus ?
 
-À lire ensuite : [Qualifier les informations plutôt que parler de Master Data](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) et [Sources de référence, projections et vues](../architecture-cible/patterns/sources-reference-projections-vues.md).
+À lire ensuite : [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) et [Sources de référence, projections et vues](../architecture-cible/patterns/sources-reference-projections-vues.md).
 
 ### Qu'est-ce qu'une source de référence ?
 
@@ -163,7 +165,7 @@ Il doit préciser l'information publiée, sa source de référence, ses consomma
 
 Sans cela, le SI accumule des flux projet difficiles à maintenir.
 
-À lire ensuite : [Gouverner la donnée en transit](../principes-directeurs/8-gouverner-la-donnee-en-transit.md) et [Gouvernance des données en transit](../architecture-cible/produits/gouvernance-donnees-transit.md).
+À lire ensuite : [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) et [Gouvernance des données en transit](../architecture-cible/produits/gouvernance-donnees-transit.md).
 
 ## Quels documents lire si j'ai peu de temps ?
 
