@@ -46,7 +46,7 @@ Pour préparer un plan d'accompagnement, lire en priorité :
 2. [Positionnement de FLOW](../vision/positionnement-flow.md), pour visualiser ce que FLOW porte et ce qui reste adhérent.
 3. [Questions pour les nouveaux](../faq/questions-pour-les-nouveaux.md), pour identifier les formulations simples à réutiliser en communication.
 4. [C-LOG : une décision de fulfillment déjà distribuée](../hotspots/c-log-decision-fulfillment.md), pour comprendre le sujet sensible de la promesse omnicanale.
-5. [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md), pour expliquer l'approche MDM sans tomber dans l'inventaire d'objets maîtres.
+5. [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md), pour expliquer l'approche Master Data Management sans tomber dans l'inventaire d'objets maîtres.
 6. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
 
 ## Les cinq grands changements
@@ -297,7 +297,7 @@ FLOW organise une convergence à tiroirs : commune là où c'est nécessaire, ad
 
 ## Message transverse — Gouverner l'information au repos et en transit
 
-Ce message correspond au sixième arbitrage prioritaire de la note de choix stratégique : instituer une gouvernance MDM de l'information.
+Ce message correspond au sixième arbitrage prioritaire de la note de choix stratégique : instituer une gouvernance Master Data Management de l'information.
 
 Pour le change, il ne doit pas devenir une sixième campagne isolée.
 
@@ -318,7 +318,7 @@ Pour quel usage fait-elle autorité ?
 Quelle projection peut la rendre consommable ?
 ```
 
-Ce message permet d'expliquer l'approche MDM sans retomber dans l'inventaire d'objets `Master Data`.
+Ce message permet d'expliquer l'approche Master Data Management sans retomber dans l'inventaire d'objets `Master Data`.
 
 ### En transit : ne plus commander un flux de plus
 
@@ -362,7 +362,7 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + construire le bon niveau de commun |
 | Périmètre plateforme FLOW vs programme FLOW | Construire le bon niveau de commun sans tout embarquer dans FLOW |
 | Demandes de flux, batchs Talend et lectures base à base | Message transverse : gouverner l'information en transit |
-| MDM vs inventaire de Master Data | Message transverse : qualifier les sources de référence et projections |
+| Master Data Management vs inventaire de Master Data | Message transverse : qualifier les sources de référence et projections |
 | Product ownership | Support de gouvernance pour tous les changements, mais pas un sujet autonome au départ |
 | Nomenclature d'information | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
 

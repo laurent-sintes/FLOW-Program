@@ -180,7 +180,7 @@ FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
 
-Cette rupture doit être comprise comme une évolution des pratiques MDM.
+Cette rupture doit être comprise comme une évolution des pratiques de <span class="flow-keyword">Master Data Management</span>.
 
 Il ne s'agit pas seulement de lister des objets maîtres ou d'accumuler des attributs dans une fiche globale.
 

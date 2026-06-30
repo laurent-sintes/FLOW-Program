@@ -44,6 +44,7 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Fulfillment Network / Réseau d'exécution | [Concepts clés](vision/concepts-cles.md#fulfillment-network-reseau-dexecution) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) · [Fiche produit](architecture-cible/produits/fulfillment-network-configuration.md) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Architecture cible](architecture-cible/index.md) |
+| Master Data Management / MDM | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern Source de référence / Projection](architecture-cible/patterns/sources-reference-projections-vues.md) |
 | Product Agreement Catalog | [Fiche produit](architecture-cible/produits/product-agreement-catalog.md) · [Hotspot PLM / catalogue](hotspots/plm-catalogue-article-ean.md) |
 | Source de référence / Projection | [Concepts clés](vision/concepts-cles.md#source-de-reference-projection) · [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern dédié](architecture-cible/patterns/sources-reference-projections-vues.md) |
 | Stock Unifié | [Concepts clés](vision/concepts-cles.md#stock-unifie) · [Fiche produit](architecture-cible/produits/stock-unifie.md) · [Inventory Visibility](insights/inventory-visibility-capacite-d-entreprise.md) |
@@ -296,7 +297,7 @@ Périmètre des marques historiques du Groupe Beaumanoir, historiquement retail,
 
 ### Golden Source / Source of Record
 
-Termes MDM proches de la notion FLOW de source de référence.
+Termes de Master Data Management proches de la notion FLOW de source de référence.
 
 Ils désignent une source reconnue comme faisant autorité pour un usage, un consommateur, une décision ou un contexte donné.
 
@@ -338,9 +339,13 @@ Notion historique issue de la distinction master file / transaction file, puis p
 
 Dans FLOW, elle est jugée trop large : les informations doivent être qualifiées par nature et par statut source de référence / projection.
 
-### Master Data Management
+### MDM — Master Data Management
 
-Discipline de mise en qualité, gouvernance, consolidation, déduplication et diffusion d'informations partagées.
+MDM est l'acronyme de Master Data Management.
+
+Le Master Data Management est une discipline de mise en qualité, gouvernance, consolidation, déduplication et diffusion d'informations partagées.
+
+Dans FLOW, il ne doit pas être réduit à un inventaire d'objets supposés maîtres : il sert à qualifier les sources de référence, les projections, les contrats d'échange et les responsabilités de gouvernance.
 
 ### Mode d'échange
 

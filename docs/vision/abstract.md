@@ -125,7 +125,7 @@
       <li>Stock temps réel et capacités événementielles des POS, WMS et partenaires.</li>
       <li>Catalogue produit : PLM, articles, EAN, produits conçus et produits importés.</li>
       <li>Fournisseur, usine et Agreement : sources de référence, dates de promesse, adaptation CBS et hypothèse SRM cible.</li>
-      <li>Gouvernance MDM : sources de référence, projections, contrats de données et sortie des flux opportunistes ou base-à-base.</li>
+      <li>Gouvernance <span class="flow-keyword">Master Data Management</span> : sources de référence, projections, contrats de données et sortie des flux opportunistes ou base-à-base.</li>
       <li>Promesse Wholesale, priorisation commerciale et rupture de promesse.</li>
       <li>Module Négoce StoreLand et découpage Engagement / Demand / Fulfillment / Supply.</li>
     </ul>

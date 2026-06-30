@@ -52,7 +52,7 @@ Cette vision repose sur quelques convictions fortes :
 - Le cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span> : qualifier la demande, porter la promesse à tenir et arbitrer la trajectoire d'exécution.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
-- La <span class="flow-keyword">gouvernance MDM</span> doit distinguer sources de référence, projections et contrats d'échange, pour éviter l'inventaire de données supposées maîtres et les flux opportunistes.
+- La gouvernance <span class="flow-keyword">Master Data Management</span> doit distinguer sources de référence, projections et contrats d'échange, pour éviter l'inventaire de données supposées maîtres et les flux opportunistes.
 
 ## Concepts qui structurent FLOW
 
@@ -66,7 +66,7 @@ Cette vision repose sur quelques convictions fortes :
 | <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
 | <span class="flow-keyword">Source de référence / Projection</span> | Dans un SI distribué, une information fait référence lorsqu'elle est contrôlée par un processus responsable ; elle n'est pas maître de manière absolue. |
 | <span class="flow-keyword">Contrat de données</span> | L'information en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
-| <span class="flow-keyword">Gouvernance MDM</span> | Faire du MDM ne consiste pas seulement à lister des objets maîtres : il faut qualifier les sources de référence, les projections, les contrats d'échange et les responsabilités de gouvernance. |
+| <span class="flow-keyword">Master Data Management</span> | Faire du Master Data Management ne consiste pas seulement à lister des objets maîtres : il faut qualifier les sources de référence, les projections, les contrats d'échange et les responsabilités de gouvernance. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
@@ -200,7 +200,7 @@ Elle doit traiter plusieurs points durs :
 - Capacités d'intégration des systèmes réintégrés : APIs, événements, statuts, documents et réconciliation nécessaires pour brancher les services existants sur FLOW.
 - PLM, catalogue, Article / EAN : FLOW ne peut pas dépendre d'un PLM unique ; il doit clarifier le catalogue nécessaire pour vendre, acheter, promettre et exécuter.
 - Fournisseur, usine et Agreement : FLOW doit sortir du paramétrage fournisseur monolithique, cartographier les sources de référence, sécuriser le calcul des dates de promesse et clarifier si CBS devient la SRM cible.
-- Gouvernance MDM de l'information : sources de référence, projections, contrats d'échange, rôles data et sortie progressive des flux opportunistes ou base-à-base.
+- Approche Master Data Management : sources de référence, projections, contrats d'échange, rôles data et sortie progressive des flux opportunistes ou base-à-base.
 - Promesse commerciale Wholesale : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
 - Module Négoce StoreLand : responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment.
 

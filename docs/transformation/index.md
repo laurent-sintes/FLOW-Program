@@ -56,7 +56,7 @@ Pour les Change Managers, le point d'entrée recommandé est [Les changements à
 4. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
 5. construire le bon niveau de commun, sans faire croire que FLOW embarque tout.
 
-Un sixième arbitrage prioritaire porte sur la gouvernance MDM de l'information. Côté conduite du changement, il se traduit par deux réflexes transverses à travailler :
+Un sixième arbitrage prioritaire porte sur une approche Master Data Management gouvernée. Côté conduite du changement, il se traduit par deux réflexes transverses à travailler :
 
 - au repos, ne plus chercher “la bonne base” mais identifier la source de référence, le processus de contrôle et les projections légitimes ;
 - en transit, ne plus commander “un flux de plus” mais définir un contrat d'échange stable, compatible et gouverné.

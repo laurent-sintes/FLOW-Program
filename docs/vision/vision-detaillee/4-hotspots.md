@@ -226,14 +226,14 @@ Ce hotspot ne paraît pas infranchissable, mais il impose un travail de cartogra
 
 Une adhérence doit être instruite explicitement : CBS est-il la SRM cible du Groupe Beaumanoir, le premier lieu de recensement des fournisseurs et usines, ou un domaine spécialisé de suivi achat, collaboration fournisseur et conformité documentaire consommant une source de référence externe ?
 
-## Gouvernance MDM : sources, projections et contrats
+## Master Data Management : sources, projections et contrats
 
 <div class="flow-conviction">
-  <p>Faire du MDM ne consiste pas à dresser un inventaire d'objets supposés maîtres.</p>
+  <p>Faire du <span class="flow-keyword">Master Data Management</span> ne consiste pas à dresser un inventaire d'objets supposés maîtres.</p>
   <p>Il faut identifier qui fait référence, comment l'information circule et qui gouverne les contrats d'échange.</p>
 </div>
 
-La vision FLOW suppose une gouvernance MDM plus exigeante que la master data historique.
+La vision FLOW suppose une gouvernance Master Data Management plus exigeante que la master data historique.
 
 Le sujet doit être séparé en deux lectures pour rester compréhensible sur le terrain :
 
@@ -327,7 +327,7 @@ Ce hotspot impose de clarifier :
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Informations produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
 | Fournisseur, usine et Agreement | Informations fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
-| Gouvernance MDM de l'information | Gouvernance de l'information | Sources de référence, projections, contrats de données, rôles data, sortie des flux opportunistes et du base-à-base |
+| Approche Master Data Management | Gouvernance de l'information | Sources de référence, projections, contrats de données, rôles data, sortie des flux opportunistes et du base-à-base |
 | Promesse commerciale Wholesale | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 
