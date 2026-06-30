@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>10 min</strong>
+      <strong>11 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -34,15 +34,27 @@ Ces changements doivent inspirer la transformation : ils disent ce que les équi
 
 La [note de choix stratégique](../vision/note-choix-strategique.md), la réunion leaders et l'[atelier OMS C-LOG](../contexte/panorama-oms-c-log.md) du 30 juin 2026 précisent l'ordre de priorité du récit : déplacer le centre de gravité de l'ERP vers la demande, réconcilier ERP et OMS, clarifier la promesse omnicanale, expliquer le découpage Engagement / Demand / Fulfillment / Supply, et rappeler que FLOW n'embarque pas tout.
 
+## Parcours de lecture conseillé
+
+Cette page peut servir de point d'entrée aux Change Managers.
+
+Pour préparer un plan d'accompagnement, lire en priorité :
+
+1. [Note de choix stratégique : FLOW](../vision/note-choix-strategique.md), pour comprendre les arbitrages à rendre et les messages à porter.
+2. [Positionnement de FLOW](../vision/positionnement-flow.md), pour visualiser ce que FLOW porte et ce qui reste adhérent.
+3. [Questions pour les nouveaux](../faq/questions-pour-les-nouveaux.md), pour identifier les formulations simples à réutiliser en communication.
+4. [C-LOG : une décision de fulfillment déjà distribuée](../hotspots/c-log-decision-fulfillment.md), pour comprendre le sujet sensible de la promesse omnicanale.
+5. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
+
 ## Les cinq grands changements
 
-| Changement | Ancien réflexe | Nouveau réflexe FLOW |
-| --- | --- | --- |
-| 1. Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client | Partir de l'ERP, des documents, des applications ou des organisations existantes. | Partir de la demande à satisfaire, de la promesse à tenir, des décisions à gouverner et des responsabilités durables à organiser. |
-| 2. Passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître où l'intention est captée, quelle demande est à instruire, comment la servir, puis quel réseau d'exécution mobiliser. |
-| 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts d'informations. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
-| 4. Clarifier qui détient la promesse et penser fulfillment avant documents | Traiter la promesse comme un détail OMS, logistique ou transport. | Décider où vit la promesse client, puis intégrer les documents et la finance comme conséquences maîtrisées. |
-| 5. Construire le bon niveau de commun sans tout embarquer dans FLOW | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré, adhérent ou différencié selon la responsabilité et l'exigence business. |
+| Changement | Ancien réflexe | Nouveau réflexe FLOW | À lire ensuite |
+| --- | --- | --- | --- |
+| 1. Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client | Partir de l'ERP, des documents, des applications ou des organisations existantes. | Partir de la demande à satisfaire, de la promesse à tenir, des décisions à gouverner et des responsabilités durables à organiser. | [Note de choix stratégique](../vision/note-choix-strategique.md) · [Vision détaillée - ruptures](../vision/vision-detaillee/2-ruptures-structurantes.md) |
+| 2. Passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître où l'intention est captée, quelle demande est à instruire, comment la servir, puis quel réseau d'exécution mobiliser. | [Principe 4](../principes-directeurs/4-separer-demand-et-supply.md) · [FAQ experte](../faq/pourquoi-flow-pas-structure-jachete-je-vends.md) |
+| 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts d'informations. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. | [FAQ ERP / OMS](../faq/supprimer-erp-oms-folie.md) · [Socle Case Management](../architecture-cible/produits/socle-case-management.md) |
+| 4. Clarifier qui détient la promesse et penser fulfillment avant documents | Traiter la promesse comme un détail OMS, logistique ou transport. | Décider où vit la promesse client, puis intégrer les documents et la finance comme conséquences maîtrisées. | [Hotspot C-LOG](../hotspots/c-log-decision-fulfillment.md) · [Atelier OMS C-LOG](../contexte/panorama-oms-c-log.md) |
+| 5. Construire le bon niveau de commun sans tout embarquer dans FLOW | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré, adhérent ou différencié selon la responsabilité et l'exigence business. | [Positionnement de FLOW](../vision/positionnement-flow.md) · [Principe 1](../principes-directeurs/1-converger-c-est-federer.md) |
 
 ## Changement 1 — Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client
 
@@ -85,6 +97,8 @@ Quelle demande faut-il satisfaire, avec quelle promesse, quelle décision et que
 FLOW ne se construit pas autour de l'ERP tel qu'il existe.
 
 FLOW se construit autour des demandes, des promesses et des décisions qui doivent rester cohérentes à l'échelle du groupe.
+
+À lire ensuite : [Note de choix stratégique : FLOW](../vision/note-choix-strategique.md) et [Ruptures : déplacer le centre de gravité du SI](../vision/vision-detaillee/2-ruptures-structurantes.md).
 
 ## Changement 2 — Passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply
 
@@ -141,6 +155,8 @@ FLOW ne part pas de “j'achète” ou “je vends”.
 
 FLOW part d'une demande à satisfaire et d'un réseau d'exécution à mobiliser.
 
+À lire ensuite : [Principe 4 - Articuler Engagement, Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md) et [Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?](../faq/pourquoi-flow-pas-structure-jachete-je-vends.md).
+
 ## Changement 3 — Réconcilier ERP et OMS dans une plateforme Demand
 
 ### Changement attendu
@@ -176,6 +192,8 @@ Il consiste à clarifier où vit la décision, qui la gouverne, et comment FLOW,
 FLOW n'empile pas un nouvel OMS sur un nouvel ERP.
 
 FLOW cherche à réconcilier les responsabilités de demande et de fulfillment dans une plateforme cohérente, en explicitant ce qui reste délégué à des capacités spécialisées comme C-LOG.
+
+À lire ensuite : [Supprimer ERP et OMS ? Une folie !](../faq/supprimer-erp-oms-folie.md), [Socle Case Management](../architecture-cible/produits/socle-case-management.md) et [De l'OMS au Demand Management](../insights/oms-vers-demand-management.md).
 
 ## Changement 4 — Clarifier qui détient la promesse et penser fulfillment avant documents
 
@@ -222,6 +240,8 @@ On ne nie pas la facture.
 
 On la remet à sa place : elle documente et comptabilise une réalité opérationnelle que FLOW doit d'abord savoir instruire, promettre, déléguer et expliquer.
 
+À lire ensuite : [C-LOG : une décision de fulfillment déjà distribuée](../hotspots/c-log-decision-fulfillment.md), [OMS C-LOG - atelier du 30 juin 2026](../contexte/panorama-oms-c-log.md) et [Fulfillment Network Configuration](../architecture-cible/produits/fulfillment-network-configuration.md).
+
 ## Changement 5 — Construire le bon niveau de commun sans tout embarquer dans FLOW
 
 ### Changement attendu
@@ -267,6 +287,8 @@ Cela vaut aussi pour le périmètre du programme : FLOW porte le cœur Demand + 
 FLOW ne cherche pas à tout uniformiser.
 
 FLOW organise une convergence à tiroirs : commune là où c'est nécessaire, adhérente là où la responsabilité reste externe, différenciée là où le business l'exige.
+
+À lire ensuite : [Positionnement de FLOW](../vision/positionnement-flow.md), [Principe 1 - Construire le bon niveau de commun](../principes-directeurs/1-converger-c-est-federer.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
 
 ## Sujets volontairement regroupés
 

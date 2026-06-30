@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -26,6 +26,8 @@ FLOW transforme la manière dont l'entreprise pense sa convergence : ce qui doit
 
 Cette section documente les changements organisationnels, culturels et méthodologiques à conduire avec le programme.
 
+Elle doit aider les Change Managers à préparer un récit clair : quels messages porter, quels réflexes faire évoluer, quelles pages lire ensuite et comment relier la transformation aux arbitrages projet.
+
 ## Lecture de la section
 
 La transformation FLOW doit être organisée avec sobriété.
@@ -34,13 +36,15 @@ Les impacts sont nombreux, mais un programme qui pousse trop de changements en p
 
 La recommandation est donc de distinguer deux natures de contenus :
 
-- la gouvernance du changement, qui explique comment l'équipe de change accompagne ces thèmes ;
 - les changements à conduire, regroupés en quelques déplacements de posture concrets.
+- la gouvernance du changement, qui explique comment l'équipe de change accompagne ces thèmes.
+
+Pour les Change Managers, le point d'entrée recommandé est [Les changements à conduire](changements-a-conduire.md). Cette page contient le parcours de lecture, les cinq messages de transformation et les liens vers les pages de fond.
 
 ## Pages disponibles
 
-- [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md)
-- [Les changements à conduire](changements-a-conduire.md)
+- [Les changements à conduire](changements-a-conduire.md) — point d'entrée opérationnel pour préparer les messages, les ateliers et les liens vers vision, principes, FAQ, C-LOG et cadrage.
+- [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md) — justification de la gouvernance du changement et de la complémentarité entre ancrage interne et regard externe.
 
 ## Priorité de travail
 
@@ -55,6 +59,8 @@ La recommandation est donc de distinguer deux natures de contenus :
 Cette structuration reprend les arbitrages prioritaires identifiés avec les leaders projet et les enseignements de l'atelier OMS C-LOG du 30 juin 2026.
 
 Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage et de lecture du périmètre FLOW.
+
+Pour chaque changement, les liens de lecture détaillés sont maintenus dans [Les changements à conduire](changements-a-conduire.md).
 
 ## À retenir
 
