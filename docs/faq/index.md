@@ -28,6 +28,7 @@ La FAQ est séparée en deux niveaux pour permettre une lecture rapide sans perd
 - Questions pour les experts :
   - [À quoi ça sert un stock temps réel ?](stock-temps-reel.md)
   - [Supprimer ERP et OMS ? Une folie !](supprimer-erp-oms-folie.md)
+  - [Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?](pourquoi-flow-pas-structure-jachete-je-vends.md)
 
 ## Règle de lecture
 

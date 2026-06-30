@@ -32,8 +32,9 @@ Le référentiel FLOW n'est pas une collection de notes.
 
 Il fonctionne comme une base de connaissance structurée :
 
-- les réunions et ateliers produisent des faits, des insights et des questions ouvertes ;
+- les réunions, ateliers et retours lecteurs produisent des faits, des insights, des questions ouvertes et des questions fréquentes ;
 - les insights nourrissent la vision, les principes, les hotspots et l'architecture cible ;
+- les questions fréquentes deviennent des entrées FAQ lorsqu'elles révèlent un malentendu durable ou une objection récurrente ;
 - les concepts et le glossaire stabilisent le vocabulaire ubiquitaire ;
 - les domaines, capacités, produits et patterns permettent de passer de la compréhension métier à la solution ;
 - l'administration du référentiel maintient les règles, les cartouches, les métriques et les contrôles.
@@ -89,6 +90,7 @@ Quand une page change, vérifier les impacts selon la nature du changement.
 | Une capacité ou un produit FLOW | Overview plateforme, fiches produits, patterns, hotspots |
 | Une tension ou décision à instruire | Hotspots, vision détaillée, journal des insights |
 | Un fait issu d'une réunion | Source datée, insights, analyse co-construite, questions ouvertes |
+| Une question fréquente ou une objection lecteur | FAQ nouveaux si la réponse doit être courte, FAQ experte si l'analyse mérite une page dédiée, liens vers vision / principes / architecture |
 | Une règle de contribution | AGENTS.md, Instructions Codex, index d'administration, check-site |
 
 ## Ce que Codex utilise implicitement

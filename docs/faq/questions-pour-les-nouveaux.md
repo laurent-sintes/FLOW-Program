@@ -30,39 +30,29 @@ FLOW est une plateforme de cohérence Demand + Fulfillment qui permet de piloter
 
 À lire ensuite : [Abstract FLOW](../vision/abstract.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
 
-### FLOW est-il un OMS ?
+### FLOW remplace-t-il un ERP ou un OMS ?
 
-Pas exactement.
+FLOW ne remplace pas un type d'application par un autre.
 
-FLOW couvre certaines responsabilités qu'un OMS peut porter : orchestration, allocation, promesse, suivi d'exécution, statut de commande.
+Il déplace certaines responsabilités transverses vers une plateforme Demand + Fulfillment : demande, promesse, décision, stock, statuts, exceptions et événements.
 
-Mais FLOW est pensé plus largement comme une plateforme de Demand Management et de Fulfillment, capable de traiter plusieurs types de demandes, plusieurs canaux, plusieurs modèles économiques et plusieurs domaines adhérents.
-
-À lire ensuite : [De l'OMS au Demand Management](../insights/oms-vers-demand-management.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
-
-### FLOW remplace-t-il SAP, StoreLand, Socloz ou NewStore ?
-
-FLOW ne se définit pas comme un remplacement applicatif un pour un.
-
-Il reprend ou gouverne les responsabilités transverses qui doivent devenir cohérentes à l'échelle du groupe.
-
-Certaines applications pourront être remplacées, d'autres conservées, raccordées ou réintégrées selon leur valeur métier et leur capacité à exposer leurs responsabilités proprement.
-
-À lire ensuite : [Vision FLOW](../vision/vision.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
-
-### Supprimer ERP et OMS, c'est une folie ?
-
-Ce serait une folie si l'objectif était de recréer un gros monolithe qui porterait à la fois ERP, OMS, canaux, finance, stock, promesse, règles et exécution.
-
-Ce n'est pas l'objectif de FLOW.
-
-FLOW cherche plutôt à clarifier les responsabilités : l'ERP garde ce qui relève du cœur transactionnel, financier ou référentiel ; les canaux portent l'engagement ; Supply porte les capacités et l'exécution ; FLOW porte Demand + Fulfillment, c'est-à-dire les demandes, promesses, décisions et événements transverses.
-
-Le vrai problème n'est pas seulement de séparer ERP et OMS. C'est que chacun peut devenir un système complet avec ses propres règles, décisions, orchestrations et statuts, sans partager le modèle cible Demand / Fulfillment / Supply.
+L'ERP garde les responsabilités financières, comptables, transactionnelles ou référentielles qui lui appartiennent. Les canaux portent l'engagement et l'expérience. Supply expose les capacités et exécute. FLOW rend cohérentes les décisions qui traversent ces domaines.
 
 → Réponse pour les experts : [Supprimer ERP et OMS ? Une folie !](supprimer-erp-oms-folie.md)
 
-À lire ensuite : [ERP + OMS : séparation utile ou dette architecturale ?](../insights/erp-oms-separation-ou-plateforme-integree.md).
+À lire ensuite : [De l'OMS au Demand Management](../insights/oms-vers-demand-management.md), [Note de choix stratégique](../vision/note-choix-strategique.md) et [Socle Case Management](../architecture-cible/produits/socle-case-management.md).
+
+### Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?
+
+`J'achète` et `Je vends` restent utiles pour parler des parcours métier.
+
+Mais ils ne structurent pas le cœur SI cible, parce qu'ils mélangent engagement, demande, promesse, achat, stock, exécution, documents, finance et exceptions.
+
+FLOW structure le cœur autour de responsabilités plus stables : Engagement, Demand, Fulfillment, Supply, Finance et sources de référence.
+
+→ Réponse pour les experts : [Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?](pourquoi-flow-pas-structure-jachete-je-vends.md)
+
+À lire ensuite : [Articuler Engagement, Demand, Fulfillment et Supply](../principes-directeurs/4-separer-demand-et-supply.md).
 
 ### Pourquoi ne pas simplement uniformiser tout le groupe ?
 
@@ -93,6 +83,8 @@ Engagement capte l'intention et porte les parcours, interfaces, canaux ou négoc
 Supply expose les ressources, capacités, contraintes, services et événements d'exécution.
 
 Ils ne sont pas absorbés par FLOW, mais ils doivent être raccordés par des APIs, événements, statuts, projections, règles d'interaction et contrats de données.
+
+Cela n'interdit pas au programme FLOW de porter ou coordonner certains chantiers côté Engagement ou Supply. Mais ces applications restent hors du cœur plateforme FLOW, sauf arbitrage explicite de périmètre.
 
 À lire ensuite : [Modèle de fonctionnement de FLOW](../vision/modele-fonctionnement-flow.md) et [Flux fonctionnels FLOW](../architecture-cible/flux-fonctionnels-flow.md).
 

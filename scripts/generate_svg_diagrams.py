@@ -1224,6 +1224,7 @@ def render_knowledge_model_svg() -> str:
             ("Faits observés", ["ce qui est dit ou confirmé", "sans sur-interprétation"]),
             ("Insights", ["ce que cela change", "dans la compréhension FLOW"]),
             ("Questions ouvertes", ["hypothèses, risques", "arbitrages à instruire"]),
+            ("Questions fréquentes", ["malentendus", "objections terrain"]),
         ]),
         (560, "2. STRUCTURE DE CONNAISSANCE", "panelSoft", [
             ("Vision", ["pourquoi, ambition", "positionnement cible"]),
@@ -1233,6 +1234,7 @@ def render_knowledge_model_svg() -> str:
             ("Patterns", ["formes réutilisables", "de solution"]),
         ]),
         (1090, "3. IMPACTS ET GOUVERNANCE", "green", [
+            ("FAQ", ["réponses courtes", "pages expertes"]),
             ("Hotspots", ["points sensibles", "à arbitrer"]),
             ("Architecture cible", ["produits, flux", "responsabilités"]),
             ("Transformation", ["changements", "d'usage et posture"]),

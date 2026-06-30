@@ -33,6 +33,7 @@ nav:
       - Questions pour les experts:
           - À quoi ça sert un stock temps réel ?: faq/stock-temps-reel.md
           - Supprimer ERP et OMS ? Une folie !: faq/supprimer-erp-oms-folie.md
+          - Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?: faq/pourquoi-flow-pas-structure-jachete-je-vends.md
   - Vision:
       - vision/index.md
       - Abstract: vision/abstract.md

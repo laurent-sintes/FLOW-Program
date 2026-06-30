@@ -30,6 +30,10 @@
   <text class="h" x="129" y="628">Questions ouvertes</text>
   <text class="small" x="129" y="660">hypothèses, risques</text>
   <text class="small" x="129" y="680">arbitrages à instruire</text>
+  <rect class="panel" x="105" y="704" width="370" height="122" rx="18"/>
+  <text class="h" x="129" y="744">Questions fréquentes</text>
+  <text class="small" x="129" y="776">malentendus</text>
+  <text class="small" x="129" y="796">objections terrain</text>
   <rect class="panelSoft" x="560" y="150" width="440" height="700" rx="24"/>
   <text class="h" x="780" y="198" text-anchor="middle">2. STRUCTURE DE CONNAISSANCE</text>
   <rect class="panel" x="595" y="240" width="370" height="122" rx="18"/>
@@ -55,21 +59,25 @@
   <rect class="green" x="1090" y="150" width="440" height="700" rx="24"/>
   <text class="h" x="1310" y="198" text-anchor="middle">3. IMPACTS ET GOUVERNANCE</text>
   <rect class="panel" x="1125" y="240" width="370" height="122" rx="18"/>
-  <text class="h" x="1149" y="280">Hotspots</text>
-  <text class="small" x="1149" y="312">points sensibles</text>
-  <text class="small" x="1149" y="332">à arbitrer</text>
+  <text class="h" x="1149" y="280">FAQ</text>
+  <text class="small" x="1149" y="312">réponses courtes</text>
+  <text class="small" x="1149" y="332">pages expertes</text>
   <rect class="panel" x="1125" y="356" width="370" height="122" rx="18"/>
-  <text class="h" x="1149" y="396">Architecture cible</text>
-  <text class="small" x="1149" y="428">produits, flux</text>
-  <text class="small" x="1149" y="448">responsabilités</text>
+  <text class="h" x="1149" y="396">Hotspots</text>
+  <text class="small" x="1149" y="428">points sensibles</text>
+  <text class="small" x="1149" y="448">à arbitrer</text>
   <rect class="panel" x="1125" y="472" width="370" height="122" rx="18"/>
-  <text class="h" x="1149" y="512">Transformation</text>
-  <text class="small" x="1149" y="544">changements</text>
-  <text class="small" x="1149" y="564">d'usage et posture</text>
+  <text class="h" x="1149" y="512">Architecture cible</text>
+  <text class="small" x="1149" y="544">produits, flux</text>
+  <text class="small" x="1149" y="564">responsabilités</text>
   <rect class="panel" x="1125" y="588" width="370" height="122" rx="18"/>
-  <text class="h" x="1149" y="628">Contrôles</text>
-  <text class="small" x="1149" y="660">cartouches, métriques</text>
-  <text class="small" x="1149" y="680">liens, rôles, build</text>
+  <text class="h" x="1149" y="628">Transformation</text>
+  <text class="small" x="1149" y="660">changements</text>
+  <text class="small" x="1149" y="680">d'usage et posture</text>
+  <rect class="panel" x="1125" y="704" width="370" height="122" rx="18"/>
+  <text class="h" x="1149" y="744">Contrôles</text>
+  <text class="small" x="1149" y="776">cartouches, métriques</text>
+  <text class="small" x="1149" y="796">liens, rôles, build</text>
   <path class="arrow" d="M510 500 L560 500"/>
   <path class="arrow" d="M1000 500 L1090 500"/>
   <path class="arrowSoft" d="M1310 850 C1310 925 270 925 270 850"/>
