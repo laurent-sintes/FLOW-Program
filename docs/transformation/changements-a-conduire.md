@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>11 min</strong>
+      <strong>12 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -32,7 +32,7 @@ La recommandation est donc de regrouper les impacts autour de cinq grands dépla
 
 Ces changements doivent inspirer la transformation : ils disent ce que les équipes doivent apprendre à regarder autrement, ce qu'elles doivent arrêter de reproduire, et ce que FLOW rend possible.
 
-La [note de choix stratégique](../vision/note-choix-strategique.md), la réunion leaders et l'[atelier OMS C-LOG](../contexte/panorama-oms-c-log.md) du 30 juin 2026 précisent l'ordre de priorité du récit : déplacer le centre de gravité de l'ERP vers la demande, réconcilier ERP et OMS, clarifier la promesse omnicanale, expliquer le découpage Engagement / Demand / Fulfillment / Supply, et rappeler que FLOW n'embarque pas tout.
+La [note de choix stratégique](../vision/note-choix-strategique.md), la réunion leaders et l'[atelier OMS C-LOG](../contexte/panorama-oms-c-log.md) du 30 juin 2026 précisent l'ordre de priorité du récit : déplacer le centre de gravité de l'ERP vers la demande, réconcilier ERP et OMS, clarifier la promesse omnicanale, expliquer le découpage Engagement / Demand / Fulfillment / Supply, rappeler que FLOW n'embarque pas tout, et faire comprendre que les informations en circulation doivent être gouvernées par contrat plutôt que par flux projet opportunistes.
 
 ## Parcours de lecture conseillé
 
@@ -44,7 +44,8 @@ Pour préparer un plan d'accompagnement, lire en priorité :
 2. [Positionnement de FLOW](../vision/positionnement-flow.md), pour visualiser ce que FLOW porte et ce qui reste adhérent.
 3. [Questions pour les nouveaux](../faq/questions-pour-les-nouveaux.md), pour identifier les formulations simples à réutiliser en communication.
 4. [C-LOG : une décision de fulfillment déjà distribuée](../hotspots/c-log-decision-fulfillment.md), pour comprendre le sujet sensible de la promesse omnicanale.
-5. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
+5. [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md), pour expliquer l'approche MDM sans tomber dans l'inventaire de données.
+6. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
 
 ## Les cinq grands changements
 
@@ -54,7 +55,7 @@ Pour préparer un plan d'accompagnement, lire en priorité :
 | 2. Passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître où l'intention est captée, quelle demande est à instruire, comment la servir, puis quel réseau d'exécution mobiliser. | [Principe 4](../principes-directeurs/4-separer-demand-et-supply.md) · [FAQ experte](../faq/pourquoi-flow-pas-structure-jachete-je-vends.md) |
 | 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts d'informations. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. | [FAQ ERP / OMS](../faq/supprimer-erp-oms-folie.md) · [Socle Case Management](../architecture-cible/produits/socle-case-management.md) |
 | 4. Clarifier qui détient la promesse et penser fulfillment avant documents | Traiter la promesse comme un détail OMS, logistique ou transport. | Décider où vit la promesse client, puis intégrer les documents et la finance comme conséquences maîtrisées. | [Hotspot C-LOG](../hotspots/c-log-decision-fulfillment.md) · [Atelier OMS C-LOG](../contexte/panorama-oms-c-log.md) |
-| 5. Construire le bon niveau de commun sans tout embarquer dans FLOW | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré, adhérent ou différencié selon la responsabilité et l'exigence business. | [Positionnement de FLOW](../vision/positionnement-flow.md) · [Principe 1](../principes-directeurs/1-converger-c-est-federer.md) |
+| 5. Construire le bon niveau de commun sans tout embarquer dans FLOW | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré, adhérent ou différencié selon la responsabilité et l'exigence business. | [Positionnement de FLOW](../vision/positionnement-flow.md) · [Principe 1](../principes-directeurs/1-converger-c-est-federer.md) · [Principe 7](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
 
 ## Changement 1 — Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client
 
@@ -273,6 +274,16 @@ FLOW est une plateforme qui aide à décider le bon niveau de commun et le bon n
 
 Cela vaut aussi pour le périmètre du programme : FLOW porte le cœur Demand + Fulfillment, mais des applications Engagement ou Supply peuvent rester adhérentes, être développées par d'autres projets, ou être portées par FLOW selon arbitrage.
 
+Le même raisonnement vaut pour les échanges d'information.
+
+Le bon niveau de commun ne consiste pas à centraliser toutes les bases de données ou à laisser chaque projet commander un flux spécifique.
+
+Il consiste à décider quelles informations font référence, quelles projections sont nécessaires, quels consommateurs sont légitimes et quels contrats de données doivent gouverner la circulation.
+
+Une base de données applicative ne doit pas devenir une ressource publique d'échange.
+
+Le `base à base` est un réflexe legacy : il contourne la responsabilité de l'application, fragilise son modèle interne et rend les flux difficiles à gouverner dans le temps.
+
 ### Impacts principaux
 
 - Les équipes doivent arrêter de traiter la convergence comme un choix binaire entre uniformisation et autonomie totale.
@@ -281,6 +292,7 @@ Cela vaut aussi pour le périmètre du programme : FLOW porte le cœur Demand + 
 - Les trajectoires de retrait ou remplacement applicatif doivent être expliquées par responsabilité.
 - Les populations impactées doivent comprendre ce qui sera commun, ce qui sera standardisé, ce qui restera autonome et pourquoi.
 - Les équipes doivent distinguer la plateforme FLOW, le programme FLOW et les domaines adhérents qui peuvent nécessiter des chantiers connexes.
+- Les équipes doivent passer du réflexe “j'ai besoin d'une information, je commande un flux” au réflexe “quelle source fait référence, quel contrat expose l'information, avec quelle fraîcheur, quelle qualité et quelle compatibilité ?”.
 
 ### Message de transformation
 
@@ -288,7 +300,7 @@ FLOW ne cherche pas à tout uniformiser.
 
 FLOW organise une convergence à tiroirs : commune là où c'est nécessaire, adhérente là où la responsabilité reste externe, différenciée là où le business l'exige.
 
-À lire ensuite : [Positionnement de FLOW](../vision/positionnement-flow.md), [Principe 1 - Construire le bon niveau de commun](../principes-directeurs/1-converger-c-est-federer.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
+À lire ensuite : [Positionnement de FLOW](../vision/positionnement-flow.md), [Principe 1 - Construire le bon niveau de commun](../principes-directeurs/1-converger-c-est-federer.md), [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) et [Gouvernance des données en transit](../architecture-cible/produits/gouvernance-donnees-transit.md).
 
 ## Sujets volontairement regroupés
 
@@ -296,8 +308,8 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 
 | Sujet détaillé | À rattacher à |
 | --- | --- |
-| Domain-Driven Design | Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise |
-| Urbanisme commun BRD / GBM | Ne plus servir l'organisation + construire le bon niveau de commun |
+| Domain-Driven Design | Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client |
+| Urbanisme commun BRD / GBM | Déplacer le centre de gravité + construire le bon niveau de commun |
 | B2C / B2B / retail / wholesale | Passer à Engagement / Demand / Fulfillment / Supply |
 | Achats / ventes | Passer à Engagement / Demand / Fulfillment / Supply |
 | SAV / litiges / retours / remboursements | Passer à Engagement / Demand / Fulfillment / Supply avant documents |
@@ -311,8 +323,10 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | Finance | Fulfillment et satisfaction client avant documents |
 | Remplacement SAP / NewStore / StoreLand / Socloz / UR | Réconcilier ERP et OMS + construire le bon niveau de commun |
 | Périmètre plateforme FLOW vs programme FLOW | Construire le bon niveau de commun sans tout embarquer dans FLOW |
+| Demandes de flux, batchs Talend et lectures base à base | Construire le bon niveau de commun + gouverner les informations en circulation |
+| MDM vs inventaire de Master Data | Construire le bon niveau de commun + qualifier les sources de référence |
 | Product ownership | Support de gouvernance pour tous les changements, mais pas un sujet autonome au départ |
-| Nomenclature data | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
+| Nomenclature d'information | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
 
 ## Points de vigilance
 
@@ -324,6 +338,8 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 - Ne pas laisser la promesse omnicanale devenir implicite entre FLOW, C-LOG et les domaines d'engagement.
 - Ne pas confondre convergence et uniformisation.
 - Ne pas confondre différenciation business et héritage applicatif subi.
+- Ne pas présenter une base de données applicative comme une interface publique d'échange.
+- Ne pas accepter qu'un nouveau besoin d'information se transforme automatiquement en batch Talend ou en flux point à point.
 - Ne pas réduire le change au déploiement applicatif final.
 
 ## À retenir

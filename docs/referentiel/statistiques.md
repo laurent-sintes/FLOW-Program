@@ -38,8 +38,8 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 103 |
-| Nombre de mots | 91 694 |
-| Temps de lecture complet | 7 h 45 min |
+| Nombre de mots | 92 188 |
+| Temps de lecture complet | 7 h 47 min |
 | Concepts du glossaire | 94 |
 | Hotspots documentés | 8 |
 | Produits FLOW | 7 |
@@ -60,8 +60,8 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | methode | 2 | 2 962 | 14 min |
 | principes-directeurs | 9 | 8 863 | 45 min |
 | referentiel | 1 | 2 979 | 14 min |
-| transformation | 3 | 3 342 | 17 min |
-| vision | 13 | 13 492 | 1 h 6 min |
+| transformation | 3 | 3 637 | 18 min |
+| vision | 13 | 13 691 | 1 h 7 min |
 
 ## Pages les plus longues
 
@@ -74,35 +74,35 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | [Glossaire FLOW](../glossaire.md) | 2 979 | 14 min |
 | [OMS C-LOG - atelier du 30 juin 2026](../contexte/panorama-oms-c-log.md) | 2 882 | 14 min |
 | [Processus de cadrage](../methode/processus-de-cadrage.md) | 2 833 | 13 min |
+| [Les changements à conduire](../transformation/changements-a-conduire.md) | 2 587 | 12 min |
 | [Hotspots : les décisions à instruire pour rendre FLOW réaliste](../vision/vision-detaillee/4-hotspots.md) | 2 403 | 11 min |
-| [Les changements à conduire](../transformation/changements-a-conduire.md) | 2 335 | 11 min |
 | [Supprimer ERP et OMS ? Une folie !](../faq/supprimer-erp-oms-folie.md) | 2 283 | 11 min |
 
 ## Nuage de mots
 
 <div class="flow-word-cloud">
 <span class="flow-word-cloud__term flow-word-cloud__term--5" title="466 occurrences">stock</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--5" title="387 occurrences">metier</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--4" title="285 occurrences">demande</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--4" title="281 occurrences">execution</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--5" title="388 occurrences">metier</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--4" title="288 occurrences">demande</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="275 occurrences">responsabilites</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--3" title="262 occurrences">decision</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--3" title="250 occurrences">promesse</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--3" title="249 occurrences">case</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="274 occurrences">execution</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="258 occurrences">decision</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="251 occurrences">promesse</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="242 occurrences">case</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="237 occurrences">evenements</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="208 occurrences">decisions</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--3" title="204 occurrences">supply</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="200 occurrences">supply</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="200 occurrences">fulfillment</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="180 occurrences">reference</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="169 occurrences">regles</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="166 occurrences">source</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="166 occurrences">produit</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="165 occurrences">plateforme</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="164 occurrences">plateforme</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="162 occurrences">processus</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="156 occurrences">capacites</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="149 occurrences">modele</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="151 occurrences">modele</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="145 occurrences">porte</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="142 occurrences">cible</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="143 occurrences">cible</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="130 occurrences">demand</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="129 occurrences">fournisseur</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="128 occurrences">information</span>
@@ -112,20 +112,20 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="118 occurrences">architecture</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="118 occurrences">systemes</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="114 occurrences">engagement</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="111 occurrences">client</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="112 occurrences">client</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="97 occurrences">produits</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="97 occurrences">convergence</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="95 occurrences">vision</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--1" title="93 occurrences">donnees</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="91 occurrences">allocation</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--1" title="90 occurrences">responsabilite</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--1" title="91 occurrences">responsabilite</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--1" title="90 occurrences">flux</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="89 occurrences">domaine</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="89 occurrences">projection</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="88 occurrences">site</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--1" title="86 occurrences">donnees</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--1" title="84 occurrences">flux</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="84 occurrences">agreement</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--1" title="83 occurrences">seulement</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--1" title="82 occurrences">finance</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--1" title="84 occurrences">gouvernance</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--1" title="84 occurrences">seulement</span>
 </div>
 
 ## Fichier de comptage

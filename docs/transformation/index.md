@@ -56,9 +56,11 @@ Pour les Change Managers, le point d'entrée recommandé est [Les changements à
 4. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
 5. construire le bon niveau de commun, sans faire croire que FLOW embarque tout.
 
+Un message transverse doit également être porté : la gouvernance des données en transit n'est pas une affaire de tuyauterie IT. Elle change le réflexe projet qui consiste à demander un flux, lire une base de données applicative et livrer un batch supplémentaire.
+
 Cette structuration reprend les arbitrages prioritaires identifiés avec les leaders projet et les enseignements de l'atelier OMS C-LOG du 30 juin 2026.
 
-Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage et de lecture du périmètre FLOW.
+Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage, d'intégration et de lecture du périmètre FLOW.
 
 Pour chaque changement, les liens de lecture détaillés sont maintenus dans [Les changements à conduire](changements-a-conduire.md).
 

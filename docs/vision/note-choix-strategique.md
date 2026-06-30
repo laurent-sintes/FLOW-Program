@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>5 min</strong>
+      <strong>6 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -114,6 +114,7 @@ FLOW change la manière de piloter le SI.
 | Stock par système | Stock unifié exploitable |
 | Règles cachées dans les processus | Décisions métier gouvernées |
 | Flux projet | Contrats de données |
+| Lecture base à base et batchs Talend à la demande | Interfaces d'échange stables, contrats compatibles et gouvernance des données en transit |
 | Convergence = uniformisation | Convergence = bon niveau de commun |
 
 Le centre de gravité se déplace.
@@ -144,6 +145,16 @@ Ils doivent être partagés tôt parce qu'ils peuvent être déroutants : ils d�
 
 Ils alimentent directement les messages de transformation décrits dans [Les changements à conduire](../transformation/changements-a-conduire.md).
 
+La réunion leaders du 30 juin 2026 a aussi confirmé un point d'adhésion important : l'opposition entre `Master Data` et MDM gouverné a été comprise côté métier.
+
+Le problème n'est pas seulement de nommer des objets maîtres. Le problème est d'éviter qu'un responsable applicatif cherche une information dans une autre application, analyse directement sa base de données, rédige une spécification puis commande à une équipe Flux centralisée un batch Talend de plus.
+
+Ce mode de fonctionnement produit progressivement des flux non gouvernés, difficiles à tracer, à faire évoluer et à réconcilier.
+
+FLOW doit donc traiter la gouvernance des données en transit comme un sujet de fond : une application ne doit pas exposer sa base de données comme ressource publique d'échange. Elle doit proposer des interfaces stables, pilotées, compatibles dans le temps, et protéger son modèle interne.
+
+Le `base à base` doit être considéré comme une pratique legacy à résorber, pas comme un modèle d'intégration cible.
+
 ## 7. Les arbitrages structurants à instruire ensuite
 
 Une fois le centre de gravité confirmé, la vision FLOW doit être sécurisée par des arbitrages plus détaillés.
@@ -153,6 +164,7 @@ Une fois le centre de gravité confirmé, la vision FLOW doit être sécurisée 
 - Quelle politique de promesse client adopter : premier arrivé, premier servi, priorisation commerciale, ou règles différenciées par contexte ?
 - Quels systèmes sortir, conserver, encapsuler ou réintégrer ?
 - Quel niveau d'investissement accepter pour rendre le stock, les événements et les décisions métier gouvernables ?
+- Quels échanges critiques doivent sortir de la logique `demande de flux / batch Talend / lecture base à base` pour devenir des contrats de données gouvernés ?
 - Quel catalogue produit FLOW doit-il consommer pour gérer produits conçus et produits importés ?
 - Qui est source de référence des informations fournisseur, usine, Agreement, PLM, Finance et Supply nécessaires au calcul des dates de promesse ?
 - Quelles responsabilités du module Négoce StoreLand doivent entrer dans FLOW ?
