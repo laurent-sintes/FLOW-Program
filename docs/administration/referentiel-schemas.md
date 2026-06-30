@@ -32,13 +32,29 @@ Un schéma n'est pas seulement une illustration. Il porte souvent une partie du 
 - Le contenu XML du SVG reste utile pour repérer du texte, mais il ne suffit pas à mesurer les impacts : certaines dépendances sont implicites ou conceptuelles.
 - Après ajout, renommage ou modification d'un SVG, relancer `.\scripts\check-site.ps1`.
 
+## Style visuel cible
+
+Les schémas d'architecture et les fiches produits doivent rester cohérents avec les derniers SVG produits, notamment `produit-socle-case-management.svg` et `produit-stock-unifie.svg`.
+
+Style à privilégier :
+
+- fond général clair `#f8fbfa` avec coins arrondis ;
+- panneaux blancs avec bordure vert pâle `#c7e4de` ;
+- cœur ou capacité centrale en vert FLOW `#236159`, avec bordure `#0b3954` ;
+- accent ocre `#e09238` sur les décisions, contrats, alertes ou éléments différenciants ;
+- texte en Aptos, Calibri ou Segoe UI ;
+- titres en vert FLOW, textes en gris bleu lisible ;
+- éviter les grands fonds noirs ou bleu nuit pour les schémas d'architecture et de produits, sauf besoin ponctuel fortement justifié.
+
+Les schémas plus anciens peuvent rester en l'état lorsqu'ils sont cohérents dans leur famille, mais toute modification substantielle doit tendre vers cette charte.
+
 ## Registre
 
 | Schéma | Affiché dans | Dépendances à surveiller |
 | --- | --- | --- |
 | `architecture-cible-flow-ecosysteme-brd.svg` | `docs/architecture-cible/flow-dans-ecosysteme-brd.md` | Écosystème BRD, panorama BRD, frontières FLOW / SRM / PLM / SAP / CBS, hotspot fournisseur / usine / Agreement |
 | `architecture-cible-flow-ecosysteme-gbm.svg` | `docs/architecture-cible/flow-dans-ecosysteme-gbm.md` | Écosystème GBM, panorama GBM, frontières FLOW / SAP / StoreLand / Socloz / NewStore / CBS |
-| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | Overview de la plateforme FLOW, produits FLOW, domaines Demand / Fulfillment / Supply, composants de gouvernance |
+| `architecture-cible-flow-overview.svg` | `docs/architecture-cible/overview-plateforme-flow.md` | Overview de la plateforme FLOW, sept produits candidats, domaines Engagement / Demand / Fulfillment / Supply, composants de gouvernance des données |
 | `chronologie-engagement-supply-flow.svg` | `docs/architecture-cible/overview-plateforme-flow.md`, `docs/vision/modele-fonctionnement-flow.md` | Chronologie Engagement vers FLOW vers Supply, promesse, décision, plan d'exécution, remontées d'information |
 | `flux-produits-fonctionnalites-flow.svg` | `docs/architecture-cible/flux-fonctionnels-flow.md` | Produits FLOW, fonctionnalités transverses, Case Management, Stock Unifié, Agreement, règles, événements, vues |
 | `methodologie-flow-overview.svg` | `docs/methode/processus-de-cadrage.md` | Processus de cadrage, passage des observations aux choix de conception, livrables de méthode |

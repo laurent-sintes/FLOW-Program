@@ -1,60 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
   <title id="title">Overview de la plateforme FLOW</title>
-  <desc id="desc">Cartographie sans flèches des six produits candidats de la plateforme FLOW.</desc>
+  <desc id="desc">Cartographie claire des sept produits candidats de la plateforme FLOW, avec Case Management au cœur, services partagés, projections et gouvernance des données.</desc>
   <defs>
     <style>
-      .bg{fill:#f7f8fb}.title{font:700 36px Arial,sans-serif;fill:#172033}.subtitle{font:400 18px Arial,sans-serif;fill:#596579}.panel{fill:#111827;rx:28}.panel-title{font:700 24px Arial,sans-serif;fill:#fff}.panel-sub{font:400 15px Arial,sans-serif;fill:#dbe3f0}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.6;rx:22}.card-core{stroke:#7c8cf8;stroke-width:2.5}.card-data{stroke:#8ec5ff;stroke-width:2.2}.card-supply{stroke:#94c99c;stroke-width:2.2}.card-title{font:700 21px Arial,sans-serif;fill:#172033}.card-text{font:400 15px Arial,sans-serif;fill:#4a5568}.tag{fill:#eef2ff;stroke:#c7d2fe;rx:12}.tag-text{font:700 12px Arial,sans-serif;fill:#3b46a1}
+      .bg{fill:#f8fbfa}.panel{fill:#fff;stroke:#c7e4de;stroke-width:2}.panelSoft{fill:#eaf4f2;stroke:#236159;stroke-width:2}.accent{fill:#fff8f0;stroke:#e09238;stroke-width:2}.core{fill:#236159;stroke:#0b3954;stroke-width:2}.title{font:700 28px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.subtitle{font:600 16px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.h{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.hWhite{font:700 18px Aptos,Calibri,Segoe UI,sans-serif;fill:#fff}.txt{font:500 15px Aptos,Calibri,Segoe UI,sans-serif;fill:#1e293b}.small{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#5b6b78}.smallWhite{font:500 13px Aptos,Calibri,Segoe UI,sans-serif;fill:#eaf4f2}.pill{fill:#eaf4f2;stroke:#c7e4de;stroke-width:1.5}.pillAccent{fill:#fff8f0;stroke:#e09238;stroke-width:1.5}.pillText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#0b3954}.pillAccentText{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}.arrow{stroke:#236159;stroke-width:2.5;fill:none;marker-end:url(#arrow)}.arrowAccent{stroke:#e09238;stroke-width:2.5;fill:none;marker-end:url(#arrowAccent)}.dash{stroke-dasharray:6 6}.label{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#236159}.labelAccent{font:700 12px Aptos,Calibri,Segoe UI,sans-serif;fill:#8a4f0f}
     </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#236159"/></marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e09238"/></marker>
   </defs>
-  <rect class="bg" width="1400" height="820"/>
-  <text class="title" x="70" y="62">Overview de la plateforme FLOW</text>
-  <text class="subtitle" x="70" y="94">Une plateforme Demand centrée sur les Cases, enrichie par des services partagés et des projections opérationnelles.</text>
 
-  <rect class="panel" x="70" y="125" width="1260" height="620" rx="28"/>
-  <text class="panel-title" x="110" y="170">Plateforme FLOW</text>
-  <text class="panel-sub" x="110" y="196">Cartographie produit — version de travail, orientée Comex / document programme</text>
+  <rect class="bg" x="0" y="0" width="1280" height="820" rx="24"/>
+  <text class="title" x="52" y="58">Overview de la plateforme FLOW</text>
+  <text class="subtitle" x="52" y="86">Une plateforme Demand centrée sur les Cases, enrichie par des services partagés, projections et contrats de données.</text>
 
-  <rect class="card card-core" x="110" y="235" width="370" height="190" rx="22"/>
-  <rect class="tag" x="135" y="260" width="118" height="28" rx="12"/><text class="tag-text" x="153" y="279">CŒUR FLOW</text>
-  <text class="card-title" x="135" y="320">Plateforme de Case Management</text>
-  <text class="card-text" x="135" y="352">Pilote les demandes dans la durée.</text>
-  <text class="card-text" x="135" y="377">Les Cases portent contexte, décisions,</text>
-  <text class="card-text" x="135" y="402">promesses, documents et événements.</text>
+  <rect class="panel" x="48" y="122" width="1184" height="610" rx="24"/>
+  <text class="h" x="82" y="160">Produits fonctionnels candidats</text>
+  <text class="small" x="82" y="184">Lecture cible : FLOW porte le cœur Demand + Fulfillment et raccorde Engagement, Supply et les domaines spécialisés.</text>
 
-  <rect class="card card-supply" x="515" y="235" width="370" height="190" rx="22"/>
-  <rect class="tag" x="540" y="260" width="148" height="28" rx="12"/><text class="tag-text" x="557" y="279">SERVICE PARTAGÉ</text>
-  <text class="card-title" x="540" y="320">Stock Unifié</text>
-  <text class="card-text" x="540" y="352">Rend la disponibilité fiable et exploitable.</text>
-  <text class="card-text" x="540" y="377">Porte réservations, allocation / tagging,</text>
-  <text class="card-text" x="540" y="402">facts et événements stock.</text>
+  <rect class="core" x="424" y="210" width="432" height="164" rx="28"/>
+  <text class="hWhite" x="502" y="250">Plateforme de Case Management</text>
+  <text class="smallWhite" x="472" y="278">Le Case porte la demande, son contexte, ses décisions</text>
+  <text class="smallWhite" x="492" y="302">métier, ses promesses, documents et événements.</text>
+  <rect class="pillAccent" x="542" y="326" width="196" height="30" rx="15"/>
+  <text class="pillAccentText" x="566" y="346">CŒUR DEMAND + FULFILLMENT</text>
 
-  <rect class="card card-supply" x="920" y="235" width="370" height="190" rx="22"/>
-  <rect class="tag" x="945" y="260" width="148" height="28" rx="12"/><text class="tag-text" x="962" y="279">SERVICE PARTAGÉ</text>
-  <text class="card-title" x="945" y="320">Réseau d’Exécution</text>
-  <text class="card-text" x="945" y="352">Décrit lieux, partenaires, capacités,</text>
-  <text class="card-text" x="945" y="377">contraintes et zones mobilisables</text>
-  <text class="card-text" x="945" y="402">pour servir une demande.</text>
+  <rect class="panelSoft" x="82" y="220" width="270" height="132" rx="18"/>
+  <text class="h" x="112" y="256">Stock Unifié</text>
+  <text class="txt" x="112" y="286">Disponibilité, réservations,</text>
+  <text class="txt" x="112" y="310">allocations, facts et events</text>
+  <text class="txt" x="112" y="334">stock exploitables.</text>
 
-  <rect class="card card-data" x="110" y="465" width="370" height="190" rx="22"/>
-  <rect class="tag" x="135" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="153" y="509">PROJECTION</text>
-  <text class="card-title" x="135" y="550">Supply Service Registry</text>
-  <text class="card-text" x="135" y="582">Référence les services Supply exposés :</text>
-  <text class="card-text" x="135" y="607">API, SLA, conditions d’accès,</text>
-  <text class="card-text" x="135" y="632">éligibilités et contraintes.</text>
+  <rect class="panelSoft" x="928" y="220" width="270" height="132" rx="18"/>
+  <text class="h" x="958" y="256">Réseau d'Exécution</text>
+  <text class="txt" x="958" y="286">Lieux, partenaires, capacités,</text>
+  <text class="txt" x="958" y="310">contraintes et conditions</text>
+  <text class="txt" x="958" y="334">mobilisables.</text>
 
-  <rect class="card card-data" x="515" y="465" width="370" height="190" rx="22"/>
-  <rect class="tag" x="540" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="558" y="509">PROJECTION</text>
-  <text class="card-title" x="540" y="550">Product Agreement Catalog</text>
-  <text class="card-text" x="540" y="582">Expose produits, assortiments et agreements</text>
-  <text class="card-text" x="540" y="607">utiles à la vente, à l’achat</text>
-  <text class="card-text" x="540" y="632">et à l’exécution.</text>
+  <path class="arrow" d="M352 286 C382 286 390 286 420 286"/>
+  <text class="label" x="366" y="270">facts</text>
+  <path class="arrow" d="M856 286 C888 286 894 286 924 286"/>
+  <text class="label" x="872" y="270">ressources</text>
 
-  <rect class="card card-data" x="920" y="465" width="370" height="190" rx="22"/>
-  <rect class="tag" x="945" y="490" width="112" height="28" rx="12"/><text class="tag-text" x="963" y="509">PROJECTION</text>
-  <text class="card-title" x="945" y="550">Vues 360</text>
-  <text class="card-text" x="945" y="582">Agrègent le contexte transverse :</text>
-  <text class="card-text" x="945" y="607">Customer 360, Supplier 360, Case 360,</text>
-  <text class="card-text" x="945" y="632">historique et signaux utiles.</text>
+  <rect class="panel" x="82" y="420" width="270" height="150" rx="18"/>
+  <rect class="pill" x="112" y="444" width="100" height="28" rx="14"/>
+  <text class="pillText" x="132" y="463">PROJECTION</text>
+  <text class="h" x="112" y="506">Product Agreement Catalog</text>
+  <text class="txt" x="112" y="536">Produits, assortiments,</text>
+  <text class="txt" x="112" y="560">agreements, prix et conditions.</text>
 
-  <text class="panel-sub" x="110" y="705">Message clé : FLOW n’est pas un ERP bis ; c’est une plateforme Demand composée de produits fonctionnels gouvernés.</text>
+  <rect class="panel" x="376" y="440" width="240" height="130" rx="18"/>
+  <rect class="pill" x="406" y="464" width="100" height="28" rx="14"/>
+  <text class="pillText" x="426" y="483">PROJECTION</text>
+  <text class="h" x="406" y="526">Vues 360</text>
+  <text class="txt" x="406" y="552">Contextes client, fournisseur,</text>
+  <text class="txt" x="406" y="576">Case et signaux transverses.</text>
+
+  <rect class="panel" x="664" y="440" width="240" height="130" rx="18"/>
+  <rect class="pill" x="694" y="464" width="142" height="28" rx="14"/>
+  <text class="pillText" x="713" y="483">SERVICE SUPPLY</text>
+  <text class="h" x="694" y="526">Supply Service Registry</text>
+  <text class="txt" x="694" y="552">Services, APIs, SLA,</text>
+  <text class="txt" x="694" y="576">éligibilités et contraintes.</text>
+
+  <rect class="accent" x="928" y="420" width="270" height="150" rx="18"/>
+  <rect class="pillAccent" x="958" y="444" width="122" height="28" rx="14"/>
+  <text class="pillAccentText" x="977" y="463">GOUVERNANCE</text>
+  <text class="h" x="958" y="506">Données en transit</text>
+  <text class="txt" x="958" y="536">Contrats, consommateurs,</text>
+  <text class="txt" x="958" y="560">fraîcheur, qualité, reprise</text>
+  <text class="txt" x="958" y="584">et réconciliation.</text>
+
+  <path class="arrowAccent dash" d="M640 374 C640 406 640 408 640 432"/>
+  <text class="labelAccent" x="538" y="416">contexte, vues, contrats</text>
+
+  <rect class="panelSoft" x="100" y="632" width="1080" height="62" rx="18"/>
+  <text class="h" x="132" y="660">Message clé</text>
+  <text class="small" x="238" y="660">FLOW n'est pas un ERP bis : c'est une plateforme Demand composée de produits fonctionnels gouvernés.</text>
+  <text class="small" x="238" y="682">Elle expose des capacités communes sans absorber Engagement, Supply ni les domaines spécialisés.</text>
 </svg>
