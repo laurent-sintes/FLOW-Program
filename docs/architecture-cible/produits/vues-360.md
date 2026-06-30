@@ -28,6 +28,8 @@ Elles ne sont pas la source de référence de toutes les données.
 
 Elles fournissent une lecture transverse, principalement en consultation, alimentée par les événements, faits, documents, statuts et décisions.
 
+Leur positionnement est renforcé par le rôle du Case Management : si FLOW devient un hub de Business Events et de Shared Business Services, il devient aussi le lieu naturel où matérialiser des vues transverses utiles aux opérations.
+
 <div class="flow-conviction">
   <p>Une Vue 360 ne remplace pas les sources de référence.</p>
   <p>Elle rend l'activité lisible autour d'un objet ou d'un acteur.</p>

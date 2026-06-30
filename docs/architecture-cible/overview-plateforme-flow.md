@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>6 min</strong>
+      <strong>8 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -103,6 +103,25 @@ Cette chronologie montre le cycle fonctionnel minimal :
 La gouvernance des données en transit reste une pratique transverse importante : elle encadre les contrats de données, les modes d'échange, les consommateurs, la fraîcheur, la qualité, la supervision et la réconciliation.
 
 Elle n'est pas représentée comme un produit FLOW candidat dans ce schéma.
+
+## Logique de découpage des produits FLOW
+
+Le découpage ne cherche pas à reproduire les grands blocs applicatifs existants.
+
+Il isole les responsabilités qui doivent être gouvernées pour que FLOW puisse décider vite, expliquer ses décisions, promettre correctement et dialoguer avec les domaines d'exécution.
+
+| Produit | Justification du découpage |
+| --- | --- |
+| Plateforme de Case Management | Ce n'est pas seulement une application de suivi. C'est un socle orienté PaaS : services techniques, runtime métier et framework de développement permettant aux équipes de construire en autonomie des Cases, règles, paramétrages, événements et extensions gouvernées. |
+| Stock Unifié | Ce n'est pas seulement une consolidation de quantités. C'est une capacité d'Inventory Visibility enrichie de services d'action : réserver, allouer, taguer ou libérer du stock. Ces actions doivent ensuite produire des commandes ou instructions vers la logistique, les magasins ou les systèmes d'exécution qui prennent physiquement en compte l'information. |
+| Fulfillment Network Configuration | Ce produit ne représente pas l'entreprise dans son ensemble. Il configure les nœuds, capacités, contraintes et services de la supply chain mobilisables pour répondre au fulfillment. La finance et les structures juridiques ne pilotent pas ce modèle : elles restent dans leur domaine. C'est une rupture avec l'ERP, où l'on paramètre souvent l'entreprise complète avant de développer les services. |
+| Vues 360 | Aujourd'hui, les utilisateurs doivent souvent ouvrir plusieurs applications pour comprendre un client, une commande, un fournisseur, une usine ou une exception. Comme le Case Management devient un hub de Business Events et que FLOW porte des Shared Business Services transverses, les vues matérialisées 360 ont naturellement leur place dans FLOW. |
+| Product Agreement Catalog | FLOW ne doit pas appeler le PLM, le PIM ou les outils de prix à chaque décision. La promesse croise produit, stock, agreement et réseau d'exécution ; elle doit pouvoir répondre en temps court, souvent en moins de 100 ms. Le catalogue est donc une projection d'exécution gouvernée, pensée pour la décision, pas un nouveau PLM ou PIM. |
+| Supply Service Registry | Ce n'est pas seulement un catalogue d'APIs Supply réutilisables. Le registry doit décrire aussi les SLA, conditions d'appel, contraintes, éligibilités et engagements opérationnels de service du monde réel afin que les promesses FLOW restent compatibles avec ce que Supply peut réellement tenir. |
+
+La conséquence est importante : FLOW ne remplace pas les domaines existants par un nouveau monolithe.
+
+FLOW compose des produits de décision, de projection et de configuration qui rendent les responsabilités explicites, tout en laissant Engagement, Supply, Finance, PLM, PIM, WMS, POS ou partenaires porter leurs responsabilités propres.
 
 ## Lecture fonctionnelle
 

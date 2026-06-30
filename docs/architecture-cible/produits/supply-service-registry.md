@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -27,6 +27,8 @@ Le Supply Service Registry référence les services Supply que FLOW peut mobilis
 Il décrit les APIs, événements, SLA, conditions d'appel, contraintes et responsabilités des services d'exécution.
 
 Il permet aux Cases de dialoguer avec Supply sans connaître directement toutes les implémentations locales.
+
+Il doit aller plus loin qu'un simple catalogue technique d'APIs : il doit porter les engagements opérationnels de service du monde réel, afin que les promesses FLOW restent compatibles avec ce que Supply peut réellement tenir.
 
 <div class="flow-conviction">
   <p>FLOW ne doit pas connaître toute l'exécution en détail.</p>

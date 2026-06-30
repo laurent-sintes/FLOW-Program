@@ -28,6 +28,8 @@ Il ne s'agit pas seulement d'une liste d'entrepôts, de magasins ou de partenair
 
 Le produit décrit ce que chaque nœud sait faire, dans quelles conditions, avec quelles contraintes, quels services et quel niveau de service.
 
+Il ne représente pas l'entreprise dans son ensemble, comme le ferait souvent un paramétrage ERP mêlant delivery, finance et structures juridiques. Il configure les nœuds de la supply chain mobilisables pour répondre au fulfillment.
+
 <div class="flow-conviction">
   <p>Le réseau d'exécution ne décrit pas seulement une réalité physique.</p>
   <p>Il décrit des capacités d'action mobilisables pour satisfaire une demande.</p>

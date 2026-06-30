@@ -28,6 +28,8 @@ Il ne remplace pas le PLM, le PIM ou les outils de design commercial.
 
 Il fournit une projection d'exécution suffisamment stable pour vendre, acheter, promettre, réserver, allouer et exécuter.
 
+Cette projection évite de coupler les décisions FLOW aux APIs du PLM ou du PIM au moment critique : la promesse croise produit, agreement, stock et réseau d'exécution, et doit pouvoir répondre en temps court.
+
 <div class="flow-conviction">
   <p>FLOW n'a pas besoin d'un PIM bis.</p>
   <p>FLOW a besoin d'un catalogue d'exécution exploitable par les demandes.</p>

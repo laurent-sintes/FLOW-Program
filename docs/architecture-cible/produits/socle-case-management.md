@@ -26,6 +26,8 @@ Le Socle Case Management fournit le cœur applicatif permettant de modéliser, p
 
 Il ne s'agit pas seulement d'un moteur de workflow.
 
+Il doit être pensé comme un socle orienté PaaS : un ensemble de services techniques et métier, mais aussi un framework permettant aux équipes de développer en autonomie des Cases, règles, paramétrages, événements et extensions gouvernées.
+
 Le produit doit permettre de construire des objets métier de type Case, capables de porter une intention, un contexte, des décisions métier, des événements, des documents, des ressources mobilisées et un état courant.
 
 <div class="flow-conviction">

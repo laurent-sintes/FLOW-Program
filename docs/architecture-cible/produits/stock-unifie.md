@@ -28,6 +28,8 @@ Il ne se limite pas à consolider des quantités.
 
 Il doit permettre de calculer une disponibilité contextualisée, de réserver, d'allouer, de taguer une ressource à une finalité et de publier des faits stock exploitables par les Cases.
 
+La réservation, l'allocation ou le tagging ne doivent pas rester de simples attributs centraux : ces actions doivent pouvoir générer des commandes ou instructions vers les domaines d'exécution, afin que la logistique, les magasins ou les partenaires prennent réellement en compte localement la décision.
+
 <div class="flow-conviction">
   <p>Le stock n'est pas seulement une donnée.</p>
   <p>C'est une capacité d'entreprise pour promettre, réserver, allouer et expliquer.</p>
