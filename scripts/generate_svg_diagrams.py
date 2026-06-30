@@ -1133,7 +1133,7 @@ def render_chronology_engagement_supply_svg() -> str:
         lines.append(rect(css, cx, 315, 168, 215, 20))
         lines.append(circle("accent", cx + 34, 353, 24))
         lines.append(text_element("num", cx + 34, 361, num, "middle"))
-        lines.extend(wrapped_text(title, "h", cx + 84, 360, 88, 18, 22, bold=True, anchor="middle"))
+        lines.extend(wrapped_text(title, "h", cx + 114, 360, 96, 18, 22, bold=True, anchor="middle"))
         lines.extend(text_lines(body, "small", cx + 24, 430, 22))
         if index < len(steps) - 1:
             lines.append(arrow(f"M{cx + 168} 423 L{cx + 190} 423", "arrow"))
