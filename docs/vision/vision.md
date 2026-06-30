@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>8 min</strong>
+      <strong>9 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -44,7 +44,7 @@ L'ambition de FLOW est de construire un socle commun là où la cohérence est c
   <p>Il fédère les demandes, gouverne les décisions métier, mobilise le stock et le réseau d'exécution, tout en préservant les singularités business utiles.</p>
 </div>
 
-Cette vision repose sur cinq convictions fortes :
+Cette vision repose sur quelques convictions fortes :
 
 - La <span class="flow-keyword">convergence</span> n'est pas l'uniformisation : elle doit construire le bon niveau de commun pour chaque responsabilité.
 - Le <span class="flow-keyword">centre de gravité</span> du SI doit se déplacer de l'ERP-document vers la demande, la décision métier et la satisfaction client / utilisateur.
@@ -52,6 +52,7 @@ Cette vision repose sur cinq convictions fortes :
 - Le cœur de FLOW est <span class="flow-keyword">Demand + Fulfillment</span> : qualifier la demande, porter la promesse à tenir et arbitrer la trajectoire d'exécution.
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
+- La <span class="flow-keyword">gouvernance MDM</span> doit distinguer sources de référence, projections et contrats d'échange, pour éviter l'inventaire de données supposées maîtres et les flux opportunistes.
 
 ## Concepts qui structurent FLOW
 
@@ -65,6 +66,7 @@ Cette vision repose sur cinq convictions fortes :
 | <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
 | <span class="flow-keyword">Source de référence / Projection</span> | Dans un SI distribué, une information fait référence lorsqu'elle est contrôlée par un processus responsable ; elle n'est pas maître de manière absolue. |
 | <span class="flow-keyword">Contrat de données</span> | L'information en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
+| <span class="flow-keyword">Gouvernance MDM</span> | Faire du MDM ne consiste pas seulement à lister des objets maîtres : il faut qualifier les sources de référence, les projections, les contrats d'échange et les responsabilités de gouvernance. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
@@ -118,19 +120,17 @@ Stock et réseau d'exécution
 
 FLOW introduit aussi une rupture sur l'information.
 
-Dans un ERP, la master data décrit souvent l'entreprise telle qu'elle est.
+Dans une approche classique, la master data est souvent traitée comme l'inventaire des objets supposés maîtres : clients, fournisseurs, articles, sites, magasins, entrepôts, organisations, stocks ou conditions.
 
-Dans FLOW, les objets de configuration servent d'abord à décider, promettre et exécuter.
+Dans FLOW, la première question est différente : quelle information fait référence, pour quel usage, par quel processus, et sous quelle responsabilité ?
 
-FLOW ne cherche pas à reconstruire une master data globale.
+Pour l'<span class="flow-keyword">information au repos</span>, l'enjeu est de distinguer les sources de référence, les projections et les vues qui rendent l'information consommable sans devenir automatiquement maîtres.
 
-FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
+Pour l'<span class="flow-keyword">information en transit</span>, l'enjeu est d'éviter que chaque besoin produise un flux projet opportuniste, ou pire une lecture directe de base de données.
 
-Il introduit également une rupture sur l'information en transit.
+Une base de données n'est pas une ressource publique d'échange : une application doit exposer une interface stable, gouvernée et compatible dans la durée.
 
-Les échanges ne doivent plus être seulement des flux projet conçus sous contrainte locale de budget et de planning.
-
-Ils doivent devenir des contrats de données gouvernés, publiés et consommés dans la durée.
+Les échanges critiques doivent donc devenir des <span class="flow-keyword">contrats de données</span> publiés, consommés, supervisés et gouvernés.
 
 <div class="flow-conviction">
   <p>FLOW configure des capacités d'action.</p>
@@ -200,6 +200,7 @@ Elle doit traiter plusieurs points durs :
 - Capacités d'intégration des systèmes réintégrés : APIs, événements, statuts, documents et réconciliation nécessaires pour brancher les services existants sur FLOW.
 - PLM, catalogue, Article / EAN : FLOW ne peut pas dépendre d'un PLM unique ; il doit clarifier le catalogue nécessaire pour vendre, acheter, promettre et exécuter.
 - Fournisseur, usine et Agreement : FLOW doit sortir du paramétrage fournisseur monolithique, cartographier les sources de référence, sécuriser le calcul des dates de promesse et clarifier si CBS devient la SRM cible.
+- Gouvernance MDM de l'information : sources de référence, projections, contrats d'échange, rôles data et sortie progressive des flux opportunistes ou base-à-base.
 - Promesse commerciale Wholesale : priorisation commerciale des meilleurs clients, potentiellement en tension avec une logique de promesse ferme ou de premier arrivé, premier servi.
 - Module Négoce StoreLand : responsabilités mélangées entre design commercial, engagement, commandes d'achat et Demand & Fulfillment.
 
@@ -215,8 +216,8 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | --- | --- | --- |
 | Stock dispersé | Stock Unifié, APIs de disponibilité, réservation, allocation | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
 | Demandes dispersées | Plateforme de fédération des demandes, Case Management, événements communs | Décloisonnement et continuité de traitement |
-| Informations difficiles à réconcilier | Projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
-| Flux projet foisonnants | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
+| Informations difficiles à réconcilier | Sources de référence qualifiées, projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
+| Flux projet foisonnants ou base-à-base | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Variations métier spécifiques | Agreements, règles, policies, moteur de décision métier | Singularités préservées sans prolifération des processus |
 | Décisions de fulfillment distribuées | Contrats entre demande et exécution | Moins d'erreurs d'aiguillage et meilleure optimisation globale |
 | Finance et auditabilité | Faits, événements, documents et statuts exploitables | Meilleure intégration avec Finance et capacité à reconstruire l'histoire d'une demande |
@@ -232,8 +233,8 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision métier, le stock et le réseau d'exécution. |
 | FLOW doit absorber tout le SI. | Réécrire la colonne vertébrale opérationnelle du SI, pas tous ses organes spécialisés. |
 | FLOW oblige à réécrire tous les services existants. | Réintégrer les services utiles autour d'une cohérence commune lorsque leur valeur métier justifie leur maintien. |
-| FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
-| FLOW se contente de refaire des flux entre applications. | Gouverner les informations en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
+| FLOW reconstruit une master data globale ou un inventaire d'objets supposés maîtres. | Qualifier les sources de référence, les projections et les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
+| FLOW se contente de refaire des flux entre applications. | Gouverner les informations en transit comme des contrats durables entre sources, consommateurs et responsabilités métier, sans exposer les bases de données comme ressources publiques. |
 
 ## Aller plus loin
 

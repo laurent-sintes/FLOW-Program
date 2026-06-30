@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>11 min</strong>
+      <strong>12 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -46,6 +46,7 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 | Décision distribuée | C-LOG, promesse commerciale Wholesale | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
 | Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
 | Informations produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
+| Gouvernance de l'information | Sources de référence, projections, contrats de données | Comment passer d'un inventaire de Master Data et de flux projet à des responsabilités gouvernées au repos et en transit ? |
 | Gouvernance métier | Promesse Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
 | Périmètre fonctionnel | Module Négoce StoreLand | Quelles responsabilités doivent être reprises dans FLOW, et lesquelles doivent rester dans un domaine consommateur ? |
 
@@ -225,6 +226,28 @@ Ce hotspot ne paraît pas infranchissable, mais il impose un travail de cartogra
 
 Une adhérence doit être instruite explicitement : CBS est-il la SRM cible du Groupe Beaumanoir, le premier lieu de recensement des fournisseurs et usines, ou un domaine spécialisé de suivi achat, collaboration fournisseur et conformité documentaire consommant une source de référence externe ?
 
+## Gouvernance MDM : sources, projections et contrats
+
+<div class="flow-conviction">
+  <p>Faire du MDM ne consiste pas à dresser un inventaire d'objets supposés maîtres.</p>
+  <p>Il faut identifier qui fait référence, comment l'information circule et qui gouverne les contrats d'échange.</p>
+</div>
+
+La vision FLOW suppose une gouvernance MDM plus exigeante que la master data historique.
+
+Le sujet doit être séparé en deux lectures pour rester compréhensible sur le terrain :
+
+- Les informations au repos : sources de référence, projections, vues, responsabilités et processus de contrôle.
+- Les informations en transit : contrats de données, producteurs, consommateurs, fraîcheur, qualité, supervision, reprise et compatibilité.
+
+Ce hotspot est important parce qu'il touche directement la manière de travailler.
+
+Si chaque responsable applicatif analyse une base de données, spécifie un flux et commande un batch à une équipe centralisée, le SI produit mécaniquement des dépendances difficiles à gouverner.
+
+FLOW doit donc faire évoluer la pratique vers des interfaces d'échange stables et pilotées.
+
+Une base de données applicative doit rester protégée par son application ; elle n'est pas une ressource publique d'échange.
+
 ## Promesse commerciale : prioriser sans rompre les engagements
 
 <div class="flow-conviction">
@@ -304,6 +327,7 @@ Ce hotspot impose de clarifier :
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
 | Catalogue produit et PLM | Informations produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
 | Fournisseur, usine et Agreement | Informations fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
+| Gouvernance MDM de l'information | Gouvernance de l'information | Sources de référence, projections, contrats de données, rôles data, sortie des flux opportunistes et du base-à-base |
 | Promesse commerciale Wholesale | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 

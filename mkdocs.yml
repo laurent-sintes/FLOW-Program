@@ -38,8 +38,6 @@ nav:
       - vision/index.md
       - Abstract: vision/abstract.md
       - Vision: vision/vision.md
-      - Positionnement de FLOW: vision/positionnement-flow.md
-      - Modèle de fonctionnement de FLOW: vision/modele-fonctionnement-flow.md
       - Vision détaillée:
           - vision/vision-detaillee/index.md
           - "Ambition : converger": vision/vision-detaillee/1-ambition.md
@@ -47,6 +45,8 @@ nav:
           - "Solution : une plateforme pour fédérer les demandes, opérations et décisions métier": vision/vision-detaillee/3-plateforme-flow.md
           - "Hotspots : les décisions à instruire pour rendre FLOW réaliste": vision/vision-detaillee/4-hotspots.md
           - "Valeur attendue : rendre la convergence opérable, gouvernable et mesurable": vision/vision-detaillee/5-valeur-attendue.md
+      - Positionnement de FLOW: vision/positionnement-flow.md
+      - Modèle de fonctionnement de FLOW: vision/modele-fonctionnement-flow.md
       - Concepts clés du programme FLOW: vision/concepts-cles.md
       - "Note de choix stratégique : FLOW": vision/note-choix-strategique.md
   - Architecture cible:

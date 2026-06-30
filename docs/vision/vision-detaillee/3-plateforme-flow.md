@@ -148,6 +148,12 @@ Aujourd'hui, un besoin d'information produit souvent un flux spécifique : analy
 
 Cette approche est efficace pour répondre à un projet, mais elle fragilise la gouvernance d'entreprise lorsque les flux se multiplient.
 
+Elle devient encore plus fragile lorsque l'échange repose sur une lecture directe de base de données.
+
+Une base applicative n'est pas une ressource publique d'échange : elle doit rester protégée par l'application qui la possède.
+
+Le point d'échange durable doit être un contrat publié par une source responsable, pas une dépendance technique cachée entre deux modèles internes.
+
 L'idée de demi-flux déjà imaginée côté Beaumanoir est une intuition utile : elle distingue la publication d'une information de sa consommation.
 
 FLOW doit prolonger cette graine vers une logique de contrats de données gouvernés.

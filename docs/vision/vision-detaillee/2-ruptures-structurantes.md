@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>3 min</strong>
+      <strong>4 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -179,6 +179,18 @@ Cette rupture change la finalité même de l'information.
 FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
+
+Cette rupture doit être comprise comme une évolution des pratiques MDM.
+
+Il ne s'agit pas seulement de lister des objets maîtres ou d'accumuler des attributs dans une fiche globale.
+
+Pour l'<span class="flow-keyword">information au repos</span>, FLOW doit qualifier les sources de référence, les projections, les vues et les responsabilités de gouvernance.
+
+Pour l'<span class="flow-keyword">information en transit</span>, FLOW doit transformer les flux projet en contrats de données gouvernés : publication, consommation, fraîcheur, qualité, supervision, reprise et compatibilité dans la durée.
+
+Cela exclut l'idée qu'une base de données applicative soit une ressource publique d'échange.
+
+Une application doit protéger sa base et exposer des interfaces stables, versionnées et gouvernées.
 
 ---
 
