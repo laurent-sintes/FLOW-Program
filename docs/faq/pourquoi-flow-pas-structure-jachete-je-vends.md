@@ -143,7 +143,7 @@ Au lieu de demander :
 
 FLOW demande :
 
-> Quelle responsabilité est portée ici, qui décide, quelle donnée fait référence, quelle projection est consommée, quel événement doit circuler et quel Case doit rester lisible ?
+> Quelle responsabilité est portée ici, qui décide, quelle information fait référence, quelle projection est consommée, quel événement doit circuler et quel Case doit rester lisible ?
 
 Cette bascule est déroutante, mais elle protège le modèle cible.
 

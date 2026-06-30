@@ -59,7 +59,7 @@ Cette projection évite de coupler les décisions FLOW aux APIs du PLM ou du PIM
 | Stock Unifié | Relier stock et article / variante. |
 | Engagement / canaux | Fournir ou consommer assortiment et conditions utiles. |
 | PLM / PIM / pricing | Alimenter les projections. |
-| Achats / fournisseurs | Contribuer aux conditions d'achat ou données nécessaires. |
+| Achats / fournisseurs | Contribuer aux conditions d'achat ou informations nécessaires. |
 
 ## Informations clés
 
@@ -72,7 +72,7 @@ Cette projection évite de coupler les décisions FLOW aux APIs du PLM ou du PIM
 | Prix / condition | Policy / Fact | Projection FLOW |
 | Nomenclature taille / couleur | Nomenclature | Projection ou source de référence selon gouvernance |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Exposer un article / EAN utilisable par FLOW.
 - Exposer les attributs nécessaires au fulfillment.
@@ -82,7 +82,7 @@ Cette projection évite de coupler les décisions FLOW aux APIs du PLM ou du PIM
 - Signaler les changements significatifs de catalogue.
 - Tracer la source et la fraîcheur des projections.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API de consultation article / variant.
 - API de consultation agreement.

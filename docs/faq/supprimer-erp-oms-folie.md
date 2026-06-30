@@ -51,7 +51,7 @@ FLOW cherche à sortir d'une opposition trop simple entre :
 
 L'objection paraît très crédible tant qu'on raisonne à partir des catégories logicielles.
 
-Elle devient moins solide quand on regarde les responsabilités réellement portées par les systèmes : un ERP legacy et un OMS ne sont pas deux composants complémentaires dessinés selon un modèle cible commun. Ce sont souvent deux systèmes complets, chacun doté de ses propres données, règles, décisions, orchestrations, statuts et processus.
+Elle devient moins solide quand on regarde les responsabilités réellement portées par les systèmes : un ERP legacy et un OMS ne sont pas deux composants complémentaires dessinés selon un modèle cible commun. Ce sont souvent deux systèmes complets, chacun doté de ses propres informations, règles, décisions, orchestrations, statuts et processus.
 
 Le bon sujet n'est donc pas :
 
@@ -164,7 +164,7 @@ Dans un OMS, la commande, la promesse, l'allocation, le stock disponible, les r�
 
 Les deux systèmes orchestrent donc une partie du réel, mais avec des modèles différents.
 
-L'intégration ne consiste plus seulement à transférer des données.
+L'intégration ne consiste plus seulement à transférer des informations.
 
 Elle consiste à traduire en permanence des décisions, des statuts, des règles et des responsabilités entre deux visions du monde.
 
@@ -183,7 +183,7 @@ FLOW propose un découpage par responsabilités.
 | Fulfillment | Arbitrer une promesse tenable, choisir une trajectoire, réserver, allouer, split, substituer ou ouvrir une exception. | La comptabilité, la fiscalité, les référentiels amont complets. |
 | Supply | Exposer ressources, capacités, contraintes, services d'exécution et événements terrain. | La décision commerciale ou la qualification de la demande. |
 | ERP / Finance | Porter les responsabilités financières, comptables, fiscales, de contrôle et les documents transactionnels qui relèvent de son domaine. | Les variations omnicanales rapides et les règles de promesse opérationnelle. |
-| Référentiels spécialisés | Créer ou maintenir les données dont ils sont sources de référence. | Les projections d'exécution et les décisions qui appartiennent à FLOW. |
+| Référentiels spécialisés | Créer ou maintenir les informations dont ils sont sources de référence. | Les projections d'exécution et les décisions qui appartiennent à FLOW. |
 
 Dans cette lecture, FLOW protège l'ERP au lieu de le polluer.
 
@@ -214,7 +214,7 @@ Cela implique :
 - un Product Agreement Catalog pour gouverner les conditions de traitement ;
 - un Fulfillment Network Configuration pour connaître les capacités mobilisables ;
 - des décisions métier explicites pour éviter que chaque variation devienne une branche de processus ;
-- des sources de référence identifiées pour éviter que la plateforme invente des données qu'elle ne contrôle pas ;
+- des sources de référence identifiées pour éviter que la plateforme invente des informations qu'elle ne contrôle pas ;
 - des projections pour servir les usages sans déformer le modèle source ;
 - des contrats d'API et d'événements pour articuler ERP, canaux, supply, finance et systèmes spécialisés.
 

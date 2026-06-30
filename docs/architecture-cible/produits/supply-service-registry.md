@@ -70,7 +70,7 @@ Il doit aller plus loin qu'un simple catalogue technique d'APIs : il doit porter
 | Éligibilité service | Policy | Source de référence ou projection |
 | Statut de service | Fact | Projection |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Déclarer un service Supply.
 - Décrire ses interfaces.
@@ -80,7 +80,7 @@ Il doit aller plus loin qu'un simple catalogue technique d'APIs : il doit porter
 - Versionner un contrat de service.
 - Suivre les dépendances entre Case et service Supply.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API de consultation registry.
 - API de publication / modification contrôlée de service.

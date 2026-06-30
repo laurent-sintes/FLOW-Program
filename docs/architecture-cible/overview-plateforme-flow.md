@@ -89,7 +89,7 @@ Cette chronologie montre le cycle fonctionnel minimal :
 
 ![Overview de la plateforme FLOW](../assets/images/architecture-cible-flow-overview.svg)
 
-## Produits FLOW candidats
+## Produits FLOW à instruire
 
 | Produit | Rôle |
 | --- | --- |
@@ -102,7 +102,7 @@ Cette chronologie montre le cycle fonctionnel minimal :
 
 La gouvernance des données en transit reste une pratique transverse importante : elle encadre les contrats de données, les modes d'échange, les consommateurs, la fraîcheur, la qualité, la supervision et la réconciliation.
 
-Elle n'est pas représentée comme un produit FLOW candidat dans ce schéma.
+Elle n'est pas représentée comme un produit FLOW à instruire dans ce schéma.
 
 ## Logique de découpage des produits FLOW
 
@@ -180,7 +180,7 @@ La règle d'urbanisme est donc : ne pas réécrire ce qui porte une valeur méti
 
 ## Données en transit : des flux projet aux contrats gouvernés
 
-FLOW doit aussi traiter la manière dont les données circulent entre applications.
+FLOW doit aussi traiter la manière dont les informations circulent entre applications.
 
 Aujourd'hui, beaucoup d'échanges naissent comme des flux projet : une application cible exprime un besoin, une application source est analysée, puis une équipe flux développe un batch ou une intégration spécifique.
 

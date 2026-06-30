@@ -79,7 +79,7 @@ Une fois la décision prise, il faut produire un document.
 Cette capacité consiste à transformer :
 
 ```text
-Données
+Informations
 +
 Template
 ↓

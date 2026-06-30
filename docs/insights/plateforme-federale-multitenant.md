@@ -28,7 +28,7 @@ Le Groupe Beaumanoir doit pouvoir intégrer des marques historiques, des acquisi
 
 La plateforme doit fédérer autant qu'elle mutualise.
 
-## Capacités partagées candidates
+## Capacités partagées à instruire
 
 - Inventory Visibility
 - Fulfillment Network Configuration

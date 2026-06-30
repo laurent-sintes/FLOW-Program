@@ -26,7 +26,7 @@ Cette section décrit les patterns d'architecture qui structurent la plateforme 
 
 Un pattern n'est pas une technologie.
 
-C'est une manière récurrente d'organiser les responsabilités, les données, les décisions métier et les interactions entre composants.
+C'est une manière récurrente d'organiser les responsabilités, les informations, les décisions métier et les interactions entre composants.
 
 <div class="flow-conviction">
   <p>Les patterns d'architecture donnent le vocabulaire commun.</p>

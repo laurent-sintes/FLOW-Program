@@ -31,7 +31,7 @@ Elle doit aussi traiter explicitement les points sensibles du programme.
 
 Un <span class="flow-keyword">hotspot</span> n'est pas un problème isolé.
 
-C'est un point où plusieurs dimensions se croisent : trajectoire de migration, arbitrage métier, intégration technique, donnée, finance, gouvernance ou transformation.
+C'est un point où plusieurs dimensions se croisent : trajectoire de migration, arbitrage métier, intégration technique, information, finance, gouvernance ou transformation.
 
 ## Vue synthétique des familles de décisions
 
@@ -45,7 +45,7 @@ C'est un point où plusieurs dimensions se croisent : trajectoire de migration, 
 | Trajectoire de migration | Sortie progressive de SAP ECC | Comment sortir d'un socle monolithique sans créer un big bang ? |
 | Décision distribuée | C-LOG, promesse commerciale Wholesale | Où se prennent les décisions de fulfillment, de priorisation et d'allocation ? |
 | Intégration et temps réel | Stock temps réel, capacités technologiques des systèmes réintégrés | Les systèmes autour de FLOW savent-ils exposer APIs, événements, statuts et réconciliation ? |
-| Données produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
+| Informations produit et amont | PLM, catalogue, Article / EAN ; fournisseur, usine et Agreement | Quel catalogue et quel modèle de rôles FLOW consomme-t-il pour vendre, acheter, promettre et exécuter ? |
 | Gouvernance métier | Promesse Wholesale, règles, Agreements | Comment absorber les variations métier sans multiplier processus et applications ? |
 | Périmètre fonctionnel | Module Négoce StoreLand | Quelles responsabilités doivent être reprises dans FLOW, et lesquelles doivent rester dans un domaine consommateur ? |
 
@@ -203,7 +203,7 @@ Le sujet n'est pas de choisir définitivement entre un modèle fournisseur et un
 
 Le critère décisif est le calcul des dates de promesse. La configuration cible doit permettre de déterminer une date fiable à partir du bon fournisseur, de la bonne usine, du bon Agreement, du bon lead time, du bon contexte PLM / SRM et des contraintes d'exécution.
 
-Cela implique une cartographie data et flux : SRM, PLM, module Négoce, Finance, Supply et FLOW doivent clarifier qui est source de référence de quelle donnée, quelle projection est consommée par la décision Case Management, et quelle fraîcheur est nécessaire.
+Cela implique une cartographie des informations et des flux : SRM, PLM, module Négoce, Finance, Supply et FLOW doivent clarifier qui est source de référence de quelle information, quelle projection est consommée par la décision Case Management, et quelle fraîcheur est nécessaire.
 
 Le hotspot peut se résumer ainsi :
 
@@ -302,8 +302,8 @@ Ce hotspot impose de clarifier :
 | C-LOG | Décision distribuée | Frontière demande / exécution, contrat de décision, gouvernance des arbitrages |
 | Stock temps réel | Intégration et fraîcheur | Événements POS et logistiques, fraîcheur attendue, contrats d'événements, réconciliation |
 | Capacités technologiques des systèmes réintégrés | Intégration des services existants | APIs, événements, statuts, documents, corrélation, réconciliation, trajectoire d'encapsulation ou remplacement |
-| Catalogue produit et PLM | Données produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
-| Fournisseur, usine et Agreement | Données fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
+| Catalogue produit et PLM | Informations produit et amont | Granularité Article / EAN, Product Agreement Catalog, frontière conception / exécution, nomenclatures |
+| Fournisseur, usine et Agreement | Informations fournisseur et Supply amont | Rôles fournisseur / usine / agent / facturation, SRM, PLM, Agreements, lead times, dates de promesse, sources de référence, CBS comme SRM cible ou domaine spécialisé, séparation des responsabilités SAP |
 | Promesse commerciale Wholesale | Gouvernance métier | Règles, policies, allocation, promesses déplaçables ou non, priorisation client |
 | Module Négoce StoreLand | Périmètre fonctionnel | Responsabilités à reprendre dans FLOW, responsabilités Engagement, commandes d'achat, Product Agreement Catalog |
 
@@ -318,7 +318,7 @@ Ces hotspots montrent que FLOW n'est pas seulement un outil cible.
 
 FLOW est aussi un cadre d'arbitrage pour traiter les tensions réelles de convergence du groupe.
 
-Ils obligent à rendre explicites les choix qui conditionnent la crédibilité de la plateforme : trajectoire, gouvernance des décisions opérationnelles, intégration, données, promesse et gouvernance.
+Ils obligent à rendre explicites les choix qui conditionnent la crédibilité de la plateforme : trajectoire, gouvernance des décisions opérationnelles, intégration, informations, promesse et gouvernance.
 
 ---
 

@@ -50,7 +50,7 @@ Les capacités FLOW doivent être accessibles sous plusieurs formes :
 - API de masse ;
 - événements ;
 - exports et imports ;
-- projections de données ;
+- projections d'informations ;
 - flux analytiques.
 
 ## Impact architectural

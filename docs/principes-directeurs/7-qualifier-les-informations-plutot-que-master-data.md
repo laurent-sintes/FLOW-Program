@@ -322,7 +322,7 @@ Le MDM ne doit pas gouverner seulement les informations au repos.
 
 Dans un SI distribué, une information devient souvent utile lorsqu'elle circule : un événement de stock, une décision d'allocation, une projection produit d'exécution, une nomenclature de statut ou un document fournisseur.
 
-Une donnée en circulation n'est donc pas un simple flux technique.
+Une information en circulation n'est donc pas un simple flux technique.
 
 C'est une information qualifiée qui quitte un domaine pour être consommée par un autre.
 

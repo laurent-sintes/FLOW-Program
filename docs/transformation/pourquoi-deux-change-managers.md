@@ -30,7 +30,7 @@ FLOW demande une lecture plus large.
 
 Le programme ne transforme pas seulement les outils.
 
-Il transforme aussi les modèles de pensée utilisés pour comprendre l'entreprise, ses responsabilités, ses données, ses décisions et sa gouvernance.
+Il transforme aussi les modèles de pensée utilisés pour comprendre l'entreprise, ses responsabilités, ses informations, ses décisions et sa gouvernance.
 
 ## Ce que cette page couvre
 
@@ -127,4 +127,4 @@ Ils portent deux angles nécessaires : l'ancrage interne et le recul externe.
 
 Dans FLOW, cette complémentarité est essentielle parce que le changement ne concerne pas seulement le déploiement d'une solution.
 
-Il concerne aussi la manière dont l'entreprise apprend à penser ses domaines, ses responsabilités, ses capacités, ses données, ses décisions et ses produits.
+Il concerne aussi la manière dont l'entreprise apprend à penser ses domaines, ses responsabilités, ses capacités, ses informations, ses décisions et ses produits.

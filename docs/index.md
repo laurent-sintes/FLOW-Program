@@ -56,7 +56,7 @@
   </a>
   <a class="flow-card" href="architecture-cible/">
     <strong>Architecture cible</strong>
-    <span>Les premiers schémas de positionnement, produits candidats et frontières de la plateforme FLOW.</span>
+    <span>Les premiers schémas de positionnement, produits à instruire et frontières de la plateforme FLOW.</span>
   </a>
   <a class="flow-card" href="hotspots/">
     <strong>Hotspots</strong>
@@ -64,7 +64,7 @@
   </a>
   <a class="flow-card flow-card--method" href="methode/">
     <strong>Méthodologie Projet</strong>
-    <span>Le passage des observations terrain aux capacités, produits et solutions candidates.</span>
+    <span>Le passage des observations terrain aux capacités, produits et options de solution.</span>
   </a>
   <a class="flow-card" href="administration/">
     <strong>Administration du référentiel</strong>

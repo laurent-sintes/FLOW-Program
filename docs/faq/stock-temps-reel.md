@@ -91,7 +91,7 @@ Cette question est directement liée au hotspot [Stock temps réel : obtenir les
 
 Elle confirme aussi l'insight [Inventory Visibility est une capacité d'entreprise](../insights/inventory-visibility-capacite-d-entreprise.md) : la visibilité stock ne doit pas être seulement une fonctionnalité d'OMS ou de site eCommerce. Elle sert aussi l'allocation, la réallocation, le B2B, le SAV, la marketplace, le pilotage réseau et la promesse.
 
-Elle rejoint enfin l'insight [Cohérence des données : fraîcheur, DataHub et CEP](../insights/coherence-donnees-fraicheur-datahub-cep.md) : la fraîcheur seule ne suffit pas. Une donnée fraîche mais incohérente reste dangereuse. FLOW doit maîtriser le triptyque fraîcheur, cohérence et observabilité.
+Elle rejoint enfin l'insight [Cohérence de l'information : fraîcheur, DataHub et CEP](../insights/coherence-donnees-fraicheur-datahub-cep.md) : la fraîcheur seule ne suffit pas. Une information fraîche mais incohérente reste dangereuse. FLOW doit maîtriser le triptyque fraîcheur, cohérence et observabilité.
 
 ## Rapprochement avec la solution FLOW
 

@@ -24,7 +24,7 @@
 
 Les Vues 360 agrègent les informations nécessaires pour comprendre une activité, un client, un fournisseur, une commande ou un Case.
 
-Elles ne sont pas la source de référence de toutes les données.
+Elles ne sont pas la source de référence de toutes les informations.
 
 Elles fournissent une lecture transverse, principalement en consultation, alimentée par les événements, faits, documents, statuts et décisions.
 
@@ -37,7 +37,7 @@ Leur positionnement est renforcé par le rôle du Case Management : si FLOW devi
 
 ## Responsabilités portées
 
-- Agréger les données autour d'un Case, d'un client, d'un fournisseur ou d'une commande.
+- Agréger les informations autour d'un Case, d'un client, d'un fournisseur ou d'une commande.
 - Exposer une lecture transverse des statuts, événements, décisions et documents.
 - Aider les opérations, le service client, la finance et les métiers à comprendre une situation.
 - Contribuer à l'observabilité métier.
@@ -45,7 +45,7 @@ Leur positionnement est renforcé par le rôle du Case Management : si FLOW devi
 
 ## Ce que le produit ne porte pas
 
-- La création ou validation des données métier comme sources de référence.
+- La création ou validation des informations métier comme sources de référence.
 - Les règles de décision qui font évoluer un Case.
 - La responsabilité complète CRM ou MDM.
 - Les interfaces d'expérience client complètes.
@@ -57,7 +57,7 @@ Leur positionnement est renforcé par le rôle du Case Management : si FLOW devi
 | Opérations | Comprendre l'état d'une demande ou exécution. |
 | SAV / service client | Expliquer une situation client. |
 | Finance / contrôle | Retrouver faits, documents et statuts. |
-| PO / PM | Identifier les données manquantes et les besoins de projection. |
+| PO / PM | Identifier les informations manquantes et les besoins de projection. |
 | Sources de référence | Publier événements, faits ou documents. |
 
 ## Informations clés
@@ -72,7 +72,7 @@ Leur positionnement est renforcé par le rôle du Case Management : si FLOW devi
 | Documents associés | Document | Projection ou référence |
 | Décisions et statuts | Fact / Event | Projection agrégée |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Rechercher une Vue 360 par identifiant.
 - Agréger événements et statuts autour d'un Case.
@@ -82,7 +82,7 @@ Leur positionnement est renforcé par le rôle du Case Management : si FLOW devi
 - Restituer les décisions et règles appliquées lorsqu'elles sont disponibles.
 - Fournir une vue lecture seule aux consommateurs.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API Case 360.
 - API Customer 360.

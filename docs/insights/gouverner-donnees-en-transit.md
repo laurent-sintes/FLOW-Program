@@ -22,9 +22,9 @@
 
 ## Insight
 
-Dans le SI actuel, beaucoup d'échanges de données naissent comme des réponses projet.
+Dans le SI actuel, beaucoup d'échanges d'informations naissent comme des réponses projet.
 
-Lorsqu'une application a besoin d'une donnée, l'équipe responsable analyse l'application source, rédige une spécification, puis sollicite une équipe flux pour développer un batch ou une intégration technique.
+Lorsqu'une application a besoin d'une information, l'équipe responsable analyse l'application source, rédige une spécification, puis sollicite une équipe flux pour développer un batch ou une intégration technique.
 
 Cette logique existe notamment autour de Talend côté Beaumanoir et de Tibco côté Boardriders.
 
@@ -50,11 +50,11 @@ Consommation par une application cible
 
 Cette approche rend plus difficile la maîtrise d'entreprise :
 
-- Qui publie réellement la donnée ?
+- Qui publie réellement l'information ?
 - Quelle source de référence fait foi pour quel usage ?
 - Quelle fraîcheur est attendue ?
 - Quelle qualité est garantie ?
-- Quels consommateurs dépendent de cette donnée ?
+- Quels consommateurs dépendent de cette information ?
 - Comment diagnostique-t-on un écart ?
 - Comment fait-on évoluer l'échange sans casser l'écosystème ?
 
@@ -77,7 +77,7 @@ Demi-flux
     Application B → consommation adaptée
 ```
 
-Ce n'est pas encore une gouvernance complète de la donnée en transit.
+Ce n'est pas encore une gouvernance complète de l'information en transit.
 
 Mais c'est une petite graine architecturale importante.
 
@@ -92,7 +92,7 @@ Publication / consommation découplées
     ↓
 Contrats de données gouvernés
     ↓
-Capacités de données d'entreprise
+Capacités d'information d'entreprise
 ```
 
 ## Ce que FLOW doit prolonger
@@ -103,9 +103,9 @@ La cible n'est pas seulement de moderniser les outils d'intégration.
 
 La cible est de passer d'une logique de flux projet à une logique de <span class="flow-keyword">contrats de données gouvernés</span>.
 
-Un échange de données doit préciser :
+Un contrat de données doit préciser :
 
-- la donnée publiée ;
+- l'information publiée ;
 - sa source de référence responsable ;
 - ses consommateurs ;
 - sa fraîcheur attendue ;
@@ -126,7 +126,7 @@ Cet insight doit se traduire dans l'architecture cible.
 
 FLOW ne peut pas être seulement une plateforme de Case Management, de stock et de décisions.
 
-Il doit aussi s'appuyer sur une capacité transverse de diffusion et gouvernance opérationnelle des données.
+Il doit aussi s'appuyer sur une capacité transverse de diffusion et gouvernance opérationnelle des informations.
 
 Cette capacité n'est pas forcément un composant applicatif unique.
 
@@ -148,6 +148,6 @@ Le demi-flux montre qu'une partie de l'intuition existe déjà dans l'organisati
 
 FLOW doit la porter au niveau d'un principe d'architecture d'entreprise.
 
-La donnée en transit ne doit plus être seulement une affaire de flux techniques.
+L'information en transit ne doit plus être seulement une affaire de flux techniques.
 
 Elle doit devenir une capacité durable, gouvernée et observable du SI.

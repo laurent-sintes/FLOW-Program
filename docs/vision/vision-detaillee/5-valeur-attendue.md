@@ -35,7 +35,7 @@ La valeur attendue est donc triple :
 
 - Améliorer la cohérence opérationnelle du groupe.
 - Préserver la capacité des marques et canaux à se différencier lorsque cela crée de la valeur.
-- Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les données, les coûts et les trajectoires.
+- Redonner à l'IT une capacité de gouvernance durable sur les responsabilités, les informations, les coûts et les trajectoires.
 
 ## Bénéfices du programme
 
@@ -93,7 +93,7 @@ La valeur métier vient du fait que les expériences peuvent rester différenci�
 
 La convergence devient alors un choix métier explicite : construire le bon niveau de commun en centralisant, unifiant, standardisant, fédérant ou différenciant selon la valeur recherchée.
 
-## Valeur IT : gouverner les responsabilités, les données et les trajectoires
+## Valeur IT : gouverner les responsabilités, les informations et les trajectoires
 
 <div class="flow-conviction">
   <p>Moins de flux opportunistes.</p>
@@ -122,7 +122,7 @@ Fonctionnalité
 
 | Problème observé | Ce que FLOW apporte | Valeur attendue |
 | --- | --- | --- |
-| Données synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction source de référence / projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
+| Informations synchronisées avec des cadences différentes et difficiles à réconcilier | Projections gouvernées, événements, <span class="flow-keyword">Vues 360</span>, distinction source de référence / projection | Moins d'incohérences, meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants, conçus application par application | Contrats de données, séparation publication / consommation, supervision des échanges, qualité et fraîcheur explicites | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Coûts applicatifs et licences difficiles à maîtriser | Rationalisation des responsabilités critiques, retrait progressif des socles remplacés, réintégration sélective des services utiles | Meilleure maîtrise du portefeuille applicatif et des coûts IT dans la durée |
 | Roadmaps projet dispersées et vision IT trop court terme | Découpage par responsabilités, capacités et produits, contrats de données gouvernés | Capacité à construire des roadmaps IT consolidées à 3/4 ans |
@@ -132,7 +132,7 @@ Cette lecture permet d'éviter quatre dérives :
 - Remplacer des applications sans clarifier les responsabilités.
 - Élargir indéfiniment FLOW au motif que tout est connecté.
 - Multiplier les variantes de processus au lieu d'externaliser les règles et conditions de traitement.
-- Créer des flux projet qui répondent à court terme, mais ne construisent pas une gouvernance durable des données.
+- Créer des flux projet qui répondent à court terme, mais ne construisent pas une gouvernance durable des informations.
 
 La promesse IT de FLOW est donc aussi une promesse de simplification des échanges.
 
@@ -154,7 +154,7 @@ Mais FLOW doit produire, conserver ou transmettre les faits, événements, docum
 | Problème observé | Ce que FLOW apporte | Valeur attendue |
 | --- | --- | --- |
 | Documents financiers et opérationnels produits tardivement ou difficilement réconciliables | Cases, événements, faits économiques et documents associés | Meilleure intégration avec Finance, auditabilité renforcée et réduction des écarts de justification |
-| Données difficiles à justifier entre systèmes | Traçabilité des événements, décisions métier, documents et statuts | Capacité à reconstruire l'histoire d'une demande ou d'un engagement |
+| Informations difficiles à justifier entre systèmes | Traçabilité des événements, décisions métier, documents et statuts | Capacité à reconstruire l'histoire d'une demande ou d'un engagement |
 | Responsabilités comptables et opérationnelles mélangées dans certains socles historiques | Séparation entre Demand, Supply et Finance, avec contrats d'échange explicites | Meilleure lisibilité des frontières et réduction des adhérences non maîtrisées |
 
 ## Signes de réussite : ce qui doit devenir observable
@@ -175,7 +175,7 @@ FLOW réussira si le groupe constate progressivement :
 - Une continuité plus claire entre achat, fournisseur, réception, stock disponible et fulfillment.
 - Une distinction plus claire entre ce qui est source de référence et ce qui est projection.
 - Des flux critiques transformés en contrats de données gouvernés.
-- Une meilleure visibilité sur les consommateurs, la fraîcheur et la qualité des données échangées.
+- Une meilleure visibilité sur les consommateurs, la fraîcheur et la qualité des informations échangées.
 - Des expériences métier différenciées, mais appuyées sur des capacités communes.
 - Des variations de traitement absorbées par les règles plutôt que par la prolifération de processus.
 - Des roadmaps IT plus consolidées, au-delà des seules roadmaps projet.
@@ -196,7 +196,7 @@ FLOW réussira si le groupe constate progressivement :
 | FLOW est un nouvel ERP ou un nouvel OMS. | Déplacer le centre de gravité vers la demande, la décision métier, le stock et le réseau d'exécution. |
 | FLOW doit absorber tout le SI. | Fédérer les opérations et décisions métier critiques, tout en laissant les domaines spécialisés jouer leur rôle. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
-| FLOW se contente de refaire des flux entre applications. | Gouverner les données en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
+| FLOW se contente de refaire des flux entre applications. | Gouverner les informations en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
 | FLOW promet seulement une modernisation technique. | Produire une convergence mesurable : opérationnelle, métier, IT, financière et documentaire. |
 
 ---

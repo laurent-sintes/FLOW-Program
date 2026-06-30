@@ -48,7 +48,7 @@ Ces pages expliquent ce que FLOW est — et surtout ce qu'il n'est pas.
 
 ## Modèle conceptuel
 
-Ces pages décrivent les concepts qui structurent FLOW : demande, Case, Agreement, décisions, responsabilités et données utiles à l'exécution.
+Ces pages décrivent les concepts qui structurent FLOW : demande, Case, Agreement, décisions, responsabilités et informations utiles à l'exécution.
 
 - [Agreement comme pivot](agreement-comme-pivot.md)
 - [La demande comme point d’entrée de la modélisation FLOW](demande-point-entree-modelisation.md)
@@ -62,14 +62,14 @@ Ces pages traitent du caractère fédéral de FLOW : multi-marques, multi-contex
 - [GBM, StoreLand, UR et fédération](gbm-storeland-ur-federation.md)
 - [L'organisation masque parfois les domaines](organisation-masque-domaines.md)
 
-## Opérations, décision métier et données
+## Opérations, décision métier et informations
 
-Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions métier, projections et données en transit.
+Ces pages documentent les capacités opérationnelles et les tensions de cohérence : stock, allocation, visibilité, DataHub, CEP, événements, décisions métier, projections et informations en transit.
 
 - [Gouvernance logistique : BRD vs GBM](gouvernance-logistique-brd-vs-gbm.md)
 - [Allocation et convergence](allocation-point-saillant-de-la-convergence.md)
 - [Engagements, soft allocation et priorisation](engagements-soft-allocation-et-priorisation-commerciale.md)
-- [Cohérence des données, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
+- [Cohérence de l'information, DataHub et CEP](coherence-donnees-fraicheur-datahub-cep.md)
 - [Gouverner les données en transit](gouverner-donnees-en-transit.md)
 - [Inventory Visibility](inventory-visibility-capacite-d-entreprise.md)
 
@@ -90,8 +90,8 @@ Ces pages explicitent les zones où FLOW doit s'articuler avec des domaines spé
 | Agreement | L'Agreement permet de piloter les variations de traitement sans multiplier les variantes de commande. |
 | Convergence | Converger ne signifie pas uniformiser : il faut choisir le bon niveau de commun et de différenciation. |
 | Organisation | Les organisations consomment la plateforme, elles ne doivent pas la structurer. |
-| Données | Les informations doivent être qualifiées par nature et par statut source de référence / projection plutôt que rangées dans “Master Data”. |
-| Données en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |
+| Informations | Les informations doivent être qualifiées par nature et par statut source de référence / projection plutôt que rangées dans “Master Data”. |
+| Informations en transit | Les échanges doivent devenir des contrats de données gouvernés, pas seulement des flux projet. |
 | Stock | Le stock unifié et l'Inventory Visibility sont des capacités d'entreprise. |
 | Décision métier | Les décisions, règles et politiques doivent être explicites, traçables et gouvernables. |
 | Finance | FLOW doit produire les faits et documents utiles, sans devenir le domaine Finance. |

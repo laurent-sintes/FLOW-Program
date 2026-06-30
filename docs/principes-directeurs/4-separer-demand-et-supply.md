@@ -285,7 +285,7 @@ Le domaine Demand nécessite généralement :
 * une traçabilité des décisions ;
 * une gestion des promesses.
 
-L'objectif n'est pas de stocker des données.
+L'objectif n'est pas de stocker des informations.
 
 L'objectif est de piloter des décisions.
 
@@ -377,7 +377,7 @@ La décision de Fulfillment constitue le point de rencontre entre Demand et Supp
 
 ## Une relation conversationnelle
 
-FLOW ne considère pas Demand et Supply comme deux systèmes échangeant simplement des données.
+FLOW ne considère pas Demand et Supply comme deux systèmes échangeant simplement des informations.
 
 Une demande doit pouvoir dialoguer avec les ressources.
 

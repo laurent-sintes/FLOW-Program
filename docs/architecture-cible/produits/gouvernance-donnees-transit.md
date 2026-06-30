@@ -29,7 +29,7 @@ Cette page ne décrit pas un produit FLOW autonome.
 Elle décrit une pratique transverse qui gouverne ce qui est publié, consommé, supervisé, réconcilié et maintenu dans la durée.
 
 <div class="flow-conviction">
-  <p>Une donnée en transit n'est pas un tuyau technique.</p>
+  <p>Une information en transit n'est pas un tuyau technique.</p>
   <p>C'est un contrat durable entre source de référence, consommateurs et responsabilité métier.</p>
 </div>
 
@@ -71,7 +71,7 @@ Elle décrit une pratique transverse qui gouverne ce qui est publié, consommé,
 | Fraîcheur / qualité attendue | Policy | Source de référence FLOW |
 | Écart de réconciliation | Fact | Source de référence ou projection |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Définir un contrat de données.
 - Identifier producteurs et consommateurs.
@@ -82,7 +82,7 @@ Elle décrit une pratique transverse qui gouverne ce qui est publié, consommé,
 - Définir les mécanismes de reprise et réconciliation.
 - Cartographier les flux remplacés ou rationalisés.
 
-## Supports candidats
+## Supports à instruire
 
 - Catalogue des contrats de données.
 - API de consultation des contrats.

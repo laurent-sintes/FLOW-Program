@@ -348,7 +348,7 @@ def render_overview_svg() -> str:
         1280,
         canvas_height,
         "Overview de la plateforme FLOW",
-        "Cartographie claire des six produits candidats de la plateforme FLOW, avec Case Management au cœur, services partagés et projections opérationnelles.",
+        "Cartographie claire des six produits à instruire de la plateforme FLOW, avec Case Management au cœur, services partagés et projections opérationnelles.",
     )
 
     svg_lines.extend(
@@ -357,7 +357,7 @@ def render_overview_svg() -> str:
             text_element("subtitle", 52, 86, "Une plateforme Demand centrée sur les Cases, enrichie par des services partagés et projections opérationnelles."),
             "",
             rect("panel", 48, 122, 1184, panel_height, 24),
-            text_element("h", 82, 160, "Produits fonctionnels candidats"),
+            text_element("h", 82, 160, "Produits fonctionnels à instruire"),
             text_element("small", 82, 184, "Lecture cible : FLOW porte le cœur Demand + Fulfillment et raccorde Engagement, Supply et les domaines spécialisés."),
             "",
             rect("core", 424, 210, 432, 164, 28),
@@ -465,38 +465,39 @@ def render_architecture_brd_svg() -> str:
 
 def render_methodology_svg() -> str:
     steps = [
-        ("0", "Comprendre", ["Panorama existant", "irritants", "tensions"], ["Faits qualifiés", "et insights"], "blue"),
-        ("1", "Vision", ["Ambition commune", "problème à résoudre", "cible narrative"], ["Intention cible", "et promesse"], "purple"),
-        ("2", "Principes", ["Règles de conception", "arbitrages", "garde-fous"], ["Critères de décision", "réutilisables"], "purple"),
-        ("3", "Urbaniser", ["Domaines", "responsabilités", "frontières"], ["Carte des domaines", "et responsabilités"], "green"),
-        ("4", "Capacités", ["Ce que l'entreprise", "doit savoir faire", "durablement"], ["Catalogue", "de capacités"], "green"),
-        ("5-6", "Produits & solutions", ["Gouvernance", "fonctionnalités", "solutions"], ["Produits, backlog", "et solutions"], "dark"),
+        ("0", "Comprendre", ["Panorama", "irritants", "tensions"], "blue"),
+        ("1", "Vision", ["Ambition", "problème", "cible narrative"], "purple"),
+        ("2", "Principes", ["Règles", "arbitrages", "garde-fous"], "purple"),
+        ("3", "Urbaniser", ["Domaines", "responsabilités", "frontières"], "green"),
+        ("4", "Capacités", ["Savoir-faire", "durables", "consommateurs"], "green"),
+        ("5", "Produits", ["Gouvernance", "owners", "backlog"], "green"),
+        ("6", "Solutions", ["Fonctionnalités", "interfaces", "exigences"], "dark"),
     ]
     width = 1500
-    height = 800
+    height = 900
     lines = svg_start(
         width,
         height,
-        "Méthodologie Projet FLOW",
-        "Vue d'ensemble des étapes de la méthodologie FLOW, de l'existant à la solution.",
+        "Processus de cadrage FLOW",
+        "Vue d'ensemble des étapes du cadrage FLOW, de l'existant à l'arbitrage Build / Buy.",
     )
     lines.extend(
         [
-            text_element("title", 750, 70, "Méthodologie Projet FLOW", "middle"),
-            text_element("subtitle", 750, 100, "Transformer les observations terrain en architecture cible, produits et solutions.", "middle"),
-            rect("panel", 42, 128, 1416, 610, 24),
+            text_element("title", 750, 70, "Processus de cadrage FLOW", "middle"),
+            text_element("subtitle", 750, 100, "Transformer les observations terrain en architecture cible, produits, solutions et trajectoire avant delivery.", "middle"),
+            rect("panel", 42, 128, 1416, 730, 24),
             rect("panelSoft", 92, 160, 1316, 78, 18),
             text_element("h", 750, 192, "Chaque étape produit un livrable qui devient l'entrée de l'étape suivante", "middle"),
         ]
     )
-    lines.extend(wrapped_text("Existant → Vision → Principes → Urbanisme → Capacités → Produits → Fonctionnalités → Solutions", "small", 750, 218, 1180, 13, 18, anchor="middle"))
+    lines.extend(wrapped_text("Existant → Vision → Principes → Urbanisme → Capacités → Produits → Options de solution → Build / Buy", "small", 750, 218, 1180, 13, 18, anchor="middle"))
 
-    card_width = 190
-    gap = 34
-    x0 = 92
-    card_y = 292
-    card_height = 185
-    for index, (num, title, body, output, style) in enumerate(steps):
+    card_width = 176
+    gap = 22
+    x0 = 68
+    card_y = 286
+    card_height = 168
+    for index, (num, title, body, style) in enumerate(steps):
         x = x0 + index * (card_width + gap)
         cls = "dark" if style == "dark" else style
         lines.append(rect(cls, x, card_y, card_width, card_height, 18))
@@ -512,18 +513,33 @@ def render_methodology_svg() -> str:
         if index < len(steps) - 1:
             lines.append(arrow(f"M{x + card_width + 5} {card_y + 88} L{x + card_width + gap - 8} {card_y + 88}", "arrowAccent"))
 
-        out_y = 532
-        lines.append(text_element("label", x + card_width // 2, out_y, "Sortie", "middle"))
-        for line_index, item in enumerate(output):
-            lines.extend(wrapped_text(item, "small", x + card_width // 2, out_y + 26 + (line_index * 20), card_width - 18, 13, 18, anchor="middle"))
+    solution_x = x0 + (len(steps) - 1) * (card_width + gap)
+    solution_center_x = solution_x + card_width // 2
+    decision_x = 570
+    decision_y = 540
+    decision_width = 360
+    decision_height = 120
+    decision_center_x = decision_x + decision_width // 2
+    lines.append(arrow(f"M{solution_center_x} {card_y + card_height + 8} C{solution_center_x} 510 {decision_center_x} 500 {decision_center_x} {decision_y - 10}", "arrowAccent"))
+    lines.append(rect("dark", decision_x, decision_y, decision_width, decision_height, 18))
+    lines.append(text_element("hWhite", decision_x + 24, decision_y + 34, "7  Arbitrer Build / Buy"))
+    lines.extend(wrapped_text("Acheter, construire ou hybrider selon la couverture, les risques, les coûts complets et la gouvernance attendue.", "smallWhite", decision_x + 24, decision_y + 66, decision_width - 48, 13, 18))
 
-    lines.extend(
-        [
-            rect("panelSoft", 205, 645, 1090, 72, 18),
-            text_element("h", 750, 675, "Chaîne logique cible", "middle"),
-        ]
-    )
-    lines.extend(wrapped_text("Domaine → Responsabilité → Capacité → Produit → Fonctionnalités → Solutions", "small", 750, 700, 980, 13, 18, anchor="middle"))
+    buy_x = 130
+    build_x = 800
+    branch_y = 724
+    branch_width = 570
+    branch_height = 98
+    lines.append(arrow(f"M{decision_center_x - 70} {decision_y + decision_height + 8} C600 690 430 694 {buy_x + branch_width // 2} {branch_y - 8}", "arrowAccent"))
+    lines.append(arrow(f"M{decision_center_x + 70} {decision_y + decision_height + 8} C900 690 1060 694 {build_x + branch_width // 2} {branch_y - 8}", "arrow"))
+
+    lines.append(rect("accent", buy_x, branch_y, branch_width, branch_height, 18))
+    lines.append(text_element("h", buy_x + 24, branch_y + 33, "Trajectoire Buy"))
+    lines.extend(wrapped_text("RFI pour explorer le marché → RFP pour comparer les réponses → RFQ pour chiffrer et contractualiser.", "small", buy_x + 24, branch_y + 62, branch_width - 48, 13, 18))
+
+    lines.append(rect("green", build_x, branch_y, branch_width, branch_height, 18))
+    lines.append(text_element("h", build_x + 24, branch_y + 33, "Trajectoire Build"))
+    lines.extend(wrapped_text("Préparer la plateforme de développement : environnements, CI/CD, standards, données de test et backlog.", "small", build_x + 24, branch_y + 62, branch_width - 48, 13, 18))
     lines.append("</svg>")
     return "\n".join(lines) + "\n"
 

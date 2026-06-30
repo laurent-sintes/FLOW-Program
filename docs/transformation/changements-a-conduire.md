@@ -38,7 +38,7 @@ Ces changements doivent inspirer la transformation : ils disent ce que les équi
 | --- | --- | --- |
 | 1. Ne plus servir l'organisation, mais résoudre les problèmes de l'entreprise | Partir des marques, canaux, directions ou organisations existantes. | Partir des problèmes durables de l'entreprise, des domaines et des responsabilités à gouverner. |
 | 2. Passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply | Séparer les sujets selon achat, vente, B2C, B2B, retail, wholesale ou SAV. | Reconnaître où l'intention est captée, quelle demande est à instruire, comment la servir, puis quel réseau d'exécution mobiliser. |
-| 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts de données. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
+| 3. Réconcilier ERP et OMS dans une plateforme Demand | Penser séparément l'ERP, l'OMS et leurs transferts d'informations. | Construire une cohérence unique autour du Case, du stock, de la promesse, de l'allocation et de l'orchestration. |
 | 4. Penser fulfillment et satisfaction client avant documents | Commencer par les documents à produire : facture, livraison, commande, écritures. | Commencer par la demande à satisfaire, puis intégrer les documents et la finance au bon moment. |
 | 5. Construire le bon niveau de commun | Choisir entre tout centraliser ou tout laisser spécifique. | Décider ce qui doit être commun, fédéré ou différencié selon la responsabilité et l'exigence business. |
 
@@ -136,7 +136,7 @@ L'ERP porte des objets transactionnels, du stock, des documents ou de la finance
 
 L'OMS porte le cycle de vie commande, la promesse, la réservation ou l'orchestration omnicanale.
 
-Cette séparation crée des transferts de données, des duplications, des statuts divergents et des zones grises de responsabilité.
+Cette séparation crée des transferts d'informations, des duplications, des statuts divergents et des zones grises de responsabilité.
 
 FLOW cherche à dépasser cette séparation en construisant une plateforme Demand unique autour du Case.
 
@@ -145,7 +145,7 @@ FLOW cherche à dépasser cette séparation en construisant une plateforme Deman
 - Les équipes doivent arrêter de demander trop vite : “est-ce ERP ou OMS ?”.
 - Les responsabilités doivent être redécoupées autour du Case, de la décision, du stock, de la promesse et de l'allocation.
 - Le remplacement de SAP, NewStore, StoreLand, Socloz ou UR doit être analysé par responsabilité, pas application par application.
-- Les transferts de données entre ERP et OMS ne doivent pas être reconduits automatiquement dans la cible.
+- Les transferts d'informations entre ERP et OMS ne doivent pas être reconduits automatiquement dans la cible.
 
 ### Message de transformation
 

@@ -238,7 +238,7 @@ Les relations métier décrivent qui joue quel rôle dans quel contexte.
 
 Tout concentrer dans une fiche fournisseur, client ou article : identité, rôles, facturation, transport, conditions, lead times, capacité, finance et PLM.
 
-Cela rend la donnée difficile à gouverner et pousse FLOW à reproduire le monolithe existant.
+Cela rend l'information difficile à gouverner et pousse FLOW à reproduire le monolithe existant.
 
 ### Cardinalité cachée dans les lignes
 

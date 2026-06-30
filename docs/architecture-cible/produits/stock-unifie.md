@@ -31,7 +31,7 @@ Il doit permettre de calculer une disponibilité contextualisée, de réserver, 
 La réservation, l'allocation ou le tagging ne doivent pas rester de simples attributs centraux : ces actions doivent pouvoir générer des commandes ou instructions vers les domaines d'exécution, afin que la logistique, les magasins ou les partenaires prennent réellement en compte localement la décision.
 
 <div class="flow-conviction">
-  <p>Le stock n'est pas seulement une donnée.</p>
+  <p>Le stock n'est pas seulement une information locale.</p>
   <p>C'est une capacité d'entreprise pour promettre, réserver, allouer et expliquer.</p>
 </div>
 
@@ -109,7 +109,7 @@ availability, reservation, allocation, explanation
 | Fraîcheur de stock | Fact | Dérivé FLOW |
 | Niveau de confiance | Fact / Policy | Dérivé FLOW |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Consulter le stock disponible.
 - Calculer une disponibilité contextualisée.
@@ -120,9 +120,9 @@ availability, reservation, allocation, explanation
 - Réconcilier stock théorique et stock observé.
 - Expliquer pourquoi un stock est ou n'est pas disponible.
 - Détecter les anomalies de stock ou de flux.
-- Qualifier la fraîcheur et la confiance d'une donnée stock.
+- Qualifier la fraîcheur et la confiance d'une information de stock.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API AvailableToPromise / disponibilité.
 - API ReserveStock.

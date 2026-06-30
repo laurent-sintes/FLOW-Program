@@ -67,10 +67,10 @@ Les documents peuvent être des factures, bons de livraison, bons de retour, avo
 
 Une décision est un choix explicite, pris pour faire progresser le traitement d’un Case.
 
-Elle s’appuie sur des faits, des données de référence et des règles de comportement. Elle produit un résultat traçable, susceptible de créer un engagement, de mobiliser une ressource ou de déclencher une action.
+Elle s’appuie sur des faits, des informations de référence et des règles de comportement. Elle produit un résultat traçable, susceptible de créer un engagement, de mobiliser une ressource ou de déclencher une action.
 
 ```text
-Faits + données + règles de comportement
+Faits + informations + règles de comportement
         ↓
 Décision
         ↓
@@ -138,7 +138,7 @@ Ce principe conduit FLOW à :
 
 ## À retenir
 
-FLOW ne commence pas par demander quelles données de référence doivent être centralisées.
+FLOW ne commence pas par demander quelles informations de référence doivent être centralisées.
 
 FLOW commence par demander :
 

@@ -64,7 +64,7 @@ Cette vision repose sur cinq convictions fortes :
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, mobilisable pour promettre, réserver, allouer et optimiser. |
 | <span class="flow-keyword">Agreement</span> | Les variations métier sont pilotées par le contexte, les Agreements et les règles plutôt que par la prolifération des processus. |
 | <span class="flow-keyword">Source de référence / Projection</span> | Dans un SI distribué, une information fait référence lorsqu'elle est contrôlée par un processus responsable ; elle n'est pas maître de manière absolue. |
-| <span class="flow-keyword">Contrat de données</span> | La donnée en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
+| <span class="flow-keyword">Contrat de données</span> | L'information en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
@@ -116,7 +116,7 @@ Stock et réseau d'exécution
   <p>FLOW cherche à mieux satisfaire les demandes.</p>
 </div>
 
-FLOW introduit aussi une rupture sur la donnée.
+FLOW introduit aussi une rupture sur l'information.
 
 Dans un ERP, la master data décrit souvent l'entreprise telle qu'elle est.
 
@@ -126,7 +126,7 @@ FLOW ne cherche pas à reconstruire une master data globale.
 
 FLOW cherche à définir les objets nécessaires pour traiter les demandes de manière fiable, explicable et optimisable.
 
-Il introduit également une rupture sur la donnée en transit.
+Il introduit également une rupture sur l'information en transit.
 
 Les échanges ne doivent plus être seulement des flux projet conçus sous contrainte locale de budget et de planning.
 
@@ -215,7 +215,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | --- | --- | --- |
 | Stock dispersé | Stock Unifié, APIs de disponibilité, réservation, allocation | Vision plus fiable du stock et optimisation du fulfillment omnicanal |
 | Demandes dispersées | Plateforme de fédération des demandes, Case Management, événements communs | Décloisonnement et continuité de traitement |
-| Données difficiles à réconcilier | Projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
+| Informations difficiles à réconcilier | Projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
 | Variations métier spécifiques | Agreements, règles, policies, moteur de décision métier | Singularités préservées sans prolifération des processus |
 | Décisions de fulfillment distribuées | Contrats entre demande et exécution | Moins d'erreurs d'aiguillage et meilleure optimisation globale |
@@ -233,7 +233,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | FLOW doit absorber tout le SI. | Réécrire la colonne vertébrale opérationnelle du SI, pas tous ses organes spécialisés. |
 | FLOW oblige à réécrire tous les services existants. | Réintégrer les services utiles autour d'une cohérence commune lorsque leur valeur métier justifie leur maintien. |
 | FLOW reconstruit une master data globale. | Configurer les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
-| FLOW se contente de refaire des flux entre applications. | Gouverner les données en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
+| FLOW se contente de refaire des flux entre applications. | Gouverner les informations en transit comme des contrats durables entre sources, consommateurs et responsabilités métier. |
 
 ## Aller plus loin
 

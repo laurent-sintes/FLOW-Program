@@ -1,4 +1,4 @@
-# Cohérence des données : fraîcheur, DataHub et CEP
+# Cohérence de l'information : fraîcheur, DataHub et CEP
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">
@@ -22,7 +22,7 @@
 
 ## Constat
 
-Dans un SI composé de nombreuses applications spécialisées, les données circulent à des vitesses différentes.
+Dans un SI composé de nombreuses applications spécialisées, les informations circulent à des vitesses différentes.
 
 Certaines intégrations fonctionnent en temps quasi réel, d'autres en micro-batch, d'autres encore en batchs planifiés.
 
@@ -30,7 +30,7 @@ Les délais peuvent varier de quelques secondes à plusieurs minutes, plusieurs 
 
 ## Le vrai problème n'est pas seulement la fraîcheur
 
-La fraîcheur de la donnée est importante, mais elle n'est pas toujours le problème principal.
+La fraîcheur de l'information est importante, mais elle n'est pas toujours le problème principal.
 
 Le problème fondamental est la cohérence entre systèmes.
 
@@ -43,11 +43,11 @@ alors pendant 50 minutes, les deux systèmes peuvent présenter un stock différ
 
 Les deux systèmes peuvent être techniquement corrects par rapport à ce qu'ils ont reçu, mais l'ensemble du SI est incohérent.
 
-## Une donnée fraîche mais incohérente reste dangereuse
+## Une information fraîche mais incohérente reste dangereuse
 
 Le temps réel est utile, mais il ne suffit pas.
 
-Une donnée très fraîche mais incohérente avec le reste du SI peut produire :
+Une information très fraîche mais incohérente avec le reste du SI peut produire :
 
 - une mauvaise promesse client ;
 - une mauvaise allocation ;
@@ -67,15 +67,15 @@ La cohérence est l'exigence.
 
 ## Pourquoi DataHub est indispensable
 
-Le pattern DataHub permet de construire une vue cohérente, gouvernée et explicable des données opérationnelles.
+Le pattern DataHub permet de construire une vue cohérente, gouvernée et explicable des informations opérationnelles.
 
 Il permet notamment de :
 
 - centraliser ou fédérer des projections opérationnelles ;
 - identifier les sources de vérité ;
-- tracer l'origine des données ;
+- tracer l'origine des informations ;
 - exposer des vues cohérentes aux consommateurs ;
-- gérer la fraîcheur et la qualité des données ;
+- gérer la fraîcheur et la qualité des informations ;
 - éviter que chaque application reconstruise sa propre vision du monde.
 
 Dans FLOW, le DataHub est particulièrement important pour Inventory Visibility.
@@ -117,13 +117,13 @@ Le temps réel est une optimisation.
 
 La cohérence est une exigence.
 
-Une donnée parfaitement fraîche mais incohérente est souvent moins utile qu'une donnée légèrement retardée mais cohérente, traçable et explicable.
+Une information parfaitement fraîche mais incohérente est souvent moins utile qu'une information légèrement retardée mais cohérente, traçable et explicable.
 
 ## À retenir
 
-La qualité de donnée ne doit pas être réduite à la fraîcheur.
+La qualité de l'information ne doit pas être réduite à la fraîcheur.
 
-Pour FLOW, la maîtrise de la donnée repose sur un triptyque :
+Pour FLOW, la maîtrise de l'information repose sur un triptyque :
 
 - fraîcheur ;
 - cohérence ;

@@ -249,7 +249,7 @@ Elle consiste à organiser la manière dont le groupe fait converger :
 - ses responsabilités métier ;
 - ses capacités partagées ;
 - ses règles de décision ;
-- ses données opérationnelles ;
+- ses informations opérationnelles ;
 - ses trajectoires applicatives ;
 - ses niveaux d'autonomie locale.
 

@@ -38,7 +38,7 @@ Les métiers souhaitent conserver leurs outils d'engagement :
 - marketplaces ;
 - outils partenaires.
 
-Ils demandent avant tout des APIs, des capacités réutilisables, des décisions cohérentes et des données fiables.
+Ils demandent avant tout des APIs, des capacités réutilisables, des décisions cohérentes et des informations fiables.
 
 ## Conséquence
 

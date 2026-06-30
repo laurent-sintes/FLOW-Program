@@ -76,7 +76,7 @@ Dans FLOW, ces ressources sont notamment :
 - Le <span class="flow-keyword">Fulfillment Network</span>.
 - Les capacités de Fulfillment : allocation, réservation, promesse tenable, sourcing, priorisation et orchestration.
 - Les événements, faits, documents et vues nécessaires à la traçabilité.
-- Les contrats de données qui encadrent la publication, la consommation, la fraîcheur, la qualité et la supervision des données en transit.
+- Les contrats de données qui encadrent la publication, la consommation, la fraîcheur, la qualité et la supervision des informations en transit.
 
 Mais une plateforme ne doit pas devenir un bloc fermé.
 
@@ -142,13 +142,13 @@ L'enjeu est d'éviter que chaque application reconstruise sa propre logique de d
   <p>Il doit remplacer la logique de tuyauterie projet par une logique de contrats de données gouvernés.</p>
 </div>
 
-FLOW doit également transformer la manière dont les données circulent entre applications.
+FLOW doit également transformer la manière dont les informations circulent entre applications.
 
-Aujourd'hui, un besoin de donnée produit souvent un flux spécifique : analyse d'une application source, spécification, développement par une équipe flux, puis consommation par une application cible.
+Aujourd'hui, un besoin d'information produit souvent un flux spécifique : analyse d'une application source, spécification, développement par une équipe flux, puis consommation par une application cible.
 
 Cette approche est efficace pour répondre à un projet, mais elle fragilise la gouvernance d'entreprise lorsque les flux se multiplient.
 
-L'idée de demi-flux déjà imaginée côté Beaumanoir est une intuition utile : elle distingue la publication d'une donnée de sa consommation.
+L'idée de demi-flux déjà imaginée côté Beaumanoir est une intuition utile : elle distingue la publication d'une information de sa consommation.
 
 FLOW doit prolonger cette graine vers une logique de contrats de données gouvernés.
 
@@ -175,7 +175,7 @@ Ses composants structurants sont :
 - Un système de <span class="flow-keyword">décision métier</span> fondé sur des règles, contraintes et capacités d'optimisation, potentiellement augmenté par l'IA là où cela crée de la valeur.
 - Un réseau d'exécution <span class="flow-keyword">Supply</span> connecté en continu à la demande.
 - Des <span class="flow-keyword">Vues 360</span> pour rendre les activités, statuts, événements et exceptions plus lisibles.
-- Une capacité de diffusion et gouvernance opérationnelle des données pour encadrer les contrats de données, modes d'échange, consommateurs, qualité, fraîcheur et réconciliation.
+- Une capacité de diffusion et gouvernance opérationnelle des informations pour encadrer les contrats de données, modes d'échange, consommateurs, qualité, fraîcheur et réconciliation.
 - Des intégrations avec les services existants, lorsque leur valeur métier justifie leur maintien.
 
 ## Fulfillment Network : décrire des capacités plutôt qu'une réalité physique

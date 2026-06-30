@@ -54,7 +54,7 @@ Il ne représente pas SAP et NewStore comme des satellites durables, car ces deu
 | Zone | Rôle dans l'écosystème BRD |
 | --- | --- |
 | Engagement / canaux | Captent les intentions, exposent les parcours digitaux, retail ou B2B, et consomment les capacités FLOW. |
-| Produit / offre / planning | Conçoivent les produits, assortiments, prix, contenus, assets et données nécessaires à l'offre. |
+| Produit / offre / planning | Conçoivent les produits, assortiments, prix, contenus, assets et informations nécessaires à l'offre. |
 | Sourcing / fournisseurs | Contribuent à la collaboration fournisseur, à la qualité fournisseur et aux demandes amont. |
 | Plateforme FLOW | Porte les Cases, le stock unifié, le réseau d'exécution, les projections opérationnelles et les Vues 360. |
 | Supply | Exécute physiquement : entrepôts, préparation, transport, douane, opérations logistiques et événements d'exécution. |

@@ -148,7 +148,7 @@ Mais au niveau de la vision, le concept central reste la demande : ce que l'entr
   <p>Il ne reconstruit pas un grand miroir administratif de l'entreprise.</p>
 </div>
 
-FLOW introduit aussi une rupture dans la manière de concevoir les données de configuration.
+FLOW introduit aussi une rupture dans la manière de concevoir les informations de configuration.
 
 Dans une approche ERP classique, la master data décrit souvent l'entreprise telle qu'elle est : clients, fournisseurs, articles, sites, magasins, entrepôts, organisations, stocks, conditions.
 
@@ -168,13 +168,13 @@ Autrement dit :
 
 ```text
 ERP
-    données pour représenter l'entreprise
+    informations pour représenter l'entreprise
 
 FLOW
     objets de configuration pour décider, promettre et exécuter
 ```
 
-Cette rupture change la finalité même de la donnée.
+Cette rupture change la finalité même de l'information.
 
 FLOW ne cherche pas à reconstruire une master data globale.
 

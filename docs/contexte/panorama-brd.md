@@ -231,9 +231,9 @@ Il faut arbitrer, responsabilité par responsabilité, ce qui relève demain :
   <p>Il matérialise une zone de responsabilités que FLOW devra redistribuer proprement entre Demand, Stock, Réseau d'Exécution, Finance et systèmes conservés.</p>
 </div>
 
-## Planification, produit et données
+## Planification, produit et informations
 
-Le paysage BRD mentionne plusieurs solutions autour de la planification, du produit et des données :
+Le paysage BRD mentionne plusieurs solutions autour de la planification, du produit et des informations :
 
 - SAP BPC / EPM — Business Planning and Consolidation ;
 - Optimate / APS — Advanced Planning System ;
@@ -255,7 +255,7 @@ La recommandation d'architecture est de sortir le PIM du périmètre fonctionnel
 
 Le PIM doit rester positionné comme un système de design, d'enrichissement et de publication de l'offre, lorsqu'il soutient les processus PLM, assortiment, commercial agreement, prix, contenu ou engagement client.
 
-FLOW doit disposer, en revanche, d'un référentiel produit d'exécution : une projection plus statique, plus simple et gouvernée des données produit nécessaires au fulfillment.
+FLOW doit disposer, en revanche, d'un référentiel produit d'exécution : une projection plus statique, plus simple et gouvernée des informations produit nécessaires au fulfillment.
 
 Ce référentiel produit d'exécution ne soutient pas le processus de création produit, de construction d'assortiment ou de négociation commerciale. Il fournit à FLOW les informations minimales nécessaires pour instruire une demande, promettre, allouer, orchestrer et exécuter.
 
@@ -276,7 +276,7 @@ FLOW
 Cette recommandation évite deux dérives :
 
 - faire de FLOW un PIM bis ;
-- sous-estimer le besoin d'une donnée produit stable et exploitable par le fulfillment.
+- sous-estimer le besoin d'une information produit stable et exploitable par le fulfillment.
 
 Ces composants ne sont pas nécessairement à remplacer par FLOW.
 
@@ -301,7 +301,7 @@ Elle s'appuie sur des demandes planifiées, des demandes d'achat, des commandes,
 
 Pour FLOW, cela pose une question importante : certaines demandes à orchestrer peuvent être amont, et pas uniquement aval ou client.
 
-L'atelier Boardriders du 29 juin 2026 a ajouté un point d'attention : le modèle fournisseur BRD est fortement lié aux usines, aux partner functions, aux entités de facturation et aux données poussées vers le PLM puis SAP. Le référentiel officiel est SRM, mais l'absence de synchronisation opérationnelle conduit aujourd'hui à une saisie manuelle.
+L'atelier Boardriders du 29 juin 2026 a ajouté un point d'attention : le modèle fournisseur BRD est fortement lié aux usines, aux partner functions, aux entités de facturation et aux informations poussées vers le PLM puis SAP. Le référentiel officiel est SRM, mais l'absence de synchronisation opérationnelle conduit aujourd'hui à une saisie manuelle.
 
 Ce sujet fait l'objet d'un hotspot dédié : [Fournisseur, usine et Agreement](../hotspots/fournisseur-usine-agreement-brd.md).
 
@@ -339,7 +339,7 @@ La vue BRD mentionne plusieurs notions autour du stock :
 
 Ce point est central.
 
-Le stock disponible apparaît à plusieurs endroits du paysage, ce qui confirme qu'il ne s'agit pas d'une simple donnée locale.
+Le stock disponible apparaît à plusieurs endroits du paysage, ce qui confirme qu'il ne s'agit pas d'une simple information locale.
 
 Le stock BRD n'a pas une source unique :
 
@@ -397,10 +397,10 @@ Ils peuvent consommer les faits, événements et historiques produits par FLOW, 
 | Transactionnel | SAP MM, SD, FI/CO, AFS, Inventory, Billing | Périmètre de remplacement initial ; SAP porte notamment le stock entrepôt |
 | OMS / commandes | NewStore | Périmètre de remplacement initial ; cycle de vie commande, annulation, préparation, SFS, promesse, allocation, intégration des stocks, notifications, SAV, paiement et déclenchement de facturation à analyser responsabilité par responsabilité |
 | Planification | SAP BPC, Optimate / APS | Sources ou contributeurs de demandes planifiées |
-| Produit / contenu | PLM Centric, PIM, DAM, Elastic | Systèmes contributeurs de données produit et contenus ; le PIM relève plutôt du design de l'offre / engagement et ne doit pas être remplacé par FLOW par défaut |
+| Produit / contenu | PLM Centric, PIM, DAM, Elastic | Systèmes contributeurs d'informations produit et contenus ; le PIM relève plutôt du design de l'offre / engagement et ne doit pas être remplacé par FLOW par défaut |
 | Fournisseurs | SNC, Fast, Vendor | Collaboration et qualité fournisseur ; contribution au contexte amont |
 | Commerce | Salesforce Commerce Cloud, Cegid Y2, B2C, B2B, retail | Expériences ou systèmes consommateurs ; Cegid porte le stock magasin |
-| Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités candidates FLOW : Inventory Visibility, Allocation & Promise ; la source du stock doit être explicitement qualifiée |
+| Stock / promesse | stock magasin, stock entrepôt, ATP, allocation / réservation | Capacités FLOW à instruire : Inventory Visibility, Allocation & Promise ; la source du stock doit être explicitement qualifiée |
 | Produit d'exécution | Référentiel produit d'exécution alimenté par PLM / PIM / Pricing selon arbitrage | Projection statique et gouvernée nécessaire à FLOW pour le fulfillment ; ne porte pas le processus de création ou d'enrichissement de l'offre |
 | Logistique | Maersk 4PL, C-Log, Bleckmann, WMS, TMS Connex, KTN | Systèmes d'exécution et sources d'événements |
 | Pilotage | BI Tableau / OPM, AWS Stream | Observation, reporting, performance et notifications IT |
@@ -419,7 +419,7 @@ Le panorama BRD conduit à plusieurs questions :
 - Les déclenchements de facturation, paiement, fidélité et remboursement doivent-ils être portés par FLOW, orchestrés par FLOW ou laissés à des services spécialisés ?
 - Les outils de planification comme Optimate ou BPC alimentent-ils FLOW en demandes, prévisions ou faits ?
 - Le PIM existant soutient-il principalement le design de l'offre, les assortiments, les commercial agreements, les prix et les canaux d'engagement client ?
-- Quelles données produit doivent être projetées dans un référentiel produit d'exécution consommable par FLOW ?
+- Quelles informations produit doivent être projetées dans un référentiel produit d'exécution consommable par FLOW ?
 - Les systèmes logistiques restent-ils seulement exécutants ou deviennent-ils aussi contributeurs d'événements métier ?
 - Quels composants doivent être remplacés, conservés, encapsulés ou simplement connectés ?
 - Quelle grille d'urbanisme commune permettra de comparer le positionnement des applications BRD et GBM ?
@@ -445,4 +445,4 @@ Le périmètre observé de NewStore renforce ce constat : NewStore porte aujourd
 
 Le cas du PIM va dans le même sens : BRD dispose déjà d'un système qui peut soutenir le design de l'offre, les assortiments, les commercial agreements, les prix et les contenus d'engagement client. La recommandation d'architecture est donc de ne pas intégrer le PIM dans FLOW par défaut.
 
-FLOW a en revanche besoin d'un référentiel produit d'exécution : une projection produit statique, gouvernée et limitée aux données nécessaires au fulfillment. Cette projection permet à FLOW de promettre, allouer, orchestrer et exécuter sans absorber la responsabilité de conception et d'enrichissement de l'offre.
+FLOW a en revanche besoin d'un référentiel produit d'exécution : une projection produit statique, gouvernée et limitée aux informations nécessaires au fulfillment. Cette projection permet à FLOW de promettre, allouer, orchestrer et exécuter sans absorber la responsabilité de conception et d'enrichissement de l'offre.

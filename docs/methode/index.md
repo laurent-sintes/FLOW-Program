@@ -20,7 +20,7 @@
 </div>
 <!-- FLOW-READING-CARD:END -->
 
-La méthodologie projet décrit la manière dont le programme FLOW passe des observations terrain aux choix d’urbanisme, de plateforme et de solution.
+La méthodologie projet décrit la manière dont le programme FLOW passe des observations terrain aux choix d’urbanisme, de plateforme, de solution et de trajectoire Build / Buy.
 
 Elle structure la progression du travail, en cohérence avec la vision et les principes directeurs.
 
@@ -28,7 +28,7 @@ Elle structure la progression du travail, en cohérence avec la vision et les pr
 
 La méthodologie FLOW doit distinguer deux temps.
 
-Le premier temps est le cadrage : comprendre, formuler, urbaniser, identifier les capacités, concevoir les produits et les solutions candidates.
+Le premier temps est le cadrage : comprendre, formuler, urbaniser, identifier les capacités, concevoir les produits, formuler les options de solution et arbitrer Build / Buy.
 
 Le second temps est le delivery : construire, tester, déployer, opérer et faire adopter les solutions.
 

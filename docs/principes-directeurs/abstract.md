@@ -30,7 +30,7 @@ FLOW doit créer du commun là où l'incohérence coûte cher.
 
 Ce commun ne se construit pas en imposant un processus unique ou un monolithe applicatif.
 
-Il se construit en clarifiant les responsabilités durables, en rendant les décisions explicites, en traitant la demande comme objet central, et en gouvernant les informations selon leur rôle réel : source de référence, projection ou donnée en transit.
+Il se construit en clarifiant les responsabilités durables, en rendant les décisions explicites, en traitant la demande comme objet central, et en gouvernant les informations selon leur rôle réel : source de référence, projection ou information en transit.
 
 ## Les sept principes en synthèse
 

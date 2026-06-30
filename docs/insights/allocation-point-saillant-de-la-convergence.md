@@ -197,7 +197,7 @@ Demande
     ↓
 Décisions
     ↓
-Données et ressources nécessaires
+Informations et ressources nécessaires
 ```
 
 ## Conséquences pour FLOW
@@ -207,7 +207,7 @@ Ce constat conduit à plusieurs conséquences :
 - l'allocation doit être analysée comme une responsabilité de décision, pas seulement comme une fonctionnalité ERP ou OMS ;
 - les règles d'allocation doivent être explicites, gouvernées, simulables et traçables ;
 - les événements qui déclenchent une allocation ou une réallocation doivent être identifiés ;
-- les données nécessaires à la décision doivent être distinguées des données de support ;
+- les informations nécessaires à la décision doivent être distinguées des informations de support ;
 - Inventory Visibility doit qualifier les ressources disponibles, futures ou réservables ;
 - le Case doit conserver l'historique des décisions d'allocation ;
 - les systèmes d'exécution peuvent rester autonomes, mais la logique de décision doit être compréhensible au niveau transverse.

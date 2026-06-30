@@ -275,7 +275,7 @@ FLOW expose ses capacités au travers de :
 - APIs unitaires ;
 - APIs de masse ;
 - événements ;
-- projections de données ;
+- projections d'informations ;
 - flux analytiques.
 
 Mais l'ouverture ne se limite pas à la consommation.

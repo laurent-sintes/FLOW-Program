@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>12 min</strong>
+      <strong>14 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -36,8 +36,10 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Bon niveau de commun | [Vision](vision/vision.md#ambition-converger-sans-necessairement-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande-demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
 | Engagement / Demand / Fulfillment / Supply | [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#engagement-demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) |
+| Donnée / Information | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Processus de cadrage](methode/processus-de-cadrage.md#vocabulaire-de-cadrage) |
 | Donnée au repos | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) |
 | Donnée en transit | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
+| Domaine / responsabilité / capacité / produit | [Concepts clés](vision/concepts-cles.md#domaine-responsabilite-capacite-produit) · [Processus de cadrage](methode/processus-de-cadrage.md#vocabulaire-de-cadrage) |
 | Engagement | [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#engagement-demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) |
 | Fulfillment Network / Réseau d'exécution | [Concepts clés](vision/concepts-cles.md#fulfillment-network-reseau-dexecution) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) · [Fiche produit](architecture-cible/produits/fulfillment-network-configuration.md) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
@@ -84,6 +86,12 @@ Principe selon lequel la convergence ne consiste pas à appliquer un modèle uni
 
 Selon la responsabilité, FLOW peut rendre une capacité commune, unifier, standardiser, fédérer ou différencier.
 
+### Build / Buy
+
+Arbitrage qui consiste à décider s'il faut acheter une solution du marché, construire une solution sur la plateforme, ou combiner les deux.
+
+Dans FLOW, cet arbitrage arrive après la clarification des responsabilités, capacités, produits, fonctionnalités, exigences et options de solution.
+
 ### B2B — Business to Business
 
 Modèle dans lequel l'entreprise vend à des clients professionnels, distributeurs, franchisés, agents ou partenaires commerciaux.
@@ -93,6 +101,12 @@ Modèle dans lequel l'entreprise vend à des clients professionnels, distributeu
 Périmètre issu de Boardriders dans le programme FLOW, historiquement plus orienté B2B / wholesale puis adapté au retail et à l'omnicanal.
 
 ## C
+
+### Cadrage
+
+Phase amont qui transforme les observations terrain en vision, principes, domaines, responsabilités, capacités, produits, fonctionnalités, exigences, options de solution et trajectoire Build / Buy.
+
+Le cadrage prépare le delivery, mais ne remplace pas les spécifications de réalisation.
 
 ### Capacité
 
@@ -142,6 +156,12 @@ Il précise notamment source de référence, consommateurs, mode d'échange, gra
 
 ## D
 
+### Delivery
+
+Phase de réalisation qui suit le cadrage : construction ou intégration, tests, déploiement, run et adoption opérationnelle.
+
+Le delivery produit les spécifications, les développements, les paramétrages, les tests et les mises en production.
+
 ### Demi-flux
 
 Intuition d'architecture qui sépare la publication d'une information de sa consommation.
@@ -166,13 +186,27 @@ Dans cette expression, Demand porte l'intention qualifiée et la [promesse](#pro
 
 Choix explicite qui fait progresser le traitement d'un Case.
 
-Une décision s'appuie sur des faits, des données, des règles ou policies, et produit un résultat traçable.
+Une décision s'appuie sur des faits, des informations, des règles ou policies, et produit un résultat traçable.
 
 Dans FLOW, une décision est une fonction métier du Case Management et ne doit pas être confondue avec un arbitrage de programme.
 
 ### Document
 
 Pièce opérationnelle, commerciale, logistique ou financière associée à un Case : facture, bon de livraison, bon de retour, avoir, packing list, contrat ou preuve.
+
+### Donnée
+
+Élément représenté dans un système, un échange ou un stockage.
+
+Une donnée peut être brute, technique ou déjà structurée. Elle devient réellement exploitable lorsqu'elle est contextualisée, qualifiée et contrôlée.
+
+Dans FLOW, on utilise souvent le mot donnée dans le langage courant. Quand l'enjeu porte sur le sens métier, la responsabilité, la qualité, la source de référence ou la décision, le terme information est plus précis.
+
+### Domaine
+
+Grand espace de responsabilité métier durable, indépendant des applications et organisations actuelles.
+
+Dans FLOW, Engagement, Demand, Fulfillment et Supply sont des domaines ou espaces de responsabilité qui aident à raisonner au bon niveau avant de parler de solutions.
 
 ### Donnée au repos
 
@@ -184,7 +218,7 @@ Information qui circule entre domaines, applications ou plateformes.
 
 Dans FLOW, elle doit être gouvernée par contrat de données plutôt que traitée comme un simple flux technique opportuniste.
 
-### Donnée de référence / donnée partagée
+### Information de référence / information partagée
 
 Information nécessaire à plusieurs usages ou domaines, dont la responsabilité, la qualité et la disponibilité sont gouvernées.
 
@@ -210,6 +244,12 @@ Signal indiquant qu'un fait ou un état métier significatif a changé.
 
 Un événement est publié pour être consommé par d'autres domaines ou projections.
 
+### Exigence
+
+Condition attendue pour qu'une capacité, un produit ou une solution soit acceptable.
+
+Une exigence peut venir du métier, de l'architecture, de la sécurité, du run ou de l'intégration. Certaines exigences pèsent fortement sur l'architecture, le coût complet ou l'arbitrage Build / Buy, mais il n'est pas nécessaire d'en faire une catégorie séparée dans le vocabulaire courant.
+
 ## F
 
 ### Fact / Fait
@@ -221,6 +261,14 @@ Un fait peut servir à constater, décider, promettre, allouer ou expliquer.
 ### Flux projet
 
 Échange conçu pour répondre à un besoin local de projet, souvent sans gouvernance durable des producteurs, consommateurs, fraîcheur et qualité.
+
+### Fonctionnalité
+
+Usage concret attendu d'un produit ou d'une capacité, formulé pendant le cadrage sans descendre encore au design détaillé.
+
+Pendant le cadrage, une fonctionnalité peut rester candidate tant qu'elle n'est pas retenue dans une trajectoire.
+
+Exemple : créer une réservation temporaire, consulter une disponibilité ou publier un événement de changement de statut.
 
 ### Fulfillment
 
@@ -268,9 +316,11 @@ Sujet de tension métier ou architecture qui nécessite une analyse avant d'êtr
 
 ### Information
 
-Donnée structurée suffisamment complète pour porter un sens métier.
+Donnée contextualisée et qualifiée, suffisamment complète pour porter un sens métier ou soutenir une décision.
 
 Si on la découpe davantage, on perd le sens utile pour le métier, la décision ou le système.
+
+Exemples : une quantité seule est une donnée ; la disponibilité d'un article pour un canal et une promesse donnée est une information. Un code statut est une donnée ; le statut métier d'un Case, interprétable par un acteur ou une règle, est une information.
 
 ### Insight
 
@@ -400,6 +450,12 @@ Décision ou processus visant à réalimenter un magasin, dépôt, canal ou pér
 
 Mécanisme permettant de détecter, expliquer et corriger les écarts entre sources, projections, événements ou systèmes.
 
+### RFI / RFP / RFQ
+
+Séquence de consultation utilisée dans une trajectoire Buy.
+
+La RFI explore le marché et les capacités disponibles ; la RFP compare des réponses structurées sur les cas d'usage et exigences ; la RFQ chiffre une cible contractualisable.
+
 ### Responsabilité
 
 Mission durable que l'entreprise doit assumer.
@@ -435,6 +491,20 @@ Composant structurant du paysage GBM autour de l'e-commerce, de l'omnicanal, des
 Application, service ou domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné.
 
 Une source de référence ne doit pas être confondue avec une projection, une vue 360 ou un agrégat de consultation.
+
+### Solution
+
+Option de mise en œuvre possible pour couvrir un ensemble de fonctionnalités, contraintes et exigences.
+
+Pendant le cadrage, plusieurs solutions peuvent rester candidates avant l'arbitrage Build / Buy.
+
+Une solution peut être une extension d'existant, un produit du marché, un développement sur la plateforme ou une trajectoire hybride.
+
+### Spécification
+
+Livrable de delivery qui décrit précisément le comportement à construire ou paramétrer : règles fines, écrans, contrats API, événements, mappings, jeux de données, tests et comportements d'erreur.
+
+Elle ne doit pas être confondue avec le cadrage, qui stabilise d'abord les responsabilités, capacités, produits et exigences.
 
 ### Stock Unifié
 

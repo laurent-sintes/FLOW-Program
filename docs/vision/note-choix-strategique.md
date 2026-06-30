@@ -94,7 +94,7 @@ Parce que les irritants convergent.
 - Les coûts et adhérences applicatives augmentent.
 - Le stock et les demandes doivent être visibles à l'échelle groupe.
 - Le fulfillment omnicanal devient un levier business.
-- Les flux de données doivent sortir de la logique projet pour devenir gouvernables.
+- Les flux d'informations doivent sortir de la logique projet pour devenir gouvernables.
 - Les roadmaps IT doivent devenir plus consolidées et plus stratégiques.
 
 L'enjeu n'est donc pas seulement de moderniser.
@@ -152,7 +152,7 @@ Une fois le centre de gravité confirmé, la vision FLOW doit être sécurisée 
 - Quels systèmes sortir, conserver, encapsuler ou réintégrer ?
 - Quel niveau d'investissement accepter pour rendre le stock, les événements et les décisions métier gouvernables ?
 - Quel catalogue produit FLOW doit-il consommer pour gérer produits conçus et produits importés ?
-- Qui est source de référence des données fournisseur, usine, Agreement, PLM, Finance et Supply nécessaires au calcul des dates de promesse ?
+- Qui est source de référence des informations fournisseur, usine, Agreement, PLM, Finance et Supply nécessaires au calcul des dates de promesse ?
 - Quelles responsabilités du module Négoce StoreLand doivent entrer dans FLOW ?
 - Quel modèle de gouvernance produit pour piloter FLOW dans la durée ?
 

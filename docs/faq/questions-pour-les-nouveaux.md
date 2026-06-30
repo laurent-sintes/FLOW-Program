@@ -126,9 +126,23 @@ Il sert à réduire fortement la fenêtre d'erreur, rendre la disponibilité exp
 
 À lire ensuite : [Stock Unifié](../architecture-cible/produits/stock-unifie.md).
 
+### Donnée, information, fait, événement : c'est quoi la différence ?
+
+Une donnée est un élément représenté dans un système : une quantité, un code article, un identifiant magasin, un timestamp.
+
+Une information est une donnée contextualisée et qualifiée, qui porte un sens métier : `15 pièces disponibles pour l'article X dans le magasin Y à 10h32`.
+
+Un fait décrit une réalité observée ou calculée à un instant donné : `le stock disponible est de 15`.
+
+Un événement signale qu'un fait ou un état significatif a changé : `StockDisponibleMisAJour`, `CommandeExpédiée`, `AllocationDécidée`.
+
+Le raccourci utile : la donnée est la matière, l'information porte le sens, le fait décrit ce qui est vrai à un instant, l'événement raconte ce qui vient de changer.
+
+À lire ensuite : [Glossaire](../glossaire.md), [Modèle de fonctionnement de FLOW](../vision/modele-fonctionnement-flow.md) et [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md).
+
 ### Pourquoi ne pas parler simplement de Master Data ?
 
-Parce que le terme mélange trop de choses : objets ERP, données de référence, discipline MDM, projections, paramètres, règles, faits, documents.
+Parce que le terme mélange trop de choses : objets ERP, informations de référence, discipline MDM, projections, paramètres, règles, faits, documents.
 
 FLOW préfère qualifier les informations avec quatre questions simples :
 

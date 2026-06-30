@@ -68,7 +68,7 @@ L'EAI utilisé pour les échanges repose sur Dollar Universe (`$U`), ordonnanceu
 
 La brique EAI interne gère notamment la transformation et la dépose des fichiers. Les jobs Talend assurent aussi des transcodifications, par exemple vers le format attendu par UR.
 
-Les informations de tracking et de confirmation de commande transitent par l'OMS, qui retransmet ensuite les données vers UR.
+Les informations de tracking et de confirmation de commande transitent par l'OMS, qui les retransmet ensuite vers UR.
 
 L'OMS modifie uniquement les informations nécessaires dans les fichiers d'interface, de manière transparente pour les sites.
 
@@ -108,7 +108,7 @@ Cette différence est structurante pour FLOW. Elle montre qu'une même brique OM
 
 ![OMS C-LOG - orchestration des commandes](../assets/images/atelier-c-log-oms-orchestration-commandes.png)
 
-L'OMS met en concurrence plusieurs plans d'orchestration selon les données de la commande.
+L'OMS met en concurrence plusieurs plans d'orchestration selon les informations de la commande.
 
 Un plan est éligible si :
 
@@ -169,7 +169,7 @@ Pour les commandes vers entrepôt ou magasin, un transporteur par défaut est pa
 
 Les informations sur les transporteurs, les cut-off et les jours de départ sont intégrées quotidiennement dans l'OMS via des fichiers référentiels provenant de Transware.
 
-Le plan de transport définit les jours de livraison possibles selon le magasin et le transporteur. Ces données viennent de Transware, pas de StoreLand.
+Le plan de transport définit les jours de livraison possibles selon le magasin et le transporteur. Ces informations viennent de Transware, pas de StoreLand.
 
 L'OMS utilise donc le plan de transport, les jours de départ transporteur, les cut-off, les délais et les disponibilités des points relais pour orchestrer les commandes.
 
@@ -304,7 +304,7 @@ Cette situation conforte plusieurs concepts FLOW :
 | Fulfillment Network Configuration | Les entrepôts, capacités, plans actifs, services transport, crossdock et tournées relèvent d'une configuration de réseau d'exécution. |
 | Supply Service Registry | Les services WMS, TMS, Transware, transporteurs, SLA, cut-off, disponibilités et conditions d'appel doivent être décrits comme services mobilisables, pas seulement comme interfaces techniques. |
 | Décision métier explicite | Le score coût / délai / complétude est une décision métier paramétrable, explicable et gouvernable. |
-| Données en transit gouvernées | Les fichiers stock, `MVTOPT2`, batchs, SCORETEX / IRMA, Dataiku, EAI, Transware et mises à jour ERP montrent un fort besoin de contrats de données, fraîcheur, supervision et réconciliation. |
+| Informations en transit gouvernées | Les fichiers stock, `MVTOPT2`, batchs, SCORETEX / IRMA, Dataiku, EAI, Transware et mises à jour ERP montrent un fort besoin de contrats de données, fraîcheur, supervision et réconciliation. |
 | Source de référence / projection | StoreLand ne voit pas toutes les réservations ; Transware porte le plan transport ; le WMS porte certaines spécificités colis. FLOW devra donc distinguer précisément les sources de référence, projections et vues. |
 
 ## Arbitrage de positionnement de l'OMS

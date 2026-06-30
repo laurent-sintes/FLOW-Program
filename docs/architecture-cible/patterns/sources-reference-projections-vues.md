@@ -26,7 +26,7 @@ Ce pattern décrit comment cartographier les informations dans un SI distribué 
 
 L'idée centrale est simple :
 
-> Cartographier les données par leur source de référence, pas par les vues, copies ou agrégats où elles sont visibles.
+> Cartographier les informations par leur source de référence, pas par les vues, copies ou agrégats où elles sont visibles.
 
 Une information devient fiable pour FLOW lorsqu'elle est créée, validée ou maintenue dans un domaine responsable, avec un minimum de qualité contrôlé par un processus.
 
@@ -64,7 +64,7 @@ La source de référence n'est pas nécessairement :
 - une base unique ;
 - un MDM central ;
 - une source de vérité absolue ;
-- le premier endroit où la donnée a été saisie ;
+- le premier endroit où l'information a été saisie ;
 - la vue la plus complète.
 
 Elle est le lieu où l'information est suffisamment contrôlée pour faire foi dans un contexte donné.
@@ -76,13 +76,13 @@ Ce vocabulaire FLOW s'appuie sur plusieurs notions reconnues en data management 
 | Référence | Apport pour FLOW |
 | --- | --- |
 | [Master Data Management — Gartner](https://www.gartner.com/en/data-analytics/topics/master-data-management) | Positionne le MDM comme une discipline de gouvernance, qualité et gestion des données critiques, pas seulement comme un référentiel technique. |
-| [Master Data Management — Informatica](https://www.informatica.com/resources/articles/what-is-master-data-management.html) | Explique les notions de master record, golden record, vue fiable et donnée gouvernée entre plusieurs applications. |
+| [Master Data Management — Informatica](https://www.informatica.com/resources/articles/what-is-master-data-management.html) | Explique les notions de master record, golden record, vue fiable et information gouvernée entre plusieurs applications. |
 | [System of Record](https://en.wikipedia.org/wiki/System_of_record) | Donne le vocabulaire courant de système ou source faisant autorité pour une information donnée. |
 | [Golden Record](https://en.wikipedia.org/wiki/Golden_record_%28informatics%29) | Rappelle la notion de version consolidée ou validée d'un enregistrement dans une démarche MDM. |
 | DAMA-DMBOK — *Data Management Body of Knowledge* | Cadre de référence de la discipline data management : gouvernance, qualité, architecture, MDM, reference data, metadata et responsabilités data. |
 | ISO 8000 — Data quality / Master data | Référence normative autour de la qualité des données et des échanges de master data, utile pour ancrer les notions de qualité, provenance et données maîtrisées. |
 
-FLOW ne reprend pas directement l'expression `System of Record`, car elle est trop applicative et peut laisser croire qu'une donnée n'a qu'un seul maître absolu.
+FLOW ne reprend pas directement l'expression `System of Record`, car elle est trop applicative et peut laisser croire qu'une information n'a qu'un seul maître absolu.
 
 L'expression **source de référence** est retenue pour les ateliers parce qu'elle est plus lisible et qu'elle met l'accent sur le processus qui contrôle l'information.
 
@@ -101,7 +101,7 @@ Pour chaque information importante, FLOW doit identifier :
 
 Cette méthode permet de distinguer :
 
-- la donnée qui fait référence ;
+- l'information qui fait référence ;
 - la projection utile à FLOW ;
 - la vue qui aide un utilisateur ;
 - le contrat de données qui encadre la circulation.

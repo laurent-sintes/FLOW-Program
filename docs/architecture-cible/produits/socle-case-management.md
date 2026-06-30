@@ -208,7 +208,7 @@ Les décisions de Case Management ne sont pas autonomes.
 
 Elles s'appuient sur des projections issues de domaines responsables, avec un ownership explicite.
 
-| Domaine contributeur | Données ou règles consommées par la décision | Usage dans le Case |
+| Domaine contributeur | Informations ou règles consommées par la décision | Usage dans le Case |
 | --- | --- | --- |
 | SRM | Fournisseur, usine / site de production, relation fournisseur-usine, habilitations, Agreement selon périmètre | Identifier le bon acteur opérationnel et les droits applicables |
 | PLM | Contrats ou éléments d'Agreement négociés pendant la conception produit | Comprendre les conditions utiles à l'achat, à la promesse ou à l'exécution |
@@ -232,7 +232,7 @@ Cette distinction évite de coder la logique métier directement dans un process
 
 La décision métier est guidée par la <span class="flow-keyword">Business Policy</span> plutôt que codée dans les enchaînements de tâches.
 
-## Capacités candidates
+## Capacités à instruire
 
 - Définir un type de Case.
 - Créer un Case.
@@ -248,7 +248,7 @@ La décision métier est guidée par la <span class="flow-keyword">Business Poli
 - Gérer les exceptions et escalades.
 - Déléguer des tâches à des systèmes d'exécution via API.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API de création de Case.
 - API de consultation de Case.
@@ -259,7 +259,7 @@ La décision métier est guidée par la <span class="flow-keyword">Business Poli
 - Événements consommés : stock movement, allocation result, supply status, shipping confirmation, document received, payment / finance status, customer notification status.
 - Intégration avec moteur de règles, workflow, CEP, IAM / IDP, API Gateway et produits FLOW.
 
-## Architecture candidate du socle
+## Architecture du socle à instruire
 
 Le socle peut combiner plusieurs composants spécialisés.
 
@@ -280,7 +280,7 @@ Cette architecture doit éviter une confusion : le moteur de workflow n'est qu'u
   <p>Le Case porte la demande, le contexte, les décisions métier et l'histoire.</p>
 </div>
 
-## Proposition technique candidate
+## Proposition technique à évaluer
 
 Cette fiche ne constitue pas encore un choix d'architecture technique.
 

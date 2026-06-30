@@ -35,7 +35,7 @@
       <li>Le groupe s'est construit par acquisitions, marques, canaux et héritages IT.</li>
       <li>Les demandes sont dispersées entre B2C, B2B, retail, wholesale, SAV, retours et exceptions.</li>
       <li>Le stock, les commandes et les décisions métier ne sont pas toujours lisibles dans une même vérité.</li>
-      <li>Les flux de données naissent encore trop souvent projet par projet.</li>
+      <li>Les flux d'informations naissent encore trop souvent projet par projet.</li>
     </ul>
   </section>
 

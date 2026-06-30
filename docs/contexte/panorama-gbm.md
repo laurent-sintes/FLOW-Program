@@ -585,7 +585,7 @@ Plusieurs responsabilités devront être clarifiées dans les prochains travaux 
 - orchestration omnicanale ;
 - articulation magasin / e-commerce / marketplace / B2B / logistique ;
 - retours, remboursements et litiges ;
-- données produit, article, saison et assortiment ;
+- informations produit, article, saison et assortiment ;
 - interfaces avec Finance et systèmes d'exécution.
 
 ## Questions structurantes pour FLOW
@@ -606,7 +606,7 @@ Le panorama GBM conduit à plusieurs questions :
 - Les responsabilités d'UR relèvent-elles d'une capacité cible de Case / Order Lifecycle Orchestration ?
 - Socloz porte-t-il une responsabilité d'OMS, de promesse, de réservation, d'orchestration omnicanale ou seulement d'intégration e-commerce ?
 - Quelles responsabilités relèvent de C-LOG en tant qu'opérateur logistique, de l'OMS C-LOG, de l'EAI C-LOG, du WMS et de Transware ?
-- L'EAI C-LOG transporte-t-il uniquement des données ou masque-t-il aussi des transformations structurantes pour la décision ?
+- L'EAI C-LOG transporte-t-il uniquement des informations ou masque-t-il aussi des transformations structurantes pour la décision ?
 - Où se trouve aujourd'hui la vision fiable du stock disponible par canal ?
 - Le moteur réassort est-il une capacité décisionnelle à conserver hors FLOW, à connecter ou à intégrer ?
 - Comment intégrer le B2B dans FLOW sans forcer le modèle retail historique de GBM ?

@@ -56,7 +56,7 @@ La question de départ peut donc être formulée ainsi :
 
 Cette question ouvre immédiatement une analyse d'urbanisme.
 
-Les applications initialement visées ne sont pas isolées. Elles s'inscrivent dans un paysage d'applications, d'intégrations, de référentiels, de systèmes d'exécution, de flux logistiques, de données produit, de canaux et de solutions de pilotage.
+Les applications initialement visées ne sont pas isolées. Elles s'inscrivent dans un paysage d'applications, d'intégrations, de référentiels, de systèmes d'exécution, de flux logistiques, d'informations produit, de canaux et de solutions de pilotage.
 
 ## Trois trajectoires à comprendre
 
@@ -175,7 +175,7 @@ Sans cette grille commune, chaque périmètre risque de décrire son SI avec ses
 | Logique dominante | Centralisation autour de SAP et NewStore | Fédération historique par marque | Autonomie produit, APIs, microservices |
 | Socle principal | SAP, NewStore | StoreLand, Socloz, UR comme composant transverse | Composants digitaux et services spécialisés |
 | Force principale | Robustesse transactionnelle et structuration des flux | Préservation des spécificités métiers retail et marques | Capacité d'évolution, culture produit et intégration par services |
-| Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles, instances et données | Risque de spécialisation locale ou d'intégration spécifique |
+| Limite principale | Complexité des règles, paramétrages et responsabilités de décision | Dispersion des outils, règles, instances et informations | Risque de spécialisation locale ou d'intégration spécifique |
 | Signal fort pour FLOW | Allocation, ATP, stock disponible, cycle de vie commande | UR révèle le besoin d'orchestration transverse ; Négoce révèle la convergence intra-GBM | FLOW doit rester ouvert aux architectures plus modulaires |
 
 ## Comparaison par responsabilités

@@ -72,7 +72,7 @@ Il ne représente pas l'entreprise dans son ensemble, comme le ferait souvent un
 | SLA | Policy / Fact | Projection ou source de référence selon gouvernance |
 | Zone de couverture | Nomenclature / Policy | Source de référence ou projection |
 
-## Capacités candidates
+## Capacités à instruire
 
 - Créer et maintenir un nœud d'exécution.
 - Déclarer les capacités d'un nœud.
@@ -82,7 +82,7 @@ Il ne représente pas l'entreprise dans son ensemble, comme le ferait souvent un
 - Versionner la configuration.
 - Auditer les changements de configuration.
 
-## Interfaces candidates
+## Interfaces à instruire
 
 - API de consultation du réseau.
 - API de recherche de nœuds éligibles.

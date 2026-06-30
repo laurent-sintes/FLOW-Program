@@ -68,8 +68,8 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Plateforme Demand</span> | FLOW devient le lieu de cohérence des demandes, décisions métier, stock, promesses, événements et exceptions. |
 | <span class="flow-keyword">Colonne vertébrale opérationnelle</span> | FLOW porte les responsabilités qui doivent rester cohérentes — demandes, décisions métier, statuts, événements, stock, promesses et orchestration — sans réécrire tout le SI. |
 | <span class="flow-keyword">Capacités d'intégration</span> | Un service réintégré autour de FLOW doit pouvoir exposer des APIs, publier des événements, partager des statuts, corréler ses objets et participer à la réconciliation. |
-| <span class="flow-keyword">Contrat de données</span> | Une donnée en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
-| <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, pas une donnée locale extraite d'un système. |
+| <span class="flow-keyword">Contrat de données</span> | Une information en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
+| <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, pas une simple information locale extraite d'un système. |
 | <span class="flow-keyword">Fulfillment Network</span> / <span class="flow-keyword">Réseau d'exécution</span> | Le réseau d'exécution décrit les nœuds, services, capacités, contraintes et conditions d'usage mobilisables pour satisfaire une demande. |
 | <span class="flow-keyword">Agreement</span> | L'Agreement porte les conditions et règles de traitement qui permettent de gérer la variation sans multiplier les processus. |
 | <span class="flow-keyword">Décision</span> / <span class="flow-keyword">règles</span> / <span class="flow-keyword">policies</span> | Les décisions métier doivent être explicites, traçables, gouvernées et capables de faire évoluer le Case. |
@@ -191,7 +191,7 @@ Il prolonge l'intuition du demi-flux : distinguer la publication d'une informati
 
 ## Stock Unifié
 
-Le <span class="flow-keyword">Stock Unifié</span> n'est pas seulement une consolidation de données.
+Le <span class="flow-keyword">Stock Unifié</span> n'est pas seulement une consolidation d'informations.
 
 C'est une capacité d'entreprise qui doit permettre de répondre à des questions opérationnelles :
 
@@ -235,7 +235,7 @@ Le contexte, les Agreements et les règles pilotent dynamiquement les variations
 
 Une <span class="flow-keyword">décision</span> est un choix explicite qui fait progresser le traitement d'un Case.
 
-Elle s'appuie sur des faits, des données et des règles de comportement.
+Elle s'appuie sur des faits, des informations et des règles de comportement.
 
 Elle doit pouvoir être comprise, tracée, auditée, simulée et modifiée.
 
@@ -288,7 +288,7 @@ Un <span class="flow-keyword">hotspot</span> est un point de tension à instruir
 
 Il n'est pas encore un arbitrage stabilisé.
 
-Il concentre souvent plusieurs dimensions : business model, application existante, responsabilité cible, règle, donnée, finance, exécution ou trajectoire de transformation.
+Il concentre souvent plusieurs dimensions : business model, application existante, responsabilité cible, règle, information, finance, exécution ou trajectoire de transformation.
 
 Les hotspots évitent de masquer trop tôt les zones difficiles sous une architecture trop propre.
 
@@ -316,4 +316,4 @@ Cette taxonomie permet de ne pas confondre un outil existant, une équipe, un pr
 
 Les concepts FLOW ne sont pas des mots nouveaux pour faire moderne.
 
-Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de la donnée miroir vers la capacité d'action, du flux projet vers le contrat de données, et de l'uniformisation vers le bon niveau de commun.
+Ils servent à déplacer le raisonnement : de l'application vers la responsabilité, du document vers la demande, de l'information miroir vers la capacité d'action, du flux projet vers le contrat de données, et de l'uniformisation vers le bon niveau de commun.

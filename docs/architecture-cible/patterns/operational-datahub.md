@@ -26,7 +26,7 @@ Un Operational DataHub construit une vérité opérationnelle fraîche, gouvern�
 
 Il ne s'agit pas d'un entrepôt analytique.
 
-Il collecte des événements ou faits opérationnels, maintient des projections fiables, expose leur fraîcheur et rend la donnée utilisable dans les décisions.
+Il collecte des événements ou faits opérationnels, maintient des projections fiables, expose leur fraîcheur et rend l'information utilisable dans les décisions.
 
 ![Pattern — Operational DataHub](../../assets/images/pattern-operational-datahub.svg)
 
@@ -62,7 +62,7 @@ L'Operational DataHub sépare :
 
 Ce pattern est central pour le [Stock Unifié](../produits/stock-unifie.md).
 
-Il peut aussi servir à structurer certaines Vues 360 ou capacités de données en transit.
+Il peut aussi servir à structurer certaines Vues 360 ou capacités de gouvernance de l'information en transit.
 
 ## Risques
 

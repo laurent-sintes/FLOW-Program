@@ -282,7 +282,7 @@ Rôle :
 
 - décrire le positionnement cible de FLOW ;
 - expliciter les patterns ;
-- décrire les produits candidats ;
+- décrire les produits à instruire ;
 - montrer l'articulation avec les écosystèmes GBM et BRD.
 
 Impact à vérifier :
@@ -290,7 +290,7 @@ Impact à vérifier :
 - toute évolution d'un produit FLOW peut impacter l'overview, les schémas, les concepts clés, les hotspots et le glossaire ;
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
-- la gouvernance des données en transit est une pratique transverse, pas un produit FLOW candidat ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
+- la gouvernance des données en transit est une pratique transverse, pas un produit FLOW à instruire ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
 - tous les SVG de `docs/assets/images/` sont générés par `scripts/generate_svg_diagrams.py` et doivent être modifiés via le générateur afin de préserver les retours à la ligne, les hauteurs automatiques de blocs et le contrôle de cohérence ;
 - tous les SVG doivent rester exportables dans Word / PowerPoint : vectoriels, avec `viewBox`, `preserveAspectRatio="xMidYMid meet"`, sans image bitmap embarquée et sans `foreignObject` ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
@@ -362,11 +362,11 @@ Fichiers clés :
 
 Rôle :
 
-- expliquer comment le programme passe des observations aux choix de conception ;
+- expliquer comment le programme passe des observations aux choix de conception et à la trajectoire Build / Buy ;
 
 Impact à vérifier :
 
-- tout changement de méthode doit rester cohérent avec la chaîne vision, principes, domaines, responsabilités, capacités, produits, solutions candidates.
+- tout changement de méthode doit rester cohérent avec la chaîne vision, principes, domaines, responsabilités, capacités, produits, options de solution, arbitrage Build / Buy et trajectoire de réalisation.
 
 ### Administration du référentiel
 
@@ -464,6 +464,12 @@ Concepts à maintenir dans le temps :
 - domaines, responsabilités, capacités et produits avant applications ou organigrammes ;
 - rôles, relations et policies plutôt que cardinalités figées dans le cœur ;
 - hotspots comme points de tension à instruire, pas comme détails à masquer.
+
+Règle de vocabulaire :
+
+- utiliser `information` quand l'enjeu porte sur le sens métier, la décision, la responsabilité, la qualité, la source de référence, la projection ou l'usage ;
+- réserver `donnée` aux cas où l'on parle explicitement de donnée brute, modèle de données, jeu de données, contrat de données, master data, data management ou gouvernance des données en transit ;
+- ne pas remplacer mécaniquement : `contrat de données` et `gouvernance des données en transit` restent des termes d'architecture reconnus.
 
 Formulations à éviter :
 

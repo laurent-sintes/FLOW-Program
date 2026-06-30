@@ -20,11 +20,11 @@
 </div>
 <!-- FLOW-READING-CARD:END -->
 
-Cette section initialise les premiers produits candidats de la plateforme FLOW.
+Cette section initialise les premiers produits à instruire pour la plateforme FLOW.
 
 Une fiche produit n'est pas encore un backlog détaillé.
 
-Elle sert à donner à un PO ou un PM une base cohérente pour démarrer : intention, responsabilités, consommateurs, données manipulées, capacités, interfaces, premières questions et premiers epics.
+Elle sert à donner à un PO ou un PM une base cohérente pour démarrer : intention, responsabilités, consommateurs, informations manipulées, capacités, interfaces, premières questions et premiers epics.
 
 ## Produits initialisés
 
@@ -54,7 +54,7 @@ Ses consommateurs
     ↓
 Ses informations clés
     ↓
-Ses capacités candidates
+Ses capacités à instruire
     ↓
 Ses interfaces
     ↓

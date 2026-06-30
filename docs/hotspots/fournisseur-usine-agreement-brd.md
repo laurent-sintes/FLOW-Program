@@ -52,11 +52,11 @@ La fiche fournisseur porte notamment :
 
 Cette fiche fournisseur pousse certaines informations dans le PLM.
 
-Le PLM repousse ensuite la donnée complète dans SAP, afin que les informations produit, fournisseur, usine et conditions associées restent cohérentes dans le socle SAP.
+Le PLM repousse ensuite l'information complète dans SAP, afin que les informations produit, fournisseur, usine et conditions associées restent cohérentes dans le socle SAP.
 
 Le référentiel officiel est SRM, mais il n'existe pas aujourd'hui de mécanisme de synchronisation opérationnel. C'est ce qui explique la saisie manuelle.
 
-La suite de l'atelier ajoute un autre point d'attention : l'intégration SRM / PLM ne concerne pas seulement la donnée. Elle conditionne aussi les habilitations des fournisseurs, agents ou responsables d'usine lorsqu'ils se connectent à la SRM.
+La suite de l'atelier ajoute un autre point d'attention : l'intégration SRM / PLM ne concerne pas seulement l'information. Elle conditionne aussi les habilitations des fournisseurs, agents ou responsables d'usine lorsqu'ils se connectent à la SRM.
 
 ## Le point de tension
 
@@ -107,7 +107,7 @@ Des notions utiles pour plusieurs domaines y sont concentrées dans une même fi
 - adresse ou rôle de commande ;
 - entité de facturation ;
 - relation fournisseur / usine / agent ;
-- données nécessaires au PLM et à SAP.
+- informations nécessaires au PLM et à SAP.
 
 Dans l'architecture FLOW, il n'est pas évident que ces informations doivent rester concentrées au même endroit.
 
@@ -123,15 +123,15 @@ L'hypothèse cible est plutôt de séparer les responsabilités par domaine.
 | Transportation Zone | Fulfillment Network, transport ou Supply Service Registry |
 | Adresse de commande | Rôle de partie prenante ou partner function |
 | Habilitations SRM | Règles d'accès fondées sur les rôles, relations et périmètres de responsabilité |
-| Données utiles au PLM | Projection amont consommée par le PLM, sans faire du PLM la source de tous les rôles |
+| Informations utiles au PLM | Projection amont consommée par le PLM, sans faire du PLM la source de tous les rôles |
 
 ## Cartographie data et flux
 
 Ce hotspot n'est pas un problème infranchissable.
 
-Il implique surtout un travail sérieux de cartographie des données, des flux et des sources de référence : qui paramètre quoi, qui contrôle quelle information, et quelle projection FLOW ou Case Management doit consommer pour calculer une décision.
+Il implique surtout un travail sérieux de cartographie des informations, des flux et des sources de référence : qui paramètre quoi, qui contrôle quelle information, et quelle projection FLOW ou Case Management doit consommer pour calculer une décision.
 
-La décision portée par le Case Management ne s'appuie pas sur une donnée unique.
+La décision portée par le Case Management ne s'appuie pas sur une information unique.
 
 Elle combine potentiellement :
 
@@ -144,9 +144,9 @@ Elle combine potentiellement :
 | Finance | Règles de facturation, entités juridiques, contraintes documentaires ou processus de facturation | FLOW doit consommer les règles utiles à la décision sans absorber la comptabilité. |
 | Supply / exécution | Lead times, capacités, contraintes transport, disponibilité future | Ces informations alimentent directement le calcul des dates de promesse. |
 
-La question n'est donc pas : où mettre toute la donnée ?
+La question n'est donc pas : où mettre toutes les informations ?
 
-La question est : quelle donnée est autorisée par quel domaine, avec quelle fraîcheur, quelle traçabilité et quelle responsabilité de mise à jour ?
+La question est : quelle information est autorisée par quel domaine, avec quelle fraîcheur, quelle traçabilité et quelle responsabilité de mise à jour ?
 
 ## Exemple métier
 
@@ -176,8 +176,8 @@ Le modèle cible ne doit donc pas écraser ces rôles dans une notion unique de 
 | Usine vs fournisseur | FLOW doit-il distinguer systématiquement le fournisseur, l'usine, l'agent et l'entité de facturation ? |
 | Agreement | Un Agreement doit-il être associé au fournisseur, à l'usine, à la relation fournisseur-usine, ou au contexte d'achat ? |
 | Lead time | Le lead time relève-t-il de la fiche fournisseur, de l'usine, du service Supply ou d'une policy d'exécution ? |
-| Date de promesse | Quelles données et quelles règles doivent être combinées pour calculer une date de promesse fiable selon que la PO cible le fournisseur ou l'usine ? |
-| Source de référence | Qui est source de référence de chaque donnée : SRM, PLM, Négoce, Finance, Supply, FLOW ou une projection intermédiaire ? |
+| Date de promesse | Quelles informations et quelles règles doivent être combinées pour calculer une date de promesse fiable selon que la PO cible le fournisseur ou l'usine ? |
+| Source de référence | Qui est source de référence de chaque information : SRM, PLM, Négoce, Finance, Supply, FLOW ou une projection intermédiaire ? |
 | Flux | Quels flux doivent être synchrones, événementiels, batch ou simplement reconstruits en projection pour la décision ? |
 | PLM | Le PLM doit-il recevoir une projection enrichie des rôles fournisseurs, ou rester consommateur d'un sous-ensemble utile à la conception ? |
 | Habilitations | Quels droits donner aux fournisseurs, responsables d'usine, agents ou intermédiaires selon le rôle qu'ils jouent dans une relation donnée ? |
@@ -206,7 +206,7 @@ Fulfillment / Supply
     → zone de transport, SLA, service mobilisable
 
 PLM
-    → données nécessaires à la conception et à la préparation produit
+    → informations nécessaires à la conception et à la préparation produit
 ```
 
 Le modèle cible doit donc éviter de transformer un choix d'usage local en contrainte globale.
