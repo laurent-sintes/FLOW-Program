@@ -20,6 +20,14 @@
 </div>
 <!-- FLOW-READING-CARD:END -->
 
+## Pourquoi ce programme existe
+
+FLOW ne naît pas d'une idée théorique de plateforme.
+
+Le programme émerge d'un besoin concret de <span class="flow-keyword">convergence</span> : l'étude Synvance sur les trajectoires possibles, l'obsolescence de socles structurants comme StoreLand côté GBM et SAP côté BRD, la difficulté à maintenir des synchronisations fiables entre applications, et le besoin de remplacer des outils sans simplement reconstruire l'existant.
+
+Ces constats ont progressivement déplacé la question : il ne s'agit pas seulement de choisir de nouveaux outils, mais de définir le bon centre de gravité du SI cible pour réussir la convergence sans effacer les singularités utiles.
+
 ## Ambition : converger sans nécessairement uniformiser
 
 Le Groupe Beaumanoir doit réussir une <span class="flow-keyword">convergence</span> complexe.
@@ -246,11 +254,12 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 
 La vision détaillée est découpée en chapitres pour faciliter la lecture :
 
-1. [Ambition](vision-detaillee/1-ambition.md).
-2. [Ruptures](vision-detaillee/2-ruptures-structurantes.md).
-3. [Solution](vision-detaillee/3-plateforme-flow.md).
-4. [Hotspots](vision-detaillee/4-hotspots.md).
-5. [Valeur attendue](vision-detaillee/5-valeur-attendue.md).
+1. [Pourquoi FLOW existe](vision-detaillee/1-pourquoi-flow-existe.md).
+2. [Ambition](vision-detaillee/1-ambition.md).
+3. [Ruptures](vision-detaillee/2-ruptures-structurantes.md).
+4. [Solution](vision-detaillee/3-plateforme-flow.md).
+5. [Hotspots](vision-detaillee/4-hotspots.md).
+6. [Valeur attendue](vision-detaillee/5-valeur-attendue.md).
 
 ## Pages associées
 

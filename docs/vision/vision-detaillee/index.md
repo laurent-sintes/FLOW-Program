@@ -24,15 +24,16 @@ Cette section découpe la vision du programme FLOW en un parcours de lecture pro
 
 La page [Vision](../vision.md) donne la synthèse.
 
-Les pages ci-dessous détaillent le raisonnement complet : pourquoi FLOW existe, quelles ruptures il introduit, quelle solution il dessine, quels points doivent être arbitrés et quelle valeur est attendue.
+Les pages ci-dessous détaillent le raisonnement complet : pourquoi FLOW existe, quelle ambition de convergence il porte, quelles ruptures il introduit, quelle solution il dessine, quels points doivent être arbitrés et quelle valeur est attendue.
 
 ## Parcours de lecture
 
-1. [Ambition](1-ambition.md) — converger sans nécessairement uniformiser, grâce à un modèle fédéré.
-2. [Ruptures](2-ruptures-structurantes.md) — déplacer le centre de gravité du SI.
-3. [Solution](3-plateforme-flow.md) — une plateforme pour fédérer les demandes, opérations et décisions métier.
-4. [Hotspots](4-hotspots.md) — les points à approfondir et arbitrer.
-5. [Valeur attendue](5-valeur-attendue.md) — les bénéfices reliés aux problèmes observés.
+1. [Pourquoi FLOW existe](1-pourquoi-flow-existe.md) — comprendre le point de départ, les héritages et les irritants.
+2. [Ambition](1-ambition.md) — converger sans nécessairement uniformiser, grâce à un modèle fédéré.
+3. [Ruptures](2-ruptures-structurantes.md) — déplacer le centre de gravité du SI.
+4. [Solution](3-plateforme-flow.md) — une plateforme pour fédérer les demandes, opérations et décisions métier.
+5. [Hotspots](4-hotspots.md) — les points à approfondir et arbitrer.
+6. [Valeur attendue](5-valeur-attendue.md) — les bénéfices reliés aux problèmes observés.
 
 ## À retenir
 
@@ -40,4 +41,4 @@ La vision détaillée ne remplace pas l'architecture cible.
 
 Elle sert à expliquer le raisonnement qui conduit à l'architecture cible.
 
-→ Commencer par [Ambition](1-ambition.md).
+→ Commencer par [Pourquoi FLOW existe](1-pourquoi-flow-existe.md).

@@ -83,7 +83,7 @@ Quand une page change, vérifier les impacts selon la nature du changement.
 
 | Si le changement concerne... | Vérifier aussi... |
 | --- | --- |
-| Une ambition ou un positionnement FLOW | Abstract, vision détaillée, concepts clés, principes directeurs |
+| Une ambition ou un positionnement FLOW | Pitch, vision détaillée, concepts clés, principes directeurs |
 | Une règle de conception | Principes directeurs, architecture cible, patterns, transformation |
 | Un nouveau terme structurant | Concepts clés, glossaire, liens depuis les pages qui l'utilisent |
 | Un domaine ou une responsabilité | Architecture cible, produits FLOW, hotspots, transformation |

@@ -1,4 +1,4 @@
-# FLOW : fédérer les demandes, décisions et promesses pour mieux satisfaire les clients et les utilisateurs
+# Pitch : fédérer les demandes, décisions et promesses
 
 <!-- FLOW-READING-CARD:START -->
 <div class="flow-reading-card">
@@ -21,7 +21,7 @@
 <!-- FLOW-READING-CARD:END -->
 
 <div class="flow-conviction">
-  <p><strong>FLOW propose un nouveau centre de gravité pour le Groupe Beaumanoir.</strong></p>
+  <p><strong>FLOW fédère les demandes, décisions et promesses pour mieux satisfaire les clients et les utilisateurs.</strong></p>
   <p>Partir des demandes à satisfaire, des promesses à tenir et des décisions métier à gouverner.</p>
 </div>
 

@@ -101,7 +101,7 @@ Ces principes évitent plusieurs dérives fréquentes :
 
 ## À lire ensuite
 
-Pour la vision globale, commencer par [l'abstract FLOW](../vision/abstract.md).
+Pour la vision globale, commencer par le [pitch FLOW](../vision/abstract.md).
 
 Pour comprendre le périmètre de FLOW, lire [Positionnement de FLOW](../vision/positionnement-flow.md).
 

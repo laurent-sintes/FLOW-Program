@@ -36,10 +36,11 @@ nav:
           - Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?: faq/pourquoi-flow-pas-structure-jachete-je-vends.md
   - Vision:
       - vision/index.md
-      - "FLOW : fédérer les demandes, décisions et promesses pour mieux satisfaire les clients et les utilisateurs": vision/abstract.md
+      - "Pitch : fédérer les demandes, décisions et promesses": vision/abstract.md
       - Vision: vision/vision.md
       - Vision détaillée:
           - vision/vision-detaillee/index.md
+          - "Pourquoi FLOW existe": vision/vision-detaillee/1-pourquoi-flow-existe.md
           - "Ambition : converger": vision/vision-detaillee/1-ambition.md
           - "Ruptures : déplacer le centre de gravité du SI": vision/vision-detaillee/2-ruptures-structurantes.md
           - "Solution : une plateforme pour fédérer les demandes, opérations et décisions métier": vision/vision-detaillee/3-plateforme-flow.md

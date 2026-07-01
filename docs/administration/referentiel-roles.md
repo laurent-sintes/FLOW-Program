@@ -30,7 +30,7 @@ L'objectif est de garder les cartouches utiles et homogènes. Un cartouche doit 
 | --- | --- | --- |
 | Tous lecteurs | Lecteur général qui cherche à s'orienter, comprendre le vocabulaire ou consulter un repère transverse. | Accueil, glossaire, statistiques, index de section |
 | Sponsor | Décideur qui doit comprendre la valeur, les risques, les arbitrages et les décisions à prendre. | Vision, hotspots, valeur attendue, notes de choix |
-| Direction | Lecteur de niveau stratégique qui a besoin d'une synthèse courte et du positionnement global. | Abstract, vision synthétique, ambition |
+| Direction | Lecteur de niveau stratégique qui a besoin d'une synthèse courte et du positionnement global. | Pitch, vision synthétique, ambition |
 | Architecte | Lecteur qui conçoit la cible, les principes, les responsabilités, les patterns et les frontières entre domaines. | Architecture cible, principes, patterns, hotspots |
 | Métier | Lecteur qui porte les usages, règles, exceptions, arbitrages fonctionnels ou impacts opérationnels. | Contexte, hotspots, transformation, principes métier |
 | Développeur | Lecteur qui doit comprendre les composants techniques, APIs, scripts, prototypes, moteurs ou choix d'implémentation. | Architecture technique, produits FLOW, administration, scripts |

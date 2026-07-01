@@ -31,7 +31,7 @@
 
 <div class="flow-home-grid">
   <a class="flow-card" href="vision/abstract/">
-    <strong>Abstract</strong>
+    <strong>Pitch</strong>
     <span>Le pitch exécutif en une minute : demandes, décisions, promesses, convergence et impacts SI.</span>
   </a>
   <a class="flow-card" href="faq/">

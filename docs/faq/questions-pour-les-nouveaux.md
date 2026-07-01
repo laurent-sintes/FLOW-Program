@@ -28,7 +28,7 @@ Elle ne remplace pas la vision, les principes ou l'architecture cible. Elle sert
 
 FLOW est une plateforme de cohérence Demand + Fulfillment qui permet de piloter les demandes, les décisions métier, les promesses, les ressources mobilisables, les statuts et les événements transverses.
 
-À lire ensuite : [Abstract FLOW](../vision/abstract.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
+À lire ensuite : [Pitch FLOW](../vision/abstract.md) et [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md).
 
 ### FLOW remplace-t-il un ERP ou un OMS ?
 
@@ -177,7 +177,7 @@ Sans cela, le SI accumule des flux projet difficiles à maintenir.
 
 Lire dans cet ordre :
 
-1. [Abstract FLOW](../vision/abstract.md)
+1. [Pitch FLOW](../vision/abstract.md)
 2. [Positionnement de FLOW](../vision/positionnement-flow.md)
 3. [Abstract des principes directeurs](../principes-directeurs/abstract.md)
 4. [Overview de la plateforme FLOW](../architecture-cible/overview-plateforme-flow.md)

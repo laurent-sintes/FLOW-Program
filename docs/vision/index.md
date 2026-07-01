@@ -60,7 +60,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 
 ## Pages disponibles
 
-- [Abstract](abstract.md) — pitch exécutif en une minute : demandes, décisions, promesses, convergence et impacts SI.
+- [Pitch](abstract.md) — pitch exécutif en une minute : demandes, décisions, promesses, convergence et impacts SI.
 - [Vision](vision.md) — synthèse programme structurée.
 - [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 - [Positionnement de FLOW](positionnement-flow.md) — schéma des quatre domaines et du cœur Demand + Fulfillment.
@@ -92,4 +92,4 @@ Elle transforme donc les observations du programme en ambition de transformation
 
 Cliquer sur la section Vision doit d'abord permettre de comprendre ce qu'est une vision et pourquoi elle structure le programme.
 
-La vision spécifique du programme FLOW est portée par un abstract, une vision synthétique, une vision détaillée, une page de positionnement, un modèle de fonctionnement, une page de concepts clés et une note de choix stratégique.
+La vision spécifique du programme FLOW est portée par un pitch, une vision synthétique, une vision détaillée, une page de positionnement, un modèle de fonctionnement, une page de concepts clés et une note de choix stratégique.
