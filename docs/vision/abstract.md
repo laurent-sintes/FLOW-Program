@@ -35,6 +35,7 @@
       <li>Le groupe s'est construit par acquisitions, marques, canaux et héritages IT.</li>
       <li>Les demandes sont dispersées entre B2C, B2B, retail, wholesale, SAV, retours et exceptions.</li>
       <li>Le stock, les commandes et les décisions métier ne sont pas toujours lisibles dans une même vérité.</li>
+      <li>Les singularités business risquent de se transformer en complexité conditionnelle si elles sont codées comme des cas particuliers.</li>
       <li>Les flux d'informations naissent encore trop souvent projet par projet.</li>
     </ul>
   </section>
@@ -76,6 +77,8 @@
       <li><span class="flow-keyword">Décisions métier</span>, règles, policies et agreements.</li>
       <li><span class="flow-keyword">Stock Unifié</span>, disponibilité, réservation et allocation.</li>
       <li><span class="flow-keyword">Réseau d'Exécution</span> et capacités logistiques.</li>
+      <li>Règles, contraintes, policies et mécanismes de variabilité gouvernée.</li>
+      <li>Projections locales de décision pour éviter les dépendances synchrones critiques.</li>
       <li>Événements, faits, documents, statuts et traçabilité.</li>
       <li>Contrats de données et intégration des systèmes réintégrés.</li>
     </ul>
@@ -111,6 +114,8 @@
       <li>Décloisonnement B2B / B2C / marques / canaux / systèmes.</li>
       <li>Stock et ressources plus lisibles, mobilisables et auditables.</li>
       <li>Moins de décisions métier contradictoires entre applications.</li>
+      <li>Richesse business préservée sans explosion combinatoire dans le SI.</li>
+      <li>Décisions critiques plus rapides, car découplées des APIs externes au moment du calcul.</li>
       <li>Moins de flux opportunistes, plus de contrats de données gouvernés.</li>
       <li>Meilleure intégration de nouvelles marques, offres ou business models.</li>
     </ul>

@@ -88,6 +88,7 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 042 | La décision dépend de sources de référence explicites | Case Management doit consommer des projections SRM, PLM, Négoce, Finance et Supply en sachant quel domaine est source de référence de chaque information. |
 | 043 | CBS doit voir les usines | La trajectoire CBS doit intégrer une évolution fonctionnelle pour distinguer fournisseurs, usines et sites de production lorsque cela conditionne promesse et exécution. |
 | 044 | CBS pourrait être la SRM cible | La trajectoire doit clarifier si CBS devient le premier lieu de recensement fournisseurs / usines, ou s'il reste un domaine spécialisé consommateur d'une source de référence externe. |
+| 045 | Le batch de repriorisation BRD révèle une dette de variabilité | La priorisation Wholesale est légitime, mais son implémentation en batch SQL nocturne complexe montre que les règles de promesse doivent devenir explicites, testables et gouvernées. |
 
 ## Finance et adhérences externes
 
@@ -145,3 +146,4 @@ Les familles permettent de retrouver rapidement les insights par angle de réfle
 | 042 | Opérations, décision métier et informations | La décision dépend de sources de référence explicites |
 | 043 | Opérations, décision métier et informations | CBS doit voir les usines |
 | 044 | Opérations, décision métier et informations | CBS pourrait être la SRM cible |
+| 045 | Opérations, décision métier et informations | Le batch de repriorisation BRD révèle une dette de variabilité |

@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>8 min</strong>
+      <strong>9 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -72,10 +72,12 @@ Le glossaire définit les termes. Cette page explique les idées qui changent la
 | <span class="flow-keyword">Stock Unifié</span> | Le stock devient une capacité d'entreprise, pas une simple information locale extraite d'un système. |
 | <span class="flow-keyword">Fulfillment Network</span> / <span class="flow-keyword">Réseau d'exécution</span> | Le réseau d'exécution décrit les nœuds, services, capacités, contraintes et conditions d'usage mobilisables pour satisfaire une demande. |
 | <span class="flow-keyword">Agreement</span> | L'Agreement porte les conditions et règles de traitement qui permettent de gérer la variation sans multiplier les processus. |
+| <span class="flow-keyword">Variabilité gouvernée</span> | Les singularités business sont portées par des règles, contraintes, policies, modèles de décision, patterns et algorithmes plutôt que par des chaînes de conditions. |
 | <span class="flow-keyword">Décision</span> / <span class="flow-keyword">règles</span> / <span class="flow-keyword">policies</span> | Les décisions métier doivent être explicites, traçables, gouvernées et capables de faire évoluer le Case. |
 | <span class="flow-keyword">Arbitrage</span> | Un arbitrage est un choix de programme ou d'architecture à rendre explicite ; il ne doit pas être confondu avec une décision métier exécutée dans FLOW. |
 | <span class="flow-keyword">Vues 360</span> | Les vues 360 donnent une lecture transverse d'une activité, d'un client, d'un fournisseur, d'une commande ou d'un Case. |
 | <span class="flow-keyword">Source de référence / projection</span> | Une information fait référence lorsqu'elle est contrôlée par un processus responsable ; les projections, vues et agrégats la rendent consommable sans devenir automatiquement maîtres. |
+| <span class="flow-keyword">Projection locale de décision</span> | Une décision critique doit disposer localement des informations nécessaires à son calcul, sans dépendre d'appels synchrones à des APIs externes. |
 | <span class="flow-keyword">Hotspot</span> | Un hotspot est un point de tension à instruire avant de figer un arbitrage ou une architecture cible. |
 | <span class="flow-keyword">Domaine / responsabilité / capacité / produit</span> | FLOW découpe les problèmes durables avant de parler d'applications, d'organisations ou de fonctionnalités. |
 
@@ -231,6 +233,38 @@ Il permet de rendre les commandes plus génériques : ce n'est plus la multiplic
 
 Le contexte, les Agreements et les règles pilotent dynamiquement les variations de processus.
 
+## Variabilité gouvernée
+
+La <span class="flow-keyword">variabilité gouvernée</span> permet de préserver les singularités business sans transformer le SI en empilement de cas particuliers.
+
+Les marques, canaux, clients, agreements, services, contraintes Supply ou promesses peuvent justifier des comportements différents.
+
+Le risque est que chaque différence soit codée dans un workflow, une interface ou une chaîne de conditions.
+
+FLOW doit au contraire expliciter cette variabilité dans des mécanismes gouvernés :
+
+- règles métier ;
+- policies ;
+- moteurs de contraintes ;
+- modèles de décision ;
+- patterns Strategy ou extension contrôlée ;
+- paramètres et jeux de données qualifiés ;
+- assistance IA lorsque cela aide à classifier, recommander, détecter ou expliquer.
+
+Ce concept est détaillé dans le [principe 8](../principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md).
+
+## Projection locale de décision
+
+Une <span class="flow-keyword">projection locale de décision</span> est une projection conçue pour calculer vite et de manière autonome.
+
+Elle répond à un principe simple : une décision critique ne doit pas dépendre, au moment du calcul, d'une chaîne d'appels à des APIs externes dont FLOW ne maîtrise pas le SLA.
+
+La source de référence garde la responsabilité de l'information.
+
+La projection locale donne au moteur de décision le modèle de lecture nécessaire pour décider, expliquer et tracer.
+
+Ce concept est détaillé dans le pattern [Projection locale de décision](../architecture-cible/patterns/projection-locale-de-decision.md).
+
 ## Décision / règles / policies
 
 Une <span class="flow-keyword">décision</span> est un choix explicite qui fait progresser le traitement d'un Case.
@@ -273,6 +307,8 @@ Une information doit être qualifiée par nature et par statut dans un domaine :
 Une <span class="flow-keyword">source de référence</span> est l'application, le service ou le domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné.
 
 Une projection, une vue 360 ou un agrégat peut rendre l'information plus accessible, mais ne devient pas source de référence par simple visibilité.
+
+Le risque à éviter est la <span class="flow-keyword">copie devenue maître par accident</span> : une projection ou une vue finit par porter les corrections et arbitrages parce que la vraie source est trop lente ou trop éloignée.
 
 La bonne question devient :
 

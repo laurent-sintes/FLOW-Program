@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>1 min</strong>
+      <strong>2 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -61,6 +61,10 @@ CQRS est particulièrement utile pour :
 - le Socle Case Management ;
 - les catalogues d'exécution ;
 - les lectures orientées finance, SAV ou opérations.
+
+Pour les décisions critiques, une projection n'est pas seulement une vue de consultation.
+
+Elle peut devenir une [projection locale de décision](projection-locale-de-decision.md) : un modèle de lecture maîtrisé par FLOW afin de décider vite, sans dépendre d'appels synchrones à des référentiels externes.
 
 ## Risques
 

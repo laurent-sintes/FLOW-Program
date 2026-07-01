@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>3 min</strong>
+      <strong>4 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -30,9 +30,9 @@ FLOW doit créer du commun là où l'incohérence coûte cher.
 
 Ce commun ne se construit pas en imposant un processus unique ou un monolithe applicatif.
 
-Il se construit en clarifiant les responsabilités durables, en rendant les décisions explicites, en traitant la demande comme objet central, et en gouvernant les informations selon leur rôle réel : source de référence, projection ou information en transit.
+Il se construit en clarifiant les responsabilités durables, en rendant les décisions explicites, en traitant la demande comme objet central, en gouvernant les informations selon leur rôle réel, et en absorbant la variabilité business par des mécanismes adaptés plutôt que par des branches conditionnelles.
 
-## Les sept principes en synthèse
+## Les huit principes en synthèse
 
 | Principe | Règle courte | Ce que cela protège |
 | --- | --- | --- |
@@ -42,7 +42,8 @@ Il se construit en clarifiant les responsabilités durables, en rendant les déc
 | [04 — Articuler Engagement, Demand, Fulfillment et Supply](4-separer-demand-et-supply.md) | Engagement capte l'intention, Demand qualifie la demande, Fulfillment arbitre, Supply expose les ressources. | Ne pas mélanger parcours, intention qualifiée, décision et exécution dans le même modèle. |
 | [05 — Le processus émerge des décisions métier](5-le-processus-emerge-des-decisions.md) | Les décisions métier doivent être conçues avant les variantes de workflow. | Rendre visibles les règles, priorités, exceptions et arbitrages réels. |
 | [06 — La demande comme objet métier central d'orchestration](6-demande-objet-metier-central-orchestration.md) | Le Case porte la demande, son contexte, son historique, ses décisions et ses engagements. | Garder un fil métier cohérent malgré les canaux, domaines et systèmes traversés. |
-| [07 — Master Data : des objets maîtres aux sources gouvernées](7-qualifier-les-informations-plutot-que-master-data.md) | Faire du MDM, c'est passer d'un modèle d'objets, attributs et cardinalités à une cartographie des sources de référence, projections, contrats et responsabilités de gouvernance. | Éviter le piège `MDM = inventaire des objets "maîtres" de l'entreprise` et le foisonnement de flux projet. |
+| [07 — Master Data : des objets maîtres aux sources gouvernées](7-qualifier-les-informations-plutot-que-master-data.md) | Faire du Master Data Management, c'est passer d'un modèle d'objets, attributs et cardinalités à une cartographie des sources de référence, projections, contrats et responsabilités de gouvernance. | Éviter le piège `Master Data Management = inventaire des objets "maîtres" de l'entreprise` et le foisonnement de flux projet. |
+| [08 — Préserver la richesse business sans complexifier le SI](8-preserver-richesse-business-sans-complexite-si.md) | Les singularités business doivent être portées par une variabilité gouvernée : règles, contraintes, policies, modèles de décision, patterns, algorithmes et projections locales de décision. | Éviter que la richesse marques / canaux / clients devienne une explosion combinatoire de `if / elseif`, workflows, modules spécifiques ou dépendances synchrones critiques. |
 
 ## Lecture d'ensemble
 
@@ -62,6 +63,8 @@ Décisions métier explicites
 Case comme objet central
         ↓
 Informations qualifiées et contractualisées
+        ↓
+Variabilité business gouvernée
 ```
 
 Cette chaîne permet de passer d'une ambition de convergence à une architecture gouvernable.
@@ -81,7 +84,8 @@ Demander plutôt :
 - quelle promesse doit être tenue ;
 - quelle ressource Supply est mobilisée ;
 - quelle information fait référence pour cet usage ;
-- quel contrat de données permet de raccorder les domaines.
+- quel contrat de données permet de raccorder les domaines ;
+- quelle variabilité métier doit être portée par une règle, une contrainte, une policy, un pattern ou un algorithme.
 
 ## Risques évités
 
@@ -92,7 +96,8 @@ Ces principes évitent plusieurs dérives fréquentes :
 - confondre ERP, OMS, plateforme et domaine métier ;
 - figer les processus alors que les décisions changent selon le contexte ;
 - importer le vocabulaire `Master Data` sans clarifier les responsabilités ;
-- multiplier les flux point-à-point sans gouvernance durable.
+- multiplier les flux point-à-point sans gouvernance durable ;
+- transformer la richesse business en complexité conditionnelle, explosion combinatoire ou dépendance à des APIs externes dans le chemin de décision.
 
 ## À lire ensuite
 

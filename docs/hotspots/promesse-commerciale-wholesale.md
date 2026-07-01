@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>4 min</strong>
+      <strong>5 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -37,6 +37,14 @@ La pratique Wholesale observée chez Boardriders repose sur une logique de prior
 Cette logique est différente d'une approche “premier arrivé, premier servi”, plus proche de la culture Beaumanoir.
 
 Dans une logique de priorisation, une nouvelle commande d'un client prioritaire peut consommer un stock insuffisant et décaler dans le temps des commandes déjà enregistrées pour des clients moins prioritaires.
+
+Chez BRD, cette logique s'incarne notamment dans un moteur de repriorisation des promesses de Sales Orders.
+
+Lorsqu'une grosse commande Wholesale surgit pour un grand distributeur stratégique, le système peut repositionner des dates dans le futur afin de servir la priorité commerciale.
+
+L'irritant observé est que cette logique repose sur un batch SQL nocturne orchestrant plusieurs dizaines de règles.
+
+Sa complexité est telle que la maintenance est devenue risquée : la règle existe, mais elle est difficile à comprendre, tester, faire évoluer et expliquer.
 
 Le sujet n'est donc pas seulement : “qui a droit au stock ?”
 
@@ -107,6 +115,7 @@ Si ce sujet n'est pas traité explicitement, FLOW risque de produire :
 - une optimisation commerciale locale au détriment de la confiance globale ;
 - une difficulté à expliquer pourquoi un client a été servi avant un autre ;
 - une complexité cachée dans des règles locales, des contournements ou des arbitrages manuels.
+- une dette de variabilité lorsque les règles de priorisation sont enfouies dans des batchs ou traitements SQL non gouvernés.
 
 ## Questions structurantes pour FLOW
 
@@ -120,6 +129,8 @@ Le sujet doit être arbitré avant de stabiliser les règles de promesse et d'al
 - Quelle information doit être visible dans les Vues 360 ou dans le suivi de Case ?
 - Comment éviter qu'une optimisation commerciale locale dégrade la confiance globale dans la promesse ?
 - Quelles règles doivent être communes au groupe, et quelles règles peuvent rester propres à un business model ?
+- Comment rendre les règles de repriorisation simulables, testables, versionnées et explicables ?
+- Quel moteur ou modèle de décision doit remplacer les traitements trop opaques sans perdre la richesse du modèle Wholesale ?
 
 ## Lien avec le module Négoce StoreLand
 

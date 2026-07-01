@@ -231,13 +231,29 @@ La variation de traitement doit être pilotée par :
 - Les contraintes de stock et d'exécution.
 - Les droits et engagements du client, partenaire, fournisseur ou canal.
 
-Cela suppose un référentiel de règles et un moteur de règles capables de piloter dynamiquement les variations.
+Le risque à éviter est l'explosion combinatoire : chaque marque, canal, type de client, agreement, promesse ou contrainte Supply peut multiplier les cas à gérer.
+
+Si cette richesse est codée en chaînes de `if / elseif`, le SI devient progressivement difficile à tester, expliquer et faire évoluer.
+
+FLOW doit donc porter une <span class="flow-keyword">variabilité gouvernée</span>.
+
+Selon les cas, cette variabilité peut relever :
+
+- d'un moteur de règles pour les règles métier explicites ;
+- d'un moteur de contraintes pour choisir le meilleur plan sous contraintes multiples ;
+- de policies ou paramètres gouvernés ;
+- de patterns d'extension lorsque le comportement est stable mais différent ;
+- de projections locales de décision lorsque le SLA du calcul interdit de dépendre d'appels synchrones à des APIs externes ;
+- d'une assistance IA pour classifier, détecter, recommander ou expliquer.
 
 ```text
 Commande ou demande générique
     + contexte
     + Agreement
     + règles
+    + contraintes
+    + projections locales de décision
+    + objectif d'optimisation
     + décisions métier
     = traitement adapté
 ```

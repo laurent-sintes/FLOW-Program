@@ -251,6 +251,7 @@ Fichiers clés :
 - `docs/principes-directeurs/5-le-processus-emerge-des-decisions.md`
 - `docs/principes-directeurs/6-demande-objet-metier-central-orchestration.md`
 - `docs/principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md`
+- `docs/principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md`
 
 Rôle :
 
@@ -262,6 +263,7 @@ Impact à vérifier :
 
 - tout changement d'un principe peut impacter la vision, les fiches produits, les patterns d'architecture et les insights ;
 - le principe 07 porte aussi la doctrine MDM sur les contrats de données ; vérifier les impacts sur la pratique transverse `docs/architecture-cible/produits/gouvernance-donnees-transit.md` ;
+- le principe 08 porte la variabilité business gouvernée ; vérifier les impacts sur la vision, les règles, policies, moteurs de contraintes, patterns d'extension et messages de transformation ;
 - le principe 01 doit conserver l'idée de bon niveau de commun plutôt qu'une opposition simpliste entre convergence et uniformisation.
 
 ### Architecture cible
@@ -291,6 +293,8 @@ Impact à vérifier :
 - toute évolution d'un schéma doit rester cohérente avec la page qui l'explique et avec `docs/administration/referentiel-schemas.md` ;
 - tout ajout, renommage ou suppression de concept structurant doit conduire à relire les schémas listés comme dépendants dans le référentiel des schémas ;
 - la gouvernance des données en transit est une pratique transverse, pas un produit FLOW à instruire ; ne pas la représenter comme bloc produit dans les schémas d'overview ;
+- le pattern `Self-contained System (SCS)` a guidé le découpage de FLOW en produits ; un produit critique doit être autonome sur son périmètre de responsabilité : logique, informations utiles, contrats explicites et dépendances asynchrones autant que possible ;
+- le pattern `Projection locale de décision` rappelle qu'une décision critique ne doit pas dépendre d'appels synchrones à des APIs externes ; vérifier la source de référence, la fraîcheur, la réconciliation et le contrat de données avant de créer une projection locale ;
 - tous les SVG de `docs/assets/images/` sont générés par `scripts/generate_svg_diagrams.py` et doivent être modifiés via le générateur afin de préserver les retours à la ligne, les hauteurs automatiques de blocs et le contrôle de cohérence ;
 - tous les SVG doivent rester exportables dans Word / PowerPoint : vectoriels, avec `viewBox`, `preserveAspectRatio="xMidYMid meet"`, sans image bitmap embarquée et sans `foreignObject` ;
 - les nouveaux SVG d'architecture ou de produit doivent suivre la charte des derniers schémas produits : fond clair `#f8fbfa`, panneaux blancs bordés vert pâle, cœur vert FLOW `#236159`, accent ocre `#e09238`, police Aptos / Calibri / Segoe UI, sans grand fond noir sauf justification forte ;
@@ -458,11 +462,15 @@ Concepts à maintenir dans le temps :
 - Agreement comme pivot de variation ;
 - Fulfillment Network comme réseau d'exécution configurable ;
 - stock unifié comme capacité d'entreprise ;
+- produits critiques pensés comme unités autonomes de responsabilité, dans l'esprit Self-contained System, et non comme simples blocs applicatifs ou couches techniques ;
 - distinction source de référence / projection ;
+- éviter la copie devenue maître par accident : une projection ou une vue ne devient source de référence que si la gouvernance et la responsabilité sont explicitement transférées ;
+- projections locales de décision pour maîtriser le SLA des décisions critiques ;
 - données en transit gouvernées comme des actifs ;
 - contrats de données plutôt que flux projet opportunistes ;
 - domaines, responsabilités, capacités et produits avant applications ou organigrammes ;
 - rôles, relations et policies plutôt que cardinalités figées dans le cœur ;
+- variabilité gouvernée plutôt que chaînes de conditions ou cas particuliers codés en dur ;
 - hotspots comme points de tension à instruire, pas comme détails à masquer.
 
 Règle de vocabulaire :

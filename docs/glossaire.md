@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>14 min</strong>
+      <strong>16 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -32,6 +32,9 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Arbitrage | [Concepts clés](vision/concepts-cles.md#arbitrage) · [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) |
 | Case | [Concepts clés](vision/concepts-cles.md#case) · [Principe 06](principes-directeurs/6-demande-objet-metier-central-orchestration.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
 | Colonne vertébrale opérationnelle | [Concepts clés](vision/concepts-cles.md#colonne-vertebrale-operationnelle) · [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Architecture cible](architecture-cible/index.md) |
+| Complexité conditionnelle | [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
+| Complexité de dépendance | [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) · [Projection locale de décision](architecture-cible/patterns/projection-locale-de-decision.md) |
+| Copie devenue maître par accident | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern Source de référence / Projection](architecture-cible/patterns/sources-reference-projections-vues.md) |
 | Contrat de données | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Insight dédié](insights/gouverner-donnees-en-transit.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
 | Bon niveau de commun | [Vision](vision/vision.md#ambition-converger-sans-necessairement-uniformiser) · [Ambition détaillée](vision/vision-detaillee/1-ambition.md) · [Insight convergence](insights/convergence-federation-uniformisation.md) |
 | Demande / Demand | [Concepts clés](vision/concepts-cles.md#demande-demand) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md) · [Socle Case Management](architecture-cible/produits/socle-case-management.md) |
@@ -41,14 +44,19 @@ Il sert aussi d'index vers les pages qui approfondissent les concepts structuran
 | Donnée en transit | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Gouvernance des données en transit](architecture-cible/produits/gouvernance-donnees-transit.md) |
 | Domaine / responsabilité / capacité / produit | [Concepts clés](vision/concepts-cles.md#domaine-responsabilite-capacite-produit) · [Processus de cadrage](methode/processus-de-cadrage.md#vocabulaire-de-cadrage) |
 | Engagement | [Vision](vision/vision.md#ce-que-porte-la-plateforme) · [Ruptures](vision/vision-detaillee/2-ruptures-structurantes.md#engagement-demand-fulfillment-supply-depasser-achat-vente) · [Principe 04](principes-directeurs/4-separer-demand-et-supply.md) |
+| Explosion combinatoire | [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
 | Fulfillment Network / Réseau d'exécution | [Concepts clés](vision/concepts-cles.md#fulfillment-network-reseau-dexecution) · [Architecture cible](architecture-cible/overview-plateforme-flow.md) · [Fiche produit](architecture-cible/produits/fulfillment-network-configuration.md) |
 | Hotspot | [Hotspots de la vision](vision/vision-detaillee/4-hotspots.md) · [Section Hotspots](hotspots/index.md) |
 | Plateforme Demand | [Concepts clés](vision/concepts-cles.md#plateforme-demand) · [Solution FLOW](vision/vision-detaillee/3-plateforme-flow.md) · [Architecture cible](architecture-cible/index.md) |
 | Master Data Management / MDM | [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern Source de référence / Projection](architecture-cible/patterns/sources-reference-projections-vues.md) |
+| Moteur de contraintes | [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
 | Product Agreement Catalog | [Fiche produit](architecture-cible/produits/product-agreement-catalog.md) · [Hotspot PLM / catalogue](hotspots/plm-catalogue-article-ean.md) |
+| Projection locale de décision | [Pattern dédié](architecture-cible/patterns/projection-locale-de-decision.md) · [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
+| Self-contained System (SCS) | [Pattern dédié](architecture-cible/patterns/self-contained-system.md) · [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
 | Source de référence / Projection | [Concepts clés](vision/concepts-cles.md#source-de-reference-projection) · [Principe 07](principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md) · [Pattern dédié](architecture-cible/patterns/sources-reference-projections-vues.md) |
 | Stock Unifié | [Concepts clés](vision/concepts-cles.md#stock-unifie) · [Fiche produit](architecture-cible/produits/stock-unifie.md) · [Inventory Visibility](insights/inventory-visibility-capacite-d-entreprise.md) |
 | Supply Service Registry | [Fiche produit](architecture-cible/produits/supply-service-registry.md) |
+| Variabilité gouvernée | [Concepts clés](vision/concepts-cles.md#variabilite-gouvernee) · [Principe 08](principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
 | Vues 360 | [Concepts clés](vision/concepts-cles.md#vues-360) · [Fiche produit](architecture-cible/produits/vues-360.md) |
 
 ## A
@@ -145,6 +153,18 @@ C-LOG ne doit pas être réduit à un EAI : il peut porter des responsabilités 
 
 Responsabilités communes que FLOW porte pour faire fonctionner le SI comme un ensemble cohérent : demandes, décisions, statuts, événements, stock, promesses, allocations et orchestration transverse.
 
+### Complexité conditionnelle
+
+Complexité créée lorsque des comportements métier variables sont encodés sous forme de conditions imbriquées, branches `if / elseif`, règles locales ou cas particuliers dispersés.
+
+Dans FLOW, cette complexité doit être remplacée autant que possible par de la variabilité gouvernée : règles, contraintes, policies, modèles de décision, patterns et algorithmes.
+
+### Complexité de dépendance
+
+Complexité créée lorsqu'une décision dépend en temps réel de plusieurs APIs, référentiels ou services externes dont le domaine qui décide ne maîtrise pas le SLA.
+
+Dans FLOW, les décisions critiques doivent éviter les appels synchrones en cascade et s'appuyer sur des projections locales de décision.
+
 ### Command
 
 Nature d'information représentant une intention adressée à un système ou domaine pour demander une action.
@@ -154,6 +174,12 @@ Nature d'information représentant une intention adressée à un système ou dom
 Engagement durable décrivant comment une information est publiée, consommée, supervisée et réconciliée.
 
 Il précise notamment source de référence, consommateurs, mode d'échange, granularité, fraîcheur, qualité et mécanismes de reprise.
+
+### Copie devenue maître par accident
+
+Anti-pattern dans lequel une projection, une vue, un export, un cache ou un agrégat devient progressivement l'endroit où l'information est corrigée, enrichie ou arbitrée, alors qu'aucun processus de référence ne lui a donné cette responsabilité.
+
+Le risque n'est pas la copie elle-même. Le risque est que la copie devienne le vrai maître opérationnel parce que la source de référence est trop lente, trop éloignée, mal gouvernée ou difficile à corriger.
 
 ## D
 
@@ -250,6 +276,12 @@ Un événement est publié pour être consommé par d'autres domaines ou project
 Condition attendue pour qu'une capacité, un produit ou une solution soit acceptable.
 
 Une exigence peut venir du métier, de l'architecture, de la sécurité, du run ou de l'intégration. Certaines exigences pèsent fortement sur l'architecture, le coût complet ou l'arbitrage Build / Buy, mais il n'est pas nécessaire d'en faire une catégorie séparée dans le vocabulaire courant.
+
+### Explosion combinatoire
+
+Croissance rapide du nombre de cas à gérer lorsque plusieurs dimensions se combinent : marque, canal, client, agreement, stock, promesse, pays, service, transport ou capacité Supply.
+
+Dans FLOW, l'enjeu n'est pas de nier cette richesse business, mais d'éviter qu'elle se transforme en workflows, modules ou branches conditionnelles spécifiques.
 
 ## F
 
@@ -357,6 +389,12 @@ Module StoreLand activé pour certaines marques premium.
 
 Il mélange design commercial, assortment / commercial agreement et commandes d'achat ; FLOW doit découper ces responsabilités avant d'arbitrer quoi reprendre.
 
+### Moteur de contraintes
+
+Composant qui cherche un plan satisfaisant ou optimal sous contraintes multiples.
+
+Il est utile lorsque FLOW doit arbitrer entre stock, capacités, délais, coûts, priorités, services, promesses ou contraintes opérationnelles.
+
 ### Moteur de règles
 
 Composant qui exécute des règles ou policies pour produire une décision, qualifier un traitement ou adapter un comportement selon le contexte.
@@ -439,6 +477,12 @@ Un produit importé est acheté déjà designé par un fournisseur, souvent sous
 
 Représentation consommée par un domaine, issue d'une ou plusieurs sources et adaptée à son usage.
 
+### Projection locale de décision
+
+Projection optimisée pour permettre à un moteur de décision de calculer rapidement sans dépendre d'appels synchrones à des APIs ou référentiels externes.
+
+Elle est alimentée par des sources de référence via contrats de données, mais ne devient pas source de référence par accident.
+
 ### Promesse
 
 Obligation ou garantie à tenir sur la capacité à servir une demande : disponibilité, quantité, délai, lieu ou service.
@@ -496,6 +540,12 @@ Composant structurant du paysage GBM autour de l'e-commerce, de l'omnicanal, des
 Application, service ou domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné.
 
 Une source de référence ne doit pas être confondue avec une projection, une vue 360 ou un agrégat de consultation.
+
+### Self-contained System (SCS)
+
+Pattern d'architecture qui découpe un grand système en systèmes autonomes, responsables d'un périmètre métier cohérent, avec logique, informations utiles et contrats d'échange maîtrisés.
+
+Dans FLOW, le SCS sert surtout à rappeler qu'un produit critique doit pouvoir tenir ses cas d'usage principaux sans dépendre en temps réel d'une chaîne d'APIs ou de référentiels externes.
 
 ### Solution
 
@@ -564,6 +614,12 @@ Dans le contexte BRD, l'usine peut être le point réel de commande et porter de
 Le terme `plant` doit être évité comme nom métier cible tant que son sens n'est pas clarifié : selon le contexte, il peut désigner une usine, un site de production, une capacité de fabrication ou un objet applicatif SAP.
 
 ## V
+
+### Variabilité gouvernée
+
+Capacité à préserver des comportements différents selon les marques, canaux, clients, agreements ou services sans les coder comme des cas particuliers dispersés.
+
+Elle repose sur des règles, contraintes, policies, modèles de décision, patterns d'extension, paramètres gouvernés ou algorithmes explicites.
 
 ### Vues 360
 

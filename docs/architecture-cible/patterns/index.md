@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -35,7 +35,7 @@ C'est une manière récurrente d'organiser les responsabilités, les information
 
 ## Pourquoi cette section ?
 
-Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, CQRS, Operational DataHub, Event Sourcing, externalisation des décisions métier, API conversationnelle, plateforme ouverte et gouvernée.
+Les fiches produits FLOW mobilisent plusieurs patterns transverses : Case Management, Event-Driven Architecture, Self-contained System, CQRS, projection locale de décision, Operational DataHub, Event Sourcing, externalisation des décisions métier, API conversationnelle, plateforme ouverte et gouvernée.
 
 Sans section dédiée, ces patterns seraient dispersés dans les fiches produit.
 
@@ -54,7 +54,9 @@ Cette section sert donc à :
 | [Case-centric orchestration](case-centric-orchestration.md) | Faire émerger le processus à partir de la demande, des faits et des décisions. | Socle Case Management |
 | [Event-Driven Architecture](event-driven-architecture.md) | Faire circuler les faits opérationnels entre systèmes sans dépendre de flux projet point à point. | Case Management, Stock Unifié, données en transit |
 | [API conversationnelle](api-conversationnelle.md) | Maintenir un dialogue corrélé, asynchrone et observable entre domaines, Cases et systèmes contributeurs. | Case Management, Stock Unifié, Supply Service Registry |
+| [Self-contained System (SCS)](self-contained-system.md) | Concevoir les produits critiques comme des unités autonomes de responsabilité, capables de tenir leurs cas d'usage principaux sans dépendances synchrones cachées. | Case Management, Stock Unifié, Product Agreement Catalog, Fulfillment Network |
 | [CQRS et projections](cqrs-et-projections.md) | Séparer actions, événements, modèles de lecture et projections métier. | Stock Unifié, Vues 360, Case Management |
+| [Projection locale de décision](projection-locale-de-decision.md) | Donner au moteur de décision les projections dont il a besoin localement, sans dépendre d'appels synchrones à des APIs externes. | Case Management, Stock Unifié, Product Agreement Catalog, Fulfillment Network |
 | [Sources de référence, projections et vues](sources-reference-projections-vues.md) | Cartographier où une information est contrôlée par un processus, et distinguer source de référence, projection, vue et agrégat. | Case Management, Vues 360, Product Agreement Catalog, données en transit |
 | [Operational DataHub](operational-datahub.md) | Construire une vérité opérationnelle fraîche, gouvernée et consommable. | Stock Unifié, Vues 360, données en transit |
 | [Event Sourcing / Ledger](event-sourcing-ledger.md) | Historiser les événements ou mouvements pour reconstruire, auditer et expliquer. | Stock Unifié, Case Management |

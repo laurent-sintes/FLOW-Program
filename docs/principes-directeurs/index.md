@@ -35,10 +35,11 @@ Pour une lecture rapide, commencer par [l'abstract des principes directeurs](abs
 5. [Le processus émerge des décisions métier](5-le-processus-emerge-des-decisions.md)
 6. [La demande comme objet métier central d’orchestration](6-demande-objet-metier-central-orchestration.md)
 7. [Master Data : des objets maîtres aux sources gouvernées](7-qualifier-les-informations-plutot-que-master-data.md)
+8. [Préserver la richesse business sans complexifier le SI](8-preserver-richesse-business-sans-complexite-si.md)
 
 ## Principes à consolider
 
-8. Cohérence opérationnelle dans un monde distribué
-9. API First / Experience Agnostic
+9. Cohérence opérationnelle dans un monde distribué
+10. API First / Experience Agnostic
 
 Chaque principe a vocation à expliciter son intention, les insights qui le fondent, ses conséquences et les arbitrages qu’il guide.

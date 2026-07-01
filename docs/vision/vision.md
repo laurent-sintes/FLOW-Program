@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>9 min</strong>
+      <strong>10 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -53,6 +53,8 @@ Cette vision repose sur quelques convictions fortes :
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
 - La gouvernance <span class="flow-keyword">Master Data Management</span> doit distinguer sources de référence, projections et contrats d'échange, pour éviter l'inventaire de données supposées maîtres et les flux opportunistes.
+- La richesse business doit être préservée par une <span class="flow-keyword">variabilité gouvernée</span>, pas recodée en chaînes de conditions, workflows spécifiques ou modules par canal.
+- Les décisions critiques doivent maîtriser leurs dépendances par des <span class="flow-keyword">projections locales de décision</span>, pas par des appels synchrones à des référentiels externes.
 
 ## Concepts qui structurent FLOW
 
@@ -67,6 +69,8 @@ Cette vision repose sur quelques convictions fortes :
 | <span class="flow-keyword">Source de référence / Projection</span> | Dans un SI distribué, une information fait référence lorsqu'elle est contrôlée par un processus responsable ; elle n'est pas maître de manière absolue. |
 | <span class="flow-keyword">Contrat de données</span> | L'information en transit doit être publiée, consommée, supervisée et gouvernée comme un actif durable, pas comme un flux projet opportuniste. |
 | <span class="flow-keyword">Master Data Management</span> | Faire du Master Data Management ne consiste pas seulement à lister des objets maîtres : il faut qualifier les sources de référence, les projections, les contrats d'échange et les responsabilités de gouvernance. |
+| <span class="flow-keyword">Variabilité gouvernée</span> | Les singularités de marque, canal, client, agreement ou service doivent être portées par des règles, contraintes, policies, modèles de décision, patterns et algorithmes plutôt que par des cas particuliers codés en dur. |
+| <span class="flow-keyword">Projection locale de décision</span> | Les informations nécessaires à une décision critique doivent être maîtrisées localement par FLOW, sans transformer les projections en sources de référence. |
 
 → Voir aussi : [Concepts clés du programme FLOW](concepts-cles.md).
 
@@ -218,7 +222,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | Demandes dispersées | Plateforme de fédération des demandes, Case Management, événements communs | Décloisonnement et continuité de traitement |
 | Informations difficiles à réconcilier | Sources de référence qualifiées, projections gouvernées, événements, Vues 360 | Meilleure capacité à retrouver une vérité exploitable |
 | Flux projet foisonnants ou base-à-base | Contrats de données, séparation publication / consommation, supervision des échanges | Moins de tuyauterie opportuniste et une meilleure gouvernance des données en transit |
-| Variations métier spécifiques | Agreements, règles, policies, moteur de décision métier | Singularités préservées sans prolifération des processus |
+| Variations métier spécifiques | Agreements, règles, policies, moteur de décision métier, moteur de contraintes, projections locales, patterns d'extension | Singularités préservées sans prolifération des processus, explosion combinatoire ou dépendances synchrones fragiles |
 | Décisions de fulfillment distribuées | Contrats entre demande et exécution | Moins d'erreurs d'aiguillage et meilleure optimisation globale |
 | Finance et auditabilité | Faits, événements, documents et statuts exploitables | Meilleure intégration avec Finance et capacité à reconstruire l'histoire d'une demande |
 
@@ -235,6 +239,7 @@ La valeur de FLOW vient du lien entre les problèmes observés et les capacités
 | FLOW oblige à réécrire tous les services existants. | Réintégrer les services utiles autour d'une cohérence commune lorsque leur valeur métier justifie leur maintien. |
 | FLOW reconstruit une master data globale ou un inventaire d'objets supposés maîtres. | Qualifier les sources de référence, les projections et les capacités d'action nécessaires pour traiter les demandes de manière fiable, explicable et optimisable. |
 | FLOW se contente de refaire des flux entre applications. | Gouverner les informations en transit comme des contrats durables entre sources, consommateurs et responsabilités métier, sans exposer les bases de données comme ressources publiques. |
+| FLOW doit choisir entre uniformiser les business models ou subir leur complexité. | Préserver la richesse business en gouvernant la variabilité par des règles, contraintes, policies, patterns et algorithmes adaptés. |
 
 ## Aller plus loin
 

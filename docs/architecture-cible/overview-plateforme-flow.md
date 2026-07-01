@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>8 min</strong>
+      <strong>9 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -108,7 +108,13 @@ Elle n'est pas représentée comme un produit FLOW à instruire dans ce schéma.
 
 Le découpage ne cherche pas à reproduire les grands blocs applicatifs existants.
 
+Il a été guidé par une logique de [Self-contained System (SCS)](patterns/self-contained-system.md) : chaque produit FLOW doit correspondre à une responsabilité suffisamment cohérente pour être gouvernée, développée, exploitée et remplacée sans recréer un couplage permanent avec tous les autres systèmes.
+
 Il isole les responsabilités qui doivent être gouvernées pour que FLOW puisse décider vite, expliquer ses décisions, promettre correctement et dialoguer avec les domaines d'exécution.
+
+Le pattern [Self-contained System (SCS)](patterns/self-contained-system.md) précise la cible d'autonomie : un produit critique doit maîtriser assez de logique, d'information et de contrats pour tenir ses cas d'usage principaux sans dépendances synchrones cachées.
+
+Le pattern [Projection locale de décision](patterns/projection-locale-de-decision.md) précise le mécanisme data associé : les décisions critiques doivent disposer localement des projections nécessaires au calcul, plutôt que dépendre d'appels synchrones à des référentiels ou APIs externes dont FLOW ne maîtrise pas le SLA.
 
 | Produit | Justification du découpage |
 | --- | --- |
@@ -122,6 +128,8 @@ Il isole les responsabilités qui doivent être gouvernées pour que FLOW puisse
 La conséquence est importante : FLOW ne remplace pas les domaines existants par un nouveau monolithe.
 
 FLOW compose des produits de décision, de projection et de configuration qui rendent les responsabilités explicites, tout en laissant Engagement, Supply, Finance, PLM, PIM, WMS, POS ou partenaires porter leurs responsabilités propres.
+
+Les sources de référence gardent donc leur responsabilité. FLOW ne les absorbe pas : il maîtrise les projections qui rendent les décisions rapides, traçables et explicables.
 
 ## Lecture fonctionnelle
 

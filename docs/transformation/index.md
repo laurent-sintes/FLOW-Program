@@ -54,7 +54,7 @@ Pour les Change Managers, le point d'entrée recommandé est [Les changements à
 2. réconcilier ERP et OMS dans une plateforme Demand, sans recréer un monolithe ;
 3. clarifier qui détient la promesse omnicanale, notamment dans l'arbitrage FLOW / C-LOG ;
 4. passer de “j'achète / je vends” à Engagement / Demand / Fulfillment / Supply ;
-5. construire le bon niveau de commun, sans faire croire que FLOW embarque tout.
+5. construire le bon niveau de commun et gouverner la variabilité business, sans faire croire que FLOW embarque tout.
 
 Un sixième arbitrage prioritaire porte sur une approche Master Data Management gouvernée. Côté conduite du changement, il se traduit par deux réflexes transverses à travailler :
 
@@ -65,6 +65,8 @@ Cette structuration reprend les arbitrages prioritaires identifiés avec les lea
 
 Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage, d'intégration et de lecture du périmètre FLOW.
 
+Un message doit être porté avec une attention particulière : préserver la richesse des marques, canaux et modèles clients ne signifie pas accepter que le SI se complexifie mécaniquement. FLOW doit aider les équipes à passer d'une logique de cas particuliers codés en dur à une logique de règles, contraintes, policies et algorithmes gouvernés.
+
 Pour chaque changement, les liens de lecture détaillés sont maintenus dans [Les changements à conduire](changements-a-conduire.md).
 
 ## À retenir
@@ -72,3 +74,5 @@ Pour chaque changement, les liens de lecture détaillés sont maintenus dans [Le
 La transformation FLOW doit aider les équipes à comprendre que la convergence ne signifie pas la disparition des singularités.
 
 Elle signifie que les responsabilités critiques — demandes, décisions métier, stock, promesse, allocation, exécution, événements et exceptions — doivent devenir plus cohérentes, plus explicables et mieux gouvernées, même lorsqu'elles restent portées par plusieurs domaines ou partenaires comme C-LOG.
+
+Elle signifie aussi que la richesse business doit être préservée par une variabilité gouvernée, pas par une accumulation de branches conditionnelles.

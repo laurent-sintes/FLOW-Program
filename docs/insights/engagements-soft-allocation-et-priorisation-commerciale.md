@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>2 min</strong>
+      <strong>3 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -61,6 +61,14 @@ Cette réallocation peut conduire à :
 
 Des traitements batchs nocturnes sont utilisés pour recalculer les engagements selon des règles de priorisation.
 
+Un irritant majeur a été identifié côté BRD : le moteur de repriorisation des promesses de Sales Orders, utilisé lorsqu'une grosse commande Wholesale arrive pour un grand distributeur stratégique, repose sur un batch SQL nocturne.
+
+Ce batch orchestre plusieurs dizaines de règles.
+
+Le programme est devenu tellement complexe que sa maintenance est perçue comme risquée : les équipes n'osent plus le modifier sans craindre des effets de bord sur les promesses, allocations et dates futures.
+
+Ce cas rend visible le problème central : la priorisation commerciale est légitime, mais lorsqu'elle est enfouie dans un traitement opaque, elle devient une dette de variabilité.
+
 ## Soft Allocation
 
 Ce fonctionnement est très proche d'une logique de Soft Allocation.
@@ -87,6 +95,12 @@ Le moteur de décision doit alors être capable de :
 - republier les promesses ;
 - gérer les impacts en chaîne.
 
+Le cas du batch SQL BRD montre que cette capacité ne doit pas seulement exister techniquement.
+
+Elle doit être explicite, testable, simulable et gouvernée.
+
+Sinon, la richesse du modèle Wholesale se transforme en complexité conditionnelle non maîtrisée.
+
 ## Le portefeuille de demandes devient pilotable
 
 Le référentiel de demandes ne doit plus être considéré comme uniquement transactionnel.
@@ -107,6 +121,10 @@ FLOW doit être capable de supporter :
 
 La capacité d'accéder au référentiel de demandes pour le recalculer ou le modifier en masse constitue donc une exigence métier légitime.
 
+Mais cette capacité ne doit pas être reconstruite comme un batch monolithique intouchable.
+
+Elle doit s'appuyer sur des règles, contraintes, critères de priorité, simulations et traces de décision gouvernés.
+
 ## Insight majeur
 
 Deux entreprises peuvent gérer exactement la même demande avec exactement le même stock et prendre des décisions opposées simplement parce qu'elles n'ont pas la même politique d'engagement.
@@ -114,3 +132,5 @@ Deux entreprises peuvent gérer exactement la même demande avec exactement le m
 Cette observation renforce l'importance du concept Agreement dans le modèle FLOW.
 
 Ce qui différencie réellement les comportements n'est pas la demande elle-même mais les règles d'engagement qui lui sont associées.
+
+Elle renforce aussi le [principe 8](../principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) : une variabilité business légitime doit être gouvernée, pas enfouie dans une complexité technique que plus personne n'ose faire évoluer.

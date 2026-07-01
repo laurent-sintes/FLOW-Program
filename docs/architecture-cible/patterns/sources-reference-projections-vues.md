@@ -35,7 +35,7 @@ Une information devient fiable pour FLOW lorsqu'elle est créée, validée ou ma
 | Concept | Définition |
 | --- | --- |
 | Source de référence | Application, service ou domaine où une information est créée, validée ou maintenue par un processus responsable, avec un niveau de qualité suffisant pour faire référence pour un usage donné. |
-| Projection | Représentation dérivée d'une ou plusieurs sources de référence, adaptée à un usage de lecture, de décision ou d'intégration. |
+| Projection | Représentation dérivée d'une ou plusieurs sources de référence, adaptée à un usage de lecture, de décision ou d'intégration. Une projection peut devenir source de référence seulement si cette responsabilité est explicitement gouvernée. |
 | Vue | Lecture organisée pour un utilisateur, un processus ou une API ; elle peut agréger plusieurs projections ou sources. |
 | Vue 360 | Vue transverse autour d'un acteur, d'un objet ou d'un Case ; elle facilite la compréhension mais ne remplace pas les sources de référence. |
 | Agrégat de lecture | Assemblage technique ou fonctionnel optimisé pour consulter, rechercher, calculer ou décider. |
@@ -135,9 +135,11 @@ Transformer une vue transverse en référentiel implicite alors qu'elle agrège 
 
 Créer un référentiel central sans clarifier les processus qui créent, valident, corrigent et publient l'information.
 
-### Projection devenue maître par accident
+### Copie devenue maître par accident
 
-Laisser une copie ou un agrégat devenir l'endroit où les corrections sont faites, faute d'avoir identifié la vraie source de référence.
+Laisser une projection, une vue, un export, un cache ou un agrégat devenir l'endroit où les corrections sont faites, faute d'avoir identifié et gouverné la vraie source de référence.
+
+Ce glissement est dangereux parce qu'il transforme un consommateur en maître opérationnel sans processus de contrôle, sans responsabilité claire et sans contrat de réconciliation.
 
 ## Lien avec les autres patterns
 
@@ -148,6 +150,7 @@ Laisser une copie ou un agrégat devenir l'endroit où les corrections sont fait
 | Event-Driven Architecture | Les événements publient des changements issus de sources de référence ou de projections gouvernées. |
 | Event Sourcing / Ledger | Le ledger peut devenir source de référence pour certains faits ou mouvements s'il porte le processus de contrôle associé. |
 | Rôles, relations et policies | Les rôles et relations doivent avoir une source de référence avant d'être résolus par policy. |
+| Projection locale de décision | La projection locale rend la décision rapide et autonome, sans devenir source de référence par accident. |
 
 ## À retenir
 

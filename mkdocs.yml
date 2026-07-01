@@ -58,7 +58,9 @@ nav:
           - Pattern — Case-centric orchestration: architecture-cible/patterns/case-centric-orchestration.md
           - Pattern — Event-Driven Architecture: architecture-cible/patterns/event-driven-architecture.md
           - Pattern — API conversationnelle: architecture-cible/patterns/api-conversationnelle.md
+          - Pattern — Self-contained System (SCS): architecture-cible/patterns/self-contained-system.md
           - Pattern — CQRS et projections: architecture-cible/patterns/cqrs-et-projections.md
+          - Pattern — Projection locale de décision: architecture-cible/patterns/projection-locale-de-decision.md
           - Pattern — Sources de référence, projections et vues: architecture-cible/patterns/sources-reference-projections-vues.md
           - Pattern — Operational DataHub: architecture-cible/patterns/operational-datahub.md
           - Pattern — Event Sourcing / Ledger: architecture-cible/patterns/event-sourcing-ledger.md
@@ -87,6 +89,7 @@ nav:
       - Principe 5 — Le processus émerge des décisions métier: principes-directeurs/5-le-processus-emerge-des-decisions.md
       - Principe 6 — La demande comme objet métier central d’orchestration: principes-directeurs/6-demande-objet-metier-central-orchestration.md
       - "Principe 7 — Master Data : des objets maîtres aux sources gouvernées": principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md
+      - Principe 8 — Préserver la richesse business sans complexifier le SI: principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md
   - Hotspots:
       - hotspots/index.md
       - "Sortie progressive de SAP ECC : découper les responsabilités": hotspots/sap-ecc-boardriders.md

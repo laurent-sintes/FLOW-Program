@@ -26,6 +26,10 @@ Une fiche produit n'est pas encore un backlog détaillé.
 
 Elle sert à donner à un PO ou un PM une base cohérente pour démarrer : intention, responsabilités, consommateurs, informations manipulées, capacités, interfaces, premières questions et premiers epics.
 
+Le découpage en produits suit une logique [Self-contained System](../patterns/self-contained-system.md) : chaque produit doit représenter une unité de responsabilité suffisamment autonome, avec ses règles, informations, projections, contrats et exigences d'exploitation.
+
+Cette règle évite de découper FLOW par applications existantes, par couches techniques ou par organigramme.
+
 ## Produits initialisés
 
 - [Socle Case Management](socle-case-management.md)

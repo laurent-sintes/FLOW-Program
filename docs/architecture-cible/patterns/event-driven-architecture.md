@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>1 min</strong>
+      <strong>2 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -49,6 +49,8 @@ Le résultat est souvent :
 Les systèmes publient des événements métier stables : StockSold, StockReceived, CaseCreated, ShippingConfirmed, PaymentCaptured.
 
 Les consommateurs s'abonnent aux événements dont ils ont besoin pour maintenir leurs projections, déclencher des décisions ou alimenter des vues opérationnelles.
+
+Pour les décisions critiques, certains événements doivent transporter assez d'information pour maintenir une [projection locale de décision](projection-locale-de-decision.md). Le consommateur peut alors décider vite, sans rappeler la source au moment du calcul.
 
 ## Usage dans FLOW
 

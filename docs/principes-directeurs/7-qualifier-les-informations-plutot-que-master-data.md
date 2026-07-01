@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>11 min</strong>
+      <strong>12 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -274,6 +274,34 @@ Cette distinction est essentielle.
 
 FLOW peut ne pas être source de référence du produit, du client ou d'un document fournisseur, tout en étant source de référence du Case, de certaines décisions, de certains événements et de certaines informations calculées comme la disponibilité ou la promesse.
 
+## Anti-pattern — copie devenue maître par accident
+
+La distinction source de référence / projection sert aussi à éviter un anti-pattern très fréquent : la <span class="flow-keyword">copie devenue maître par accident</span>.
+
+Le scénario est simple.
+
+Une projection, une vue, un export, un cache ou un agrégat est créé pour rendre une information consommable.
+
+Puis, parce que la source de référence est trop lente à corriger, trop éloignée du terrain ou mal gouvernée, les équipes commencent à corriger directement la copie.
+
+La copie devient alors le vrai maître opérationnel, sans avoir :
+
+- le processus de création ou validation ;
+- les droits et responsabilités de modification ;
+- la traçabilité des corrections ;
+- la gouvernance de qualité ;
+- les contrats de publication et de réconciliation.
+
+Ce n'est pas seulement un problème technique.
+
+C'est un problème de gouvernance : une responsabilité métier a glissé vers un composant qui n'était censé être qu'un consommateur.
+
+FLOW doit donc autoriser les projections, vues 360, data hubs et projections locales de décision, mais toujours avec une règle claire :
+
+> Une copie peut accélérer, consolider ou rendre consommable.
+>
+> Elle ne devient source de référence que si le processus, la gouvernance et les responsabilités associées sont explicitement transférés.
+
 ## Source de référence pour un usage donné
 
 Dans un SI distribué, une information peut être accessible depuis plusieurs sources.
@@ -376,6 +404,7 @@ Ce principe conduit FLOW à :
 - qualifier chaque information selon sa nature ;
 - qualifier chaque information comme source de référence ou projection dans un domaine donné ;
 - éviter de transformer FLOW en méga-MDM ;
+- éviter qu'une copie, une vue ou une projection devienne maître par accident ;
 - éviter d'importer dans FLOW le modèle SAP sans le challenger ;
 - distinguer ce que FLOW contrôle comme source de référence de ce qu'il consomme sous forme de projection ;
 - contractualiser les informations qui circulent entre domaines ;
