@@ -1,3 +1,7 @@
+---
+nav_label: Pitch
+---
+
 # Pitch : fédérer les demandes, décisions et promesses
 
 <!-- FLOW-READING-CARD:START -->

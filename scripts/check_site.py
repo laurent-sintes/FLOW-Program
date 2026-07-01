@@ -258,6 +258,29 @@ def extract_page_title(path: Path) -> str | None:
     return None
 
 
+def extract_page_metadata(path: Path) -> dict[str, object]:
+    text = read_text(path)
+    match = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.DOTALL)
+    if not match or yaml is None:
+        return {}
+
+    metadata = yaml.safe_load(match.group(1)) or {}
+    if not isinstance(metadata, dict):
+        return {}
+
+    return metadata
+
+
+def extract_nav_label_override(path: Path) -> str | None:
+    metadata = extract_page_metadata(path)
+    value = metadata.get("nav_label")
+    if value is None:
+        return None
+
+    label = str(value).strip()
+    return label or None
+
+
 def check_nav_title_alignment(checks: Checks) -> None:
     config = load_mkdocs_config(checks)
     entries = collect_nav_entries(config.get("nav", []))
@@ -277,16 +300,18 @@ def check_nav_title_alignment(checks: Checks) -> None:
             mismatches += 1
             continue
 
-        if comparable_title(label) != comparable_title(title):
+        expected_label = extract_nav_label_override(path) or title
+
+        if comparable_title(label) != comparable_title(expected_label):
             checks.error(
                 "NAV_TITLE_MISMATCH",
-                f"Navigation label differs from page title for {page}: '{label}' != '{title}'",
+                f"Navigation label differs from expected label for {page}: '{label}' != '{expected_label}'",
                 MKDOCS,
             )
             mismatches += 1
 
     if not mismatches:
-        checks.pass_check("Explicit navigation labels match page titles.")
+        checks.pass_check("Explicit navigation labels match page titles or declared nav labels.")
 
 
 def check_nav_coverage(checks: Checks) -> None:

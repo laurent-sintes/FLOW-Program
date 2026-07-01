@@ -83,7 +83,7 @@ Pour lancer la validation complète du référentiel, utiliser :
 .\scripts\check-site.ps1
 ```
 
-Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page, liens internes, ancres, version de cache des assets publiés, index FAQ, SVG valides et exportables Office, SVG générés à jour, absence de SVG hors générateur, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
+Cette commande lance le build local, puis exécute les contrôles Python de cohérence du site : navigation MkDocs, alignement entre libellés de menu et titres de page ou libellés courts déclarés, liens internes, ancres, version de cache des assets publiés, index FAQ, SVG valides et exportables Office, SVG générés à jour, absence de SVG hors générateur, contenus générés non versionnés, synchronisation entre `AGENTS.md` et la page publiée, et garde-fous conceptuels FLOW.
 
 Le contrôle des liens externes est optionnel, car il dépend du réseau et peut être plus lent :
 
@@ -171,7 +171,7 @@ La navigation principale est portée par `mkdocs.yml`. Quand une page est ajout�
 
 - l'entrée correspondante dans `mkdocs.yml` ;
 - la page d'index de la section ;
-- le libellé explicite du menu, qui doit correspondre au titre H1 de la page ;
+- le libellé explicite du menu, qui doit correspondre au titre H1 de la page, sauf si la page déclare volontairement un libellé court `nav_label` ;
 - les liens depuis le glossaire ;
 - les liens depuis les pages de vision, principes, architecture ou insights ;
 - les ancres Markdown si un titre a changé.

@@ -255,7 +255,7 @@ Avant de considérer une contribution comme intégrée :
 - les impacts sur les pages existantes ont été vérifiés ;
 - le vocabulaire est cohérent avec le glossaire ;
 - les cartouches et statistiques ont été régénérés ;
-- les libellés explicites du menu correspondent aux titres H1 des pages ;
+- les libellés explicites du menu correspondent aux titres H1 des pages, sauf libellé court `nav_label` déclaré dans la page ;
 - les pages autonomes FAQ sont reliées depuis l'index FAQ ;
 - les questions expertes FAQ suivent la procédure décrite dans `AGENTS.md` et les [Instructions Codex](instructions-codex.md) ;
 - les questions expertes FAQ citent, quand elles existent, les standards, bonnes pratiques, retours d'expérience ou études externes qui éclairent le problème ;

@@ -38,7 +38,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 108 |
-| Nombre de mots | 101 124 |
+| Nombre de mots | 101 160 |
 | Temps de lecture complet | 8 h 33 min |
 | Concepts du glossaire | 102 |
 | Hotspots documentés | 8 |
@@ -51,7 +51,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Section | Pages | Mots | Lecture |
 | --- | ---: | ---: | ---: |
 | accueil | 1 | 325 | 2 min |
-| administration | 9 | 9 968 | 49 min |
+| administration | 9 | 10 001 | 49 min |
 | architecture-cible | 26 | 18 691 | 1 h 39 min |
 | contexte | 5 | 11 639 | 56 min |
 | faq | 5 | 6 154 | 30 min |
@@ -61,7 +61,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | principes-directeurs | 10 | 10 589 | 54 min |
 | referentiel | 1 | 3 495 | 16 min |
 | transformation | 4 | 6 023 | 29 min |
-| vision | 14 | 14 993 | 1 h 13 min |
+| vision | 14 | 14 996 | 1 h 13 min |
 
 ## Pages les plus longues
 
@@ -69,7 +69,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | --- | ---: | ---: |
 | [Panorama applicatif GBM](../contexte/panorama-gbm.md) | 3 557 | 17 min |
 | [Glossaire FLOW](../glossaire.md) | 3 495 | 16 min |
-| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 3 310 | 16 min |
+| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 3 325 | 16 min |
 | [Les changements à conduire](../transformation/changements-a-conduire.md) | 3 223 | 15 min |
 | [Fiche produit — Socle Case Management](../architecture-cible/produits/socle-case-management.md) | 3 146 | 15 min |
 | [Panorama applicatif BRD](../contexte/panorama-brd.md) | 2 986 | 14 min |

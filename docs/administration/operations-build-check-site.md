@@ -90,7 +90,7 @@ Il réalise les opérations suivantes :
 | Contrôle | Ce qui est vérifié |
 | --- | --- |
 | Navigation MkDocs | Toutes les pages Markdown sont couvertes par la navigation. |
-| Alignement menu / titre | Les libellés explicites de navigation correspondent aux titres H1. |
+| Alignement menu / titre | Les libellés explicites de navigation correspondent aux titres H1, sauf libellé court `nav_label` déclaré dans la page. |
 | Contenus générés | `site/`, `.generated/`, `.venv/` et autres sorties locales ne sont pas suivis par Git. |
 | `.gitignore` | Les chemins générés et locaux sont protégés. |
 | `.gitattributes` | Les fins de ligne sont stabilisées pour éviter le bruit Windows / Linux. |
