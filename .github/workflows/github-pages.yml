@@ -41,6 +41,7 @@ jobs:
         run: python scripts/check_site.py --external-links --external-timeout 10
 
       - name: Deploy to Cloudflare Pages
+        continue-on-error: true
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

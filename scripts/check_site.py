@@ -748,6 +748,7 @@ def check_ci_workflow(checks: Checks) -> None:
         "python scripts/build_multilang.py",
         "python scripts/check_site.py --external-links",
         "cloudflare/wrangler-action@v3",
+        "continue-on-error: true",
         "pages deploy site --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}",
         "CLOUDFLARE_ACCOUNT_ID",
         "CLOUDFLARE_API_TOKEN",

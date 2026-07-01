@@ -155,6 +155,8 @@ La publication Cloudflare utilise :
 
 GitHub Pages reste temporairement actif pour éviter de couper la diffusion pendant le POC.
 
+Pendant le POC, l'étape Cloudflare est configurée en `continue-on-error: true` afin qu'un incident de paramétrage Cloudflare ne bloque pas la publication GitHub Pages historique.
+
 Une fois Cloudflare Access validé, GitHub Pages devra être désactivé ou ne plus être diffusé, sinon il restera une URL publique de contournement.
 
 Le site publié est donc une sortie de build.

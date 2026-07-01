@@ -38,7 +38,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Indicateur | Valeur |
 | --- | ---: |
 | Pages suivies | 108 |
-| Nombre de mots | 101 291 |
+| Nombre de mots | 101 317 |
 | Temps de lecture complet | 8 h 34 min |
 | Concepts du glossaire | 102 |
 | Hotspots documentés | 8 |
@@ -51,7 +51,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Section | Pages | Mots | Lecture |
 | --- | ---: | ---: | ---: |
 | accueil | 1 | 325 | 2 min |
-| administration | 9 | 10 132 | 50 min |
+| administration | 9 | 10 158 | 50 min |
 | architecture-cible | 26 | 18 691 | 1 h 39 min |
 | contexte | 5 | 11 639 | 56 min |
 | faq | 5 | 6 154 | 30 min |
