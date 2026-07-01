@@ -68,6 +68,8 @@ Le Change Management doit donc accompagner :
 - l'acceptation progressive d'une plateforme Demand transverse ;
 - l'appropriation des arbitrages sensibles, notamment le centre de gravité ERP / OMS, la promesse omnicanale et le positionnement de C-LOG.
 
+Il doit aussi organiser un [embarquement différencié de la Core Team](embarquement-differencie-core-team.md), car les profils n'ont pas tous le même bagage métier, IT, plateforme ou architecture.
+
 ## Pourquoi deux Change Managers ?
 
 FLOW a besoin de tenir ensemble deux exigences qui se contredisent parfois :
@@ -93,6 +95,7 @@ Son rôle est notamment de :
 - repérer les résistances probables ;
 - identifier les bons relais ;
 - adapter les messages aux populations concernées ;
+- détecter les membres de la Core Team qui décrochent sans l'exprimer ;
 - éviter que la transformation soit perçue comme un modèle hors-sol.
 
 ## Change Manager externe
@@ -106,6 +109,7 @@ Son rôle est notamment de :
 - questionner les automatismes ;
 - aider à formuler les changements de modèle ;
 - structurer les sujets de changement ;
+- proposer une segmentation des profils d'embarquement et des niveaux de contribution attendus ;
 - apporter des comparaisons et pratiques externes ;
 - protéger l'ambition de transformation lorsque le projet est tenté de revenir aux habitudes connues.
 
@@ -129,3 +133,5 @@ Ils portent deux angles nécessaires : l'ancrage interne et le recul externe.
 Dans FLOW, cette complémentarité est essentielle parce que le changement ne concerne pas seulement le déploiement d'une solution.
 
 Il concerne aussi la manière dont l'entreprise apprend à penser ses domaines, ses responsabilités, ses capacités, ses informations, ses décisions et ses produits.
+
+À lire ensuite : [Embarquement différencié de la Core Team](embarquement-differencie-core-team.md).

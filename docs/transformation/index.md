@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>3 min</strong>
+      <strong>4 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -41,10 +41,13 @@ La recommandation est donc de distinguer deux natures de contenus :
 
 Pour les Change Managers, le point d'entrée recommandé est [Les changements à conduire](changements-a-conduire.md). Cette page contient le parcours de lecture, les cinq messages de transformation et les liens vers les pages de fond.
 
+L'embarquement de la Core Team doit ensuite être traité comme un dispositif à part entière. La page [Embarquement différencié de la Core Team](embarquement-differencie-core-team.md) propose une segmentation des profils, des niveaux de vision partagée et une matrice de suivi de compréhension, adhésion et implication.
+
 ## Pages disponibles
 
 - [Les changements à conduire](changements-a-conduire.md) — point d'entrée opérationnel pour préparer les messages, les ateliers et les liens vers vision, principes, FAQ, C-LOG et cadrage.
 - [Pourquoi deux Change Managers ?](pourquoi-deux-change-managers.md) — justification de la gouvernance du changement et de la complémentarité entre ancrage interne et regard externe.
+- [Embarquement différencié de la Core Team](embarquement-differencie-core-team.md) — méthode pour adapter l'accompagnement aux profils de contribution, mesurer l'adhésion et construire une vision partagée à plusieurs niveaux.
 
 ## Priorité de travail
 
@@ -66,6 +69,8 @@ Cette structuration reprend les arbitrages prioritaires identifiés avec les lea
 Elle rend aussi le change plus concret : il ne s'agit pas seulement d'adopter de nouveaux concepts, mais de changer les réflexes de conception, d'arbitrage, d'intégration et de lecture du périmètre FLOW.
 
 Un message doit être porté avec une attention particulière : préserver la richesse des marques, canaux et modèles clients ne signifie pas accepter que le SI se complexifie mécaniquement. FLOW doit aider les équipes à passer d'une logique de cas particuliers codés en dur à une logique de règles, contraintes, policies et algorithmes gouvernés.
+
+Un autre message concerne la Core Team elle-même : tous les profils n'ont pas besoin du même niveau d'abstraction, mais chacun doit savoir comment contribuer utilement à la vision commune.
 
 Pour chaque changement, les liens de lecture détaillés sont maintenus dans [Les changements à conduire](changements-a-conduire.md).
 

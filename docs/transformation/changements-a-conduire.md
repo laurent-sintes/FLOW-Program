@@ -48,7 +48,8 @@ Pour préparer un plan d'accompagnement, lire en priorité :
 4. [C-LOG : une décision de fulfillment déjà distribuée](../hotspots/c-log-decision-fulfillment.md), pour comprendre le sujet sensible de la promesse omnicanale.
 5. [Master Data : des objets maîtres aux sources gouvernées](../principes-directeurs/7-qualifier-les-informations-plutot-que-master-data.md), pour expliquer l'approche Master Data Management sans tomber dans l'inventaire d'objets maîtres.
 6. [Préserver la richesse business sans complexifier le SI](../principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md), pour expliquer pourquoi les singularités doivent être gouvernées par règles, contraintes, policies et algorithmes.
-7. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
+7. [Embarquement différencié de la Core Team](embarquement-differencie-core-team.md), pour adapter l'accompagnement aux profils, mesurer compréhension, adhésion et implication.
+8. [Processus de cadrage](../methode/processus-de-cadrage.md), pour relier les messages de transformation aux étapes projet et aux arbitrages Build / Buy.
 
 ## Les cinq grands changements
 
@@ -61,6 +62,8 @@ Pour préparer un plan d'accompagnement, lire en priorité :
 | 5. Construire le bon niveau de commun et gouverner la variabilité business | Choisir entre tout centraliser, tout laisser spécifique ou coder chaque différence en cas particulier. | Décider ce qui doit être commun, fédéré, adhérent ou différencié, puis porter la variation par règles, contraintes, policies et algorithmes gouvernés. | [Positionnement de FLOW](../vision/positionnement-flow.md) · [Principe 1](../principes-directeurs/1-converger-c-est-federer.md) · [Principe 8](../principes-directeurs/8-preserver-richesse-business-sans-complexite-si.md) |
 
 Ces cinq changements restent les messages principaux de posture. La gouvernance de l'information est une décision prioritaire, mais elle traverse ces changements plutôt que de constituer une sixième campagne de transformation séparée.
+
+L'embarquement de la Core Team est un sujet de méthode de change transversal : les mêmes messages doivent être partagés, mais pas au même niveau de détail ni avec la même attente de contribution pour tous les profils.
 
 ## Changement 1 — Déplacer le centre de gravité vers la demande, la promesse et la satisfaction client
 
@@ -395,6 +398,7 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 | Dépendances synchrones à des APIs externes dans une décision critique | Construire le bon niveau de commun et gouverner la variabilité business |
 | Demandes de flux, batchs Talend et lectures base à base | Message transverse : gouverner l'information en transit |
 | Master Data Management vs inventaire de Master Data | Message transverse : qualifier les sources de référence et projections |
+| Embarquement différencié de la Core Team | Gouvernance du change : adapter le niveau de lecture et la contribution attendue |
 | Product ownership | Support de gouvernance pour tous les changements, mais pas un sujet autonome au départ |
 | Nomenclature d'information | Support de langage pour fulfillment, ERP / OMS et Finance, mais pas un sujet autonome au départ |
 
@@ -411,6 +415,7 @@ Certains sujets auraient pu être séparés, mais doivent être rattachés aux c
 - Ne pas coder la richesse business sous forme de chaînes de `if / elseif`, de workflows spécifiques ou de modules par canal.
 - Ne pas laisser une décision critique dépendre en temps réel d'une cascade d'APIs externes sans projection locale gouvernée.
 - Ne pas présenter l'IA, un moteur de règles ou un moteur de contraintes comme une solution magique sans gouvernance métier.
+- Ne pas embarquer toute la Core Team avec le même discours, le même niveau d'abstraction et la même attente de contribution.
 - Ne pas mélanger dans le même message terrain les problèmes d'information au repos et les problèmes d'information en transit.
 - Ne pas présenter une base de données applicative comme une interface publique d'échange.
 - Ne pas accepter qu'un nouveau besoin d'information se transforme automatiquement en batch Talend ou en flux point à point.

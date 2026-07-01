@@ -411,16 +411,19 @@ Fichiers clés :
 
 - `docs/transformation/index.md`
 - `docs/transformation/pourquoi-deux-change-managers.md`
+- `docs/transformation/embarquement-differencie-core-team.md`
 - `docs/transformation/changements-a-conduire.md`
 
 Rôle :
 
 - documenter les changements de posture et d'adoption ;
 - relier FLOW à la transformation des pratiques, pas seulement à l'architecture.
+- organiser l'embarquement différencié de la Core Team selon les profils, niveaux de compréhension, adhésion, implication et contribution attendue.
 
 Impact à vérifier :
 
 - une évolution de la vision ou des principes peut nécessiter une mise à jour des changements à conduire.
+- une évolution majeure des concepts, produits ou patterns peut nécessiter une mise à jour du parcours d'embarquement de la Core Team.
 
 ### Référentiel
 

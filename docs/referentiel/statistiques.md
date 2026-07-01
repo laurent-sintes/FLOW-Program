@@ -37,9 +37,9 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 
 | Indicateur | Valeur |
 | --- | ---: |
-| Pages suivies | 106 |
-| Nombre de mots | 99 470 |
-| Temps de lecture complet | 8 h 25 min |
+| Pages suivies | 107 |
+| Nombre de mots | 101 255 |
+| Temps de lecture complet | 8 h 34 min |
 | Concepts du glossaire | 102 |
 | Hotspots documentés | 8 |
 | Produits FLOW | 7 |
@@ -51,7 +51,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | Section | Pages | Mots | Lecture |
 | --- | ---: | ---: | ---: |
 | accueil | 1 | 327 | 2 min |
-| administration | 9 | 9 922 | 48 min |
+| administration | 9 | 9 968 | 49 min |
 | architecture-cible | 26 | 18 691 | 1 h 39 min |
 | contexte | 5 | 11 639 | 56 min |
 | faq | 5 | 6 154 | 30 min |
@@ -60,7 +60,7 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | methode | 2 | 2 962 | 14 min |
 | principes-directeurs | 10 | 10 588 | 54 min |
 | referentiel | 1 | 3 495 | 16 min |
-| transformation | 3 | 4 284 | 21 min |
+| transformation | 4 | 6 023 | 29 min |
 | vision | 13 | 15 123 | 1 h 14 min |
 
 ## Pages les plus longues
@@ -69,9 +69,9 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 | --- | ---: | ---: |
 | [Panorama applicatif GBM](../contexte/panorama-gbm.md) | 3 557 | 17 min |
 | [Glossaire FLOW](../glossaire.md) | 3 495 | 16 min |
-| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 3 264 | 15 min |
+| [AGENTS.md - Instructions Codex pour FLOW](../administration/instructions-codex.md) | 3 310 | 16 min |
+| [Les changements à conduire](../transformation/changements-a-conduire.md) | 3 223 | 15 min |
 | [Fiche produit — Socle Case Management](../architecture-cible/produits/socle-case-management.md) | 3 146 | 15 min |
-| [Les changements à conduire](../transformation/changements-a-conduire.md) | 3 130 | 15 min |
 | [Panorama applicatif BRD](../contexte/panorama-brd.md) | 2 986 | 14 min |
 | [OMS C-LOG - atelier du 30 juin 2026](../contexte/panorama-oms-c-log.md) | 2 882 | 14 min |
 | [Processus de cadrage](../methode/processus-de-cadrage.md) | 2 833 | 13 min |
@@ -90,37 +90,37 @@ Cette page est générée par `scripts/update_reading_metrics.py` à partir du f
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="259 occurrences">promesse</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="248 occurrences">case</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="238 occurrences">evenements</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--3" title="224 occurrences">decisions</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="222 occurrences">regles</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--3" title="222 occurrences">decisions</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="217 occurrences">reference</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="214 occurrences">supply</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--3" title="196 occurrences">fulfillment</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="186 occurrences">produit</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="185 occurrences">source</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="176 occurrences">plateforme</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="171 occurrences">processus</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="167 occurrences">information</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="166 occurrences">plateforme</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="160 occurrences">modele</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="155 occurrences">cible</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="147 occurrences">projection</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="146 occurrences">porte</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="145 occurrences">cible</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="142 occurrences">informations</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="140 occurrences">capacites</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="130 occurrences">demand</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="129 occurrences">fournisseur</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="124 occurrences">docs</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="121 occurrences">architecture</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="128 occurrences">architecture</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="125 occurrences">docs</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="121 occurrences">systemes</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="120 occurrences">commande</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="118 occurrences">produits</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="116 occurrences">client</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="108 occurrences">vision</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="108 occurrences">engagement</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="107 occurrences">produits</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="106 occurrences">donnees</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="100 occurrences">projections</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="99 occurrences">flux</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="99 occurrences">gouvernance</span>
+<span class="flow-word-cloud__term flow-word-cloud__term--2" title="98 occurrences">gouvernance</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--2" title="97 occurrences">convergence</span>
-<span class="flow-word-cloud__term flow-word-cloud__term--2" title="96 occurrences">vision</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="91 occurrences">allocation</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="90 occurrences">management</span>
 <span class="flow-word-cloud__term flow-word-cloud__term--1" title="90 occurrences">responsabilite</span>

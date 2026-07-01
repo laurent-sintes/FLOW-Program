@@ -150,6 +150,7 @@ nav:
   - Transformation:
       - transformation/index.md
       - Pourquoi deux Change Managers dans la Core Team FLOW ?: transformation/pourquoi-deux-change-managers.md
+      - Embarquement différencié de la Core Team: transformation/embarquement-differencie-core-team.md
       - Les changements à conduire: transformation/changements-a-conduire.md
   - Référentiel:
       - Glossaire FLOW: glossaire.md
