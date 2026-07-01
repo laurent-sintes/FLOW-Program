@@ -10,7 +10,7 @@
     </div>
     <div>
       <span>Temps de lecture</span>
-      <strong>6 min</strong>
+      <strong>5 min</strong>
     </div>
     <div>
       <span>Usage</span>
@@ -99,7 +99,7 @@ Il réalise les opérations suivantes :
 | Structure multilingue | Les versions `/fr/` et `/en/` sont générées. |
 | Liens externes optionnels | Les liens HTTP(S) sont vérifiés si l'option réseau est activée. |
 | Synchronisation Codex | `AGENTS.md` et la page publiée `instructions-codex.md` restent synchronisés sur les règles clés. |
-| Workflow de publication | Le workflow construit le site multilingue, lance les contrôles de liens externes et déploie vers Cloudflare Pages. |
+| Workflow GitHub Pages | Le workflow construit le site multilingue et lance les contrôles de liens externes. |
 | Index de section | Les pages FAQ, Méthodologie et Administration restent cohérentes avec leur rôle. |
 | Cartouches de lecture | Les publics cibles utilisent le référentiel des rôles. |
 | Statistiques | Les cartouches et `page-metrics.json` sont à jour. |
@@ -138,26 +138,13 @@ Avant `check-site`, lancer les opérations adaptées au type de modification.
 
 ## Lecture GitHub Actions
 
-Le workflow GitHub Actions reprend la même logique de publication :
+Le workflow GitHub Pages reprend la même logique de publication :
 
 1. Installer l'environnement Python.
 2. Restaurer ou construire le cache de dépendances.
 3. Construire le site multilingue.
 4. Lancer les contrôles du référentiel, avec contrôle des liens externes.
-5. Publier le contenu de `site/` sur Cloudflare Pages via `cloudflare/wrangler-action@v3`.
-6. Publier aussi le contenu de `site/` sur GitHub Pages pendant le POC de sécurisation.
-
-La publication Cloudflare utilise :
-
-- la variable GitHub `CLOUDFLARE_PROJECT_NAME`, qui contient le nom du projet Cloudflare Pages ;
-- le secret GitHub `CLOUDFLARE_API_TOKEN` ;
-- le secret GitHub `CLOUDFLARE_ACCOUNT_ID`.
-
-GitHub Pages reste temporairement actif pour éviter de couper la diffusion pendant le POC.
-
-Pendant le POC, l'étape Cloudflare est configurée en `continue-on-error: true` afin qu'un incident de paramétrage Cloudflare ne bloque pas la publication GitHub Pages historique.
-
-Une fois Cloudflare Access validé, GitHub Pages devra être désactivé ou ne plus être diffusé, sinon il restera une URL publique de contournement.
+5. Publier le contenu de `site/` sur GitHub Pages.
 
 Le site publié est donc une sortie de build.
 

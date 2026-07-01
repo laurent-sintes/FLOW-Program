@@ -85,7 +85,7 @@ Utiliser ce contrôle quand une page ajoute ou modifie des références Internet
 
 Depuis Codex, ce contrôle peut être ignoré si le runtime embarqué bloque HTTPS. Dans ce cas, lancer la commande depuis un PowerShell Windows classique.
 
-GitHub Actions construit aussi le site multilingue, exécute `scripts\check_site.py --external-links`, publie vers Cloudflare Pages via `cloudflare/wrangler-action@v3`, puis conserve la publication GitHub Pages pendant le POC. Les secrets GitHub attendus pour Cloudflare sont `CLOUDFLARE_API_TOKEN` et `CLOUDFLARE_ACCOUNT_ID`. La variable GitHub attendue pour le projet Cloudflare Pages est `CLOUDFLARE_PROJECT_NAME`. Le scope GitHub CLI `workflow` est nécessaire pour modifier ce workflow.
+GitHub Actions construit aussi le site multilingue et exécute `scripts\check_site.py --external-links` avant publication GitHub Pages. Le scope GitHub CLI `workflow` est nécessaire pour modifier ce workflow.
 
 Pour ajouter du contenu documentaire, en particulier à partir d'une réunion ou d'un atelier, se référer à :
 
