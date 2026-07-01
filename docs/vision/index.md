@@ -60,7 +60,7 @@ Elle doit donc rester à un niveau intermédiaire : suffisamment claire pour ori
 
 ## Pages disponibles
 
-- [Abstract](abstract.md) — lecture en une page du problème, du choix et de la valeur attendue.
+- [Abstract](abstract.md) — pitch exécutif en une minute : demandes, décisions, promesses, convergence et impacts SI.
 - [Vision](vision.md) — synthèse programme structurée.
 - [Vision détaillée](vision-detaillee/index.md) — parcours complet en chapitres.
 - [Positionnement de FLOW](positionnement-flow.md) — schéma des quatre domaines et du cœur Demand + Fulfillment.

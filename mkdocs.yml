@@ -36,7 +36,7 @@ nav:
           - Pourquoi FLOW n'est-il pas structuré autour de J'achète / Je vends ?: faq/pourquoi-flow-pas-structure-jachete-je-vends.md
   - Vision:
       - vision/index.md
-      - Abstract: vision/abstract.md
+      - "FLOW : fédérer les demandes, décisions et promesses pour mieux satisfaire les clients et les utilisateurs": vision/abstract.md
       - Vision: vision/vision.md
       - Vision détaillée:
           - vision/vision-detaillee/index.md

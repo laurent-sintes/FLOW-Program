@@ -32,7 +32,7 @@
 <div class="flow-home-grid">
   <a class="flow-card" href="vision/abstract/">
     <strong>Abstract</strong>
-    <span>La lecture en une page du problème, du choix stratégique et de la valeur attendue.</span>
+    <span>Le pitch exécutif en une minute : demandes, décisions, promesses, convergence et impacts SI.</span>
   </a>
   <a class="flow-card" href="faq/">
     <strong>FAQ</strong>
