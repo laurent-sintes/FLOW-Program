@@ -20,6 +20,10 @@
 </div>
 <!-- FLOW-READING-CARD:END -->
 
+!!! warning "Abstract en construction"
+
+    Cette page au format Canvas est en cours de stabilisation. Pour une lecture plus fiable de la vision FLOW, privilégier la page [Vision](vision.md).
+
 <div class="flow-conviction">
   <p><strong>FLOW est le choix d'un nouveau centre de gravité pour le SI.</strong></p>
   <p>Le programme ne cherche pas à remplacer tout le système d'information. Il construit la colonne vertébrale commune qui permet de traiter les demandes, gouverner les décisions métier et rendre les ressources disponibles sans effacer les singularités utiles.</p>

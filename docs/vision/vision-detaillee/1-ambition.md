@@ -137,8 +137,9 @@ Différencier
 ```
 
 <div class="flow-conviction">
-  <p>La convergence n'est pas l'uniformisation.</p>
-  <p>Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.</p>
+  <p><strong>FLOW doit préserver la richesse business du groupe sans transformer cette richesse en complexité IT.</strong></p>
+  <p>L'enjeu n'est pas d'uniformiser le business pour simplifier le SI.</p>
+  <p>L'enjeu est de concevoir un SI capable de porter la richesse business sans l'étendre en complexité applicative.</p>
 </div>
 
 C'est dans ce contexte que le programme FLOW émerge : non comme la recherche d'un socle unique, mais comme la recherche d'un modèle de convergence capable de créer de la cohérence sans effacer les singularités utiles.

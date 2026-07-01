@@ -33,8 +33,9 @@ Elle ne peut pas non plus être une centralisation ERP classique qui chercherait
 L'ambition de FLOW est de construire un socle commun là où la cohérence est critique — <span class="flow-keyword">demandes</span>, <span class="flow-keyword">stock</span>, <span class="flow-keyword">promesses</span>, <span class="flow-keyword">décisions métier</span>, allocation, exécution, événements et exceptions — tout en laissant les marques, canaux et domaines spécialisés conserver leur autonomie là où elle crée de la valeur.
 
 <div class="flow-conviction">
-  <p>La convergence n'est pas l'uniformisation.</p>
-  <p>Elle consiste à choisir le bon niveau de commun, au bon endroit, pour la bonne responsabilité.</p>
+  <p><strong>FLOW doit préserver la richesse business du groupe sans transformer cette richesse en complexité IT.</strong></p>
+  <p>L'enjeu n'est pas d'uniformiser le business pour simplifier le SI.</p>
+  <p>L'enjeu est de concevoir un SI capable de porter la richesse business sans l'étendre en complexité applicative.</p>
 </div>
 
 ## Vision synthétique : FLOW comme moteur de convergence opérationnelle
@@ -53,7 +54,7 @@ Cette vision repose sur quelques convictions fortes :
 - Les silos B2B, B2C, marques, groupes ou canaux peuvent exister chez les consommateurs de la plateforme, mais pas dans la <span class="flow-keyword">plateforme</span> elle-même.
 - La variation métier doit être pilotée par le contexte, les <span class="flow-keyword">Agreements</span> et les règles, sans rendre le SI ingouvernable.
 - La gouvernance <span class="flow-keyword">Master Data Management</span> doit distinguer sources de référence, projections et contrats d'échange, pour éviter l'inventaire de données supposées maîtres et les flux opportunistes.
-- La richesse business doit être préservée par une <span class="flow-keyword">variabilité gouvernée</span>, pas recodée en chaînes de conditions, workflows spécifiques ou modules par canal.
+- La richesse business doit être préservée sans étendre la complexité IT : elle doit être portée par une <span class="flow-keyword">variabilité gouvernée</span>, pas recodée en chaînes de conditions, workflows spécifiques ou modules par canal.
 - Les décisions critiques doivent maîtriser leurs dépendances par des <span class="flow-keyword">projections locales de décision</span>, pas par des appels synchrones à des référentiels externes.
 
 ## Concepts qui structurent FLOW
