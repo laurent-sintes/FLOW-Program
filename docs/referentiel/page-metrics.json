@@ -158,11 +158,11 @@
       "target_audience": "Mainteneur, Contributeur, Codex",
       "usage": "Maintenir le référentiel, l'environnement local et les contrôles",
       "profile_version": 4,
-      "word_count": 3325,
+      "word_count": 3365,
       "reading_minutes": 16,
       "heading_count": 17,
       "link_count": 0,
-      "content_hash": "0d36b2ad728a8ce560e6467b760333d01fa2e44fba0057109b4ec292affcbf87",
+      "content_hash": "9074db2ff9ae60daecdc78096bf9b4f54958517133d2b9e68f78e44126243ddb",
       "top_terms": {
         "docs": 83,
         "page": 30,
@@ -189,11 +189,11 @@
         "hotspots": 12,
         "impact": 12,
         "directeurs": 12,
+        "pages": 11,
         "concepts": 11,
         "produits": 11,
         "changement": 10,
-        "lecture": 10,
-        "glossaire": 10
+        "lecture": 10
       }
     },
     {
@@ -296,13 +296,13 @@
       "target_audience": "Mainteneur, Contributeur, Codex",
       "usage": "Maintenir le référentiel, l'environnement local et les contrôles",
       "profile_version": 4,
-      "word_count": 1027,
-      "reading_minutes": 5,
+      "word_count": 1118,
+      "reading_minutes": 6,
       "heading_count": 7,
       "link_count": 0,
-      "content_hash": "e96fff044f25847a9bb8553feac89033a9cdda4437540e5a203c68c7e09aca3a",
+      "content_hash": "db100fc564587c0eeaa09bb11834657f20ad72ccec22e9b9530e506956a049e4",
       "top_terms": {
-        "site": 27,
+        "site": 28,
         "scripts": 17,
         "build": 16,
         "check": 14,
@@ -311,6 +311,9 @@
         "mkdocs": 10,
         "liens": 9,
         "lancer": 9,
+        "github": 9,
+        "pages": 9,
+        "cloudflare": 9,
         "referentiel": 8,
         "python": 8,
         "depuis": 7,
@@ -319,19 +322,16 @@
         "operations": 6,
         "page": 6,
         "avant": 6,
-        "pages": 6,
         "utiliser": 5,
         "local": 5,
+        "publication": 5,
         "externes": 5,
         "powershell": 5,
         "version": 5,
         "cache": 5,
-        "github": 5,
+        "contenu": 5,
         "commande": 4,
-        "construire": 4,
-        "multilingue": 4,
-        "windows": 4,
-        "packages": 4
+        "construire": 4
       }
     },
     {

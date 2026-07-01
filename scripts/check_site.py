@@ -747,6 +747,10 @@ def check_ci_workflow(checks: Checks) -> None:
         "pip install -r requirements.txt",
         "python scripts/build_multilang.py",
         "python scripts/check_site.py --external-links",
+        "cloudflare/wrangler-action@v3",
+        "pages deploy site --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}",
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_API_TOKEN",
     ]
     missing = [fragment for fragment in required_fragments if fragment not in text]
 
@@ -754,7 +758,7 @@ def check_ci_workflow(checks: Checks) -> None:
         checks.error("CI_WORKFLOW_RULE", f"GitHub Pages workflow is missing: {fragment}", GITHUB_PAGES_WORKFLOW)
 
     if not missing:
-        checks.pass_check("GitHub Pages workflow builds the multilingual site and runs external-link checks.")
+        checks.pass_check("GitHub Actions builds the multilingual site, runs external-link checks, and deploys to Cloudflare Pages.")
 
 
 def check_section_indexes(checks: Checks) -> None:

@@ -1,5 +1,6 @@
 site/
 .generated/
+exports/
 .venv/
 .agents/
 __pycache__/
